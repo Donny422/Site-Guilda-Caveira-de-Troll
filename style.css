@@ -1,0 +1,285 @@
+/* ==========================================================================
+    Estilo Geral do Site
+   ========================================================================== */
+
+/* 🌍 O corpo inteiro do site */
+body {
+    background-color: #3a3a3a; /* Cinza intermediário confortável */
+    color: #ffffff;            /* Mantém o texto em branco para contraste */
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+/* 👑 Os títulos principais */
+h1, h2, h3, h4 {
+    color: #d4af37;           /* Dourado para os títulos */
+}
+
+/* ==========================================================================
+   Logo da Guilda (Fixo no Canto Superior Direito)
+   ========================================================================== */
+.logo-guilda {
+    position: fixed;   /* Fixa o elemento na tela do navegador */
+    top: 20px;         /* Distância do topo */
+    right: 20px;       /* Distância da direita */
+    width: 130px;       /* Define a largura do logo (ajuste se necessário) */
+    height: auto;      /* Mantém a proporção da imagem */
+    z-index: 1000;     /* Garante que o logo fique por cima de todos os textos */
+    opacity: 0.85;     /* Deixa levemente transparente para não atrapalhar a leitura */
+    transition: opacity 0.3s ease;
+}
+
+/* O logo brilha 100% quando o jogador passa o mouse */
+.logo-guilda:hover {
+    opacity: 1;
+}
+
+/* ==========================================================================
+   🧭 Estilização do Cabeçalho e Menu
+   ========================================================================== */
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #d4af37; /* Linha dourada para separar o topo do conteúdo */
+    margin-bottom: 30px;
+    padding-right: 120px; /* Cria o espaço necessário na direita para o logo não tapar o menu */
+    margin-bottom: 20px;  /* Afasta o cabeçalho do conteúdo das colunas abaixo */
+}
+
+header h1 {
+    margin-bottom: 15px;
+    color: #d4af37; /* Nome da guilda em dourado */
+}
+
+/* 🟢 Configuração Base dos Links do Menu (Tamanho Original) */
+nav a {
+    color: #2ecc71;            /* Verde místico para os links */
+    text-decoration: none;     /* Remove o sublinhado padrão */
+    font-weight: bold;
+    text-transform: uppercase; /* Deixa as letras maiúsculas para dar imponência */
+    padding: 10px 15px;
+    margin-right: 15px;        /* Dá um espaço entre os links */
+    display: inline-block;     /* Permite alinhar o espaçamento corretamente */
+    transition: all 0.3s ease; /* Transição suave para o efeito visual */
+}
+
+/* ✨ Efeito ao passar o mouse pelos links (Hover) */
+nav a:hover {
+    color: #d4af37;                             /* O link acende em dourado */
+    background-color: rgba(212, 175, 55, 0.1);  /* Um leve fundo dourado translúcido */
+    border-radius: 4px;
+}
+
+
+/* ==========================================================================
+   ⚔️ Elementos de Interface e Botões
+   ========================================================================== */
+
+/* 💬 Estilo específico do botão do Discord */
+.botao-discord {
+    background-color: #d4af37; /* Fundo Dourado */
+    color: #1a1a1a;           /* Texto Cinza Escuro */
+    padding: 10px 20px;       /* Espaçamento interno (cima/baixo esquerda/direita) */
+    border-radius: 5px;       /* Cantos levemente arredondados */
+    text-decoration: none;    /* Remove o sublinhado do link */
+    font-weight: bold;        /* Texto em negrito */
+    display: inline-block;    /* Permite alinhar o espaçamento corretamente */
+    margin-top: 20px;         /* Empurra o botão um pouco para baixo do texto */
+    transition: background-color 0.3s ease;
+}
+
+.botao-discord:hover {
+    background-color: #bfa030;
+}
+
+
+/* ==========================================================================
+   📊 Tabelas Padrão do Servidor
+   ========================================================================== */
+
+/* 🛡️ Estilo geral da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Une as bordas em uma linha única */
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Um fundo sutil para a tabela toda */
+}
+
+/* 🗂️ Bordas e espaçamento para o cabeçalho e para as células de dados */
+th, td {
+    border: 1px solid #c5a059; /* Linha fina com cor de ouro velho */
+    padding: 12px;             /* Espaçamento interno para afastar o texto da borda */
+    text-align: left;          /* Alinha o texto à esquerda */
+}
+
+/* 👑 Estilo exclusivo para o cabeçalho da tabela */
+th {
+    background-color: #1a1a1a; /* Tom escuro que se destaca do fundo do site */
+    color: #d4af37;            /* Dourado brilhante para o texto do título */
+    font-weight: bold;
+}
+
+
+/* ==========================================================================
+   🎲 Configuração Compacta: Tabela do Manto
+   ========================================================================== */
+
+/* 🎒 Estrutura reduzida da tabela do Manto de Itens Úteis */
+.tabela-manto {
+    max-width: 610px;          /* 📏 Limita a largura para a tabela não esticar demais */
+    width: 100%;               /* 📱 Garante que ela se ajuste em telas menores */
+    margin: 20px 0;            /* ↕️ Espaçamento acima e abaixo da tabela */
+    font-size: 14px;           /* 🔤 Diminui levemente o texto para compactar */
+    border-collapse: collapse;
+}
+
+/* 🗂️ Espaçamento interno das células da tabela do Manto */
+.tabela-manto th, 
+.tabela-manto td {
+    padding: 8px;              /* ↕️ Reduz o espaço interno para encolher as linhas */
+}
+
+/* 🎲 Centraliza apenas a primeira coluna (Valores do Dado) */
+.tabela-manto td:first-child {
+    text-align: center;
+    font-weight: bold;
+    color: #d4af37;            /* 👑 Dourado para destacar o número do dado */
+}
+
+/* 📜 Alinha a segunda coluna (Descrição do Item) à esquerda */
+.tabela-manto td:last-child {
+    text-align: left;
+}
+
+/* ==========================================================================
+   Contêiner das Classes (Layout em 4 Colunas)
+   ========================================================================== */
+.container-classes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cria exatamente 4 colunas iguais */
+    gap: 15px;                             /* Espaçamento entre as caixas das classes */
+    align-items: start;                    /* Alinha o topo das caixas uniformemente */
+}
+
+/* ==========================================================================
+   Estilização dos Menus Sanfona (Details e Summary)
+   ========================================================================== */
+summary {
+    background-color: #4a4a4a; /* Tom de cinza médio para contrastar com o fundo */
+    color: #ffffff;            /* Texto branco para leitura clara */
+    border: 1px solid #d4af37; /* Borda fina em tom dourado */
+    padding: 10px;             /* Espaçamento interno para o botão respirar */
+    cursor: pointer;           /* Transforma a seta do mouse na mãozinha de clique */
+}
+
+summary:hover {
+    background-color: #666666; /* Tom de cinza mais claro ao passar o mouse */
+}
+
+details[open] {
+    border: 1px solid #d4af37; /* Mantém a borda dourada ao redor do bloco aberto */
+    background-color: #2b2b2b; /* Cinza mais escuro para o fundo do conteúdo */
+    padding: 15px;
+    margin-bottom: 10px;       /* Espaço decorativo antes da próxima sanfona */
+}
+
+details[open] summary {
+    border-bottom: none;       /* Remove a linha interna para evitar bordas duplas */
+}
+
+/* Configuração da tabela e ativação da rolagem VERTICAL */
+details[open] table {
+    display: block;
+    max-height: 200px;         /* Limita a altura para exibir cerca de 5 subclasses */
+    overflow-y: auto;          /* Ativa a rolagem vertical quando passa de 200px */
+    overflow-x: hidden;        /* Garante que não haverá rolagem horizontal estranha */
+    width: 100%;
+    border-collapse: collapse; /* Mantém as bordas unidas e organizadas */
+}
+
+/* Configuração do espaçamento interno das células da tabela */
+details[open] table th,
+details[open] table td {
+    padding: 8px 10px;         /* Garante que os textos não fiquem colados */
+    text-align: left;          /* Alinha o texto das subclasses à esquerda */
+}
+
+/* Cor padrão para todas as linhas do corpo da tabela */
+details[open] table tbody tr {
+    background-color: #1e1e1e; 
+}
+
+/* Cor alternada (efeito zebrado) para as linhas pares */
+details[open] table tbody tr:nth-child(even) {
+    background-color: #282828; 
+}
+
+/* ==========================================================================
+   Estilização dos Links das Subclasses
+   ========================================================================== */
+details[open] table tbody tr td a {
+    color: #d4af37;          /* Texto em dourado para combinar com o tema */
+    text-decoration: none;   /* Remove o sublinhado padrão */
+    font-weight: 500;        /* Deixa a fonte ligeiramente mais marcante */
+    transition: color 0.2s ease, text-decoration 0.2s ease; /* Transição suave */
+}
+
+/* Efeito ao passar o mouse (Hover) */
+details[open] table tbody tr td a:hover {
+    color: #f3cd57;          /* Um dourado mais claro e iluminado */
+    text-decoration: underline; /* O sublinhado aparece para indicar o clique */
+}
+
+/* Coloca as 3 tabelas lado a lado */
+.container-legendas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    align-items: start;
+    margin-bottom: 30px;
+}
+
+/* Estrutura visual das tabelas de legenda */
+.tabela-legenda {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #3d3d3d; /* Borda externa fina */
+}
+
+/* Espaçamento interno */
+.tabela-legenda th, 
+.tabela-legenda td {
+    padding: 8px 10px;
+    text-align: left;
+    font-size: 0.9em; /* Deixa a fonte ligeiramente menor para caber melhor */
+}
+
+/* Destaque dourado para os cabeçalhos */
+.tabela-legenda thead th {
+    background-color: #1a1a1a;
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
+}
+
+/* Fundo padrão e efeito zebrado para as linhas */
+.tabela-legenda tbody tr {
+    background-color: #1e1e1e;
+}
+.tabela-legenda tbody tr:nth-child(even) {
+    background-color: #282828;
+}
+
+/* ==========================================================================
+   Responsividade (Telas Menores / Celulares)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .container-classes {
+        grid-template-columns: 1fr; /* Muda de 4 colunas para 1 coluna */
+    }
+
+    .container-legendas {
+        grid-template-columns: 1fr; /* Muda de 3 colunas para 1 coluna */
+    }
+}
