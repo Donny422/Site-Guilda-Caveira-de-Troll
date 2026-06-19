@@ -3,24 +3,56 @@
    ========================================================================== */
 
 /* 🌍 O corpo inteiro do site */
+/* Atualização do fundo geral com o cinza-pedra do logo */
 body {
-    background-color: #3a3a3a; /* Cinza intermediário confortável */
-    color: #ffffff;            /* Mantém o texto em branco para contraste */
-    margin: 0;
-    padding: 20px;
+    background-color: #242528;
+    color: #ced4da; /* Branco fosco/cinza claro que reduz o brilho e o cansaço visual */
     font-family: sans-serif;
 }
 
-/* 👑 Os títulos principais */
-h1, h2, h3, h4 {
-    color: #d4af37;           /* Dourado para os títulos */
+/* Títulos principais com a cor de marfim das letras do logo */
+h1, h2, h3 {
+    color: #f1ebd9;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dá um relevo de pedra aos títulos */
+}
+
+/* Ajuste das Tabelas de Legenda e Subclasses */
+.tabela-legenda thead th {
+    background-color: #1a1b1d;
+    color: #f1ebd9; /* Título da tabela em osso envelhecido */
+    border-bottom: 2px solid #d11e1e; /* Linha divisória no vermelho escarlate */
+}
+
+.tabela-legenda tbody tr {
+    background-color: #2a2c30;
+}
+.tabela-legenda tbody tr:nth-child(even) {
+    background-color: #1a1b1d; /* Linhas alternadas bem escuras */
+}
+
+.tabela-legenda tbody td,
+details[open] table tbody td {
+    color: #c0c4c9; /* Um tom ligeiramente mais suave para os dados da tabela */
+}
+
+/* Links das Subclasses com o poder do Vermelho Escarlate */
+details[open] table tbody tr td a {
+    color: #e63946; /* Vermelho vivo dos olhos */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+details[open] table tbody tr td a:hover {
+    color: #ff5f6d; /* Vermelho brilhante/aceso ao passar o mouse */
+    text-decoration: underline;
 }
 
 /* ==========================================================================
    Logo da Guilda (Fixo no Canto Superior Direito)
    ========================================================================== */
 .logo-guilda {
-    position: fixed;   /* Fixa o elemento na tela do navegador */
+    position: absolute;
     top: 20px;         /* Distância do topo */
     right: 20px;       /* Distância da direita */
     width: 130px;       /* Define a largura do logo (ajuste se necessário) */
@@ -283,3 +315,1252 @@ details[open] table tbody tr td a:hover {
         grid-template-columns: 1fr; /* Muda de 3 colunas para 1 coluna */
     }
 }
+
+/* ==========================================================================
+   Estilização do Sistema de Karma
+   ========================================================================== */
+   .secao-karma {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px dashed #404040;
+    position: relative;
+}
+
+.introducao-karma {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+/* Grid para colocar Vilania e Gestão lado a lado */
+.grid-karma {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+/* Estilo padrão das caixas de texto de Karma */
+.card-karma {
+    background-color: #1a1b1d; /* Cinza escuro das sombras do logo */
+    padding: 20px;
+    border-radius: 4px;
+    border-left: 4px solid #d11e1e; /* Linha de detalhe vermelha */
+}
+
+.card-karma h3 {
+    margin-top: 0;
+    color: #f1ebd9; /* Cor de osso para títulos */
+}
+
+.card-karma ul, .bloco-redencao ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.card-karma li, .bloco-redencao li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Bloco de Redenção - Visual de Destaque Amplo */
+.bloco-redencao {
+    background-color: #1a1b1d;
+    padding: 22px;
+    border-radius: 4px;
+    border: 1px solid #404040;
+    border-top: 4px solid #f1ebd9; /* Destaque superior em osso para indicar a redenção */
+}
+
+.bloco-redencao h3 {
+    margin-top: 0;
+    color: #f1ebd9;
+}
+
+/* Espaçamento interno para as caixas de ação da staff dentro do bloco */
+.info-staff-box {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #242528; /* Fundo igual ao do site para dar contraste com o bloco */
+    border-radius: 4px;
+    font-size: 0.95em;
+}
+
+.info-staff-box p {
+    margin: 5px 0;
+}
+
+/* Caixa de aviso geral (Observação e Nota da Moderação) */
+.bloco-aviso-staff {
+    background-color: #1a1b1d;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    border-left: 4px solid #d11e1e; /* Destaque em vermelho */
+    color: #ced4da;
+}
+
+/* Força o card de Banimento a ter borda vermelha de perigo máximo */
+.card-regra.p-critica {
+    border-left-color: #d11e1e;
+}
+
+/* Garante que as tabelas dentro dos cards ocupem 100% do espaço */
+.card-regra table, .bloco-redencao table {
+    width: 100%;
+    margin: 15px 0;
+    border-collapse: collapse;
+}
+
+/* ==========================================================================
+   Estilização do Bazar Blackstaff
+   ========================================================================== */
+   .secao-bazar {
+    margin-bottom: 40px;
+}
+
+.introducao-bazar {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    font-style: italic;
+    color: #ced4da;
+}
+
+/* Moldura externa inspirada no contêiner da imagem do Homebrewery */
+.moldura-bazar {
+    background-color: #1a1b1d; /* Cinza escuro do logo */
+    border: 3px double #d11e1e; /* Borda dupla no vermelho escarlate */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo das caixas colapsáveis internos */
+.moldura-bazar details {
+    background-color: #242528; /* Inverte o fundo para destacar */
+    margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #404040;
+}
+
+.moldura-bazar details:last-child {
+    margin-bottom: 0;
+}
+
+/* Cabeçalho de cada categoria (summary) */
+.moldura-bazar summary {
+    background-color: #1a1b1d;
+    color: #f1ebd9; /* Cor de Marfim/Osso */
+    padding: 14px;
+    font-size: 1.15em;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.moldura-bazar summary:hover {
+    background-color: #2a2c30;
+    color: #e63946; /* Destaca em vermelho ao passar o mouse */
+}
+
+.moldura-bazar details[open] summary {
+    border-bottom: 2px solid #d11e1e; /* Linha divisória vermelha ativa */
+}
+
+/* Área interna após expandir */
+.conteudo-categoria {
+    padding: 20px;
+}
+
+.preco-item {
+    font-size: 1.05em;
+    color: #ced4da;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.lista-municao-obs {
+    margin-top: 5px;
+    padding-left: 20px;
+    color: #b0b5bb;
+    font-size: 0.95em;
+}
+
+/* Tabelas de Itens do Bazar */
+.tabela-bazar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tabela-bazar th {
+    text-align: left;
+    background-color: #1a1b1d;
+    color: #f1ebd9;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #404040;
+}
+
+.tabela-bazar td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #333;
+    color: #ced4da;
+}
+
+/* Alinhamento da coluna de Fontes para a direita (opcional, como no livro) */
+.tabela-bazar th:nth-child(2),
+.tabela-bazar td:nth-child(2) {
+    text-align: right;
+    font-weight: 500;
+}
+
+.tabela-bazar tbody tr:nth-child(even) {
+    background-color: #1c1d20; /* Linhas alternadas sutis */
+}
+
+/* Links vermelhos interativos para as armas no 5etools */
+.tabela-bazar td a {
+    color: #e63946;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.15s ease;
+}
+
+.tabela-bazar td a:hover {
+    color: #ff5f6d;
+    text-decoration: underline;
+}
+
+.obs-item {
+    font-size: 0.85em;
+    color: #b0b5bb;
+    margin-left: 8px;
+}
+
+/* --- ATIVIDADES --- */
+
+/* --- ESTILOS GERAIS --- */
+.dnd-container {
+    font-family: 'Georgia', serif;
+    color: inherit; /* Herda a cor de texto padrão do seu site */
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .dnd-container h1, 
+  .dnd-container h2, 
+  .dnd-container h3 {
+    color: #8a1a1b; /* Mantém o vermelho escuro nos títulos */
+    margin-top: 1.5em;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .content {
+    font-size: 15px;
+  }
+  
+  /* --- CAIXAS DE DESTAQUE --- */
+  .note-box {
+    background-color: transparent; /* Removido o fundo fixo para não dar conflito com a cor do site */
+    border-left: 5px solid #8a1a1b;
+    padding: 15px 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .note-box h5 {
+    margin-top: 0;
+    color: #8a1a1b;
+  }
+  
+  /* --- CÓDIGOS E DIVISORES --- */
+  .code-tag {
+    background-color: transparent; /* Removido o fundo fixo */
+    color: #d63384;
+    padding: 2px 6px;
+    border: 1px solid #ddd; /* Adicionada uma borda sutil no lugar do fundo */
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+  }
+  
+  .divider {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 40px 0;
+  }
+  
+  /* --- TABELAS --- */
+  .dnd-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .dnd-table th, 
+  .dnd-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dnd-table th {
+    border-bottom: 2px solid #8a1a1b;
+    color: #8a1a1b;
+    text-align: center;
+  }
+  
+  .dnd-table td {
+    text-align: center;
+  }
+  
+  .table-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .table-col {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  /* --- LINKS --- */
+  .profissoes-link {
+    text-decoration: none;
+    color: #8a1a1b;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .profissoes-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Estilos para a seção de Profissões */
+.profissoes {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Boxes informativas (fundo ciano claro) */
+.info-box {
+    background-color: #e0f7fa;
+    color: #222;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #00acc1;
+    margin: 15px 0;
+}
+
+/* Box de requisitos */
+.requisitos {
+    background-color: #333;
+    border: 1px solid #d11e1e;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Box de resultados (destaque) */
+.resultado-box {
+    background-color: #2a2a2a;
+    border: 2px solid #d11e1e;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.obs-alerta {
+    color: #d11e1e;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Tabela */
+.table-container {
+    overflow-x: auto;
+}
+
+.profissoes table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333;
+    color: #f1ebd9;
+    margin-top: 10px;
+}
+
+.profissoes th, .profissoes td {
+    padding: 12px;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+.profissoes th {
+    background-color: #d11e1e;
+    color: #fff;
+}
+
+.profissoes tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+/* Títulos e descrição */
+.page-title {
+    color: #660000;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.table-title {
+    background-color: #660000;
+    color: #f1ebd9;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Tabela Específica */
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 40px;
+}
+
+.ferreiro-page table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #242528;
+    color: #f1ebd9;
+    border: 1px solid #444;
+}
+
+.ferreiro-page th, .ferreiro-page td {
+    padding: 10px;
+    border: 1px solid #444;
+}
+
+/* Cabeçalhos de seção (Níveis) */
+.table-section th {
+    background-color: #444;
+    color: #d11e1e;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Cabeçalho principal */
+thead th {
+    background-color: #660000;
+    color: white;
+}
+
+.ferreiro-page tr:nth-child(even) {
+    background-color: #2e2f33;
+}
+/* Layout da grade para os cards de itens */
+.homebrew-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.item-card {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.item-card h3 {
+    color: #d11e1e;
+    margin-top: 0;
+}
+
+/* Caixa de Regras da Casa */
+.house-rules {
+    background-color: #1a2a2a; /* Azul escuro desaturado */
+    border: 2px solid #00acc1;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+/* Mantendo consistência com a página do Ferreiro */
+.alquimista-page { padding: 20px; max-width: 900px; margin: auto; }
+.page-title { color: #660000; text-align: center; font-size: 3em; }
+.table-title { background-color: #660000; color: #f1ebd9; padding: 10px; text-align: center; margin-top: 30px; }
+.table-container { overflow-x: auto; }
+.alquimista-page table { width: 100%; border-collapse: collapse; background-color: #242528; color: #f1ebd9; }
+.alquimista-page th, .alquimista-page td { padding: 10px; border: 1px solid #444; }
+.table-section th { background-color: #444; color: #d11e1e; text-align: center; font-weight: bold; }
+.alquimista-page thead th { background-color: #660000; color: white; }
+.alquimista-page tr:nth-child(even) { background-color: #2e2f33; }
+
+.homebrew-page {
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.item-grid {
+    display: grid;
+    /* Ajusta automaticamente a quantidade de colunas conforme o tamanho da tela */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.item-card {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-left: 5px solid #660000;
+    padding: 15px;
+    border-radius: 5px;
+    color: #f1ebd9;
+}
+
+.item-card h3 {
+    color: #d11e1e;
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.item-card p {
+    font-size: 0.9em;
+    margin-bottom: 8px;
+}
+
+.extra-info {
+    font-style: italic;
+    color: #b0b0b0;
+    font-size: 0.85em;
+    border-top: 1px solid #444;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+.house-rules {
+    background-color: #1a2a2a;
+    border: 2px solid #00acc1;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 5px;
+    color: #f1ebd9;
+}
+
+.house-rules {
+    background-color: #1a2a2a; /* Fundo escuro sutil */
+    border: 2px solid #00acc1; /* Borda destaque em ciano */
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 8px;
+    max-width: 900px;
+    color: #f1ebd9;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.house-rules h2 {
+    color: #00acc1;
+    text-align: center;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.house-rules h3 {
+    color: #f1ebd9;
+    border-bottom: 1px solid #00acc1;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.rules-content ul {
+    padding-left: 20px;
+}
+
+.rules-content li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Estilos Específicos da Página */
+.carpintaria-page {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.page-title {
+    color: #660000;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.table-title {
+    background-color: #660000;
+    color: #f1ebd9;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Estrutura da Tabela */
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 40px;
+}
+
+.carpintaria-page table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #242528;
+    color: #f1ebd9;
+    border: 1px solid #444;
+}
+
+.carpintaria-page th, .carpintaria-page td {
+    padding: 10px;
+    border: 1px solid #444;
+}
+
+/* Cabeçalhos de Seção */
+.table-section th {
+    background-color: #444;
+    color: #d11e1e;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Cabeçalho Principal */
+thead th {
+    background-color: #660000;
+    color: white;
+}
+
+/* Efeito Zebrado */
+.carpintaria-page tr:nth-child(even) {
+    background-color: #2e2f33;
+}
+
+/* Estilos Específicos da Página de Alfaiataria */
+.alfaiataria-page {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.alfaiataria-page table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #242528;
+    color: #f1ebd9;
+    border: 1px solid #444;
+}
+
+.alfaiataria-page th, .alfaiataria-page td {
+    padding: 10px;
+    border: 1px solid #444;
+}
+
+/* Cabeçalhos de Seção da Tabela */
+.table-section th {
+    background-color: #444;
+    color: #d11e1e; /* Vermelho padrão da Guilda */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Cabeçalho da Tabela Principal */
+.alfaiataria-page thead th {
+    background-color: #660000;
+    color: white;
+}
+
+/* Efeito Zebrado */
+.alfaiataria-page tr:nth-child(even) {
+    background-color: #2e2f33;
+}
+
+/* Estilos Específicos da Página de Vidraria */
+.vidraria-page {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.vidraria-page table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #242528;
+    color: #f1ebd9;
+    border: 1px solid #444;
+    margin-bottom: 20px;
+}
+
+.vidraria-page th, .vidraria-page td {
+    padding: 10px;
+    border: 1px solid #444;
+}
+
+/* Cabeçalhos de Seção da Tabela */
+.table-section th {
+    background-color: #444;
+    color: #d11e1e; /* Vermelho padrão da Guilda */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Cabeçalho da Tabela Principal */
+.vidraria-page thead th {
+    background-color: #660000;
+    color: white;
+}
+
+/* Efeito Zebrado nas linhas */
+.vidraria-page tr:nth-child(even) {
+    background-color: #2e2f33;
+}
+
+.maestria-page { padding: 20px; max-width: 900px; margin: auto; color: #f1ebd9; }
+.page-title { color: #660000; text-align: center; font-size: 2.5em; }
+
+/* Box de Aviso/Nota */
+.note-box {
+    border-left: 5px solid #d11e1e;
+    background-color: #2e2f33;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+/* Tabelas */
+.maestria-page table { width: 100%; border-collapse: collapse; background-color: #242528; margin-bottom: 20px; }
+.maestria-page th { background-color: #660000; color: white; padding: 10px; border: 1px solid #444; }
+.maestria-page td { padding: 8px; border: 1px solid #444; text-align: center; }
+
+/* Estilo para Preço e Exemplo */
+.price-notice { font-style: italic; font-size: 0.9em; color: #aaa; }
+.example-box { 
+    border: 1px dashed #660000; 
+    padding: 15px; 
+    margin-top: 20px; 
+    background-color: #1a1a1a;
+}
+
+.table-title { background-color: #660000; color: white; padding: 10px; text-align: center; }
+
+/* Estilos Específicos */
+.maestria-carpintaria { padding: 20px; max-width: 900px; margin: auto; }
+.specialization-box { border: 2px solid #660000; padding: 15px; margin: 20px 0; background: #1a1a1a; }
+
+/* Layout de Duas Colunas para a Tabela */
+.two-column-table { display: flex; gap: 20px; flex-wrap: wrap; }
+.two-column-table table { flex: 1; min-width: 300px; }
+
+/* Box Azul de Navios (Adaptação Dark Mode) */
+.navio-rules, .collab-rules { 
+    background-color: #0e2a2e; 
+    border-left: 5px solid #00acc1; 
+    padding: 15px; 
+    margin-top: 20px; 
+}
+
+/* Tabelas */
+.maestria-carpintaria table { width: 100%; border-collapse: collapse; background-color: #242528; }
+.maestria-carpintaria th { background-color: #660000; color: white; padding: 10px; border: 1px solid #444; }
+.maestria-carpintaria td { padding: 8px; border: 1px solid #444; text-align: center; }
+
+@media (max-width: 600px) {
+    .two-column-table { flex-direction: column; }
+}
+
+/* Box de Cyan (Adaptação para site dark mode) */
+.info-box-cyan {
+    background-color: #0e2a2e; /* Tom escuro baseado em lightcyan */
+    border: 1px solid #00acc1;
+    padding: 20px;
+    margin: 20px 0;
+    color: #e0f7fa;
+}
+
+.box-title { text-align: center; color: #00acc1; }
+
+.warning-box {
+    border: 2px solid #ffcc00;
+    background-color: #332b00;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.example-section { margin-top: 30px; border-top: 1px solid #444; padding-top: 20px; }
+
+.final-time { font-size: 1.2em; text-align: center; color: #d11e1e; }
+
+/* Estilo Específico da Forja */
+.forja-page { padding: 20px; max-width: 900px; margin: auto; color: #f1ebd9; }
+
+.specialization-box {
+    border: 2px solid #660000;
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.table-title {
+    background-color: #660000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* Tabelas */
+.forja-page table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #242528;
+    margin-bottom: 20px;
+}
+
+.forja-page th {
+    background-color: #660000;
+    color: white;
+    padding: 10px;
+    border: 1px solid #444;
+}
+
+.forja-page td {
+    padding: 8px;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+.forja-page tr:nth-child(even) {
+    background-color: #2e2f33;
+}
+
+/* Container Geral da Página */
+.alfaiataria-page { padding: 20px; max-width: 900px; margin: auto; color: #f1ebd9; }
+
+/* Box da Especialização */
+.specialization-box {
+    border: 2px solid #660000;
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+/* Estilo de Tabela "Frame" (Guilda Caveira de Troll) */
+.classTable {
+    border: 2px solid #660000;
+    padding: 10px;
+    background-color: #1a1b1d;
+    margin: 20px 0;
+}
+
+.classTable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.classTable th {
+    background-color: #660000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.classTable td {
+    padding: 8px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+.table-title {
+    background-color: #660000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* Container Geral da Página */
+.alquimia-page { 
+    padding: 20px; 
+    max-width: 900px; 
+    margin: auto; 
+    color: #f1ebd9; 
+}
+
+/* Box da Especialização (Padrão das Profissões) */
+.specialization-box {
+    border: 2px solid #660000;
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+/* Títulos para manter padrão visual */
+.page-title {
+    text-align: center;
+    color: #d11e1e;
+}
+
+/* Container da Página */
+.outras-profissoes-page { padding: 20px; max-width: 900px; margin: auto; color: #f1ebd9; }
+
+/* Box de Prestação de Serviços */
+.info-box-services {
+    border: 2px solid #660000;
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.info-box-services h3 {
+    margin-top: 0;
+    color: #660000;
+}
+
+/* Reuso da Tabela Padrão da Guilda */
+.classTable {
+    border: 2px solid #660000;
+    padding: 10px;
+    background-color: #1a1b1d;
+    margin: 20px 0;
+}
+
+.classTable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.classTable th {
+    background-color: #660000;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.classTable td {
+    padding: 8px;
+    border-bottom: 1px solid #333;
+}
+
+/* Container de Renda para telas largas */
+.income-tables-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.income-tables-container .classTable {
+    flex: 1;
+    min-width: 300px;
+}
+
+.highlight-box {
+    border: 1px solid #d4af37;
+    background-color: #2b2612;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+.discord-instruction {
+    background-color: #1a1b1d;
+    border-left: 4px solid #660000;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.section-subtitle {
+    color: #660000;
+    border-bottom: 1px solid #660000;
+    margin-top: 30px;
+}
+
+/* Layout da página de Magias */
+.magias-page {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    color: #f1ebd9;
+}
+
+.page-title {
+    text-align: center;
+    color: #660000;
+    border-bottom: 2px solid #660000;
+    margin-bottom: 30px;
+}
+
+/* Grid de 2 colunas */
+.spell-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* Espaçamento interno dos blocos de magia */
+.spell-box {
+    margin-bottom: 30px;
+}
+
+.spell-box h3 {
+    color: #660000;
+    margin-bottom: 5px;
+    font-size: 1.4em;
+    border-bottom: 1px solid #444;
+}
+
+.spell-type {
+    font-size: 1.1em;
+    font-style: italic;
+    margin-top: 0;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    .spell-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Caixa de Nota/Regra Especial */
+.dm-note-box {
+    background-color: #2b2612; /* Cor de papel envelhecido escuro */
+    border: 1px solid #d4af37; /* Dourado */
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    border-radius: 4px;
+}
+
+.dm-note-box h4 {
+    margin-top: 0;
+    color: #d4af37;
+    text-align: left;
+    border-bottom: 1px solid #d4af37;
+}
+
+/* Ajuste para a lista de Brinde de Fada */
+.spell-box ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.spell-box li {
+    margin-bottom: 5px;
+}
+
+/* Container do Grid de Magias */
+.spell-index-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.spell-col h5 {
+    color: #660000;
+    margin: 15px 0 5px 0;
+    border-bottom: 1px solid #660000;
+}
+
+.spell-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.spell-col li a {
+    color: #f1ebd9;
+    text-decoration: none;
+}
+
+.spell-col li a:hover {
+    color: #d4af37;
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .spell-index-grid {
+        grid-template-columns: 1fr; /* Empilha as colunas em telas pequenas */
+    }
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #660000;
+    margin-top: 30px;
+}
+
+/* Container Principal da Seção de Magias */
+.spell-section {
+    position: relative;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #1a1b1d; /* Fundo escuro padrão do manual */
+    color: #f1ebd9;
+    font-family: 'Georgia', serif;
+}
+
+/* Marca d'água da Guilda */
+.manual-watermark {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 500px;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Grid automático */
+.spells-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.spell-card {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.spell-card h3 {
+    color: #660000; /* Vermelho do manual */
+    font-size: 1.5em;
+    margin: 0 0 5px 0;
+}
+
+.spell-meta {
+    font-style: italic;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.spell-card p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin: 8px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .spells-grid { grid-template-columns: 1fr; }
+}
+
+/* Seção de Lore / Especial */
+.lore-section {
+    background-color: #1a1515; /* Fundo levemente avermelhado/escuro */
+    border: 1px solid #660000; /* Borda vermelha escura */
+    border-left: 5px solid #660000; /* Borda lateral grossa para dar peso */
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 800px;
+    color: #e0dcd9;
+    font-family: 'Georgia', serif;
+    position: relative;
+}
+
+.lore-section h1 {
+    color: #660000;
+    text-align: center;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.lore-section h2 {
+    color: #a30000;
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.lore-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Container Geral da Sanguimancia */
+.sanguimancia-container {
+    padding: 20px;
+    color: #f1ebd9;
+    font-family: 'Georgia', serif;
+}
+
+/* Grid para a Lista de Magias (2 colunas) */
+.magias-list-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Grid para a Tabela de Subclasses (2 tabelas lado a lado) */
+.magias-table-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Estilização da Tabela de Classes */
+.magias-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #2b2612;
+    border: 1px solid #660000;
+}
+
+.magias-table th, .magias-table td {
+    padding: 8px;
+    border: 1px solid #444;
+    font-size: 0.9em;
+}
+
+.magias-table th {
+    background-color: #660000;
+    color: white;
+}
+
+/* Links das Magias */
+.magias-list-grid a {
+    color: #f1ebd9;
+    text-decoration: none;
+}
+
+.magias-list-grid a:hover {
+    color: #d4af37;
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .magias-list-grid, .magias-table-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
