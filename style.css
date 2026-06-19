@@ -1564,3 +1564,72 @@ thead th {
     }
 }
 
+:root {
+    --bg-color: #242528;
+    --text-color: #ced4da;
+    --gold: #d4af37;
+    --red: #d11e1e;
+    --ivory: #f1ebd9;
+    --dark-grey: #1a1b1d;
+}
+
+/* Reset básico */
+* { box-sizing: border-box; }
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Tipografia */
+h1, h2, h3 { color: var(--ivory); }
+a { color: var(--gold); text-decoration: none; }
+
+/* Classes Utilitárias (Substituindo estilos inline) */
+.fs-16 { font-size: 16px; }
+.fs-20 { font-size: 20px; }
+.w-40 { width: 40%; }
+.text-center { text-align: center; }
+
+/* Estrutura */
+.wide {
+    width: 100%;
+    margin: 20px auto;
+}
+
+/* Tabelas Responsivas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid var(--gold);
+    text-align: left;
+}
+thead th {
+    background-color: var(--dark-grey);
+    color: var(--ivory);
+}
+
+/* Logo */
+.logo-guilda {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Classes Utilitárias */
+.fs-20 { font-size: 20px; }
+.fs-16 { font-size: 16px; }
+.fs-14 { font-size: 14px; }
+.text-center { text-align: center; }
+.w-40 { width: 40%; }
+
+/* Tabelas e elementos */
+.bg-beige { background-color: #e0d8c3; }
+.class-table { width: 100%; border-collapse: collapse; }
+
