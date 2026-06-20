@@ -1,0 +1,22 @@
+/* 💬 Estilo específico do botão do Discord */
+.header-welcome {
+    display: flex; /* Coloca os elementos um ao lado do outro */
+    align-items: center; /* Alinha o texto e o botão centralizados verticalmente */
+    gap: 20px; /* Espaço entre o título e o botão */
+    justify-content: center; /* Centraliza todo o conjunto na página */
+}
+
+.botao-discord {
+    background-color: #d4af37; /* Cor dourada */
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    white-space: nowrap; /* Impede que o texto do botão quebre em duas linhas */
+    transition: background 0.3s ease;
+}
+
+.botao-discord:hover {
+    background-color: #c5a030; /* Um tom mais escuro ao passar o mouse */
+}

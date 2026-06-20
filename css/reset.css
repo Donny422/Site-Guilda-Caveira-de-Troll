@@ -1,0 +1,38 @@
+/* 1. Reset básico de margens e box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box; /* Garante que padding não altere o tamanho real dos elementos */
+}
+
+/* 2. Remove estilos padrão de listas */
+ul, ol {
+    list-style: none;
+}
+
+/* 3. Ajustes de tipografia */
+body {
+    line-height: 1.5; /* Melhora a legibilidade do texto */
+    -webkit-font-smoothing: antialiased; /* Suaviza as fontes no navegador */
+}
+
+/* 4. Garante que imagens e vídeos sejam responsivos */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 5. Reseta campos de formulário para herdar a fonte do pai */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 6. Remove sublinhados de links e mantém o foco visual */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 7. Remove bordas padrão de tabelas (útil para o seu projeto) */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

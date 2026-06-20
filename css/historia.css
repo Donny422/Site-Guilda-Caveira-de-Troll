@@ -1,0 +1,9 @@
+.historia {
+    font-size: 2.5rem; /* Use 'rem' para melhor escalabilidade que 'vw' */
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.fundadores {
+    color:#ff953f;
+}
