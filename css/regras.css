@@ -1,0 +1,125 @@
+.conteiner h2 {
+    text-align: center;
+    color: #7a1d1d;
+}
+
+/* Container principal (Define a fonte serifada e cores da imagem) */
+  /* --- CAIXAS DE DESTAQUE --- */
+  .diretrizes {
+    background-color: rgba(179, 179, 179, 0.808);
+    border-left: 10px solid #8a1a1b;
+    padding: 15px 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.diretrizes:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+.diretrizes h2 {
+    text-align: center;
+    color: #7a1d1d;
+}
+
+.diretrizes ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 1px;
+}
+
+.diretrizes li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 14px;
+}
+
+.diretrizes li::before {
+    content: "♦"; 
+    position: absolute;
+    left: 5px;
+    top: 0;
+    color: #8a1a1b;
+    font-size: 0.9em;
+}
+
+.staff {
+    background-color: rgba(131, 83, 64, 0.479);
+    border-left: 10px solid #8a1a1b;
+    padding: 15px 20px;
+    margin: 20px;
+    margin-bottom: 1px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: left; 
+}
+
+.staff h2 {
+    text-align: center;
+    color: #7a1d1d;
+}
+
+.staff p {
+    text-align: left !important;
+    margin-bottom: 12px;
+}
+
+
+/* Container dos cards de Karma (Disposição em grid) */
+.grid-karma {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilização individual dos cards de Karma */
+.card-karma {
+    background-color: rgba(179, 179, 179, 0.808);
+    border: 1px solid #333;
+    border-left: 10px solid #8a1a1b;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Títulos internos dos cards de Karma */
+.card-karma h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+/* Listas internas dos cards de Karma */
+.card-karma ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.card-karma li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Bloco inferior de Redenção */
+.bloco-redencao {
+    background-color: rgba(25, 116, 25, 0.349);
+    border: 1px solid #333;
+    border-left: 10px solid #168846;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.bloco-redencao h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h1 {
+    text-align: center;
+}

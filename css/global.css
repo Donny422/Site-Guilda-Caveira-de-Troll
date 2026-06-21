@@ -1,28 +1,38 @@
-/* Importando outros arquivos */
-@import url('home.css'); /* Pagina Inicial */
-@import url('reset.css'); /* Pagina Inicial */
-@import url('historia.css'); /* Pagina Inicial */
-
-/* 🌍 Variáveis Globais (Facilita a troca de cores no futuro) */
-:root {
-    --bg-color: #303033;
-    --text-color: #ced4da;
-    --accent-gold: #d4af37;
-    --accent-green: #2ecc71;
-    --ivory: #f1ebd9;
-}
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: sans-serif;
-    margin: 20px;
-}
-
-h1, h2, h3 {
-    color: #c4c4c4;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
+/* ==========================================================================
+   📦 Importações (Ordem Corrigida: Reset primeiro!)
+   ========================================================================== */
+   @import url('reset.css');
+   @import url('home.css');
+   @import url('historia.css');
+   @import url('regras.css');
+   
+   /* 🌍 Variáveis Globais */
+   :root {
+       --bg-color: #303033;
+       --text-dark: #2b1d0e;
+       --accent-gold: #d4af37;
+       --accent-green: #2ecc71;
+       --ivory: #f1ebd9;
+       --wine-red: #7a1d1d;
+   }
+   
+   body {
+       margin: 0;
+       font-family: Georgia, serif;
+       background: 
+         linear-gradient(rgba(255, 250, 236, 0.92), rgba(151, 150, 148, 0.92)),
+         url(https://i.imgur.com/OJJnoaL.png);
+       background-size: cover;
+       background-attachment: fixed;
+       color: var(--text-dark);
+       line-height: 1.5;
+       font-size: medium;
+   }
+   
+   h1, h2, h3 {
+       color: #000000;
+       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+   }
 
 /* ==========================================================================
    🧭 Cabeçalho (Otimizado)
@@ -32,9 +42,11 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    border-bottom: 2px solid var(--accent-gold);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative; /* O logo ficará contido aqui */
+    background: rgba(20,20,20,.9);
+    border-bottom: 4px solid #7a1d1d;
+    justify-content:space-between;
 }
 
 .titulo-principal {
@@ -46,7 +58,7 @@ header {
 
 .logo-guilda {
     position: absolute;
-    top: 20px;
+    top: 10px;
     right: 20px;
     width: 120px;
     height: auto;
@@ -59,32 +71,75 @@ header {
     opacity: 1;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    gap: 15px;
-    flex-wrap: wrap; /* Permite que os links pulem linha se a tela for muito pequena */
+.nav ul {
+    list-style:none;
+    display:flex;
+    gap:18px;
+    margin:0;
+    padding:0;
 }
 
-nav a {
-    color: var(--accent-green);
+.nav a {
+    text-decoration:none;
+    color:#f3e7c3;
+    padding:10px 14px;
+    border-radius:20px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.nav a:hover{
+    background:#7a1d1d;
+}
+
+/* ============ 🧭 Script =============== */
+
+.menu-item {
+    display: block;
     text-decoration: none;
+    color: var(--ivory);
+    padding: 15px 25px;
     font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 5px;
-    display: center;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.2;
-    width: 125px;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
-nav a:hover {
+.menu-item:hover {
     color: var(--accent-gold);
-    background-color: rgba(212, 175, 55, 0.1);
-    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.container{
+    max-width: 1100px;
+    width: 95%;
+    margin: 0 auto;
+    background:rgba(255,248,220,.82);
+    padding: 20px 10px;
+    border:4px solid #8b6b3f;
+    border-radius:12px;
+    box-shadow:0 0 25px rgba(0,0,0,.35);
+}
+
+/* Garante que as seções e divs dentro do container ocupem quase todo o espaço, mas com um respiro */
+.container section,
+.container div {
+    width: 96%;          /* Ocupa 96% da largura, deixando 2% de borda livre de cada lado */
+    max-width: none;
+    padding: 0;
+    margin: 10px auto;   /* O 'auto' centraliza o bloco perfeitamente dentro do container */
+}
+
+/* Força os parágrafos a esticarem respeitando a pequena margem e centralizarem o texto */
+.container p {
+    width: 96%;          /* Acompanha a mesma largura para alinhar com os blocos */
+    max-width: none;   
+    text-align: center;  /* Centraliza o texto */
+    margin: 0 auto 20px auto; /* Centraliza o bloco do parágrafo e joga 20px de espaço para o de baixo */
+}
+
+/* Garante que os títulos também acompanhem o mesmo alinhamento sutil */
+.container h1, h2, h3{
+    width: 96%;
+    max-width: none;
+    text-align: center;
+    margin: 20px auto 15px auto; /* Centraliza horizontalmente */
 }

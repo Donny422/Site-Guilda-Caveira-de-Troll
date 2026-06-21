@@ -1,9 +1,12 @@
-/* 💬 Estilo específico do botão do Discord */
+/* 💬 Estilo específico da Página Inicial (Home) */
+
 .header-welcome {
-    display: flex; /* Coloca os elementos um ao lado do outro */
-    align-items: center; /* Alinha o texto e o botão centralizados verticalmente */
-    gap: 20px; /* Espaço entre o título e o botão */
-    justify-content: center; /* Centraliza todo o conjunto na página */
+    display: flex;
+    flex-direction: column; /* Altera o alinhamento para vertical (um embaixo do outro) */
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 5px;
 }
 
 .botao-discord {
@@ -13,10 +16,25 @@
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    white-space: nowrap; /* Impede que o texto do botão quebre em duas linhas */
+    white-space: nowrap;
     transition: background 0.3s ease;
+    align-items: center;
 }
 
 .botao-discord:hover {
-    background-color: #c5a030; /* Um tom mais escuro ao passar o mouse */
+    background-color: #c5a030;
+}
+
+/* Estilização das seções de conteúdo da página inicial */
+main section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main h3 {
+    margin-top: 25px;
+    color: #7a1d1d; /* Vermelho vinho para os subtítulos internos no fundo claro */
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 5px;
 }
