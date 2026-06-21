@@ -2,24 +2,34 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>História - Guilda Caveira de Troll</title>
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
-    <img src="https://i.imgur.com/OJJnoaL.png" alt="Logo da Guilda" class="logo-guilda">
 <header>
-    <h1 class="titulo-principal">Guilda Caveira de Troll</h1>
-<nav>
-    <a href="index.html">Início</a> 
-    <a href="regras.html">Regras</a>
-    <a href="ficha.html">Criação de Ficha</a>
-    <a href="homebrew.html">Homebrew</a>
-    <a href="bazar.html">Bazar Blackstaff</a>
-    <a href="magias.html">Magias e Sanguimancia</a>
-    <a href="atividades.html">Atividades</a>
-</nav>
-    </header>
+    <div style="display:flex;align-items:center;gap:15px;">
+        <button id="menuBtn" style="background:none;border:none;color:#f3e7c3;font-size:32px;cursor:pointer;">☰</button>
+        <div class="logo">
+            <img src="https://i.imgur.com/OJJnoaL.png" alt="Logo da Guilda" class="logo-guilda">
+            <h1 class="titulo-principal">Guilda Caveira de Troll</h1>
+        </div>
+    </div>
 
+<!-- Menu -->
+    <div id="sideMenu" style="position:fixed;top:0;left:-320px;width:300px;height:100%;background:#161616;transition:.3s;padding-top:80px;z-index:1000;border-right:3px solid #7a1d1d;">
+
+        <a class="menu-item" href="index.html">🏠 Home</a>
+        <a class="menu-item" href="regras.html">📜 Regras</a>
+        <a class="menu-item" href="historia.html">📖 História</a>
+        <a class="menu-item" href="ficha.html">🧙 Criação de Ficha</a>
+        <a class="menu-item" href="homebrew.html">⚒️ Homebrew</a>
+        <a class="menu-item" href="bazar.html">🏪 Bazar Blackstaff</a>
+        <a class="menu-item" href="magias.html">✨ Magias Homebrew</a>
+        <a class="menu-item" href="atividades.html">🎲 Atividades</a>
+
+    </div>
+</header>
     <main>
         <div class="container">
             <h1 class="historia">História da Guilda Caveira de Troll</h1>
@@ -91,5 +101,27 @@
             </section>
         </div>
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            const btn = document.getElementById('menuBtn');
+            const menu = document.getElementById('sideMenu');
+            let open = false;
+        
+            btn.addEventListener('click', function(e){
+                e.stopPropagation();
+                open = !open;
+                // Corrigido: agora ele vai totalmente para fora da tela (320px para a esquerda)
+                menu.style.left = open ? '0px' : '-320px';
+            });
+    
+            // Fecha o menu automaticamente se o jogador clicar em qualquer outro lugar da página
+            document.addEventListener('click', function(e) {
+                if (open && !menu.contains(e.target) && e.target !== btn) {
+                    open = false;
+                    menu.style.left = '-320px';
+                }
+            });
+        });
+    </script>
 </body>
 </html>

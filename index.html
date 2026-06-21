@@ -2,30 +2,43 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Inicial - Guilda Caveira de Troll</title>
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
-    <img src="https://i.imgur.com/OJJnoaL.png" alt="Logo da Guilda" class="logo-guilda">
 <header>
-    <h1 class="titulo-principal">Guilda Caveira de Troll</h1>
-<nav>
-    <a href="regras.html">Regras</a>
-    <a href="historia.html">História</a>
-    <a href="ficha.html">Criação de Ficha</a>
-    <a href="homebrew.html">Homebrew</a>
-    <a href="bazar.html">Bazar Blackstaff</a>
-    <a href="magias.html">Magias Homebrew</a>
-    <a href="atividades.html">Atividades</a>
-</nav>
-</header>
+    <div style="display:flex;align-items:center;gap:15px;">
+        <button id="menuBtn" style="background:none;border:none;color:#f3e7c3;font-size:32px;cursor:pointer;">☰</button>
+        <div class="logo">
+            <img src="https://i.imgur.com/OJJnoaL.png" alt="Logo da Guilda" class="logo-guilda">
+            <h1 class="titulo-principal">Guilda Caveira de Troll</h1>
+        </div>
+    </div>
 
+<!-- Menu -->
+    <div id="sideMenu" style="position:fixed;top:0;left:-320px;width:300px;height:100%;background:#161616;transition:.3s;padding-top:80px;z-index:1000;border-right:3px solid #7a1d1d;">
+
+        <a class="menu-item" href="index.html">🏠 Home</a>
+        <a class="menu-item" href="regras.html">📜 Regras</a>
+        <a class="menu-item" href="historia.html">📖 História</a>
+        <a class="menu-item" href="ficha.html">🧙 Criação de Ficha</a>
+        <a class="menu-item" href="homebrew.html">⚒️ Homebrew</a>
+        <a class="menu-item" href="bazar.html">🏪 Bazar Blackstaff</a>
+        <a class="menu-item" href="magias.html">✨ Magias Homebrew</a>
+        <a class="menu-item" href="atividades.html">🎲 Atividades</a>
+
+    </div>
+</header>
 <main>
+    <div class="container">
     <section>
         <div class="header-welcome">
-        <h2>Bem-vindo à Guilda Caveira de Troll!</h2>
-        <a href="https://discord.gg/KCP3ZkHUvV" class="botao-discord">⚔️ Entrar na Guilda</a>
+            <h1><strong>Bem Vindo à Guilda Caveira de Troll!</strong></h1>
+            <a href="https://discord.gg/KCP3ZkHUvV" class="botao-discord">⚔️ Entrar na Guilda</a>
         </div>
+        <h3>Criação do Servidor</h3>
+        <p>O servidor foi fundado no dia <strong>29/07/2025</strong></p>
         <p>A Guilda Caveira de Troll nasceu para suprir um desejo simples: curtir ao máximo e criar aventuras inesquecíveis em grupo!<br>
             Por isso escolhemos um sistema de RPG querido por muitos, o D&D, combinado com a popular dinâmica das Guildas de Aventureiros, unindo diversão e uma jornada épica inesquecível.</p>
         
@@ -40,6 +53,29 @@
         <p>Nossas sessões são guiadas por mestres que criam aventuras exclusivas e originais.<br>
             Embora nossa narrativa seja autoral, ela pode ocasionalmente se basear ou se inspirar em campanhas oficiais, oferecendo a você o melhor de dois mundos: uma história personalizada e o rico universo de D&D.</p>
     </section>
+</div>
 </main>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        const btn = document.getElementById('menuBtn');
+        const menu = document.getElementById('sideMenu');
+        let open = false;
+    
+        btn.addEventListener('click', function(e){
+            e.stopPropagation();
+            open = !open;
+            // Corrigido: agora ele vai totalmente para fora da tela (320px para a esquerda)
+            menu.style.left = open ? '0px' : '-320px';
+        });
+
+        // Fecha o menu automaticamente se o jogador clicar em qualquer outro lugar da página
+        document.addEventListener('click', function(e) {
+            if (open && !menu.contains(e.target) && e.target !== btn) {
+                open = false;
+                menu.style.left = '-320px';
+            }
+        });
+    });
+</script>
 </body>
 </html>

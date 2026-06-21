@@ -2,238 +2,152 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regras - Guilda Caveira de Troll</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
-    <img src="https://i.imgur.com/OJJnoaL.png" alt="Logo da Guilda" class="logo-guilda">
 <header>
-        <h1>Guilda Caveira de Troll</h1>
-<nav>
-    <a href="index.html">Início</a>
-    <a href="historia.html">História</a>
-    <a href="ficha.html">Criação de Ficha</a>
-    <a href="homebrew.html">Homebrew</a>
-    <a href="bazar.html">Bazar Blackstaff</a>
-    <a href="magias.html">Magias e Sanguimancia</a>
-    <a href="atividades.html">Atividades</a>
-</nav>
-    </header>
+    <div style="display:flex;align-items:center;gap:15px;">
+        <button id="menuBtn" style="background:none;border:none;color:#f3e7c3;font-size:32px;cursor:pointer;">☰</button>
+        <div class="logo">
+            <img src="https://i.imgur.com/OJJnoaL.png" alt="Logo da Guilda" class="logo-guilda">
+            <h1 class="titulo-principal">Guilda Caveira de Troll</h1>
+        </div>
+    </div>
+
+<!-- Menu -->
+    <div id="sideMenu" style="position:fixed;top:0;left:-320px;width:300px;height:100%;background:#161616;transition:.3s;padding-top:80px;z-index:1000;border-right:3px solid #7a1d1d;">
+
+        <a class="menu-item" href="index.html">🏠 Home</a>
+        <a class="menu-item" href="regras.html">📜 Regras</a>
+        <a class="menu-item" href="historia.html">📖 História</a>
+        <a class="menu-item" href="ficha.html">🧙 Criação de Ficha</a>
+        <a class="menu-item" href="homebrew.html">⚒️ Homebrew</a>
+        <a class="menu-item" href="bazar.html">🏪 Bazar Blackstaff</a>
+        <a class="menu-item" href="magias.html">✨ Magias Homebrew</a>
+        <a class="menu-item" href="atividades.html">🎲 Atividades</a>
+
+    </div>
+</header>
 
     <main>
-        <!-- SEÇÃO 1: DIRETRIZES GERAIS -->
+        <div class="container">
         <section>
-            <h2>Diretrizes de Convivência da Taverna</h2>
+            <h1>Diretrizes de Convivência da Taverna</h1>
             <p>Para garantir que a guilda seja um ambiente seguro e divertido para todos os aventureiros, siga nossas normas de conduta:</p>
             
             <ul>
                 <li><strong>Respeito em Primeiro Lugar:</strong> Não será tolerated nenhum tipo de preconceito, discriminação ou assédio. Trate todos os heróis com respeito.</li>
-                <li><strong>Canais Corretos:</strong> Utilize os canais do Discord adequados para cada assunto (use a taverna para conversas gerais e o mural para marcar missões).</li>
+                <li><strong>Canais Corretos:</strong> Utilize os canais do Discord adequados para cada assunto (use o <em>papo-furado</em> para conversas gerais).</li>
                 <li><strong>Política Anti-Spoiler:</strong> Respeite a jornada dos outros jogadores. Não revele segredos, monstros ou tramas de missões em canais públicos.</li>
             </ul>
-        </section>
-
-        <!-- 📜 Seção: Sistema de Diretrizes e Punições da Guilda -->
-<section class="secao-regras-principais">
-    <h2>⚔️ Sistema de Diretrizes e Punições da Guilda</h2>
-    <p class="introducao-regras">Nosso objetivo é manter um ambiente divertido e seguro para todos. Para garantir que as regras sejam seguidas, utilizamos um sistema de 3 níveis de advertência antes do banimento definitivo.</p>
+    <h1><strong>⚔️ Sistema de Diretrizes e Punições da Guilda</strong></h1>
+    <p>Nosso objetivo é manter um ambiente divertido e seguro para todos. Para garantir que as regras sejam seguidas, utilizamos um sistema de 3 níveis de advertência antes do banimento definitivo.</p>
     
-    <!-- Caixa de Observação Importante da Staff -->
-    <div class="bloco-aviso-staff">
+    <div>
         <strong>⚠️ Observação Importante:</strong> A Staff reserva-se o direito de pular etapas deste sistema dependendo da gravidade da infração.
     </div>
 
-    <div class="grid-regras">
-        
-        <!-- ==================== BLOCO: NÍVEL 1 ==================== -->
-        <div class="card-regra">
-            <h3>🟢 Nível 1: Orientação Verbal (Aviso)</h3>
+    <div>
+            <h2>🟢 Nível 1: Orientação Verbal (Aviso)</h2>
             <p>Este nível é aplicado a infrações leves, primárias ou erros administrativos. O objetivo aqui não é punir, mas sim orientar o jogador sobre as regras do servidor para evitar reincidência.</p>
-
-            <table class="tabela-legenda">
-                <thead>
-                    <tr>
-                        <th>Gatilho</th>
-                        <th>Descrição do Gatilho</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Metagame Leve</strong></td>
-                        <td>Pequenos deslizes de metagame durante a sessão que não quebraram a narrativa drasticamente, mas precisam ser pontuados.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Ficha Desatualizada</strong></td>
-                        <td>Não manter a ficha e o cartão atualizados após ser lembrado pelos mestres.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Contas Secundárias</strong></td>
-                        <td>Esquecer de avisar a staff sobre o uso de contas secundárias para microfone.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Linguagem Inadequada (Leve)</strong></td>
-                        <td>Uso de palavrões excessivos fora de contexto ou comentários levemente ácidos sem intenção direta de ofender.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Intrigas Iniciais</strong></td>
-                        <td>Início de discussões públicas que poderiam ser resolvidas no privado com um mestre.</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="info-staff-box">
+            <div class="diretrizes">
+                    <h3>⚠️ Gatilhos e Descrições</h3>
+                    <ul>
+                        <li><strong>Metagame Leve:</strong> Pequenos deslizes de metagame durante a sessão que não quebraram a narrativa drasticamente, mas precisam ser pontuados.</li>
+                        <li><strong>Ficha Desatualizada:</strong> Não manter a ficha e o cartão atualizados após ser lembrado pelos mestres.</li>
+                        <li><strong>Contas Secundárias:</strong> Esquecer de avisar a staff sobre o uso de contas secundárias para microfone.</li>
+                        <li><strong>Linguagem Inadequada (Leve):</strong> Uso de palavrões excessivos fora de contexto ou comentários levemente ácidos sem intenção direta de ofender.</li>
+                        <li><strong>Intrigas Iniciais:</strong> Início de discussões públicas que poderiam ser resolvidas no privado com um mestre.</li>
+                    </ul>
+                </div>
+            <div class="staff">
                 <p><strong>📣 Ação da Staff:</strong> Um membro da Staff chamará o jogador no privado (DM) para conversar, explicar qual regra foi infringida e pedir que não se repita.</p>
                 <p><strong>📁 Registro:</strong> A conversa é registrada internamente pela Staff apenas para controle, mas não conta como uma "mancha" permanente na ficha do membro se não houver reincidência.</p>
             </div>
-        </div>
 
-        <!-- ==================== BLOCO: NÍVEL 2 ==================== -->
-        <div class="card-regra">
-            <h3>🟡 Nível 2: Advertência Formal (Strike)</h3>
+            <div>
+                <h2>🟡 Nível 2: Advertência Formal (Strike)</h2>
             <p>Aplicado quando o membro reincide em comportamentos do Nível 1 após ser orientado, ou comete uma infração de gravidade moderada que atrapalha o bom andamento do servidor ou das sessões.</p>
 
-            <table class="tabela-legenda">
-                <thead>
-                    <tr>
-                        <th>Gatilho</th>
-                        <th>Descrição do Gatilho</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Reincidência</strong></td>
-                        <td>Repetir infrações de Nível 1 após ter recebido orientação.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Metagame Persistente</strong></td>
-                        <td>Continuar praticando metagame mesmo sabendo que prejudica a diversão alheia.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>RP Adulto Excessivo (Texto)</strong></td>
-                        <td>Detalhar demais cenas de conteúdo adulto em texto ou ultrapassar os limites do bom senso durante o RP, mesmo sem uso de imagens.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Desrespeito Moderado</strong></td>
-                        <td>Xingar outros membros ou iniciar brigas mais acaloradas no chat (violação da regra de evitar intrigas e cuidar do jeito de falar).</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Desafiar a Staff</strong></td>
-                        <td>Ignorar deliberadamente instruções diretas de mestres ou moderadores.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Fronteira de Discriminação</strong></td>
-                        <td>Comentários que beiram o preconceito (machismo, racismo, etc.), onde a intenção não ficou 100% clara, mas gerou desconforto óbvio (o benefício da dúvida é dado apenas uma vez).</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="diretrizes">
+                <h3>⚠️ Gatilhos e Descrições (Nível 2)</h3>
+                <ul>
+                    <li><strong>Reincidência:</strong> Repetir infrações de Nível 1 após ter recebido orientação.</li>
+                    <li><strong>Metagame Persistente:</strong> Continuar praticando metagame mesmo sabendo que prejudica a diversão alheia.</li>
+                    <li><strong>RP Adulto Excessivo (Texto):</strong> Detalhar demais cenas de conteúdo adulto em texto ou ultrapassar os limites do bom senso durante o RP, mesmo sem uso de imagens.</li>
+                    <li><strong>Desrespeito Moderado:</strong> Xingar outros membros ou iniciar brigas mais acaloradas no chat (violação da regra de evitar intrigas e cuidar do jeito de falar).</li>
+                    <li><strong>Desafiar a Staff:</strong> Ignorar deliberadamente instruções diretas de mestres ou moderadores.</li>
+                    <li><strong>Fronteira de Discriminação:</strong> Comentários que beiram o preconceito (machismo, racismo, etc.), onde a intenção não ficou 100% clara, mas gerou desconforto óbvio (o benefício da dúvida é dado apenas uma vez).</li>
+                </ul>
+            </div>
 
-            <div class="info-staff-box">
-                <p><strong>📣 Ação da Staff:</strong> O membro receberá uma mensagem formal notificando a advertência e o motivo no canal <strong>#punições</strong>. Dependendo do caso, pode ser aplicado um “mute” temporário (24 horas) nos canais de texto/voz para “esfriar a cabeça”.</p>
-                <p><strong>📁 Registro:</strong> Esta advertência é registrada formalmente no histórico do membro e ele ficará com o cargo <code>@Advertido</code> durante 3 meses.</p>
+            <div class="staff">
+                <p><strong>📣 Ação da Staff:</strong> O membro receberá uma mensagem formal notificando a advertência e o motivo no canal <strong>#👎┃punições</strong>. Dependendo do caso, pode ser aplicado um “mute” temporário (24 horas) nos canais de texto/voz para “esfriar a cabeça”.</p>
+                <p><strong>📁 Registro:</strong> Esta advertência é registrada formalmente no histórico do membro e ele ficará com o cargo <strong><em>@Advertido</em></strong> durante 3 meses.</p>
             </div>
         </div>
 
-        <!-- ==================== BLOCO: NÍVEL 3 ==================== -->
-        <div class="card-regra">
-            <h3>🟠 Nível 3: Advertência Final e Suspensão</h3>
+        <div>
+            <h2>🟠 Nível 3: Advertência Final e Suspensão</h2>
             <p>Este é o último aviso. É aplicado a membros que acumularam advertências de Nível 2 ou cometeram uma infração grave que quase resultou em banimento. O membro demonstra pouca vontade de se adequar às regras da comunidade.</p>
 
-            <table class="tabela-legenda">
-                <thead>
-                    <tr>
-                        <th>Gatilho</th>
-                        <th>Descrição do Gatilho</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Acúmulo de Advertências</strong></td>
-                        <td>Receber 2 advertências de Nível 2 em um período de 1 mês ou 5 de nível 1 em 6 meses.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Toxicidade</strong></td>
-                        <td>Comportamento tóxico recorrente, criando um ambiente hostil para outros jogadores.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Insultos Graves</strong></td>
-                        <td>Ofensas diretas e pesadas a outros membros ou à Staff.</td>
-                    </tr>
-                </tbody>
-            </table>
+                <div class="diretrizes">
+                    <h3>⚠️ Gatilhos e Descrições (Nível 3)</h3>
+                    <ul>
+                        <li><strong>Acúmulo de Advertências:</strong> Receber 2 advertências de Nível 2 em um período de 1 mês ou 5 de nível 1 em 6 meses.</li>
+                        <li><strong>Toxicidade:</strong> Comportamento tóxico recorrente, criando um ambiente hostil para outros jogadores.</li>
+                        <li><strong>Insultos Graves:</strong> Ofensas diretas e pesadas a outros membros ou à Staff.</li>
+                    </ul>
+                </div>
 
-            <div class="info-staff-box">
+                <div class="staff">
                 <p><strong>📣 Ação da Staff:</strong> O membro será notificado de que está a um passo do banimento no canal <strong>#punições</strong>. Será aplicada uma suspensão de participar de qualquer mesa/sessão por um período determinado (de 1 semana a 1 mês).</p>
-                <p><strong>📁 Registro:</strong> O membro fica marcado com o cargo <code>@Advertido</code> durante 6 meses. Qualquer deslize subsequente resultará em banimento.</p>
+                <p><strong>📁 Registro:</strong> O membro fica marcado com o cargo <strong><em>@Advertido</em></strong> durante 6 meses. Qualquer deslize subsequente resultará em banimento.</p>
             </div>
         </div>
 
-        <!-- ==================== BLOCO: BANIMENTO ==================== -->
-        <div class="card-regra p-critica">
-            <h3>🔴 Banimento Definitivo (Ban)</h3>
+        <div>
+            <h2>🔴 Banimento Definitivo (Ban)</h2>
             <p>A remoção permanente do servidor. Ocorre quando o sistema de advertências se esgota ou em casos de extrema gravidade que não toleram segunda chance.</p>
 
-            <table class="tabela-legenda">
-                <thead>
-                    <tr>
-                        <th>Gatilho</th>
-                        <th>Descrição do Gatilho</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Esgotamento do Sistema</strong></td>
-                        <td>Cometer qualquer infração após ter recebido uma Advertência de Nível 3.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Ataques à Comunidade</strong></td>
-                        <td>Tentar prejudicar o servidor intencionalmente (raids, apagar conteúdo se tiver permissão, etc.).</td>
-                    </tr>
-                </tbody>
-            </table>
+                <div class="diretrizes">
+                    <h4>⚠️ Gatilhos e Descrições (Nível Máximo / Crítico)</h4>
+                    <ul>
+                        <li><strong>Esgotamento do Sistema:</strong> Cometer qualquer infração após ter recebido uma Advertência de Nível 3.</li>
+                        <li><strong>Ataques à Comunidade:</strong> Tentar prejudicar o servidor intencionalmente (raids, apagar conteúdo se tiver permissão, etc.).</li>
+                    </ul>
+                </div>
 
-            <div class="info-staff-box">
-                <p><strong>📣 Ação da Staff:</strong> O membro é banido permanentemente do servidor do Discord e perde o acesso a qualquer plataforma associada (como Roll20) e benefícios de apoiador. O banimento e o motivo serão informados publicamente no canal <strong>#punições</strong>.</p>
+                <div class="staff">
+                <p><strong>📣 Ação da Staff:</strong> O membro é banido permanentemente do servidor do Discord e perde o acesso a qualquer plataforma associada (como Roll20) e <strong>benefícios de apoiador</strong>. O banimento e o motivo serão informados publicamente no canal <strong>#punições</strong>.</p>
             </div>
         </div>
-
-    </div>
-
-    <!-- ==================== BLOCO EXTRA: CASOS ESPECIAIS ==================== -->
-    <div class="bloco-redencao">
-        <h3>🚨 Casos Especiais</h3>
+        <div>
+        <h2>🚨 Casos Especiais</h2>
         <p>Estas infrações são tratadas com extrema seriedade. A punição pode ir de um aviso simples a um banimento direto e imediato, dependendo do teor e do impacto do conteúdo.</p>
 
-        <table class="tabela-legenda">
-            <thead>
-                <tr>
-                    <th>Gatilho</th>
-                    <th>Descrição do Gatilho</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Discriminação e Discurso de Ódio</strong></td>
-                    <td>Fazer comentários machistas, racistas, homofóbicos, transfóbicos ou qualquer outro tipo de discriminação e ataque a minorias.</td>
-                </tr>
-                <tr>
-                    <td><strong>Conteúdo Visual Impróprio</strong></td>
-                    <td>Postar imagens contendo conteúdo sexual explícito, gore, pornográfico ou de extrema violência.</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="diretrizes">
+            <h3>⚠️ Gatilhos e Descrições (Infrações Gravíssimas)</h3>
+            <ul>
+                <li><strong>Discriminação e Discurso de Ódio:</strong> Fazer comentários machistas, racistas, homofóbicos, transfóbicos ou qualquer outro tipo de discriminação e ataque a minorias.</li>
+                <li><strong>Conteúdo Visual Impróprio:</strong> Postar imagens contendo conteúdo sexual explícito, gore, pornográfico ou de extrema violência.</li>
+            </ul>
+        </div>
+
+    <div class="staff">
+        <p><strong>📜 Nota da Moderação:</strong> Vale lembrar que esses não são os únicos motivos que podem gerar uma punição. Os jogadores estão sempre sendo observados pelos mestres e podem ser penalizados por outras infrações não descritas aqui. Caso isso ocorra, a nova infração será avaliada e adicionada a esta lista.</p>
+    </div>
+    </div>
     </div>
 
-    <!-- Nota da Moderação de Rodapé -->
-    <div class="bloco-aviso-staff" style="margin-top: 25px; border-left-color: #404040;">
-        <strong>📜 Nota da Moderação:</strong> Vale lembrar que esses não são os únicos motivos que podem gerar uma punição. Os jogadores estão sempre sendo observados pelos mestres e podem ser penalizados por outras infrações não descritas aqui. Caso isso ocorra, a nova infração será avaliada e adicionada a esta lista.
-    </div>
-</section>
-        <section class="secao-karma">
+        <div class="container">
             <h2>🔮 Sistema de Karma</h2>
             <p class="introducao-karma">Este é um sistema de monitoramento interno conduzido pelos Mestres para medir a corrupção da alma dos aventureiros.</p>
         
             <div class="grid-karma">
-                <div class="card-karma vilania">
+                <div class="card-karma">
                     <h3>💀 A Senda da Vilania</h3>
                     <ul>
                         <li><strong>Limite de Maldade:</strong> Ao acumular 5 pontos de maldade, o personagem tem seu alinhamento alterado para Mau e torna-se automaticamente um NPC (sob controle do Mestre).</li>
@@ -241,7 +155,7 @@
                     </ul>
                 </div>
         
-                <div class="card-karma gestao">
+                <div class="card-karma">
                     <h3>👁️ Gestão de Pontos (Secreta)</h3>
                     <ul>
                         <li><strong>Ocultismo:</strong> Os jogadores não sabem o valor exato de seus pontos. O controle é feito puramente pelos Mestres.</li>
@@ -257,8 +171,30 @@
                     <li><strong>Anulação:</strong> São necessários 2 pontos de redenção para anular 1 ponto de maldade.</li>
                 </ul>
             </div>
-        </section>
-    </main>
+        </div>
 
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            const btn = document.getElementById('menuBtn');
+            const menu = document.getElementById('sideMenu');
+            let open = false;
+        
+            btn.addEventListener('click', function(e){
+                e.stopPropagation();
+                open = !open;
+                // Corrigido: agora ele vai totalmente para fora da tela (320px para a esquerda)
+                menu.style.left = open ? '0px' : '-320px';
+            });
+    
+            // Fecha o menu automaticamente se o jogador clicar em qualquer outro lugar da página
+            document.addEventListener('click', function(e) {
+                if (open && !menu.contains(e.target) && e.target !== btn) {
+                    open = false;
+                    menu.style.left = '-320px';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
