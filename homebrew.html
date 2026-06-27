@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Inicial - Guilda Caveira de Troll</title>
+    <title>Conteúdo Homebrew - Guilda Caveira de Troll</title>
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
@@ -27,20 +27,30 @@
         <a class="menu-item" href="bazar.html">🏪 Bazar Blackstaff</a>
         <a class="menu-item" href="magias.html">✨ Magias Homebrew</a>
         <a class="menu-item" href="atividades.html">🎲 Atividades</a>
+        <a class="menu-item" href="profissoes.html">🛠️ Profissões</a>
+        <a class="menu-item" href="atualizacoes.html">🔄 Atualizações</a>
 
     </div>
 </header>
 <main>
     <div class="container">
-            <div >
+        <section class="subcontainer">
+        <div class="index">
+    
+            <!-- SEÇÃO: CLASSES (Largura Total) -->
+            <div class="index-section">
                 <h2>Classes</h2>
                 <ul>
                     <li><a href="#p4"><strong>Caçador de Sangue</strong></a></li>
                     <li><a href="#p38"><strong>Patrulheiro (Ranger) - Revisado</strong></a></li>
                 </ul>
-    
+            </div>
+        
+            <!-- SEÇÃO: SUBCLASSES (Dividida em 3 Colunas) -->
+            <h2>Subclasses</h2>
+            <div class="grid-three-columns">
+                <!-- Coluna 1 -->
                 <div>
-                    <h2>Subclasses</h2>
                     <h3>Bárbaro</h3>
                     <ul><li><a href="#p23">Devorador das Sombras</a></li></ul>
                     
@@ -52,49 +62,64 @@
                     
                     <h3>Druída</h3>
                     <ul><li><a href="#p26">Círculo das Sombras</a></li></ul>
-                    
+                </div>
+                
+                <!-- Coluna 2 -->
+                <div>
                     <h3>Feiticeiro</h3>
                     <ul>
                         <li><a href="#p28">Origem da Alma Gélida</a></li>
                         <li><a href="#p30">Origem do Tecelão da Luz</a></li>
                     </ul>
-    
+        
                     <h3>Guerreiro</h3>
                     <ul><li><a href="#p31">Arqueiro Arcano - Revisado</a></li></ul>
                     
                     <h3>Ladino</h3>
                     <ul><li><a href="#p34">Mestre das Sombras</a></li></ul>
-                    
+                </div>
+                
+                <!-- Coluna 3 -->
+                <div>
                     <h3>Mago</h3>
                     <ul><li><a href="#p36">Tradição das Sombras</a></li></ul>
-    
+        
                     <h3>Paladino</h3>
                     <ul><li><a href="#p37">Juramento da Noite Eterna</a></li></ul>
                     
                     <h3>Patrulheiro</h3>
                     <ul><li><a href="#p44">Caçador Noturno</a></li></ul>
                 </div>
-    
+            </div>
+        
+            <!-- SEÇÃO: BLOCO TRIPLO (Raças, Invocações e Backgrounds alinhados lado a lado) -->
+            <div class="grid-three-columns" style="margin-top: 15px;">
                 <div>
-                    <h2>Raças</h2>
+                    <h3>Raças</h3>
                     <ul><li><a href="#p47">Cortesão Abissal</a></li></ul>
-    
-                    <h2>Invocações</h2>
+                </div>
+                <div>
+                    <h3>Invocações</h3>
                     <ul><li><a href="#p49">Sunfly</a></li></ul>
-    
-                    <h2>Backgrounds</h2>
+                </div>
+                <div>
+                    <h3>Backgrounds</h3>
                     <ul><li><a href="#p46">Canalizador de Almas</a></li></ul>
                 </div>
-    
-                <h2>Talentos</h2>
+            </div>
+        
+            <!-- SEÇÃO: TALENTOS (Retorna à largura total abaixo) -->
+            <div class="index-section">
+                <h3>Talentos</h3>
                 <ul>
                     <li><a href="#p48">Combatente de Grupo</a></li>
                     <li><a href="#p48">Explorador dos Charcos</a></li>
                     <li><a href="#p48">Pés Leves</a></li>
                     <li><a href="#p48">Vocalista Arcanista</a></li>
-                    <li><a href="#p48">Sacrificio Vital</a></li>
+                    <li><a href="#p48">Sacrifício Vital</a></li>
                 </ul>
             </div>
+        </div>
             
             <div>
                 <h1><a href="https://homebrewery.naturalcrit.com/share/uOpoq1JyBiXA" target="_blank">Magias Homebrew e Sanguimancia</a></h1>
@@ -103,9 +128,9 @@
                     <li>Magias de Sangue exclusivas das subclasses <strong>Mago de Sangue</strong> e <strong>Clérigo de Sangue</strong>.</li>
                 </ul>
             </div>
-        </div>
-    
-        <div class="page content">
+        </section>
+        <section class="subcontainer">
+            <h1>Modificações</h1>
             <div>
                 <h2>Magias de Origem Feiticeira - Lista Expandida</h2>
                 <p>Aqui estão as listas de magias expandidas para as subclasses...</p>
@@ -138,13 +163,59 @@
                         </tbody>
                 </table>
             </div>
-        </div>
-    <div class="page content">
-        <div>
-            <div>
-                <div>
+        </section>
+        <section class="subcontainer">
+            <div class="blood-hunter">
                     <h1>Caçador de Sangue</h1>
-                </div>
+                
+                                       
+                    <h2>Introdução</h2>
+                    <p>Os Caçadores de Sangue são guerreiros vigilantes que dominam a secreta e esotérica magia de sangue para erradicar males antigos e novos.
+                        Para invocar poderosas maldições e aprimorar seus ataques contra terrores imunes à magia convencional, eles sacrificam deliberadamente sua própria vitalidade.
+                        Ao trilhar essa jornada solitária, esses guerreiros doam partes de si mesmos e vivem sob um rigoroso código de disciplina para não cederem à escuridão.
+                        Vagando distantes dos olhos da sociedade, eles buscam constantemente por novas ameaças sombrias e por aliados de mentalidade semelhante nos reinos.</p>
+                    
+                    <h2>Construção rápida do Caçador de Sangue</h2>
+                    <p>Você pode se tornar um Caçador de Sangue rapidamente seguindo estas sugestões. Primeiro, faça da Força ou da Destreza sua maior pontuação de habilidade, dependendo se deseja se concentrar em armas corpo-a-corpo ou armas a distância (ou armas de acuidade). Escolha Inteligência como a próxima pontuação mais alta se quiser se concentrar na potência das maldições de sangue e no poder místico. Em seguida, escolha uma Constituição mais alta, pois você quer ter pontos de vida extras para queimar em seu rito carmesim ou amplificar suas maldições de sangue. Em seguida, selecione o antecedente de orfão ou soldado.</p>
+                
+                    <div class="caracteristicas">
+    <h2>Características de Classe</h2>
+    <p>Como um Caçador de Sangue, você adquire as seguintes características de classe.</p>
+    
+    <div class="caracteristicas-colunas">
+        
+        <div class="coluna-bloco">
+            <h3>Pontos de Vida</h3>
+            <ul>
+                <li><strong>Dado de Vida:</strong> 1d10 por nivel de caçador</li>
+                <li><strong>Pontos de vida no 1º nivel:</strong> 10 + modificador de constituição</li>
+                <li><strong>Pontos de vida em niveis seguintes:</strong> 1d10 (or 6) + modificador de constituição por nivel de caçador de sangue depois do 1 nivel.</li>
+            </ul>
+
+            <h3>Proficiências</h3>
+            <ul>
+                <li><strong>Armadura:</strong> Armaduras leves, médias e escudos.</li>
+                <li><strong>Armas:</strong> Armas simples e marciais.</li>
+                <li><strong>Ferramentas:</strong> Suprimentos de Alquimia.</li>
+                <li><strong>Testes de Resistencia:</strong> Destreza e Inteligência</li>
+                <li><strong>Pericias:</strong> Escolha 3 dentre Atletismo, Acrobacia, Arcana, História, Percepção, Investigação, Religião e Sobrevivência.</li>
+            </ul>
+        </div>
+        
+        <div class="coluna-bloco">
+            <h3>Equipamento</h3>
+            <p>Você começa com o seguinte equipamento, além do equipamento concedido pelo seu antecedente:</p>
+            <ul>
+                <li>(a) Uma arma marcial ou (b) duas armas simples</li>
+                <li>(a) Uma besta leve e 20 flechas</li>
+                <li>(a) Uma armadura de couro batido ou (b) armadura de escamas (brunéa)</li>
+                <li>Um pacote de explorador e suprimentos de alquimia</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+                <div>
                     <table class="class-table">
                         <thead>
                             <tr>
@@ -178,56 +249,15 @@
                             <tr><td>20</td><td>+6</td><td>Maestria Sanguínea</td><td>1d10</td><td>5</td></tr>
                         </tbody>
                     </table>
-            
-                    <h3>Introdução</h3>
-                    <p>Os Caçadores de Sangue são guerreiros vigilantes e inteligentes, consumidos pela missão de erradicar males antigos e novos. Distantes dos olhos da sociedade, eles dominam a secreta e esotérica hemourgia (magia de sangue), que consideram o método mais eficaz contra terrores que resistem à magia convencional. Para invocar poderosas maldições de sangue sobre seus inimigos e aprimorar seus ataques, esses guerreiros sacrificam deliberadamente sua própria vitalidade. Ao trilhar este caminho, um Caçador de Sangue doa irrevogavelmente uma parte de si mesmo — física, emocional e, por vezes, moralmente — à causa. Eles vivem sob um rigoroso código de disciplina e vigilância constante, temendo a todo momento ceder à escuridão que caçam. Sua jornada é solitária, e eles vagam pelos reinos em busca de ameaças sombrias e aliados de mentalidade semelhante.</p>
-            
-                    <h3>Construção rápida do Caçador de Sangue</h3>
-                    <p>Você pode se tornar um Caçador de Sangue rapidamente seguindo estas sugestões. Primeiro, faça da Força ou da Destreza sua maior pontuação de habilidade, dependendo se deseja se concentrar em armas corpo-a-corpo ou armas a distância (ou armas de acuidade). Escolha Inteligência como a próxima pontuação mais alta se quiser se concentrar na potência das maldições de sangue e no poder místico. Em seguida, escolha uma Constituição mais alta, pois você quer ter pontos de vida extras para queimar em seu rito carmesim ou amplificar suas maldições de sangue. Em seguida, selecione o antecedente de orfão ou soldado.</p>
-
-                    <h3>Características de Classe</h3>
-                    <p>Como um Caçador de Sangue, você adquire as seguintes características de classe.</p>
+                </div>
                     
-                    <h4>Pontos de Vida</h4>
-                    <ul>
-                        <li><strong>Dado de Vida:</strong> 1d10 por nivel de caçador</li>
-                        <li><strong>Pontos de vida no 1º nivel:</strong> 10 + modificador de constituição</li>
-                        <li><strong>Pontos de vida em niveis seguintes:</strong> 1d10 (ou 6) + modificador de constituição por nivel de caçador de sangue depois do 1 nivel.</li>
-                    </ul>
-            
-                    <h4>Proficiências</h4>
-                    <ul>
-                        <li><strong>Armadura:</strong> Armaduras leves, médias e escudos.</li>
-                        <li><strong>Armas:</strong> Armas simples e marciais.</li>
-                        <li><strong>Ferramentas:</strong> Suprimentos de Alquimia.</li>
-                        <li><strong>Testes de Resistencia:</strong> Destreza e Inteligência</li>
-                        <li><strong>Pericias:</strong> Escolha 3 dentre Atletismo, Acrobacia, Arcana, História, Percepção, Investigação, Religião e Sobrevivência.</li>
-                    </ul>
-            
-                    <h4>Equipamento</h4>
-                    <p>Você começa com o seguinte equipamento, além do equipamento concedido pelo seu antecedente:</p>
-                    <ul>
-                        <li>(a) Uma arma marcial ou (b) duas armas simples</li>
-                        <li>(a) Uma besta leve e 20 flechas</li>
-                        <li>(a) Uma armadura de couro batido ou (b) armadura de escamas (brunéa)</li>
-                        <li>Um pacote de explorador e suprimentos de alquimia</li>
-                    </ul>
-            
-                    <h3>Fazendo Multiclasse</h3>
-                    <p>Se o seu grupo usa as regras de multiclasse do Livro do Jogador, aqui está o que você precisa saber se escolher caçador de sangue como uma de suas classes.</p>
-                    <ul>
-                        <li><strong>Pontuação mínima de habilidade.</strong> Como um personagem multiclasse, você deve ter pelo menos 13 em Força ou Destreza e 13 em Inteligência para subir de nível nessa classe ou para subir de nível em outra classe se já for um caçador de sangue no seu primeiro nível.</li>
-                        <li><strong>Proficiências adquiridas.</strong> Se caçador de sangue não for sua classe inicial, você ganha as seguintes proficiências quando sobe de nível como caçador de sangue: armadura leve, armadura média, escudos, armas simples, armas marciais e suprimentos de alquimista.</li>
-                        <li><strong>Multiclasse com o Bruxo.</strong> Se seu caçador de sangue fizer parte da Ordem da Alma Profana e também tiver níveis de Bruxo, adicione 1/3 de seus níveis de caçador de sangue (arredondado para baixo) ao seu nível de Bruxo e consulte a tabela de progressão de Bruxo no Livro do Jogador para obter o total de espaços para feitiços, encantamentos conhecidos e nível de espaço para feitiços. Você deve ter o mesmo Patrono Sobrenatural entre as duas classes.</li>
-                    </ul>
-            
-                    <h3>Ruína do Caçador</h3>
+                    <h2>Ruína do Caçador</h2>
                     <p>No 1º nível, você sobreviveu ao Ruína do Caçador (Hunter's Bane) -um ritual perigoso e há muito tempo guardado que altera o sangue de sua vida, ligando-o para sempre à escuridão e aprimorando seus sentidos contra ela. Você tem vantagem em teste de Sabedoria (Sobrevivência) para rastrear seres feéricos, demônios ou mortos-vivos, bem como em testes de Inteligência para recuperar informações sobre essas criaturas. O Ruína do Caçador também capacita seu corpo a controlar e moldar a magia de Hemourgia, usando seu próprio sangue e essência vital para alimentar suas habilidades. Algumas de suas características exigem que o alvo faça uma salvaguarda para resistir aos efeitos dessa característica. A DC da salvaguarda é calculada da seguinte forma: DC da salvaguarda de Hemourgia = 8 + seu bônus de proficiência + seu modificador de Sabedoria ou Inteligência (escolha quando pega o 1 nível nesta classe).</p>
-
-                    <h3>Maldição de Sangue</h3>
+                
+                    <h2>Maldição de Sangue</h2>
                     <p>Também no 1º nível, você ganha a habilidade de canalizar — ou às vezes sacrificar — uma parte de sua essência vital para amaldiçoar e manipular criaturas por meio da magia hemourgia. Você conhece uma maldição de sangue de sua escolha, detalhada na seção "Maldições de sangue" no final da descrição da classe. Você aprende uma maldição de sangue adicional de sua escolha no 6º, 10º, 14º e 18º níveis. Cada vez que você aprende uma nova maldição de sangue, também pode escolher uma das maldições de sangue que conhece e substituí-la por outra. Cada vez que usar a característica Maldição de Sangue, você escolhe qual maldição invocar dentre as que conhece. Enquanto estiver invocando uma maldição de sangue, mas antes que ela afete o alvo, você pode escolher amplificar a maldição sofrendo dano necrótico igual a uma rolagem do seu dado de hemourgia. Esse dano não pode ser reduzido de forma alguma. Uma maldição amplificada ganha um efeito adicional, registrado na descrição da maldição. As criaturas que não têm sangue são imunes a maldições de sangue, a menos que você tenha amplificado a maldição. Depois de usar esse recurso, você deve terminar um descanso curto ou longo antes de poder usá-lo novamente. Você pode usar Maldição de Sangue duas vezes entre os descansos a partir do 6º nível, três vezes a partir do 13º nível e quatro vezes a partir do 17º nível.</p>
-            
-                    <h3>Estilo de Luta</h3>
+                    
+                    <h2>Estilo de Luta</h2>
                     <p>No 2º nível, você adota um estilo particular de luta como sua especialidade. Escolha uma das seguintes opções. Você não pode escolher a mesma opção de Estilo de Luta mais de uma vez, mesmo que possa escolher novamente.</p>
                     <ul>
                         <li><strong>Arquearia:</strong> Você ganha um bônus de +2 nas rolagens de ataque que fizer com armas de ataque à distância.</li>
@@ -235,9 +265,9 @@
                         <li><strong>Combate com Armas Grandes:</strong> Quando você rolar um 1 ou um 2 num dado de dano de um ataque com arma corpo-a-corpo que você esteja empunhando com duas mãos, você pode rolar o(s) dado(s) novamente e usar a nova rolagem, mesmo que resulte em 1 ou 2. A arma deve ter a propriedade duas mãos ou versátil para ganhar esse benefício.</li>
                         <li><strong>Combate com duas Armas:</strong> Quando você estiver engajado em uma luta com duas armas, você pode adicionar o seu modificador de habilidade na jogada de dano do seu segundo ataque. (Estilos de Luta do Tasha também permitidos).</li>
                     </ul>
-            
-                    <h3>Rito Carmesim</h3>
-                    <p>Também no 2º nível, você aprende a invocar um rito de hemourgia que infunde energia elemental nos golpes de sua arma. Como uma ação bônus, você pode ativar qualquer rito que conheça em uma arma que esteja segurando. O efeito do rito dura até que você termine um descanso curto ou longo. Ao ativar um rito, você recebe dano necrótico igual a uma rolagem do seu dado de hemourgia. Esse dano não pode ser reduzido de forma alguma. Enquanto o rito estiver em vigor, os ataques que você faz com essa arma são considerados mágicos e causam dano extra igual ao seu dado de hemourgia do tipo determinado pelo rito escolhido. Uma arma pode ter apenas um rito ativo por vez. Outras criaturas não podem receber o benefício de seu rito. Você escolhe um rito dentre os ritos carmesim abaixo quando ganha essa característica pela primeira vez. Você aprende um rito carmesim adicional no 7º nível e novamente no 14º nível.</p>
+                    
+                    <h2>Rito Carmesim</h2>
+                    <p>Também no 2º nível, você aprende a invocar um rito de hemourgia que infunde energia elemental nos golpes de sua arma. Como uma ação bônus, você pode ativar qualquer rito que conheça em uma arma que esteja segurando. O efeito do rito dura até que você termine um descanso curto ou longo. Ao ativar um rito, você recebe dano necrótico igual a uma rolagem do seu dado de hemourgia. Esse dano não pode ser reduzido de forma alguma. Enquanto o rito estiver em vigor, os ataques que você faz com essa arma são considerados mágicos e causam dano extra igual ao seu dado de hemourgia do tipo determinado pelo rito escolhido. Uma arma pode ter apenas um rito active por vez. Outras criaturas não podem receber o benefício de seu rito. Você escolhe um rito dentre os ritos carmesim abaixo quando ganha essa característica pela primeira vez. Você aprende um rito carmesim adicional no 7º nível e novamente no 14º nível.</p>
                     <ul>
                         <li><strong>Rito da Chama:</strong> O dano extra causado por seu rito é dano de fogo.</li>
                         <li><strong>Rito do Congelamento:</strong> O dano extra causado por seu rito é dano de frio.</li>
@@ -246,65 +276,63 @@
                         <li><strong>Rito do Oráculo:</strong> O dano extra causado por seu rito é dano psíquico. (Pré-requisito: 14º nível).</li>
                         <li><strong>Rito do Rugido:</strong> O dano extra causado por seu rito é dano de trovão. (Pré-requisito: 14º nível).</li>
                     </ul>
-
-                    <h3>Ordem do Caçador de Sangue</h3>
+                
+                    <h2>Ordem do Caçador de Sangue</h2>
                     <p>No 3º nível, você se compromete com uma ordem de caçadores de sangue cuja filosofia o guiará por toda a sua vida: a <strong>Ordem do Caça-Fantasmas</strong>, a <strong>Ordem do Licans</strong>, a <strong>Ordem dos Mutantes</strong> ou a <strong>Ordem da Alma Profana</strong>, cada uma delas detalhada no final da descrição da classe. Sua escolha lhe concede outras características no 7º nível e novamente nos 11º, 15º e 18º níveis.</p>
-            
-                    <h3>Melhoria no Valor de Habilidade</h3>
+                    
+                    <h2>Melhoria no Valor de Habilidade</h2>
                     <p>Quando você atinge o 4º nível e novamente no 8º, 10º, 12º, 16º e 19º nível, você pode aumentar um valor de habilidade, à sua escolha, em 2 ou você pode aumentar dois valores de habilidade, à sua escolha, em 1. Como padrão, você não pode elevar um valor de habilidade acima de 20 com essa característica.</p>
-            
-                    <h3>Ataque Extra</h3>
+                    
+                    <h2>Ataque Extra</h2>
                     <p>A partir do 5º nível, você pode atacar duas vezes, ao invés de uma, sempre que você realizar a ação de Ataque no seu turno.</p>
-            
-                    <h3>Marca do Castigo</h3>
+                    
+                    <h2>Marca do Castigo</h2>
                     <p>No 6º nível, quando causar dano a uma criatura com uma arma para a qual tenha um rito carmesim ativo, você pode canalizar a magia hemourgia para cravar uma marca arcana nessa criatura (nenhuma ação é necessária). Você sempre sabe a direção da criatura marcada, desde que ela esteja no mesmo plano que você. Além disso, toda vez que a criatura marcada causar dano a você ou a uma criatura que você possa ver em um raio de 5 pés, a criatura marcada sofrerá dano psíquico igual ao seu modificador (sab ou int) de Hemourgia (mínimo de 1). Sua marca dura até que você a desfaça ou até que você use essa característica para aplicar uma marca a outra criatura. Sua marca pode ser dissipada com a magia dissipar magia e é tratada como um feitiço com um nível igual à metade do seu nível de caçador de sangue (máximo de 9º nível). Depois de usar essa característica, você não poderá usá-la novamente até terminar um descanso curto ou longo.</p>
-            
-                    <h3>Aprimoramento da Maldição de Sangue</h3>
+                    
+                    <h2>Aprimoramento da Maldição de Sangue</h2>
                     <p>A partir do 6º nível, você pode usar sua característica Maldição de Sangue duas vezes antes de ter que terminar um descanso curto ou longo para recuperá-los.</p>
-            
-                    <h3>Característica da Ordem do Caçador de Sangue</h3>
+                    
+                    <h2>Característica da Ordem do Caçador de Sangue</h2>
                     <p>No 7º nível, você ganha uma característica concedida pela sua Ordem dos Caçadores de Sangue.</p>
-            
-                    <h3>Otimização do Rito Carmesim</h3>
+                    
+                    <h2>Otimização do Rito Carmesim</h2>
                     <p>No 7º nível, você aprende um Rito Carmesim adicional.</p>
-            
-                    <h3>Psicometria Sinistra</h3>
+                    
+                    <h2>Psicometria Sinistra</h2>
                     <p>Ao atingir o 9º nível, você adquire um talento sobrenatural para discernir os segredos que envolvem relíquias misteriosas ou locais tocados pelo mal. Sempre que fizer um teste de Inteligência (História) para recordar informações sobre a história sinistra ou trágica de um objeto que esteja tocando ou do local em que se encontra, você tem vantagem no teste. A critério do Mestre, uma rolagem adequadamente alta pode fazer com que seu personagem tenha breves visões do passado relacionadas ao objeto ou local.</p>
-            
-                    <h3>Ampliação Sombria</h3>
+                    
+                    <h2>Ampliação Sombria</h2>
                     <p>A partir do 10º nível, a magia de hemourgia impregna seu corpo para reforçar permanentemente sua resistência. Sua velocidade aumenta em 5 pés e você tem um bônus nas salvaguardas de Força, Destreza e Constituição igual ao seu modificador (sab ou int) de Hemourgia (mínimo de +1).</p>
-
-                    <h3>Característica da Ordem do Caçador de Sangue</h3>
+                
+                    <h2>Característica da Ordem do Caçador de Sangue</h2>
                     <p>No 11º nível, você ganha uma característica concedida pela sua Ordem dos Caçadores de Sangue.</p>
-            
-                    <h3>Marca da Amarração</h3>
+                    
+                    <h2>Marca da Amarração</h2>
                     <p>A partir do 13º nível, o dano psíquico de sua Marca de Castigo aumenta para duas vezes o seu modificador de Hemourgia (mínimo de 2). Além disso, uma criatura com a marca não pode realizar a ação de Disparada e, se tentar se teletransportar ou sair de seu plano atual por qualquer meio, sofrerá 4d6 de dano psíquico e deverá fazer uma salvaguarda de Sabedoria usando a CD da sua Hemourgia. Em caso de falha, a tentativa de se teletransportar ou sair do plano falha.</p>
-            
-                    <h3>Aprimoramento da Maldição de Sangue</h3>
-                    <p>A partir do 13º nível, você pode usar sua característica Maldição de Sangue três vezes antes de ter que terminar um descanso curto ou longo para recuperá-los.</p>
-            
-                    <h3>Alma Fortificada</h3>
+                    
+                    <h2>Aprimoramento da Maldição de Sangue</h2>
+                    <p>A partir do 13º nível, you pode usar sua característica Maldição de Sangue três vezes antes de ter que terminar um descanso curto ou longo para recuperá-los.</p>
+                    
+                    <h2>Alma Fortificada</h2>
                     <p>Ao atingir o 14º nível, você tem vantagem em salvaguardas contra ser encantado e amedrontado.</p>
-            
-                    <h3>Otimização do Rito Carmesim</h3>
+                    
+                    <h2>Otimização do Rito Carmesim</h2>
                     <p>No 14º nível, você aprende um Rito Carmesim adicional.</p>
-            
-                    <h3>Característica da Ordem do Caçador de Sangue</h3>
+                    
+                    <h2>Característica da Ordem do Caçador de Sangue</h2>
                     <p>No 15º nível, você ganha uma característica concedida pela sua Ordem dos Caçadores de Sangue.</p>
-            
-                    <h3>Aprimoramento da Maldição de Sangue</h3>
+                    
+                    <h2>Aprimoramento da Maldição de Sangue</h2>
                     <p>A partir do 17º nível, você pode usar sua característica Maldição de Sangue três vezes antes de ter que terminar um descanso curto ou longo para recuperá-los.</p>
-            
-                    <h3>Característica da Ordem do Caçador de Sangue</h3>
+                    
+                    <h2>Característica da Ordem do Caçador de Sangue</h2>
                     <p>No 18º nível, você ganha uma característica concedida pela sua Ordem dos Caçadores de Sangue.</p>
-            
-                    <h3>Maestria Sanguínea</h3>
+                    
+                    <h2>Maestria Sanguínea</h2>
                     <p>Ao atingir o 20º nível, seu domínio da magia de sangue atinge o auge, mitigando seu sacrifício e fortalecendo sua experiência. Uma vez por turno, sempre que uma característica de caçador de sangue exigir que você role um dado de hemourgia, você pode rolar novamente o dado e usar qualquer uma das rolagens. Além disso, sempre que obtiver um acerto crítico com uma arma para a qual tenha um rito carmesim ativo, você recupera um uso gasto de sua característica Maldição de Sangue.</p>
-                </div>
-            </div>
-    <!-- ================= PÁGINA: ORDEM DOS CAÇA-FANTASMAS ================= -->
-        <div>
-            <h1>Ordem dos Caça-Fantasmas</h1>
+    
+            <!-- ================= ORDEM DOS CAÇA-FANTASMAS ================= -->
+            <h2 class="subclasse">Ordem dos Caça-Fantasmas</h2>
             <p>A Ordem do Caça-Fantasmas é a mais antiga das ordens de caçadores de sangue. Seus membros redescobriram originalmente os segredos da hemociência e os refinaram para o combate contra o flagelo dos mortos-vivos. Os Caça-Fantasmas procuram e estudam o momento da morte, obcecados com o mistério da transição da vida e com o poder profano que pode fazer com que os mortos ressuscitem. Esses zelosos caçadores de sangue têm como trabalho de vida destruir o flagelo dos mortos-vivos onde quer que ele seja encontrado, ajustando suas habilidades para enfrentar criaturas mortas-vivas e aqueles que manipulam a necromancia e as forças negativas.</p>
 
             <h3>Rito da Aurora</h3>
@@ -331,11 +359,9 @@
 
             <h3>Rito de Reavivamento</h3>
             <p>Ao atingir o 18º nível, você aprende a proteger sua vida enfraquecida reabsorvendo a energia que alimenta suas armas. Se você tiver um ou mais ritos carmesins ativos e for reduzido a 0 pontos de vida, mas não morrer completamente, poderá optar por encerrar todos os seus ritos carmesins ativos e cair para 1 ponto de vida.</p>
-        </div>
 
-<!-- ================= PÁGINA: ORDEM DOS LYCANS ================= -->
-    <div>
-        <h1>Ordem dos Lycans</h1>
+<!-- ================= ORDEM DOS LYCANS ================= -->
+        <h2 class="subclasse">Ordem dos Lycans</h1>
         <p>A antiga maldição da licantropia é temida por quase todos os povos, sendo transmitida pelo sangue e semeando a força selvagem e a fome de violência. A Ordem dos Licans é um grupo de caçadores que se submetem à "Domesticação" — uma inflição cerimonial de licantropia modificada. Usando vontade intensa e rituais secretos de magia de sangue, eles aprendem a controlar e liberar suas formas híbridas por curtos períodos, ganhando capacidade física aprimorada e resiliência não natural. Sem cuidado e foco total, no entanto, até mesmo o maior dos caçadores pode se perder temporariamente em sua própria sede de sangue.</p>
 
         <h3>Sentidos Aprimorados</h3>
@@ -348,13 +374,16 @@
         <h4>Poder Feral</h4>
         <p>Você tem vantagem nos testes de Força e nas salvaguardas de Força e tem um bônus de +1 nas rolagens de dano corpo a corpo. Esse bônus aumenta para +2 no 11º nível e para +3 no 18º nível.</p>
 
+        <div>
+            <div class="note">
+                <h5>O ônus da licantropia</h5>
+                <p>A Ordem dos Licans é formada por indivíduos que escolhem este caminho com convicção, cientes dos desafios e do peso que ele impõe. Os caçadores de sangue Licans aceitam os dons da licantropia modificada e mantêm o controle por meio de treinamento intenso e magia de sangue. Membros da ordem não podem espalhar a maldição através do sangue, e a infecção de outra criatura só ocorre sob comando da ordem. Aqueles que são purificados contra a vontade retornam para uma nova iniciação. A licantropia modificada se apresenta em formas ligadas a feras específicas, como lobo, urso, tigre, javali e rato, definindo os traços físicos da transformação híbrida, embora os benefícios sejam uniformes.</p>
+            </div>
+            </div>
+
         <h4>Pele Resistente</h4>
         <p>Você tem resistência a dano concussivo, perfurante e cortante de ataques feitos por armas não mágicas e que não sejam revestidas por prata. Além disso, enquanto não estiver usando armadura pesada, você tem um bônus de +1 na CA.</p>
-        
-        <div class="note">
-            <h5>O ônus da licantropia</h5>
-            <p>Membros da ordem não podem espalhar a maldição através do sangue. A licantropia modificada se apresenta em formas ligadas a feras específicas (lobo, urso, tigre, javali e rato), definindo os traços físicos, embora os benefícios sejam uniformes.</p>
-        </div>
+
         <h4>Ataques Predatórios</h4>
         <p>Você pode aplicar sua característica Rito Carmesim aos seus golpes desarmados. Você pode usar Destreza em vez de Força para as rolagens de ataque e dano de seus golpes desarmados, que causam <strong>1d6</strong> de dano de concussão ou cortante. Esse dano aumenta para <strong>1d8</strong> no 11º nível. Além disso, ao usar a ação de ataque para fazer um golpe desarmado, você pode fazer um golpe desarmado adicional usando sua ação bônus.</p>
 
@@ -378,18 +407,21 @@
 
         <h3>Domínio da Transformação Híbrida</h3>
         <p>No 18º nível, você pode usar a Transformação Híbrida um número ilimitado de vezes, e a forma dura até que você volte ao normal, fique inconsciente ou morra. Você também ganha a Maldição de Sangue do Uivo (não conta no número de maldições conhecidas).</p>
-    </div>
-    <!-- ================= PÁGINA: ORDEM DOS MUTANTES ================= -->
-        <div>
+
+    <!-- ================= ORDEM DOS MUTANTES ================= -->
             <h1>Ordem dos Mutantes</h1>
             <p>Os membros da Ordem dos Mutantes especializam-se em avaliar pontos fortes e fracos de seus inimigos, alterando sua própria biologia através de alquimia corrompida e elixires tóxicos para estarem preparados para qualquer conflito.</p>
 
             <h3>Mutagênese</h3>
             <p>Ao escolher essa ordem no 3º nível, você aprende a dominar mutagênicos. Como uma ação bônus, você consome um mutagênico cujos efeitos e efeitos colaterais duram até um descanso curto ou longo. Você pode expulsar esses efeitos a qualquer momento usando uma ação. Mutagênicos são instáveis e perdem a potência se não forem usados antes do próximo descanso.</p>
 
-            <table class="classTable frame">
+            <table class="class-table frame">
                 <thead>
-                    <tr><th>Nível de Caçador</th><th>Mutagênicos Criados</th><th>Fórmulas Conhecidas</th></tr>
+                    <tr>
+                        <th>Nível de Caçador</th>
+                        <th>Mutagênicos Criados</th>
+                        <th>Fórmulas Conhecidas</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr><td>3º</td><td>1</td><td>4</td></tr>
@@ -399,9 +431,8 @@
                     <tr><td>18º</td><td>3</td><td>8</td></tr>
                 </tbody>
             </table>
-        </div>
-    <!-- ================= PÁGINA: MUTAGÊNICOS ================= -->
-        <div>
+
+    <!-- ================= MUTAGÊNICOS ================= -->
             <h3>Mutagênicos</h3>
             <ul>
                 <li><strong>Ágilidade:</strong> Vantagem em testes de Destreza; desvantagem em testes de Sabedoria.</li>
@@ -425,9 +456,7 @@
                 <li><strong>Sapiência:</strong> +2 em Inteligência (máx +5); desvantagem em salvaguardas de Carisma.</li>
                 <li><strong>Sedutor:</strong> Vantagem em testes de Carisma; desvantagem em iniciativa.</li>
             </ul>
-        </div>
-    <!-- ================= PÁGINA: HABILIDADES SUPERIORES ================= -->
-        <div>
+
             <h3>Metabolismo Estranho (7º nível)</h3>
             <p>Você ganha imunidade a dano de veneno e à condição envenenado. Uma vez por descanso longo, como ação bônus, você pode ignorar os efeitos colaterais negativos de um mutagênico por 1 minuto.</p>
 
@@ -439,9 +468,8 @@
 
             <h3>Mutação Exaltada (18º nível)</h3>
             <p>Como ação bônus, você pode trocar um mutagênico ativo por outro que você conheça, um número de vezes igual ao seu modificador de Hemourgia por descanso longo.</p>
-        </div>
-<!-- ================= PÁGINA: ORDEM DA ALMA PROFANA ================= -->
-    <div>
+
+        <!-- ================= PÁGINA: ORDEM DA ALMA PROFANA ================= -->
         <h1>Ordem da Alma Profana</h1>
         <p>Os caçadores de sangue pertencentes à Ordem da Alma Profana ampliaram os limites da hemociência para usá-la contra algumas das criaturas mais terríveis que corrompem o mundo. Membros desta ordem mergulharam no poço de conhecimento arcano corruptor, fazendo pactos com males menores para combater melhor as ameaças maiores, trocando uma parte de si mesmos pelo poder necessário para a caçada.</p>
 
@@ -454,23 +482,29 @@
             <li><strong>TCE:</strong> O Insondável ou o Gênio.</li>
             <li><strong>VRGtR:</strong> O Morto-vivo.</li>
         </ul>
+
         <h3>Tabela de Magias de Pacto</h3>
-        <table class="classTable frame">
+        <table class="class-table frame">
             <thead>
-                <tr><th>Nível</th><th>Truques</th><th>Magias</th><th>Espaços</th><th>Nível Magia</th></tr>
+                <tr>
+                    <th>Nível</th>
+                    <th>Truques Conhecidos</th>
+                    <th>Magias Conhecidas</th>
+                    <th>Espaços de Magia</th>
+                    <th>Nível de Espaço</th>
+                </tr>
             </thead>
             <tbody>
-                <tr><td>3-5</td><td>2</td><td>2-3</td><td>1</td><td>1</td></tr>
-                <tr><td>6-12</td><td>2-3</td><td>2-6</td><td>2</td><td>1-2</td></tr>
-                <tr><td>13-18</td><td>3</td><td>7-9</td><td>2</td><td>3</td></tr>
-                <tr><td>19-20</td><td>3</td><td>10-11</td><td>2</td><td>4</td></tr>
+                <tr><td>3º–5º</td><td>2</td><td>2–3</td><td>1</td><td>1º</td></tr>
+                <tr><td>6º–12º</td><td>2–3</td><td>2–6</td><td>2</td><td>1º–2º</td></tr>
+                <tr><td>13º–18º</td><td>3</td><td>7–9</td><td>2</td><td>3º</td></tr>
+                <tr><td>19º–20º</td><td>3</td><td>10–11</td><td>2</td><td>4º</td></tr>
             </tbody>
         </table>
 
         <h3>Magia de Pacto de Sangue</h3>
         <p>Ao atingir o 3º nível, você aumenta suas técnicas de combate com a habilidade de conjurar feitiços. Consulte o capítulo 10 do Livro do Jogador para regras gerais de conjuração e utilize a lista de feitiços do <strong>Bruxo</strong> para esta subclasse. Seu atributo de conjuração é Inteligência.</p>
-    </div>
-        <div>
+
             <h3>Regras de Conjuração</h3>
             <ul>
                 <li><strong>Truques:</strong> Você aprende dois truques de Bruxo no 3º nível e um adicional no 10º nível.</li>
@@ -486,26 +520,18 @@
 
             <h3>Rito Carmesim Focalizado</h3>
             <p>A partir do 3º nível, sua arma serve como foco arcano enquanto um rito carmesim estiver ativo. Cada patrono concede um benefício único:</p>
+
             <ul>
-                <li><strong>A Arquifada:</strong> Ao causar dano, o alvo brilha, perdendo benefícios de cobertura ou invisibilidade até o final do seu próximo turno.</li>
-                <li><strong>O Celestial:</strong> Como ação bônus, gaste um uso de Maldição de Sangue para curar uma criatura (rolagem de dado de hemourgia + mod. de hemourgia).</li>
-                <li><strong>O Insondável:</strong> Você pode respirar embaixo d'água e ganha velocidade de natação igual ao seu deslocamento base. Uma vez por turno, ao causar dano, reduza a velocidade do alvo em 10 pés até o início do seu próximo turno.</li>
-                <li><strong>O Ínfero:</strong> Ao usar o Rito da Chama, você pode rolar novamente dados de dano extra do rito que resultarem em 1 ou 2.</li>
-                <li><strong>O Gênio:</strong> Como ação bônus, gaste um uso de Maldição de Sangue para ganhar voo (30 pés) por um número de rodadas igual ao seu modificador de Hemourgia.</li>
+                <li><strong>A Arquifada:</strong> Ao causar dano com uma arma para a qual tenha um rito carmesim ativo, o alvo brilha com uma luz pálida, perdendo quaisquer benefícios de cobertura ou invisibilidade até o final do seu próximo turno.</li>                
+                <li><strong>O Celestial:</strong> Como uma ação bônus, você pode gastar um uso de sua característica Maldição de Sangue para curar uma criatura visível a até 60 pés. A criatura recupera pontos de vida iguais a uma rolagem do seu dado de hemourgia + seu modificador de Hemourgia (mínimo de 1).</li>                
+                <li><strong>O Insondável:</strong> Você pode respirar embaixo d'água e adquire deslocamento de natação igual ao seu deslocamento terrestre. Além disso, uma vez por turno, ao causar dano a uma criatura com uma arma com rito carmesim ativo, você pode reduzir o deslocamento do alvo em 10 pés até o início do seu próximo turno.</li>                
+                <li><strong>O Ínfero:</strong> Quando você ativa ou causa dano com o Rito da Chama, você pode rolar novamente qualquer dado de dano extra do rito que resulte em 1 ou 2, sendo obrigado a usar a nova rolagem.</li>                
+                <li><strong>O Gênio:</strong> Como uma ação bônus, você pode gastar um uso de sua característica Maldição de Sangue para flutuar misticamente, ganhando deslocamento de voo de 30 pés por um número de rodadas igual ao seu modificador de Hemourgia (mínimo de 1 rodada).</li>
+                <li><strong>O Grande Ancião:</strong> Quando você obtém um acerto crítico com uma arma para a qual tenha um rito carmesim ativo, o alvo e quaisquer criaturas à sua escolha em um raio de 10 pés dele ficam amedrontados por você até o final do seu próximo turno.</li>
+                <li><strong>O Hexblade:</strong> Quando você amaldiçoa uma criatura com uma maldição de sangue, a próxima jogada de ataque que você fizer contra ela antes do final do seu próximo turno causa dano extra igual ao seu bônus de proficiência.</li>
+                <li><strong>O Morto-vivo:</strong> Ao sofrer dano necrótico, você pode usar sua reação para reduzir esse dano pela metade. Além disso, suas feições físicas adquirem temporariamente traços que refletem os aspectos de seu patrono enquanto você mantiver um rito carmesim ativo.</li>
+                <li><strong>O Imortal:</strong> Sempre que você reduzir uma criatura hostil a 0 pontos de vida com um ataque de arma, você recupera pontos de vida iguais a uma rolagem do seu dado de hemourgia.</li>
             </ul>
-        </div>
-        <div>
-            <h4>O Grande Ancião</h4>
-            <p>Ao conseguir um acerto crítico, a criatura atingida e quaisquer outras que você escolher em um raio de 10 pés ficam amedrontadas por você até o final do seu próximo turno.</p>
-
-            <h4>O Hexblade</h4>
-            <p>Ao acertar uma criatura com uma maldição de sangue, a próxima vez que você atingir essa mesma criatura com um ataque enquanto a maldição estiver ativa, causará dano adicional igual ao seu bônus de proficiência.</p>
-
-            <h4>O Morto-vivo</h4>
-            <p>Ao sofrer dano necrótico, você pode usar sua reação para reduzi-lo pela metade. Além disso, sua aparência altera-se para refletir seu patrono enquanto tiver um rito carmesim ativo.</p>
-
-            <h4>O Imortal</h4>
-            <p>Ao reduzir uma criatura hostil significativa (a critério do Mestre) a 0 pontos de vida, você recupera pontos de vida iguais a uma rolagem do seu dado de hemourgia.</p>
 
             <h3>Frenesi Místico (7º nível)</h3>
             <p>Ao usar sua ação para conjurar um feitiço, você pode realizar um único ataque com uma arma como uma ação bônus.</p>
@@ -519,11 +545,6 @@
                 <li><strong>O Insondável:</strong> <em>Rajada de Vento</em></li>
                 <li><strong>O Ínfero:</strong> <em>Raio Ardente</em></li>
                 <li><strong>O Gênio:</strong> <em>Força Fantasmagórica</em></li>
-            </ul>
-        </div>
-        <div>
-            <h3>Arcana Revelada (Adições)</h3>
-            <ul>
                 <li><strong>O Grande Ancião:</strong> <em>Detectar Pensamentos</em></li>
                 <li><strong>O Hexblade:</strong> <em>Marca da Punição</em></li>
                 <li><strong>O Morto-vivo:</strong> <em>Cegueira/Surdez</em></li>
@@ -535,8 +556,7 @@
 
             <h3>Arcana Desencadeada (15º nível)</h3>
             <p>Seu patrono lhe concede um único uso de um feitiço adicional baseado em seu pacto. Você lança esse feitiço sem gastar um espaço de feitiço e não pode fazê-lo novamente até terminar um descanso longo.</p>
-        </div>
-        <div>
+
             <div>
                 <ul>
                     <li><strong>A Arquifada:</strong> <em>Lentidão</em></li>
@@ -553,82 +573,91 @@
 
             <h3>Maldição de Sangue do Devorador de Almas (18º nível)</h3>
             <p>Você aprende a sugar a energia vital de sua presa caída. Você recebe a Maldição de Sangue do Devorador de Almas para sua característica Maledicência de Sangue. Isso não é contabilizado em seu número total de maldições de sangue conhecidas.</p>
+
+            <h2 class="maldicoes">Maldições de Sangue do Caçador de Sangue</h2>
+
+            <div class="curses-container">
+
+                <div class="curse-box">
+                    <h4>Maldição de Sangue da Vinculação</h4>
+                    <p>Como uma ação bônus, você tenta prender uma criatura Grande ou menor em um raio de 30 pés; ela deve fazer uma salvaguarda de Força. Se falhar, sua velocidade é reduzida a 0 e ela não pode usar reações até o final do seu próximo turno.</p>
+                    <p><strong>Amplificar:</strong> Dura 1 minuto e afeta qualquer criatura, independentemente do tamanho. A criatura pode repetir a salvaguarda de Força no final de cada um de seus turnos para encerrar o efeito.</p>
+                </div>
+            
+                <div class="curse-box">
+                    <h4>Maldição de Sangue da Agonia Quistosa</h4>
+                    <p>Como uma ação bônus, você amaldiçoa uma criatura em 30 pés, fazendo seu corpo inchar até o final do seu próximo turno. Durante esse período, a criatura tem desvantagem em testes de Força e Destreza e recebe <strong>1d8</strong> de dano necrótico se fizer mais de um ataque no turno.</p>
+                    <p><strong>Amplificar:</strong> Dura 1 minuto. A criatura pode fazer uma salvaguarda de Constituição ao final de cada turno para encerrar a maldição.</p>
+                </div>
+            
+                <div class="curse-box">
+                    <h4>Maldição de Sangue da Exposição</h4>
+                    <p>Quando uma criatura em 30 pés receber dano de um ataque ou feitiço, use sua reação para enfraquecer sua resiliência. Até o final do próximo turno do alvo, ele perde a resistência aos tipos de dano causados por aquele efeito.</p>
+                    <p><strong>Amplificar:</strong> O alvo perde a imunidade aos tipos de dano do efeito desencadeante, mas ganha resistência a esses tipos de dano até o final de seu próximo turno.</p>
+                </div>
+            
+                <div class="curse-box">
+                    <h4>Maldição de Sangue da Ansiedade</h4>
+                    <p>Como uma ação bônus, você amaldiçoa uma criatura em 30 pés. Até o final do seu próximo turno, testes de Carisma (Intimidação) contra o alvo têm vantagem.</p>
+                    <p><strong>Amplificar:</strong> A próxima salvaguarda de Sabedoria que a criatura fizer antes do fim dessa maldição será feita com desvantagem.</p>
+                </div>
+            
+                <div class="curse-box">
+                    <h4>Maldição de Sangue da Cegueira</h4>
+                    <p>Ao ver uma criatura em 30 pés fazer um ataque, use sua reação para rolar um dado de hemourgia e subtraí-lo do resultado. Você pode usar este recurso após a rolagem, mas antes da definição do acerto. Criaturas imunes à condição cego são imunes a esta maldição.</p>
+                    <p><strong>Amplificar:</strong> Aplica-se a todas as rolagens de ataque da criatura até o final do turno dela. O dado é rolado separadamente para cada ataque.</p>
+                </div>
+            
+                <div class="curse-box">
+                    <h4>Maldição de Sangue do Fantoche dos Caídos</h4>
+                    <p>Quando uma criatura em 30 pés cair para 0 pontos de vida, use sua reação para incutir um último ato de agressão. Ela faz imediatamente um ataque com arma ou desarmado contra um alvo ao seu alcance.</p>
+                    <p><strong>Amplificar:</strong> Você pode fazer com que a criatura se mova até metade de seu deslocamento total e concede um bônus à rolagem de ataque igual ao seu modificador de Hemourgia.</p>
+                </div>
+            
+                <div class="curse-box">
+                    <h4>Maldição de Sangue dos Marcados</h4>
+                    <p>Como ação bônus, mark uma criatura em 30 pés. Até o final do seu turno, sempre que atingi-la com uma arma com rito carmesim ativo, você rola um dado de hemourgia adicional para o dano do rito.</p>
+                    <p><strong>Amplificar:</strong> A próxima rolagem de ataque contra o alvo antes do final do seu turno tem vantagem.</p>
+                </div>
+            
+                <div class="curse-box">
+                    <h4>Maldição de Sangue da Mente Turva</h4>
+                    <p>Como ação bônus, amaldiçoe uma criatura em 30 pés que esteja se concentrando em um feitiço ou característica. Ela tem desvantagem na próxima salvaguarda de Constituição para manter a concentração até o final do seu próximo turno.</p>
+                    <p><strong>Amplificar:</strong> O alvo tem desvantagem em todas as salvaguardas de Constituição para manter a concentração até o final do seu próximo turno.</p>
+                </div>
+            
+                <div class="curse-box">
+                    <h4>Maldição de Sangue da Corrosão</h4>
+                    <p><em>Pré-requisito: 15º nível (Ordem dos Mutantes).</em></p>
+                    <p>Como ação bônus, uma criatura em 30 pés fica envenenada. Ela pode realizar uma salvaguarda de Constituição ao final de cada turno para encerrar o efeito.</p>
+                    <p><strong>Amplificar:</strong> O alvo recebe <strong>4d6</strong> de dano necrótico ao ser amaldiçoado e sempre que falhar na salvaguarda para encerrar o efeito.</p>
+                </div>
+            
+                <div class="curse-box">
+                    <h4>Maldição de Sangue do Exorcista</h4>
+                    <p><em>Pré-requisito: 15º nível (Ordem dos Caça-Fantasmas).</em></p>
+                    <p>Como ação bônus, uma criatura em 30 pés que esteja encantada, assustada ou possuída é imediatamente libertada desses estados.</p>
+                    <p><strong>Amplificar:</strong> A criatura responsável pela condição recebe <strong>3d6</strong> de dano psíquico e deve passar em uma salvaguarda de Sabedoria ou ficará atordoada até o final do seu próximo turno.</p>
+                </div>
+            
+                <div class="curse-box">
+                    <h4>Maldição de Sangue do Uivo</h4>
+                    <p><em>Pré-requisito: 18º nível (Ordem dos Licans).</em></p>
+                    <p>Como uma ação, você solta um uivo de gelar o sangue. Cada criatura em 30 pés que possa ouvi-lo deve passar em uma salvaguarda de Sabedoria ou ficará amedrontada por você até o final do seu próximo turno. Se falhar por 5 ou mais, a criatura fica atordoada enquanto estiver assustada. Criaturas que passarem na salvaguarda ficam imunes por 24 horas.</p>
+                    <p><strong>Amplificar:</strong> O alcance da maldição aumenta para 60 pés.</p>
+                </div>
+            
+                <div class="curse-box">
+                    <h4>Maldição de Sangue do Devorador de Almas</h4>
+                    <p><em>Pré-requisito: 18º nível (Ordem da Alma Profana).</em></p>
+                    <p>Quando uma criatura (que não seja um construto ou morto-vivo) for reduzida a 0 pontos de vida em 30 pés, use sua reação para oferecer sua energia vital ao seu patrono. Até o final do seu próximo turno, você ganha vantagem em ataques e resistência a todo tipo de dano.</p>
+                    <p><strong>Amplificar:</strong> Você recupera um espaço de feitiço de Bruxo desta subclasse. Após amplificar, você deve terminar um descanso longo antes de poder amplificá-la novamente.</p>
+                </div>
+            
+            </div>
         </div>
-        <div>
-            <h1>Maldições de Sangue do Caçador de Sangue</h1>
+    </section>
 
-            <div>
-                <h4>Maldição de Sangue da Vinculação</h4>
-                <p>Como uma ação bônus, você tenta prender uma criatura Grande ou menor em um raio de 30 pés; ela deve fazer uma salvaguarda de Força. Se falhar, sua velocidade é reduzida a 0 e ela não pode usar reações até o final do seu próximo turno.</p>
-                <p><strong>Amplificar:</strong> Dura 1 minuto e afeta qualquer criatura, independentemente do tamanho. A criatura pode repetir a salvaguarda de Força no final de cada um de seus turnos para encerrar o efeito.</p>
-            </div>
-
-            <div>
-                <h4>Maldição de Sangue da Agonia Quistosa</h4>
-                <p>Como uma ação bônus, você amaldiçoa uma criatura em 30 pés, fazendo seu corpo inchar até o final do seu próximo turno. Durante esse período, a criatura tem desvantagem em testes de Força e Destreza e recebe <strong>1d8</strong> de dano necrótico se fizer mais de um ataque no turno.</p>
-                <p><strong>Amplificar:</strong> Dura 1 minuto. A criatura pode fazer uma salvaguarda de Constituição ao final de cada turno para encerrar a maldição.</p>
-            </div>
-
-            <div>
-                <h4>Maldição de Sangue da Exposição</h4>
-                <p>Quando uma criatura em 30 pés receber dano de um ataque ou feitiço, use sua reação para enfraquecer sua resiliência. Até o final do próximo turno do alvo, ele perde a resistência aos tipos de dano causados por aquele efeito.</p>
-                <p><strong>Amplificar:</strong> O alvo perde a imunidade aos tipos de dano do efeito desencadeante, mas ganha resistência a esses tipos de dano até o final de seu próximo turno.</p>
-            </div>
-
-            <div>
-                <h4>Maldição de Sangue da Ansiedade</h4>
-                <p>Como uma ação bônus, você amaldiçoa uma criatura em 30 pés. Até o final do seu próximo turno, testes de Carisma (Intimidação) contra o alvo têm vantagem.</p>
-                <p><strong>Amplificar:</strong> A próxima salvaguarda de Sabedoria que a criatura fizer antes do fim dessa maldição será feita com desvantagem.</p>
-            </div>
-            <div>
-                <h4>Maldição de Sangue da Cegueira</h4>
-                <p>Ao ver uma criatura em 30 pés fazer um ataque, use sua reação para rolar um dado de hemourgia e subtraí-lo do resultado. Você pode usar este recurso após a rolagem, mas antes da definição do acerto. Criaturas imunes à condição cego são imunes a esta maldição.</p>
-                <p><strong>Amplificar:</strong> Aplica-se a todas as rolagens de ataque da criatura até o final do turno dela. O dado é rolado separadamente para cada ataque.</p>
-            </div>
-
-            <div>
-                <h4>Maldição de Sangue do Fantoche dos Caídos</h4>
-                <p>Quando uma criatura em 30 pés cair para 0 pontos de vida, use sua reação para incutir um último ato de agressão. Ela faz imediatamente um ataque com arma ou desarmado contra um alvo ao seu alcance.</p>
-                <p><strong>Amplificar:</strong> Você pode fazer com que a criatura se mova até metade de seu deslocamento total e concede um bônus à rolagem de ataque igual ao seu modificador de Hemourgia.</p>
-            </div>
-
-            <div>
-                <h4>Maldição de Sangue dos Marcados</h4>
-                <p>Como ação bônus, marque uma criatura em 30 pés. Até o final do seu turno, sempre que atingi-la com uma arma com rito carmesim ativo, você rola um dado de hemourgia adicional para o dano do rito.</p>
-                <p><strong>Amplificar:</strong> A próxima rolagem de ataque contra o alvo antes do final do seu turno tem vantagem.</p>
-            </div>
-
-            <div>
-                <h4>Maldição de Sangue da Mente Turva</h4>
-                <p>Como ação bônus, amaldiçoe uma criatura em 30 pés que esteja se concentrando em um feitiço ou característica. Ela tem desvantagem na próxima salvaguarda de Constituição para manter a concentração até o final do seu próximo turno.</p>
-                <p><strong>Amplificar:</strong> O alvo tem desvantagem em todas as salvaguardas de Constituição para manter a concentração até o final do seu próximo turno.</p>
-            </div>
-
-            <div>
-                <h4>Maldição de Sangue da Corrosão</h4>
-                <p><em>Pré-requisito: 15º nível (Ordem dos Mutantes).</em><br>Como ação bônus, uma criatura em 30 pés fica envenenada. Ela pode realizar uma salvaguarda de Constituição ao final de cada turno para encerrar o efeito.</p>
-                <p><strong>Amplificar:</strong> O alvo recebe <strong>4d6</strong> de dano necrótico ao ser amaldiçoado e sempre que falhar na salvaguarda para encerrar o efeito.</p>
-            </div>
-
-            <div>
-                <h4>Maldição de Sangue do Exorcista</h4>
-                <p><em>Pré-requisito: 15º nível (Ordem dos Caça-Fantasmas).</em><br>Como ação bônus, uma criatura em 30 pés que esteja encantada, assustada ou possuída é imediatamente libertada desses estados.</p>
-                <p><strong>Amplificar:</strong> A criatura responsável pela condição recebe <strong>3d6</strong> de dano psíquico e deve passar em uma salvaguarda de Sabedoria ou ficará atordoada até o final do seu próximo turno.</p>
-            </div>
-
-            <div>
-                <h4>Maldição de Sangue do Uivo</h4>
-                <p><em>Pré-requisito: 18º nível (Ordem dos Licans).</em><br>Como uma ação, você solta um uivo de gelar o sangue. Cada criatura em 30 pés que possa ouvi-lo deve passar em uma salvaguarda de Sabedoria ou ficará amedrontada por você até o final do seu próximo turno. Se falhar por 5 ou mais, a criatura fica atordoada enquanto estiver assustada. Criaturas que passarem na salvaguarda ficam imunes por 24 horas.</p>
-                <p><strong>Amplificar:</strong> O alcance da maldição aumenta para 60 pés.</p>
-            </div>
-
-            <div>
-                <h4>Maldição de Sangue do Devorador de Almas</h4>
-                <p><em>Pré-requisito: 18º nível (Ordem da Alma Profana).</em><br>Quando uma criatura (que não seja um construto ou morto-vivo) for reduzida a 0 pontos de vida em 30 pés, use sua reação para oferecer sua energia vital ao seu patrono. Até o final do seu próximo turno, você ganha vantagem em ataques e resistência a todo tipo de dano.</p>
-                <p><strong>Amplificar:</strong> Você recupera um espaço de feitiço de Bruxo desta subclasse. Após amplificar, você deve terminar um descanso longo antes de poder amplificá-la novamente.</p>
-            </div>
-        </div>
-    </div>
     <!-- ================= PÁGINA: SUBCLASSES HOMEBREW - BÁRBARO ================= -->
         <div>
             <strong>Subclasses Homebrew</strong>

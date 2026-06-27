@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Inicial - Guilda Caveira de Troll</title>
+    <title>Magias - Guilda Caveira de Troll</title>
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
     </div>
 
 <!-- Menu -->
-    <div id="sideMenu" style="position:fixed;top:0;left:-320px;width:300px;height:100%;background:#161616;transition:.3s;padding-top:80px;z-index:1000;border-right:3px solid #7a1d1d;">
+    <div id="sideMenu" style="position:fixed;top:0;left:-320px;width:300px;height:100%;background:#161616;transition:.3s;padding-top:40px;z-index:1000;border-right:3px solid #7a1d1d;">
 
         <a class="menu-item" href="index.html">🏠 Home</a>
         <a class="menu-item" href="regras.html">📜 Regras</a>
@@ -27,738 +27,1148 @@
         <a class="menu-item" href="bazar.html">🏪 Bazar Blackstaff</a>
         <a class="menu-item" href="magias.html">✨ Magias Homebrew</a>
         <a class="menu-item" href="atividades.html">🎲 Atividades</a>
-
+        <a class="menu-item" href="profissoes.html">🛠️ Profissões</a>
+        <a class="menu-item" href="atualizacoes.html">🔄 Atualizações</a>
+        
     </div>
 </header>
 <main>
     <div class="container">
-    <section>
-        <div class="magias-page">
-            <h1 class="page-title">Magias Modificadas</h1>
+    <section class="magias">
+            <h1>Magias Modificadas</h1>
+            <p>Magias oficiais que receberam alguma alteração em nosso servidor</p>
         
             <div class="spell-grid">
-                <!-- Coluna 1 -->
-                <div class="column">
-                    <!-- Garras da Escuridão -->
-                    <div class="spell-box">
-                        <h3>Garras da Escuridão</h3>
-                        <p class="spell-type"><em>Evocação - Truque</em></p>
+    
+                <div class="spell-box">
+                    <h3>Garras da Escuridão</h3>
+                    <p class="spell-type">Evocação - Truque</p>
+                    <div class="spell-stats">
                         <p><strong>Livro:</strong> TftS</p>
-                        <p><strong>Tempo de conjuração:</strong> 1 Ação</p>
+                        <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
                         <p><strong>Alcance:</strong> Próprio</p>
                         <p><strong>Componentes:</strong> V, S</p>
                         <p><strong>Duração:</strong> Instantânea</p>
+                    </div>
+                    <div class="spell-description">
                         <p>Você molda sombras em garras que crescem de seus dedos e gotejam uma escuridão profunda. As garras têm um alcance de 10 pés. Realize um ataque corpo a corpo, ao atingir o alvo sofre <strong>1d10</strong> de dano de frio.</p>
                         <p><strong>Em níveis superiores:</strong> O dano desta magia aumenta para 2d10 quando você atinge o 5º nível, 3d10 quando você atinge o 11º nível e 4d10 quando você atinge o 17º nível.</p>
-                        <p><strong>Classes:</strong> <em>Bruxo, Feiticeiro e Mago</em></p>
+                        <p class="spell-classes"><strong>Classes:</strong> Bruxo, Feiticeiro e Mago</p>
                     </div>
-        
-                    <!-- Sussurros Enlouquecedores -->
-                    <div class="spell-box">
-                        <h3>Sussurros Enlouquecedores</h3>
-                        <p class="spell-type"><em>Necromancia de 2º nível</em></p>
-                        <p><strong>Livro:</strong> BoET</p>
-                        <p><strong>Tempo de conjuração:</strong> 1 Ação</p>
-                        <p><strong>Alcance:</strong> 30 pés</p>
-                        <p><strong>Componentes:</strong> V, S</p>
-                        <p><strong>Duração:</strong> 1 minuto</p>
-                        <p>Você sussurra uma sequência de palavras vazias em direção a um alvo que possa ouvi-lo. O alvo deve ser bem-sucedido em um teste de resistência de Carisma ou ficará incapacitado. Enquanto incapacitado por esta magia, a velocidade do alvo é 0 e ele não pode se beneficiar de aumentos em sua velocidade. Para manter o efeito, você deve usar sua ação em turnos subsequentes para continuar sussurrando; caso contrário, a magia termina. A magia também termina se o alvo sofrer dano.</p>
-                        <p>O alvo pode realizar um novo teste no final de cada um dos seus turnos para encerrar o efeito da magia.</p>
-                        <p><strong>Classes:</strong> <em>Mago</em></p>
-                    </div>
-                <div class="spell-box">
-                    <h3>Brinde de Fada</h3>
-                    <p class="spell-type"><em>Transmutação de 3º nível (ritual)</em></p>
-                    <p><strong>Livro:</strong> BoET</p>
-                    <p><strong>Tempo de conjuração:</strong> 1 minuto</p>
-                    <p><strong>Alcance:</strong> Toque</p>
-                    <p><strong>Componentes:</strong> V, S, M (vinho no valor de 100 po, que o feitiço consome, e uma taça para cada participante)</p>
-                    <p><strong>Duração:</strong> 8 horas</p>
-                    
-                    <p>Você e até cinco outras criaturas fazem um brinde e bebem aos lordes e damas das cortes feéricas. Ao conjurar a magia, escolha um dos seguintes brindes, cujos alvos devem estar a até 10 pés de você durante toda a conjuração:</p>
-                    
-                    <ul>
-                        <li><strong>Criação de animais:</strong> Cada participante pode se comunicar com os animais como se compartilhassem um idioma.</li>
-                        <li><strong>Pesadelos:</strong> Ao se aproximar a menos de 30 pés de um participante, a criatura deve fazer um teste de Sabedoria ou ficará amedrontada por 1 minuto.</li>
-                        <li><strong>Ludicidade:</strong> Cada participante desenvolve asas diáfanas e ganha velocidade de voo igual à de caminhada por 10 rodadas.</li>
-                        <li><strong>Repouso:</strong> Vantagem em testes de resistência contra encantamento e imunidade a sono mágico.</li>
-                    </ul>
-                    <p><strong>Classes:</strong> <em>Bardo, Clérigo, Druida, Paladino e Patrulheiro</em></p>
                 </div>
-        </div>
-                <!-- Coluna 2 -->
-                <div class="column">
-                    <!-- Tiro Élfico -->
-                    <div class="spell-box">
-                        <h3>Tiro Élfico</h3>
-                        <p class="spell-type"><em>Encantamento de 1º nível</em></p>
+            
+                <div class="spell-box">
+                    <h3>Tiro Élfico</h3>
+                    <p class="spell-type">Encantamento de 1º nível</p>
+                    <div class="spell-stats">
                         <p><strong>Livro:</strong> BoET</p>
-                        <p><strong>Tempo de conjuração:</strong> 1 Ação</p>
+                        <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
                         <p><strong>Alcance:</strong> 60 pés</p>
                         <p><strong>Componentes:</strong> V, M (Uma flecha élfica)</p>
                         <p><strong>Duração:</strong> Concentração, até 1 minuto</p>
+                    </div>
+                    <div class="spell-description">
                         <p>Você atira uma flecha com um arco em miniatura. Faça um ataque mágico à distância contra uma criatura dentro do alcance. Se acertar, a criatura sofre <strong>1d8</strong> de dano de Força e é empurrada 5 pés para trás. Enquanto a magia estiver ativa, você pode realizar o ataque novamente em cada um dos seus turnos como uma ação.</p>
                         <p><strong>Em níveis superiores:</strong> O dano desta magia aumenta em 1d8 para cada 2 níveis acima do 1º.</p>
-                        <p><strong>Classes:</strong> <em>Bardo, Feiticeiro, Mago</em></p>
+                        <p class="spell-classes"><strong>Classes:</strong> Bardo, Feiticeiro, Mago</p>
                     </div>
-        
-                    <!-- Festa da Carne -->
-                    <div class="spell-box">
-                        <h3>Festa da Carne</h3>
-                        <p class="spell-type"><em>Transmutação de 5º nível</em></p>
+                </div>
+            
+                <div class="spell-box">
+                    <h3>Sussurros Enlouquecedores</h3>
+                    <p class="spell-type">Necromancia de 2º nível</p>
+                    <div class="spell-stats">
                         <p><strong>Livro:</strong> BoET</p>
-                        <p><strong>Tempo de conjuração:</strong> 1 Ação</p>
+                        <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                        <p><strong>Alcance:</strong> 30 pés</p>
+                        <p><strong>Componentes:</strong> V, S</p>
+                        <p><strong>Duração:</strong> 1 minuto</p>
+                    </div>
+                    <div class="spell-description">
+                        <p>Você sussurra uma sequência de palavras vazias em direção a um alvo que possa ouvi-lo. O alvo deve ser bem-sucedido em um teste de resistência de Carisma ou ficará incapacitado. Enquanto incapacitado por esta magia, a velocidade do alvo é 0 e ele não pode se beneficiar de aumentos em sua velocidade. Para manter o efeito, você deve usar sua ação em turnos subsequentes para continuar sussurrando; caso contrário, a magia termina. A magia também termina se o alvo sofrer dano.</p>
+                        <p>O alvo pode realizar um novo teste no final de cada um dos seus turnos para encerrar o efeito da magia.</p>
+                        <p class="spell-classes"><strong>Classes:</strong> Mago</p>
+                    </div>
+                </div>
+            
+                <div class="spell-box">
+                    <h3>Brinde de Fada</h3>
+                    <p class="spell-type">Transmutação de 3º nível (ritual)</p>
+                    <div class="spell-stats">
+                        <p><strong>Livro:</strong> BoET</p>
+                        <p><strong>Tempo de Conjuração:</strong> 1 minuto</p>
+                        <p><strong>Alcance:</strong> Toque</p>
+                        <p><strong>Componentes:</strong> V, S, M (vinho no valor de 100 po, que o feitiço consome, e uma taça para cada participante)</p>
+                        <p><strong>Duração:</strong> 8 horas</p>
+                    </div>
+                    <div class="spell-description">
+                        <p>Você e até cinco outras criaturas fazem um brinde e bebem aos lordes e damas das cortes feéricas. Ao conjurar a magia, escolha um dos seguintes brindes, cujos alvos devem estar a até 10 pés de você durante toda a conjuração:</p>
+                        <ul class="spell-list">
+                            <li><strong>Criação de animais:</strong> Cada participante pode se comunicar com os animais como se compartilhassem um idioma.</li>
+                            <li><strong>Pesadelos:</strong> Ao se aproximar a menos de 30 pés de um participante, a criatura deve fazer um teste de Sabedoria ou ficará amedrontada por 1 minuto.</li>
+                            <li><strong>Ludicidade:</strong> Cada participante desenvolve asas diáfanas e ganha velocidade de voo igual à de caminhada por 10 rodadas.</li>
+                            <li><strong>Repouso:</strong> Vantagem em testes de resistência contra encantamento e imunidade a sono mágico.</li>
+                        </ul>
+                        <p class="spell-classes"><strong>Classes:</strong> Bardo, Clérigo, Druida, Paladino e Patrulheiro</p>
+                    </div>
+                </div>
+            
+                <div class="spell-box">
+                    <h3>Festa da Carne</h3>
+                    <p class="spell-type">Transmutação de 5º nível</p>
+                    <div class="spell-stats">
+                        <p><strong>Livro:</strong> BoET</p>
+                        <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
                         <p><strong>Alcance:</strong> 30 pés</p>
                         <p><strong>Componentes:</strong> V, M (um dente de animal e uma gota do seu sangue)</p>
                         <p><strong>Duração:</strong> Concentração, até 1 minuto</p>
+                    </div>
+                    <div class="spell-description">
                         <p>Uma criatura à sua escolha, dentro do alcance, é dominada por uma necessidade incontrolável de consumir a carne de sua própria espécie. O alvo deve realizar um teste de resistência de Carisma. Em caso de falha, seus dentes se tornam afiados como agulhas e ele passa a ser capaz de localizar criaturas do mesmo tipo que ele a até 150 pés pelo faro. Em seu turno, a criatura deve se mover em direção à criatura de seu tipo mais próxima, utilizando o meio mais rápido possível. Se estiver a até 5 pés de uma criatura de seu tipo, deve usar sua ação bônus para realizar um ataque de mordida contra ela. Seu alvo possui proficiência com o ataque de mordida e causa dano igual a <strong>1d6 + seu modificador de Força</strong>.</p>
                         <p>Ao final de cada turno e sempre que sofrer dano, o alvo pode fazer um novo teste de resistência. Em caso de sucesso, a magia termina.</p>
-                        <p><strong>Classes:</strong> <em>Bardo, Druida, Feiticeiro, Bruxo e Mago</em></p>
-                        </div>
-                            <div class="spell-box">
-                                <h3>Conjurar Seres do Bosque (TCE)</h3>
-                                <p><em>Conjure Woodland Beings</em></p>
-                                
-                                <h4>Pixie</h4>
-                                <p>A mesma será considerada de <strong>CR 1</strong> e com <strong>HP médio (6) 3d4-1</strong> ao ser invocada através desta magia.</p>
-                            </div>
+                        <p class="spell-classes"><strong>Classes:</strong> Bardo, Druida, Feiticeiro, Bruxo e Mago</p>
+                    </div>
+                </div>
+            
+                <div class="spell-box">
+                    <h3>Conjurar Seres do Bosque (TCE)</h3>
+                    <p class="spell-type">Conjuração de 4º nível</p>
                     
-                            <!-- Bloco de Nota do Mestre (Upcast) -->
-                            <div class="dm-note-box">
-                                <h4>Nota: Upcast Encontrar Familiar</h4>
-                                <p>Ao conjurar a magia, você pode escolher gastar 50po em materiais para invocar formas especiais: <em>Imp, Pseudodragon, Quasit, Sprite ou Sunfly</em>.</p>
-                        </div>
+                    <div class="spell-stats">
+                        <p><strong>Livro:</strong> PHB / TCE</p>
+                        <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                        <p><strong>Alcance:</strong> 60 pés</p>
+                        <p><strong>Componentes:</strong> V, S, M (uma caneca de azevinho)</p>
+                        <p><strong>Duração:</strong> Concentração, até 1 hora</p>
+                    </div>
+                    
+                    <div class="spell-description">
+                        <p>Você evoca seres feéricos que aparecem em espaços desocupados que você possa ver dentro do alcance.</p>
+                        <p><strong>Modificação da Guilda (Pixie):</strong> A criatura *Pixie* será considerada de <strong>CR 1</strong> e com <strong>HP médio (6) 3d4-1</strong> ao ser invocada através desta magia.</p>
+                        <p class="spell-classes"><strong>Classes:</strong> Druida e Patrulheiro</p>
+                    </div>
+
+                <!-- MAGIA FIND FAMILIAR / MOVER FUTURAMENTE-->
+                <div class="spell-box">
+                    <h3>Upcast Encontrar Familiar</h3>
+                    <div class="spell-description">
+                    <p>Ao conjurar a magia Encontrar Familiar, você pode escolher gastar 50 po em materiais para invocar formas especiais: <em>Imp, Pseudodragon, Quasit, Sprite ou Sunfly</em>.</p>
                     </div>
                 </div>
             </div>
         </div>        
     </section>
-    <section class="magias-lista-page">
-        <h1 class="page-title">Lista de Magias Homebrews</h1>
+    <section class="magias">
+        <h1>Lista de Magias Homebrews</h1>
+        <p class="descricao">Magias de livros não oficiais ou criadas pela Staff do servidor</p>
     
         <div class="spell-index-grid">
-            <!-- Coluna 1 -->
+            <!-- Coluna 1: Truques ao 3º Nível -->
             <div class="spell-col">
-                <h5>Truque (Nível 0)</h5>
-                <ul>
-                    <li><a href="#p6">Explosão Hidráulica</a></li>
-                    <li><a href="#p7">Maré Baixa</a></li>
-                    <li><a href="#p7">Molhar</a></li>
-                </ul>
-                <h5>1º Nível</h5>
-                <ul>
-                    <li><a href="#p7">Jato de Água</a></li>
-                </ul>
-                <h5>2º Nível</h5>
-                <ul>
-                    <li><a href="#p5">Animar Ghoul</a></li>
-                    <li><a href="#p6">Desidratação</a></li>
-                </ul>
+                <div class="level-group">
+                    <h5>Truque (Nível 0)</h5>
+                    <ul>
+                        <li><a href="#p6">Explosão Hidráulica</a></li>
+                        <li><a href="#p7">Maré Baixa</a></li>
+                        <li><a href="#p7">Molhar</a></li>
+                    </ul>
+                </div>
+                
+                <div class="level-group">
+                    <h5>1º Nível</h5>
+                    <ul>
+                        <li><a href="#p7">Jato de Água</a></li>
+                    </ul>
+                </div>
+                
+                <div class="level-group">
+                    <h5>2º Nível</h5>
+                    <ul>
+                        <li><a href="#p5">Animar Ghoul</a></li>
+                        <li><a href="#p6">Desidratação</a></li>
+                    </ul>
+                </div>
+        
+                <div class="level-group">
+                    <h5>3º Nível</h5>
+                    <ul>
+                        <li><a href="#p8">Represália Efervecente</a></li>
+                    </ul>
+                </div>
             </div>
-    
-            <!-- Coluna 2 -->
+        
+            <!-- Coluna 2: 4º ao 6º Nível -->
             <div class="spell-col">
-                <h5>3º Nível</h5>
-                <ul>
-                    <li><a href="#p8">Represália Efervecente</a></li>
-                </ul>
-                <h5>4º Nível</h5>
-                <ul>
-                    <li><a href="#p7">Onda Turbulenta</a></li>
-                </ul>
-                <h5>5º Nível</h5>
-                <ul>
-                    <li><a href="#p5">Contra-Corrente</a></li>
-                </ul>
+                <div class="level-group">
+                    <h5>4º Nível</h5>
+                    <ul>
+                        <li><a href="#p7">Onda Turbulenta</a></li>
+                    </ul>
+                </div>
+                
+                <div class="level-group">
+                    <h5>5º Nível</h5>
+                    <ul>
+                        <li><a href="#p5">Contra-Corrente</a></li>
+                    </ul>
+                </div>
+                
+                <div class="level-group">
+                    <h5>6º Nível</h5>
+                    <ul>
+                        <li><a href="#p4">Afogamento</a></li>
+                        <li><a href="#p5">Armamentos Líquidos</a></li>
+                        <li><a href="#p6">Cúpula de Juriath</a></li>
+                    </ul>
+                </div>
             </div>
-    
-            <!-- Coluna 3 -->
+        
+            <!-- Coluna 3: 7º ao 9º Nível -->
             <div class="spell-col">
-                <h5>6º Nível</h5>
-                <ul>
-                    <li><a href="#p4">Afogamento</a></li>
-                    <li><a href="#p5">Armamentos Líquidos</a></li>
-                    <li><a href="#p6">Cúpula de Juriath</a></li>
-                </ul>
-                <h5>7º Nível</h5>
-                <ul>
-                    <li><a href="#p5">Animar Mortos-vivos Maiores</a></li>
-                    <li><a href="#p6">Criar Gêiser</a></li>
-                </ul>
-                <h5>9º Nível</h5>
-                <ul>
-                    <li><a href="#p4">Mar Repentino</a></li>
-                </ul>
+                <div class="level-group">
+                    <h5>7º Nível</h5>
+                    <ul>
+                        <li><a href="#p5">Animar Mortos-vivos Maiores</a></li>
+                        <li><a href="#p6">Criar Gêiser</a></li>
+                    </ul>
+                </div>
+                
+                <div class="level-group">
+                    <h5>9º Nível</h5>
+                    <ul>
+                        <li><a href="#p4">Mar Repentino</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     
-        <h2 class="section-subtitle">Magia por Classe / Subclasse</h2>
+        <div>
+            <details>
+                <summary class="magias-subclasses">
+                    <h2>Lista de Magias por Classe / Subclasse</h2>
+                </summary>
     
-        <div class="classTable frame">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Magia</th>
-                        <th>Classe / Subclasse</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Afogamento</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
-                    <tr><td>Animar Ghoul</td><td>Bruxo, Clérigo e Mago</td></tr>
-                    <tr><td>Animar Mortos-vivos Maiores</td><td>Bruxo, Clérigo e Mago</td></tr>
-                    <tr><td>Armamentos Líquidos</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
-                    <tr><td>Contra-Corrente</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
-                    <tr><td>Criar Gêiser</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
-                    <tr><td>Cúpula de Juriath</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
-                    <tr><td>Desidratação</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
-                    <tr><td>Explosão Hidráulica</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
-                    <tr><td>Jato de Água</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
-                    <tr><td>Mar Repentino</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
-                    <tr><td>Maré Baixa</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
-                    <tr><td>Molhar</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
-                    <tr><td>Onda Turbulenta</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
-                    <tr><td>Represália Efervecente</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-    <section class="spell-section">
-        <div class="spells-grid">
+    <!-- Tabelas em duas colunas -->
+    <div class="magias-table-grid classTable frame">
+    <!-- Tabela 1 (Primeiras 8 magias) -->
+    <table class="magias-table">
+        <thead>
+            <tr>
+                <th>Magia</th>
+                <th>Classe / Subclasse</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Afogamento</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
+            <tr><td>Animar Ghoul</td><td>Bruxo, Clérigo e Mago</td></tr>
+            <tr><td>Animar Mortos-vivos Maiores</td><td>Bruxo, Clérigo e Mago</td></tr>
+            <tr><td>Armamentos Líquidos</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
+            <tr><td>Contra-Corrente</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
+            <tr><td>Criar Gêiser</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
+            <tr><td>Cúpula de Juriath</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
+            <tr><td>Desidratação</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
+        </tbody>
+    </table>
+
+    <!-- Tabela 2 (Últimas 7 magias) -->
+    <table class="magias-table">
+        <thead>
+            <tr>
+                <th>Magia</th>
+                <th>Classe / Subclasse</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Explosão Hidráulica</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
+            <tr><td>Jato de Água</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
+            <tr><td>Mar Repentino</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
+            <tr><td>Maré Baixa</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
+            <tr><td>Molhar</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
+            <tr><td>Onda Turbulenta</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
+            <tr><td>Represália Efervecente</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
+        </tbody>
+    </table>
+    </div>
+        </details>
+    </div>
+        <div class="spell-grid">
             
-            <div class="spell-card">
+            <div class="spell-box">
                 <h3>Afogamento</h3>
-                <p class="spell-meta"><em>6º nível de conjuração</em></p>
-                <p><strong>Tempo:</strong> 1 Ação | <strong>Alcance:</strong> 60 pés | <strong>Comp:</strong> V, S | <strong>Duração:</strong> Instantânea</p>
-                <p>Você enche com água os pulmões de uma criatura. O alvo deve realizar um teste de Constituição. Se falhar, sofre 9d6 de dano necrótico, não consegue falar e tem deslocamento 0. No final de cada turno, deve repetir o teste ou sofrer 3d6 de dano necrótico. Sucesso encerra a magia.</p>
-                <p><strong>Classes:</strong> <em>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</em></p>
+                <p class="spell-type">Evocação de 6º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 60 pés</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você enche com água os pulmões de uma criatura. O alvo deve realizar um teste de resistência de Constituição. Se falhar, sofre 9d6 de dano necrótico, não consegue falar e tem seu deslocamento reduzido a 0. No final de cada turno, deve repetir o teste ou sofrer 3d6 de dano necrótico. Um sucesso encerra a magia.</p>
+                    <p class="spell-classes"><strong>Classes:</strong> Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</p>
+                </div>
             </div>
     
-            <div class="spell-card">
+            <div class="spell-box">
                 <h3>Animar Ghoul</h3>
-                <p class="spell-meta"><em>Necromancia de 2º nível</em></p>
-                <p><strong>Tempo:</strong> 1 Ação | <strong>Alcance:</strong> Toque | <strong>Comp:</strong> V, S, M (carne podre, ônix 100po)</p>
-                <p>Ressuscita um humanoide Médio/Pequeno como um <a href="https://2014.5e.tools/bestiary.html#ghoul_mm">Ghoul</a> sob seu controle.</p>
-                <p><strong>Em níveis superiores:</strong> 3º nível cria um Ghoul Grande. 4º+ cria um <a href="https://2014.5e.tools/bestiary.html#ghast_mm">Ghast</a> (ônix 200po).</p>
-                <p><strong>Classes:</strong> <em>Bruxo, Clérigo e Mago</em></p>
+                <p class="spell-type">Necromancia de 2º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> Toque</p>
+                    <p><strong>Componentes:</strong> V, S, M (carne podre e uma pedra de ônix no valor de 100 po)</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Ressuscita um humanoide de tamanho Médio ou Pequeno como um <a href="https://2014.5e.tools/bestiary.html#ghoul_mm" target="_blank">Ghoul</a> sob seu controle total.</p>
+                    <p><strong>Em níveis superiores:</strong> Se conjurada usando um espaço de 3º nível, cria um Ghoul Grande. Ao usar um espaço de 4º nível ou superior, cria um <a href="https://2014.5e.tools/bestiary.html#ghast_mm" target="_blank">Ghast</a> (requer uma pedra de ônix no valor de 200 po).</p>
+                    <p class="spell-classes"><strong>Classes:</strong> Bruxo, Clérigo e Mago</p>
+                </div>
             </div>
     
-            <div class="spell-card">
+            <div class="spell-box">
                 <h3>Animar Mortos-vivos Maiores</h3>
-                <p class="spell-meta"><em>Necromancia de 6º nível</em></p>
-                <p><strong>Tempo:</strong> 1 Hora | <strong>Alcance:</strong> 15 pés | <strong>Comp:</strong> V, S, M</p>
-                <p>Cria um servo a partir de ossos ou cadáver (Grande/Enorme). Esqueleto usa ficha de <a href="https://2014.5e.tools/bestiary.html#minotaur%20skeleton_mm">Minotauro Esqueleto</a>, Zumbi usa <a href="https://2014.5e.tools/bestiary.html#ogre%20zombie_mm">Ogro Zumbi</a>.</p>
-                <p><strong>Em níveis superiores:</strong> +1 criatura por nível de espaço acima de 6º.</p>
-                <p><strong>Classes:</strong> <em>Bruxo, Clérigo e Mago</em></p>
+                <p class="spell-type">Necromancia de 6º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 hora</p>
+                    <p><strong>Alcance:</strong> 15 pés</p>
+                    <p><strong>Componentes:</strong> V, S, M</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Cria um servo a partir de ossos ou de um cadáver de tamanho Grande ou Enorme. Um esqueleto usa a ficha de <a href="https://2014.5e.tools/bestiary.html#minotaur%20skeleton_mm" target="_blank">Minotauro Esqueleto</a>, enquanto um zumbi utiliza as estatísticas de um <a href="https://2014.5e.tools/bestiary.html#ogre%20zombie_mm" target="_blank">Ogro Zumbi</a>.</p>
+                    <p><strong>Em níveis superiores:</strong> Você pode animar +1 criatura adicional para cada nível de espaço acima do 6º nível.</p>
+                    <p class="spell-classes"><strong>Classes:</strong> Bruxo, Clérigo e Mago</p>
+                </div>
             </div>
     
-            <div class="spell-card">
+            <div class="spell-box">
                 <h3>Armamentos Líquidos</h3>
-                <p class="spell-meta"><em>6º nível de conjuração</em></p>
-                <p><strong>Tempo:</strong> 1 Ação | <strong>Alcance:</strong> Pessoal | <strong>Comp:</strong> V, S, M</p>
-                <p>Cria tridente e escudo de água. Recebe proficiência, +1 CA, vantagem em testes de Destreza contra magias/armadilhas e permite dois ataques por rodada. Pode arremessar o tridente para dano de frio/fogo.</p>
-                <p><strong>Classes:</strong> <em>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</em></p>
+                <p class="spell-type">Evocação de 6º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> Pessoal</p>
+                    <p><strong>Componentes:</strong> V, S, M</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você molda um tridente e um escudo feitos inteiramente de água. Enquanto a magia durar, você recebe proficiência com esses itens, um bônus de +1 na CA, vantagem em testes de resistência de Destreza contra magias ou armadilhas e a capacidade de realizar dois ataques por rodada. Você pode arremessar o tridente para desferir dano de frio ou fogo.</p>
+                    <p class="spell-classes"><strong>Classes:</strong> Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</p>
+                </div>
             </div>
     
-            <div class="spell-card">
+            <div class="spell-box">
                 <h3>Contra-Corrente</h3>
-                <p class="spell-meta"><em>5º nível de conjuração</em></p>
-                <p><strong>Tempo:</strong> 1 Ação | <strong>Alcance:</strong> 120 pés | <strong>Comp:</strong> V, S, M</p>
-                <p>Onda de 30 pés de largura. Alvos devem passar em teste de Força ou sofrem 12d6 de dano de concussão e são empurrados 50 pés.</p>
-                <p><strong>Classes:</strong> <em>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</em></p>
+                <p class="spell-type">Evocação de 5º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 120 pés</p>
+                    <p><strong>Componentes:</strong> V, S, M</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você conjura uma onda massiva com 30 pés de largura. Os alvos na área devem ser bem-sucedidos em um teste de resistência de Força ou sofrerão 12d6 de dano de concussão e serão empurrados 50 pés para trás.</p>
+                    <p class="spell-classes"><strong>Classes:</strong> Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</p>
+                </div>
             </div>
     
-            <div class="spell-card">
+            <div class="spell-box">
                 <h3>Criar Gêiser</h3>
-                <p class="spell-meta"><em>7º nível de transmutação</em></p>
-                <p><strong>Tempo:</strong> 1 Ação | <strong>Alcance:</strong> 120 pés | <strong>Comp:</strong> V, S, M</p>
-                <p>Explosão de água (10 pés de raio). Alvos sofrem 8d6 de dano de concussão e são lançados 40 pés para o alto. Dano de queda se não atingirem altura total.</p>
-                <p><strong>Classes:</strong> <em>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</em></p>
+                <p class="spell-type">Transmutação de 7º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 120 pés</p>
+                    <p><strong>Componentes:</strong> V, S, M</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Uma explosão violenta de água irrompe em um raio de 10 pés. Os alvos na área sofrem 8d6 de dano de concussão e são arremessados 40 pés para o alto. Aplica-se dano de queda normal caso não atinjam a altura total devido a tetos ou obstruções.</p>
+                    <p class="spell-classes"><strong>Classes:</strong> Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</p>
+                </div>
             </div>
     
-            <div class="spell-card">
+            <div class="spell-box">
                 <h3>Cúpula de Juriath</h3>
-                <p class="spell-meta"><em>6º nível de conjuração</em></p>
-                <p><strong>Tempo:</strong> 1 Ação | <strong>Alcance:</strong> Pessoal (esfera 10 pés)</p>
-                <p>Cúpula opaca. Bloqueia linha de visão. Fogo, gelo, veneno, eletricidade e ácido não atravessam. Ataques através da cúpula sofrem desvantagem.</p>
-                <p><strong>Classes:</strong> <em>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</em></p>
+                <p class="spell-type">Evocação de 6º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> Pessoal (esfera de 10 pés)</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Uma cúpula opaca surge ao seu redor, bloqueando totalmente a linha de visão externa. Efeitos de fogo, gelo, veneno, eletricidade e ácido não conseguem atravessar a barreira. Ataques desferidos através da cúpula sofrem desvantagem.</p>
+                    <p class="spell-classes"><strong>Classes:</strong> Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</p>
+                </div>
             </div>
     
-            <div class="spell-card">
+            <div class="spell-box">
                 <h3>Desidratação</h3>
-                <p class="spell-meta"><em>2º nível de transmutação</em></p>
-                <p><strong>Tempo:</strong> 1 Ação | <strong>Alcance:</strong> Toque | <strong>Comp:</strong> V, S</p>
-                <p>Alvo sofre 2d10 dano necrótico e fica envenenado. Repete teste no fim dos turnos. Não afeta constructos ou mortos-vivos sem líquidos.</p>
-                <p><strong>Em níveis superiores:</strong> Dano aumenta 1d10 por nível acima de 2º.</p>
-                <p><strong>Classes:</strong> <em>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</em></p>
+                <p class="spell-type">Transmutação de 2º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> Toque</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>O alvo tocado sofre 2d10 de dano necrótico e fica envenenado, repetindo o teste de resistência no final de cada um dos turnos dele. Esta magia não surte efeito em constructos ou mortos-vivos desprovidos de fluidos vitais.</p>
+                    <p><strong>Em níveis superiores:</strong> O dano aumenta em 1d10 para cada nível de espaço acima do 2º nível.</p>
+                    <p class="spell-classes"><strong>Classes:</strong> Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</p>
+                </div>
             </div>
     
-            <div class="spell-card">
+            <div class="spell-box">
                 <h3>Explosão Hidráulica</h3>
-                <p class="spell-meta"><em>Truque de conjuração</em></p>
-                <p><strong>Tempo:</strong> 1 Ação | <strong>Alcance:</strong> 30 pés | <strong>Comp:</strong> S</p>
-                <p>Esfera de água: 1d8 de dano de frio e encharca o alvo, apagando chamas não mágicas.</p>
-                <p><strong>Em níveis superiores:</strong> Aumenta em 1d8 (5º, 11º, 17º).</p>
-                <p><strong>Classes:</strong> <em>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</em></p>
+                <p class="spell-type">Evocação - Truque</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 30 pés</p>
+                    <p><strong>Componentes:</strong> S</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você dispara uma esfera concentrada de água que causa 1d8 de dano de frio e deixa o alvo completamente encharcado, extinguindo imediatamente chamas não mágicas em sua posse ou área.</p>
+                    <p><strong>Em níveis superiores:</strong> O dano desta magia aumenta em 1d8 quando você atinge o 5º nível (2d8), 11º nível (3d8) e 17º nível (4d8).</p>
+                    <p class="spell-classes"><strong>Classes:</strong> Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</p>
+                </div>
             </div>
     
-            <div class="spell-card">
+            <div class="spell-box">
                 <h3>Jato de Água</h3>
-                <p class="spell-meta"><em>1º nível de conjuração</em></p>
-                <p><strong>Tempo:</strong> 1 Ação | <strong>Alcance:</strong> Pessoal (linha 30 pés) | <strong>Comp:</strong> S, M</p>
-                <p>Pulso de água: 2d6 dano concussão e empurra até o final da linha.</p>
-                <p><strong>Em níveis superiores:</strong> +1d6 de dano por nível acima de 1º.</p>
-                <p><strong>Classes:</strong> <em>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</em></p>
+                <p class="spell-type">Evocação de 1º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> Pessoal (linha de 30 pés)</p>
+                    <p><strong>Componentes:</strong> S, M</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Um pulso linear de água pressurizada explode de suas mãos, causando 2d6 de dano de concussão e empurrando as criaturas atingidas até o término da linha de efeito.</p>
+                    <p><strong>Em níveis superiores:</strong> O dano aumenta em 1d6 para cada nível de espaço acima do 1º nível.</p>
+                    <p class="spell-classes"><strong>Classes:</strong> Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</p>
+                </div>
             </div>
     
-            <div class="spell-card">
+            <div class="spell-box">
                 <h3>Mar Repentino</h3>
-                <p class="spell-meta"><em>9º nível de transmutação</em></p>
-                <p><strong>Tempo:</strong> 1 Ação | <strong>Alcance:</strong> 120 pés | <strong>Comp:</strong> S, M</p>
-                <p>Terreno desaba (raio 100 pés) e inunda. 12d6 concussão + 12d6 frio. Derruba e submerge. Estruturas desabam.</p>
-                <p><strong>Classes:</strong> <em>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</em></p>
+                <p class="spell-type">Transmutação de 9º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 120 pés</p>
+                    <p><strong>Componentes:</strong> S, M</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>O terreno desaba violentamente em um raio de 100 pés e é instantaneamente inundado. Criaturas na área sofrem 12d6 de dano de concussão somados a 12d6 de dano de frio, sendo derrubadas (caídas) e submersas. Estruturas na área desabam sob a força do impacto.</p>
+                    <p class="spell-classes"><strong>Classes:</strong> Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</p>
+                </div>
             </div>
     
-            <div class="spell-card">
+            <div class="spell-box">
                 <h3>Maré Baixa</h3>
-                <p class="spell-meta"><em>Truque de evocação</em></p>
-                <p><strong>Tempo:</strong> 1 Ação | <strong>Alcance:</strong> 30 pés | <strong>Comp:</strong> V, S</p>
-                <p>Cria vantagem para o próximo ataque contra o alvo (efeito similar à ação de Ajudar).</p>
-                <p><strong>Classes:</strong> <em>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</em></p>
+                <p class="spell-type">Evocação - Truque</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 30 pés</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você manipula as correntes sutis ao redor do alvo, concedendo vantagem no próximo ataque desferido contra ele antes do início do seu próximo turno (efeito equivalente à ação de Ajudar).</p>
+                    <p class="spell-classes"><strong>Classes:</strong> Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</p>
+                </div>
             </div>
     
-            <div class="spell-card">
+            <div class="spell-box">
                 <h3>Molhar</h3>
-                <p class="spell-meta"><em>Truque de evocação</em></p>
-                <p><strong>Tempo:</strong> 1 Ação | <strong>Alcance:</strong> 30 pés | <strong>Comp:</strong> V, S, M</p>
-                <p>Dardo de água: 1d6 dano de concussão e derruba (caído).</p>
-                <p><strong>Em níveis superiores:</strong> Aumenta em 1d6 (5º, 11º, 17º).</p>
-                <p><strong>Classes:</strong> <em>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</em></p>
+                <p class="spell-type">Evocação - Truque</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 30 pés</p>
+                    <p><strong>Componentes:</strong> V, S, M</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você conjura um dardo veloz de água que atinge o oponente causando 1d6 de dano de concussão e forçando-o a ficar caído.</p>
+                    <p><strong>Em níveis superiores:</strong> O dano desta magia aumenta em 1d6 quando você atinge o 5º nível (2d6), 11º nível (3d6) e 17º nível (4d6).</p>
+                    <p class="spell-classes"><strong>Classes:</strong> Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</p>
+                </div>
             </div>
     
-            <div class="spell-card">
+            <div class="spell-box">
                 <h3>Onda Turbulenta</h3>
-                <p class="spell-meta"><em>4º nível de transmutação</em></p>
-                <p><strong>Tempo:</strong> 1 Ação | <strong>Alcance:</strong> 60 pés | <strong>Comp:</strong> V, S, M</p>
-                <p>Solo ondula. 4d6 dano concussão, move alvos 10 pés para fora. Terreno difícil.</p>
-                <p><strong>Classes:</strong> <em>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</em></p>
+                <p class="spell-type">Transmutação de 4º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 60 pés</p>
+                    <p><strong>Componentes:</strong> V, S, M</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>O solo sob as criaturas ondula como o oceano. Causa 4d6 de dano de concussão e move os alvos afetados 10 pés para fora do epicentro. A área afetada se transforma em terreno difícil.</p>
+                    <p class="spell-classes"><strong>Classes:</strong> Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</p>
+                </div>
             </div>
     
-            <div class="spell-card">
+            <div class="spell-box">
                 <h3>Represália Fervente</h3>
-                <p class="spell-meta"><em>3º nível de conjuração</em></p>
-                <p><strong>Tempo:</strong> 1 Reação | <strong>Alcance:</strong> 10 pés | <strong>Comp:</strong> V, S</p>
-                <p>Rajada de vapor. Se contra ataque de arma: atacante tem desvantagem. Se contra magia: oponente faz teste de Concentração ou a magia falha.</p>
-                <p><strong>Classes:</strong> <em>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</em></p>
+                <p class="spell-type">Evocação de 3º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 reação</p>
+                    <p><strong>Alcance:</strong> 10 pés</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Uma rajada defensiva de vapor fervendo irrompe de você. Se usada contra um ataque de arma, o atacante sofre desvantagem na jogada. Se usada contra a conjuração de uma magia, o oponente deve realizar um teste de Concentração imediatamente ou sua magia falhará.</p>
+                    <p class="spell-classes"><strong>Classes:</strong> Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</p>
+                </div>
             </div>
     
         </div>
     </section>
-    <section class="lore-section">
-        <h1>Sanguimancia</h1>
+    
+    <section class="magias">
+        <h1 class="sanguimancia">Sanguimancia</h1>
         <h2>Magias de Sangue</h2>
         
         <p>A <strong>Sanguimancia</strong>, conhecida também como <strong>Hemomancia</strong> ou <strong>Magia de Sangue</strong>, representa um dos ramos mais proibidos e temidos da arte arcana. Embora seu domínio possa conceder poderes de cura e revigoramento impressionantes, a manipulação do sangue – especialmente o de seres sencientes – é universalmente estigmatizada como uma prática maligna e profana na maioria das culturas.</p>
     
         <p>Essa forma de magia é predominantemente empunhada por aqueles dedicados a seus segredos mais sombrios: os enigmáticos <strong>Magos de Sangue</strong> e os devotos (e muitas vezes heréticos) <strong>Clérigos de Sangue</strong>. Enquanto eles mergulham fundo nos mistérios da <em>vitae</em>, outras classes podem, ocasionalmente, ter acesso a fragmentos desse poder através de itens arcanos como Pergaminhos ou Tatuagens, cujos efeitos, por mais úteis que sejam, sempre carregam o eco de um tabu.</p>
     
-        <p>A busca por essa maestria exige um preço, e aqueles que ousam trilhar o caminho carmesim são frequentemente vistos com péssimos olhos, não importando a intenção por trás de seus feitiços. Pois o sangue, para muitos, é a essência da vida, e brincar com ele é brincar com a própria alma.</p>
-    </section>
-    <section class="sanguimancia-container">
-        <h2 style="text-align: center; color: #660000;">Lista de Magias</h2>
+        <p>A busca por essa maestria exige um preço, e those que ousam trilhar o caminho carmesim são frequentemente vistos com péssimos olhos, não importando a intenção por trás de seus feitiços. Pois o sangue, para muitos, é a essência da vida, e brincar com ele é brincar com a própria alma.</p>
+
+        <h2>Lista de Magias</h2>
     
         <!-- Lista de Magias em duas colunas -->
         <div class="magias-list-grid">
-            <div>
-                <h5>Truques (Nível 0)</h5>
-                <ul>
-                    <li><a href="#p14">Mordida Sangrenta</a></li>
-                    <li><a href="#p14">Ponte de Sangue</a></li>
-                    <li><a href="#p15">Raio de Sangue</a></li>
-                    <li><a href="#p16">Sangramento</a></li>
-                </ul>
-                <h5>1º Nível</h5>
-                <ul>
-                    <li><a href="#p13">Drenagem de Sangue</a></li>
-                    <li><a href="#p14">Impressão de Sangue</a></li>
-                </ul>
-                <h5>2º Nível</h5>
-                <ul>
-                    <li><a href="#p16">Selo de Sangue</a></li>
-                    <li><a href="#p17">Ventríloquo de Sangue</a></li>
-                </ul>
-                <h5>3º Nível</h5>
-                <ul>
-                    <li><a href="#p13">Explosão de Sangue</a></li>
-                    <li><a href="#p14">Sangue Animado</a></li>
-                    <li><a href="#p14">Sangue Congelante</a></li>
-                </ul>
-                <h5>4º Nível</h5>
-                <ul>
-                    <li><a href="#p12">Chuva de Sangue</a></li>
-                    <li><a href="#p12">Frenesi de Sangue</a></li>
-                    <li><a href="#p14">Manto de Sangue</a></li>
-                </ul>
+            <!-- Coluna 1: Truques ao 3º Nível -->
+            <div class="spell-col">
+                <div class="level-group">
+                    <h5>Truques (Nível 0)</h5>
+                    <ul>
+                        <li><a href="#p14">Mordida Sangrenta</a></li>
+                        <li><a href="#p14">Ponte de Sangue</a></li>
+                        <li><a href="#p15">Raio de Sangue</a></li>
+                        <li><a href="#p16">Sangramento</a></li>
+                    </ul>
+                </div>
+                
+                <div class="level-group">
+                    <h5>1º Nível</h5>
+                    <ul>
+                        <li><a href="#p13">Drenagem de Sangue</a></li>
+                        <li><a href="#p14">Impressão de Sangue</a></li>
+                    </ul>
+                </div>
+                
+                <div class="level-group">
+                    <h5>2º Nível</h5>
+                    <ul>
+                        <li><a href="#p16">Selo de Sangue</a></li>
+                        <li><a href="#p17">Ventríloquo de Sangue</a></li>
+                    </ul>
+                </div>
+        
+                <div class="level-group">
+                    <h5>3º Nível</h5>
+                    <ul>
+                        <li><a href="#p13">Explosão de Sangue</a></li>
+                        <li><a href="#p14">Sangue Animado</a></li>
+                        <li><a href="#p14">Sangue Congelante</a></li>
+                    </ul>
+                </div>
             </div>
-    
-            <div>
-                <h5>5º Nível</h5>
-                <ul>
-                    <li><a href="#p12">Canalizar Avatar de Sangue</a></li>
-                    <li><a href="#p14">Horror Sanguíneo</a></li>
-                    <li><a href="#p16">Tentáculos Sangrentos</a></li>
-                </ul>
-                <h5>6º Nível</h5>
-                <ul>
-                    <li><a href="#p12">Cartografia de Sangue</a></li>
-                    <li><a href="#p14">Ventríloquo de Sangue em Massa</a></li>
-                </ul>
-                <h5>7º Nível</h5>
-                <ul>
-                    <li><a href="#p12">Criaturas Sanguíneas</a></li>
-                    <li><a href="#p13">Ferver o Sangue</a></li>
-                    <li><a href="#p17">Transporte por Sangue</a></li>
-                </ul>
-                <h5>8º Nível</h5>
-                <ul>
-                    <li><a href="#p15">Sangue Divino</a></li>
-                    <li><a href="#p16">Tempestade de Sangue</a></li>
-                </ul>
-                <h5>9º Nível</h5>
-                <ul>
-                    <li><a href="#p13">Drenar Vida</a></li>
-                    <li><a href="#p15">Sangue para Ácido</a></li>
-                </ul>
+        
+            <!-- Coluna 2: 4º ao 6º Nível -->
+            <div class="spell-col">
+                <div class="level-group">
+                    <h5>4º Nível</h5>
+                    <ul>
+                        <li><a href="#p12">Chuva de Sangue</a></li>
+                        <li><a href="#p12">Frenesi de Sangue</a></li>
+                        <li><a href="#p14">Manto de Sangue</a></li>
+                    </ul>
+                </div>
+                
+                <div class="level-group">
+                    <h5>5º Nível</h5>
+                    <ul>
+                        <li><a href="#p12">Canalizar Avatar de Sangue</a></li>
+                        <li><a href="#p14">Horror Sanguíneo</a></li>
+                        <li><a href="#p16">Tentáculos Sangrentos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="level-group">
+                    <h5>6º Nível</h5>
+                    <ul>
+                        <li><a href="#p12">Cartografia de Sangue</a></li>
+                        <li><a href="#p14">Ventríloquo de Sangue em Massa</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!-- Coluna 3: 7º ao 9º Nível -->
+            <div class="spell-col">
+                <div class="level-group">
+                    <h5>7º Nível</h5>
+                    <ul>
+                        <li><a href="#p12">Criaturas Sanguíneas</a></li>
+                        <li><a href="#p13">Ferver o Sangue</a></li>
+                        <li><a href="#p17">Transporte por Sangue</a></li>
+                    </ul>
+                </div>
+        
+                <div class="level-group">
+                    <h5>8º Nível</h5>
+                    <ul>
+                        <li><a href="#p15">Sangue Divino</a></li>
+                        <li><a href="#p16">Tempestade de Sangue</a></li>
+                    </ul>
+                </div>
+                
+                <div class="level-group">
+                    <h5>9º Nível</h5>
+                    <ul>
+                        <li><a href="#p13">Drenar Vida</a></li>
+                        <li><a href="#p15">Sangue para Ácido</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    
-        <h3 style="text-align: center; color: #660000; margin-top: 40px;">Magia por Subclasse</h3>
-    
-        <!-- Tabelas em duas colunas -->
-        <div class="magias-table-grid">
-            <table class="magias-table">
-                <thead><tr><th>Magia</th><th>Classe de Sangue</th></tr></thead>
-                <tbody>
-                    <tr><td>Canalizar Avatar de Sangue</td><td>Mago</td></tr>
-                    <tr><td>Cartografia de Sangue</td><td>Mago / Clérigo</td></tr>
-                    <tr><td>Chuva de Sangue</td><td>Clérigo</td></tr>
-                    <tr><td>Criaturas Sanguíneas</td><td>Clérigo</td></tr>
-                    <tr><td>Drenagem de Sangue</td><td>Mago</td></tr>
-                    <tr><td>Drenar Vida</td><td>Mago / Clérigo</td></tr>
-                    <tr><td>Explosão de Sangue</td><td>Mago</td></tr>
-                    <tr><td>Ferver o Sangue</td><td>Mago</td></tr>
-                    <tr><td>Frenesi de Sangue</td><td>Mago</td></tr>
-                    <tr><td>Horror Sanguíneo</td><td>Mago / Clérigo</td></tr>
-                    <tr><td>Impressão de Sangue</td><td>Mago / Clérigo</td></tr>
-                    <tr><td>Manto de Sangue</td><td>Clérigo</td></tr>
-                    <tr><td>Mordida Sangrenta</td><td>Mago</td></tr>
-                </tbody>
-            </table>
-    
-            <table class="magias-table">
-                <thead><tr><th>Magia</th><th>Classe de Sangue</th></tr></thead>
-                <tbody>
-                    <tr><td>Ponte de Sangue</td><td>Clérigo</td></tr>
-                    <tr><td>Raio de Sangue</td><td>Mago</td></tr>
-                    <tr><td>Sangue Animado</td><td>Clérigo</td></tr>
-                    <tr><td>Sangue Congelante</td><td>Mago</td></tr>
-                    <tr><td>Sangue Divino</td><td>Clérigo</td></tr>
-                    <tr><td>Sangue para Ácido</td><td>Mago</td></tr>
-                    <tr><td>Sangramento</td><td>Mago / Clérigo</td></tr>
-                    <tr><td>Selo de Sangue</td><td>Mago / Clérigo</td></tr>
-                    <tr><td>Tempestade de Sangue</td><td>Mago</td></tr>
-                    <tr><td>Tentáculos Sangrentos</td><td>Mago</td></tr>
-                    <tr><td>Transporte por Sangue</td><td>Mago</td></tr>
-                    <tr><td>Ventríloquo de Sangue</td><td>Mago</td></tr>
-                    <tr><td>Ventríloquo de Sangue em Massa</td><td>Mago</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-    <section class="spell-section">
-        <div class="spells-grid">
-        <h2>Canalizar Avatar de Sangue</h2>
-        <span class="meta">Necromancia de 5º nível | Tempo: 1 ação | Alcance: Próprio | Duração: Conc., até 10 min</span>
-        <div class="description">
-            <p>Você canaliza o poder titânico do Avatar de Sangue, imbuindo sua própria carne com o coração da Sanguimancia. Até o fim da magia, você não pode conjurar magias e ganha os seguintes benefícios:</p>
-            <ul>
-                <li>Você ganha resistência a danos contundentes, perfurantes e cortantes.</li>
-                <li>Você tem vantagem em jogadas de ataque feitas com armas brancas.</li>
-                <li>Seus ataques desarmados causam <strong>1d8 de dano + seu bônus de conjuração de magia</strong>.</li>
-                <li>Quando você atinge um alvo com um ataque de arma, esse alvo sofre <strong>2d6</strong> de dano necrótico extra e você recupera pontos de vida iguais ao dano necrótico causado.</li>
-                <li>Você tem proficiência em testes de resistência de Força e Constituição.</li>
-                <li>Você pode atacar duas vezes, em vez de uma, ao realizar a ação de Ataque no seu turno.</li>
-            </ul>
-            <p>Imediatamente após o término da magia, você deve ser bem-sucedido em um teste de resistência de Constituição CD 15, sofrendo <strong>5d6</strong> de dano de força em caso de falha ou metade desse valor em caso de sucesso. Se esta magia terminar porque você está com 0 pontos de vida, você falha imediatamente em um teste de resistência contra a morte.</p>
-        </div>
-        <div class="price-crimson">
-            <strong>Preço Carmesim.</strong> Ao conjurar esta magia, você pode optar por gastar dados de vida para fortalecê-la até a metade do seu nível (arredondado para cima). Para cada cinco dados de vida gastos dessa forma, sua CA aumenta em 1 durante a duração da magia.
-        </div>
-        <span class="subclasses">Subclasses: Mago de Sangue</span>
-    </section>
 
-    <section class="spell-card">
-        <h2>Cartografia do Sangue</h2>
-        <span class="meta">Necromancia de 6º nível (ritual) | Tempo: 1 ação | Alcance: Próprio | Duração: Instantânea</span>
-        <div class="description">
-            <p><em>“O sangue sempre se lembra.”</em></p>
-            <p>Você extrai sangue do frasco ou cadáver e o joga sobre o pergaminho. O sangue flui, formando um mapa claro de todos os locais por onde o antigo dono do sangue passou no último mês. O caminho que a criatura percorreu é destacado, e o tempo gasto em cada local é indicado pela espessura das marcas de sangue. O mapa de sangue seca em um minuto e se torna permanente e impossível de dissipar.</p>
+        <div>
+        <details>
+            <summary class="magias-subclasses">
+                <h2>Lista de Magia por Subclasse</h2>
+            </summary>
+            
+            <!-- Tabelas em duas colunas -->
+            <div class="magias-table-grid">
+                <!-- Tabela 1 (Primeiras 13 magias) -->
+                <table class="magias-table">
+                    <thead>
+                        <tr>
+                            <th>Magia</th>
+                            <th>Subclasse de Sangue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Canalizar Avatar de Sangue</td><td>Mago</td></tr>
+                        <tr><td>Cartografia de Sangue</td><td>Mago / Clérigo</td></tr>
+                        <tr><td>Chuva de Sangue</td><td>Clérigo</td></tr>
+                        <tr><td>Criaturas Sanguíneas</td><td>Clérigo</td></tr>
+                        <tr><td>Drenagem de Sangue</td><td>Mago</td></tr>
+                        <tr><td>Drenar Vida</td><td>Mago / Clérigo</td></tr>
+                        <tr><td>Explosão de Sangue</td><td>Mago</td></tr>
+                        <tr><td>Ferver o Sangue</td><td>Mago</td></tr>
+                        <tr><td>Frenesi de Sangue</td><td>Mago</td></tr>
+                        <tr><td>Horror Sanguíneo</td><td>Mago / Clérigo</td></tr>
+                        <tr><td>Impressão de Sangue</td><td>Mago / Clérigo</td></tr>
+                        <tr><td>Manto de Sangue</td><td>Clérigo</td></tr>
+                        <tr><td>Mordida Sangrenta</td><td>Mago</td></tr>
+                    </tbody>
+                </table>
+        
+                <!-- Tabela 2 (Últimas 13 magias) -->
+                <table class="magias-table">
+                    <thead>
+                        <tr>
+                            <th>Magia</th>
+                            <th>Subclasse de Sangue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Ponte de Sangue</td><td>Clérigo</td></tr>
+                        <tr><td>Raio de Sangue</td><td>Mago</td></tr>
+                        <tr><td>Sangue Animado</td><td>Clérigo</td></tr>
+                        <tr><td>Sangue Congelante</td><td>Mago</td></tr>
+                        <tr><td>Sangue Divino</td><td>Clérigo</td></tr>
+                        <tr><td>Sangue para Ácido</td><td>Mago</td></tr>
+                        <tr><td>Sangramento</td><td>Mago / Clérigo</td></tr>
+                        <tr><td>Selo de Sangue</td><td>Mago / Clérigo</td></tr>
+                        <tr><td>Tempestade de Sangue</td><td>Mago</td></tr>
+                        <tr><td>Tentáculos Sangrentos</td><td>Mago</td></tr>
+                        <tr><td>Transporte por Sangue</td><td>Mago</td></tr>
+                        <tr><td>Ventríloquo de Sangue</td><td>Mago</td></tr>
+                        <tr><td>Ventríloquo de Sangue em Massa</td><td>Mago</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </details>
         </div>
-        <span class="subclasses">Subclasses: Mago de Sangue, Clérigo de Sangue</span>
-    </section>
 
-    <section class="spell-card">
-        <h2>Chuva de Sangue</h2>
-        <span class="meta">Necromancia de 4º nível | Tempo: 1 ação | Alcance: 30 pés | Duração: Conc., até 1 minuto</span>
-        <div class="description">
-            <p>Escolha um cilindro com 30 pés de raio e 60 pés de altura dentro do alcance. Um fluido vermelho, semelhante a sangue, chove neste cilindro. Criaturas que não sejam você que comecem seu turno na área ou entrem nela em seu turno devem ser bem-sucedidas em um teste de Constituição ou sofrerão <strong>4d8</strong> de dano necrótico. Esta magia tem efeito reverso em mortos-vivos, fazendo com que recuperem <strong>2d8</strong> pontos de vida.</p>
-            <p>Enquanto se concentra neste feitiço, você pode usar sua ação para mover o pilar até 20 pés em qualquer direção.</p>
-            <p><strong>Em níveis superiores:</strong> Ao conjurar esta magia usando um espaço de magia de 5º nível ou superior, o dano e a cura aumentam em <strong>1d8</strong> para cada nível de espaço acima do 4º.</p>
+        <div class="spell-grid">
+            
+            <!-- Canalizar Avatar de Sangue -->
+            <div class="spell-box">
+                <h3>Canalizar Avatar de Sangue</h3>
+                <p class="spell-type">Necromancia de 5º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> Próprio</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Concentração, até 10 minutos</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você canaliza o poder titânico do Avatar de Sangue, imbuindo sua própria carne com o coração da Sanguimancia. Até o fim da magia, você não pode conjurar magias e ganha os seguintes benefícios:</p>
+                    <ul class="spell-list">
+                        <li>Você ganha resistência a danos contundentes, perfurantes e cortantes.</li>
+                        <li>Você tem vantagem em jogadas de ataque feitas com armas brancas.</li>
+                        <li>Seus ataques desarmados causam <strong>1d8 + seu bônus de conjuração de magia</strong> de dano.</li>
+                        <li>Quando você atinge um alvo com um ataque de arma, esse alvo sofre <strong>2d6</strong> de dano necrótico extra e você recupera pontos de vida iguais ao dano necrótico causado.</li>
+                        <li>Você tem proficiência em testes de resistência de Força e Constituição.</li>
+                        <li>Você pode atacar duas vezes, em vez de uma, ao realizar a ação de Ataque no seu turno.</li>
+                    </ul>
+                    <p>Imediatamente após o término da magia, você deve ser bem-sucedido em um teste de resistência de Constituição CD 15, sofrendo <strong>5d6</strong> de dano de força em caso de falha ou metade desse valor em caso de sucesso. Se esta magia terminar porque você está com 0 pontos de vida, você falha imediatamente em um teste de resistência contra a morte.</p>
+                    
+                    <div class="dm-note-box price-crimson">
+                        <h4>Preço Carmesim</h4>
+                        <p>Ao conjurar esta magia, você pode optar por gastar dados de vida para fortalecê-la até a metade do seu nível (arredondado para cima). Para cada cinco dados de vida gastos dessa forma, sua CA aumenta em 1 durante a duração da magia.</p>
+                    </div>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Cartografia do Sangue -->
+            <div class="spell-box">
+                <h3>Cartografia do Sangue</h3>
+                <p class="spell-type">Necromancia de 6º nível (ritual)</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> Próprio</p>
+                    <p><strong>Componentes:</strong> V, S, M (um pergaminho virgem e amostras de sangue fresco)</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p><em>“O sangue sempre se lembra.”</em></p>
+                    <p>Você extrai sangue do frasco ou cadáver e o joga sobre o pergaminho. O sangue flui, formando um mapa claro de todos os locais por onde o antigo dono do sangue passou no último mês. O caminho que a criatura percorreu é destacado, e o tempo gasto em cada local é indicado pela espessura das marcas de sangue. O mapa de sangue seca em um minuto e se torna permanente e impossível de dissipar.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue, Clérigo de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Chuva de Sangue -->
+            <div class="spell-box">
+                <h3>Chuva de Sangue</h3>
+                <p class="spell-type">Necromancia de 4º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 30 pés</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Concentração, até 1 minuto</p>
+                </div>
+                <div class="spell-description">
+                    <p>Escolha um cilindro com 30 pés de raio e 60 pés de altura dentro do alcance. Um fluido vermelho, semelhante a sangue, chove neste cilindro. Criaturas que não sejam você que comecem seu turno na área ou entrem nela em seu turno devem ser bem-sucedidas em um teste de resistência de Constituição ou sofrerão <strong>4d8</strong> de dano necrótico. Esta magia tem efeito reverso em mortos-vivos, fazendo com que recuperem <strong>2d8</strong> pontos de vida.</p>
+                    <p>Enquanto se concentra neste feitiço, você pode usar sua ação para mover o pilar até 20 pés em qualquer direção.</p>
+                    <p><strong>Em níveis superiores:</strong> Ao conjurar esta magia usando um espaço de magia de 5º nível ou superior, o dano e a cura aumentam em <strong>1d8</strong> para cada nível de espaço acima do 4º.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Clérigo de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Criaturas Sanguíneas -->
+            <div class="spell-box">
+                <h3>Criaturas Sanguíneas</h3>
+                <p class="spell-type">Necromancia de 7º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 50 pés</p>
+                    <p><strong>Componentes:</strong> V, S, M (o sacrifício de seu próprio sangue)</p>
+                    <p><strong>Duração:</strong> Concentração, até 1 hora</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você usa seu sangue como catalisador para criar criaturas místicas baseadas em animais vivos. Você pode conjurar até três feras com nível de desafio 3 ou inferior. Sacrifique até 10 pontos de vida ao conjurar a magia. Cada criatura ganha o triplo da quantidade sacrificada como pontos de vida temporários. As criaturas também recebem +2 de CA.</p>
+                    <p>As criaturas são amigáveis com você e seus companheiros. Elas agem em grupo por iniciativa própria e obedecem aos comandos verbais que você lhes dá (como ações bônus no seu turno). As criaturas desaparecem quando a magia termina ou quando elas são reduzidas a 0 pontos de vida.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Clérigo de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Drenagem de Sangue -->
+            <div class="spell-box">
+                <h3>Drenagem de Sangue</h3>
+                <p class="spell-type">Necromancia de 1º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 30 pés</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Apontando para uma criatura dentro do alcance, você tenta abrir pequenos ferimentos ou usar os já existentes para drenar o sangue da criatura, que deve realizar um teste de resistência de Constituição. Em caso de falha, a criatura sofre <strong>2d8</strong> de dano necrótico, ou metade disso em caso de sucesso. Em caso de falha, você ganha pontos de vida temporários iguais à quantidade de dano que a criatura sofre.</p>
+                    <p><strong>Em níveis superiores:</strong> Quando você conjura esta magia usando um espaço de magia de 2º nível ou superior, o dano aumenta em <strong>1d8</strong> para cada nível de espaço acima do 1º.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Drenar Vida -->
+            <div class="spell-box">
+                <h3>Drenar Vida</h3>
+                <p class="spell-type">Necromancia de 9º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 30 pés</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você abre uma ferida profunda em seu corpo, drenando a vida de outra criatura enquanto seu próprio sangue o abandona. Ao conjurar a magia, você deve gastar uma quantidade de pontos de vida. A criatura deve então realizar um teste de resistência de Constituição. A criatura sofre <strong>12d12 + o dobro da quantidade de pontos de vida gastos</strong> como dano necrótico em uma falha na resistência, ou metade do dano em um sucesso.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue, Clérigo de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Explosão de Sangue -->
+            <div class="spell-box">
+                <h3>Explosão de Sangue</h3>
+                <p class="spell-type">Necromancia de 3º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 60 pés</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Ao mirar em um cadáver médio ou maior de uma criatura que continha sangue e foi morta no último minuto, você toma o controle do sangue contido nele, fazendo-o explodir em lanças carmesim perfurantes. Faça um ataque mágico à distância contra até 4 criaturas à sua escolha em um raio de 30 pés do cadáver. Ao acertar, as criaturas sofrem <strong>3d8</strong> de dano perfurante e <strong>3d8</strong> de dano necrótico. Um cadáver não pode ser alvo desta magia novamente.</p>
+                    <p><strong>Em níveis superiores:</strong> Ao conjurar esta magia usando um espaço de magia de 4º nível ou superior, você pode escolher uma criatura adicional para cada nível de espaço de magia acima de 3º.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Ferver o Sangue -->
+            <div class="spell-box">
+                <h3>Ferver o Sangue</h3>
+                <p class="spell-type">Necromancia de 7º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 150 pés</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Escolha uma esfera com 20 pés de raio centrada em um ponto dentro do alcance. Cada criatura à sua escolha dentro dela deve realizar um teste de resistência de Constituição ou ter o sangue fervendo nas veias. Em caso de falha, a criatura sofre <strong>7d10</strong> de dano necrótico e fica incapacitada até o final do seu próximo turno. Em caso de sucesso, a criatura sofre metade do dano e não fica incapacitada. A criatura morre se for reduzida a 0 pontos de vida por esse dano necrótico. Esta magia não tem efeito em constructos e mortos-vivos.</p>
+                    
+                    <div class="dm-note-box price-crimson">
+                        <h4>Preço Carmesim</h4>
+                        <p>Ao conjurar esta magia, você pode optar por gastar sete dados de vida para fortalecê-la. Se fizer isso, aumente o raio da esfera para 30 pés.</p>
+                    </div>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Frenesi de Sangue -->
+            <div class="spell-box">
+                <h3>Frenesi de Sangue</h3>
+                <p class="spell-type">Encantamento de 4º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> Toque</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Concentração, até 1 minuto</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você toca uma criatura disposta, lançando-a em um frenesi fortalecido. Enquanto durar, todos os ataques contra a criatura alvo terão vantagem, mas o alvo ganha os seguintes benefícios:</p>
+                    <ul class="spell-list">
+                        <li>O alvo é imune às condições de <em>encantamento</em> e <em>medo</em>.</li>
+                        <li>O alvo tem vantagem em testes de ataque com armas brancas.</li>
+                        <li>Quando sofrer dano que reduziria a criatura a 0 pontos de vida, ela deve realizar um teste de resistência de Constituição com CD igual à metade do dano sofrido. Em caso de sucesso, ela é reduzida a 1 ponto de vida.</li>
+                    </ul>
+                    <p>Se você for o alvo desta magia, você automaticamente passa nos testes de resistência para manter a concentração nela como resultado do dano sofrido.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Horror Sanguíneo -->
+            <div class="spell-box">
+                <h3>Horror Sanguíneo</h3>
+                <p class="spell-type">Conjuração de 5º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 5 pés</p>
+                    <p><strong>Componentes:</strong> V, S, M (uma adaga em miniatura)</p>
+                    <p><strong>Duração:</strong> Concentração, até 1 hora</p>
+                </div>
+                <div class="spell-description">
+                    <p>Ao conjurar esta magia, você se perfura com o componente material, sofrendo 1 de dano perfurante. A magia falha se esse dano for prevenido ou negado de alguma forma. Da gota de sangue, você conjura um <a href="https://2014.5e.tools/bestiary.html#blood%20elemental_ccodex" target="_blank">Elemental de Sangue</a> sob seu comando.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue, Clérigo de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Impressão de Sangue -->
+            <div class="spell-box">
+                <h3>Impressão de Sangue</h3>
+                <p class="spell-type">Necromancia de 1º nível (ritual)</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> Toque</p>
+                    <p><strong>Componentes:</strong> V, S, M (30ml ou mais de sangue)</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Ao seu toque, o sangue úmido em uma superfície se transforma em um padrão de manchas carmesim. Essa marca de sangue é única para a criatura à qual o sangue pertence.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue, Clérigo de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Manto de Sangue -->
+            <div class="spell-box">
+                <h3>Manto de Sangue</h3>
+                <p class="spell-type">Transmutação de 4º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> Próprio</p>
+                    <p><strong>Componentes:</strong> V, S, M (um rubi ou granada no valor de 25 po)</p>
+                    <p><strong>Duração:</strong> Concentração, até 1 minuto</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você é cercado por uma massa rodopiante de gotículas vermelho-sangue. Durante a duração, você ganha +4 de bônus na CA e vantagem contra dano de fogo ou frio, mas desvantagem contra eletricidade.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Clérigo de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Mordida Sangrenta -->
+            <div class="spell-box">
+                <h3>Mordida Sangrenta</h3>
+                <p class="spell-type">Necromancia - Truque</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> Próprio (raio de 60 pés)</p>
+                    <p><strong>Componentes:</strong> V, S, M (uma arma branca)</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você brande a arma usada na conjuração e realiza um ataque. Se o alvo tiver metade ou menos de seus PV máximos, sofre <strong>1d12</strong> de dano necrótico adicional.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Ponte de Sangue -->
+            <div class="spell-box">
+                <h3>Ponte de Sangue</h3>
+                <p class="spell-type">Necromancia - Truque</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> Toque</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você toca duas criaturas e extrai sangue de uma (o "doador"), canaliza-o através de si e infunde na outra (o "receptor").</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Clérigo de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Raio de Sangue -->
+            <div class="spell-box">
+                <h3>Raio de Sangue</h3>
+                <p class="spell-type">Transmutação - Truque</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 60 pés</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você transmuta uma gota de sangue em um dardo carmesim veloz. Realize um ataque mágico à distância. Ao acertar, o alvo sofre <strong>1d10</strong> de dano necrótico.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Sangue Animado -->
+            <div class="spell-box">
+                <h3>Sangue Animado</h3>
+                <p class="spell-type">Necromancia de 3º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação bônus</p>
+                    <p><strong>Alcance:</strong> 10 pés</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Concentração, até 10 minutos</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você anima gotículas do seu próprio sangue para agirem sob seu comando. Pode usar sua ação para ver através delas ou fazê-las explodir em uma emanação de energia necromântica que causa 6d4 de dano.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Clérigo de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Sangue Congelante -->
+            <div class="spell-box">
+                <h3>Sangue Congelante</h3>
+                <p class="spell-type">Transmutação de 3º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> Toque</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Concentração, até 1 minuto</p>
+                </div>
+                <div class="spell-description">
+                    <p>Ao atingir uma criatura, o sangue dela congela nas veias. O deslocamento do alvo é reduzido pela metade e ela passa a sofrer <strong>2d6</strong> de dano de frio no início de cada um de seus turnos.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Sangue Divino -->
+            <div class="spell-box">
+                <h3>Sangue Divino</h3>
+                <p class="spell-type">Transmutação de 8º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 10 minutos</p>
+                    <p><strong>Alcance:</strong> Toque</p>
+                    <p><strong>Componentes:</strong> V, S, M (água benta)</p>
+                    <p><strong>Duração:</strong> 1 dia</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você transforma água benta em sangue divino. Ele pode ser usado ativamente para reproduzir um dos seguintes efeitos: <em>Curar</em>, <em>Ressuscitar Mortos</em>, <em>Purificar Comida</em>, ou infundir uma arma de sua escolha para agir temporariamente como uma <em>Maça da Perturbação</em>.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Clérigo de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Sangue para Ácido -->
+            <div class="spell-box">
+                <h3>Sangue para Ácido</h3>
+                <p class="spell-type">Transmutação de 9º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 60 pés</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Ao conjurar esta magia, você designa uma criatura dentro do alcance e converte seu sangue em ácido virulento. O alvo deve realizar um teste de resistência de Constituição. Em caso de falha, ele sofre <strong>10d12</strong> de dano de ácido e fica atordoado pela dor por 1d4 rodadas. Em caso de sucesso, ele sofre metade do dano e não fica atordoado.</p>
+                    <p>Criaturas sem sangue, como constructos e plantas, não são afetadas por esta magia. Se esta habilidade for conjurada em uma criatura composta inteiramente de sangue (como um Elemental de Sangue), ela será instantaneamente destruída caso falhe no teste de resistência.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Sangramento -->
+            <div class="spell-box">
+                <h3>Sangramento</h3>
+                <p class="spell-type">Necromancia - Truque</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> Toque</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você toca uma criatura e gasta <strong>1</strong> ponto de vida vital, abrindo um ferimento no local do impacto. Realize um ataque mágico corpo a corpo contra o alvo. Ao acertar, o alvo sofre <strong>1d12</strong> de dano necrótico. Se esse dano reduzir o alvo a 0 pontos de vida, você ganha pontos de vida temporários equivalentes à metade do dano total causado.</p>
+                    <p><strong>Em níveis superiores:</strong> O dano aumenta em 1d12 quando você atinge o 5º nível (2d12), 11º nível (3d12) e 17º nível (4d12).</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue, Clérigo de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Selo de Sangue -->
+            <div class="spell-box">
+                <h3>Selo de Sangue</h3>
+                <p class="spell-type">Necromancia de 2º nível (ritual)</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação bônus</p>
+                    <p><strong>Alcance:</strong> 30 pés</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> 1 hora</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você inflige um ferimento em si mesmo para criar um selo protetor em outra criatura dentro do alcance. Ao conjurar a magia, você gasta uma quantidade de pontos de vida e o alvo ganha <strong>1d10 + a quantidade de pontos de vida gastos</strong> como pontos de vida temporários durante a duração.</p>
+                    <p><strong>Em níveis superiores:</strong> O alvo ganha 1d10 pontos de vida temporários adicionais para cada nível de espaço acima do 2º.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue, Clérigo de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Tentáculos Sangrentos -->
+            <div class="spell-box">
+                <h3>Tentáculos Sangrentos</h3>
+                <p class="spell-type">Necromancia de 5º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 30 pés</p>
+                    <p><strong>Componentes:</strong> V, S, M (até 10 cadáveres frescos)</p>
+                    <p><strong>Duração:</strong> 8 horas</p>
+                </div>
+                <div class="spell-description">
+                    <p>Ao conjurar esta magia, tentáculos de sangue irrompem dos corpos de até 10 criaturas mortas. Cada tentáculo tem CA 15, 10 PV e alcance de 5 pés. No início do seu turno, cada um ataca uma criatura a até 10 pés. Um acerto causa <strong>1d8 + 4</strong> de dano contundente e a criatura é agarrada.</p>
+                    <p>Uma criatura agarrada não consegue respirar e está sufocando. Os tentáculos recuam voluntariamente para dentro dos hospedeiros se não houver inimigos declarados.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Tempestade de Sangue -->
+            <div class="spell-box">
+                <h3>Tempestade de Sangue</h3>
+                <p class="spell-type">Necromancia de 8º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 150 pés</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Concentração, até 1 minuto</p>
+                </div>
+                <div class="spell-description">
+                    <p>Uma tempestade de sangue turbulenta surge em uma esfera de 20 pés de raio. Criaturas na área devem fazer um teste de resistência de Destreza, sofrendo <strong>10d6</strong> de dano necrótico em uma falha. Toda vez que uma criatura morre dentro da tempestade, o dano base dela aumenta imediatamente em <strong>1d6</strong>.</p>
+                    
+                    <div class="dm-note-box price-crimson">
+                        <h4>Preço Carmesim</h4>
+                        <p>Ao conjurar esta magia, você pode optar por gastar oito dados de vida para fortalecê-la. Se fizer isso, aumente o raio da esfera da tempestade para 30 pés.</p>
+                    </div>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Transporte via Sangue -->
+            <div class="spell-box">
+                <h3>Transporte via Sangue</h3>
+                <p class="spell-type">Necromancia de 7º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> Toque</p>
+                    <p><strong>Componentes:</strong> V, S, M (um frasco contendo sangue da criatura alvo)</p>
+                    <p><strong>Duração:</strong> Instantânea</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você conecta seu sangue às veias do multiverso. Escolha uma criatura para a qual você tenha um frasco de sangue armazenado. Você e até oito criaturas voluntárias são transportados instantaneamente até os espaços desocupados mais próximos da criatura alvo.</p>
+                    
+                    <div class="dm-note-box price-crimson">
+                        <h4>Preço Carmesim</h4>
+                        <p>Ao conjurar esta magia, você pode escolher gastar sete dados de vida para fortalecê-la. Se fizer isso, os efeitos terão sucesso mesmo que a criatura alvo esteja morta ou em outro plano de existência.</p>
+                    </div>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Ventríloquo de Sangue -->
+            <div class="spell-box">
+                <h3>Ventríloquo de Sangue</h3>
+                <p class="spell-type">Necromancia de 2º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 30 pés</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Concentração, até 1 minuto</p>
+                </div>
+                <div class="spell-description">
+                    <p>Você ganha controle temporário sobre os movimentos musculares de um humanoide. O alvo deve realizar um teste de resistência de Força. Em caso de falha, você dita seus movimentos físicos ou o força a realizar imediatamente um ataque corpo a corpo contra uma criatura de sua escolha.</p>
+                    <p><strong>Em níveis superiores:</strong> É possível assumir o controle de duas criaturas simultaneamente com um espaço de 5º nível, e três criaturas usando um espaço de 8º nível.</p>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue</p>
+                </div>
+            </div>
+    
+            <!-- Ventríloquo de Sangue em Massa -->
+            <div class="spell-box">
+                <h3>Ventríloquo de Sangue em Massa</h3>
+                <p class="spell-type">Necromancia de 6º nível</p>
+                <div class="spell-stats">
+                    <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
+                    <p><strong>Alcance:</strong> 60 pés</p>
+                    <p><strong>Componentes:</strong> V, S</p>
+                    <p><strong>Duração:</strong> Concentração, até 1 minuto</p>
+                </div>
+                <div class="spell-description">
+                    <p>Gavinhas etéreas de sangue fluem de seus dedos em direção a até 10 humanoides. Em uma falha no teste de resistência de Força, você assume o controle sobre os movimentos do grupo. Você pode comandar o deslocamento deles ou forçá-los a desferir um ataque corpo a corpo contra um alvo viável em cada um dos seus turnos.</p>
+                    
+                    <div class="dm-note-box price-crimson">
+                        <h4>Preço Carmesim</h4>
+                        <p>Ao conjurar esta magia, você pode escolher gastar seis dados de vida para fortalecê-la. Se fizer isso, na primeira vez que uma criatura afetada passar em um teste de resistência subsequente para anular o controle, você poderá forçá-la a falhar automaticamente.</p>
+                    </div>
+                    <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue</p>
+                </div>
+            </div>
+    
         </div>
-        <span class="subclasses">Subclasses: Clérigo de Sangue</span>
     </section>
-
-    <section class="spell-card">
-        <h2>Criaturas Sanguíneas</h2>
-        <span class="meta">Necromancia de 7º nível | Tempo: 1 ação | Alcance: 50 pés | Duração: Conc., até 1 hora</span>
-        <div class="description">
-            <p>Você usa seu sangue como catalisador para criar criaturas místicas baseadas em animais vivos. Você pode conjurar até três feras com nível de desafio 3 ou inferior. Sacrifique até 10 pontos de vida ao conjurar a magia. Cada criatura ganha o triplo da quantidade sacrificada como pontos de vida temporários. As criaturas também recebem +2 de CA.</p>
-            <p>As criaturas são amigáveis com você e seus companheiros. Elas agem em grupo por iniciativa própria e obedecem aos comandos verbais que você lhes dá (como ações bônus no seu turno). As criaturas desaparecem quando a magia termina ou quando elas são reduzidas a 0 pontos de vida.</p>
-        </div>
-        <span class="subclasses">Subclasses: Clérigo de Sangue</span>
-    </section>
-
-    <section class="spell-card">
-        <h2>Drenagem de Sangue</h2>
-        <span class="meta">Necromancia de 1º nível | Tempo: 1 ação | Alcance: 30 pés | Duração: Instantânea</span>
-        <div class="description">
-            <p>Apontando para uma criatura dentro do alcance, você tenta abrir pequenos ferimentos ou usar os já existentes para drenar o sangue da criatura, que deve realizar um teste de resistência de Constituição. Em caso de falha, a criatura sofre <strong>2d8</strong> de dano necrótico, ou metade disso em caso de sucesso. Em caso de falha, você ganha pontos de vida temporários iguais à quantidade de dano que a criatura sofre.</p>
-            <p><strong>Em níveis superiores:</strong> Quando você conjura esta magia usando um espaço de magia de 2º nível ou superior, o dano aumenta em <strong>1d8</strong> para cada nível de espaço acima do 1º.</p>
-        </div>
-        <span class="subclasses">Subclasses: Mago de Sangue</span>
-    </section>
-
-    <section class="spell-card">
-        <h2>Drenar Vida</h2>
-        <span class="meta">Necromancia de 9º nível | Tempo: 1 ação | Alcance: 30 pés | Duração: Instantânea</span>
-        <div class="description">
-            <p>Você abre uma ferida profunda em seu corpo, drenando a vida de outra criatura enquanto seu próprio sangue o abandona. Ao conjurar a magia, você deve gastar uma quantidade de pontos de vida. A criatura deve então realizar um teste de resistência de Constituição. A criatura sofre <strong>12d12 + o dobro da quantidade de pontos de vida gastos</strong> como dano necrótico em uma falha na resistência, ou metade do dano em um sucesso.</p>
-        </div>
-        <span class="subclasses">Subclasses: Mago de Sangue, Clérigo de Sangue</span>
-    </section>
-
-    <section class="spell-card">
-        <h2>Explosão de Sangue</h2>
-        <span class="meta">Necromancia de 3º nível | Tempo: 1 ação | Alcance: 60 pés | Duração: Instantânea</span>
-        <div class="description">
-            <p>Ao mirar em um cadáver médio ou maior de uma criatura que continha sangue e foi morta no último minuto, você toma o controle do sangue contido nele, fazendo-o explodir em lanças carmesim perfurantes. Faça um ataque mágico à distância contra até 4 criaturas à sua escolha em um raio de 30 pés do cadáver. Ao acertar, as criaturas sofrem <strong>3d8</strong> de dano perfurante e <strong>3d8</strong> de dano necrótico. Um cadáver não pode ser alvo desta magia novamente.</p>
-            <p><strong>Em níveis superiores:</strong> Ao conjurar esta magia usando um espaço de magia de 4º nível ou superior, você pode escolher uma criatura adicional para cada nível de espaço de magia acima de 3º.</p>
-        </div>
-        <span class="subclasses">Subclasses: Mago de Sangue</span>
-    </section>
-
-    <section class="spell-card">
-        <h2>Ferver o Sangue</h2>
-        <span class="meta">Necromancia de 7º nível | Tempo: 1 ação | Alcance: 150 pés | Duração: Instantânea</span>
-        <div class="description">
-            <p>Escolha uma esfera com 20 pés de raio centrada em um ponto dentro do alcance. Cada criatura à sua escolha dentro dela deve realizar um teste de resistência de Constituição ou ter o sangue fervendo nas veias. Em caso de falha, a criatura sofre <strong>7d10</strong> de dano necrótico e fica incapacitada até o final do seu próximo turno. Em caso de sucesso, a criatura sofre metade do dano e não fica incapacitada. A criatura morre se for reduzida a 0 pontos de vida por esse dano necrótico. Esta magia não tem efeito em constructos e mortos-vivos.</p>
-        </div>
-        <div class="price-crimson">
-            <strong>Preço Carmesim.</strong> Ao conjurar esta magia, você pode optar por gastar sete dados de vida para fortalecê-la. Se fizer isso, aumente o raio da esfera para 30 pés.
-        </div>
-        <span class="subclasses">Subclasses: Mago de Sangue</span>
-    </section>
-
-    <section class="spell-card">
-        <h2>Frenesi de Sangue</h2>
-        <span class="meta">Encantamento de 4º nível | Tempo: 1 ação | Alcance: Toque | Duração: Conc., até 1 minuto</span>
-        <div class="description">
-            <p>Você toca uma criatura disposta, lançando-a em um frenesi fortalecido. Enquanto durar, todos os ataques contra a criatura alvo terão vantagem, mas o alvo ganha os seguintes benefícios:</p>
-            <ul>
-                <li>O alvo é imune às condições de <em>encantamento</em> e <em>medo</em>.</li>
-                <li>O alvo tem vantagem em testes de ataque com armas brancas.</li>
-                <li>Quando sofrer dano que reduziria a criatura a 0 pontos de vida, ela deve realizar um teste de resistência de Constituição com CD igual à metade do dano sofrido. Em caso de sucesso, ela é reduzida a 1 ponto de vida.</li>
-            </ul>
-            <p>Se você for o alvo desta magia, você automaticamente passa nos testes de resistência para manter a concentração nela como resultado do dano sofrido.</p>
-        </div>
-        <span class="subclasses">Subclasses: Mago de Sangue</span>
-    </section>
-    <section class="spellbook">
-        <article class="spell-card">
-            <h2>Horror Sanguíneo</h2>
-            <span class="spell-meta">Conjuração de 5º nível</span>
-            <div class="spell-description">
-                <p><strong>Tempo de conjuração:</strong> 1 ação | <strong>Alcance:</strong> 5 pés | <strong>Componentes:</strong> V, S, M (uma adaga em miniatura) | <strong>Duração:</strong> Concentração, até 1 hora</p>
-                <p>Ao conjurar esta magia, você se perfura com o componente material, sofrendo 1 de dano perfurante. A magia falha se esse dano for prevenido ou negado de alguma forma. Da gota de sangue, você conjura um <a href="https://2014.5e.tools/bestiary.html#blood%20elemental_ccodex" target="_blank">Elemental de Sangue</a>...</p>
-            </div>
-            <span class="subclasses">Subclasses: Mago de Sangue, Clérigo de Sangue</span>
-        </article>
-    
-        <article class="spell-card">
-            <h2>Impressão de sangue</h2>
-            <span class="spell-meta">Necromancia de 1º nível (ritual)</span>
-            <div class="spell-description">
-                <p><strong>Tempo de conjuração:</strong> 1 ação | <strong>Alcance:</strong> Toque | <strong>Componentes:</strong> V, S, M (30ml ou mais de sangue) | <strong>Duração:</strong> Instantânea</p>
-                <p>Ao seu toque, o sangue úmido em uma superfície se transforma em um padrão de manchas carmesim. Essa marca de sangue é única para a criatura à qual o sangue pertence...</p>
-            </div>
-            <span class="subclasses">Subclasses: Mago de Sangue, Clérigo de Sangue</span>
-        </article>
-    
-        <article class="spell-card">
-            <h2>Manto de Sangue</h2>
-            <span class="spell-meta">Transmutação de 4º nível</span>
-            <div class="spell-description">
-                <p><strong>Tempo de conjuração:</strong> 1 ação | <strong>Alcance:</strong> Próprio | <strong>Componentes:</strong> V, S, M (rubi ou granada de 25 po) | <strong>Duração:</strong> Conc., até 1 minuto</p>
-                <p>Você é cercado por uma massa rodopiante de gotículas vermelho-sangue. Durante a duração, você ganha +4 de bônus na CA e vantagem contra dano de fogo ou frio, mas desvantagem contra raio.</p>
-            </div>
-            <span class="subclasses">Subclasses: Clérigo de Sangue</span>
-        </article>
-    
-        <article class="spell-card">
-            <h2>Mordida Sangrenta</h2>
-            <span class="spell-meta">Truque de necromancia</span>
-            <div class="spell-description">
-                <p><strong>Tempo de conjuração:</strong> 1 ação | <strong>Alcance:</strong> Próprio (raio de 60 pés) | <strong>Duração:</strong> Instantânea</p>
-                <p>Você brande a arma usada na conjuração e realiza um ataque. Se o alvo tiver metade ou menos de seus PV máximos, sofre <strong>1d12</strong> de dano necrótico adicional.</p>
-            </div>
-            <span class="subclasses">Subclasses: Mago de Sangue</span>
-        </article>
-    
-        <article class="spell-card">
-            <h2>Ponte de Sangue</h2>
-            <span class="spell-meta">Truque de necromancia</span>
-            <div class="spell-description">
-                <p><strong>Tempo de conjuração:</strong> 1 ação | <strong>Alcance:</strong> Toque | <strong>Duração:</strong> Instantânea</p>
-                <p>Você toca duas criaturas e extrai sangue de uma (o "doador"), canaliza-o através de si e infunde na outra (o "receptor").</p>
-            </div>
-            <span class="subclasses">Subclasses: Clérigo de Sangue</span>
-        </article>
-    
-        <article class="spell-card">
-            <h2>Raio de Sangue</h2>
-            <span class="spell-meta">Truque de transmutação</span>
-            <div class="spell-description">
-                <p><strong>Tempo de conjuração:</strong> 1 ação | <strong>Alcance:</strong> 60 pés | <strong>Duração:</strong> Instantânea</p>
-                <p>Você transmuta uma gota de sangue em um dardo carmesim. Ao acertar, o alvo sofre <strong>1d10</strong> de dano necrótico.</p>
-            </div>
-            <span class="subclasses">Subclasses: Mago de Sangue</span>
-        </article>
-    
-        <article class="spell-card">
-            <h2>Sangue Animado</h2>
-            <span class="spell-meta">Necromancia de 3º nível (hemomancia)</span>
-            <div class="spell-description">
-                <p><strong>Tempo de conjuração:</strong> 1 ação bônus | <strong>Alcance:</strong> 10 pés | <strong>Duração:</strong> Conc., até 10 minutos</p>
-                <p>Você anima gotículas do seu próprio sangue para agirem sob seu comando. Pode usar sua ação para ver através delas ou fazê-las explodir em uma explosão de energia necromântica (6d4 dano).</p>
-            </div>
-            <span class="subclasses">Subclasses: Clérigo de Sangue</span>
-        </article>
-    
-        <article class="spell-card">
-            <h2>Sangue Congelante</h2>
-            <span class="spell-meta">Transmutação de 3º nível</span>
-            <div class="spell-description">
-                <p><strong>Tempo de conjuração:</strong> 1 ação | <strong>Alcance:</strong> Toque | <strong>Duração:</strong> Conc., até 1 minuto</p>
-                <p>Ao atingir uma criatura, o sangue dela congela. O deslocamento é reduzido pela metade e ela sofre <strong>2d6</strong> de dano de frio no início de seus turnos.</p>
-            </div>
-            <span class="subclasses">Subclasses: Mago de Sangue</span>
-        </article>
-    
-        <article class="spell-card">
-            <h2>Sangue Divino</h2>
-            <span class="spell-meta">Transmutação de 8º nível</span>
-            <div class="spell-description">
-                <p><strong>Tempo de conjuração:</strong> 10 Minutos | <strong>Alcance:</strong> Toque | <strong>Duração:</strong> 1 dia</p>
-                <p>Você transforma água benta em sangue divino. Pode ser usado como: <em>Curar</em>, <em>Ressuscitar Mortos</em>, <em>Purificar Comida</em>, ou para transformar uma arma em <em>Maça da Perturbação</em>.</p>
-            </div>
-            <span class="subclasses">Subclasses: Clérigo de Sangue</span>
-        </article>
-        <article class="spell-card">
-            <h2>Sangue para Ácido</h2>
-            <span class="spell-meta">Transmutação de 9º nível | Tempo: 1 ação | Alcance: 60 pés | Duração: Instantânea</span>
-            <div class="spell-description">
-                <p>Ao conjurar esta magia, você designa uma criatura dentro do alcance e converte seu sangue em ácido virulento. O alvo deve realizar um teste de resistência de Constituição. Em caso de falha, ele sofre <strong>10d12</strong> de dano de ácido e fica atordoado pela dor por 1d4 rodadas. Em caso de sucesso, ele sofre metade do dano e não fica atordoado.</p>
-                <p>Criaturas sem sangue, como constructos e plantas, não são afetadas por esta magia. Se a habilidade de transformar sangue em ácido for conjurada em uma criatura composta principalmente de sangue, como um elemental de sangue ou um zumbi de sangue, a criatura será morta pela magia se seu teste de resistência falhar.</p>
-            </div>
-            <span class="subclasses">Subclasses: Mago de Sangue</span>
-        </article>
-    
-        <article class="spell-card">
-            <h2>Sangramento</h2>
-            <span class="spell-meta">Truque de necromancia | Tempo: 1 ação | Alcance: Toque | Duração: Instantânea</span>
-            <div class="spell-description">
-                <p>Você toca uma criatura e gasta <strong>1</strong> ponto de vida, abrindo um ferimento no local do toque. Realiza um ataque mágico corpo a corpo contra o alvo. Ao acertar, o alvo sofre <strong>1d12</strong> de dano necrótico. Se esse dano reduzir o alvo a 0 pontos de vida, você ganha pontos de vida temporários equivalentes à metade do dano causado.</p>
-                <p><strong>Em níveis superiores:</strong> O dano aumenta em 1d12 no 5º (2d12), 11º (3d12) e 17º nível (4d12).</p>
-            </div>
-            <span class="subclasses">Subclasses: Mago de Sangue, Clérigo de Sangue</span>
-        </article>
-    
-        <article class="spell-card">
-            <h2>Selo de Sangue</h2>
-            <span class="spell-meta">Necromancia de 2º nível (ritual) | Tempo: 1 ação bônus | Alcance: 30 pés | Duração: 1 hora</span>
-            <div class="spell-description">
-                <p>Você inflige um ferimento em si mesmo para criar um selo protetor em outra criatura dentro do alcance. Ao conjurar a magia, você gasta uma quantidade de pontos de vida e o alvo ganha <strong>1d10 + a quantidade de pontos de vida gastos</strong> como pontos de vida temporários durante a duração.</p>
-                <p><strong>Em níveis superiores:</strong> O alvo ganha 1d10 pontos de vida temporários adicionais para cada nível de espaço acima do 2º.</p>
-            </div>
-            <span class="subclasses">Subclasses: Mago de Sangue, Clérigo de Sangue</span>
-        </article>
-    
-        <article class="spell-card">
-            <h2>Tentáculos Sangrentos</h2>
-            <span class="spell-meta">Necromancia de 5º nível | Tempo: 1 ação | Alcance: 30 pés | Duração: 8 horas</span>
-            <div class="spell-description">
-                <p>Ao conjurar esta magia, tentáculos de sangue irrompem dos corpos de até 10 criaturas mortas. Cada tentáculo tem CA 15, 10 PV e alcance de 5 pés. No início do seu turno, cada um ataca uma criatura a até 10 pés. Um acerto causa <strong>1d8+4</strong> de dano contundente e a criatura é agarrada.</p>
-                <p>Uma criatura agarrada não consegue respirar e está sufocando. Os tentáculos recuam para dentro dos hospedeiros se não houver inimigos.</p>
-            </div>
-            <span class="subclasses">Subclasses: Mago de Sangue</span>
-        </article>
-    
-        <article class="spell-card">
-            <h2>Tempestade de Sangue</h2>
-            <span class="spell-meta">Necromancia de 8º nível | Tempo: 1 ação | Alcance: 150 pés | Duração: Conc., até 1 minuto</span>
-            <div class="spell-description">
-                <p>Uma tempestade de sangue turbulenta surge em uma esfera de 20 pés de raio. Criaturas na área devem fazer um teste de Destreza, sofrendo <strong>10d6</strong> de dano necrótico em uma falha. Toda vez que uma criatura morre dentro da tempestade, o dano aumenta em <strong>1d6</strong>.</p>
-            </div>
-            <div class="crimson-price">
-                <strong>Preço Carmesim.</strong> Ao conjurar esta magia, você pode optar por gastar oito dados de vida para fortalecê-la. Se fizer isso, aumente o raio da esfera para 30 pés.
-            </div>
-            <span class="subclasses">Subclasses: Mago de Sangue</span>
-        </article>
-    
-        <article class="spell-card">
-            <h2>Transporte via Sangue</h2>
-            <span class="spell-meta">Necromancia de 7º nível | Tempo: 1 ação | Alcance: Toque | Duração: Instantânea</span>
-            <div class="spell-description">
-                <p>Você conecta seu sangue às veias do multiverso. Escolha uma criatura para a qual você tenha um frasco de sangue. Você e até oito criaturas dispostas são transportados até os espaços desocupados mais próximos da criatura alvo.</p>
-            </div>
-            <div class="crimson-price">
-                <strong>Preço Carmesim.</strong> Ao conjurar esta magia, você pode escolher gastar sete dados de vida para fortalecê-la. Se fizer isso, esta magia terá sucesso mesmo que a criatura esteja morta ou em outro plano de existência.
-            </div>
-            <span class="subclasses">Subclasses: Mago de Sangue</span>
-        </article>
-    
-        <article class="spell-card">
-            <h2>Ventríloquo de Sangue</h2>
-            <span class="spell-meta">Necromancia de 2º nível | Tempo: 1 ação | Alcance: 30 pés | Duração: Conc., até 1 minuto</span>
-            <div class="spell-description">
-                <p>Você ganha controle temporário sobre os movimentos de um humanoide. O alvo deve realizar um teste de resistência de Força. Em caso de falha, você controla seus movimentos ou faz com que ele realize um ataque corpo a corpo contra uma criatura de sua escolha.</p>
-                <p><strong>Em níveis superiores:</strong> É possível controlar duas criaturas com um espaço de 5º nível e três com um de 8º nível.</p>
-            </div>
-            <span class="subclasses">Subclasses: Mago de Sangue</span>
-        </article>
-    
-        <article class="spell-card">
-            <h2>Ventríloquo de Sangue em Massa</h2>
-            <span class="spell-meta">Necromancia de 6º nível | Tempo: 1 ação | Alcance: 60 pés | Duração: Conc., até 1 minuto</span>
-            <div class="spell-description">
-                <p>Gavinhas de sangue fluem de seus dedos para até 10 humanoides. Em uma falha no teste de Força, você ganha controle sobre seus movimentos. Você pode controlar o movimento deles ou forçar um ataque corpo a corpo contra um alvo em cada turno.</p>
-            </div>
-            <div class="crimson-price">
-                <strong>Preço Carmesim.</strong> Ao conjurar esta magia, você pode escolher gastar seis dados de vida para fortalecê-la. Se fizer isso, na primeira vez que uma criatura afetada passar no teste de resistência para receber dano, você poderá escolher que ela falhe.
-            </div>
-            <span class="subclasses">Subclasses: Mago de Sangue</span>
-        </article>
-    </section>
-</section>
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function(){
