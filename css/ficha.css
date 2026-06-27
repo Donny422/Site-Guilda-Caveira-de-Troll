@@ -1,0 +1,545 @@
+.magias ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 1px;
+}
+
+.magias li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 2px;
+}
+
+.magias li::before {
+    content: "♦"; 
+    position: absolute;
+    left: 5px;
+    top: 0;
+    color: #8a1a1b;
+    font-size: 0.9em;
+}
+
+.magias h4 {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.magias p {
+    padding-left: 0px;
+}
+
+.modificacoes {
+    background-color: rgba(179, 179, 179, 0.808);
+    border-left: 10px solid #8a1a1b;
+    padding: 15px 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modificacoes h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #8a1a1b;
+    margin-bottom: 5px;
+}
+
+.modificacoes ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    white-space: normal !important;
+}
+
+.modificacoes li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 2px;
+    white-space: normal !important;
+}
+
+.modificacoes li::before {
+    content: "♦"; 
+    position: absolute;
+    left: 5px;
+    top: 1;
+    color: #8a1a1b;
+    font-size: 0.9em;
+}
+
+.manto-container {
+    margin: 5px auto;
+    width: 95%;
+}
+
+summary.manto {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    transition: background 0.2s;
+}
+
+summary.manto:hover {
+    background-color: rgba(66, 2, 2, 0.05);
+}
+
+/* Estilo discreto para a orientação na frente */
+.orientacao {
+    font-family: 'Georgia', serif;
+    font-size: 0.85em; 
+    color: rgba(0, 0, 0, 0.6);
+    font-style: italic;
+}
+
+/* Estrutura Geral da Tabela */
+.tabela-manto {
+    width: 75%;
+    margin: 20px auto;    
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(133, 133, 133, 0.788);
+    border: 3px solid rgba(138, 26, 27, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Cabeçalho (Th) */
+.tabela-manto th {
+    background-color: #721d1e; 
+    color: #f1ebd9; 
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    padding: 10px 10px;
+    text-align: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+/* Força o título da primeira coluna (Dado) a ficar centralizado */
+.tabela-manto th:first-child {
+    text-align: center; 
+    width: 15%; 
+}
+
+/* Células Comuns (Td) */
+.tabela-manto td {
+    padding: 4px 15px;
+    color: #000000;
+    font-size: 0.95em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: left;
+}
+
+/* Coluna de Dados Centralizada e em Destaque */
+.tabela-manto td.dado {
+    text-align: center;
+    font-weight: bold;
+    color: #000000; 
+    border-right: 1px solid rgba(138, 26, 27, 0.2); 
+}
+
+/* Efeito Zebra (Linhas Alternadas) */
+.tabela-manto tbody tr:nth-child(even) {
+    background-color: rgba(211, 211, 211, 0.596); 
+}
+
+/* Efeito Hover (Destaca a linha onde o mouse está) */
+.tabela-manto tbody tr:hover {
+    background-color: rgba(138, 26, 27, 0.3) !important; /* Levemente mais visível no fundo escuro */
+    cursor: default;
+}
+
+/* Container do clique */
+summary.classes {
+    list-style: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: background 0.2s;
+}
+
+/* Remove marcadores do Safari/Chrome */
+summary.classes::-webkit-details-marker {
+    display: none;
+}
+
+summary.classes:hover {
+    background-color: rgba(66, 2, 2, 0.05);
+}
+
+/* Ativa e configura o sistema de 3 colunas em Grid */
+.grid-classes {
+    display: grid;
+    /* Divide o espaço em 3 colunas idênticas, mas aceita encolher até 280px antes de quebrar a linha */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;                 /* Espaçamento uniforme entre os blocos (horizontal e vertical) */
+    align-items: start;        /* Alinha todos os menus expansíveis pelo topo */
+}
+
+/* Estilização opcional dos detalhes para combinar com o tema RPG */
+.grid-classes details {
+    background-color: rgba(179, 179, 179, 0.2);
+    border-left: 4px solid #8a1a1b;
+    padding: 8px 12px;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Container do clique */
+summary.subclasses {
+    list-style: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: background 0.2s;
+}
+
+/* Remove marcadores do Safari/Chrome */
+summary.clasubclassessses::-webkit-details-marker {
+    display: none;
+}
+
+summary.subclasses:hover {
+    background-color: rgba(66, 2, 2, 0.05);
+}
+
+  /* --- SUBCLASSES --- */
+  .subclasses {
+    background-color: rgba(179, 179, 179, 0.808);
+    border-left: 7px solid #8a1a1b;
+    padding: 15px 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.subclasses h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+.subclasses ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.subclasses li {
+    position: relative;
+    padding-left: 15px;
+}
+
+.subclasses li::before {
+    content: "♦"; 
+    position: absolute;
+    left: 5px;
+    top: 1;
+    color: #8a1a1b;
+    font-size: 0.9em;
+}
+
+.legendas {
+    background-color: rgba(179, 179, 179, 0.808);
+    border-left: 7px solid #8a1a1b;
+    padding: 15px 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Alinha as 3 listas em colunas horizontais perfeitas */
+.colunas-legenda {
+    display: flex;
+    flex-direction: row;
+    justify-content: transform;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+/* Remove os estilos padrões de todas as listas da legenda */
+.colunas-legenda ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    flex: 1; 
+}
+
+/* Customização dos itens da lista */
+.colunas-legenda li {
+    position: relative;
+    padding-left: 15px; 
+    margin-bottom: 4px; 
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+}
+
+/* O losango marcador clássico na cor do seu tema */
+.colunas-legenda li::before {
+    content: "♦"; 
+    position: absolute;
+    left: 1px;
+    top: 0; 
+    color: #8a1a1b; 
+    font-size: 0.9em;
+}
+
+/* Destaca a sigla do livro */
+.colunas-legenda li strong {
+    color: #000000;
+}
+
+/* Container do clique */
+summary.racas {
+    list-style: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: background 0.2s;
+}
+
+/* Remove marcadores do Safari/Chrome */
+summary.racas::-webkit-details-marker {
+    display: none;
+}
+
+summary.racas:hover {
+    background-color: rgba(66, 2, 2, 0.05);
+}
+
+/* Container que alinha as 3 colunas lado a lado */
+.races-container-dnd {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    font-family: sans-serif; /* Mude para a fonte de sua preferência */
+    background-color: rgba(179, 179, 179, 0.808);
+    border-left: 7px solid #8a1a1b;
+    padding: 15px 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Cada uma das 3 colunas individuais */
+.col-dnd {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-dnd {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 4px 6px;
+    border-bottom: 2px solid #000;
+}
+
+/* Configuração da lista <ul> */
+.lista-races-dnd {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de cada linha da lista (<li>) */
+.lista-races-dnd li {
+    display: flex;
+    justify-content: space-between; /* Empurra o nome para a esquerda e origem para a direita */
+    align-items: center;
+    padding: 3px 6px;
+    font-size: 0.95em;
+}
+
+/* Customização dos Links de Raça */
+.lista-races-dnd li a {
+    text-decoration: underline;
+    color: #0044cc; /* Azul clássico de links da imagem */
+}
+
+/* 🦓 Efeito Zebra perfeito aplicado às LI de cada lista separada */
+.lista-races-dnd li:nth-child(even) {
+    background-color: rgba(206, 206, 206, 0.925);
+}
+
+/* Espaçamento entre os blocos de cada raça */
+.regra-item {
+    margin-bottom: 0;
+}
+
+/* Formatação dos títulos das raças */
+.regra-item h4 {
+    margin: auto;
+    color: #420202;
+}
+
+.regra-item li {
+    margin-bottom: 4px;
+    line-height: 1;
+}
+
+/* Negrita automaticamente o início das regras (substituindo o antigo strong) */
+.regra-item li span {
+    font-weight: bold;
+}
+
+/* Container do clique */
+summary.antecedente {
+    list-style: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: background 0.2s;
+}
+
+/* Remove marcadores do Safari/Chrome */
+summary.antecedente::-webkit-details-marker {
+    display: none;
+}
+
+summary.antecedente:hover {
+    background-color: rgba(66, 2, 2, 0.05);
+}
+
+/* Container principal da tabela */
+.antecedentes-container-dnd {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: rgba(179, 179, 179, 0.808);
+    border-left: 7px solid #8a1a1b;
+    padding: 15px 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Estilização da Tabela */
+.antecedentes-container-dnd table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/* Cabeçalho da Tabela (Antecedente, Opções de Talento, Origem) */
+.antecedentes-container-dnd th {
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #000000;
+    padding: 6px 8px;
+    border-bottom: 2px solid #6b1d1d; /* Linha divisória sutil abaixo do cabeçalho */
+}
+
+/* Alinhamento específico para a coluna Origem (direita) se quiser idêntico ao livro, 
+   mas mantendo a estrutura padrão: */
+.antecedentes-container-dnd th:nth-child(3),
+.antecedentes-container-dnd td:nth-child(3) {
+    text-align: right;
+    padding-right: 15px;
+}
+
+/* Linhas e Células da Tabela */
+.antecedentes-container-dnd td {
+    padding: 5px 8px;
+    font-size: 0.95em;
+    color: #000000;
+    vertical-align: middle;
+}
+
+/* Links dos Antecedentes (Estilo azul sublinhado clássico das imagens) */
+.antecedentes-container-dnd td a {
+    color: #0044cc;
+    text-decoration: underline;
+}
+
+.antecedentes-container-dnd td a:hover {
+    color: #002288;
+}
+
+.antecedentes-container-dnd tbody tr:nth-child(even) {
+    background-color: rgba(206, 206, 206, 0.925);
+}
+
+.antecedentes-container-dnd tbody tr:nth-child(odd) {
+    background-color: transparent;
+}
+
+/* Container do clique */
+summary.talentos {
+    list-style: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: background 0.2s;
+}
+
+/* Remove marcadores do Safari/Chrome */
+summary.talentos::-webkit-details-marker {
+    display: none;
+}
+
+summary.talentos:hover {
+    background-color: rgba(66, 2, 2, 0.05);
+}
+
+.talentos-container-dnd {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    font-family: sans-serif; /* Mude para a fonte de sua preferência */
+    background-color: rgba(179, 179, 179, 0.808);
+    border-left: 7px solid #8a1a1b;
+    padding: 15px 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Estilo de cada linha da lista (<li>) */
+.talentos-races-dnd li {
+    display: flex;
+    justify-content: space-between; /* Empurra o nome para a esquerda e origem para a direita */
+    align-items: center;
+    padding: 3px 6px;
+    font-size: 0.95em;
+}
+
+/* Customização dos Links de Raça */
+.talentos-races-dnd li a {
+    text-decoration: underline;
+    color: #0044cc; /* Azul clássico de links da imagem */
+}
+
+/* 🦓 Efeito Zebra perfeito aplicado às LI de cada lista separada */
+.talentos-races-dnd li:nth-child(even) {
+    background-color: rgba(206, 206, 206, 0.925);
+}
+
+p {
+    padding-left: 20px;
+}

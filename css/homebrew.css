@@ -1,0 +1,284 @@
+/* Container Externo */
+.subcontainer {
+    background-color: rgba(179, 179, 179, 0.808);
+    border-left: 10px solid #8a1a1b;
+    padding: 15px 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Container Principal do Índice */
+.index {
+    font-family: 'Georgia', serif;
+    color: #2b1d0e;
+    padding: 10px;
+}
+
+/* Títulos Principais (Classes, Subclasses, etc.) */
+.index h2 {
+    font-family: 'Cinzel', 'Palatino Linotype', serif;
+    color: #58170c;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #c9b38f; /* Linha dourada abaixo dos títulos principais */
+    padding-bottom: 2px;
+}
+
+/* Subtítulos (Bárbaro, Bardo, etc.) */
+.index h3 {
+    font-family: 'Cinzel', 'Palatino Linotype', serif;
+    color: #58170c;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-top: 12px;
+    margin-bottom: 2px;
+    border-bottom: 1px solid #c9b38f; /* Linha fina sob as classes das subclasses */
+    padding-bottom: 1px;
+}
+
+/* Listas do Índice */
+.index ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.index a {
+    color: #0000ff; /* Cor azul padrão de link da imagem */
+    text-decoration: underline;
+    font-size: 0.95rem;
+}
+
+/* 📐 ESTRUTURA DE COLUNAS (O segredo do layout da imagem) */
+
+/* Layout de 3 colunas para Subclasses e o bloco Raças/Invocações/Backgrounds */
+.grid-three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    align-items: start;
+}
+
+
+
+/* Base de Texto e Tipografia da Classe */
+.blood-hunter {
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000000;
+    padding: 20px;
+}
+
+/* Cabeçalhos (H1, H2 e H3) */
+.blood-hunter h1 {
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-size: 45px;
+    color: #58170c;
+    font-weight: 900;
+}
+
+.blood-hunter h2 {
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    color: #58170c;
+    border-bottom: 1px solid #c9b38f;
+}
+
+.blood-hunter h3 {
+    font-weight: bold;
+    color: #58170c;
+}
+
+.blood-hunter h4 {
+    color: #000000;
+    padding-left: 40px;
+}
+
+.blood-hunter ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 1px;
+}
+
+.blood-hunter li {
+    position: relative;
+    padding-left: 40px;
+}
+
+.blood-hunter li::before {
+    content: "♦"; 
+    position: absolute;
+    left: 25px;
+    top: 2px;
+    color: #8a1a1b;
+    font-size: 0.9em;
+}
+
+h2.subclasse {
+    font-size:30px;
+    color: #000000;
+}
+
+/* 📊 TABELA DE PROGRESSÃO */
+.class-table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    margin-left: 20px;
+}
+
+.class-table th {
+    background-color: #58170c;
+    color: #f1ebd9;
+    font-weight: bold;
+    text-align: left;
+    padding: 6px 10px;
+}
+
+.class-table td {
+    padding: 0 10px;
+    border-bottom: 1px solid #dcd1be;
+}
+
+/* Alinhamento de colunas (Correção do erro de sintaxe estrutural) */
+.class-table td:nth-child(1), .class-table td:nth-child(2), .class-table td:nth-child(4), .class-table td:nth-child(5),
+.class-table th:nth-child(1), .class-table th:nth-child(2), .class-table th:nth-child(4), .class-table th:nth-child(5) {
+    text-align: center;
+}
+
+.class-table tbody tr:nth-child(odd) {
+    background-color: #cecece;
+}
+
+/* Layout de Duas Colunas (Características) */
+.caracteristicas-colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5rem;
+    align-items: start;
+}
+
+/* 📱 Responsividade Unificada */
+@media (max-width: 768px) {
+    .class-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .caracteristicas-colunas {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+
+    .grid-three-columns {
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+}
+
+/* Caixa de Nota / Sidebar */
+.note {
+    width: 95%;
+    background-color: rgba(220, 215, 200, 0.5); /* Tom pergaminho suave, similar ao da imagem */
+    border-left: 5px solid #58170c;             /* Borda grossa carmesim à esquerda */
+    padding-left: 40px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    /* Se quiser o visual exato da imagem 1, com duas bordas finas laterais: */
+    border-right: 1px solid #c9b38f;
+    border-top: 1px solid #c9b38f;
+    border-bottom: 1px solid #c9b38f;
+}
+
+/* Título da Nota */
+.note h5 {
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-size: 1.1rem;
+    color: #58170c;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* Texto interno da Nota */
+.note p {
+    font-family: 'Georgia', serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #2b1d0e;
+    text-align: justify;
+    margin: 0;
+}
+
+h2.maldicoes {
+    font-size:30px
+}
+
+/* Contêiner que organiza as maldições em duas colunas */
+.curses-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 5px;
+}
+
+/* O bloco individual de cada maldição */
+.curse-box {
+    background-color: rgba(245, 242, 230, 0.4); /* Fundo pergaminho muito suave */
+    border: 1px solid #c9b38f;                  /* Borda dourada/envelhecida */
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    break-inside: avoid;                        /* Evita quebras feias se usar colunas nativas */
+}
+
+/* Título da Maldição */
+.curse-box h4 {
+    font-family: 'Cinzel', 'Palatino Linotype', serif;
+    color: #58170c;                             /* Vermelho Carmesim clássico */
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #58170c;           /* Linha vermelha fina sob o título */
+    padding-left: 0 !important;
+    text-align: center;
+}
+
+/* Texto de Pré-requisito (Itálico menor) */
+.curse-box em {
+    font-size: 0.85rem;
+    color: #5d554a;
+    display: block;                             /* Mudado de inline-block para block */
+    text-align: left;                         /* Centraliza o pré-requisito logo abaixo do título */
+    margin-bottom: 6px;
+}
+
+/* Parágrafos internos */
+.curse-box p {
+    font-family: 'Georgia', serif;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    text-align: justify;
+    margin-bottom: 1px !important;
+}
+
+/* Estilização específica para a parte do Amplificar */
+.curse-box p:last-child {
+    margin-bottom: 2px;
+    border-top: 1px dashed #c9b38f;             /* Linha tracejada separando o amplificar */
+    padding-top: 6px;
+    margin-top: 6px;
+}
+
+/* Ajuste de responsividade para telas menores */
+@media (max-width: 768px) {
+    .curses-container {
+        grid-template-columns: 1fr;
+    }
+}

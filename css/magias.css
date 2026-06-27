@@ -1,0 +1,332 @@
+/* ==========================================================================
+   🔮 SISTEMA DE COLUNAS DE MAGIAS (Estilo D&D 5e / PHB)
+   ========================================================================== */
+
+/* Grid automático que cria 2 colunas se houver espaço na tela */
+.container .spell-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 30px;
+    width: 96%;
+    margin: 20px auto;
+    background: transparent;
+    padding: 0;
+}
+
+/* Bloco base de cada Magia */
+.container .spell-box {
+    font-family: Georgia, serif;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+}
+
+/* Título Estilo Livro */
+.container .spell-box h3 {
+    font-family: 'Georgia', serif;
+    color: #581714; /* Vermelho Vinho clássico de D&D */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 2px 0;
+    text-shadow: none;
+    text-align: left;
+    width: 100%;
+}
+
+/* Escola de Magia e Nível */
+.container .spell-box .spell-type {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #303030;
+    margin: 0 0 8px 0;
+    width: 100%;
+    border-bottom: 1px solid #7a1d1d;
+    padding-bottom: 3px;
+}
+
+/* Estatísticas compactadas */
+.container .spell-box .spell-stats p {
+    font-size: 0.9rem;
+    margin: 0 0 2px 0;
+    line-height: 1.3;
+    width: 100%;
+    padding-left: 0;
+}
+
+/* Descrição e Corpo do Texto */
+.container .spell-box .spell-description {
+    margin-top: 8px;
+    width: 100%;
+}
+
+.container .spell-box .spell-description p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0 0 8px 0;
+    text-align: justify;
+    width: 100%;
+    padding-left: 0;
+}
+
+/* Recuo na primeira linha de parágrafos sequenciais */
+.container .spell-box .spell-description p + p {
+    text-indent: 1em; 
+}
+
+/* Remove recuo caso o parágrafo comece com negrito forte */
+.container .spell-box .spell-description p strong {
+    text-indent: 0;
+}
+
+/* Lista de sub-itens (ex: Brinde de Fada) com marcadores de losango */
+.container .spell-box .spell-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 8px 0;
+}
+
+.container .spell-box .spell-list li {
+    position: relative;
+    padding-left: 18px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 4px;
+}
+
+.container .spell-box .spell-list li::before {
+    content: "♦";
+    position: absolute;
+    left: 2px;
+    top: 0;
+    color: #8a1a1b;
+    font-size: 0.85em;
+}
+
+/* Rodapé indicando as classes que podem conjurar */
+.container .spell-box .spell-classes {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding-top: 4px;
+    font-size: 0.9rem;
+    margin-top: 12px !important;
+}
+
+/* Estilo Base da Caixa de Notas do mestre */
+.dm-note-box {
+    margin: 1.5rem 0;
+    padding: 1rem 1.25rem;
+    background-color: #dbdbdb;
+    border-left: 4px solid #7a5843;
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Variante Exclusiva: Preço Carmesim */
+.dm-note-box.price-crimson {
+    background-color: #dbdbdb; /* Fundo suave levemente avermelhado */
+    border-left: 4px solid #8b0000; /* Borda grossa em tom Carmesim Profundo/Sangue */
+    border-top-right-radius: 4px;
+    padding-left: 5px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0 2px 4px rgba(139, 0, 0, 0.05); /* Sombra carmesim quase imperceptível */
+}
+
+/* Customização do Título Interno */
+.dm-note-box.price-crimson h4 {
+    color: #8b0000; /* Título puramente carmesim */
+    font-family: 'Cinzel', 'Palatino', serif; /* Mantém a estética fantástica */
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+/* Detalhe estético opcional: Um pequeno marcador de gota antes do título */
+.dm-note-box.price-crimson h4::before {
+    content: "🩸"; 
+    font-size: 0.9rem;
+    margin-right: 8px;
+    filter: sepia(20%) saturate(200%); /* Ajusta o tom do emoji se necessário */
+}
+
+/* Ajuste para os parágrafos dentro do Preço Carmesim */
+.dm-note-box.price-crimson p {
+    margin: 0;
+    color: #000000; /* Texto escuro com uma leve nuance quente */
+    font-style: italic; /* Opcional: destaca o texto como regra especial */
+}
+
+/* Container Principal do Index */
+.spell-index-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Força exatamente 3 colunas iguais */
+    gap: 2rem; /* Espaço entre as colunas */
+    margin: 2rem 0;
+    align-items: start;
+}
+
+/* Comportamento de cada coluna */
+.spell-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Espaçamento vertical entre os grupos de nível */
+}
+
+/* Bloco isolado de cada Nível */
+.level-group {
+    background: transparent;
+}
+
+/* Estilização dos Títulos de Nível (h5) */
+.level-group h5 {
+    font-family: 'Cinzel', 'Palatino', serif;
+    color: #8b0000; /* Tom carmesim para combinar com o livro */
+    border-bottom: 1px solid #d3c7b9; /* Linha divisória sutil abaixo do nível */
+    margin: 0 0 0.5rem 0;
+    padding-bottom: 0.25rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Listas de Magias */
+.level-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.level-group li {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    line-height: 1.3;
+}
+
+/* Links das Magias */
+.level-group a {
+    text-decoration: none;
+    color: #2b1a1a;
+    transition: color 0.2s ease;
+}
+
+.level-group a:hover {
+    color: #8b0000; /* Link acende em carmesim ao passar o mouse */
+    text-decoration: underline;
+}
+
+/* Responsividade: Transforma em 1 coluna em telas pequenas (celulares) */
+@media (max-width: 768px) {
+    .spell-index-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* Vincula ambos os índices para funcionarem em 3 colunas iguais */
+.spell-index-grid, 
+.magias-list-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+    align-items: start;
+}
+
+/* Contêiner das tabelas em duas colunas */
+.magias-table-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Força exatamente 2 colunas de tamanhos iguais */
+    gap: 1.5rem; /* Espaço entre a tabela da esquerda e da direita */
+    margin: 1.5rem 0;
+    align-items: start;
+}
+
+/* Estilização Geral das Tabelas */
+.magias-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+}
+
+/* Cabeçalho da Tabela */
+.magias-table th {
+    font-family: 'Cinzel', 'Palatino', serif;
+    background-color: #8b0000; /* Tom carmesim clássico */
+    color: #b4b4b4;
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Células da Tabela */
+.magias-table td {
+    padding: 0rem 0.75rem;
+    border-bottom: 1px solid #d3c7b9;
+    color: #2b1a1a;
+}
+
+/* Efeito Zebrado (Linhas Alternadas) */
+.magias-table tbody tr:nth-child(odd) {
+    background-color: #cacaca; /* Fundo levemente pergaminho nas linhas ímpares */
+}
+
+.magias-table tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+
+/* Responsividade para celular: empilha uma embaixo da outra */
+@media (max-width: 768px) {
+    .magias-table-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+summary.magias-subclasses {
+    display: inline; /* Mantém o título na mesma linha da seta expansível */
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+summary {
+    cursor: pointer;
+}
+
+summary.magias-subclasses:hover {
+    background-color: rgba(66, 2, 2, 0.05);
+}
+
+/* CONTEINER PRINCIPAL */
+.magias {
+    background-color: rgba(179, 179, 179, 0.808);
+    border-left: 5px solid #8a1a1b;
+    padding: 15px 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.magias h2 {
+    text-align: center;
+    color: #7a1d1d;
+}
+
+.descricao {
+    font-size:larger;
+    color: #000000;
+}
+
+.sanguimancia {
+    font-size: 45PX;
+    color: rgb(139, 0, 0);
+}
