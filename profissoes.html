@@ -33,9 +33,9 @@
     </div>
 </header>
 <main>
-    <div class="container">
-        <section class="profissoes">
-            <h2>Profissões e Ofícios</h2>
+    <section class="container">
+        <section class="subcontainer">
+            <h1>Profissões e Ofícios</h1>
             
             <p>Como aventureiro, suas habilidades vão muito além do campo de batalha. Ao dominar o uso de ferramentas específicas, você pode exercer uma <strong>profissão secundária</strong>, permitindo a criação de itens essenciais e a geração de renda extra durante seus períodos de descanso.</p>
         
@@ -48,17 +48,15 @@
             <h3>Progressão e Maestria</h3>
             <p>A sua perícia não é estática: quanto mais você produz e se dedica ao seu ofício, maior será a sua capacidade de criar itens complexos e valiosos. A evolução na profissão acompanha o seu crescimento e experiência.</p>
         
-            <blockquote class="requisitos">
                 <h4>Requisitos de Ingresso</h4>
                 <p>Para iniciar em uma profissão, o aventureiro deve possuir <strong>proficiência com as ferramentas</strong> relacionadas ao ofício escolhido (concedidas por sua classe, raça, antecedente ou aprendidas estudando em tempo livre).</p>
-            </blockquote>
         
             <p>Abaixo, você encontrará as descrições detalhadas de cada profissão, incluindo os pré-requisitos, a lista de itens passíveis de fabricação e as tabelas de ganhos ao prestar serviços para as guildas locais.</p>
         
             <h3>Custo de Criação</h3>
             <ul>
                 <li>O custo em materiais para criar qualquer item é <strong>50% do valor de mercado</strong> do item.</li>
-                <li>A compra dos materiais deve ser postada no canal <code>#livro-de-comercio</code> no Discord.</li>
+                <li>A compra dos materiais deve ser postada no canal <em></em><strong>#livro-de-comercio</strong></em> no Discord.</li>
             </ul>
         
             <div class="info-box">
@@ -84,9 +82,9 @@
             <p><strong>Ex de teste:</strong> 1d20+5+5+2 - Teste para forja de Adaga CD 14 com Eonel.</p>
             <p><small><strong>Obs:</strong> No teste é usado 1d20 + Modificador Escolhido + Bônus de Proficiência + Skill Bônus (nível na profissão).</small></p>
         
-            <div class="resultado-box">
-                <h4 style="text-align: center;">Resultado do Teste / Efeito</h4>
-                <p class="obs-alerta"><strong>Obs:</strong> Essas informações valem para todas as profissões.</p>
+            <div>
+                <h4>Resultado do Teste / Efeito</h4>
+                <p><strong>Obs:</strong> Essas informações valem para todas as profissões.</p>
                 <ul>
                     <li><strong>Sucesso Crítico (20 Natural):</strong> O tempo de forja é reduzido em 1 dia para cada 3 dias do total (mínimo de 1 dia).</li>
                     <li><strong>Falha:</strong> Perda do dia de trabalho, sendo necessário realizar um novo teste em outro dia.</li>
@@ -96,8 +94,8 @@
             </div>
         
             <h3>Tabela de Progressão de Artesão</h3>
-            <div class="table-container">
-                <table>
+            <div>
+                <table class="profission-table">
                     <thead>
                         <tr>
                             <th>Nível</th>
@@ -118,26 +116,27 @@
                     </tbody>
                 </table>
             </div>
-            <p style="text-align: center; font-size: 0.9em; margin-top: 10px;"><em>Tabela válida para: Ferreiro, Carpinteiro, Alquimista e Alfaiate.</em></p>
-        </section>
-        <section class="ferreiro-page">
-            <h1 class="page-title">Ferreiro</h1>
+            <p><em>Tabela válida para: Ferreiro, Carpinteiro, Alquimista e Alfaiate.</em></p>
+    </section>
+        <section class="subcontainer">
+            <section class="profissao">
+            <h1>Ferreiro</h1>
             
             <p class="description">
                 Mestres da forja e do metal, os Ferreiros são artesãos habilidosos que dominam o fogo e o martelo para moldar o ferro bruto. Sua arte abrange desde a criação de utensílios simples até a forja de armas poderosas e armaduras resistentes, essenciais para a sobrevivência de qualquer aventureiro.
             </p>
         
             <h2>Regras de Proficiência e Criação</h2>
-            <p>O jogador que possui proficiência no Kit de Ferramentas de Ferreiro recebe a Tag <strong>Ferreiro - X</strong>, onde "X" é o nível de maestria alcançado.</p>
+            <p>O jogador que possui proficiência no Kit de Ferramentas de Ferreiro recebe a Tag <strong>Ferreiro</strong>.</p>
         
             <h3>Teste de Forja</h3>
             <p>Ao realizar o teste de forja, o atributo pode ser: <strong>Inteligência, Força ou Destreza (Ferramentas de Ferreiro)</strong>, à escolha do jogador.</p>
         
-            <h2 class="table-title">Catálogo de Armaria e Ferraria</h2>
+            <h2>Catálogo de Armaria e Ferraria</h2>
         
             <!-- Tabela consolidada com seções -->
-            <div class="table-container">
-                <table>
+            <div>
+                <table class="profission-table">
                     <thead>
                         <tr>
                             <th>Item Forjável</th>
@@ -245,21 +244,19 @@
                 </table>
             </div>
         </section>
-        <section class="alquimista-page">
-            <h1 class="page-title">Alquimista</h1>
+        <section class="profissao">
+            <h1>Alquimista</h1>
             
-            <p class="description">
-                Conhecedores dos segredos da natureza e da ciência oculta, estes artesãos manipulam ervas raras e reagentes químicos para dar vida a compostos potentes. Sua arte reside no equilíbrio delicado entre a cura e a morte.
-            </p>
+            <p>Conhecedores dos segredos da natureza e da ciência oculta, estes artesãos manipulam ervas raras e reagentes químicos para dar vida a compostos potentes. Sua arte reside no equilíbrio delicado entre a cura e a morte.</p>
         
             <h2>Regras de Proficiência e Criação</h2>
             <p>O jogador com proficiência no Kit de Alquimista, Herbalista ou Envenenamento recebe a Tag <strong>Alquimista - X</strong>.</p>
             <p><strong>Teste de Alquimia:</strong> Pode usar Inteligência ou Sabedoria à escolha do jogador.</p>
         
-            <h2 class="table-title">Compêndio de Poções e Venenos</h2>
+            <h2>Compêndio de Poções e Venenos</h2>
         
-            <div class="table-container">
-                <table>
+            <div>
+                <table class="profission-table">
                     <thead>
                         <tr>
                             <th>Item Criável</th>
@@ -275,7 +272,9 @@
                         <tr><td>Óleo</td><td>1</td><td>20</td></tr>
                         <tr><td>Perfume</td><td>1</td><td>20</td></tr>
                     </tbody>
-                    <tbody class="table-section"><tr><th colspan="3">Alquimista Lv 2 - CD 14</th></tr>
+
+                    <tbody class="table-section">
+                        <tr><th colspan="3">Alquimista Lv 2 - CD 14</th></tr>
                         <tr><td>Sangue de assassino</td><td>2</td><td>65</td></tr>
                         <tr><td>Veneno Básico</td><td>1</td><td>30</td></tr>
                         <tr><td>Óleo da Escorregadiosidade</td><td>3</td><td>100</td></tr>
@@ -294,7 +293,9 @@
                         <tr><td>Sonhos Murchos</td><td>3</td><td>100</td></tr>
                         <tr><td>Elixir Misterioso</td><td>3</td><td>100</td></tr>
                     </tbody>
-                    <tbody class="table-section"><tr><th colspan="3">Alquimista Lv 3 - CD 17</th></tr>
+
+                    <tbody class="table-section">
+                        <tr><th colspan="3">Alquimista Lv 3 - CD 17</th></tr>
                         <tr><td>Poção do Repouso Vigilante</td><td>3</td><td>130</td></tr>
                         <tr><td>Poção de Amizade Animal</td><td>3</td><td>130</td></tr>
                         <tr><td>Poção de Compreensão</td><td>3</td><td>130</td></tr>
@@ -307,7 +308,9 @@
                         <tr><td>Destilado de Lobo-Atroz</td><td>5</td><td>220</td></tr>
                         <tr><td>Essência de Éter</td><td>5</td><td>220</td></tr>
                     </tbody>
-                    <tbody class="table-section"><tr><th colspan="3">Alquimista Lv 4 - CD 20</th></tr>
+
+                    <tbody class="table-section">
+                        <tr><th colspan="3">Alquimista Lv 4 - CD 20</th></tr>
                         <tr><td>Destilado de Mil Farpas</td><td>7</td><td>310</td></tr>
                         <tr><td>Elixir do Olhar Nublado</td><td>7</td><td>310</td></tr>
                         <tr><td>Poção de Cura Grande</td><td>7</td><td>310</td></tr>
@@ -322,7 +325,9 @@
                         <tr><td>Veneno da Guarda Lenta</td><td>7</td><td>380</td></tr>
                         <tr><td>Lágrima de Basilisco</td><td>5</td><td>270</td></tr>
                     </tbody>
-                    <tbody class="table-section"><tr><th colspan="3">Alquimista Lv 5 - CD 23</th></tr>
+
+                    <tbody class="table-section">
+                        <tr><th colspan="3">Alquimista Lv 5 - CD 23</th></tr>
                         <tr><td>Poção de Resistência (Todas)</td><td>10</td><td>545</td></tr>
                         <tr><td>Poção de Força Gigante (Colina)</td><td>10</td><td>545</td></tr>
                         <tr><td>Poção de Cura Superior</td><td>14</td><td>765</td></tr>
@@ -332,7 +337,9 @@
                         <tr><td>Filtro do Amor</td><td>10</td><td>645</td></tr>
                         <tr><td>Poção do Heroísmo</td><td>7</td><td>450</td></tr>
                     </tbody>
-                    <tbody class="table-section"><tr><th colspan="3">Alquimista Lv 6 - CD 26</th></tr>
+
+                    <tbody class="table-section">
+                        <tr><th colspan="3">Alquimista Lv 6 - CD 26</th></tr>
                         <tr><td>Poção da Invisibilidade</td><td>14</td><td>1045</td></tr>
                         <tr><td>Poção de Controle Mental</td><td>20</td><td>1495</td></tr>
                         <tr><td>Poção de Invulnerabilidade</td><td>20</td><td>1495</td></tr>
@@ -345,28 +352,25 @@
                 </table>
             </div>
         
-            <section class="homebrew-page">
-                <h1 class="page-title">Poções e Venenos Homebrew</h1>
+            <section class="pocoes">
+                <h1>Poções e Venenos Homebrew</h1>
             
                 <div class="item-grid">
-                    <!-- Card: Antídoto -->
-                    <div class="item-card">
+                    <div class="item-card pocao">
                         <h3>Antídoto</h3>
                         <p><strong>Tipo:</strong> Poção — Comum</p>
                         <p><strong>Duração:</strong> Instantânea</p>
                         <p>Ao ser ingerida, esta mistura refrescante neutraliza toxinas no organismo, encerrando imediatamente a condição <strong>Envenenado</strong> no usuário.</p>
                     </div>
             
-                    <!-- Card: Destilado de Lobo-Atroz -->
-                    <div class="item-card">
+                    <div class="item-card pocao">
                         <h3>Destilado de Lobo-Atroz</h3>
                         <p><strong>Tipo:</strong> Poção — Incomum Menor</p>
                         <p><strong>Duração:</strong> Até o próximo descanso longo</p>
                         <p>Seus caninos crescem e sua mandíbula se fortalece. Você pode usar uma ação para realizar um ataque de <strong>Mordida</strong>. Este ataque utiliza seu modificador de <strong>Força</strong> para o acerto e causa <strong>2d4 + modificador de Força</strong> de dano perfurante.</p>
                     </div>
             
-                    <!-- Card: Destilado de Mil Farpas -->
-                    <div class="item-card">
+                    <div class="item-card veneno">
                         <h3>Destilado de Mil Farpas</h3>
                         <p><strong>Tipo:</strong> Veneno — Comum</p>
                         <p><strong>Duração:</strong> 5 turnos</p>
@@ -374,8 +378,7 @@
                         <p class="extra-info"><strong>Munições:</strong> Duração reduzida para 2 turnos por projétil.</p>
                     </div>
             
-                    <!-- Card: Elixir do Olhar Nublado -->
-                    <div class="item-card">
+                    <div class="item-card veneno">
                         <h3>Elixir do Olhar Nublado</h3>
                         <p><strong>Tipo:</strong> Veneno — Comum</p>
                         <p><strong>Duração:</strong> 5 turnos</p>
@@ -383,16 +386,14 @@
                         <p class="extra-info"><strong>Munições:</strong> Redução de 1 em Sabedoria e duração de 3 turnos.</p>
                     </div>
             
-                    <!-- Card: Elixir Misterioso -->
-                    <div class="item-card">
+                    <div class="item-card pocao">
                         <h3>Elixir Misterioso</h3>
                         <p><strong>Tipo:</strong> Poção — Comum</p>
                         <p><strong>Duração:</strong> 1 minuto</p>
                         <p>Você fica <strong>Inconsciente</strong>, mas recebe <strong>resistência</strong> a todos os tipos de dano (exceto psíquico) e torna-se imune a doenças e venenos.</p>
                     </div>
             
-                    <!-- Card: Extrato de Medusa -->
-                    <div class="item-card">
+                    <div class="item-card veneno">
                         <h3>Extrato de Medusa</h3>
                         <p><strong>Tipo:</strong> Veneno — Raro Menor</p>
                         <p><strong>Duração:</strong> 3 turnos</p>
@@ -400,16 +401,14 @@
                         <p class="extra-info"><strong>Munições:</strong> Duração reduzida para 1 turno.</p>
                     </div>
             
-                    <!-- Card: Lágrima de Basilisco -->
-                    <div class="item-card">
+                    <div class="item-card pocao">
                         <h3>Lágrima de Basilisco</h3>
                         <p><strong>Tipo:</strong> Poção — Incomum Menor</p>
                         <p><strong>Duração:</strong> Instantânea</p>
                         <p>Solvente alquímico que reverte calcificação mágica. Remove imediatamente a condição <strong>Petrificado</strong>.</p>
                     </div>
             
-                    <!-- Card: Névoa dos Sonhos -->
-                    <div class="item-card">
+                    <div class="item-card veneno">
                         <h3>Névoa dos Sonhos</h3>
                         <p><strong>Tipo:</strong> Veneno — Comum</p>
                         <p><strong>Duração:</strong> 3 turnos</p>
@@ -417,8 +416,7 @@
                         <p class="extra-info"><strong>Munições:</strong> Duração reduzida para 1 turno.</p>
                     </div>
             
-                    <!-- Card: O Beijo da Loucura -->
-                    <div class="item-card">
+                    <div class="item-card veneno">
                         <h3>O Beijo da Loucura</h3>
                         <p><strong>Tipo:</strong> Veneno — Comum</p>
                         <p><strong>Duração:</strong> 5 turnos</p>
@@ -426,40 +424,35 @@
                         <p class="extra-info"><strong>Munições:</strong> Duração reduzida para 2 turnos.</p>
                     </div>
             
-                    <!-- Card: Poção do Alívio Angélico -->
-                    <div class="item-card">
+                    <div class="item-card pocao">
                         <h3>Poção do Alívio Angélico</h3>
                         <p><strong>Tipo:</strong> Poção — Raro Menor</p>
                         <p><strong>Duração:</strong> 1 minuto</p>
                         <p>Causa sono de 1 min. Ao acordar, recebe benefícios de <strong>Descanso Curto</strong> e recupera espaços de magia de 1º e 2º nível. Só pode ser usada uma vez por Descanso Longo.</p>
                     </div>
             
-                    <!-- Card: Poção da Fala Animal -->
-                    <div class="item-card">
+                    <div class="item-card pocao">
                         <h3>Poção da Fala Animal</h3>
                         <p><strong>Tipo:</strong> Poção — Comum</p>
                         <p><strong>Duração:</strong> Até o próximo descanso longo</p>
                         <p>Recebe os benefícios da magia <em>Falar com Animais</em>.</p>
                     </div>
             
-                    <!-- Card: Poção de Queda Suave -->
-                    <div class="item-card">
+                    <div class="item-card pocao">
                         <h3>Poção de Queda Suave</h3>
                         <p><strong>Tipo:</strong> Poção — Comum</p>
                         <p><strong>Duração:</strong> 10 minutos</p>
                         <p>O corpo torna-se leve como uma pluma. Recebe os efeitos da magia <em>Queda Suave</em>.</p>
                     </div>
             
-                    <!-- Card: Poção de Salto -->
-                    <div class="item-card">
+                    <div class="item-card pocao">
                         <h3>Poção de Salto</h3>
                         <p><strong>Tipo:</strong> Poção — Comum</p>
                         <p><strong>Duração:</strong> 1 minuto</p>
                         <p>Sua distância de salto é <strong>triplicada</strong>.</p>
                     </div>
             
-                    <!-- Card: Poção do Sono -->
-                    <div class="item-card">
+                    <div class="item-card pocao">
                         <h3>Poção do Sono</h3>
                         <p><strong>Tipo:</strong> Poção — Comum</p>
                         <p><strong>Duração:</strong> 3 turnos</p>
@@ -467,16 +460,14 @@
                         <p class="extra-info"><strong>Especial:</strong> Pode ser aplicada a munições.</p>
                     </div>
             
-                    <!-- Card: Sonhos Murchos -->
-                    <div class="item-card">
+                    <div class="item-card veneno">
                         <h3>Sonhos Murchos</h3>
                         <p><strong>Tipo:</strong> Veneno — Comum</p>
                         <p><strong>Duração:</strong> Instantânea</p>
                         <p>O alvo sofre <strong>2d6</strong> de dano Psíquico.</p>
                     </div>
             
-                    <!-- Card: Soro da Agonia Verde -->
-                    <div class="item-card">
+                    <div class="item-card veneno">
                         <h3>Soro da Agonia Verde</h3>
                         <p><strong>Tipo:</strong> Veneno — Comum</p>
                         <p><strong>Duração:</strong> 1 minuto</p>
@@ -484,8 +475,7 @@
                         <p class="extra-info"><strong>Munições:</strong> Dano reduzido para 1d6 e duração para 5 turnos.</p>
                     </div>
             
-                    <!-- Card: Soro da Deselegância -->
-                    <div class="item-card">
+                    <div class="item-card veneno">
                         <h3>Soro da Deselegância</h3>
                         <p><strong>Tipo:</strong> Veneno — Incomum Menor</p>
                         <p><strong>Duração:</strong> 3 turnos</p>
@@ -493,8 +483,7 @@
                         <p class="extra-info"><strong>Munições:</strong> Duração reduzida para 1 turno.</p>
                     </div>
             
-                    <!-- Card: Veneno da Guarda Lenta -->
-                    <div class="item-card">
+                    <div class="item-card veneno">
                         <h3>Veneno da Guarda Lenta</h3>
                         <p><strong>Tipo:</strong> Veneno — Incomum Menor</p>
                         <p><strong>Duração:</strong> 5 turnos</p>
@@ -502,8 +491,7 @@
                         <p class="extra-info"><strong>Munições:</strong> Duração cai para 2 turnos e CA reduzida em 1.</p>
                     </div>
             
-                    <!-- Card: Vontade Vacilante -->
-                    <div class="item-card">
+                    <div class="item-card veneno">
                         <h3>Vontade Vacilante</h3>
                         <p><strong>Tipo:</strong> Veneno — Comum</p>
                         <p><strong>Duração:</strong> 3 turnos</p>
@@ -514,44 +502,44 @@
             </section>
         
             <section class="house-rules">
-                <h2>Regras da Casa: Consumíveis</h2>
-            
-                <div class="rules-content">
-                    <h3>Poções</h3>
-                    <p>Ingerir uma poção requer uma <strong>Ação Bônus</strong>. No entanto, administrar uma poção em outra criatura (como um aliado inconsciente) ainda requer uma <strong>Ação</strong>.</p>
-            
-                    <h3>Venenos</h3>
-                    <p>Aplicar veneno em armas, munições, armadilhas ou objetos requer uma <strong>Ação Bônus</strong>. Uma vez aplicado, o veneno permanece potente por <strong>1 minuto</strong>, até ser descarregado em um ataque bem-sucedido ou removido propositalmente.</p>
-                    
-                    <ul>
-                        <li><strong>Exposição:</strong> Uma criatura que sofre dano de um objeto revestido é imediatamente exposta aos efeitos do veneno.</li>
-                        <li><strong>Uso Social:</strong> Em contextos fora de combate, venenos podem ser aplicados furtivamente em comidas ou bebidas (geralmente exigindo um teste de Destreza (Prestidigitação)).</li>
-                        <li><strong>Munições:</strong> Se aplicado em munições (flechas, virotes, etc.), o veneno é consumido no primeiro ataque realizado, independentemente de o ataque atingir o alvo ou não, devido ao impacto do projétil contra uma superfície.
-                            <ul>
-                                <li><em>Nota:</em> Pode ser aplicado à <strong>2 unidades</strong> e seu efeito é reduzido conforme descrito no veneno.</li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div class="single-rule-card">
+                    <h2>Regras da Casa: Consumíveis</h2>
+                
+                    <div class="rules-content">
+                        <h3>Poções</h3>
+                        <p>Ingerir uma poção requer uma <strong>Ação Bônus</strong>. No entanto, administrar uma poção em outra criatura (como um aliado inconsciente) ainda requer uma <strong>Ação</strong>.</p>
+                
+                        <h3>Venenos</h3>
+                        <p>Aplicar veneno em armas, munições, armadilhas ou objetos requer uma <strong>Ação Bônus</strong>. Uma vez aplicado, o veneno permanece potente por <strong>1 minuto</strong>, até ser descarregado em um ataque bem-sucedido ou removido propositalmente.</p>
+                        
+                        <ul>
+                            <li><strong>Exposição:</strong> Uma criatura que sofre dano de um objeto revestido é imediatamente exposta aos efeitos do veneno.</li>
+                            <li><strong>Uso Social:</strong> Em contextos fora de combate, venenos podem ser aplicados furtivamente em comidas ou bebidas (geralmente exigindo um teste de Destreza (Prestidigitação)).</li>
+                            <li><strong>Munições:</strong> Se aplicado em munições (flechas, virotes, etc.), o veneno é consumido no primeiro ataque realizado, independentemente de o ataque atingir o alvo ou não, devido ao impacto do projétil contra uma superfície.
+                                <ul>
+                                    <li><em>Nota:</em> Pode ser aplicado a <strong>2 unidades</strong> e seu efeito é reduzido conforme descrito no veneno.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </section>
-        <section class="carpintaria-page">
-            <h1 class="page-title">Carpinteiro</h1>
+        <section class="profissao">
+            <h1>Carpinteiro</h1>
             
-            <p class="description">
-                Mestres da madeira e do entalhe, os Carpinteiros possuem a habilidade de transformar o carvalho bruto e o freixo resiliente em instrumentos de utilidade inestimável. Através do manejo preciso de serras, formões e plainas, esses artesãos dão forma a tudo o que sustenta a jornada de um herói: desde cabos de armas e escudos reforçados até complexas estruturas e itens essenciais de acampamento[cite: 1].
-            </p>
+            <p>Mestres da madeira e do entalhe, os Carpinteiros possuem a habilidade de transformar o carvalho bruto e o freixo resiliente em instrumentos de utilidade inestimável. Através do manejo preciso de serras, formões e plainas, esses artesãos dão forma a tudo o que sustenta a jornada de um herói: desde cabos de armas e escudos reforçados até complexas estruturas e itens essenciais de acampamento.</p>
         
             <h2>Regras de Proficiência e Criação</h2>
-            <p>O jogador que possui proficiência no Kit de Ferramentas de Carpinteiro ou Entalhador de Madeira recebe a Tag <strong>Carpinteiro - X</strong>, onde "X" é o nível de maestria alcançado[cite: 1].</p>
+            <p>O jogador que possui proficiência no Kit de Ferramentas de Carpinteiro ou Entalhador de Madeira recebe a Tag <strong>Carpinteiro</strong></p>
         
             <h3>Teste de Carpintaria</h3>
-            <p>Ao realizar o teste de Carpintaria, o atributo pode ser: <strong>Destreza, Inteligência ou Sabedoria (Ferramentas de Carpinteiro ou Entalhador de Madeira)</strong>, à escolha do jogador[cite: 1].</p>
+            <p>Ao realizar o teste de Carpintaria, o atributo pode ser: <strong>Destreza, Inteligência ou Sabedoria (Ferramentas de Carpinteiro ou Entalhador de Madeira)</strong>, à escolha do jogador.</p>
         
-            <h2 class="table-title">Compêndio de Carpintaria</h2>
+            <h2>Compêndio de Carpintaria</h2>
         
-            <div class="table-container">
-                <table>
+            <div>
+                <table class="profission-table">
                     <thead>
                         <tr>
                             <th>Item Criável</th>
@@ -560,7 +548,8 @@
                         </tr>
                     </thead>
         
-                    <tbody class="table-section"><tr><th colspan="3">Carpinteiro Lv 1 - CD 11</th></tr>
+                    <tbody class="table-section">
+                        <tr><th colspan="3">Carpinteiro Lv 1 - CD 11</th></tr>
                         <tr><td>Balde</td><td>1</td><td>20</td></tr>
                         <tr><td>Caixa para Mapas ou Pergaminhos</td><td>1</td><td>20</td></tr>
                         <tr><td>Caneca</td><td>1</td><td>20</td></tr>
@@ -576,7 +565,8 @@
                         <tr><td>Tocha</td><td>1</td><td>20</td></tr>
                     </tbody>
         
-                    <tbody class="table-section"><tr><th colspan="3">Carpinteiro Lv 2 - CD 14</th></tr>
+                    <tbody class="table-section">
+                        <tr><th colspan="3">Carpinteiro Lv 2 - CD 14</th></tr>
                         <tr><td>Azagaia</td><td>1</td><td>30</td></tr>
                         <tr><td>Bastão</td><td>1</td><td>30</td></tr>
                         <tr><td>Barril</td><td>3</td><td>100</td></tr>
@@ -605,7 +595,8 @@
                         <tr><td>Zarabatana</td><td>1</td><td>30</td></tr>
                     </tbody>
         
-                    <tbody class="table-section"><tr><th colspan="3">Carpinteiro Lv 3 - CD 17</th></tr>
+                    <tbody class="table-section">
+                        <tr><th colspan="3">Carpinteiro Lv 3 - CD 17</th></tr>
                         <tr><td>Arco Curto</td><td>3</td><td>130</td></tr>
                         <tr><td>Cajado</td><td>3</td><td>130</td></tr>
                         <tr><td>Cajado de Madeira</td><td>3</td><td>130</td></tr>
@@ -616,7 +607,8 @@
                         <tr><td>Totem (Foco Druídico)</td><td>3</td><td>130</td></tr>
                     </tbody>
         
-                    <tbody class="table-section"><tr><th colspan="3">Carpinteiro Lv 4 - CD 20</th></tr>
+                    <tbody class="table-section">
+                        <tr><th colspan="3">Carpinteiro Lv 4 - CD 20</th></tr>
                         <tr><td>Arco Longo</td><td>4</td><td>215</td></tr>
                         <tr><td>Ariete Portátil</td><td>5</td><td>270</td></tr>
                         <tr><td>Besta de Mão</td><td>4</td><td>215</td></tr>
@@ -628,7 +620,8 @@
                         <tr><td>Flechas/Virotes Elementais (Comuns)</td><td>4</td><td>215</td></tr>
                     </tbody>
         
-                    <tbody class="table-section"><tr><th colspan="3">Carpinteiro Lv 5 - CD 23</th></tr>
+                    <tbody class="table-section">
+                        <tr><th colspan="3">Carpinteiro Lv 5 - CD 23</th></tr>
                         <tr><td>Flechas/Virotes Elementais (Incomuns)</td><td>8</td><td>515</td></tr>
                         <tr><td>Barco a Remo</td><td>15</td><td>970</td></tr>
                         <tr><td>Barco a Quilha</td><td>20</td><td>1295</td></tr>
@@ -637,7 +630,8 @@
                         <tr><td>Vagão</td><td>30</td><td>1945</td></tr>
                     </tbody>
         
-                    <tbody class="table-section"><tr><th colspan="3">Carpinteiro Lv 6 - CD 26</th></tr>
+                    <tbody class="table-section">
+                        <tr><th colspan="3">Carpinteiro Lv 6 - CD 26</th></tr>
                         <tr><td>Flechas/Virotes Assassinas (Incomum Menor)</td><td>12</td><td>895</td></tr>
                         <tr><td>Flechas/Virotes Assassinas (Incomum Maior)</td><td>15</td><td>1120</td></tr>
                         <tr><td>Navio Viking*</td><td>180</td><td>13495</td></tr>
@@ -650,23 +644,21 @@
                 </table>
             </div>
         </section>
-        <section class="alfaiataria-page">
-            <h1 class="page-title">Alfaiate</h1>
+        <section class="profissao">
+            <h1>Alfaiate</h1>
             
-            <p class="description">
-                Mestres da fibra e do curtume, os Alfaiates são os arquitetos do conforto e da proteção flexível. Com agulhas precisas e facas de corte afiadas, eles transformam tecidos finos, peles rústicas e couros tratados em vestimentas que definem a presença de um herói. Sua arte veste desde o nobre em seus trajes de seda até o batedor que depende de uma armadura de couro silenciosa para sobreviver nas sombras.
-            </p>
+            <p>Mestres da fibra e do curtume, os Alfaiates são os arquitetos do conforto e da proteção flexível. Com agulhas precisas e facas de corte afiadas, eles transformam tecidos finos, peles rústicas e couros tratados em vestimentas que definem a presença de um herói. Sua arte veste desde o nobre em seus trajes de seda até o batedor que depende de uma armadura de couro silenciosa para sobreviver nas sombras.</p>
         
             <h2>Regras de Proficiência e Criação</h2>
-            <p>O jogador que possui proficiência com Ferramentas de Coureiro ou de Costureiro recebe a Tag <strong>Alfaiate - X</strong>, onde "X" é o nível de maestria alcançado.</p>
+            <p>O jogador que possui proficiência com Ferramentas de Coureiro ou de Costureiro recebe a Tag <strong>Alfaiate</strong></p>
         
             <h3>Teste de Alfaiataria</h3>
             <p>Ao realizar o teste de Alfaiataria, o atributo pode ser: <strong>Destreza, Inteligência ou Sabedoria (Ferramentas de Curtidor ou de Costureiro)</strong>, à escolha do jogador.</p>
         
-            <h2 class="table-title">Itens de Alfaiataria</h2>
+            <h2>Itens de Alfaiataria</h2>
         
-            <div class="table-container">
-                <table class="classTable alf frame">
+            <div>
+                <table class="profission-table">
                     <thead>
                         <tr>
                             <th>Item Criável</th>
@@ -675,7 +667,8 @@
                         </tr>
                     </thead>
         
-                    <tbody class="table-section"><tr><th colspan="3">Alfaiate Lv 1 - CD 11</th></tr>
+                    <tbody class="table-section">
+                        <tr><th colspan="3">Alfaiate Lv 1 - CD 11</th></tr>
                         <tr><td>Robes</td><td>2</td><td>45</td></tr>
                         <tr><td>Algibeira</td><td>1</td><td>20</td></tr>
                         <tr><td>Manto</td><td>2</td><td>45</td></tr>
@@ -688,7 +681,8 @@
                         <tr><td>Corda de Seda (50 pés)</td><td>1</td><td>20</td></tr>
                     </tbody>
         
-                    <tbody class="table-section"><tr><th colspan="3">Alfaiate Lv 2 - CD 14</th></tr>
+                    <tbody class="table-section">
+                        <tr><th colspan="3">Alfaiate Lv 2 - CD 14</th></tr>
                         <tr><td>Rede</td><td>1</td><td>30</td></tr>
                         <tr><td>Mochila</td><td>2</td><td>65</td></tr>
                         <tr><td>Roupas Comuns</td><td>2</td><td>65</td></tr>
@@ -700,7 +694,8 @@
                         <tr><td>Gaita de Fole</td><td>3</td><td>100</td></tr>
                     </tbody>
         
-                    <tbody class="table-section"><tr><th colspan="3">Alfaiate Lv 3 - CD 17</th></tr>
+                    <tbody class="table-section">
+                        <tr><th colspan="3">Alfaiate Lv 3 - CD 17</th></tr>
                         <tr><td>Armadura Acolchoada</td><td>5</td><td>220</td></tr>
                         <tr><td>Armadura de Couro</td><td>5</td><td>220</td></tr>
                         <tr><td>Gibão de Peles</td><td>7</td><td>310</td></tr>
@@ -710,7 +705,8 @@
                         <tr><td>Chicote</td><td>3</td><td>130</td></tr>
                     </tbody>
         
-                    <tbody class="table-section"><tr><th colspan="3">Alfaiate Lv 4 - CD 20</th></tr>
+                    <tbody class="table-section">
+                        <tr><th colspan="3">Alfaiate Lv 4 - CD 20</th></tr>
                         <tr><td>Armadura de Couro Batido</td><td>10</td><td>545</td></tr>
                         <tr><td>Tenda para duas pessoas</td><td>7</td><td>380</td></tr>
                         <tr><td>Roupas de Inverno</td><td>4</td><td>215</td></tr>
@@ -718,7 +714,8 @@
                         <tr><td>Kit de Disfarce</td><td>5</td><td>270</td></tr>
                     </tbody>
         
-                    <tbody class="table-section"><tr><th colspan="3">Alfaiate Lv 5 - CD 23</th></tr>
+                    <tbody class="table-section">
+                        <tr><th colspan="3">Alfaiate Lv 5 - CD 23</th></tr>
                         <tr><td>Sela Compacta</td><td>15</td><td>970</td></tr>
                         <tr><td>Sela Exótica</td><td>20</td><td>1295</td></tr>
                         <tr><td>Sela Militar</td><td>20</td><td>1295</td></tr>
@@ -729,18 +726,17 @@
                         <tr><td>Armadura de Couro Batido para Cavalos</td><td>15</td><td>970</td></tr>
                     </tbody>
         
-                    <tbody class="table-section"><tr><th colspan="3">Alfaiate Lv 6 - CD 26</th></tr>
+                    <tbody class="table-section">
+                        <tr><th colspan="3">Alfaiate Lv 6 - CD 26</th></tr>
                         <tr><td>Equipamentos Obra-Prima</td><td>Por Rank</td><td>Por Rank</td></tr>
                     </tbody>
                 </table>
             </div>
         </section>
-        <section class="vidraria-page">
-            <h1 class="page-title">Vidreiro</h1>
+        <section class="profissao">
+            <h1>Vidreiro</h1>
             
-            <p class="description">
-                Mestres do sopro e da moldagem, os Vidreiros são artesãos habilidosos que dominam o calor intenso das fornalhas para transformar a areia em formas cristalinas. Sua arte abrange desde a criação de frascos delicados para poções e elixires até a confecção de lentes precisas e ornamentos luxuosos, essenciais para a organização e o sucesso de qualquer alquimista ou aventureiro.
-            </p>
+            <p>Mestres do sopro e da moldagem, os Vidreiros são artesãos habilidosos que dominam o calor intenso das fornalhas para transformar a areia em formas cristalinas. Sua arte abrange desde a criação de frascos delicados para poções e elixires até a confecção de lentes precisas e ornamentos luxuosos, essenciais para a organização e o sucesso de qualquer alquimista ou aventureiro.</p>
         
             <h2>Regras de Proficiência e Criação</h2>
             <p>O jogador que possui proficiência em Ferramentas de Vidreiro recebe a Tag <strong>Vidreiro - X</strong>, onde "X" é o nível de maestria alcançado.</p>
@@ -751,8 +747,8 @@
             <h3>Progressão</h3>
             <p>Devido à falta de itens para fabricação, a profissão de Vidreiro possui uma progressão com menos níveis.</p>
         
-            <div class="table-container">
-                <table class="classTable frame">
+            <div>
+                <table class="profission-table">
                     <thead>
                         <tr>
                             <th>Nível</th>
@@ -771,10 +767,10 @@
                 </table>
             </div>
         
-            <h2 class="table-title">Catálogo de Vidraçaria</h2>
+            <h2>Catálogo de Vidraçaria</h2>
         
-            <div class="table-container">
-                <table class="classTable frame">
+            <div>
+                <table class="profission-table">
                     <thead>
                         <tr>
                             <th>Item Forjável</th>
@@ -805,8 +801,9 @@
                 </table>
             </div>
         </section>
-        <section class="maestria-page">
-            <h1 class="page-title">Evolução do Artesão</h1>
+    </section>
+        <section class="subcontainer">
+            <h1>Evolução do Artesão</h1>
         
             <h2>O Grão-Mestrado</h2>
             <p>Ao atingir o ápice de sua jornada técnica, o artesão transcende a maestria comum para se tornar um <strong>Grão-Mestre</strong>. Este título designa uma elite de criadores cujas mãos são capazes de conceber itens muito mais poderosos e com propriedades singulares.</p>
@@ -815,11 +812,11 @@
                 <p><strong>Atenção:</strong> Devido à complexidade e aos segredos profundos de cada ofício, <strong>um artesão só pode atingir o grau de Grão-Mestre em uma única profissão</strong>. Ao escolher sua especialização, você sela seu destino como uma autoridade suprema naquele ramo, renunciando à chance de alcançar o mesmo nível em outras disciplinas.</p>
             </div>
         
-            <h2 class="table-title">Equipamentos Obras-Primas</h2>
+            <h2>Equipamentos Obras-Primas</h2>
         
-            <div class="table-container">
+            <div>
                 <h3>Tabela de Armas Obra-Prima</h3>
-                <table>
+                <table class="profission-table">
                     <thead>
                         <tr><th>Rank</th><th>Valor</th><th>Benefícios</th></tr>
                     </thead>
@@ -833,7 +830,7 @@
                 </table>
         
                 <h3>Tabela de Armaduras Obra-Prima</h3>
-                <table>
+                <table class="profission-table">
                     <thead>
                         <tr><th>Rank</th><th>Valor</th><th>Benefícios</th></tr>
                     </thead>
@@ -845,7 +842,7 @@
                         <tr><td>V</td><td>8000 PO</td><td>Bônus de +1 em salvaguarda (Força E Destreza), +1 AC E 10% PV Máx</td></tr>
                     </tbody>
                 </table>
-                <p class="price-notice">*Preço: Valor fixo estipulado pelo rank mais o custo normal em PO do item base.</p>
+                <p><strong>Preço:</strong> Valor fixo estipulado pelo rank mais o custo normal em PO do item base.</p>
             </div>
         
             <h3>Regras de Aplicação</h3>
@@ -855,9 +852,9 @@
                 <li><strong>Salvaguarda:</strong> O bônus de perícia deve ser escolhido no momento da forja ou compra.</li>
             </ul>
         
-            <h3 class="table-title">Fabricação: Tempo e Experiência</h3>
-            <div class="table-container">
-                <table>
+            <h3>Fabricação: Tempo e Experiência</h3>
+            <div>
+                <table class="profission-table">
                     <thead>
                         <tr><th>Rank</th><th>Tempo (dias)</th><th>XP Ganho</th><th>CD</th></tr>
                     </thead>
@@ -871,14 +868,15 @@
                 </table>
             </div>
         
-            <div class="example-box">
+            <div class="exemple-box">
                 <h4>Exemplo de Fabricação (Adaga Rank 1)</h4>
-                <p>XP Total: 595 + 30 = <strong>625 XP</strong></p>
-                <p>Tempo Total: 8 + 1 = <strong>9 dias</strong></p>
+                <p>XP Total: 595 + 30 = <strong>625 XP</strong><br>
+                Tempo Total: 8 + 1 = <strong>9 dias</strong></p>
             </div>
-        </section>
-        <section class="maestria-carpintaria">
-            <h1 class="page-title">A Maestria da Carpintaria</h1>
+
+        <section class="profissao">
+            <h1>A Maestria da Carpintaria</h1>
+
             <p>Após atingir o 5º nível como <strong>Mestre</strong>, o carpinteiro desbloqueia o potencial para transcender a marcenaria comum. Ao alcançar o ápice da sua arte, o carpinteiro pode escolher se tornar um <strong>Grão-Mestre</strong> no seu ofício, assim desbloqueando novas possibilidades.</p>
         
             <h2>Nível 6: Grão-Mestre Carpinteiro</h2>
@@ -887,14 +885,14 @@
             <h3>Especializações de Maestria</h3>
             <p>Ao atingir o nível de <strong>Grão-Mestre Carpinteiro (Nível 6)</strong>, o artesão atinge um patamar de conhecimento onde deve escolher uma especialização definitiva. Esta escolha reflete a dedicação absoluta a um nicho da construção e concede benefícios técnicos superiores.</p>
         
-            <div class="specialization-box">
+            <div class="especializacao-box">
                 <h4>Escolha seu Caminho:</h4>
                 <ul>
                     <li><strong>Armoreiro:</strong> Especialista na criação de equipamentos de combate.</li>
                     <li><strong>Barqueiro:</strong> Especialista na construção naval.</li>
                 </ul>
-            </div>
-        
+            <hr>
+            
             <h4>Benefícios da Especialização</h4>
             <p>Ao fabricar itens pertencentes à sua categoria escolhida, você recebe os seguintes bônus:</p>
             <ul>
@@ -904,11 +902,13 @@
                 <li><strong>Falha Crítica (1 Nat):</strong> Custo de reparação de apenas <strong>10%</strong> do valor total do item.</li>
                 <li><strong>Margem de Segurança:</strong> Em falhas por uma diferença de 5 ou mais, o item não sofre danos estruturais (apenas o dia de trabalho é perdido).</li>
             </ul>
-        
-            <h2 class="table-title">Catálogo de Armas e Armaduras: Opções Obra-Prima</h2>
-            <div class="two-column-table">
-                <table>
-                    <thead><tr><th>Arma/Armadura</th><th>Tempo</th><th>XP</th></tr></thead>
+        </div>
+
+            <h2>Catálogo de Armas e Armaduras: Opções Obra-Prima</h2>
+            <div>
+                <table class="profission-table">
+                    <thead>
+                        <tr><th>Arma/Armadura</th><th>Tempo</th><th>XP</th></tr></thead>
                     <tbody>
                         <tr><td>Azagaia</td><td>1</td><td>30</td></tr>
                         <tr><td>Bastão</td><td>1</td><td>30</td></tr>
@@ -923,11 +923,6 @@
                         <tr><td>Varinha de Teixo</td><td>1</td><td>30</td></tr>
                         <tr><td>Yklwa</td><td>2</td><td>65</td></tr>
                         <tr><td>Zarabatana</td><td>1</td><td>30</td></tr>
-                    </tbody>
-                </table>
-                <table>
-                    <thead><tr><th>Arma/Armadura</th><th>Tempo</th><th>XP</th></tr></thead>
-                    <tbody>
                         <tr><td>Arco Curto</td><td>3</td><td>130</td></tr>
                         <tr><td>Cajado</td><td>3</td><td>130</td></tr>
                         <tr><td>Cajado de Madeira</td><td>3</td><td>130</td></tr>
@@ -944,28 +939,24 @@
                 </table>
             </div>
         
-            <section class="navios-page">
-                <h2 class="section-title">Regras Especiais Navios</h2>
+            <div class="navios">
+                <h2>Regras Especiais Navios</h2>
                 
-                <div class="navio-rules-list">
                     <h3>Navio Viking e Navio à Vela</h3>
                     <ul>
                         <li><strong>20 Natural</strong> - O tempo de criação é <strong>reduzido em 15 dias do total</strong>.</li>
                         <li><strong>1 Natural</strong> - O carpinteiro deve gastar <strong>100po</strong> em materiais adicionais e realizar novo teste.</li>
                         <li><strong>Falha por 5+</strong> - O carpinteiro deve gastar <strong>50po</strong> em materiais adicionais e realizar novo teste.</li>
                     </ul>
-            
+                <hr>
                     <h3>Navio de Guerra e Galera</h3>
                     <ul>
                         <li><strong>20 Natural</strong> - O tempo de criação é <strong>reduzido em 30 dias do total</strong>.</li>
                         <li><strong>1 Natural</strong> - O carpinteiro deve gastar <strong>300po</strong> em materiais adicionais e realizar novo teste.</li>
                         <li><strong>Falha por 5+</strong> - O carpinteiro deve gastar <strong>100po</strong> em materiais adicionais e realizar novo teste.</li>
                     </ul>
-                </div>
-            
-                <!-- Seção de Construção Colaborativa (Estilizada com fundo destacado) -->
-                <div class="info-box-cyan">
-                    <h2 class="box-title">Construção Colaborativa de Navios</h2>
+                <hr>
+                    <h2>Construção Colaborativa de Navios</h2>
                     <p>Projetos navais de grande porte permitem o trabalho conjunto de artesãos para acelerar a entrega. Quando profissionais qualificados trabalham em equipe, o tempo total é reduzido com base no esforço dedicado por cada ajudante especializado.</p>
             
                     <h3>1. Requisitos e Limites de Equipe</h3>
@@ -998,9 +989,7 @@
                     <div class="warning-box">
                         🛑 Regra do Tempo Mínimo: Independentemente da quantidade de ajudantes ou bônus aplicados, o tempo de construção <strong>nunca poderá ser inferior a 30% do tempo original</strong>.
                     </div>
-                </div>
-            
-                <div class="example-section">
+                <hr>
                     <h3>Exemplo Prático: Navio Viking (180 dias)</h3>
                     <p><em>Este exemplo demonstra como o esforço conjunto atinge o total de 180 dias de progresso, respeitando os limites de contribuição.</em></p>
                     <ol>
@@ -1009,8 +998,8 @@
                         <li><strong>Tempo Mínimo Geral (30%):</strong> 54 dias.</li>
                     </ol>
             
-                    <div class="table-container">
-                        <table>
+                    <div>
+                        <table class="navios-table">
                             <thead>
                                 <tr><th>Profissional</th><th>Dias Trabalhados</th><th>Dias Reduzidos</th><th>Limite de Dias Trabalhados</th><th>Total de Dias Contribuidos</th></tr>
                             </thead>
@@ -1022,7 +1011,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <p class="final-time">Tempo Efetivo: <strong>166 Dias</strong></p>
+                    <p>Tempo Efetivo: <strong>166 Dias</strong></p>
             
                     <h4>Entendendo a Finalização</h4>
                     <ul>
@@ -1034,9 +1023,9 @@
                     <p>Devido à complexidade desses projetos ele será acompanhado e registrado em uma planilha excel pelos mestres para assim manter atualizado as informações de tempo.</p>
                 </div>
             </section>
-        </section>
-        <section class="forja-page">
-            <h1 class="page-title">A Maestria da Forja</h1>
+
+        <section class="profissao">
+            <h1>A Maestria da Forja</h1>
             
             <p>Após atingir o 5º nível como <strong>Mestre</strong>, o ferreiro desbloqueia o potencial para transcender a metalurgia comum, alcançando o ápice da sua arte; o ferreiro pode escolher se tornar um <strong>Grão-Mestre</strong> no seu ofício, assim desbloqueando novas possibilidades.</p>
         
@@ -1044,16 +1033,15 @@
             <p>Ao atingir este patamar, o ferreiro domina a técnica necessária para criar equipamentos <strong>Obra-Prima</strong>.</p>
         
             <h3>Especializações de Maestria</h3>
-            <p>Ao atingir o nível de <strong>Grão-Mestre Ferreiro (Nível 6)</strong>, o artesão atinge um patamar de conhecimento onde deve escolher uma especialização definitiva. Esta escolha reflete a dedicação absoluta a um nicho da metalurgia e concede benefícios técnicos superiores[cite: 1].</p>
+            <p>Ao atingir o nível de <strong>Grão-Mestre Ferreiro (Nível 6)</strong>, o artesão atinge um patamar de conhecimento onde deve escolher uma especialização definitiva. Esta escolha reflete a dedicação absoluta a um nicho da metalurgia e concede benefícios técnicos superiores.</p>
         
-            <div class="specialization-box">
+            <div class="especializacao-box">
                 <h4>Escolha seu Caminho: Armeiro ou Armadureiro</h4>
                 <ul>
                     <li><strong>Armeiro:</strong> Especialista na forja de instrumentos de ataque, de adagas sutis a montantes massivos.</li>
                     <li><strong>Armadureiro:</strong> Especialista na engenharia de proteção, focado em cotas, placas e escudos.</li>
                 </ul>
-            </div>
-        
+            <hr>
             <h4>Benefícios da Especialização</h4>
             <ul>
                 <li><strong>Eficiência de Recursos:</strong> O custo de materiais é reduzido para <strong>40%</strong> do valor de mercado[cite: 1].</li>
@@ -1062,11 +1050,11 @@
                 <li><strong>Falha Crítica (1 Natural):</strong> O custo de reparação é de apenas <strong>10%</strong> do valor total do item[cite: 1].</li>
                 <li><strong>Margem de Segurança:</strong> Em falhas por uma diferença de 5 ou mais pontos em relação à CD, o item não sofre danos estruturais[cite: 1].</li>
             </ul>
+            </div>
+            <h2>Catálogo de Armas e Armaduras: Opções Obra-Prima</h2>
         
-            <h2 class="table-title">Catálogo de Armas e Armaduras: Opções Obra-Prima</h2>
-        
-            <div class="table-container">
-                <table>
+            <div>
+                <table class="profission-table">
                     <thead><tr><th>Arma/Armadura</th><th>Tempo (dias)</th><th>XP</th></tr></thead>
                     <tbody>
                         <tr><td>Adaga</td><td>1</td><td>30</td></tr>
@@ -1116,8 +1104,9 @@
                 </table>
             </div>
         </section>
-        <section class="alfaiataria-page">
-            <h1 class="page-title">A Maestria da Alfaiataria</h1>
+
+        <section class="profissao">
+            <h1>A Maestria da Alfaiataria</h1>
             
             <p>Após atingir o 5º nível como <strong>Mestre</strong>, o alfaiate desbloqueia o potencial para transcender a costura comum. Ao alcançar o ápice da sua arte, o alfaiate pode escolher se tornar um <strong>Grão-Mestre</strong> no seu ofício, assim desbloqueando novas possibilidades.</p>
         
@@ -1127,12 +1116,12 @@
             <h3>Especializações de Maestria</h3>
             <p>Ao atingir o nível de <strong>Grão-Mestre Alfaiate (Nível 6)</strong>, o artesão atinge um patamar de conhecimento onde deve escolher uma especialização definitiva. Esta escolha reflete a dedicação absoluta a um nicho da construção e concede benefícios técnicos superiores.</p>
         
-            <div class="specialization-box">
+            <div class="especializacao-box">
                 <h4>Escolha seu Caminho: Armoreiro</h4>
                 <ul>
                     <li><strong>Armoreiro:</strong> Especialista na criação de equipamentos de combate.</li>
                 </ul>
-            </div>
+            <hr>
         
             <h4>Benefícios da Especialização</h4>
             <ul>
@@ -1142,11 +1131,11 @@
                 <li><strong>Falha Crítica (1 Natural):</strong> Custo de reparação de apenas <strong>10%</strong> do valor total do item.</li>
                 <li><strong>Margem de Segurança:</strong> Em falhas por uma diferença de 5 ou mais pontos em relação à CD, o item não sofre danos estruturais (apenas o dia de trabalho é perdido).</li>
             </ul>
+        </div>
+            <h2>Catálogo de Armas e Armaduras: Opções Obra-Prima</h2>
         
-            <h2 class="table-title">Catálogo de Armas e Armaduras: Opções Obra-Prima</h2>
-        
-            <div class="classTable ferreiro frame">
-                <table>
+            <div>
+                <table class="profission-table">
                     <thead>
                         <tr>
                             <th>Itens Criáveis</th>
@@ -1164,8 +1153,9 @@
                 </table>
             </div>
         </section>
-        <section class="alquimia-page">
-            <h1 class="page-title">A Maestria da Alquimia</h1>
+
+        <section class="profissao">
+            <h1>A Maestria da Alquimia</h1>
             
             <p>Após atingir o 5º nível como <strong>Mestre</strong>, o alquimista desbloqueia o potencial para transcender a alquimia comum. Ao alcançar o ápice da sua arte, o alquimista pode escolher se tornar um <strong>Grão-Mestre</strong> no seu ofício, assim desbloqueando novas possibilidades.</p>
         
@@ -1175,15 +1165,14 @@
             <h3>Especializações de Maestria</h3>
             <p>Ao atingir o nível de <strong>Grão-Mestre Alquimista (Nível 6)</strong>, o artesão atinge um patamar de conhecimento onde deve escolher uma especialização definitiva. Esta escolha reflete a dedicação absoluta a um nicho da alquimia e concede benefícios técnicos superiores.</p>
         
-            <div class="specialization-box">
+            <div class="especializacao-box">
                 <h4>Escolha seu Caminho: Poçoeiro ou Envenenador</h4>
                 <ul>
                     <li><strong>Poçoeiro:</strong> Especialista na criação de poções.</li>
                     <li><strong>Envenenador:</strong> Especialista na criação de venenos.</li>
                 </ul>
-            </div>
-        
-            <h4>Benefícios da Especialização</h4>
+            <hr>        
+                <h4>Benefícios da Especialização</h4>
             <ul>
                 <li><strong>Eficiência de Recursos:</strong> O custo de materiais é reduzido para <strong>40%</strong> do valor de mercado.</li>
                 <li><strong>Maestria Técnica:</strong> Você adiciona o dobro do seu <strong>Bônus de Proficiência</strong> nos testes de fabricação.</li>
@@ -1191,28 +1180,30 @@
                 <li><strong>Falha Crítica (1 Natural):</strong> O custo de reparação de materiais é de apenas <strong>10%</strong> do valor total do item.</li>
                 <li><strong>Margem de Segurança:</strong> Em falhas por uma diferença de 5 ou mais pontos em relação à CD, o item não sofre danos estruturais (apenas o dia de trabalho é perdido).</li>
             </ul>
+            </div>
         </section>
-        <section class="outras-profissoes-page">
-            <h1 class="page-title">Outras Profissões</h1>
+
+        <section class="profissao">
+            <h1>Outras Profissões</h1>
             
-            <p>Devido à ausência de itens dedicados para a fabricação e progressão direta em certas categorias de ofício, as profissões que não possuem tabelas de evolução próprias seguirão as diretrizes abaixo[cite: 1]:</p>
+            <p>Devido à ausência de itens dedicados para a fabricação e progressão direta em certas categorias de ofício, as profissões que não possuem tabelas de evolução próprias seguirão as diretrizes abaixo:</p>
         
             <ul>
-                <li><strong>Ingresso Automático:</strong> Ao adquirir proficiência com uma ferramenta de artesão específica, você se torna automaticamente um profissional <strong>Nível 1</strong> no ofício equivalente[cite: 1].</li>
-                <li><strong>TAG de Profissão:</strong> O personagem recebe a TAG correspondente à profissão em seu registro para fins de interpretação e interações na cidade[cite: 1].</li>
+                <li><strong>Ingresso Automático:</strong> Ao adquirir proficiência com uma ferramenta de artesão específica, você se torna automaticamente um profissional <strong>Nível 1</strong> no ofício equivalente.</li>
+                <li><strong>TAG de Profissão:</strong> O personagem recebe a TAG correspondente à profissão em seu registro para fins de interpretação e interações na cidade.</li>
             </ul>
         
             <div class="info-box-services">
                 <h3>Prestação de Serviços</h3>
-                <p>Embora esses profissionais não possuam uma tabela de progressão de nível, eles podem utilizar sua proficiência com a ferramenta para prestar serviços e trabalhar para as guildas comerciais da cidade, garantindo uma fonte de renda estável durante seus períodos de <em>downtime</em>[cite: 1].</p>
+                <p>Embora esses profissionais não possuam uma tabela de progressão de nível, eles podem utilizar sua proficiência com a ferramenta para prestar serviços e trabalhar para as guildas comerciais da cidade, garantindo uma fonte de renda estável durante seus períodos de <em>downtime</em>.</p>
             </div>
         
-            <p>Essas três profissões não possuem guildas oficiais, então trabalham por conta própria: <strong>Chaveiro, Disfarçador e Falsário</strong>[cite: 1].</p>
+            <p>Essas três profissões não possuem guildas oficiais, então trabalham por conta própria: <strong>Chaveiro, Disfarçador e Falsário</strong>.</p>
         
-            <h2 class="table-title">Guia de Ofícios e Ferramentas</h2>
+            <h2>Guia de Ofícios e Ferramentas</h2>
             
-            <div class="classTable frame">
-                <table>
+            <div>
+                <table class="profission-table">
                     <thead>
                         <tr>
                             <th>Ofício / Especialidade</th>
@@ -1238,58 +1229,57 @@
                 </table>
             </div>
         </section>
-        <section class="trabalho-guildas-page">
-            <h1 class="page-title">Trabalhando para as guildas da cidade</h1>
+
+        <section class="profissao">
+            <h1>Trabalhando para as guildas da cidade</h1>
             
             <p>A partir do momento em que você adquire proficiência em uma das ferramentas e se torna um profissional, você pode trabalhar para uma das guildas da cidade de Waterdeep e ter uma pequena renda extra quando não estiver em missão.</p>
             
-            <div class="highlight-box">
-                <p>Se você possuir o Background <strong>Artesão da Guilda</strong> ou <strong>Artesão do Clã</strong>, essa renda é um pouco maior.</p>
-            </div>
+            <p>Se você possuir o Background <strong>Artesão da Guilda</strong> ou <strong>Artesão do Clã</strong>, essa renda é um pouco maior.</p>
         
-            <div class="discord-instruction">
+            <div>
                 <h3>Como registrar seu trabalho:</h3>
                 <p>Quando for trabalhar, você deve postar no canal <strong>#👷‍♂️┃trabalho-nas-guildas</strong> que está trabalhando para a guilda "Nome da Guilda".</p>
-                <p>Esses trabalhos devem ser anotados na parte de comércio do seu cartão de aventureiro[cite: 1].</p>
-                <p><em>Exemplo: <strong>Eu @donny como Konall passo o dia trabalhando para a Guilda de Alquimistas @mestre</strong></em>[cite: 1]</p>
+                <p>Esses trabalhos devem ser anotados na parte de comércio do seu cartão de aventureiro.</p>
+                <p><em>Exemplo: <strong>Eu @donny como Konall passo o dia trabalhando para a Guilda de Alquimistas @mestre</strong></em></p>
             </div>
         
             <h2 class="section-subtitle">Guildas Disponíveis por Profissão</h2>
-            <p>Se você possui uma profissão artesã, pode prestar serviços para as seguintes guildas comerciais da região[cite: 1]:</p>
+            <p>Se você possui uma profissão artesã, pode prestar serviços para as seguintes guildas comerciais da região:</p>
         
-            <div class="classTable frame">
-                <table>
+            <div>
+                <table class="guildas-table">
                     <thead>
                         <tr><th>Profissão</th><th>Guildas Comerciais Onde Pode Trabalhar</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td><strong>Alfaiate</strong></td><td>Sapateiros e Fabricantes de Sapatos; Trabalhadores do Couro, Curtidores e Esfoladores; Tecelões e Tintureiros; Construtores Navais e Fabricantes de Velas[cite: 1]</td></tr>
-                        <tr><td><strong>Alquimista</strong></td><td>Alquimistas e Boticários[cite: 1]</td></tr>
-                        <tr><td><strong>Calígrafo</strong></td><td>Calígrafos, Escribas e Escrivães[cite: 1]</td></tr>
-                        <tr><td><strong>Canteiro</strong></td><td>Pedreiros e Cortadores de Pedra[cite: 1]</td></tr>
-                        <tr><td><strong>Carpinteiro</strong></td><td>Carpinteiros, Telhadores e Estucadores; Armeiros, Serralheiros e Ourives; Entalhadores de Madeira, Tanoeiros e Arqueiros; Fabricantes de Carroças e Fabricantes de Rodas; Construtores Navais e Fabricantes de Velas[cite: 1]</td></tr>
-                        <tr><td><strong>Cartógrafo / Navegador</strong></td><td>Cartógrafos, Agrimensores e Criadores de Cartas Náuticas[cite: 1]</td></tr>
-                        <tr><td><strong>Cervejeiro</strong></td><td>Cervejeiros, Destiladores e Vinicultores[cite: 1]</td></tr>
-                        <tr><td><strong>Cozinheiro</strong></td><td>Cozinheiros e Padeiros[cite: 1]</td></tr>
-                        <tr><td><strong>Ferreiro</strong></td><td>Ferreiros e Forjadores de Metal; Armeiros, Serralheiros e Ourives[cite: 1]</td></tr>
-                        <tr><td><strong>Funileiro</strong></td><td>Remendadores, Artesãos de Estanho e Fundidores[cite: 1]</td></tr>
-                        <tr><td><strong>Joalheiro</strong></td><td>Joalheiros e Lapidadores de Gemas[cite: 1]</td></tr>
-                        <tr><td><strong>Oleiro</strong></td><td>Oleiros e Fabricantes de Telhas[cite: 1]</td></tr>
-                        <tr><td><strong>Pintor</strong></td><td>Pintores, Retratistas e Fabricantes de Letreiros[cite: 1]</td></tr>
-                        <tr><td><strong>Sapateiro</strong></td><td>Sapateiros e Fabricantes de Sapatos[cite: 1]</td></tr>
-                        <tr><td><strong>Vidreiro</strong></td><td>Sopradores de Vidro e Vidraceiros[cite: 1]</td></tr>
+                        <tr><td><strong>Alfaiate</strong></td><td>Sapateiros e Fabricantes de Sapatos; Trabalhadores do Couro, Curtidores e Esfoladores; Tecelões e Tintureiros; Construtores Navais e Fabricantes de Velas</td></tr>
+                        <tr><td><strong>Alquimista</strong></td><td>Alquimistas e Boticários</td></tr>
+                        <tr><td><strong>Calígrafo</strong></td><td>Calígrafos, Escribas e Escrivães</td></tr>
+                        <tr><td><strong>Canteiro</strong></td><td>Pedreiros e Cortadores de Pedra</td></tr>
+                        <tr><td><strong>Carpinteiro</strong></td><td>Carpinteiros, Telhadores e Estucadores; Armeiros, Serralheiros e Ourives; Entalhadores de Madeira, Tanoeiros e Arqueiros; Fabricantes de Carroças e Fabricantes de Rodas; Construtores Navais e Fabricantes de Velas</td></tr>
+                        <tr><td><strong>Cartógrafo / Navegador</strong></td><td>Cartógrafos, Agrimensores e Criadores de Cartas Náuticas</td></tr>
+                        <tr><td><strong>Cervejeiro</strong></td><td>Cervejeiros, Destiladores e Vinicultores</td></tr>
+                        <tr><td><strong>Cozinheiro</strong></td><td>Cozinheiros e Padeiros</td></tr>
+                        <tr><td><strong>Ferreiro</strong></td><td>Ferreiros e Forjadores de Metal; Armeiros, Serralheiros e Ourives</td></tr>
+                        <tr><td><strong>Funileiro</strong></td><td>Remendadores, Artesãos de Estanho e Fundidores</td></tr>
+                        <tr><td><strong>Joalheiro</strong></td><td>Joalheiros e Lapidadores de Gemas</td></tr>
+                        <tr><td><strong>Oleiro</strong></td><td>Oleiros e Fabricantes de Telhas</td></tr>
+                        <tr><td><strong>Pintor</strong></td><td>Pintores, Retratistas e Fabricantes de Letreiros</td></tr>
+                        <tr><td><strong>Sapateiro</strong></td><td>Sapateiros e Fabricantes de Sapatos</td></tr>
+                        <tr><td><strong>Vidreiro</strong></td><td>Sopradores de Vidro e Vidraceiros</td></tr>
                     </tbody>
                 </table>
             </div>
         
-            <p><em>Essas três profissões não possuem guildas oficiais, então trabalham por conta própria: <strong>Chaveiro, Disfarçador e Falsário</strong>[cite: 1].</em></p>
+            <p><em>Essas três profissões não possuem guildas oficiais, então trabalham por conta própria: <strong>Chaveiro, Disfarçador e Falsário</strong>.</em></p>
         
-            <h2 class="section-subtitle">Tabelas de Renda</h2>
-            <div class="income-tables-container">
-                <!-- Tabela 1 -->
-                <div class="classTable frame">
+            <h2>Tabelas de Renda</h2>
+            <div class="guildas-grid">
+
+                <div>
                     <h4>Tabela Padrão</h4>
-                    <table>
+                    <table class="pagamento-table">
                         <thead><tr><th>Nível</th><th>Renda diária</th></tr></thead>
                         <tbody>
                             <tr><td>Lv 1</td><td>5pc</td></tr>
@@ -1301,10 +1291,10 @@
                         </tbody>
                     </table>
                 </div>
-                <!-- Tabela 2 -->
-                <div class="classTable frame">
+
+                <div>
                     <h4>Background: Artesão da Guilda / Clã</h4>
-                    <table>
+                    <table  class="pagamento-table">
                         <thead><tr><th>Nível</th><th>Renda diária</th></tr></thead>
                         <tbody>
                             <tr><td>Lv 1</td><td>1pp</td></tr>
@@ -1318,7 +1308,7 @@
                 </div>
             </div>
         </section>
-    </div>
+    </section>
 </main>
 <script>
     document.addEventListener('DOMContentLoaded', function(){
