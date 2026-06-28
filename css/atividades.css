@@ -1,0 +1,88 @@
+.subcontainer {
+    background-color: rgba(179, 179, 179, 0.808);
+    border-left: 10px solid #8a1a1b;
+    padding: 15px 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.subcontainer ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 1px;
+}
+
+.subcontainer li {
+    position: relative;
+    padding-left: 40px;
+}
+
+.subcontainer li::before {
+    content: "♦"; 
+    position: absolute;
+    left: 25px;
+    top: 2px;
+    color: #8a1a1b;
+    font-size: 0.9em;
+}
+
+.note-box {
+    width: 90% !important;
+    background-color: rgb(221, 215, 165); /* Fundo avermelhado extremamente sutil */
+    border-left: 3px dashed #58170c;           /* Borda tracejada carmesim na esquerda */
+    padding: 10px 15px;
+    margin-left: 40px !important;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Estilização do texto interno */
+.note-box p {
+    font-family: 'Georgia', serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #000000;                            /* Tom marrom escuro envelhecido */
+    margin: 0;
+}
+
+/* Destaca o "Ex:" em vermelho clássico */
+.note-box p strong:first-child {
+    color: #58170c;
+    font-family: 'Cinzel', serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.magias-table {
+    width: 90%;
+    max-width: 600px;
+    border: 2px solid #272727;
+    border-collapse: collapse;
+    margin: 1.5rem auto;
+    font-size: 0.95rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.magias-table th {
+    background-color: #4b140a !important;
+    color: #ffffff !important;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px 10px;
+}
+
+.magias-table td {
+    padding: 0 10px;
+    border-bottom: 1px solid #dcd1be;
+    text-align: center;
+    color: #000000 !important;
+}
+
+/* Efeito Zebrado (Linhas Alternadas) */
+.magias-table tbody tr:nth-child(odd) {
+    background-color: #d4d4d4; /* Fundo levemente pergaminho nas linhas ímpares */
+}
+
+.magias-table tbody tr:nth-child(even) {
+    background-color: transparent;
+}
