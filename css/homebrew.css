@@ -8,6 +8,26 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.subcontainer ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 1px;
+}
+
+.subcontainer li {
+    position: relative;
+    padding-left: 40px;
+}
+
+.subcontainer li::before {
+    content: "♦"; 
+    position: absolute;
+    left: 25px;
+    top: 2px;
+    color: #8a1a1b;
+    font-size: 0.9em;
+}
+
 /* Container Principal do Índice */
 .index {
     font-family: 'Georgia', serif;
@@ -62,7 +82,33 @@
     align-items: start;
 }
 
+/* Container de colunas */
+.grid-two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    align-items: start;
+}
 
+/* Alinhamento de dados das tabelas de magia */
+.class-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.class-table th {
+    font-family: 'Cinzel', serif;
+    color: #58170c;
+    border-bottom: 2px solid #c9b38f;
+    text-align: left;
+    padding: 4px;
+}
+
+.class-table td {
+    padding: 4px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
 
 /* Base de Texto e Tipografia da Classe */
 .blood-hunter {
@@ -281,4 +327,231 @@ h2.maldicoes {
     .curses-container {
         grid-template-columns: 1fr;
     }
+}
+
+.container-class {
+    background-color: rgba(207, 207, 207, 0.808);
+    padding: 15px 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container-class ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 1px;
+}
+
+.container-class li {
+    position: relative;
+    padding-left: 40px;
+}
+
+.container-class li::before {
+    content: "♦"; 
+    position: absolute;
+    left: 25px;
+    top: 2px;
+    color: #8a1a1b;
+    font-size: 0.9em;
+}
+
+/* Base de Texto e Tipografia da Classe */
+.ranger {
+    background-color: rgba(179, 179, 179, 0.808);
+    border-left: 10px solid #8a1a1b;
+    padding: 15px 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ranger ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 1px;
+}
+
+.ranger li {
+    position: relative;
+    padding-left: 40px;
+}
+
+.ranger li::before {
+    content: "♦"; 
+    position: absolute;
+    left: 25px;
+    top: 2px;
+    color: #8a1a1b;
+    font-size: 0.9em;
+}
+
+.caracteristicas-colunas {
+    margin-bottom: -10px;
+}
+
+.coluna-bloco h4 {
+    text-align: center;
+    margin-bottom: -20px;
+    font-size: 18px;
+}
+
+/* Container que junta a lista de atributos e a imagem */
+.race-header-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centraliza verticalmente a imagem com o texto */
+    gap: 20px;           /* Espaço entre o texto e a imagem */
+    margin-bottom: 15px;
+}
+
+/* Garante que a lista ocupe o espaço restante */
+.race-stats {
+    flex: 1;
+    margin: 0;
+}
+
+img.cortesao-side {
+    float: right;          /* Faz a imagem flutuar à direita */
+    width: 110px;          /* Deixa a imagem menor e elegante na lateral */
+    height: auto;          /* Mantém a proporção da figura */
+    margin-left: 20px;     /* Afasta o texto da esquerda da imagem */
+    margin-right: 50px;
+    margin-bottom: 30px;   /* Impede que textos colem embaixo dela */
+    margin-top: -40px;
+    object-fit: contain;
+}
+
+/* Um pequeno ajuste para garantir que as listas fiquem limpas */
+.race-container ul {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* Ajuste para celulares (coloca a imagem embaixo se a tela for muito pequena) */
+@media (max-width: 480px) {
+    .race-header-block {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    img.cortesao {
+        width: 100px;
+    }
+}
+
+/* Container do Statblock */
+.monster.frame {
+    background-color: #fdf1dc;                 /* Cor de pergaminho clássica de monstros */
+    border: 1px solid #c9b38f;
+    border-top: 5px solid #58170c;             /* Borda grossa carmesim no topo */
+    border-bottom: 5px solid #58170c;          /* Borda grossa carmesim na base */
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    font-family: 'Georgia', serif;
+    color: #2b1d0e;
+    max-width: 400px;                          /* Tamanho ideal de statblock compacto */
+    box-sizing: border-box;
+    margin-left: 60px;
+}
+
+/* Bloco superior com Título e Imagem */
+/* Remove o Flexbox do topo para permitir o efeito de flutuação (float) */
+.monster-header {
+    display: block; 
+    width: 100%;
+}
+
+/* Faz a imagem do Token flutuar à direita perfeitamente */
+img.monster-token {
+    float: right;
+    width: 60px;           /* Tamanho padrão do token oficial */
+    height: 60px;
+    margin-left: 30px;     /* Afasta o texto para não colar na imagem */
+    margin-bottom: 10px;    /* Evita que o <hr> cole embaixo dela */
+    margin-right: -25px;
+    margin-top: -110px;
+    object-fit: contain;
+}
+
+/* Garante que o título se ajuste ao espaço restante */
+.monster-title-block {
+    display: block;
+}
+
+/* Nome do Monstro */
+.monster.frame h2 {
+    font-family: 'Cinzel', 'Palatino Linotype', serif;
+    color: #58170c;
+    font-size: 1.6rem;
+    margin: 0;
+    text-transform: none;
+}
+
+/* Tipo e Alinhamento */
+.monster.frame p em {
+    font-size: 0.9rem;
+    color: #5d554a;
+    display: block;
+    margin-top: 2px;
+}
+
+/* Imagem do Token */
+img.monster-token {
+    float: right;
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    margin-left: 10px;
+}
+
+/* Linhas divisórias estilizadas (As famosas listras de D&D) */
+.monster.frame hr {
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, #58170c, #c9b38f, transparent);
+    margin: 8px 0;
+}
+
+/* Atributos (FOR, DES, CON...) */
+.monster.frame table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+}
+
+.monster.frame th {
+    color: #58170c;
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+.monster.frame td {
+    color: #58170c;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+/* Cabeçalhos de Seções (Ações, Ações Bônus) */
+.monster.frame h3 {
+    font-family: 'Cinzel', 'Palatino Linotype', serif;
+    color: #58170c;
+    font-size: 1.15rem;
+    border-bottom: 1px solid #58170c;
+    padding-bottom: 2px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Descrição das habilidades e ataques */
+.monster-desc {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0 0 8px 0;
+    text-align: justify;
 }

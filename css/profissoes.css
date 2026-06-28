@@ -1,0 +1,501 @@
+/* Container Externo */
+.subcontainer {
+    background-color: rgba(179, 179, 179, 0.808);
+    border-left: 10px solid #8a1a1b;
+    padding: 15px 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.subcontainer ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 1px;
+}
+
+.subcontainer li {
+    position: relative;
+    padding-left: 40px;
+}
+
+.subcontainer li::before {
+    content: "♦"; 
+    position: absolute;
+    left: 25px;
+    top: 2px;
+    color: #8a1a1b;
+    font-size: 0.9em;
+}
+
+/* 📊 TABELA DE PROGRESSÃO */
+.profission-table {
+    width: 90%;                  /* Reduzido de 100% para dar espaço nas laterais para centralizar */
+    max-width: 600px;
+    border: 2px solid #272727;
+    border-collapse: collapse;
+    margin: 1.5rem auto;         /* O 'auto' nas laterais força a centralização perfeita */
+    font-size: 0.95rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.profission-table th {
+    background-color: #58170c;
+    color: #bebebe;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px 10px;
+}
+
+.profission-table td {
+    padding: 0 10px;
+    border-bottom: 1px solid #dcd1be;
+}
+
+/* Efeito Zebrado (Linhas Alternadas) */
+.profission-table tbody tr:nth-child(odd) {
+    background-color: #d4d4d4; /* Fundo levemente pergaminho nas linhas ímpares */
+}
+
+.profission-table tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+
+h4 {
+width: 96%;
+max-width: none;
+text-align: left;
+margin-left: 40px;
+}
+
+/* Caixa de Informação / Exemplo */
+.info-box {
+    width: 90% !important;
+    background-color: rgba(88, 23, 12, 0.04); /* Fundo avermelhado extremamente sutil */
+    border-left: 3px dashed #58170c;           /* Borda tracejada carmesim na esquerda */
+    padding: 10px 15px;
+    margin-left: 40px !important;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Estilização do texto interno */
+.info-box p {
+    font-family: 'Georgia', serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #4a3c31;                            /* Tom marrom escuro envelhecido */
+    margin: 0;
+}
+
+/* Destaca o "Ex:" em vermelho clássico */
+.info-box p strong:first-child {
+    color: #58170c;
+    font-family: 'Cinzel', serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.note-box {
+    width: 90% !important;
+    background-color: rgb(221, 215, 165); /* Fundo avermelhado extremamente sutil */
+    border-left: 3px dashed #58170c;           /* Borda tracejada carmesim na esquerda */
+    padding: 10px 15px;
+    margin-left: 40px !important;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Estilização do texto interno */
+.note-box p {
+    font-family: 'Georgia', serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #000000;                            /* Tom marrom escuro envelhecido */
+    margin: 0;
+}
+
+/* Destaca o "Ex:" em vermelho clássico */
+.note-box p strong:first-child {
+    color: #58170c;
+    font-family: 'Cinzel', serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.exemple-box {
+    width: 50% !important;
+    background-color: rgb(216, 216, 216);
+    border-left: 3px dashed #58170c;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Estilização do texto interno */
+.exemple-box p {
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    color: #000000;
+}
+
+.exemple-box h4 {
+    font-size: 1.1rem;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Destaca o "Ex:" em vermelho clássico */
+.exemple-box p strong {
+    color: #4b1107;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.especializacao-box {
+    background-color: rgb(216, 216, 216);
+    border-left: 3px dashed #58170c;
+    border-radius: 0 4px 4px 0;
+}
+
+.especializacao-box h4 {
+    font-size: 1.2rem;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.profissao {
+    background-color: rgba(207, 207, 207, 0.808);
+    padding: 15px 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profissao ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 1px;
+}
+
+.profissao li {
+    position: relative;
+    padding-left: 40px;
+}
+
+.profissao li::before {
+    content: "♦"; 
+    position: absolute;
+    left: 25px;
+    top: 2px;
+    color: #8a1a1b;
+    font-size: 0.9em;
+}
+
+/* 🧪 CONTAINER PRINCIPAL DO COMPÊNDIO POCOES E VENENOS*/
+.pocoes {
+    padding: 20px;
+    font-family: 'Georgia', serif;
+    background-color: #c5c0b8d8;
+}
+
+.pocoes h1 {
+    font-family: 'Cinzel', 'Palatino Linotype', serif;
+    color: #58170c;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #58170c;
+    padding-bottom: 5px;
+}
+
+/* 📊 GRID AUTOMÁTICO DE CARTÕES */
+.item-grid {
+    display: grid;
+    /* Cria colunas de no mínimo 280px que se ajustam sozinhas ao espaço da tela */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* 🃏 O BLOCO DO CARTÃO INDIVIDUAL */
+.item-card {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #c9b38f;
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito sutil ao passar o mouse por cima do card */
+.item-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(88, 23, 12, 0.15);
+    background-color: rgba(231, 231, 231, 0.877);
+}
+
+/* 🏷️ TÍTULO DO ITEM */
+.item-card h3 {
+    font-family: 'Cinzel', 'Palatino Linotype', serif;
+    color: #58170c;
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-size: 1.15rem;
+    border-bottom: 1px solid #58170c;
+    padding-bottom: 4px;
+}
+
+/* 📜 TEXTOS INTERNOS DO CARD */
+.item-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #000000;
+    margin: 0 0 2px 0;
+    padding-bottom: 1px;
+}
+
+/* Força a descrição final a ocupar o espaço restante e justificar */
+.item-card p:not([strong]) {
+    text-align: center;
+}
+
+/* 🏹 BLOCO DE INFORMAÇÕES EXTRAS (MUNIÇÕES / ESPECIAL) */
+.item-card .extra-info {
+    margin-top: auto; /* Empurra o bloco sempre para o rodapé do card */
+    padding-top: 5px;
+    border-top: 1px dashed #c9b38f;
+    font-size: 0.85rem;
+    color: #202020;
+    font-style: italic;
+}
+
+/* Detalhe na lateral esquerda para identificar o tipo instantaneamente */
+.item-card.pocao {
+    border-left: 4px solid #17580c; /* Borda verde para poções/elixires */
+}
+
+.item-card.veneno {
+    border-left: 4px solid #d80000; /* Borda roxa/escura para venenos */
+}
+/* ------------------------------------------ */
+
+/* 🏠 CONTAINER DA SEÇÃO */
+.house-rules {
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Garante que o cartão fique centralizado na página */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 🃏 CARTÃO ÚNICO DE REGRAS */
+.single-rule-card {
+    background-color: #c5c0b8d8;
+    border: 1px solid #c9b38f;
+    border-left: 4px solid #58170c;            /* Destaque lateral carmesim de bloco de regras */
+    padding: 20px 25px;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    max-width: 800px;                          /* Largura máxima confortável para leitura */
+    width: 100%;
+    font-family: 'Georgia', serif;
+    color: #2b1d0e;
+}
+
+/* 🏛️ TÍTULO PRINCIPAL DO CARTÃO */
+.single-rule-card h2 {
+    font-family: 'Cinzel', 'Palatino Linotype', serif;
+    color: #58170c;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #58170c;
+    padding-bottom: 1px;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+}
+
+/* 🏷️ SUBTÍTULOS (POÇÕES / VENENOS) */
+.single-rule-card h3 {
+    font-family: 'Cinzel', 'Palatino Linotype', serif;
+    color: #58170c;
+    font-size: 1.3rem;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+/* 📜 TEXTOS E LISTAS */
+.single-rule-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.single-rule-card ul {
+    margin-top: 1px;
+    padding-left: 20px;
+}
+
+.single-rule-card li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 6px;
+    color: #2b1d0e;
+}
+
+/* Sub-lista para a Nota de munições */
+.single-rule-card ul ul {
+    margin-top: 4px;
+    list-style-type: circle;
+}
+
+.single-rule-card em {
+    color: #5d554a;
+}
+
+.navios {
+    background-color: rgb(216, 216, 216);
+    border-radius: 0 4px 4px 0;
+}
+
+.navios h4 {
+    font-size: 1.2rem;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* 📊 TABELA DE PROGRESSÃO */
+.navios-table {
+    width: 90%;                 
+    max-width: 850px;            
+    border: 2px solid #272727;
+    border-collapse: collapse;
+    margin: 1.5rem auto;         
+    font-size: 0.95rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.navios-table th {
+    background-color: #58170c;
+    color: #bebebe;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 12px;
+    /* Removido o nowrap daqui para que o cabeçalho possa quebrar se faltar espaço */
+}
+
+.navios-table td {
+    padding: 6px 10px;           
+    border-bottom: 1px solid #dcd1be;
+    text-align: center;          
+    white-space: nowrap;         /* ⚡ TRAVA O TEXTO DAS LINHAS PARA NUNCA QUEBRAREM */
+}
+
+/* Mantém a primeira coluna alinhada à esquerda */
+.navios-table td:first-child {
+    text-align: left;
+}
+
+/* Efeito Zebrado (Linhas Alternadas) */
+.navios-table tbody tr:nth-child(odd) {
+    background-color: #d4d4d4; 
+}
+
+.profission-table tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+
+.guildas-table {
+    width: 100%;                 
+    max-width: 850px;            
+    border: 2px solid #272727;
+    border-collapse: collapse;
+    margin: 1rem auto;         
+    font-size: 0.95rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.guildas-table th {
+    background-color: #58170c;
+    color: #bebebe;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 12px;
+}
+
+.guildas-table td {
+    padding: 6px 10px;           
+    border-bottom: 1px solid #dcd1be;
+    text-align: left;
+}
+
+.guildas-table td:first-child {
+    text-align: center;
+}
+
+/* Efeito Zebrado (Linhas Alternadas) */
+.guildas-table tbody tr:nth-child(odd) {
+    background-color: #d4d4d4; 
+}
+
+.guildas-table tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+
+.guildas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    width: 100%;
+    align-items: start;
+}
+
+.pagamento-table {
+    width: 90%;                  /* Reduzido de 100% para dar espaço nas laterais para centralizar */
+    max-width: 600px;
+    border: 2px solid #272727;
+    border-collapse: collapse;
+    margin: 1.5rem auto;         /* O 'auto' nas laterais força a centralização perfeita */
+    font-size: 0.95rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.pagamento-table th {
+    background-color: #58170c;
+    color: #bebebe;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px 10px;
+}
+
+.pagamento-table td {
+    padding: 0 10px;
+    border-bottom: 1px solid #dcd1be;
+    text-align: center;
+}
+
+/* Efeito Zebrado (Linhas Alternadas) */
+.pagamento-table tbody tr:nth-child(odd) {
+    background-color: #d4d4d4; /* Fundo levemente pergaminho nas linhas ímpares */
+}
+
+.pagamento-table tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+
+.guildas-grid h4 {
+    text-align: center;
+    width: 90%;
+    max-width: 600px; 
+    margin: 0 auto 10px auto;
+    font-size: 18px;
+}
+
+/* Ajuste opcional para responsividade (Telas de Celular) */
+@media (max-width: 768px) {
+    .guildas-grid {
+        grid-template-columns: 1fr;
+    }
+}
