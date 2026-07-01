@@ -30,14 +30,12 @@
 
 /* Container Principal do Índice */
 .index {
-    font-family: 'Georgia', serif;
     color: #2b1d0e;
     padding: 10px;
 }
 
 /* Títulos Principais (Classes, Subclasses, etc.) */
 .index h2 {
-    font-family: 'Cinzel', 'Palatino Linotype', serif;
     color: #58170c;
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -49,7 +47,6 @@
 
 /* Subtítulos (Bárbaro, Bardo, etc.) */
 .index h3 {
-    font-family: 'Cinzel', 'Palatino Linotype', serif;
     color: #58170c;
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -98,7 +95,6 @@
 }
 
 .class-table th {
-    font-family: 'Cinzel', serif;
     color: #58170c;
     border-bottom: 2px solid #c9b38f;
     text-align: left;
@@ -112,7 +108,6 @@
 
 /* Base de Texto e Tipografia da Classe */
 .blood-hunter {
-    font-family: 'Georgia', serif;
     font-size: 1rem;
     line-height: 1.5;
     color: #000000;
@@ -121,14 +116,12 @@
 
 /* Cabeçalhos (H1, H2 e H3) */
 .blood-hunter h1 {
-    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
-    font-size: 45px;
+    font-size: 50px;
     color: #58170c;
     font-weight: 900;
 }
 
 .blood-hunter h2 {
-    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
     color: #58170c;
     border-bottom: 1px solid #c9b38f;
 }
@@ -140,7 +133,7 @@
 
 .blood-hunter h4 {
     color: #000000;
-    padding-left: 40px;
+    margin-bottom: -5px;
 }
 
 .blood-hunter ul {
@@ -164,8 +157,9 @@
 }
 
 h2.subclasse {
-    font-size:30px;
+    font-size:35px;
     color: #000000;
+    text-align: center !important;
 }
 
 /* 📊 TABELA DE PROGRESSÃO */
@@ -209,24 +203,6 @@ h2.subclasse {
     align-items: start;
 }
 
-/* 📱 Responsividade Unificada */
-@media (max-width: 768px) {
-    .class-table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-    .caracteristicas-colunas {
-        grid-template-columns: 1fr;
-        column-gap: 0;
-    }
-
-    .grid-three-columns {
-        grid-template-columns: 1fr;
-        row-gap: 15px;
-    }
-}
-
 /* Caixa de Nota / Sidebar */
 .note {
     width: 95%;
@@ -242,7 +218,6 @@ h2.subclasse {
 
 /* Título da Nota */
 .note h5 {
-    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
     font-size: 1.1rem;
     color: #58170c;
     text-transform: uppercase;
@@ -254,7 +229,6 @@ h2.subclasse {
 
 /* Texto interno da Nota */
 .note p {
-    font-family: 'Georgia', serif;
     font-size: 0.9rem;
     line-height: 1.4;
     color: #2b1d0e;
@@ -285,7 +259,6 @@ h2.maldicoes {
 
 /* Título da Maldição */
 .curse-box h4 {
-    font-family: 'Cinzel', 'Palatino Linotype', serif;
     color: #58170c;                             /* Vermelho Carmesim clássico */
     font-size: 1rem;
     margin-top: 0;
@@ -307,7 +280,6 @@ h2.maldicoes {
 
 /* Parágrafos internos */
 .curse-box p {
-    font-family: 'Georgia', serif;
     font-size: 0.9rem;
     line-height: 1.3;
     text-align: justify;
@@ -320,13 +292,6 @@ h2.maldicoes {
     border-top: 1px dashed #c9b38f;             /* Linha tracejada separando o amplificar */
     padding-top: 6px;
     margin-top: 6px;
-}
-
-/* Ajuste de responsividade para telas menores */
-@media (max-width: 768px) {
-    .curses-container {
-        grid-template-columns: 1fr;
-    }
 }
 
 .container-class {
@@ -429,17 +394,6 @@ img.cortesao-side {
     margin-bottom: 12px;
 }
 
-/* Ajuste para celulares (coloca a imagem embaixo se a tela for muito pequena) */
-@media (max-width: 480px) {
-    .race-header-block {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    img.cortesao {
-        width: 100px;
-    }
-}
-
 /* Container do Statblock */
 .monster.frame {
     background-color: #fdf1dc;                 /* Cor de pergaminho clássica de monstros */
@@ -448,7 +402,6 @@ img.cortesao-side {
     border-bottom: 5px solid #58170c;          /* Borda grossa carmesim na base */
     padding: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    font-family: 'Georgia', serif;
     color: #2b1d0e;
     max-width: 400px;                          /* Tamanho ideal de statblock compacto */
     box-sizing: border-box;
@@ -481,7 +434,6 @@ img.monster-token {
 
 /* Nome do Monstro */
 .monster.frame h2 {
-    font-family: 'Cinzel', 'Palatino Linotype', serif;
     color: #58170c;
     font-size: 1.6rem;
     margin: 0;
@@ -522,7 +474,6 @@ img.monster-token {
 
 .monster.frame th {
     color: #58170c;
-    font-family: 'Cinzel', serif;
     font-size: 0.85rem;
     font-weight: bold;
     text-align: center;
@@ -537,7 +488,6 @@ img.monster-token {
 
 /* Cabeçalhos de Seções (Ações, Ações Bônus) */
 .monster.frame h3 {
-    font-family: 'Cinzel', 'Palatino Linotype', serif;
     color: #58170c;
     font-size: 1.15rem;
     border-bottom: 1px solid #58170c;
@@ -548,10 +498,39 @@ img.monster-token {
     letter-spacing: 0.5px;
 }
 
+.blood-hunter h2 {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.caracteristicas h2 {
+    margin-left: 20px;
+}
+
+.caracteristicas p {
+    margin-left: 0 !important;
+}
+
 /* Descrição das habilidades e ataques */
 .monster-desc {
     font-size: 0.9rem;
     line-height: 1.4;
     margin: 0 0 8px 0;
     text-align: justify;
+}
+
+.capa-blood-hunter {
+    display: block;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center 27%;
+    border: 5px double #8b1e2d;
+    border-radius: 20px;
+    box-shadow:
+        0 14px 32px rgba(42, 26, 16, 0.45),
+        0 0 22px rgba(139, 30, 45, 0.45),
+        inset 0 0 25px rgba(0, 0, 0, 0.25);
+
+    filter: contrast(1.05) saturate(1.08);
 }

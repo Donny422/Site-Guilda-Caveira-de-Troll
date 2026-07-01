@@ -1,3 +1,8 @@
+.magias {
+    border-bottom: 5px solid rgba(179, 179, 179, 0.808);
+    border-top: 5px solid rgba(179, 179, 179, 0.808);
+}
+
 .magias ul {
     list-style: none;
     padding-left: 0;
@@ -19,25 +24,32 @@
     font-size: 0.9em;
 }
 
+.magias h3 {
+    font-size: 22px;
+}
+
 .magias h4 {
-    text-align: left;
-    padding-left: 20px;
+    margin-left: 20px;
 }
 
 .magias p {
     padding-left: 0px;
+    font-size: 17px;
 }
 
 .modificacoes {
     background-color: rgba(179, 179, 179, 0.808);
-    border-left: 10px solid #8a1a1b;
+    border-left: 5px solid #8a1a1b;
     padding: 15px 20px;
     margin: 20px 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-bottom: 5px solid rgba(179, 179, 179, 0.808);
+    border-top: 5px solid rgba(179, 179, 179, 0.808);
 }
 
 .modificacoes h3 {
+    font-size: 22px;
     margin-top: 0;
     text-align: center;
     color: #8a1a1b;
@@ -54,7 +66,7 @@
 
 .modificacoes li {
     position: relative;
-    padding-left: 15px;
+    padding-left: 20px;
     margin-bottom: 2px;
     white-space: normal !important;
 }
@@ -69,26 +81,16 @@
 }
 
 .manto-container {
+    padding-top: 30px;
     margin: 5px auto;
+    margin-bottom: -10px;
+    margin-top: -20px;
     width: 95%;
-}
-
-summary.manto {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    padding: 8px;
-    transition: background 0.2s;
-}
-
-summary.manto:hover {
-    background-color: rgba(66, 2, 2, 0.05);
 }
 
 /* Estilo discreto para a orientação na frente */
 .orientacao {
-    font-family: 'Georgia', serif;
-    font-size: 0.85em; 
+font-size: 0.85em; 
     color: rgba(0, 0, 0, 0.6);
     font-style: italic;
 }
@@ -98,7 +100,6 @@ summary.manto:hover {
     width: 75%;
     margin: 20px auto;    
     border-collapse: collapse;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(133, 133, 133, 0.788);
     border: 3px solid rgba(138, 26, 27, 0.3);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
@@ -153,39 +154,17 @@ summary.manto:hover {
     cursor: default;
 }
 
-/* Container do clique */
-summary.classes {
-    list-style: none;
-    cursor: pointer;
-    outline: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    transition: background 0.2s;
-}
-
-/* Remove marcadores do Safari/Chrome */
-summary.classes::-webkit-details-marker {
-    display: none;
-}
-
-summary.classes:hover {
-    background-color: rgba(66, 2, 2, 0.05);
-}
 
 /* Ativa e configura o sistema de 3 colunas em Grid */
 .grid-classes {
     display: grid;
-    /* Divide o espaço em 3 colunas idênticas, mas aceita encolher até 280px antes de quebrar a linha */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 15px;                 /* Espaçamento uniforme entre os blocos (horizontal e vertical) */
+    gap: 15px; 
     align-items: start;        /* Alinha todos os menus expansíveis pelo topo */
 }
 
 /* Estilização opcional dos detalhes para combinar com o tema RPG */
 .grid-classes details {
-    background-color: rgba(179, 179, 179, 0.2);
     border-left: 4px solid #8a1a1b;
     padding: 8px 12px;
     border-radius: 2px;
@@ -280,8 +259,7 @@ summary.subclasses:hover {
     padding-left: 15px; 
     margin-bottom: 4px; 
     color: #000000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.8em;
+    font-size: 0.85em;
 }
 
 /* O losango marcador clássico na cor do seu tema */
@@ -299,34 +277,12 @@ summary.subclasses:hover {
     color: #000000;
 }
 
-/* Container do clique */
-summary.racas {
-    list-style: none;
-    cursor: pointer;
-    outline: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    transition: background 0.2s;
-}
-
-/* Remove marcadores do Safari/Chrome */
-summary.racas::-webkit-details-marker {
-    display: none;
-}
-
-summary.racas:hover {
-    background-color: rgba(66, 2, 2, 0.05);
-}
-
 /* Container que alinha as 3 colunas lado a lado */
 .races-container-dnd {
     display: flex;
     justify-content: space-between;
     gap: 15px;
     width: 100%;
-    font-family: sans-serif; /* Mude para a fonte de sua preferência */
     background-color: rgba(179, 179, 179, 0.808);
     border-left: 7px solid #8a1a1b;
     padding: 15px 20px;
@@ -399,34 +355,12 @@ summary.racas:hover {
     font-weight: bold;
 }
 
-/* Container do clique */
-summary.antecedente {
-    list-style: none;
-    cursor: pointer;
-    outline: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    transition: background 0.2s;
-}
-
-/* Remove marcadores do Safari/Chrome */
-summary.antecedente::-webkit-details-marker {
-    display: none;
-}
-
-summary.antecedente:hover {
-    background-color: rgba(66, 2, 2, 0.05);
-}
-
 /* Container principal da tabela */
 .antecedentes-container-dnd {
     display: flex;
     justify-content: space-between;
     gap: 15px;
     width: 100%;
-    font-family: sans-serif;
     background-color: rgba(179, 179, 179, 0.808);
     border-left: 7px solid #8a1a1b;
     padding: 15px 20px;
@@ -485,33 +419,11 @@ summary.antecedente:hover {
     background-color: transparent;
 }
 
-/* Container do clique */
-summary.talentos {
-    list-style: none;
-    cursor: pointer;
-    outline: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    transition: background 0.2s;
-}
-
-/* Remove marcadores do Safari/Chrome */
-summary.talentos::-webkit-details-marker {
-    display: none;
-}
-
-summary.talentos:hover {
-    background-color: rgba(66, 2, 2, 0.05);
-}
-
 .talentos-container-dnd {
     display: flex;
     justify-content: space-between;
     gap: 15px;
     width: 100%;
-    font-family: sans-serif; /* Mude para a fonte de sua preferência */
     background-color: rgba(179, 179, 179, 0.808);
     border-left: 7px solid #8a1a1b;
     padding: 15px 20px;
@@ -542,4 +454,58 @@ summary.talentos:hover {
 
 p {
     padding-left: 20px;
+}
+
+.conteudo-disponivel p {
+    font-size: 20px;
+}
+
+.conteudo-disponivel a {
+    font-size: 18px;
+}
+
+summary.manto,
+summary.classes,
+summary.racas,
+summary.antecedente,
+summary.talentos {
+    width: 75%;
+    margin: 5px auto;
+    border-radius: 20px;
+    background: rgb(203, 199, 190);
+    list-style: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+/* Hover correto em todos */
+summary.manto:hover,
+summary.classes:hover,
+summary.racas:hover,
+summary.antecedente:hover,
+summary.talentos:hover {
+    background-color: rgba(178, 138, 57, 0.729);
+}
+
+/* Remove marcador padrão */
+summary.manto::marker,
+summary.classes::marker,
+summary.racas::marker,
+summary.antecedente::marker,
+summary.talentos::marker {
+    display: none;
+    content: "";
+}
+
+/* Remove marcadores do Safari/Chrome */
+summary.manto::-webkit-details-marker,
+summary.classes::-webkit-details-marker,
+summary.racas::-webkit-details-marker,
+summary.antecedente::-webkit-details-marker,
+summary.talentos::-webkit-details-marker {
+    display: none;
 }

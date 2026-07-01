@@ -1,0 +1,261 @@
+/* ===========================================================================
+   🛍️ BAZAR BLACKSTAFF - ESTILOS ESPECÍFICOS
+   ---------------------------------------------------------------------------
+   Todas as regras estão escopadas em .pagina-bazar para impedir que o Bazar
+   altere visualmente outras páginas, como ficha.html.
+   =========================================================================== */
+
+/* Header / Menu lateral */
+.pagina-bazar .header-menu-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pagina-bazar .menu-button {
+    background: none;
+    border: none;
+    color: #f3e7c3;
+    font-size: 32px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px 8px;
+}
+
+.pagina-bazar .menu-button:focus-visible {
+    outline: 2px solid #f3e7c3;
+    outline-offset: 4px;
+}
+
+.pagina-bazar .side-menu {
+    position: fixed;
+    top: 0;
+    left: -320px;
+    width: 300px;
+    height: 100%;
+    background: #161616;
+    transition: left 0.3s ease;
+    padding-top: 40px;
+    z-index: 1000;
+    border-right: 3px solid #7a1d1d;
+}
+
+.pagina-bazar .side-menu.open {
+    left: 0;
+}
+
+/* Estrutura principal */
+.pagina-bazar .secao-bazar {
+    background-color: rgba(179, 179, 179, 0.88);
+    border-left: 5px solid #8a1a1b;
+    padding: 18px 20px;
+    margin: 22px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    border-bottom: 5px solid rgba(179, 179, 179, 0.88);
+    border-top: 5px solid rgba(179, 179, 179, 0.88);
+}
+
+.pagina-bazar .secao-bazar--espacada {
+    margin-top: 40px;
+}
+
+.pagina-bazar .secao-bazar--espacada-maior {
+    margin-top: 50px;
+}
+
+.pagina-bazar .secao-bazar h2 {
+    color: #7a1d1d;
+    text-align: center;
+    margin-top: 0;
+}
+
+.pagina-bazar .introducao-bazar {
+    color: #1f1f1f;
+    font-size: 1.3rem;
+    margin: 0 0 18px 0;
+    text-align: center;
+}
+
+.pagina-bazar .moldura-bazar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Categorias expansíveis: escopadas para não afetar summary/details da ficha */
+.pagina-bazar .secao-bazar details {
+    background: rgba(245, 245, 245, 0.72);
+    border: 1px solid rgba(122, 29, 29, 0.35);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.pagina-bazar .secao-bazar details[open] {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.14);
+}
+
+.pagina-bazar .secao-bazar summary {
+    cursor: pointer;
+    color: #f3e7c3;
+    background: #7a1d1d;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    user-select: none;
+}
+
+.pagina-bazar .secao-bazar summary:hover {
+    background: #8b2525;
+}
+
+.pagina-bazar .conteudo-categoria {
+    padding: 14px;
+    overflow-x: auto;
+}
+
+.pagina-bazar .preco-item {
+    color: #1d1d1d;
+    background: rgba(255, 255, 255, 0.55);
+    border-left: 4px solid #8a1a1b;
+    padding: 8px 10px;
+    margin: 0 0 12px 0;
+}
+
+.pagina-bazar .preco-item--destaque {
+    margin-bottom: 10px;
+}
+
+.pagina-bazar .lista-municao-obs {
+    margin: 8px 0 0 20px;
+    padding: 0;
+}
+
+.pagina-bazar .lista-municao-obs li {
+    margin-bottom: 4px;
+}
+
+/* Tabelas */
+.pagina-bazar .tabela-bazar {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    background: rgba(255, 255, 255, 0.55);
+}
+
+.pagina-bazar .tabela-bazar th {
+    background-color: #8b0000;
+    color: #f3e7c3;
+    text-align: left;
+    padding: 0.55rem 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+}
+
+.pagina-bazar .tabela-bazar td {
+    color: #211818;
+    padding: 0.45rem 0.75rem;
+    border-bottom: 1px solid rgba(122, 29, 29, 0.22);
+    vertical-align: top;
+}
+
+.pagina-bazar .tabela-bazar tbody tr:nth-child(odd) {
+    background-color: rgba(214, 214, 214, 0.8);
+}
+
+.pagina-bazar .tabela-bazar tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+.pagina-bazar .tabela-bazar a {
+    color: #251313;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.pagina-bazar .tabela-bazar a:hover {
+    color: #8b0000;
+    text-decoration: underline;
+}
+
+.pagina-bazar .obs-item {
+    color: #3b2a2a;
+    font-size: 0.9rem;
+    opacity: 0.95;
+}
+
+/* Caixa especial */
+.pagina-bazar .info-staff-box {
+    background: rgba(45, 34, 34, 0.95);
+    border: 1px solid rgba(243, 231, 195, 0.25);
+    border-left: 4px solid #c29b57;
+    border-radius: 8px;
+    padding: 14px;
+}
+
+.pagina-bazar .info-staff-box--bazar {
+    margin-top: 25px;
+}
+
+.pagina-bazar .info-staff-box__titulo {
+    margin: 0 0 10px 0;
+    color: #f1ebd9;
+}
+
+.pagina-bazar .info-staff-box .preco-item {
+    background: rgba(255, 255, 255, 0.08);
+    color: #f1ebd9;
+}
+
+/* Homebrew */
+.pagina-bazar .homebrew-title {
+    text-align: center;
+}
+
+.pagina-bazar .columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin: 24px 0;
+}
+
+.pagina-bazar .columns > div {
+    background: rgba(245, 245, 245, 0.82);
+    border-left: 4px solid #8a1a1b;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+}
+
+.pagina-bazar .columns h3 {
+    color: #7a1d1d;
+    margin-bottom: 2px;
+}
+
+.pagina-bazar .columns h4 {
+    color: #7a1d1d;
+    margin-bottom: 2px;
+}
+
+.pagina-bazar .columns blockquote {
+    margin: 8px 0 18px 0;
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.58);
+    color: #1e1e1e;
+}
+
+.pagina-bazar h3.anuncio {
+    font-size: 23px;
+}
+
+@media (max-width: 768px) {
+    .pagina-bazar .columns {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-bazar .tabela-bazar {
+        font-size: 0.85rem;
+    }
+
+    .pagina-bazar .tabela-bazar th,
+    .pagina-bazar .tabela-bazar td {
+        padding: 0.45rem 0.5rem;
+    }
+}
