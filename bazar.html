@@ -920,38 +920,6 @@
   </div>
 </div>
 </main>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const btn = document.getElementById('menuBtn');
-        const menu = document.getElementById('sideMenu');
-
-        if (!btn || !menu) return;
-
-        let open = false;
-
-        function setMenuState(isOpen) {
-            open = isOpen;
-            menu.classList.toggle('open', open);
-            btn.setAttribute('aria-expanded', String(open));
-        }
-
-        btn.addEventListener('click', function (e) {
-            e.stopPropagation();
-            setMenuState(!open);
-        });
-
-        document.addEventListener('click', function (e) {
-            if (open && !menu.contains(e.target) && e.target !== btn) {
-                setMenuState(false);
-            }
-        });
-
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape' && open) {
-                setMenuState(false);
-            }
-        });
-    });
-</script>
+<script src="js/menu.js"></script>
 </body>
 </html>
