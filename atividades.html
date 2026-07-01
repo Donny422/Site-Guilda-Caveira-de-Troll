@@ -233,27 +233,7 @@
           <p>Saiba o que você pode criar com seu personagem e quem sabe até ter uma renda extra.</p>
         </div>
 </section>
-    <script>
-        document.addEventListener('DOMContentLoaded', function(){
-            const btn = document.getElementById('menuBtn');
-            const menu = document.getElementById('sideMenu');
-            let open = false;
-        
-            btn.addEventListener('click', function(e){
-                e.stopPropagation();
-                open = !open;
-                // Corrigido: agora ele vai totalmente para fora da tela (320px para a esquerda)
-                menu.style.left = open ? '0px' : '-320px';
-            });
-    
-            // Fecha o menu automaticamente se o jogador clicar em qualquer outro lugar da página
-            document.addEventListener('click', function(e) {
-                if (open && !menu.contains(e.target) && e.target !== btn) {
-                    open = false;
-                    menu.style.left = '-320px';
-                }
-            });
-        });
-    </script>
 </main>
+<script src="js/menu.js"></script>
 </body>
+</html>

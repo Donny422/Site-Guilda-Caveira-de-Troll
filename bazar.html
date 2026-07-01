@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bazar Blackstaff - Guilda Caveira de Troll</title>
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/bazar.css">
 </head>
-<body>
+<body class="pagina-bazar">
 <header>
-    <div style="display:flex;align-items:center;gap:15px;">
-        <button id="menuBtn" style="background:none;border:none;color:#f3e7c3;font-size:32px;cursor:pointer;">☰</button>
+    <div class="header-menu-row">
+        <button id="menuBtn" class="menu-button" aria-label="Abrir menu" aria-controls="sideMenu" aria-expanded="false">☰</button>
         <div class="logo">
             <img src="https://i.imgur.com/OJJnoaL.png" alt="Logo da Guilda" class="logo-guilda">
             <h1 class="titulo-principal">Guilda Caveira de Troll</h1>
@@ -17,7 +18,7 @@
     </div>
 
 <!-- Menu -->
-    <div id="sideMenu" style="position:fixed;top:0;left:-320px;width:300px;height:100%;background:#161616;transition:.3s;padding-top:40px;z-index:1000;border-right:3px solid #7a1d1d;">
+    <div id="sideMenu" class="side-menu">
 
         <a class="menu-item" href="index.html">🏠 Home</a>
         <a class="menu-item" href="regras.html">📜 Regras</a>
@@ -35,7 +36,7 @@
 <main>
     <div class="container">
     <h1>🛍️ Bazar Blackstaff</h1>
-    <h3>Adquira agora os melhores equipamentos mágicos da Costa da Espada</h3>
+    <h3 class="anuncio">Adquira agora os melhores equipamentos mágicos da Costa da Espada</h3>
     <!-- 🛒 Seção: Bazar Blackstaff -->
 <section class="secao-bazar">
     <p class="introducao-bazar">As armas com múltiplas variantes estão limitadas àquelas cuja versão base está disponível no servidor.</p>
@@ -56,10 +57,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#moon-touched%20sword_xge" target="_blank">Armas Moon-Touched</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#staff%20of%20flowers_xge" target="_blank">Cajado das Flores</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#staff%20of%20adornment_xge" target="_blank">Cajado de Adorno</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#staff%20of%20birdcalls_xge" target="_blank">Cajado do Canto de Pássaros</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#moon-touched%20sword_xge" target="_blank" rel="noopener noreferrer">Armas Moon-Touched</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#staff%20of%20flowers_xge" target="_blank" rel="noopener noreferrer">Cajado das Flores</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#staff%20of%20adornment_xge" target="_blank" rel="noopener noreferrer">Cajado de Adorno</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#staff%20of%20birdcalls_xge" target="_blank" rel="noopener noreferrer">Cajado do Canto de Pássaros</a></td><td>XGE</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -78,23 +79,23 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20weapon_dmg" target="_blank">Armas +1</a></td><td>DMG, PHB</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#bow%20of%20conflagration_bmt" target="_blank">Arco da Conflagração (Curto e Longo)</a></td><td>BMT</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#lunar%20halberd_bookofebontides" target="_blank">Alabarda Lunar</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#sword%20of%20vengeance_dmg" target="_blank">Armas da Vingança (Vengeance)</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#weapon%20of%20warning_dmg" target="_blank">Armas do Aviso (Warning)</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#quickstep%20weapon_bookofebontides" target="_blank">Armas do Passo Rápido</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#weapon%20of%20verdict_griffonssaddlebag2" target="_blank">Armas do Veredito</a></td><td>TGS2</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#lunar%20glaive_bookofebontides" target="_blank">Glaive Lunar</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#javelin%20of%20lightning_dmg" target="_blank">Javelin of Lightning</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#lunar%20lance_bookofebontides" target="_blank">Lança Lunar</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#blade%20of%20grass_bookofebontides" target="_blank">Lâminas de Grama</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#bloodrage%20greataxe_bmt" target="_blank">Machado Grande da Fúria Sangrenta</a></td><td>BMT</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20moon%20sickle_tce" target="_blank">Moon Sickle +1</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#sling%20of%20giant%20felling_bmt" target="_blank">Sling of Giant Felling</a></td><td>BMT</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#staff%20of%20the%20adder_dmg" target="_blank">Staff of the Adder</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#staff%20of%20the%20python_dmg" target="_blank">Staff of the Python</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#trident%20of%20fish%20command_dmg" target="_blank">Trident of Fish Command</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20weapon_dmg" target="_blank" rel="noopener noreferrer">Armas +1</a></td><td>DMG, PHB</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#bow%20of%20conflagration_bmt" target="_blank" rel="noopener noreferrer">Arco da Conflagração (Curto e Longo)</a></td><td>BMT</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#lunar%20halberd_bookofebontides" target="_blank" rel="noopener noreferrer">Alabarda Lunar</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#sword%20of%20vengeance_dmg" target="_blank" rel="noopener noreferrer">Armas da Vingança (Vengeance)</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#weapon%20of%20warning_dmg" target="_blank" rel="noopener noreferrer">Armas do Aviso (Warning)</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#quickstep%20weapon_bookofebontides" target="_blank" rel="noopener noreferrer">Armas do Passo Rápido</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#weapon%20of%20verdict_griffonssaddlebag2" target="_blank" rel="noopener noreferrer">Armas do Veredito</a></td><td>TGS2</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#lunar%20glaive_bookofebontides" target="_blank" rel="noopener noreferrer">Glaive Lunar</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#javelin%20of%20lightning_dmg" target="_blank" rel="noopener noreferrer">Javelin of Lightning</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#lunar%20lance_bookofebontides" target="_blank" rel="noopener noreferrer">Lança Lunar</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#blade%20of%20grass_bookofebontides" target="_blank" rel="noopener noreferrer">Lâminas de Grama</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#bloodrage%20greataxe_bmt" target="_blank" rel="noopener noreferrer">Machado Grande da Fúria Sangrenta</a></td><td>BMT</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20moon%20sickle_tce" target="_blank" rel="noopener noreferrer">Moon Sickle +1</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#sling%20of%20giant%20felling_bmt" target="_blank" rel="noopener noreferrer">Sling of Giant Felling</a></td><td>BMT</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#staff%20of%20the%20adder_dmg" target="_blank" rel="noopener noreferrer">Staff of the Adder</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#staff%20of%20the%20python_dmg" target="_blank" rel="noopener noreferrer">Staff of the Python</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#trident%20of%20fish%20command_dmg" target="_blank" rel="noopener noreferrer">Trident of Fish Command</a></td><td>DMG</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -113,32 +114,32 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#glimmering%20moonbow_bmt" target="_blank">Arco da Lua Cintilante (Curto e Longo)</a></td><td>BMT</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b2%20weapon_dmg" target="_blank">Armas +2</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#scepter%20weapon_bookofebontides" target="_blank">Armas Cetro</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#frostglow%20weapon_bookofebontides" target="_blank">Armas do Brilho Gélido</a> <span class="obs-item">(**Obs:.** Consideradas **+1**, bônus no ataque/dano).</span></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#moonsteel%20weapon_bookofebontides" target="_blank">Armas de Aço Lunar</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#flame%20tongue_dmg" target="_blank">Armas Flame Tongue</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#sword%20of%20life%20stealing_dmg" target="_blank">Armas Life Stealing</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#corpse%20slayer_egw" target="_blank">Armas Matadoras de Cadáveres</a></td><td>EGW</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#dragon%20slayer_dmg" target="_blank">Armas Matadoras de Dragão (Dragon Slayer)</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#giant%20slayer_dmg" target="_blank">Armas Matadoras de Gigantes (Giant Slayer)</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#sword%20of%20wounding_dmg" target="_blank">Armas Wounding</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#starshot%20crossbow_bmt" target="_blank">Besta do Tiro Estelar (Variações)</a></td><td>BMT</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#dagger%20of%20venom_dmg" target="_blank">Dagger of Venom</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#sun%20staff_bmt" target="_blank">Cajado do Sol</a></td><td>BMT</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#grasping%20whip_bmt" target="_blank">Chicote do Agarramento</a></td><td>BMT</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#witchlight%20scimitar_bookofebontides" target="_blank">Cimitarra da Luz da Bruxa</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#devotee's%20censer_tce" target="_blank">Devotee's Censer</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ruinous%20flail_bmt" target="_blank">Mangual da Ruína</a></td><td>BMT</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#berserker%20axe_dmg" target="_blank">Machados Berserker</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#mace%20of%20disruption_dmg" target="_blank">Mace of Disruption</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#mace%20of%20smiting_dmg" target="_blank">Mace of Smiting</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#mace%20of%20terror_dmg" target="_blank">Mace of Terror</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#monster%20tamer's%20sword_griffonssaddlebag2" target="_blank">Monster Tamer's Sword</a></td><td>TGS2</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b2%20moon%20sickle_tce" target="_blank">Moon Sickle +2</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#staff%20of%20charming_dmg" target="_blank">Staff of Charming</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#staff%20of%20healing_dmg" target="_blank">Staff of Healing</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#glimmering%20moonbow_bmt" target="_blank" rel="noopener noreferrer">Arco da Lua Cintilante (Curto e Longo)</a></td><td>BMT</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b2%20weapon_dmg" target="_blank" rel="noopener noreferrer">Armas +2</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#scepter%20weapon_bookofebontides" target="_blank" rel="noopener noreferrer">Armas Cetro</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#frostglow%20weapon_bookofebontides" target="_blank" rel="noopener noreferrer">Armas do Brilho Gélido</a> <span class="obs-item">(<strong>Obs.:</strong> Consideradas <strong>+1</strong>, bônus no ataque/dano).</span></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#moonsteel%20weapon_bookofebontides" target="_blank" rel="noopener noreferrer">Armas de Aço Lunar</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#flame%20tongue_dmg" target="_blank" rel="noopener noreferrer">Armas Flame Tongue</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#sword%20of%20life%20stealing_dmg" target="_blank" rel="noopener noreferrer">Armas Life Stealing</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#corpse%20slayer_egw" target="_blank" rel="noopener noreferrer">Armas Matadoras de Cadáveres</a></td><td>EGW</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#dragon%20slayer_dmg" target="_blank" rel="noopener noreferrer">Armas Matadoras de Dragão (Dragon Slayer)</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#giant%20slayer_dmg" target="_blank" rel="noopener noreferrer">Armas Matadoras de Gigantes (Giant Slayer)</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#sword%20of%20wounding_dmg" target="_blank" rel="noopener noreferrer">Armas Wounding</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#starshot%20crossbow_bmt" target="_blank" rel="noopener noreferrer">Besta do Tiro Estelar (Variações)</a></td><td>BMT</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#dagger%20of%20venom_dmg" target="_blank" rel="noopener noreferrer">Dagger of Venom</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#sun%20staff_bmt" target="_blank" rel="noopener noreferrer">Cajado do Sol</a></td><td>BMT</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#grasping%20whip_bmt" target="_blank" rel="noopener noreferrer">Chicote do Agarramento</a></td><td>BMT</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#witchlight%20scimitar_bookofebontides" target="_blank" rel="noopener noreferrer">Cimitarra da Luz da Bruxa</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#devotee's%20censer_tce" target="_blank" rel="noopener noreferrer">Devotee's Censer</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ruinous%20flail_bmt" target="_blank" rel="noopener noreferrer">Mangual da Ruína</a></td><td>BMT</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#berserker%20axe_dmg" target="_blank" rel="noopener noreferrer">Machados Berserker</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#mace%20of%20disruption_dmg" target="_blank" rel="noopener noreferrer">Mace of Disruption</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#mace%20of%20smiting_dmg" target="_blank" rel="noopener noreferrer">Mace of Smiting</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#mace%20of%20terror_dmg" target="_blank" rel="noopener noreferrer">Mace of Terror</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#monster%20tamer's%20sword_griffonssaddlebag2" target="_blank" rel="noopener noreferrer">Monster Tamer's Sword</a></td><td>TGS2</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b2%20moon%20sickle_tce" target="_blank" rel="noopener noreferrer">Moon Sickle +2</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#staff%20of%20charming_dmg" target="_blank" rel="noopener noreferrer">Staff of Charming</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#staff%20of%20healing_dmg" target="_blank" rel="noopener noreferrer">Staff of Healing</a></td><td>DMG</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -157,7 +158,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#sun%20blade_dmg" target="_blank">Sun Blade</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#sun%20blade_dmg" target="_blank" rel="noopener noreferrer">Sun Blade</a></td><td>DMG</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -182,8 +183,8 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20ammunition_dmg" target="_blank">Munições +1</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#dried%20leech_bmt" target="_blank">Munições de Sanguessuga Seca</a></td><td>BMT</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20ammunition_dmg" target="_blank" rel="noopener noreferrer">Munições +1</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#dried%20leech_bmt" target="_blank" rel="noopener noreferrer">Munições de Sanguessuga Seca</a></td><td>BMT</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -192,7 +193,7 @@
     </div>
 </section>
 <!-- 🛡️ Seção: Armaduras Mágicas -->
-<section class="secao-bazar" style="margin-top: 40px;">
+<section class="secao-bazar secao-bazar--espacada">
     <h2>🛡️ Armaduras Mágicas</h2>
     <p class="introducao-bazar">As armaduras com múltiplas variantes estão limitadas àquelas cuja versão base está disponível no servidor.</p>
 
@@ -212,13 +213,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20gleaming_xge" target="_blank">Armaduras Brilhantes (Gleaming)</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#cast-off%20armor_xge" target="_blank">Armaduras Descartável (Cast-Off)</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#smoldering%20armor_xge" target="_blank">Armaduras Fumegante (Smoldering)</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#shield%20of%20expression_xge" target="_blank">Escudo da Expressão</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#road%20warden%20shield_bookofebontides" target="_blank">Escudo do Guarda Rodoviário</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#shield%20of%20crows_bookofebontides" target="_blank">Escudo dos Corvos</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#shield%20of%20swans_bookofebontides" target="_blank">Escudo dos Cisnes</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20gleaming_xge" target="_blank" rel="noopener noreferrer">Armaduras Brilhantes (Gleaming)</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#cast-off%20armor_xge" target="_blank" rel="noopener noreferrer">Armaduras Descartáveis (Cast-Off)</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#smoldering%20armor_xge" target="_blank" rel="noopener noreferrer">Armaduras Fumegantes (Smoldering)</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#shield%20of%20expression_xge" target="_blank" rel="noopener noreferrer">Escudo da Expressão</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#road%20warden%20shield_bookofebontides" target="_blank" rel="noopener noreferrer">Escudo do Guarda Rodoviário</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#shield%20of%20crows_bookofebontides" target="_blank" rel="noopener noreferrer">Escudo dos Corvos</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#shield%20of%20swans_bookofebontides" target="_blank" rel="noopener noreferrer">Escudo dos Cisnes</a></td><td>BoET</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -237,16 +238,16 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#mariner's%20armor_dmg" target="_blank">Armaduras de Marinheiro (Mariner's)</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#mithral%20armor_dmg" target="_blank">Armaduras de Mithral</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#shield%20of%20otters_bookofebontides" target="_blank">Escudo das Lontras</a> <span class="obs-item">(**Obs:.** Utiliza uma ação para ativar)</span></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#mariner's%20armor_dmg" target="_blank" rel="noopener noreferrer">Armaduras de Marinheiro (Mariner's)</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#mithral%20armor_dmg" target="_blank" rel="noopener noreferrer">Armaduras de Mithral</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#shield%20of%20otters_bookofebontides" target="_blank" rel="noopener noreferrer">Escudo das Lontras</a> <span class="obs-item">(<strong>Obs.:</strong> Utiliza uma ação para ativar)</span></td><td>BoET</td></tr>
                     </tbody>
                 </table>
 
                 <!-- SUB-CATEGORIA ESPECIAL EM DESTAQUE -->
-                <div class="info-staff-box" style="margin-top: 25px;">
-                    <h4 style="margin: 0 0 10px 0; color: #f1ebd9;">🛡️ Armadura Incomum Menor Especial</h4>
-                    <p class="preco-item" style="margin-bottom: 10px;"><strong>Preço:</strong> <em>Valor fixo de <strong>1045 po.</strong></em></p>
+                <div class="info-staff-box info-staff-box--bazar">
+                    <h4 class="info-staff-box__titulo">🛡️ Armadura Incomum Menor Especial</h4>
+                    <p class="preco-item preco-item--destaque"><strong>Preço:</strong> <em>Valor fixo de <strong>1045 po</strong>.</em></p>
                     <table class="tabela-bazar">
                         <thead>
                             <tr>
@@ -255,7 +256,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td><a href="https://2014.5e.tools/items.html#survival%20mantle_vgm" target="_blank">Survival Mantle</a></td><td>VGM</td></tr>
+                            <tr><td><a href="https://2014.5e.tools/items.html#survival%20mantle_vgm" target="_blank" rel="noopener noreferrer">Survival Mantle</a></td><td>VGM</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -275,12 +276,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#serpent%20scale%20armor_cm" target="_blank">Armadura de Escamas de Serpente</a></td><td>CM</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#adamantine%20armor_dmg" target="_blank">Armaduras de Adamantina</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#moonstone%20banded%20armor_bookofebontides" target="_blank">Armaduras de Pedra da Lua</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20shield_dmg" target="_blank">Escudo +1</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#shield%20of%20blinding_bookofebontides" target="_blank">Escudo da Cegação</a> <span class="obs-item">(**Obs:.** Utiliza uma ação para ativar e possui teste com CD 13)</span></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#sentinel%20shield_dmg" target="_blank">Escudo Sentinela</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#serpent%20scale%20armor_cm" target="_blank" rel="noopener noreferrer">Armadura de Escamas de Serpente</a></td><td>CM</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#adamantine%20armor_dmg" target="_blank" rel="noopener noreferrer">Armaduras de Adamantina</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#moonstone%20banded%20armor_bookofebontides" target="_blank" rel="noopener noreferrer">Armaduras de Pedra da Lua</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20shield_dmg" target="_blank" rel="noopener noreferrer">Escudo +1</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#shield%20of%20blinding_bookofebontides" target="_blank" rel="noopener noreferrer">Escudo da Cegação</a> <span class="obs-item">(<strong>Obs.:</strong> Utiliza uma ação para ativar e possui teste com CD 13)</span></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#sentinel%20shield_dmg" target="_blank" rel="noopener noreferrer">Escudo Sentinela</a></td><td>DMG</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -299,30 +300,30 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20armor_dmg" target="_blank">Armaduras +1</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#rattling%20armor_bookofebontides" target="_blank">Armadura Chocalhante</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20vulnerability_dmg" target="_blank">Armaduras da Vulnerabilidade</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ebony%20beetle%20armor_bookofebontides" target="_blank">Armaduras de Besouro de Ébano</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20fungal%20spores_bmt" target="_blank">Armaduras de Esporos Fúngicos</a></td><td>BMT</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20acid%20resistance_dmg" target="_blank">Armaduras de Resistência a Ácido</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20fire%20resistance_dmg" target="_blank">Armaduras de Resistência a Fogo</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20force%20resistance_dmg" target="_blank">Armaduras de Resistência a Força</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20cold%20resistance_dmg" target="_blank">Armaduras de Resistência a Frio</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20necrotic%20resistance_dmg" target="_blank">Armaduras de Resistência a Necrótico</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20psychic%20resistance_dmg" target="_blank">Armaduras de Resistência a Psíquico</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20radiant%20resistance_dmg" target="_blank">Armaduras de Resistência a Radiante</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20lightning%20resistance_dmg" target="_blank">Armaduras de Resistência a Relâmpago</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20thunder%20resistance_dmg" target="_blank">Armaduras de Resistência a Trovão</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20poison%20resistance_dmg" target="_blank">Armaduras de Resistência a Veneno</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20the%20black%20river_bookofebontides" target="_blank">Armaduras do Rio Negro</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ghost%20armor_bookofebontides" target="_blank">Armaduras Fantasma</a> <span class="obs-item">(**Obs:.** O usuário pode ser atingido por armas mágicas, magias e outros efeitos mágicos)</span></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#captain's%20pride_griffonssaddlebag2" target="_blank">Armaduras Orgulho do Capitão</a></td><td>TGS2</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#umbral%20armor_bookofebontides" target="_blank">Armaduras Umbrais</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#arrow-catching%20shield_dmg" target="_blank">Arrow-Catching Shield</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://5e.tools/items.html#elven%20chain_dmg" target="_blank">Elven Chain</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b2%20shield_dmg" target="_blank">Escudo +2</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#glamoured%20studded%20leather_dmg" target="_blank">Glamoured Studded Leather</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#shield%20of%20missile%20attraction_dmg" target="_blank">Shield of Missile Attraction</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20armor_dmg" target="_blank" rel="noopener noreferrer">Armaduras +1</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#rattling%20armor_bookofebontides" target="_blank" rel="noopener noreferrer">Armadura Chocalhante</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20vulnerability_dmg" target="_blank" rel="noopener noreferrer">Armaduras da Vulnerabilidade</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ebony%20beetle%20armor_bookofebontides" target="_blank" rel="noopener noreferrer">Armaduras de Besouro de Ébano</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20fungal%20spores_bmt" target="_blank" rel="noopener noreferrer">Armaduras de Esporos Fúngicos</a></td><td>BMT</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20acid%20resistance_dmg" target="_blank" rel="noopener noreferrer">Armaduras de Resistência a Ácido</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20fire%20resistance_dmg" target="_blank" rel="noopener noreferrer">Armaduras de Resistência a Fogo</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20force%20resistance_dmg" target="_blank" rel="noopener noreferrer">Armaduras de Resistência a Força</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20cold%20resistance_dmg" target="_blank" rel="noopener noreferrer">Armaduras de Resistência a Frio</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20necrotic%20resistance_dmg" target="_blank" rel="noopener noreferrer">Armaduras de Resistência a Necrótico</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20psychic%20resistance_dmg" target="_blank" rel="noopener noreferrer">Armaduras de Resistência a Psíquico</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20radiant%20resistance_dmg" target="_blank" rel="noopener noreferrer">Armaduras de Resistência a Radiante</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20lightning%20resistance_dmg" target="_blank" rel="noopener noreferrer">Armaduras de Resistência a Relâmpago</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20thunder%20resistance_dmg" target="_blank" rel="noopener noreferrer">Armaduras de Resistência a Trovão</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20poison%20resistance_dmg" target="_blank" rel="noopener noreferrer">Armaduras de Resistência a Veneno</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#armor%20of%20the%20black%20river_bookofebontides" target="_blank" rel="noopener noreferrer">Armaduras do Rio Negro</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ghost%20armor_bookofebontides" target="_blank" rel="noopener noreferrer">Armaduras Fantasma</a> <span class="obs-item">(<strong>Obs.:</strong> O usuário pode ser atingido por armas mágicas, magias e outros efeitos mágicos)</span></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#captain's%20pride_griffonssaddlebag2" target="_blank" rel="noopener noreferrer">Armaduras Orgulho do Capitão</a></td><td>TGS2</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#umbral%20armor_bookofebontides" target="_blank" rel="noopener noreferrer">Armaduras Umbrais</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#arrow-catching%20shield_dmg" target="_blank" rel="noopener noreferrer">Arrow-Catching Shield</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://5e.tools/items.html#elven%20chain_dmg" target="_blank" rel="noopener noreferrer">Elven Chain</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b2%20shield_dmg" target="_blank" rel="noopener noreferrer">Escudo +2</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#glamoured%20studded%20leather_dmg" target="_blank" rel="noopener noreferrer">Glamoured Studded Leather</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#shield%20of%20missile%20attraction_dmg" target="_blank" rel="noopener noreferrer">Shield of Missile Attraction</a></td><td>DMG</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -331,9 +332,9 @@
     </div>
 </section>
 <!-- 🧪 Seção: Itens Mágicos Diversos -->
-<section class="secao-bazar" style="margin-top: 40px;">
+<section class="secao-bazar secao-bazar--espacada">
     <h2>🧪 Itens Mágicos Diversos</h2>
-    <p class="introducao-bazar">Os itens com múltiplas variantes estão limitadas àquelas cuja versão base está disponível no servidor.</p>
+    <p class="introducao-bazar">Os itens com múltiplas variantes estão limitados àquelas cuja versão base está disponível no servidor.</p>
 
     <div class="moldura-bazar">
         
@@ -350,24 +351,24 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Antídoto</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Destilado de Mil Farpas</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Elixir do Olhar Nublado</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Elixir Misterioso</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Névoa dos Sonhos</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">O Beijo da Loucura</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Poção da Fala Animal</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20climbing_dmg" target="_blank">Poção de Escalada</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Poção de Queda Suave</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Poção de Salto</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Poção do Sono</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Sonhos Murchos</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Soro da Agonia Verde</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Vontade Vacilante</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20conducting_xge" target="_blank">Wand of Conducting</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20pyrotechnics_xge" target="_blank">Wand of Pyrotechnics</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20scowls_xge" target="_blank">Wand of Scowls</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20smiles_xge" target="_blank">Wand of Smiles</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Antídoto</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Destilado de Mil Farpas</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Elixir do Olhar Nublado</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Elixir Misterioso</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Névoa dos Sonhos</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">O Beijo da Loucura</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Poção da Fala Animal</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20climbing_dmg" target="_blank" rel="noopener noreferrer">Poção de Escalada</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Poção de Queda Suave</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Poção de Salto</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Poção do Sono</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Sonhos Murchos</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Soro da Agonia Verde</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Vontade Vacilante</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20conducting_xge" target="_blank" rel="noopener noreferrer">Wand of Conducting</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20pyrotechnics_xge" target="_blank" rel="noopener noreferrer">Wand of Pyrotechnics</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20scowls_xge" target="_blank" rel="noopener noreferrer">Wand of Scowls</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20smiles_xge" target="_blank" rel="noopener noreferrer">Wand of Smiles</a></td><td>XGE</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -386,12 +387,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20dancing_bookofebontides" target="_blank">Anel da Dança</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20swimming_dmg" target="_blank">Anel da Natação</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20rituals_griffonssaddlebag2" target="_blank">Anel dos Rituais</a></td><td>TGS2</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20shadows_bookofebontides" target="_blank">Varinha das Sombras</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20magic%20detection_dmg" target="_blank">Varinha de Detecção Mágica</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20secrets_dmg" target="_blank">Varinha dos Segredos</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20dancing_bookofebontides" target="_blank" rel="noopener noreferrer">Anel da Dança</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20swimming_dmg" target="_blank" rel="noopener noreferrer">Anel da Natação</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20rituals_griffonssaddlebag2" target="_blank" rel="noopener noreferrer">Anel dos Rituais</a></td><td>TGS2</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20shadows_bookofebontides" target="_blank" rel="noopener noreferrer">Varinha das Sombras</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20magic%20detection_dmg" target="_blank" rel="noopener noreferrer">Varinha de Detecção Mágica</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20secrets_dmg" target="_blank" rel="noopener noreferrer">Varinha dos Segredos</a></td><td>DMG</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -410,14 +411,14 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20jumping_dmg" target="_blank">Ring of Jumping</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20mind%20shielding_dmg" target="_blank">Ring of Mind Shielding</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20warmth_dmg" target="_blank">Ring of Warmth</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20water%20walking_dmg" target="_blank">Ring of Water Walking</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20tides_bookofebontides" target="_blank">Varinha das Marés</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20magic%20missiles_dmg" target="_blank">Varinha dos Mísseis Mágicos</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20wand%20of%20the%20war%20mage_dmg" target="_blank">Varinha do Mago da Guerra +1</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20web_dmg" target="_blank">Varinha de Teia</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20jumping_dmg" target="_blank" rel="noopener noreferrer">Ring of Jumping</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20mind%20shielding_dmg" target="_blank" rel="noopener noreferrer">Ring of Mind Shielding</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20warmth_dmg" target="_blank" rel="noopener noreferrer">Ring of Warmth</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20water%20walking_dmg" target="_blank" rel="noopener noreferrer">Ring of Water Walking</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20tides_bookofebontides" target="_blank" rel="noopener noreferrer">Varinha das Marés</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20magic%20missiles_dmg" target="_blank" rel="noopener noreferrer">Varinha dos Mísseis Mágicos</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20wand%20of%20the%20war%20mage_dmg" target="_blank" rel="noopener noreferrer">Varinha do Mago da Guerra +1</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20web_dmg" target="_blank" rel="noopener noreferrer">Varinha de Teia</a></td><td>DMG</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -436,26 +437,26 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Destilado de Lobo-Atroz</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Extrato de Medusa</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#philter%20of%20boundless%20joy_bookofebontides" target="_blank">Filtro da Alegria Infinita</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#philter%20of%20righteous%20anger_bookofebontides" target="_blank">Filtro da Ira Justa</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#philter%20of%20love_dmg" target="_blank">Filtro do Amor</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Lágrima de Basilisco</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#oil%20of%20slipperiness_dmg" target="_blank">Óleo da Escorregadiosidade</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20animal%20friendship_dmg" target="_blank">Poção da Amizade Animal</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20comprehension_wdmm" target="_blank">Poção da Compreensão</a></td><td>WDMM</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20hill%20giant%20strength_dmg" target="_blank">Poção da Força do Gigante da Colina</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20greater%20healing_dmg" target="_blank">Poção de Cura Maior</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20watchful%20rest_wdmm" target="_blank">Poção de Repouso Vigilante</a></td><td>WDMM</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20water%20breathing_dmg" target="_blank">Poção de Respiração Aquática</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20fire%20breath_dmg" target="_blank">Poção de Sopro de Fogo</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20poison_dmg" target="_blank">Poção de Veneno</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20growth_dmg" target="_blank">Poção do Crescimento</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20resistance_dmg" target="_blank">Poções de Resistência (Variações)</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Soro da Deselegância</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Veneno da Guarda Lenta</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wine%20of%20the%20winter%20court_bookofebontides" target="_blank">Vinho da Corte de Inverno</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Destilado de Lobo-Atroz</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Extrato de Medusa</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#philter%20of%20boundless%20joy_bookofebontides" target="_blank" rel="noopener noreferrer">Filtro da Alegria Infinita</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#philter%20of%20righteous%20anger_bookofebontides" target="_blank" rel="noopener noreferrer">Filtro da Ira Justa</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#philter%20of%20love_dmg" target="_blank" rel="noopener noreferrer">Filtro do Amor</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Lágrima de Basilisco</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#oil%20of%20slipperiness_dmg" target="_blank" rel="noopener noreferrer">Óleo da Escorregadiosidade</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20animal%20friendship_dmg" target="_blank" rel="noopener noreferrer">Poção da Amizade Animal</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20comprehension_wdmm" target="_blank" rel="noopener noreferrer">Poção da Compreensão</a></td><td>WDMM</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20hill%20giant%20strength_dmg" target="_blank" rel="noopener noreferrer">Poção da Força do Gigante da Colina</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20greater%20healing_dmg" target="_blank" rel="noopener noreferrer">Poção de Cura Maior</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20watchful%20rest_wdmm" target="_blank" rel="noopener noreferrer">Poção de Repouso Vigilante</a></td><td>WDMM</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20water%20breathing_dmg" target="_blank" rel="noopener noreferrer">Poção de Respiração Aquática</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20fire%20breath_dmg" target="_blank" rel="noopener noreferrer">Poção de Sopro de Fogo</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20poison_dmg" target="_blank" rel="noopener noreferrer">Poção de Veneno</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20growth_dmg" target="_blank" rel="noopener noreferrer">Poção do Crescimento</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20resistance_dmg" target="_blank" rel="noopener noreferrer">Poções de Resistência (Variações)</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Soro da Deselegância</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Veneno da Guarda Lenta</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wine%20of%20the%20winter%20court_bookofebontides" target="_blank" rel="noopener noreferrer">Vinho da Corte de Inverno</a></td><td>BoET</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -474,22 +475,22 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#philter%20of%20loving%20kindness_bookofebontides" target="_blank">Filtro da Bondade Amorosa</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#philter%20of%20enchanted%20fortune_bookofebontides" target="_blank">Filtro da Fortuna Encantada</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#philter%20of%20innocence_bookofebontides" target="_blank">Filtro da Inocência</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#philter%20of%20mercy_bookofebontides" target="_blank">Filtro da Misericórdia</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#philter%20of%20deep%20despair_bookofebontides" target="_blank">Filtro do Desespero Profundo</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20clairvoyance_dmg" target="_blank">Poção de Clarividência</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20diminution_dmg" target="_blank">Poção da Diminuição</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20frost%20giant%20strength_dmg" target="_blank">Poção da Força do Gigante de Felo</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20stone%20giant%20strength_dmg" target="_blank">Poção da Força do Gigante de Pedra</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20gaseous%20form_dmg" target="_blank">Poção da Forma Gasosa</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20superior%20healing_dmg" target="_blank">Poção de Cura Superior</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20mind%20reading_dmg" target="_blank">Poção de Leitura da Mente</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank">Poção do Alívio Angélico</a></td><td>BDG3</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20heroism_dmg" target="_blank">Poção do Heroísmo</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wine%20of%20the%20summer%20court_bookofebontides" target="_blank">Vinho da Corte de Verão</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wine%20of%20the%20starry%20void_bookofebontides" target="_blank">Vinho do Vazio Estrelado</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#philter%20of%20loving%20kindness_bookofebontides" target="_blank" rel="noopener noreferrer">Filtro da Bondade Amorosa</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#philter%20of%20enchanted%20fortune_bookofebontides" target="_blank" rel="noopener noreferrer">Filtro da Fortuna Encantada</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#philter%20of%20innocence_bookofebontides" target="_blank" rel="noopener noreferrer">Filtro da Inocência</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#philter%20of%20mercy_bookofebontides" target="_blank" rel="noopener noreferrer">Filtro da Misericórdia</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#philter%20of%20deep%20despair_bookofebontides" target="_blank" rel="noopener noreferrer">Filtro do Desespero Profundo</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20clairvoyance_dmg" target="_blank" rel="noopener noreferrer">Poção de Clarividência</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20diminution_dmg" target="_blank" rel="noopener noreferrer">Poção da Diminuição</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20frost%20giant%20strength_dmg" target="_blank" rel="noopener noreferrer">Poção da Força do Gigante de Felo</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20stone%20giant%20strength_dmg" target="_blank" rel="noopener noreferrer">Poção da Força do Gigante de Pedra</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20gaseous%20form_dmg" target="_blank" rel="noopener noreferrer">Poção da Forma Gasosa</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20superior%20healing_dmg" target="_blank" rel="noopener noreferrer">Poção de Cura Superior</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20mind%20reading_dmg" target="_blank" rel="noopener noreferrer">Poção de Leitura da Mente</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" rel="noopener noreferrer">Poção do Alívio Angélico</a></td><td>BDG3</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20heroism_dmg" target="_blank" rel="noopener noreferrer">Poção do Heroísmo</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wine%20of%20the%20summer%20court_bookofebontides" target="_blank" rel="noopener noreferrer">Vinho da Corte de Verão</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wine%20of%20the%20starry%20void_bookofebontides" target="_blank" rel="noopener noreferrer">Vinho do Vazio Estrelado</a></td><td>BoET</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -508,13 +509,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#elixir%20of%20health_dmg" target="_blank">Elixir da Saúde</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#oil%20of%20etherealness_dmg" target="_blank">Óleo da Eterealidade</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20fire%20giant%20strength_dmg" target="_blank">Poção da Força do Gigante de Fogo</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20speed_dmg" target="_blank">Poção da Velocidade</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20mind%20control_tftyp" target="_blank">Poção de Controle Mental (Fera, Humanoide e Monstro)</a></td><td>TftYP</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20invulnerability_dmg" target="_blank">Poção de Invulnerabilidade</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20flying_dmg" target="_blank">Poção de Voo</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#elixir%20of%20health_dmg" target="_blank" rel="noopener noreferrer">Elixir da Saúde</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#oil%20of%20etherealness_dmg" target="_blank" rel="noopener noreferrer">Óleo da Eterealidade</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20fire%20giant%20strength_dmg" target="_blank" rel="noopener noreferrer">Poção da Força do Gigante de Fogo</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20speed_dmg" target="_blank" rel="noopener noreferrer">Poção da Velocidade</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20mind%20control_tftyp" target="_blank" rel="noopener noreferrer">Poção de Controle Mental (Fera, Humanoide e Monstro)</a></td><td>TftYP</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20invulnerability_dmg" target="_blank" rel="noopener noreferrer">Poção de Invulnerabilidade</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20flying_dmg" target="_blank" rel="noopener noreferrer">Poção de Voo</a></td><td>DMG</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -533,28 +534,28 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20daylight_bookofebontides" target="_blank">Anel da Luz do Dia</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20the%20ghouls_bookofebontides" target="_blank">Anel dos Ghols</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20winter's%20kiss_bookofebontides" target="_blank">Anel do Beijo de Inverno</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20resistance_dmg" target="_blank">Anéis de Resistência (Variações)</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20animal%20influence_dmg" target="_blank">Ring of Animal Influence</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20evasion_dmg" target="_blank">Ring of Evasion</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20feather%20falling_dmg" target="_blank">Ring of Feather Falling</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20free%20action_dmg" target="_blank">Ring of Free Action</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20protection_dmg" target="_blank">Ring of Protection</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20spell%20storing_dmg" target="_blank">Ring of Spell Storing</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20the%20ram_dmg" target="_blank">Ring of the Ram</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20x-ray%20vision_dmg" target="_blank">Ring of X-ray Vision</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#rod%20of%20rulership_dmg" target="_blank">Rod of Rulership</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#tentacle%20rod_dmg" target="_blank">Tentacle Rod</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20binding_dmg" target="_blank">Wand of Binding</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20enemy%20detection_dmg" target="_blank">Wand of Enemy Detection</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20fear_dmg" target="_blank">Wand of Fear</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20fireballs_dmg" target="_blank">Wand of Fireballs</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20lightning%20bolts_dmg" target="_blank">Wand of Lightning Bolts</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20paralysis_dmg" target="_blank">Wand of Paralysis</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20wonder_dmg" target="_blank">Wand of Wonder</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b2%20wand%20of%20the%20war%20mage_dmg" target="_blank">Wand of the War Mage +2</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20daylight_bookofebontides" target="_blank" rel="noopener noreferrer">Anel da Luz do Dia</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20the%20ghouls_bookofebontides" target="_blank" rel="noopener noreferrer">Anel dos Ghols</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20winter's%20kiss_bookofebontides" target="_blank" rel="noopener noreferrer">Anel do Beijo de Inverno</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20resistance_dmg" target="_blank" rel="noopener noreferrer">Anéis de Resistência (Variações)</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20animal%20influence_dmg" target="_blank" rel="noopener noreferrer">Ring of Animal Influence</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20evasion_dmg" target="_blank" rel="noopener noreferrer">Ring of Evasion</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20feather%20falling_dmg" target="_blank" rel="noopener noreferrer">Ring of Feather Falling</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20free%20action_dmg" target="_blank" rel="noopener noreferrer">Ring of Free Action</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20protection_dmg" target="_blank" rel="noopener noreferrer">Ring of Protection</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20spell%20storing_dmg" target="_blank" rel="noopener noreferrer">Ring of Spell Storing</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20the%20ram_dmg" target="_blank" rel="noopener noreferrer">Ring of the Ram</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ring%20of%20x-ray%20vision_dmg" target="_blank" rel="noopener noreferrer">Ring of X-ray Vision</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#rod%20of%20rulership_dmg" target="_blank" rel="noopener noreferrer">Rod of Rulership</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#tentacle%20rod_dmg" target="_blank" rel="noopener noreferrer">Tentacle Rod</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20binding_dmg" target="_blank" rel="noopener noreferrer">Wand of Binding</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20enemy%20detection_dmg" target="_blank" rel="noopener noreferrer">Wand of Enemy Detection</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20fear_dmg" target="_blank" rel="noopener noreferrer">Wand of Fear</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20fireballs_dmg" target="_blank" rel="noopener noreferrer">Wand of Fireballs</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20lightning%20bolts_dmg" target="_blank" rel="noopener noreferrer">Wand of Lightning Bolts</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20paralysis_dmg" target="_blank" rel="noopener noreferrer">Wand of Paralysis</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wand%20of%20wonder_dmg" target="_blank" rel="noopener noreferrer">Wand of Wonder</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b2%20wand%20of%20the%20war%20mage_dmg" target="_blank" rel="noopener noreferrer">Wand of the War Mage +2</a></td><td>DMG</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -564,7 +565,7 @@
 </section>
 
 <!-- 🌟 Seção: Itens Mágicos Maravilhosos - Diversos -->
-<section class="secao-bazar" style="margin-top: 50px;">
+<section class="secao-bazar secao-bazar--espacada-maior">
     <h2>🌟 Itens Mágicos Maravilhosos - Diversos</h2>
     
     <div class="moldura-bazar">
@@ -582,72 +583,72 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#bead%20of%20nourishment_xge" target="_blank">Bead of Nourishment</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#bead%20of%20refreshment_xge" target="_blank">Bead of Refreshment</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#boots%20of%20false%20tracks_xge" target="_blank">Boots of False Tracks</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#trickster's%20boots_bookofebontides" target="_blank">Botas da Caminhada Sombria</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#boots%20of%20shadow%20walking_bookofebontides" target="_blank">Botas do Trapaceiro</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#emerald%20goblet_bookofebontides" target="_blank">Cálice de Esmeralda</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#labyrinth%20rope_bookofebontides" target="_blank">Corda do Labirinto</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#candle%20of%20the%20deep_xge" target="_blank">Candle of the Deep</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#charlatan's%20die_xge" target="_blank">Charlatan's Die</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#cloak%20of%20billowing_xge" target="_blank">Cloak of Billowing</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#cloak%20of%20many%20fashions_xge" target="_blank">Cloak of Many Fashions</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#clockwork%20amulet_xge" target="_blank">Clockwork Amulet</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#clothes%20of%20mending_xge" target="_blank">Clothes of Mending</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#dark%20shard%20amulet_xge" target="_blank">Dark Shard Amulet</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#dread%20helm_xge" target="_blank">Dread Helm</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ear%20horn%20of%20hearing_xge" target="_blank">Ear Horn of Hearing</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#enduring%20spellbook_xge" target="_blank">Enduring Spellbook</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ersatz%20eye_xge" target="_blank">Ersatz Eye</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#hat%20of%20vermin_xge" target="_blank">Hat of Vermin</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#hat%20of%20wizardry_xge" target="_blank">Hat of Wizardry</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#heward's%20handy%20spice%20pouch_xge" target="_blank">Heward's Handy Spice Pouch</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#horn%20of%20silent%20alarm_xge" target="_blank">Horn of Silent Alarm</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#illuminator's%20tattoo_tce" target="_blank">Illuminator's Tattoo</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#instrument%20of%20illusions_xge" target="_blank">Instrument of Illusions</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#instrument%20of%20scribing_xge" target="_blank">Instrument of Scribing</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#lock%20of%20trickery_xge" target="_blank">Lock of Trickery</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#masquerade%20tattoo_tce" target="_blank">Masquerade Tattoo</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#medal%20of%20muscle_crcotn" target="_blank">Medals of Muscle</a></td><td>CRCotN</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#medal%20of%20the%20conch_crcotn" target="_blank">Medals of the Conch</a></td><td>CRCotN</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#medal%20of%20the%20horizonback_crcotn" target="_blank">Medals of the Horizonback</a></td><td>CRCotN</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#medal%20of%20the%20maze_crcotn" target="_blank">Medals of the Maze</a></td><td>CRCotN</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#medal%20of%20the%20meat%20pie_crcotn" target="_blank">Medals of the Meat Pie</a></td><td>CRCotN</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#medal%20of%20the%20wetlands_crcotn" target="_blank">Medals of the Wetlands</a></td><td>CRCotN</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#medal%20of%20wit_crcotn" target="_blank">Medals of the Wit</a></td><td>CRCotN</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#mind%20crystal%20(subtle)_pabtso" target="_blank">Mind Crystal (Subtle)</a></td><td>PaBTSO</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#mystery%20key_xge" target="_blank">Mystery Key</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#orb%20of%20direction_xge" target="_blank">Orb of Direction</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#orb%20of%20time_xge" target="_blank">Orb of Time</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#orb%20of%20shielding_erlw" target="_blank">Orb of Shielding (Todos)</a></td><td>ERLW</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#perfume%20of%20bewitching_xge" target="_blank">Perfume of Bewitching</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#pipe%20of%20smoke%20monsters_xge" target="_blank">Pipe of Smoke Monsters</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#pole%20of%20angling_xge" target="_blank">Pole of Angling</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#pole%20of%20collapsing_xge" target="_blank">Pole of Collapsing</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#pot%20of%20awakening_xge" target="_blank">Pot of Awakening</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#prosthetic%20limb_tce" target="_blank">Prosthetic Limb</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#rope%20of%20mending_xge" target="_blank">Rope of Mending</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#ruby%20of%20the%20war%20mage_xge" target="_blank">Ruby of the War Mage</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#bead%20of%20nourishment_xge" target="_blank" rel="noopener noreferrer">Bead of Nourishment</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#bead%20of%20refreshment_xge" target="_blank" rel="noopener noreferrer">Bead of Refreshment</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#boots%20of%20false%20tracks_xge" target="_blank" rel="noopener noreferrer">Boots of False Tracks</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#trickster's%20boots_bookofebontides" target="_blank" rel="noopener noreferrer">Botas da Caminhada Sombria</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#boots%20of%20shadow%20walking_bookofebontides" target="_blank" rel="noopener noreferrer">Botas do Trapaceiro</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#emerald%20goblet_bookofebontides" target="_blank" rel="noopener noreferrer">Cálice de Esmeralda</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#labyrinth%20rope_bookofebontides" target="_blank" rel="noopener noreferrer">Corda do Labirinto</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#candle%20of%20the%20deep_xge" target="_blank" rel="noopener noreferrer">Candle of the Deep</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#charlatan's%20die_xge" target="_blank" rel="noopener noreferrer">Charlatan's Die</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#cloak%20of%20billowing_xge" target="_blank" rel="noopener noreferrer">Cloak of Billowing</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#cloak%20of%20many%20fashions_xge" target="_blank" rel="noopener noreferrer">Cloak of Many Fashions</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#clockwork%20amulet_xge" target="_blank" rel="noopener noreferrer">Clockwork Amulet</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#clothes%20of%20mending_xge" target="_blank" rel="noopener noreferrer">Clothes of Mending</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#dark%20shard%20amulet_xge" target="_blank" rel="noopener noreferrer">Dark Shard Amulet</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#dread%20helm_xge" target="_blank" rel="noopener noreferrer">Dread Helm</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ear%20horn%20of%20hearing_xge" target="_blank" rel="noopener noreferrer">Ear Horn of Hearing</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#enduring%20spellbook_xge" target="_blank" rel="noopener noreferrer">Enduring Spellbook</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ersatz%20eye_xge" target="_blank" rel="noopener noreferrer">Ersatz Eye</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#hat%20of%20vermin_xge" target="_blank" rel="noopener noreferrer">Hat of Vermin</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#hat%20of%20wizardry_xge" target="_blank" rel="noopener noreferrer">Hat of Wizardry</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#heward's%20handy%20spice%20pouch_xge" target="_blank" rel="noopener noreferrer">Heward's Handy Spice Pouch</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#horn%20of%20silent%20alarm_xge" target="_blank" rel="noopener noreferrer">Horn of Silent Alarm</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#illuminator's%20tattoo_tce" target="_blank" rel="noopener noreferrer">Illuminator's Tattoo</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#instrument%20of%20illusions_xge" target="_blank" rel="noopener noreferrer">Instrument of Illusions</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#instrument%20of%20scribing_xge" target="_blank" rel="noopener noreferrer">Instrument of Scribing</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#lock%20of%20trickery_xge" target="_blank" rel="noopener noreferrer">Lock of Trickery</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#masquerade%20tattoo_tce" target="_blank" rel="noopener noreferrer">Masquerade Tattoo</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#medal%20of%20muscle_crcotn" target="_blank" rel="noopener noreferrer">Medals of Muscle</a></td><td>CRCotN</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#medal%20of%20the%20conch_crcotn" target="_blank" rel="noopener noreferrer">Medals of the Conch</a></td><td>CRCotN</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#medal%20of%20the%20horizonback_crcotn" target="_blank" rel="noopener noreferrer">Medals of the Horizonback</a></td><td>CRCotN</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#medal%20of%20the%20maze_crcotn" target="_blank" rel="noopener noreferrer">Medals of the Maze</a></td><td>CRCotN</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#medal%20of%20the%20meat%20pie_crcotn" target="_blank" rel="noopener noreferrer">Medals of the Meat Pie</a></td><td>CRCotN</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#medal%20of%20the%20wetlands_crcotn" target="_blank" rel="noopener noreferrer">Medals of the Wetlands</a></td><td>CRCotN</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#medal%20of%20wit_crcotn" target="_blank" rel="noopener noreferrer">Medals of the Wit</a></td><td>CRCotN</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#mind%20crystal%20(subtle)_pabtso" target="_blank" rel="noopener noreferrer">Mind Crystal (Subtle)</a></td><td>PaBTSO</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#mystery%20key_xge" target="_blank" rel="noopener noreferrer">Mystery Key</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#orb%20of%20direction_xge" target="_blank" rel="noopener noreferrer">Orb of Direction</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#orb%20of%20time_xge" target="_blank" rel="noopener noreferrer">Orb of Time</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#orb%20of%20shielding_erlw" target="_blank" rel="noopener noreferrer">Orb of Shielding (Todos)</a></td><td>ERLW</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#perfume%20of%20bewitching_xge" target="_blank" rel="noopener noreferrer">Perfume of Bewitching</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#pipe%20of%20smoke%20monsters_xge" target="_blank" rel="noopener noreferrer">Pipe of Smoke Monsters</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#pole%20of%20angling_xge" target="_blank" rel="noopener noreferrer">Pole of Angling</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#pole%20of%20collapsing_xge" target="_blank" rel="noopener noreferrer">Pole of Collapsing</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#pot%20of%20awakening_xge" target="_blank" rel="noopener noreferrer">Pot of Awakening</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#prosthetic%20limb_tce" target="_blank" rel="noopener noreferrer">Prosthetic Limb</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#rope%20of%20mending_xge" target="_blank" rel="noopener noreferrer">Rope of Mending</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#ruby%20of%20the%20war%20mage_xge" target="_blank" rel="noopener noreferrer">Ruby of the War Mage</a></td><td>XGE</td></tr>
                         <tr><td>
                             Sementes - 
-                            <a href="https://2014.5e.tools/items.html#ale%20seed_bookofebontides" target="_blank">Cerveja</a>, 
-                            <a href="https://2014.5e.tools/items.html#rain%20and%20thunder%20seed_bookofebontides" target="_blank">Chuva/Trovão</a>, 
-                            <a href="https://2014.5e.tools/items.html#messenger%20owl%20seed_bookofebontides" target="_blank">Coruja Mensageira</a>, 
-                            <a href="https://2014.5e.tools/items.html#bonfire%20seed_bookofebontides" target="_blank">Fogueira</a>, 
-                            <a href="https://2014.5e.tools/items.html#stallion%20seed_bookofebontides" target="_blank">Garanhão</a>
+                            <a href="https://2014.5e.tools/items.html#ale%20seed_bookofebontides" target="_blank" rel="noopener noreferrer">Cerveja</a>, 
+                            <a href="https://2014.5e.tools/items.html#rain%20and%20thunder%20seed_bookofebontides" target="_blank" rel="noopener noreferrer">Chuva/Trovão</a>, 
+                            <a href="https://2014.5e.tools/items.html#messenger%20owl%20seed_bookofebontides" target="_blank" rel="noopener noreferrer">Coruja Mensageira</a>, 
+                            <a href="https://2014.5e.tools/items.html#bonfire%20seed_bookofebontides" target="_blank" rel="noopener noreferrer">Fogueira</a>, 
+                            <a href="https://2014.5e.tools/items.html#stallion%20seed_bookofebontides" target="_blank" rel="noopener noreferrer">Garanhão</a>
                         </td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#scuttling%20lantern_obojimatallgrass" target="_blank">Scuttling Lantern</a></td><td>O:TTG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#talking%20doll_xge" target="_blank">Talking Doll</a></td><td>XGE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#tankard%20of%20sobriety_xge" target="_blank">Tankard of Sobriety</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#scuttling%20lantern_obojimatallgrass" target="_blank" rel="noopener noreferrer">Scuttling Lantern</a></td><td>O:TTG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#talking%20doll_xge" target="_blank" rel="noopener noreferrer">Talking Doll</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#tankard%20of%20sobriety_xge" target="_blank" rel="noopener noreferrer">Tankard of Sobriety</a></td><td>XGE</td></tr>
                         <tr><td>
-                            <a href="https://2014.5e.tools/items.html#spellwrought%20tattoo_tce" target="_blank">Tatuagem Mágica</a> 
-                            (<a href="https://2014.5e.tools/items.html#spellwrought%20tattoo%20(cantrip)_tce" target="_blank">Truque</a> / 
-                            <a href="https://2014.5e.tools/items.html#spellwrought%20tattoo%20(1st%20level)_tce" target="_blank">Nível 1</a>) 
+                            <a href="https://2014.5e.tools/items.html#spellwrought%20tattoo_tce" target="_blank" rel="noopener noreferrer">Tatuagem Mágica</a> 
+                            (<a href="https://2014.5e.tools/items.html#spellwrought%20tattoo%20(cantrip)_tce" target="_blank" rel="noopener noreferrer">Truque</a> / 
+                            <a href="https://2014.5e.tools/items.html#spellwrought%20tattoo%20(1st%20level)_tce" target="_blank" rel="noopener noreferrer">Nível 1</a>) 
                             <span class="obs-item">(Sintoniza 1 uso p/ dia)</span>
                         </td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#unerring%20dowsing%20rod_bookofebontides" target="_blank">Unerring Dowsing Rod</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#veteran's%20cane_xge" target="_blank">Veteran's Cane</a></td><td>XGE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#unerring%20dowsing%20rod_bookofebontides" target="_blank" rel="noopener noreferrer">Unerring Dowsing Rod</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#veteran's%20cane_xge" target="_blank" rel="noopener noreferrer">Veteran's Cane</a></td><td>XGE</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -666,37 +667,37 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#abjurer's%20bangle%20(uncommon)_griffonssaddlebag2" target="_blank">Abjurer's Bangle</a></td><td>TGS2</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#alchemy%20jug_dmg" target="_blank">Alchemy Jug</a> <span class="obs-item">(**Obs:.** Itens não podem ser vendidos)</span></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#bag%20of%20holding_dmg" target="_blank">Bag of Holding</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#cap%20of%20water%20breathing_dmg" target="_blank">Cap of Water Breathing</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#cloak%20of%20the%20manta%20ray_dmg" target="_blank">Cloak of the Manta Ray</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#decanter%20of%20endless%20water_dmg" target="_blank">Decanter of Endless Water</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#driftglobe_dmg" target="_blank">Driftglobe</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#dust%20of%20disappearance_dmg" target="_blank">Dust of Disappearance</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#dust%20of%20dryness_dmg" target="_blank">Dust of Dryness</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#dust%20of%20sneezing%20and%20choking_dmg" target="_blank">Dust of Sneezing and Choking</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#earring%20of%20message_crcotn" target="_blank">Earring of Message</a></td><td>CRCotN</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#elemental%20gem_dmg" target="_blank">Elemental Gem (Variações)</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#eyes%20of%20minute%20seeing_dmg" target="_blank">Eyes of Minute Seeing</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#goggles%20of%20night_dmg" target="_blank">Goggles of Night</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#helm%20of%20comprehending%20languages_dmg" target="_blank">Helm of Comprehending Languages</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#immovable%20rod_dmg" target="_blank">Immovable Rod</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#keoghtom's%20ointment_dmg" target="_blank">Keoghtom's Ointment</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#lantern%20of%20revealing_dmg" target="_blank">Lantern of Revealing</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#mind%20crystal_pabtso" target="_blank">Mind Crystal</a> <span class="obs-item">(*Todos exceto **Subtle***)</span></td><td>PaBTSO</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#mind%20crystal_pabtso" target="_blank">Periapt of Health</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#robe%20of%20useful%20items_dmg" target="_blank">Robe of Useful Items</a> <span class="obs-item">(**Obs:.** Itens não podem ser vendidos direto no comércio)</span></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#rope%20of%20climbing_dmg" target="_blank">Rope of Climbing</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#saddle%20of%20the%20cavalier_dmg" target="_blank">Saddle of the Cavalier</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#sending%20stones_dmg" target="_blank">Sending Stones</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#abjurer's%20bangle%20(uncommon)_griffonssaddlebag2" target="_blank" rel="noopener noreferrer">Abjurer's Bangle</a></td><td>TGS2</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#alchemy%20jug_dmg" target="_blank" rel="noopener noreferrer">Alchemy Jug</a> <span class="obs-item">(<strong>Obs.:</strong> Itens não podem ser vendidos)</span></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#bag%20of%20holding_dmg" target="_blank" rel="noopener noreferrer">Bag of Holding</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#cap%20of%20water%20breathing_dmg" target="_blank" rel="noopener noreferrer">Cap of Water Breathing</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#cloak%20of%20the%20manta%20ray_dmg" target="_blank" rel="noopener noreferrer">Cloak of the Manta Ray</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#decanter%20of%20endless%20water_dmg" target="_blank" rel="noopener noreferrer">Decanter of Endless Water</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#driftglobe_dmg" target="_blank" rel="noopener noreferrer">Driftglobe</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#dust%20of%20disappearance_dmg" target="_blank" rel="noopener noreferrer">Dust of Disappearance</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#dust%20of%20dryness_dmg" target="_blank" rel="noopener noreferrer">Dust of Dryness</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#dust%20of%20sneezing%20and%20choking_dmg" target="_blank" rel="noopener noreferrer">Dust of Sneezing and Choking</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#earring%20of%20message_crcotn" target="_blank" rel="noopener noreferrer">Earring of Message</a></td><td>CRCotN</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#elemental%20gem_dmg" target="_blank" rel="noopener noreferrer">Elemental Gem (Variações)</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#eyes%20of%20minute%20seeing_dmg" target="_blank" rel="noopener noreferrer">Eyes of Minute Seeing</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#goggles%20of%20night_dmg" target="_blank" rel="noopener noreferrer">Goggles of Night</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#helm%20of%20comprehending%20languages_dmg" target="_blank" rel="noopener noreferrer">Helm of Comprehending Languages</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#immovable%20rod_dmg" target="_blank" rel="noopener noreferrer">Immovable Rod</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#keoghtom's%20ointment_dmg" target="_blank" rel="noopener noreferrer">Keoghtom's Ointment</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#lantern%20of%20revealing_dmg" target="_blank" rel="noopener noreferrer">Lantern of Revealing</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#mind%20crystal_pabtso" target="_blank" rel="noopener noreferrer">Mind Crystal</a> <span class="obs-item">(<em>Todos exceto <strong>Subtle</strong></em>)</span></td><td>PaBTSO</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#mind%20crystal_pabtso" target="_blank" rel="noopener noreferrer">Periapt of Health</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#robe%20of%20useful%20items_dmg" target="_blank" rel="noopener noreferrer">Robe of Useful Items</a> <span class="obs-item">(<strong>Obs.:</strong> Itens não podem ser vendidos direto no comércio)</span></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#rope%20of%20climbing_dmg" target="_blank" rel="noopener noreferrer">Rope of Climbing</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#saddle%20of%20the%20cavalier_dmg" target="_blank" rel="noopener noreferrer">Saddle of the Cavalier</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#sending%20stones_dmg" target="_blank" rel="noopener noreferrer">Sending Stones</a></td><td>DMG</td></tr>
                         <tr><td>
                             Sementes - 
-                            <a href="https://2014.5e.tools/items.html#knightly%20seed_bookofebontides" target="_blank">Cavaleiro</a>, 
-                            <a href="https://2014.5e.tools/items.html#road%20seed_bookofebontides" target="_blank">Estrada</a>, 
-                            <a href="https://2014.5e.tools/items.html#orchard%20seed_bookofebontides" target="_blank">Pomar</a>, 
-                            <a href="https://2014.5e.tools/items.html#bridge%20seed_bookofebontides" target="_blank">Ponte</a>, 
-                            <a href="https://2014.5e.tools/items.html#tavern%20seed_bookofebontides" target="_blank">Taverna</a>
+                            <a href="https://2014.5e.tools/items.html#knightly%20seed_bookofebontides" target="_blank" rel="noopener noreferrer">Cavaleiro</a>, 
+                            <a href="https://2014.5e.tools/items.html#road%20seed_bookofebontides" target="_blank" rel="noopener noreferrer">Estrada</a>, 
+                            <a href="https://2014.5e.tools/items.html#orchard%20seed_bookofebontides" target="_blank" rel="noopener noreferrer">Pomar</a>, 
+                            <a href="https://2014.5e.tools/items.html#bridge%20seed_bookofebontides" target="_blank" rel="noopener noreferrer">Ponte</a>, 
+                            <a href="https://2014.5e.tools/items.html#tavern%20seed_bookofebontides" target="_blank" rel="noopener noreferrer">Taverna</a>
                         </td><td>BoET</td></tr>
                     </tbody>
                 </table>
@@ -716,69 +717,69 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#amulet%20of%20proof%20against%20detection%20and%20location_dmg" target="_blank">Amulet of Proof against Detection and Location</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20all-purpose%20tool_tce" target="_blank">All-Purpose Tool +1</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20amulet%20of%20the%20devout_tce" target="_blank">Amulet of the Devout +1</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20arcane%20grimoire_tce" target="_blank">Arcane Grimoire +1</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#boots%20of%20dancing_bookofebontides" target="_blank">Botas da Dança</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20bloodwell%20vial_tce" target="_blank">Bloodwell Vial +1</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#barrier%20tattoo%20(small)_tce" target="_blank">Barrier Tattoo (Small)</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#earrings%20of%20eclipse_bookofebontides" target="_blank">Brincos do Eclipse</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#boots%20of%20elvenkind_dmg" target="_blank">Boots of Elvenkind</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#boots%20of%20striding%20and%20springing_dmg" target="_blank">Boots of Striding and Springing</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#boots%20of%20the%20winterlands_dmg" target="_blank">Boots of the Winterlands</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#bracers%20of%20archery_dmg" target="_blank">Bracers of Archery</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#brooch%20of%20shielding_dmg" target="_blank">Brooch of Shielding</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#broom%20of%20flying_dmg" target="_blank">Broom of Flying</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#glowstone%20helmet_bookofebontides" target="_blank">Capacete de Pedra Luminosa</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/LFqP1mXFJB-q#p12" target="_blank">Cinto do Retorno</a></td><td>HB</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#circlet%20of%20blasting_dmg" target="_blank">Circlet of Blasting</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#cloak%20of%20elvenkind_dmg" target="_blank">Cloak of Elvenkind</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#cloak%20of%20protection_dmg" target="_blank">Cloak of Protection</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#coiling%20grasp%20tattoo_tce" target="_blank">Coiling Grasp Tattoo</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#deck%20of%20illusions_dmg" target="_blank">Deck of Illusions</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#eldritch%20claw%20tattoo_tce" target="_blank">Eldritch Claw Tattoo</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#eversmoking%20bottle_dmg" target="_blank">Eversmoking Bottle</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#eyes%20of%20charming_dmg" target="_blank">Eyes of Charming</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#eyes%20of%20the%20eagle_dmg" target="_blank">Eyes of the Eagle</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#feywild%20shard_tce" target="_blank">Feywild Shard</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#figurine%20of%20wondrous%20power%2c%20silver%20raven_dmg" target="_blank">Figurine of Wondrous Power, Silver Raven</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#gauntlets%20of%20ogre%20power_dmg" target="_blank">Gauntlets of Ogre Power</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#gem%20of%20brightness_dmg" target="_blank">Gem of Brightness</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#gloves%20of%20missile%20snaring_dmg" target="_blank">Gloves of Missile Snaring</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#gloves%20of%20swimming%20and%20climbing_dmg" target="_blank">Gloves of Swimming and Climbing</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#gloves%20of%20thievery_dmg" target="_blank">Gloves of Thievery</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#guardian%20emblem_tce" target="_blank">Guardian Emblem</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#hat%20of%20disguise_dmg" target="_blank">Hat of Disguise</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#headband%20of%20intellect_dmg" target="_blank">Headband of Intellect</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#helm%20of%20telepathy_dmg" target="_blank">Helm of Telepathy</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#instrument%20of%20the%20bards%2c%20doss%20lute_dmg" target="_blank">Instrument of the Bards, Doss Lute</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#instrument%20of%20the%20bards%2c%20fochlucan%20bandore_dmg" target="_blank">Instrument of the Bards, Fochlucan Bandore</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#instrument%20of%20the%20bards%2c%20mac-fuirmidh%20cittern_dmg" target="_blank">Instrument of the Bards, Mac-Fuirmidh Cittern</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/LFqP1mXFJB-q#p12" target="_blank">Insignia das Garras</a></td><td>HB</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#cloak%20of%20the%20raven_bookofebontides" target="_blank">Manto do Corvo</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#medallion%20of%20thoughts_dmg" target="_blank">Medallion of Thoughts</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#nature's%20mantle_tce" target="_blank">Nature's Mantle</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#necklace%20of%20adaptation_dmg" target="_blank">Necklace of Adaptation</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#pearl%20of%20power_dmg" target="_blank">Pearl of Power</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#periapt%20of%20wound%20closure_dmg" target="_blank">Periapt of Wound Closure</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#pipes%20of%20haunting_dmg" target="_blank">Pipes of Haunting</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#pipes%20of%20the%20sewers_dmg" target="_blank">Pipes of the Sewers</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#quiver%20of%20ehlonna_dmg" target="_blank">Quiver of Ehlonna</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20rhythm-maker's%20drum_tce" target="_blank">Rhythm-Maker's Drum +1</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20rod%20of%20the%20pact%20keeper_dmg" target="_blank">Rod of the Pact Keeper +1</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#slippers%20of%20spider%20climbing_dmg" target="_blank">Slippers of Spider Climbing</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#stone%20of%20good%20luck_dmg" target="_blank">Stone of Good Luck</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#amulet%20of%20proof%20against%20detection%20and%20location_dmg" target="_blank" rel="noopener noreferrer">Amulet of Proof against Detection and Location</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20all-purpose%20tool_tce" target="_blank" rel="noopener noreferrer">All-Purpose Tool +1</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20amulet%20of%20the%20devout_tce" target="_blank" rel="noopener noreferrer">Amulet of the Devout +1</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20arcane%20grimoire_tce" target="_blank" rel="noopener noreferrer">Arcane Grimoire +1</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#boots%20of%20dancing_bookofebontides" target="_blank" rel="noopener noreferrer">Botas da Dança</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20bloodwell%20vial_tce" target="_blank" rel="noopener noreferrer">Bloodwell Vial +1</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#barrier%20tattoo%20(small)_tce" target="_blank" rel="noopener noreferrer">Barrier Tattoo (Small)</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#earrings%20of%20eclipse_bookofebontides" target="_blank" rel="noopener noreferrer">Brincos do Eclipse</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#boots%20of%20elvenkind_dmg" target="_blank" rel="noopener noreferrer">Boots of Elvenkind</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#boots%20of%20striding%20and%20springing_dmg" target="_blank" rel="noopener noreferrer">Boots of Striding and Springing</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#boots%20of%20the%20winterlands_dmg" target="_blank" rel="noopener noreferrer">Boots of the Winterlands</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#bracers%20of%20archery_dmg" target="_blank" rel="noopener noreferrer">Bracers of Archery</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#brooch%20of%20shielding_dmg" target="_blank" rel="noopener noreferrer">Brooch of Shielding</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#broom%20of%20flying_dmg" target="_blank" rel="noopener noreferrer">Broom of Flying</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#glowstone%20helmet_bookofebontides" target="_blank" rel="noopener noreferrer">Capacete de Pedra Luminosa</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/LFqP1mXFJB-q#p12" target="_blank" rel="noopener noreferrer">Cinto do Retorno</a></td><td>HB</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#circlet%20of%20blasting_dmg" target="_blank" rel="noopener noreferrer">Circlet of Blasting</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#cloak%20of%20elvenkind_dmg" target="_blank" rel="noopener noreferrer">Cloak of Elvenkind</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#cloak%20of%20protection_dmg" target="_blank" rel="noopener noreferrer">Cloak of Protection</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#coiling%20grasp%20tattoo_tce" target="_blank" rel="noopener noreferrer">Coiling Grasp Tattoo</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#deck%20of%20illusions_dmg" target="_blank" rel="noopener noreferrer">Deck of Illusions</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#eldritch%20claw%20tattoo_tce" target="_blank" rel="noopener noreferrer">Eldritch Claw Tattoo</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#eversmoking%20bottle_dmg" target="_blank" rel="noopener noreferrer">Eversmoking Bottle</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#eyes%20of%20charming_dmg" target="_blank" rel="noopener noreferrer">Eyes of Charming</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#eyes%20of%20the%20eagle_dmg" target="_blank" rel="noopener noreferrer">Eyes of the Eagle</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#feywild%20shard_tce" target="_blank" rel="noopener noreferrer">Feywild Shard</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#figurine%20of%20wondrous%20power%2c%20silver%20raven_dmg" target="_blank" rel="noopener noreferrer">Figurine of Wondrous Power, Silver Raven</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#gauntlets%20of%20ogre%20power_dmg" target="_blank" rel="noopener noreferrer">Gauntlets of Ogre Power</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#gem%20of%20brightness_dmg" target="_blank" rel="noopener noreferrer">Gem of Brightness</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#gloves%20of%20missile%20snaring_dmg" target="_blank" rel="noopener noreferrer">Gloves of Missile Snaring</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#gloves%20of%20swimming%20and%20climbing_dmg" target="_blank" rel="noopener noreferrer">Gloves of Swimming and Climbing</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#gloves%20of%20thievery_dmg" target="_blank" rel="noopener noreferrer">Gloves of Thievery</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#guardian%20emblem_tce" target="_blank" rel="noopener noreferrer">Guardian Emblem</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#hat%20of%20disguise_dmg" target="_blank" rel="noopener noreferrer">Hat of Disguise</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#headband%20of%20intellect_dmg" target="_blank" rel="noopener noreferrer">Headband of Intellect</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#helm%20of%20telepathy_dmg" target="_blank" rel="noopener noreferrer">Helm of Telepathy</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#instrument%20of%20the%20bards%2c%20doss%20lute_dmg" target="_blank" rel="noopener noreferrer">Instrument of the Bards, Doss Lute</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#instrument%20of%20the%20bards%2c%20fochlucan%20bandore_dmg" target="_blank" rel="noopener noreferrer">Instrument of the Bards, Fochlucan Bandore</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#instrument%20of%20the%20bards%2c%20mac-fuirmidh%20cittern_dmg" target="_blank" rel="noopener noreferrer">Instrument of the Bards, Mac-Fuirmidh Cittern</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/LFqP1mXFJB-q#p12" target="_blank" rel="noopener noreferrer">Insignia das Garras</a></td><td>HB</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#cloak%20of%20the%20raven_bookofebontides" target="_blank" rel="noopener noreferrer">Manto do Corvo</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#medallion%20of%20thoughts_dmg" target="_blank" rel="noopener noreferrer">Medallion of Thoughts</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#nature's%20mantle_tce" target="_blank" rel="noopener noreferrer">Nature's Mantle</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#necklace%20of%20adaptation_dmg" target="_blank" rel="noopener noreferrer">Necklace of Adaptation</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#pearl%20of%20power_dmg" target="_blank" rel="noopener noreferrer">Pearl of Power</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#periapt%20of%20wound%20closure_dmg" target="_blank" rel="noopener noreferrer">Periapt of Wound Closure</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#pipes%20of%20haunting_dmg" target="_blank" rel="noopener noreferrer">Pipes of Haunting</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#pipes%20of%20the%20sewers_dmg" target="_blank" rel="noopener noreferrer">Pipes of the Sewers</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#quiver%20of%20ehlonna_dmg" target="_blank" rel="noopener noreferrer">Quiver of Ehlonna</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20rhythm-maker's%20drum_tce" target="_blank" rel="noopener noreferrer">Rhythm-Maker's Drum +1</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20rod%20of%20the%20pact%20keeper_dmg" target="_blank" rel="noopener noreferrer">Rod of the Pact Keeper +1</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#slippers%20of%20spider%20climbing_dmg" target="_blank" rel="noopener noreferrer">Slippers of Spider Climbing</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#stone%20of%20good%20luck_dmg" target="_blank" rel="noopener noreferrer">Stone of Good Luck</a></td><td>DMG</td></tr>
                         <tr><td>
-                            <a href="https://2014.5e.tools/items.html#spellwrought%20tattoo_tce" target="_blank">Tatuagem Mágica</a> 
-                            (<a href="https://2014.5e.tools/items.html#spellwrought%20tattoo%20(2nd%20level)_tce" target="_blank">Nível 2</a> / 
-                            <a href="https://2014.5e.tools/items.html#spellwrought%20tattoo%20(3rd%20level)_tce" target="_blank">Nível 3</a>) 
+                            <a href="https://2014.5e.tools/items.html#spellwrought%20tattoo_tce" target="_blank" rel="noopener noreferrer">Tatuagem Mágica</a> 
+                            (<a href="https://2014.5e.tools/items.html#spellwrought%20tattoo%20(2nd%20level)_tce" target="_blank" rel="noopener noreferrer">Nível 2</a> / 
+                            <a href="https://2014.5e.tools/items.html#spellwrought%20tattoo%20(3rd%20level)_tce" target="_blank" rel="noopener noreferrer">Nível 3</a>) 
                             <span class="obs-item">(Sintoniza 1 uso p/ dia)</span>
                         </td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#bag%20of%20tricks_dmg" target="_blank">Bag of Tricks (Variações)</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#wind%20fan_dmg" target="_blank">Wind Fan</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#winged%20boots_dmg" target="_blank">Winged Boots</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20wraps%20of%20unarmed%20prowess_bmt" target="_blank">Wraps of Unarmed Prowess +1</a></td><td>BMT</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#bag%20of%20tricks_dmg" target="_blank" rel="noopener noreferrer">Bag of Tricks (Variações)</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#wind%20fan_dmg" target="_blank" rel="noopener noreferrer">Wind Fan</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#winged%20boots_dmg" target="_blank" rel="noopener noreferrer">Winged Boots</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20wraps%20of%20unarmed%20prowess_bmt" target="_blank" rel="noopener noreferrer">Wraps of Unarmed Prowess +1</a></td><td>BMT</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -797,20 +798,20 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#alchemical%20compendium_tce" target="_blank">Alchemical Compendium</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#bag%20of%20beans_dmg" target="_blank">Bag of Beans</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#barrier%20tattoo%20(medium)_tce" target="_blank">Barrier Tattoo (Medium)</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#bead%20of%20force_dmg" target="_blank">Bead of Force</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/LFqP1mXFJB-q#p12" target="_blank">Cinto do Retorno</a></td><td>HB</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#chime%20of%20opening_dmg" target="_blank">Chime of Opening</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20fate%20dealer's%20deck_bmt" target="_blank">Fate Dealer's Deck <strong>+1</strong></a></td><td>BMT</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#heward's%20handy%20haversack_dmg" target="_blank">Heward's Handy Haversack</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#horseshoes%20of%20speed_dmg" target="_blank">Horseshoes of Speed</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#moonseeker's%20lantern%20of%20safe%20returns_bookofebontides" target="_blank">Lanterna do Buscador da Lua para Retornos Seguros</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#necklace%20of%20fireballs_dmg" target="_blank">Necklace of Fireballs</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#portable%20hole_dmg" target="_blank">Portable Hole</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#quaal's%20feather%20token_dmg" target="_blank">Quaal's Feather Token (Variações)</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#forest%20seed_bookofebontides" target="_blank">Semente da Floresta</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#alchemical%20compendium_tce" target="_blank" rel="noopener noreferrer">Alchemical Compendium</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#bag%20of%20beans_dmg" target="_blank" rel="noopener noreferrer">Bag of Beans</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#barrier%20tattoo%20(medium)_tce" target="_blank" rel="noopener noreferrer">Barrier Tattoo (Medium)</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#bead%20of%20force_dmg" target="_blank" rel="noopener noreferrer">Bead of Force</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/LFqP1mXFJB-q#p12" target="_blank" rel="noopener noreferrer">Cinto do Retorno</a></td><td>HB</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#chime%20of%20opening_dmg" target="_blank" rel="noopener noreferrer">Chime of Opening</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b1%20fate%20dealer's%20deck_bmt" target="_blank" rel="noopener noreferrer">Fate Dealer's Deck <strong>+1</strong></a></td><td>BMT</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#heward's%20handy%20haversack_dmg" target="_blank" rel="noopener noreferrer">Heward's Handy Haversack</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#horseshoes%20of%20speed_dmg" target="_blank" rel="noopener noreferrer">Horseshoes of Speed</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#moonseeker's%20lantern%20of%20safe%20returns_bookofebontides" target="_blank" rel="noopener noreferrer">Lanterna do Buscador da Lua para Retornos Seguros</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#necklace%20of%20fireballs_dmg" target="_blank" rel="noopener noreferrer">Necklace of Fireballs</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#portable%20hole_dmg" target="_blank" rel="noopener noreferrer">Portable Hole</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#quaal's%20feather%20token_dmg" target="_blank" rel="noopener noreferrer">Quaal's Feather Token (Variações)</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#forest%20seed_bookofebontides" target="_blank" rel="noopener noreferrer">Semente da Floresta</a></td><td>BoET</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -829,38 +830,38 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b2%20all-purpose%20tool_tce" target="_blank">All-Purpose Tool +2</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b2%20amulet%20of%20the%20devout_tce" target="_blank">Amulet of the Devout +2</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#amulet%20of%20health_dmg" target="_blank">Amulet of Health</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b2%20arcane%20grimoire_tce" target="_blank">Arcane Grimoire +2</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#astral%20shard_tce" target="_blank">Astral Shard</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#astromancy%20archive_tce" target="_blank">Astromancy Archive</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#atlas%20of%20endless%20horizons_tce" target="_blank">Atlas of Endless Horizons</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#deck%20of%20oracles_bmt" target="_blank">Baralho do Oráculo</a></td><td>BMT</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#bell%20branch_tce" target="_blank">Bell Branch</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#belt%20of%20dwarvenkind_dmg" target="_blank">Belt of Dwarvenkind</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#belt%20of%20hill%20giant%20strength_dmg" target="_blank">Belt of Hill Giant Strength</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#%2b2%20bloodwell%20vial_tce" target="_blank">Bloodwell Vial +2</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#boots%20of%20levitation_dmg" target="_blank">Boots of Levitation</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#boots%20of%20speed_dmg" target="_blank">Boots of Speed</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#styx%20boots_bookofebontides" target="_blank">Botas Styx</a></td><td>BoET</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#bowl%20of%20commanding%20water%20elementals_dmg" target="_blank">Bowl of Commanding Water Elementals</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/LFqP1mXFJB-q#p12" target="_blank">Botas da Agilidade</a></td><td>HB</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#bracers%20of%20defense_dmg" target="_blank">Bracers of Defense</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#brazier%20of%20commanding%20fire%20elementals_dmg" target="_blank">Brazier of Commanding Fire Elementals</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#cape%20of%20the%20mountebank_dmg" target="_blank">Cape of the Mountebank</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#censer%20of%20controlling%20air%20elementals_dmg" target="_blank">Censer of Controlling Air Elementals</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#cloak%20of%20displacement_dmg" target="_blank">Cloak of Displacement</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#cloak%20of%20the%20bat_dmg" target="_blank">Cloak of the Bat</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#donjon's%20sundering%20sphere_bmt" target="_blank">Donjon's Sundering Sphere</a></td><td>BMT</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#cube%20of%20force_dmg" target="_blank">Cube of Force</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#daern's%20instant%20fortress_dmg" target="_blank">Daern's Instant Fortress</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/LFqP1mXFJB-q#p12" target="_blank">Diadema da Eloquência</a></td><td>HB</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#dimensional%20shackles_dmg" target="_blank">Dimensional Shackles</a></td><td>DMG</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#duplicitous%20manuscript_tce" target="_blank">Duplicitous Manuscript</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#elemental%20essence%20shard_tce" target="_blank">Elemental Essence Shard (Variações)</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#far%20realm%20shard_tce" target="_blank">Far Realm Shard</a></td><td>TCE</td></tr>
-                        <tr><td><a href="https://2014.5e.tools/items.html#figurine%20of%20wondrous%20power_dmg" target="_blank">Figurine of Wondrous Power (Todas)</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b2%20all-purpose%20tool_tce" target="_blank" rel="noopener noreferrer">All-Purpose Tool +2</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b2%20amulet%20of%20the%20devout_tce" target="_blank" rel="noopener noreferrer">Amulet of the Devout +2</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#amulet%20of%20health_dmg" target="_blank" rel="noopener noreferrer">Amulet of Health</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b2%20arcane%20grimoire_tce" target="_blank" rel="noopener noreferrer">Arcane Grimoire +2</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#astral%20shard_tce" target="_blank" rel="noopener noreferrer">Astral Shard</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#astromancy%20archive_tce" target="_blank" rel="noopener noreferrer">Astromancy Archive</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#atlas%20of%20endless%20horizons_tce" target="_blank" rel="noopener noreferrer">Atlas of Endless Horizons</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#deck%20of%20oracles_bmt" target="_blank" rel="noopener noreferrer">Baralho do Oráculo</a></td><td>BMT</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#bell%20branch_tce" target="_blank" rel="noopener noreferrer">Bell Branch</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#belt%20of%20dwarvenkind_dmg" target="_blank" rel="noopener noreferrer">Belt of Dwarvenkind</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#belt%20of%20hill%20giant%20strength_dmg" target="_blank" rel="noopener noreferrer">Belt of Hill Giant Strength</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#%2b2%20bloodwell%20vial_tce" target="_blank" rel="noopener noreferrer">Bloodwell Vial +2</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#boots%20of%20levitation_dmg" target="_blank" rel="noopener noreferrer">Boots of Levitation</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#boots%20of%20speed_dmg" target="_blank" rel="noopener noreferrer">Boots of Speed</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#styx%20boots_bookofebontides" target="_blank" rel="noopener noreferrer">Botas Styx</a></td><td>BoET</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#bowl%20of%20commanding%20water%20elementals_dmg" target="_blank" rel="noopener noreferrer">Bowl of Commanding Water Elementals</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/LFqP1mXFJB-q#p12" target="_blank" rel="noopener noreferrer">Botas da Agilidade</a></td><td>HB</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#bracers%20of%20defense_dmg" target="_blank" rel="noopener noreferrer">Bracers of Defense</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#brazier%20of%20commanding%20fire%20elementals_dmg" target="_blank" rel="noopener noreferrer">Brazier of Commanding Fire Elementals</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#cape%20of%20the%20mountebank_dmg" target="_blank" rel="noopener noreferrer">Cape of the Mountebank</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#censer%20of%20controlling%20air%20elementals_dmg" target="_blank" rel="noopener noreferrer">Censer of Controlling Air Elementals</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#cloak%20of%20displacement_dmg" target="_blank" rel="noopener noreferrer">Cloak of Displacement</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#cloak%20of%20the%20bat_dmg" target="_blank" rel="noopener noreferrer">Cloak of the Bat</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#donjon's%20sundering%20sphere_bmt" target="_blank" rel="noopener noreferrer">Donjon's Sundering Sphere</a></td><td>BMT</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#cube%20of%20force_dmg" target="_blank" rel="noopener noreferrer">Cube of Force</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#daern's%20instant%20fortress_dmg" target="_blank" rel="noopener noreferrer">Daern's Instant Fortress</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://homebrewery.naturalcrit.com/share/LFqP1mXFJB-q#p12" target="_blank" rel="noopener noreferrer">Diadema da Eloquência</a></td><td>HB</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#dimensional%20shackles_dmg" target="_blank" rel="noopener noreferrer">Dimensional Shackles</a></td><td>DMG</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#duplicitous%20manuscript_tce" target="_blank" rel="noopener noreferrer">Duplicitous Manuscript</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#elemental%20essence%20shard_tce" target="_blank" rel="noopener noreferrer">Elemental Essence Shard (Variações)</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#far%20realm%20shard_tce" target="_blank" rel="noopener noreferrer">Far Realm Shard</a></td><td>TCE</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#figurine%20of%20wondrous%20power_dmg" target="_blank" rel="noopener noreferrer">Figurine of Wondrous Power (Todas)</a></td><td>DMG</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -868,7 +869,7 @@
 
     </div>
 </section>
-<div class="wide" style="text-align:center;">
+<div class="wide homebrew-title">
     <h2>Itens Homebrew</h2>
   </div>
   
@@ -879,7 +880,7 @@
       <blockquote>
         Seu valor de <strong>Destreza se torna 17</strong> enquanto você usar estas botas. Elas não têm efeito sobre você se o seu valor de Destreza já for 17 ou superior sem elas.
       </blockquote>
-  
+      
       <h3>Talismã da Mente Limpa</h3>
       <p><em>Item maravilhoso, Raro Maior (requer sintonização)</em></p>
       <blockquote>
@@ -917,27 +918,40 @@
       </blockquote>
     </div>
   </div>
-  <script>
-    document.addEventListener('DOMContentLoaded', function(){
+</div>
+</main>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
         const btn = document.getElementById('menuBtn');
         const menu = document.getElementById('sideMenu');
+
+        if (!btn || !menu) return;
+
         let open = false;
-    
-        btn.addEventListener('click', function(e){
+
+        function setMenuState(isOpen) {
+            open = isOpen;
+            menu.classList.toggle('open', open);
+            btn.setAttribute('aria-expanded', String(open));
+        }
+
+        btn.addEventListener('click', function (e) {
             e.stopPropagation();
-            open = !open;
-            // Corrigido: agora ele vai totalmente para fora da tela (320px para a esquerda)
-            menu.style.left = open ? '0px' : '-320px';
+            setMenuState(!open);
         });
 
-        // Fecha o menu automaticamente se o jogador clicar em qualquer outro lugar da página
-        document.addEventListener('click', function(e) {
+        document.addEventListener('click', function (e) {
             if (open && !menu.contains(e.target) && e.target !== btn) {
-                open = false;
-                menu.style.left = '-320px';
+                setMenuState(false);
+            }
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && open) {
+                setMenuState(false);
             }
         });
     });
 </script>
-</main>
 </body>
+</html>
