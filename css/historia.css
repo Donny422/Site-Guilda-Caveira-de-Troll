@@ -1,10 +1,224 @@
-.historia {
-    font-size: 2.5rem; /* Use 'rem' para melhor escalabilidade que 'vw' */
-    margin: 0 0 20px 0;
+.pagina-historia .historia-container {
+    position: relative;
+}
+
+.pagina-historia .historia {
+    font-size: 2.5rem;
+    margin: 0 0 35px 0;
     text-align: center;
 }
 
-.fundadores {
-    color:#720000;
+.pagina-historia .fundadores {
+    color: #720000;
     font-weight: bold;
+}
+
+.pagina-historia .historia-timeline {
+    position: relative;
+    width: 100%;
+    padding: 25px 0 35px 0;
+}
+
+.pagina-historia .historia-timeline::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    left: 50%;
+    width: 4px;
+    transform: translateX(-50%);
+    background: linear-gradient(
+        to bottom,
+        #8a1a1b,
+        #b28a39,
+        #8a1a1b
+    );
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(138, 26, 27, 0.45);
+}
+
+.pagina-historia .historia-evento {
+    position: relative;
+    width: 50%;
+    margin: 0 0 28px 0;
+    box-sizing: border-box;
+}
+
+.pagina-historia .historia-evento--esquerda {
+    left: 0;
+    padding-right: 45px;
+}
+
+.pagina-historia .historia-evento--direita {
+    left: 50%;
+    padding-left: 45px;
+}
+
+.pagina-historia .historia-evento::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    width: 20px;
+    height: 20px;
+    background: #b28a39;
+    border: 4px solid #8a1a1b;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 0 5px rgba(241, 235, 217, 0.7), 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+.pagina-historia .historia-evento--esquerda::before {
+    right: -14px;
+}
+
+.pagina-historia .historia-evento--direita::before {
+    left: -14px;
+}
+
+.pagina-historia .historia-evento--subevento::before {
+    width: 14px;
+    height: 14px;
+    top: 26px;
+    background: #8a1a1b;
+    border-color: #b28a39;
+}
+
+.pagina-historia .historia-evento--esquerda.historia-evento--subevento::before {
+    right: -11px;
+}
+
+.pagina-historia .historia-evento--direita.historia-evento--subevento::before {
+    left: -11px;
+}
+
+.pagina-historia .historia-card {
+    position: relative;
+    background: rgba(245, 240, 220, 0.78);
+    border-left: 5px solid rgba(138, 26, 27, 0.55);
+    border-radius: 12px;
+    padding: 16px 18px;
+    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.22);
+}
+
+.pagina-historia .historia-card--ano {
+    background: rgba(203, 199, 190, 0.95);
+    border-left-color: #8a1a1b;
+}
+
+.pagina-historia .historia-card::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.pagina-historia .historia-evento--esquerda .historia-card::after {
+    right: -10px;
+    border-left: 10px solid rgba(245, 240, 220, 0.78);
+}
+
+.pagina-historia .historia-evento--direita .historia-card::after {
+    left: -10px;
+    border-right: 10px solid rgba(245, 240, 220, 0.78);
+}
+
+.pagina-historia .historia-evento--esquerda .historia-card--ano::after {
+    border-left-color: rgba(203, 199, 190, 0.95);
+}
+
+.pagina-historia .historia-evento--direita .historia-card--ano::after {
+    border-right-color: rgba(203, 199, 190, 0.95);
+}
+
+.pagina-historia .historia-ano {
+    color: #000000;
+    margin: 0 0 12px 0;
+    text-align: left;
+    width: auto;
+}
+
+.pagina-historia .historia-subtitulo {
+    color: #420202;
+    margin: 0 0 10px 0;
+    text-align: left;
+    width: auto;
+}
+
+.pagina-historia .historia-texto {
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-align: left;
+    width: auto;
+}
+
+.pagina-historia .historia-texto:last-child {
+    margin-bottom: 0;
+}
+
+.pagina-historia .historia-lista {
+    margin: 8px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pagina-historia .historia-lista li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 8px;
+}
+
+.pagina-historia .historia-lista li::before {
+    content: "♦";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #8a1a1b;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .pagina-historia .historia {
+        font-size: 1.8rem;
+    }
+
+    .pagina-historia .historia-timeline {
+        padding-left: 38px;
+    }
+
+    .pagina-historia .historia-timeline::before {
+        left: 17px;
+    }
+
+    .pagina-historia .historia-evento,
+    .pagina-historia .historia-evento--esquerda,
+    .pagina-historia .historia-evento--direita {
+        left: 0;
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 0;
+    }
+
+    .pagina-historia .historia-evento::before,
+    .pagina-historia .historia-evento--esquerda::before,
+    .pagina-historia .historia-evento--direita::before,
+    .pagina-historia .historia-evento--esquerda.historia-evento--subevento::before,
+    .pagina-historia .historia-evento--direita.historia-evento--subevento::before {
+        left: -32px;
+        right: auto;
+    }
+
+    .pagina-historia .historia-card::after,
+    .pagina-historia .historia-card--ano::after {
+        left: -10px;
+        right: auto;
+        border-left: none;
+        border-right: 10px solid rgba(245, 240, 220, 0.78);
+    }
+
+    .pagina-historia .historia-card--ano::after {
+        border-right-color: rgba(203, 199, 190, 0.95);
+    }
 }

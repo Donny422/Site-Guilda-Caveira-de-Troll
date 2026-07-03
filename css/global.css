@@ -14,6 +14,7 @@
    @import url('magias.css');
    @import url('responsive_celular.css');
    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+   
    /* 🌍 Variáveis Globais */
    :root {
        --bg-color: #303033;

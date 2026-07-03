@@ -6,10 +6,12 @@
 /* Container principal (Define a fonte serifada e cores da imagem) */
   /* --- CAIXAS DE DESTAQUE --- */
   .diretrizes {
+    width: 92.5% !important;
     background-color: rgba(179, 179, 179, 0.808);
     border-left: 10px solid #8a1a1b;
     padding: 15px 20px;
     margin: 20px 0;
+    margin-left: 40px !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -46,10 +48,11 @@
 }
 
 .staff {
+    width: 92.5% !important;
     background-color: rgba(131, 83, 64, 0.479);
     border-left: 10px solid #8a1a1b;
-    padding: 15px 20px;
-    margin: 20px;
+    padding: 15px 0px;
+    margin-left: 40px !important;
     margin-bottom: 1px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -62,8 +65,8 @@
 }
 
 .staff p {
-    text-align: left !important;
-    margin-bottom: 12px;
+    margin-bottom: 10px !important;
+    margin-left: -5px !important;
 }
 
 
@@ -106,6 +109,7 @@
 
 /* Bloco inferior de Redenção */
 .bloco-redencao {
+    width: 94.5% !important;
     background-color: rgba(25, 116, 25, 0.349);
     border: 1px solid #333;
     border-left: 10px solid #168846;
@@ -120,6 +124,20 @@
     margin-bottom: 15px;
 }
 
+.bloco-redencao ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.bloco-redencao li {
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
 h1 {
     text-align: center;
+}
+
+h1.regras {
+    font-size: 45px;
 }
