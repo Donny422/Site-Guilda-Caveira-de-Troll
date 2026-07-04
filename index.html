@@ -3,64 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Inicial - Guilda Caveira de Troll</title>
+    <title>Guilda Caveira de Troll</title>
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
-<header>
-    <div style="display:flex;align-items:center;gap:15px;">
-        <button id="menuBtn" style="background:none;border:none;color:#f3e7c3;font-size:32px;cursor:pointer;">☰</button>
-        <div class="logo">
-            <img src="https://i.imgur.com/OJJnoaL.png" alt="Logo da Guilda" class="logo-guilda">
-            <h1 class="titulo-principal">Guilda Caveira de Troll</h1>
-        </div>
-    </div>
+    <div id="site-header"></div>
+    <script src="js/header.js"></script>
 
-<!-- Menu -->
-    <div id="sideMenu" style="position:fixed;top:0;left:-320px;width:300px;height:100%;background:#161616;transition:.3s;padding-top:40px;z-index:1000;border-right:3px solid #7a1d1d;">
+<main class="pagina-index">
+    <div class="container index-container">
 
-        <a class="menu-item" href="index.html">🏠 Home</a>
-        <a class="menu-item" href="regras.html">📜 Regras</a>
-        <a class="menu-item" href="historia.html">📖 História</a>
-        <a class="menu-item" href="ficha.html">🧙 Criação de Ficha</a>
-        <a class="menu-item" href="homebrew.html">⚒️ Homebrew</a>
-        <a class="menu-item" href="bazar.html">🏪 Bazar Blackstaff</a>
-        <a class="menu-item" href="magias.html">✨ Magias Homebrew</a>
-        <a class="menu-item" href="atividades.html">🎲 Atividades</a>
-        <a class="menu-item" href="profissoes.html">🛠️ Profissões</a>
-        <a class="menu-item" href="atualizacoes.html">🔄 Atualizações</a>
-        
+        <section class="index-hero">
+            <div class="hero-texto">
+                <p class="index-eyebrow">Bem-vindo à</p>
+                <h1>Guilda Caveira de Troll</h1>
+                <p class="index-subtitulo">Grandes aventuras começam com um único contrato.</p>
+                <p class="index-descricao">Explore Faerûn, crie seu herói, consulte regras, descubra conteúdos homebrew e acompanhe as atividades da guilda.</p>
+                <div class="index-acoes">
+                    <a class="botao-principal" href="https://discord.gg/MXZbyhS6b6">⚔️ Entrar no Servidor</a>
+                    <a class="botao-secundario" href="regras.html">📜 Ler Regras</a>
+                </div>
+            </div>
+
+            <div class="hero-logo-area">
+                <img src="https://i.imgur.com/OJJnoaL.png" alt="Logo da Guilda Caveira de Troll" class="hero-logo">
+            </div>
+        </section>
+
+        <section class="index-boas-vindas">
+            <p class="index-eyebrow">Boas-vindas</p>
+            <h2>A taverna está aberta, aventureiro!</h2>
+            <p>A Guilda Caveira de Troll reúne jogadores, mestres e aventureiros em campanhas, eventos e missões inspiradas em D&amp;D 5ª Edição.</p>
+            <p>Use esta página como ponto de partida para acessar as principais áreas do site.</p>
+        </section>
+
+
+
+        <section class="index-info-servidor" aria-label="Informações do servidor">
+            <div class="info-titulo">
+                <p class="index-eyebrow">Sobre a Guilda</p>
+                <h2>Informações do Servidor</h2>
+            </div>
+
+            <div class="info-servidor-grid">
+                <article class="info-card info-card-destaque">
+                    <h2>Criação do Servidor</h2>
+                    <p>O servidor foi fundado no dia <strong>29/07/2025</strong></p>
+                    <p>A Guilda Caveira de Troll nasceu para suprir um desejo simples: curtir ao máximo e criar aventuras inesquecíveis em grupo!<br>
+                        Por isso escolhemos um sistema de RPG querido por muitos, o D&amp;D, combinado com a popular dinâmica das Guildas de Aventureiros, unindo diversão e uma jornada épica inesquecível.</p>
+                </article>
+
+                <article class="info-card">
+                    <h2>🗺️ Nosso Mundo de Aventura</h2>
+                    <p>Mergulhe de cabeça no vasto mundo de Faerûn (Os Reinos Esquecidos)! <br>
+                        Nossas sessões se concentram na vibrante Costa da Espada, com o coração de nossas aventuras pulsando em Águas Profundas e seus arredores. <br>
+                        Prepare-se para explorar uma das cidades mais famosas e perigosas de toda a Faerûn.</p>
+                </article>
+
+                <article class="info-card">
+                    <h2>🎲 Sistema e Regras</h2>
+                    <p>Utilizamos o sistema D&amp;D 5ª Edição 2014.<br>
+                    Para garantir uma experiência coesa e focada, parte do conteúdo de alguns livros serão introduzidos gradualmente ao longo de nossas campanhas e eventos, permitindo que todos se adaptem e evoluam juntos.</p>
+                </article>
+
+                <article class="info-card">
+                    <h2>✨ Aventuras Únicas</h2>
+                    <p>Nossas sessões são guiadas por mestres que criam aventuras exclusivas e originais.<br>
+                        Embora nossa narrativa seja autoral, ela pode ocasionalmente se basear ou se inspirar em campanhas oficiais, oferecendo a você o melhor de dois mundos: uma história personalizada e o rico universo de D&amp;D.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="atalhos-grid" aria-label="Atalhos principais do site">
+            <a class="atalho-card" href="ficha.html">
+                <span>🛡️</span>
+                <strong>Criar Personagem</strong>
+                <small>Monte seu herói e prepare sua ficha.</small>
+            </a>
+
+            <a class="atalho-card" href="regras.html">
+                <span>📜</span>
+                <strong>Ler as Regras</strong>
+                <small>Consulte diretrizes, conduta e sistemas da guilda.</small>
+            </a>
+
+            <a class="atalho-card" href="historia.html">
+                <span>🗺️</span>
+                <strong>Conhecer a História</strong>
+                <small>Veja a trajetória da guilda em Faerûn.</small>
+            </a>
+
+            <a class="atalho-card" href="atividades.html">
+                <span>🎲</span>
+                <strong>Atividades</strong>
+                <small>Confira ações, eventos e possibilidades extras.</small>
+            </a>
+        </section>
+
+        <section class="index-divisor">
+            <span></span>
+            <h2>Áreas da Guilda</h2>
+            <span></span>
+        </section>
+
+        <section class="areas-grid">
+            <article class="area-card area-homebrew">
+                <div class="area-icone">⚒️</div>
+                <h3>Homebrew</h3>
+                <p>Conteúdos personalizados aprovados para a mesa.</p>
+                <a href="homebrew.html">Acessar Homebrew</a>
+            </article>
+
+            <article class="area-card area-classes">
+                <div class="area-icone">📚</div>
+                <h3>Classes Homebrew</h3>
+                <p>Espaço reservado para classes personalizadas da guilda.</p>
+                <a href="classes-homebrew.html">Ver Classes</a>
+            </article>
+
+            <article class="area-card area-bazar">
+                <div class="area-icone">🏪</div>
+                <h3>Bazar Blackstaff</h3>
+                <p>Itens mágicos, equipamentos e recursos para aventureiros.</p>
+                <a href="bazar.html">Visitar Bazar</a>
+            </article>
+
+            <article class="area-card area-magias">
+                <div class="area-icone">✨</div>
+                <h3>Magias Homebrew</h3>
+                <p>Magias modificadas, novas opções e sanguimancia.</p>
+                <a href="magias.html">Ver Magias</a>
+            </article>
+
+            <article class="area-card area-profissoes">
+                <div class="area-icone">🛠️</div>
+                <h3>Profissões</h3>
+                <p>Ofícios, criação de itens, poções e regras de produção.</p>
+                <a href="profissoes.html">Ver Profissões</a>
+            </article>
+
+            <article class="area-card area-panteoes">
+                <div class="area-icone">🏛️</div>
+                <h3>Panteões</h3>
+                <p>Divindades, alinhamentos, domínios e símbolos.</p>
+                <a href="panteoes.html">Ver Panteões</a>
+            </article>
+
+            <article class="area-card area-atualizacoes">
+                <div class="area-icone">🔄</div>
+                <h3>Atualizações</h3>
+                <p>Novidades, mudanças e registros importantes do servidor.</p>
+                <a href="atualizacoes.html">Ver Atualizações</a>
+            </article>
+
+            <article class="area-card area-regras">
+                <div class="area-icone">📖</div>
+                <h3>Guia da Guilda</h3>
+                <p>Comece pelas regras e siga para criação de ficha.</p>
+                <a href="regras.html">Abrir Guia</a>
+            </article>
+        </section>
+
+        <section class="index-chamada-final">
+            <h2>Prepare seus dados. A próxima missão está começando.</h2>
+            <p>Escolha uma área, revise as informações e venha escrever sua lenda ao lado da Guilda Caveira de Troll.</p>
+            <div class="index-acoes">
+                <a class="botao-principal" href="ficha.html">🧙 Começar agora</a>
+                <a class="botao-secundario" href="historia.html">📖 Conhecer a Guilda</a>
+            </div>
+        </section>
+
     </div>
-</header>
-<main>
-    <div class="container">
-    <section>
-        <div class="header-welcome">
-            <h1><strong>Bem Vindo à Guilda Caveira de Troll!</strong></h1>
-            <div class="botoes">
-            <a href="https://discord.gg/KCP3ZkHUvV" class="botao-discord">⚔️ Entrar na Guilda</a>
-            <a href="regras.html" class="botao-regras">Ler Regras</a>
-        </div>
-            <img src="https://i.imgur.com/OJJnoaL.png" alt="Logo da Guilda" class="logo2">
-        </div>
-        <h2>Criação do Servidor</h2>
-        <p>O servidor foi fundado no dia <strong>29/07/2025</strong></p>
-        <p>A Guilda Caveira de Troll nasceu para suprir um desejo simples: curtir ao máximo e criar aventuras inesquecíveis em grupo!<br>
-            Por isso escolhemos um sistema de RPG querido por muitos, o D&D, combinado com a popular dinâmica das Guildas de Aventureiros, unindo diversão e uma jornada épica inesquecível.</p>
-        
-        <h2>🗺️ Nosso Mundo de Aventura</h2>
-        <p>Mergulhe de cabeça no vasto mundo de Faerûn (Os Reinos Esquecidos)! <br>
-            Nossas sessões se concentram na vibrante Costa da Espada, com o coração de nossas aventuras pulsando em Águas Profundas e seus arredores. <br>
-            Prepare-se para explorar uma das cidades mais famosas e perigosas de toda a Faerûn.</p>
-        <h2>🎲 Sistema e Regras</h2>
-        <p>Utilizamos o sistema D&D 5ª Edição 2014.<br>
-        Para garantir uma experiência coesa e focada, parte do conteúdo de alguns livros serão introduzidos gradualmente ao longo de nossas campanhas e eventos, permitindo que todos se adaptem e evoluam juntos.</p>
-        <h2>✨ Aventuras Únicas</h2>
-        <p>Nossas sessões são guiadas por mestres que criam aventuras exclusivas e originais.<br>
-            Embora nossa narrativa seja autoral, ela pode ocasionalmente se basear ou se inspirar em campanhas oficiais, oferecendo a você o melhor de dois mundos: uma história personalizada e o rico universo de D&D.</p>
-    </section>
-</div>
 </main>
+
 <script src="js/menu.js"></script>
 </body>
 </html>

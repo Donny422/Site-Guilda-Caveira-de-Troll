@@ -7,33 +7,11 @@
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
-<header>
-    <div style="display:flex;align-items:center;gap:15px;">
-        <button id="menuBtn" style="background:none;border:none;color:#f3e7c3;font-size:32px;cursor:pointer;">☰</button>
-        <div class="logo">
-            <img src="https://i.imgur.com/OJJnoaL.png" alt="Logo da Guilda" class="logo-guilda">
-            <h1 class="titulo-principal">Guilda Caveira de Troll</h1>
-        </div>
-    </div>
-
-<!-- Menu -->
-    <div id="sideMenu" style="position:fixed;top:0;left:-320px;width:300px;height:100%;background:#161616;transition:.3s;padding-top:40px;z-index:1000;border-right:3px solid #7a1d1d;">
-
-        <a class="menu-item" href="index.html">🏠 Home</a>
-        <a class="menu-item" href="regras.html">📜 Regras</a>
-        <a class="menu-item" href="historia.html">📖 História</a>
-        <a class="menu-item" href="ficha.html">🧙 Criação de Ficha</a>
-        <a class="menu-item" href="homebrew.html">⚒️ Homebrew</a>
-        <a class="menu-item" href="bazar.html">🏪 Bazar Blackstaff</a>
-        <a class="menu-item" href="magias.html">✨ Magias Homebrew</a>
-        <a class="menu-item" href="atividades.html">🎲 Atividades</a>
-        <a class="menu-item" href="profissoes.html">🛠️ Profissões</a>
-        <a class="menu-item" href="atualizacoes.html">🔄 Atualizações</a>
-        
-    </div>
-</header>
-<main>
-    <section class="container">
+  <div id="site-header"></div>
+  <script src="js/header.js"></script>
+<main class="pagina-atividades atividades-main">
+    <div class="container atividades-container">
+        <section class="atividades-content">
 
           <h1>Atividades em Tempo Livre</h1>
       
@@ -111,8 +89,8 @@
           <p>Se planeja copiar vários feitiços de uma vez, você pode criar um <strong>Projeto</strong>. Faça uma única lista com todas as magias desejadas, some o valor total dos materiais, realize uma única postagem de compra no comércio e registre o avanço conforme os dias de trabalho forem passando.</p>
       
         <div>
+          <h4>Exemplos de custo e tempo</h4>
           <table class="magias-table">
-            <h4>Exemplos de custo e tempo</h4>
             <thead>
               <tr>
                 <th>Nível da Magia</th>
@@ -228,11 +206,12 @@
           </div>
       
           <h2 style="margin-top: 50px;">
-            <a href="https://homebrewery.naturalcrit.com/share/s6NID7K0wi3V" target="_blank" class="profissoes-link">Profissões ➔</a>
+            <a href="profissoes.html" target="_blank" class="profissoes-link">Profissões ➔</a>
           </h2>
           <p>Saiba o que você pode criar com seu personagem e quem sabe até ter uma renda extra.</p>
         </div>
-</section>
+        </section>
+    </div>
 </main>
 <script src="js/menu.js"></script>
 </body>

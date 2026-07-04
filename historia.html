@@ -5,140 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>História da Guilda - Guilda Caveira de Troll</title>
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/historia.css">
 </head>
 <body>
-<header>
-    <div style="display:flex;align-items:center;gap:15px;">
-        <button id="menuBtn" style="background:none;border:none;color:#f3e7c3;font-size:32px;cursor:pointer;">☰</button>
-        <div class="logo">
-            <img src="https://i.imgur.com/OJJnoaL.png" alt="Logo da Guilda" class="logo-guilda">
-            <h1 class="titulo-principal">Guilda Caveira de Troll</h1>
-        </div>
+    <div id="site-header"></div>
+    <script src="js/header.js"></script>
+
+<main class="pagina-historia historia-main">
+    <div class="container historia-container">
+        <h1 class="historia-title">História da Guilda Caveira de Troll</h1>
+
+        <section class="historia-timeline" aria-label="Linha do tempo da Guilda Caveira de Troll">
+            <article class="historia-timeline-item historia-timeline-item-year">
+                <h2 class="historia-timeline-heading">Ano 1492 DR - Fundação</h2>
+                <div class="historia-timeline-card">
+                    <p>A Guilda Caveira de Troll foi fundada no ano 1492 DR por um grupo de aventureiros audazes em Águas Profundas. Por uma década, a guilda prosperou, mas o perigo da Masmorra do Mago Louco consumiu muitos de seus membros, e as portas da guilda acabaram sendo fechadas.</p>
+                    <p><strong>Os Fundadores:</strong> <span class="historia-fundadores">Monaliso, Stor Lackman, Dae Cheon, Callum Leafbourne e Murdock Grimveil.</span></p>
+                </div>
+            </article>
+
+            <article class="historia-timeline-item historia-timeline-item-year">
+                <h2 class="historia-timeline-heading">Ano 1505 DR - O Renascimento</h2>
+                <div class="historia-timeline-card">
+                    <p>Três anos depois, o lendário <strong>Volo</strong> decidiu reabrir suas portas. Ele busca atrair novos aventureiros dispostos a trilhar o caminho da glória, com o objetivo de expandir a influência da guilda muito além dos muros da cidade.</p>
+                </div>
+            </article>
+
+            <article class="historia-timeline-item historia-timeline-item-event">
+                <h3 class="historia-timeline-subheading">Crescimento e Renovação</h3>
+                <div class="historia-timeline-card">
+                    <p>O sucesso inicial pavimentou o caminho para a expansão. A guilda rapidamente atraiu uma nova leva de aventureiros talentosos, garantindo o aumento de seu quadro de membros e, consequentemente, a ampliação de sua área de atuação.</p>
+                    <p>A sede da guilda passou por uma reforma completa, culminando na construção de uma forja, um recurso crucial que permitiu maior autonomia e capacidade de preparação para seus membros.</p>
+                </div>
+            </article>
+
+            <article class="historia-timeline-item historia-timeline-item-event">
+                <h3 class="historia-timeline-subheading">Ações e Conflitos</h3>
+                <div class="historia-timeline-card">
+                    <p>O volume de missões aumentou, colocando a Guilda no mapa das principais facções da Costa da Espada. Entre as atividades mais importantes do ano, destacam-se:</p>
+                    <ul class="historia-timeline-list">
+                        <li><strong>Apoio à Nobreza:</strong> Auxílio vital a nobres de Águas Profundas, fortalecendo relações políticas.</li>
+                        <li><strong>Confrontos:</strong> Cooperação com facções aliadas e combate direto a sindicatos criminosos, notavelmente a <strong>Guilda Xanathar</strong>.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="historia-timeline-item historia-timeline-item-event">
+                <h3 class="historia-timeline-subheading">O Ponto Alto: A Crise do Culto de Strahd</h3>
+                <div class="historia-timeline-card">
+                    <p>O evento mais decisivo e de maior impacto do ano foi a intervenção da guilda em um problema envolvendo um Culto dedicado à Strahd.</p>
+                    <p>Esta ameaça estendeu-se para além das muralhas de Águas Profundas, exigindo a assistência da guilda em Neverwinter.</p>
+                    <p>A Guilda Caveira de Troll não apenas auxiliou Neverwinter e uma influente família nobre de Águas Profundas, mas também conseguiu proteger artefatos mágicos cruciais. Ao fazê-lo, impediram que o culto abrisse um portal, bloqueando a potencial invasão do lorde vampiro <strong>Strahd Von Zarovich</strong> ao plano mundano.</p>
+                    <p>A resolução bem-sucedida dessa ameaça catapultou a reputação da guilda. Seu nome é agora amplamente conhecido e respeitado em grande parte da Costa da Espada. Como resultado, a Guilda Caveira de Troll não está mais restrita a Águas Profundas, realizando missões em cidades e locais cada vez mais distantes, consolidando-se como uma força aventureira de grande renome.</p>
+                </div>
+            </article>
+
+            <article class="historia-timeline-item historia-timeline-item-year">
+                <h2 class="historia-timeline-heading">1506: O Ano das Fendas e Sombras</h2>
+            </article>
+
+            <article class="historia-timeline-item historia-timeline-item-event">
+                <h3 class="historia-timeline-subheading">Conflitos Infernais</h3>
+                <div class="historia-timeline-card">
+                    <p>Fendas dimensionais e criaturas diabólicas indicam que o Plano Material é alvo de forças ocultas. O <strong>Culto de Zariel</strong> lidera essa ofensiva na Costa da Espada; em Neverwinter, cultistas e drows tentaram corromper o <strong>Santuário do Guardião</strong>, mas foram derrotados em uma disputa pelo <strong>Fragmento do Inverno</strong>.</p>
+                    <p>Paralelamente, outros Diabos agem nas sombras, selando pactos e testando aventureiros. Essa influência já deforma a natureza, criando animais corrompidos nos arredores de Waterdeep.</p>
+                    <p>Embora a guilda tenha impedido a libertação de mil Diabos Maiores ao proteger o <strong>Cálice das Almas</strong>, a tensão persiste. Um eclipse trouxe vozes sinistras e, em Baldur’s Gate, guardas do Rio Styx surgiram em busca da jovem Elsa, a <strong>Feiticeira do Gelo</strong>.</p>
+                    <p>Convertendo feras controladas revelou essências transformadas em cristais de mana. Um desses fragmentos, com um símbolo misterioso, despertou o temor do lendário <strong>Elminster Aumar</strong>.</p>
+                </div>
+            </article>
+
+            <article class="historia-timeline-item historia-timeline-item-event">
+                <h3 class="historia-timeline-subheading">Guerra das Sombras: Operação Xanathar</h3>
+                <div class="historia-timeline-card">
+                    <p>A Aliança dos Lordes convocou a Caveira de Troll, para neutralizar esconderijos estratégicos da Guilda Xanathar. A primeira incursão revelou postos avançados cruciais do sindicato criminoso, desencadeando a <strong>Operação Xanathar</strong> — uma coalizão entre grandes facções de Waterdeep.</p>
+                    <p>A vitória, porém, teve um custo alto: a destruição de um entreposto logístico resultou na morte de quatro aventureiros. Motivada pelo luto, a guilda lançou um novo ataque bem-sucedido, sem baixas, recuperando a localização do esconderijo principal inimigo. A ofensiva prossegue, visando o desmantelamento total do império de Xanathar.</p>
+                </div>
+            </article>
+
+            <article class="historia-timeline-item historia-timeline-item-event">
+                <h3 class="historia-timeline-subheading">Serenya: A Saga das Treze Correntes</h3>
+                <div class="historia-timeline-card">
+                    <p>Elyndra Vaelora convocou a guilda para libertar sua ancestral, <strong>Serenya Valehart</strong>, presa em Waterdeep por uma maldição secular. Um livro místico guia os heróis por 13 desafios, cada um vinculado a uma casa nobre responsável pelo aprisionamento.</p>
+                    <p>Sob contrato de linhagens nobres, o grupo desbravou masmorras e esgotos, superando mortos-vivos e enigmas complexos. A jornada impôs provações extremas, desde combates contra uma rainha imortal até testes mentais punitivos em bibliotecas secretas; apesar das baixas, a resiliência dos heróis prevaleceu.</p>
+                    <p>Recentemente, invadiram a masmorra da casa Bladesemmer, onde derrotaram goblins e decifraram inscrições para romper mais um elo da maldição.</p>
+                </div>
+            </article>
+
+            <article class="historia-timeline-item historia-timeline-item-event">
+                <h3 class="historia-timeline-subheading">A Expedição Kuzunoha: Incursão ao Reino das Sombras</h3>
+                <div class="historia-timeline-card">
+                    <p>Liderada por Tomoe e Shiki a bordo da nau mágica <strong>Lótus Alado</strong>, a guilda cruzou o Plano Astral para estabelecer uma base em Shadowfell, o Reino das Sombras. Próximo a Evernight, os heróis retomaram um forte arruinado após combaterem aranhas corrompidas.</p>
+                    <p>A sobrevivência exigiu um pacto com os Shadar-kai. Em nome da Rainha Corvo, os aventureiros abateram um Dragão Sombrio, conquistando um artefato anticorrupção e acesso às "Estradas Sombrias" de teletransporte.</p>
+                    <p>Incursões posteriores revelaram uma geografia mutável, onde o grupo enfrentou harpias e dragonetes mortos-vivos para proteger mercadores. Em um embate estratégico, dizimaram goblins que ameaçavam o assentamento. O ponto alto foi a erradicação de um enclave de Zariel, impedindo que o conflito infernal se espalhasse pelo domínio da Rainha Corvo.</p>
+                    <p>A expedição encerrou-se com a descoberta de um minério raro que repele sombras. O Lótus Alado retornou ao Plano Material trazendo recursos valiosos, aliados inéditos e a certeza de que as trevas de Shadowfell ainda cruzarão o caminho da guilda.</p>
+                </div>
+            </article>
+
+            <article class="historia-timeline-item historia-timeline-item-event">
+                <h3 class="historia-timeline-subheading">Ameaças Emergentes e Expansão de Influência</h3>
+                <div class="historia-timeline-card">
+                    <p>Enquanto a guilda lidava com conspirações infernais, um vasto acampamento Orc surgiu na Costa da Espada. A organização incomum do assentamento sugeriu uma liderança externa forte.</p>
+                    <p>O surgimento de uma Lua de Sangue trouxe novos presságios, indicando o enfraquecimento dos selos planares.</p>
+                    <p>No cotidiano, a Caveira de Troll consolidou-se como a principal linha de defesa contra o caos. Entre a proteção de cargas e o combate a criaturas atraídas pela desordem, esses embates menores serviram para treinar recrutas e preparar veteranos para as ameaças maiores que ainda espreitam nas sombras.</p>
+                    <p>Com isso, a influência da guilda expandiu-se de forma inédita. Suas operações agora transcendem fronteiras geográficas e planares, abrangendo desde intervenções ao sul de Baldur's Gate e picos gélidos ao norte, até incursões estratégicas no perigoso Reino das Sombras.</p>
+                </div>
+            </article>
+        </section>
     </div>
+</main>
 
-<!-- Menu -->
-    <div id="sideMenu" style="position:fixed;top:0;left:-320px;width:300px;height:100%;background:#161616;transition:.3s;padding-top:40px;z-index:1000;border-right:3px solid #7a1d1d;">
-
-        <a class="menu-item" href="index.html">🏠 Home</a>
-        <a class="menu-item" href="regras.html">📜 Regras</a>
-        <a class="menu-item" href="historia.html">📖 História</a>
-        <a class="menu-item" href="ficha.html">🧙 Criação de Ficha</a>
-        <a class="menu-item" href="homebrew.html">⚒️ Homebrew</a>
-        <a class="menu-item" href="bazar.html">🏪 Bazar Blackstaff</a>
-        <a class="menu-item" href="magias.html">✨ Magias Homebrew</a>
-        <a class="menu-item" href="atividades.html">🎲 Atividades</a>
-        <a class="menu-item" href="profissoes.html">🛠️ Profissões</a>
-        <a class="menu-item" href="atualizacoes.html">🔄 Atualizações</a>
-        
-    </div>
-</header>
-    <main class="pagina-historia">
-        <div class="container historia-container">
-            <h1 class="historia">História da Guilda Caveira de Troll</h1>
-
-            <section class="historia-timeline" aria-label="Linha do tempo da Guilda Caveira de Troll">
-
-                <article class="historia-evento historia-evento--esquerda">
-                    <div class="historia-card historia-card--ano">
-                        <h2 class="historia-ano">Ano 1492 DR - Fundação</h2>
-                        <p class="historia-texto">A Guilda Caveira de Troll foi fundada no ano 1492 DR por um grupo de aventureiros audazes em Águas Profundas. Por uma década, a guilda prosperou, mas o perigo da Masmorra do Mago Louco consumiu muitos de seus membros, e as portas da guilda acabaram sendo fechadas.</p>
-                        <p class="historia-texto"><strong>Os Fundadores:</strong> <span class="fundadores">Monaliso, Stor Lackman, Dae Cheon, Callum Leafbourne e Murdock Grimveil.</span></p>
-                    </div>
-                </article>
-
-                <article class="historia-evento historia-evento--direita">
-                    <div class="historia-card historia-card--ano">
-                        <h2 class="historia-ano">Ano 1505 DR - O Renascimento</h2>
-                        <p class="historia-texto">Três anos depois, o lendário <strong>Volo</strong> decidiu reabrir suas portas. Ele busca atrair novos aventureiros dispostos a trilhar o caminho da glória, com o objetivo de expandir a influência da guilda muito além dos muros da cidade.</p>
-                    </div>
-                </article>
-
-                <article class="historia-evento historia-evento--esquerda historia-evento--subevento">
-                    <div class="historia-card">
-                        <h3 class="historia-subtitulo">Crescimento e Renovação</h3>
-                        <p class="historia-texto">O sucesso inicial pavimentou o caminho para a expansão. A guilda rapidamente atraiu uma nova leva de aventureiros talentosos, garantindo o aumento de seu quadro de membros e, consequentemente, a ampliação de sua área de atuação.</p>
-                        <p class="historia-texto">A sede da guilda passou por uma reforma completa, culminando na construção de uma forja, um recurso crucial que permitiu maior autonomia e capacidade de preparação para seus membros.</p>
-                    </div>
-                </article>
-
-                <article class="historia-evento historia-evento--direita historia-evento--subevento">
-                    <div class="historia-card">
-                        <h3 class="historia-subtitulo">Ações e Conflitos</h3>
-                        <p class="historia-texto">O volume de missões aumentou, colocando a Guilda no mapa das principais facções da Costa da Espada. Entre as atividades mais importantes do ano, destacam-se:</p>
-                        <ul class="historia-lista">
-                            <li><strong>Apoio à Nobreza:</strong> Auxílio vital a nobres de Águas Profundas, fortalecendo relações políticas.</li>
-                            <li><strong>Confrontos:</strong> Cooperação com facções aliadas e combate direto a sindicatos criminosos, notavelmente a <strong>Guilda Xanathar</strong>.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="historia-evento historia-evento--esquerda historia-evento--subevento">
-                    <div class="historia-card">
-                        <h3 class="historia-subtitulo">O Ponto Alto: A Crise do Culto de Strahd</h3>
-                        <p class="historia-texto">O evento mais decisivo e de maior impacto do ano foi a intervenção da guilda em um problema envolvendo um Culto dedicado à Strahd.</p>
-                        <p class="historia-texto">Esta ameaça estendeu-se para além das muralhas de Águas Profundas, exigindo a assistência da guilda em Neverwinter.</p>
-                        <p class="historia-texto">A Guilda Caveira de Troll não apenas auxiliou Neverwinter e uma influente família nobre de Águas Profundas, mas também conseguiu proteger artefatos mágicos cruciais. Ao fazê-lo, impediram que o culto abrisse um portal, bloqueando a potencial invasão do lorde vampiro <strong>Strahd Von Zarovich</strong> ao plano mundano.</p>
-                        <p class="historia-texto">A resolução bem-sucedida dessa ameaça catapultou a reputação da guilda. Seu nome é agora amplamente conhecido e respeitado em grande parte da Costa da Espada. Como resultado, a Guilda Caveira de Troll não está mais restrita a Águas Profundas, realizando missões em cidades e locais cada vez mais distantes, consolidando-se como uma força aventureira de grande renome.</p>
-                    </div>
-                </article>
-
-                <article class="historia-evento historia-evento--direita">
-                    <div class="historia-card historia-card--ano">
-                        <h2 class="historia-ano">1506: O Ano das Fendas e Sombras</h2>
-                        <p class="historia-texto">O ano de 1506 marcou uma fase de expansão, ameaças planares e missões decisivas que levaram a Guilda Caveira de Troll para além de Águas Profundas.</p>
-                    </div>
-                </article>
-
-                <article class="historia-evento historia-evento--esquerda historia-evento--subevento">
-                    <div class="historia-card">
-                        <h3 class="historia-subtitulo">Conflitos Infernais</h3>
-                        <p class="historia-texto">Fendas dimensionais e criaturas diabólicas indicam que o Plano Material é alvo de forças ocultas. O <strong>Culto de Zariel</strong> lidera essa ofensiva na Costa da Espada; em Neverwinter, cultistas e drows tentaram corromper o <strong>Santuário do Guardião</strong>, mas foram derrotados em uma disputa pelo <strong>Fragmento do Inverno</strong>.</p>
-                        <p class="historia-texto">Paralelamente, outros Diabos agem nas sombras, selando pactos e testando aventureiros. Essa influência já deforma a natureza, criando animais corrompidos nos arredores de Waterdeep.</p>
-                        <p class="historia-texto">Embora a guilda tenha impedido a libertação de mil Diabos Maiores ao proteger o <strong>Cálice das Almas</strong>, a tensão persiste. Um eclipse trouxe vozes sinistras e, em Baldur’s Gate, guardas do Rio Styx surgiram em busca da jovem Elsa, a <strong>Feiticeira do Gelo</strong>.</p>
-                        <p class="historia-texto">Convertendo feras controladas revelou essências transformadas em cristais de mana. Um desses fragmentos, com um símbolo misterioso, despertou o temor do lendário <strong>Elminster Aumar</strong>.</p>
-                    </div>
-                </article>
-
-                <article class="historia-evento historia-evento--direita historia-evento--subevento">
-                    <div class="historia-card">
-                        <h3 class="historia-subtitulo">Guerra das Sombras: Operação Xanathar</h3>
-                        <p class="historia-texto">A Aliança dos Lordes convocou a Caveira de Troll, para neutralizar esconderijos estratégicos da Guilda Xanathar. A primeira incursão revelou postos avançados cruciais do sindicato criminoso, desencadeando a <strong>Operação Xanathar</strong> — uma coalizão entre grandes facções de Waterdeep.</p>
-                        <p class="historia-texto">A vitória, porém, teve um custo alto: a destruição de um entreposto logístico resultou na morte de quatro aventureiros. Motivada pelo luto, a guilda lançou um novo ataque bem-sucedido, sem baixas, recuperando a localização do esconderijo principal inimigo. A ofensiva prossegue, visando o desmantelamento total do império de Xanathar.</p>
-                    </div>
-                </article>
-
-                <article class="historia-evento historia-evento--esquerda historia-evento--subevento">
-                    <div class="historia-card">
-                        <h3 class="historia-subtitulo">Serenya: A Saga das Treze Correntes</h3>
-                        <p class="historia-texto">Elyndra Vaelora convocou a guilda para libertar sua ancestral, <strong>Serenya Valehart</strong>, presa em Waterdeep por uma maldição secular. Um livro místico guia os heróis por 13 desafios, cada um vinculado a uma casa nobre responsável pelo aprisionamento.</p>
-                        <p class="historia-texto">Sob contrato de linhagens nobres, o grupo desbravou masmorras e esgotos, superando mortos-vivos e enigmas complexos. A jornada impôs provações extremas, desde combates contra uma rainha imortal até testes mentais punitivos em bibliotecas secretas; apesar das baixas, a resiliência dos heróis prevaleceu.</p>
-                        <p class="historia-texto">Recentemente, invadiram a masmorra da casa Bladesemmer, onde derrotaram goblins e decifraram inscrições para romper mais um elo da maldição.</p>
-                    </div>
-                </article>
-
-                <article class="historia-evento historia-evento--direita historia-evento--subevento">
-                    <div class="historia-card">
-                        <h3 class="historia-subtitulo">A Expedição Kuzunoha: Incursão ao Reino das Sombras</h3>
-                        <p class="historia-texto">Liderada por Tomoe e Shiki a bordo da nau mágica <strong>Lótus Alado</strong>, a guilda cruzou o Plano Astral para estabelecer uma base em Shadowfell, o Reino das Sombras. Próximo a Evernight, os heróis retomaram um forte arruinado após combaterem aranhas corrompidas.</p>
-                        <p class="historia-texto">A sobrevivência exigiu um pacto com os Shadar-kai. Em nome da Rainha Corvo, os aventureiros abateram um Dragão Sombrio, conquistando um artefato anticorrupção e acesso às "Estradas Sombrias" de teletransporte.</p>
-                        <p class="historia-texto">Incursões posteriores revelaram uma geografia mutável, onde o grupo enfrentou harpias e dragonetes mortos-vivos para proteger mercadores. Em um embate estratégico, dizimaram goblins que ameaçavam o assentamento. O ponto alto foi a erradicação de um enclave de Zariel, impedindo que o conflito infernal se espalhasse pelo domínio da Rainha Corvo.</p>
-                        <p class="historia-texto">A expedição encerrou-se com a descoberta de um minério raro que repele sombras. O Lótus Alado retornou ao Plano Material trazendo recursos valiosos, aliados inéditos e a certeza de que as trevas de Shadowfell ainda cruzarão o caminho da guilda.</p>
-                    </div>
-                </article>
-
-                <article class="historia-evento historia-evento--esquerda historia-evento--subevento">
-                    <div class="historia-card">
-                        <h3 class="historia-subtitulo">Ameaças Emergentes e Expansão de Influência</h3>
-                        <p class="historia-texto">Enquanto a guilda lidava com conspirações infernais, um vasto acampamento Orc surgiu na Costa da Espada. A organização incomum do assentamento sugeriu uma liderança externa forte.</p>
-                        <p class="historia-texto">O surgimento de uma Lua de Sangue trouxe novos presságios, indicando o enfraquecimento dos selos planares.</p>
-                        <p class="historia-texto">No cotidiano, a Caveira de Troll consolidou-se como a principal linha de defesa contra o caos. Entre a proteção de cargas e o combate a criaturas atraídas pela desordem, esses embates menores serviram para treinar recrutas e preparar veteranos para as ameaças maiores que ainda espreitam nas sombras.</p>
-                        <p class="historia-texto">Com isso, a influência da guilda expandiu-se de forma inédita. Suas operações agora transcendem fronteiras geográficas e planares, abrangendo desde intervenções ao sul de Baldur's Gate e picos gélidos ao norte, até incursões estratégicas no perigoso Reino das Sombras.</p>
-                    </div>
-                </article>
-
-            </section>
-        </div>
-    </main>
-    <script src="js/menu.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>

@@ -7,40 +7,18 @@
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
-<header>
-    <div style="display:flex;align-items:center;gap:15px;">
-        <button id="menuBtn" style="background:none;border:none;color:#f3e7c3;font-size:32px;cursor:pointer;">☰</button>
-        <div class="logo">
-            <img src="https://i.imgur.com/OJJnoaL.png" alt="Logo da Guilda" class="logo-guilda">
-            <h1 class="titulo-principal">Guilda Caveira de Troll</h1>
-        </div>
-    </div>
-
-<!-- Menu -->
-    <div id="sideMenu" style="position:fixed;top:0;left:-320px;width:300px;height:100%;background:#161616;transition:.3s;padding-top:40px;z-index:1000;border-right:3px solid #7a1d1d;">
-
-        <a class="menu-item" href="index.html">🏠 Home</a>
-        <a class="menu-item" href="regras.html">📜 Regras</a>
-        <a class="menu-item" href="historia.html">📖 História</a>
-        <a class="menu-item" href="ficha.html">🧙 Criação de Ficha</a>
-        <a class="menu-item" href="homebrew.html">⚒️ Homebrew</a>
-        <a class="menu-item" href="bazar.html">🏪 Bazar Blackstaff</a>
-        <a class="menu-item" href="magias.html">✨ Magias Homebrew</a>
-        <a class="menu-item" href="atividades.html">🎲 Atividades</a>
-        <a class="menu-item" href="profissoes.html">🛠️ Profissões</a>
-        <a class="menu-item" href="atualizacoes.html">🔄 Atualizações</a>
-        
-    </div>
-</header>
-<main>
+    <div id="site-header"></div>
+    <script src="js/header.js"></script>
+<main class="pagina-magias">
     <div class="container">
     <section class="magias">
+        <img src="imagens/magias.png" class="capa-magias" alt="Capa de Magias">
             <h1>Magias Modificadas</h1>
             <p>Magias oficiais que receberam alguma alteração em nosso servidor</p>
         
             <div class="spell-grid">
     
-                <div class="spell-box">
+                <div class="spell-box" id="magia-garras-da-escuridao">
                     <h3>Garras da Escuridão</h3>
                     <p class="spell-type">Evocação - Truque</p>
                     <div class="spell-stats">
@@ -57,7 +35,7 @@
                     </div>
                 </div>
             
-                <div class="spell-box">
+                <div class="spell-box" id="magia-tiro-elfico">
                     <h3>Tiro Élfico</h3>
                     <p class="spell-type">Encantamento de 1º nível</p>
                     <div class="spell-stats">
@@ -74,7 +52,7 @@
                     </div>
                 </div>
             
-                <div class="spell-box">
+                <div class="spell-box" id="magia-sussurros-enlouquecedores">
                     <h3>Sussurros Enlouquecedores</h3>
                     <p class="spell-type">Necromancia de 2º nível</p>
                     <div class="spell-stats">
@@ -91,7 +69,7 @@
                     </div>
                 </div>
             
-                <div class="spell-box">
+                <div class="spell-box" id="magia-brinde-de-fada">
                     <h3>Brinde de Fada</h3>
                     <p class="spell-type">Transmutação de 3º nível (ritual)</p>
                     <div class="spell-stats">
@@ -113,7 +91,7 @@
                     </div>
                 </div>
             
-                <div class="spell-box">
+                <div class="spell-box" id="magia-festa-da-carne">
                     <h3>Festa da Carne</h3>
                     <p class="spell-type">Transmutação de 5º nível</p>
                     <div class="spell-stats">
@@ -130,7 +108,7 @@
                     </div>
                 </div>
             
-                <div class="spell-box">
+                <div class="spell-box" id="magia-conjurar-seres-do-bosque-tce">
                     <h3>Conjurar Seres do Bosque (TCE)</h3>
                     <p class="spell-type">Conjuração de 4º nível</p>
                     
@@ -144,19 +122,19 @@
                     
                     <div class="spell-description">
                         <p>Você evoca seres feéricos que aparecem em espaços desocupados que você possa ver dentro do alcance.</p>
-                        <p><strong>Modificação da Guilda (Pixie):</strong> A criatura *Pixie* será considerada de <strong>CR 1</strong> e com <strong>HP médio (6) 3d4-1</strong> ao ser invocada através desta magia.</p>
+                        <p><strong>Modificação da Guilda (Pixie):</strong> A criatura <em>Pixie</em> será considerada de <strong>CR 1</strong> e com <strong>HP médio (6) 3d4-1</strong> ao ser invocada através desta magia.</p>
                         <p class="spell-classes"><strong>Classes:</strong> Druida e Patrulheiro</p>
                     </div>
+                </div>
 
                 <!-- MAGIA FIND FAMILIAR / MOVER FUTURAMENTE-->
-                <div class="spell-box">
+                <div class="spell-box" id="magia-upcast-encontrar-familiar">
                     <h3>Upcast Encontrar Familiar</h3>
                     <div class="spell-description">
-                    <p>Ao conjurar a magia Encontrar Familiar, você pode escolher gastar 50 po em materiais para invocar formas especiais: <em>Imp, Pseudodragon, Quasit, Sprite ou Sunfly</em>.</p>
+                        <p>Ao conjurar a magia Encontrar Familiar, você pode escolher gastar 50 po em materiais para invocar formas especiais: <em>Imp, Pseudodragon, Quasit, Sprite ou Sunfly</em>.</p>
                     </div>
                 </div>
             </div>
-        </div>        
     </section>
     <section class="magias">
         <h1>Lista de Magias Homebrews</h1>
@@ -168,31 +146,31 @@
                 <div class="level-group">
                     <h5>Truque (Nível 0)</h5>
                     <ul>
-                        <li><a href="#p6">Explosão Hidráulica</a></li>
-                        <li><a href="#p7">Maré Baixa</a></li>
-                        <li><a href="#p7">Molhar</a></li>
+                        <li><a href="#magia-explosao-hidraulica">Explosão Hidráulica</a></li>
+                        <li><a href="#magia-mare-baixa">Maré Baixa</a></li>
+                        <li><a href="#magia-molhar">Molhar</a></li>
                     </ul>
                 </div>
                 
                 <div class="level-group">
                     <h5>1º Nível</h5>
                     <ul>
-                        <li><a href="#p7">Jato de Água</a></li>
+                        <li><a href="#magia-jato-de-agua">Jato de Água</a></li>
                     </ul>
                 </div>
                 
                 <div class="level-group">
                     <h5>2º Nível</h5>
                     <ul>
-                        <li><a href="#p5">Animar Ghoul</a></li>
-                        <li><a href="#p6">Desidratação</a></li>
+                        <li><a href="#magia-animar-ghoul">Animar Ghoul</a></li>
+                        <li><a href="#magia-desidratacao">Desidratação</a></li>
                     </ul>
                 </div>
         
                 <div class="level-group">
                     <h5>3º Nível</h5>
                     <ul>
-                        <li><a href="#p8">Represália Efervecente</a></li>
+                        <li><a href="#magia-represalia-fervente">Represália Fervente</a></li>
                     </ul>
                 </div>
             </div>
@@ -202,23 +180,23 @@
                 <div class="level-group">
                     <h5>4º Nível</h5>
                     <ul>
-                        <li><a href="#p7">Onda Turbulenta</a></li>
+                        <li><a href="#magia-onda-turbulenta">Onda Turbulenta</a></li>
                     </ul>
                 </div>
                 
                 <div class="level-group">
                     <h5>5º Nível</h5>
                     <ul>
-                        <li><a href="#p5">Contra-Corrente</a></li>
+                        <li><a href="#magia-contra-corrente">Contra-Corrente</a></li>
                     </ul>
                 </div>
                 
                 <div class="level-group">
                     <h5>6º Nível</h5>
                     <ul>
-                        <li><a href="#p4">Afogamento</a></li>
-                        <li><a href="#p5">Armamentos Líquidos</a></li>
-                        <li><a href="#p6">Cúpula de Juriath</a></li>
+                        <li><a href="#magia-afogamento">Afogamento</a></li>
+                        <li><a href="#magia-armamentos-liquidos">Armamentos Líquidos</a></li>
+                        <li><a href="#magia-cupula-de-juriath">Cúpula de Juriath</a></li>
                     </ul>
                 </div>
             </div>
@@ -228,15 +206,15 @@
                 <div class="level-group">
                     <h5>7º Nível</h5>
                     <ul>
-                        <li><a href="#p5">Animar Mortos-vivos Maiores</a></li>
-                        <li><a href="#p6">Criar Gêiser</a></li>
+                        <li><a href="#magia-animar-mortos-vivos-maiores">Animar Mortos-vivos Maiores</a></li>
+                        <li><a href="#magia-criar-geiser">Criar Gêiser</a></li>
                     </ul>
                 </div>
                 
                 <div class="level-group">
                     <h5>9º Nível</h5>
                     <ul>
-                        <li><a href="#p4">Mar Repentino</a></li>
+                        <li><a href="#magia-mar-repentino">Mar Repentino</a></li>
                     </ul>
                 </div>
             </div>
@@ -285,7 +263,7 @@
             <tr><td>Maré Baixa</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
             <tr><td>Molhar</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
             <tr><td>Onda Turbulenta</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
-            <tr><td>Represália Efervecente</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
+            <tr><td>Represália Fervente</td><td>Mago, Feiticeiro, Druida, Bruxo (Abissal) e Clérigo (Tempestade e Natureza)</td></tr>
         </tbody>
     </table>
     </div>
@@ -293,8 +271,8 @@
     </div>
         <div class="spell-grid">
             
-            <div class="spell-box">
-                <h3>Afogamento</h3>
+            <div class="spell-box" id="magia-afogamento">
+                    <h3>Afogamento</h3>
                 <p class="spell-type">Evocação de 6º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -308,8 +286,8 @@
                 </div>
             </div>
     
-            <div class="spell-box">
-                <h3>Animar Ghoul</h3>
+            <div class="spell-box" id="magia-animar-ghoul">
+                    <h3>Animar Ghoul</h3>
                 <p class="spell-type">Necromancia de 2º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -318,14 +296,14 @@
                     <p><strong>Duração:</strong> Instantânea</p>
                 </div>
                 <div class="spell-description">
-                    <p>Ressuscita um humanoide de tamanho Médio ou Pequeno como um <a href="https://2014.5e.tools/bestiary.html#ghoul_mm" target="_blank">Ghoul</a> sob seu controle total.</p>
-                    <p><strong>Em níveis superiores:</strong> Se conjurada usando um espaço de 3º nível, cria um Ghoul Grande. Ao usar um espaço de 4º nível ou superior, cria um <a href="https://2014.5e.tools/bestiary.html#ghast_mm" target="_blank">Ghast</a> (requer uma pedra de ônix no valor de 200 po).</p>
+                    <p>Ressuscita um humanoide de tamanho Médio ou Pequeno como um <a href="https://2014.5e.tools/bestiary.html#ghoul_mm" target="_blank" rel="noopener noreferrer">Ghoul</a> sob seu controle total.</p>
+                    <p><strong>Em níveis superiores:</strong> Se conjurada usando um espaço de 3º nível, cria um Ghoul Grande. Ao usar um espaço de 4º nível ou superior, cria um <a href="https://2014.5e.tools/bestiary.html#ghast_mm" target="_blank" rel="noopener noreferrer">Ghast</a> (requer uma pedra de ônix no valor de 200 po).</p>
                     <p class="spell-classes"><strong>Classes:</strong> Bruxo, Clérigo e Mago</p>
                 </div>
             </div>
     
-            <div class="spell-box">
-                <h3>Animar Mortos-vivos Maiores</h3>
+            <div class="spell-box" id="magia-animar-mortos-vivos-maiores">
+                    <h3>Animar Mortos-vivos Maiores</h3>
                 <p class="spell-type">Necromancia de 6º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 hora</p>
@@ -334,14 +312,14 @@
                     <p><strong>Duração:</strong> Instantânea</p>
                 </div>
                 <div class="spell-description">
-                    <p>Cria um servo a partir de ossos ou de um cadáver de tamanho Grande ou Enorme. Um esqueleto usa a ficha de <a href="https://2014.5e.tools/bestiary.html#minotaur%20skeleton_mm" target="_blank">Minotauro Esqueleto</a>, enquanto um zumbi utiliza as estatísticas de um <a href="https://2014.5e.tools/bestiary.html#ogre%20zombie_mm" target="_blank">Ogro Zumbi</a>.</p>
+                    <p>Cria um servo a partir de ossos ou de um cadáver de tamanho Grande ou Enorme. Um esqueleto usa a ficha de <a href="https://2014.5e.tools/bestiary.html#minotaur%20skeleton_mm" target="_blank" rel="noopener noreferrer">Minotauro Esqueleto</a>, enquanto um zumbi utiliza as estatísticas de um <a href="https://2014.5e.tools/bestiary.html#ogre%20zombie_mm" target="_blank" rel="noopener noreferrer">Ogro Zumbi</a>.</p>
                     <p><strong>Em níveis superiores:</strong> Você pode animar +1 criatura adicional para cada nível de espaço acima do 6º nível.</p>
                     <p class="spell-classes"><strong>Classes:</strong> Bruxo, Clérigo e Mago</p>
                 </div>
             </div>
     
-            <div class="spell-box">
-                <h3>Armamentos Líquidos</h3>
+            <div class="spell-box" id="magia-armamentos-liquidos">
+                    <h3>Armamentos Líquidos</h3>
                 <p class="spell-type">Evocação de 6º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -355,8 +333,8 @@
                 </div>
             </div>
     
-            <div class="spell-box">
-                <h3>Contra-Corrente</h3>
+            <div class="spell-box" id="magia-contra-corrente">
+                    <h3>Contra-Corrente</h3>
                 <p class="spell-type">Evocação de 5º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -370,8 +348,8 @@
                 </div>
             </div>
     
-            <div class="spell-box">
-                <h3>Criar Gêiser</h3>
+            <div class="spell-box" id="magia-criar-geiser">
+                    <h3>Criar Gêiser</h3>
                 <p class="spell-type">Transmutação de 7º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -385,8 +363,8 @@
                 </div>
             </div>
     
-            <div class="spell-box">
-                <h3>Cúpula de Juriath</h3>
+            <div class="spell-box" id="magia-cupula-de-juriath">
+                    <h3>Cúpula de Juriath</h3>
                 <p class="spell-type">Evocação de 6º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -400,8 +378,8 @@
                 </div>
             </div>
     
-            <div class="spell-box">
-                <h3>Desidratação</h3>
+            <div class="spell-box" id="magia-desidratacao">
+                    <h3>Desidratação</h3>
                 <p class="spell-type">Transmutação de 2º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -416,8 +394,8 @@
                 </div>
             </div>
     
-            <div class="spell-box">
-                <h3>Explosão Hidráulica</h3>
+            <div class="spell-box" id="magia-explosao-hidraulica">
+                    <h3>Explosão Hidráulica</h3>
                 <p class="spell-type">Evocação - Truque</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -432,8 +410,8 @@
                 </div>
             </div>
     
-            <div class="spell-box">
-                <h3>Jato de Água</h3>
+            <div class="spell-box" id="magia-jato-de-agua">
+                    <h3>Jato de Água</h3>
                 <p class="spell-type">Evocação de 1º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -448,8 +426,8 @@
                 </div>
             </div>
     
-            <div class="spell-box">
-                <h3>Mar Repentino</h3>
+            <div class="spell-box" id="magia-mar-repentino">
+                    <h3>Mar Repentino</h3>
                 <p class="spell-type">Transmutação de 9º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -463,8 +441,8 @@
                 </div>
             </div>
     
-            <div class="spell-box">
-                <h3>Maré Baixa</h3>
+            <div class="spell-box" id="magia-mare-baixa">
+                    <h3>Maré Baixa</h3>
                 <p class="spell-type">Evocação - Truque</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -478,8 +456,8 @@
                 </div>
             </div>
     
-            <div class="spell-box">
-                <h3>Molhar</h3>
+            <div class="spell-box" id="magia-molhar">
+                    <h3>Molhar</h3>
                 <p class="spell-type">Evocação - Truque</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -494,8 +472,8 @@
                 </div>
             </div>
     
-            <div class="spell-box">
-                <h3>Onda Turbulenta</h3>
+            <div class="spell-box" id="magia-onda-turbulenta">
+                    <h3>Onda Turbulenta</h3>
                 <p class="spell-type">Transmutação de 4º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -509,8 +487,8 @@
                 </div>
             </div>
     
-            <div class="spell-box">
-                <h3>Represália Fervente</h3>
+            <div class="spell-box" id="magia-represalia-fervente">
+                    <h3>Represália Fervente</h3>
                 <p class="spell-type">Evocação de 3º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 reação</p>
@@ -528,6 +506,7 @@
     </section>
     
     <section class="magias">
+        <img src="imagens/sanguimancia.png" class="capa-sanguimancia" alt="Capa Sanguimancia">
         <h1 class="sanguimancia">Sanguimancia</h1>
         <h2>Magias de Sangue</h2>
         
@@ -535,7 +514,7 @@
     
         <p>Essa forma de magia é predominantemente empunhada por aqueles dedicados a seus segredos mais sombrios: os enigmáticos <strong>Magos de Sangue</strong> e os devotos (e muitas vezes heréticos) <strong>Clérigos de Sangue</strong>. Enquanto eles mergulham fundo nos mistérios da <em>vitae</em>, outras classes podem, ocasionalmente, ter acesso a fragmentos desse poder através de itens arcanos como Pergaminhos ou Tatuagens, cujos efeitos, por mais úteis que sejam, sempre carregam o eco de um tabu.</p>
     
-        <p>A busca por essa maestria exige um preço, e those que ousam trilhar o caminho carmesim são frequentemente vistos com péssimos olhos, não importando a intenção por trás de seus feitiços. Pois o sangue, para muitos, é a essência da vida, e brincar com ele é brincar com a própria alma.</p>
+        <p>A busca por essa maestria exige um preço, e aqueles que ousam trilhar o caminho carmesim são frequentemente vistos com péssimos olhos, não importando a intenção por trás de seus feitiços. Pois o sangue, para muitos, é a essência da vida, e brincar com ele é brincar com a própria alma.</p>
 
         <h2>Lista de Magias</h2>
     
@@ -546,35 +525,35 @@
                 <div class="level-group">
                     <h5>Truques (Nível 0)</h5>
                     <ul>
-                        <li><a href="#p14">Mordida Sangrenta</a></li>
-                        <li><a href="#p14">Ponte de Sangue</a></li>
-                        <li><a href="#p15">Raio de Sangue</a></li>
-                        <li><a href="#p16">Sangramento</a></li>
+                        <li><a href="#magia-mordida-sangrenta">Mordida Sangrenta</a></li>
+                        <li><a href="#magia-ponte-de-sangue">Ponte de Sangue</a></li>
+                        <li><a href="#magia-raio-de-sangue">Raio de Sangue</a></li>
+                        <li><a href="#magia-sangramento">Sangramento</a></li>
                     </ul>
                 </div>
                 
                 <div class="level-group">
                     <h5>1º Nível</h5>
                     <ul>
-                        <li><a href="#p13">Drenagem de Sangue</a></li>
-                        <li><a href="#p14">Impressão de Sangue</a></li>
+                        <li><a href="#magia-drenagem-de-sangue">Drenagem de Sangue</a></li>
+                        <li><a href="#magia-impressao-de-sangue">Impressão de Sangue</a></li>
                     </ul>
                 </div>
                 
                 <div class="level-group">
                     <h5>2º Nível</h5>
                     <ul>
-                        <li><a href="#p16">Selo de Sangue</a></li>
-                        <li><a href="#p17">Ventríloquo de Sangue</a></li>
+                        <li><a href="#magia-selo-de-sangue">Selo de Sangue</a></li>
+                        <li><a href="#magia-ventriloquo-de-sangue">Ventríloquo de Sangue</a></li>
                     </ul>
                 </div>
         
                 <div class="level-group">
                     <h5>3º Nível</h5>
                     <ul>
-                        <li><a href="#p13">Explosão de Sangue</a></li>
-                        <li><a href="#p14">Sangue Animado</a></li>
-                        <li><a href="#p14">Sangue Congelante</a></li>
+                        <li><a href="#magia-explosao-de-sangue">Explosão de Sangue</a></li>
+                        <li><a href="#magia-sangue-animado">Sangue Animado</a></li>
+                        <li><a href="#magia-sangue-congelante">Sangue Congelante</a></li>
                     </ul>
                 </div>
             </div>
@@ -584,26 +563,26 @@
                 <div class="level-group">
                     <h5>4º Nível</h5>
                     <ul>
-                        <li><a href="#p12">Chuva de Sangue</a></li>
-                        <li><a href="#p12">Frenesi de Sangue</a></li>
-                        <li><a href="#p14">Manto de Sangue</a></li>
+                        <li><a href="#magia-chuva-de-sangue">Chuva de Sangue</a></li>
+                        <li><a href="#magia-frenesi-de-sangue">Frenesi de Sangue</a></li>
+                        <li><a href="#magia-manto-de-sangue">Manto de Sangue</a></li>
                     </ul>
                 </div>
                 
                 <div class="level-group">
                     <h5>5º Nível</h5>
                     <ul>
-                        <li><a href="#p12">Canalizar Avatar de Sangue</a></li>
-                        <li><a href="#p14">Horror Sanguíneo</a></li>
-                        <li><a href="#p16">Tentáculos Sangrentos</a></li>
+                        <li><a href="#magia-canalizar-avatar-de-sangue">Canalizar Avatar de Sangue</a></li>
+                        <li><a href="#magia-horror-sanguineo">Horror Sanguíneo</a></li>
+                        <li><a href="#magia-tentaculos-sangrentos">Tentáculos Sangrentos</a></li>
                     </ul>
                 </div>
                 
                 <div class="level-group">
                     <h5>6º Nível</h5>
                     <ul>
-                        <li><a href="#p12">Cartografia de Sangue</a></li>
-                        <li><a href="#p14">Ventríloquo de Sangue em Massa</a></li>
+                        <li><a href="#magia-cartografia-do-sangue">Cartografia do Sangue</a></li>
+                        <li><a href="#magia-ventriloquo-de-sangue-em-massa">Ventríloquo de Sangue em Massa</a></li>
                     </ul>
                 </div>
             </div>
@@ -613,25 +592,25 @@
                 <div class="level-group">
                     <h5>7º Nível</h5>
                     <ul>
-                        <li><a href="#p12">Criaturas Sanguíneas</a></li>
-                        <li><a href="#p13">Ferver o Sangue</a></li>
-                        <li><a href="#p17">Transporte por Sangue</a></li>
+                        <li><a href="#magia-criaturas-sanguineas">Criaturas Sanguíneas</a></li>
+                        <li><a href="#magia-ferver-o-sangue">Ferver o Sangue</a></li>
+                        <li><a href="#magia-transporte-via-sangue">Transporte via Sangue</a></li>
                     </ul>
                 </div>
         
                 <div class="level-group">
                     <h5>8º Nível</h5>
                     <ul>
-                        <li><a href="#p15">Sangue Divino</a></li>
-                        <li><a href="#p16">Tempestade de Sangue</a></li>
+                        <li><a href="#magia-sangue-divino">Sangue Divino</a></li>
+                        <li><a href="#magia-tempestade-de-sangue">Tempestade de Sangue</a></li>
                     </ul>
                 </div>
                 
                 <div class="level-group">
                     <h5>9º Nível</h5>
                     <ul>
-                        <li><a href="#p13">Drenar Vida</a></li>
-                        <li><a href="#p15">Sangue para Ácido</a></li>
+                        <li><a href="#magia-drenar-vida">Drenar Vida</a></li>
+                        <li><a href="#magia-sangue-para-acido">Sangue para Ácido</a></li>
                     </ul>
                 </div>
             </div>
@@ -655,7 +634,7 @@
                     </thead>
                     <tbody>
                         <tr><td>Canalizar Avatar de Sangue</td><td>Mago</td></tr>
-                        <tr><td>Cartografia de Sangue</td><td>Mago / Clérigo</td></tr>
+                        <tr><td>Cartografia do Sangue</td><td>Mago / Clérigo</td></tr>
                         <tr><td>Chuva de Sangue</td><td>Clérigo</td></tr>
                         <tr><td>Criaturas Sanguíneas</td><td>Clérigo</td></tr>
                         <tr><td>Drenagem de Sangue</td><td>Mago</td></tr>
@@ -689,7 +668,7 @@
                         <tr><td>Selo de Sangue</td><td>Mago / Clérigo</td></tr>
                         <tr><td>Tempestade de Sangue</td><td>Mago</td></tr>
                         <tr><td>Tentáculos Sangrentos</td><td>Mago</td></tr>
-                        <tr><td>Transporte por Sangue</td><td>Mago</td></tr>
+                        <tr><td>Transporte via Sangue</td><td>Mago</td></tr>
                         <tr><td>Ventríloquo de Sangue</td><td>Mago</td></tr>
                         <tr><td>Ventríloquo de Sangue em Massa</td><td>Mago</td></tr>
                     </tbody>
@@ -701,8 +680,8 @@
         <div class="spell-grid">
             
             <!-- Canalizar Avatar de Sangue -->
-            <div class="spell-box">
-                <h3>Canalizar Avatar de Sangue</h3>
+            <div class="spell-box" id="magia-canalizar-avatar-de-sangue">
+                    <h3>Canalizar Avatar de Sangue</h3>
                 <p class="spell-type">Necromancia de 5º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -731,8 +710,8 @@
             </div>
     
             <!-- Cartografia do Sangue -->
-            <div class="spell-box">
-                <h3>Cartografia do Sangue</h3>
+            <div class="spell-box" id="magia-cartografia-do-sangue">
+                    <h3>Cartografia do Sangue</h3>
                 <p class="spell-type">Necromancia de 6º nível (ritual)</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -748,8 +727,8 @@
             </div>
     
             <!-- Chuva de Sangue -->
-            <div class="spell-box">
-                <h3>Chuva de Sangue</h3>
+            <div class="spell-box" id="magia-chuva-de-sangue">
+                    <h3>Chuva de Sangue</h3>
                 <p class="spell-type">Necromancia de 4º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -766,8 +745,8 @@
             </div>
     
             <!-- Criaturas Sanguíneas -->
-            <div class="spell-box">
-                <h3>Criaturas Sanguíneas</h3>
+            <div class="spell-box" id="magia-criaturas-sanguineas">
+                    <h3>Criaturas Sanguíneas</h3>
                 <p class="spell-type">Necromancia de 7º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -783,8 +762,8 @@
             </div>
     
             <!-- Drenagem de Sangue -->
-            <div class="spell-box">
-                <h3>Drenagem de Sangue</h3>
+            <div class="spell-box" id="magia-drenagem-de-sangue">
+                    <h3>Drenagem de Sangue</h3>
                 <p class="spell-type">Necromancia de 1º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -800,8 +779,8 @@
             </div>
     
             <!-- Drenar Vida -->
-            <div class="spell-box">
-                <h3>Drenar Vida</h3>
+            <div class="spell-box" id="magia-drenar-vida">
+                    <h3>Drenar Vida</h3>
                 <p class="spell-type">Necromancia de 9º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -816,8 +795,8 @@
             </div>
     
             <!-- Explosão de Sangue -->
-            <div class="spell-box">
-                <h3>Explosão de Sangue</h3>
+            <div class="spell-box" id="magia-explosao-de-sangue">
+                    <h3>Explosão de Sangue</h3>
                 <p class="spell-type">Necromancia de 3º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -833,8 +812,8 @@
             </div>
     
             <!-- Ferver o Sangue -->
-            <div class="spell-box">
-                <h3>Ferver o Sangue</h3>
+            <div class="spell-box" id="magia-ferver-o-sangue">
+                    <h3>Ferver o Sangue</h3>
                 <p class="spell-type">Necromancia de 7º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -854,8 +833,8 @@
             </div>
     
             <!-- Frenesi de Sangue -->
-            <div class="spell-box">
-                <h3>Frenesi de Sangue</h3>
+            <div class="spell-box" id="magia-frenesi-de-sangue">
+                    <h3>Frenesi de Sangue</h3>
                 <p class="spell-type">Encantamento de 4º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -876,8 +855,8 @@
             </div>
     
             <!-- Horror Sanguíneo -->
-            <div class="spell-box">
-                <h3>Horror Sanguíneo</h3>
+            <div class="spell-box" id="magia-horror-sanguineo">
+                    <h3>Horror Sanguíneo</h3>
                 <p class="spell-type">Conjuração de 5º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -886,14 +865,14 @@
                     <p><strong>Duração:</strong> Concentração, até 1 hora</p>
                 </div>
                 <div class="spell-description">
-                    <p>Ao conjurar esta magia, você se perfura com o componente material, sofrendo 1 de dano perfurante. A magia falha se esse dano for prevenido ou negado de alguma forma. Da gota de sangue, você conjura um <a href="https://2014.5e.tools/bestiary.html#blood%20elemental_ccodex" target="_blank">Elemental de Sangue</a> sob seu comando.</p>
+                    <p>Ao conjurar esta magia, você se perfura com o componente material, sofrendo 1 de dano perfurante. A magia falha se esse dano for prevenido ou negado de alguma forma. Da gota de sangue, você conjura um <a href="https://2014.5e.tools/bestiary.html#blood%20elemental_ccodex" target="_blank" rel="noopener noreferrer">Elemental de Sangue</a> sob seu comando.</p>
                     <p class="spell-classes"><strong>Subclasses:</strong> Mago de Sangue, Clérigo de Sangue</p>
                 </div>
             </div>
     
             <!-- Impressão de Sangue -->
-            <div class="spell-box">
-                <h3>Impressão de Sangue</h3>
+            <div class="spell-box" id="magia-impressao-de-sangue">
+                    <h3>Impressão de Sangue</h3>
                 <p class="spell-type">Necromancia de 1º nível (ritual)</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -908,8 +887,8 @@
             </div>
     
             <!-- Manto de Sangue -->
-            <div class="spell-box">
-                <h3>Manto de Sangue</h3>
+            <div class="spell-box" id="magia-manto-de-sangue">
+                    <h3>Manto de Sangue</h3>
                 <p class="spell-type">Transmutação de 4º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -924,8 +903,8 @@
             </div>
     
             <!-- Mordida Sangrenta -->
-            <div class="spell-box">
-                <h3>Mordida Sangrenta</h3>
+            <div class="spell-box" id="magia-mordida-sangrenta">
+                    <h3>Mordida Sangrenta</h3>
                 <p class="spell-type">Necromancia - Truque</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -940,8 +919,8 @@
             </div>
     
             <!-- Ponte de Sangue -->
-            <div class="spell-box">
-                <h3>Ponte de Sangue</h3>
+            <div class="spell-box" id="magia-ponte-de-sangue">
+                    <h3>Ponte de Sangue</h3>
                 <p class="spell-type">Necromancia - Truque</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -956,8 +935,8 @@
             </div>
     
             <!-- Raio de Sangue -->
-            <div class="spell-box">
-                <h3>Raio de Sangue</h3>
+            <div class="spell-box" id="magia-raio-de-sangue">
+                    <h3>Raio de Sangue</h3>
                 <p class="spell-type">Transmutação - Truque</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -972,8 +951,8 @@
             </div>
     
             <!-- Sangue Animado -->
-            <div class="spell-box">
-                <h3>Sangue Animado</h3>
+            <div class="spell-box" id="magia-sangue-animado">
+                    <h3>Sangue Animado</h3>
                 <p class="spell-type">Necromancia de 3º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação bônus</p>
@@ -988,8 +967,8 @@
             </div>
     
             <!-- Sangue Congelante -->
-            <div class="spell-box">
-                <h3>Sangue Congelante</h3>
+            <div class="spell-box" id="magia-sangue-congelante">
+                    <h3>Sangue Congelante</h3>
                 <p class="spell-type">Transmutação de 3º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -1004,8 +983,8 @@
             </div>
     
             <!-- Sangue Divino -->
-            <div class="spell-box">
-                <h3>Sangue Divino</h3>
+            <div class="spell-box" id="magia-sangue-divino">
+                    <h3>Sangue Divino</h3>
                 <p class="spell-type">Transmutação de 8º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 10 minutos</p>
@@ -1020,8 +999,8 @@
             </div>
     
             <!-- Sangue para Ácido -->
-            <div class="spell-box">
-                <h3>Sangue para Ácido</h3>
+            <div class="spell-box" id="magia-sangue-para-acido">
+                    <h3>Sangue para Ácido</h3>
                 <p class="spell-type">Transmutação de 9º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -1037,8 +1016,8 @@
             </div>
     
             <!-- Sangramento -->
-            <div class="spell-box">
-                <h3>Sangramento</h3>
+            <div class="spell-box" id="magia-sangramento">
+                    <h3>Sangramento</h3>
                 <p class="spell-type">Necromancia - Truque</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -1054,8 +1033,8 @@
             </div>
     
             <!-- Selo de Sangue -->
-            <div class="spell-box">
-                <h3>Selo de Sangue</h3>
+            <div class="spell-box" id="magia-selo-de-sangue">
+                    <h3>Selo de Sangue</h3>
                 <p class="spell-type">Necromancia de 2º nível (ritual)</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação bônus</p>
@@ -1071,8 +1050,8 @@
             </div>
     
             <!-- Tentáculos Sangrentos -->
-            <div class="spell-box">
-                <h3>Tentáculos Sangrentos</h3>
+            <div class="spell-box" id="magia-tentaculos-sangrentos">
+                    <h3>Tentáculos Sangrentos</h3>
                 <p class="spell-type">Necromancia de 5º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -1088,8 +1067,8 @@
             </div>
     
             <!-- Tempestade de Sangue -->
-            <div class="spell-box">
-                <h3>Tempestade de Sangue</h3>
+            <div class="spell-box" id="magia-tempestade-de-sangue">
+                    <h3>Tempestade de Sangue</h3>
                 <p class="spell-type">Necromancia de 8º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -1109,8 +1088,8 @@
             </div>
     
             <!-- Transporte via Sangue -->
-            <div class="spell-box">
-                <h3>Transporte via Sangue</h3>
+            <div class="spell-box" id="magia-transporte-via-sangue">
+                    <h3>Transporte via Sangue</h3>
                 <p class="spell-type">Necromancia de 7º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -1130,8 +1109,8 @@
             </div>
     
             <!-- Ventríloquo de Sangue -->
-            <div class="spell-box">
-                <h3>Ventríloquo de Sangue</h3>
+            <div class="spell-box" id="magia-ventriloquo-de-sangue">
+                    <h3>Ventríloquo de Sangue</h3>
                 <p class="spell-type">Necromancia de 2º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -1147,8 +1126,8 @@
             </div>
     
             <!-- Ventríloquo de Sangue em Massa -->
-            <div class="spell-box">
-                <h3>Ventríloquo de Sangue em Massa</h3>
+            <div class="spell-box" id="magia-ventriloquo-de-sangue-em-massa">
+                    <h3>Ventríloquo de Sangue em Massa</h3>
                 <p class="spell-type">Necromancia de 6º nível</p>
                 <div class="spell-stats">
                     <p><strong>Tempo de Conjuração:</strong> 1 ação</p>
@@ -1170,7 +1149,6 @@
         </div>
     </section>
 </div>
-
 </main>
 <script src="js/menu.js"></script>
 </body>

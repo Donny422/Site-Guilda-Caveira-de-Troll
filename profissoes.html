@@ -5,35 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profissões - Guilda Caveira de Troll</title>
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/profissoes.css">
 </head>
 <body>
-<header>
-    <div style="display:flex;align-items:center;gap:15px;">
-        <button id="menuBtn" style="background:none;border:none;color:#f3e7c3;font-size:32px;cursor:pointer;">☰</button>
-        <div class="logo">
-            <img src="https://i.imgur.com/OJJnoaL.png" alt="Logo da Guilda" class="logo-guilda">
-            <h1 class="titulo-principal">Guilda Caveira de Troll</h1>
-        </div>
-    </div>
-
-<!-- Menu -->
-    <div id="sideMenu" style="position:fixed;top:0;left:-320px;width:300px;height:100%;background:#161616;transition:.3s;padding-top:40px;z-index:1000;border-right:3px solid #7a1d1d;">
-
-        <a class="menu-item" href="index.html">🏠 Home</a>
-        <a class="menu-item" href="regras.html">📜 Regras</a>
-        <a class="menu-item" href="historia.html">📖 História</a>
-        <a class="menu-item" href="ficha.html">🧙 Criação de Ficha</a>
-        <a class="menu-item" href="homebrew.html">⚒️ Homebrew</a>
-        <a class="menu-item" href="bazar.html">🏪 Bazar Blackstaff</a>
-        <a class="menu-item" href="magias.html">✨ Magias Homebrew</a>
-        <a class="menu-item" href="atividades.html">🎲 Atividades</a>
-        <a class="menu-item" href="profissoes.html">🛠️ Profissões</a>
-        <a class="menu-item" href="atualizacoes.html">🔄 Atualizações</a>
-        
-    </div>
-</header>
-<main>
-    <section class="container">
+    <div id="site-header"></div>
+    <script src="js/header.js"></script>
+<main class="pagina-profissoes profissoes-main">
+    <section class="container profissoes-container">
         <section class="subcontainer">
             <h1>Profissões e Ofícios</h1>
             
@@ -499,13 +477,9 @@
                         <p class="extra-info"><strong>Munições:</strong> Duração reduzida para 1 turno.</p>
                     </div>
                 </div>
-            </section>
-        
-            <section class="house-rules">
-                <div class="single-rule-card">
+
+                <div class="house-rules consumiveis-rules">
                     <h2>Regras da Casa: Consumíveis</h2>
-                
-                    <div class="rules-content">
                         <h3>Poções</h3>
                         <p>Ingerir uma poção requer uma <strong>Ação Bônus</strong>. No entanto, administrar uma poção em outra criatura (como um aliado inconsciente) ainda requer uma <strong>Ação</strong>.</p>
                 
@@ -521,7 +495,6 @@
                                 </ul>
                             </li>
                         </ul>
-                    </div>
                 </div>
             </section>
         </section>

@@ -5,37 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conteúdo Homebrew - Guilda Caveira de Troll</title>
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/homebrew.css">
 </head>
 <body>
-<header>
-    <div style="display:flex;align-items:center;gap:15px;">
-        <button id="menuBtn" style="background:none;border:none;color:#f3e7c3;font-size:32px;cursor:pointer;">☰</button>
-        <div class="logo">
-            <img src="https://i.imgur.com/OJJnoaL.png" alt="Logo da Guilda" class="logo-guilda">
-            <h1 class="titulo-principal">Guilda Caveira de Troll</h1>
-        </div>
-    </div>
-
-<!-- Menu -->
-    <div id="sideMenu" style="position:fixed;top:0;left:-320px;width:300px;height:100%;background:#161616;transition:.3s;padding-top:40px;z-index:1000;border-right:3px solid #7a1d1d;">
-
-        <a class="menu-item" href="index.html">🏠 Home</a>
-        <a class="menu-item" href="regras.html">📜 Regras</a>
-        <a class="menu-item" href="historia.html">📖 História</a>
-        <a class="menu-item" href="ficha.html">🧙 Criação de Ficha</a>
-        <a class="menu-item" href="homebrew.html">⚒️ Homebrew</a>
-        <a class="menu-item" href="bazar.html">🏪 Bazar Blackstaff</a>
-        <a class="menu-item" href="magias.html">✨ Magias Homebrew</a>
-        <a class="menu-item" href="atividades.html">🎲 Atividades</a>
-        <a class="menu-item" href="profissoes.html">🛠️ Profissões</a>
-        <a class="menu-item" href="atualizacoes.html">🔄 Atualizações</a>
-        
-    </div>
-</header>
-<main>
+    <div id="site-header"></div>
+    <script src="js/header.js"></script>
+<main class="pagina-homebrew">
     <div class="container">
         <section class="subcontainer">
-        <div class="index">
+            <div class="index">
     
             <!-- SEÇÃO: CLASSES (Largura Total) -->
             <div class="index-section">
@@ -119,7 +97,7 @@
                     <li><a href="#p48">Sacrifício Vital</a></li>
                 </ul>
             </div>
-        </div>
+            </div>
         </section>
         <section class="subcontainer">
             <h1>Modificações</h1>
@@ -269,8 +247,8 @@
                 </div>
             </div>
         </section>
-        <section class="subcontainer">
-            <div class="blood-hunter">
+        <section class="subcontainer classe">
+            
                 <img src="imagens/blod-hunter.png" class="capa-blood-hunter" alt="Capa do Caçador de Sangue">
                     <h1 id="p4">Caçador de Sangue</h1>
 
@@ -474,7 +452,7 @@
 
         <h2>Transformação Híbrida</h2>
         <p>Também no 3º nível, você aprende a controlar a maldição licantrópica modificada. Como uma ação bônus, você se transforma em uma forma híbrida especial por até 1 hora. Você pode falar, usar equipamentos e usar armaduras enquanto estiver nessa forma e pode voltar à sua forma normal como uma ação bônus. Você volta automaticamente à sua forma normal se ficar inconsciente ou morrer.</p>
-        <p><strong><em>Nota:</strong> Esse recurso não é considerado a licantropia do Manual dos Monstros.</em> Depois de usar essa característica, você deve terminar um descanso curto ou longo antes de poder usá-la novamente. Enquanto estiver transformado, você ganha as seguintes características:</p>
+        <p><strong><em>Nota:</em></strong> Esse recurso não é considerado a licantropia do Manual dos Monstros. Depois de usar essa característica, você deve terminar um descanso curto ou longo antes de poder usá-la novamente. Enquanto estiver transformado, você ganha as seguintes características:</p>
 
         <h4>Poder Feral</h4>
         <p>Você tem vantagem nos testes de Força e nas salvaguardas de Força e tem um bônus de +1 nas rolagens de dano corpo a corpo. Esse bônus aumenta para +2 no 11º nível e para +3 no 18º nível.</p>
@@ -759,8 +737,8 @@
                     <p><strong>Amplificar:</strong> Você recupera um espaço de feitiço de Bruxo desta subclasse. Após amplificar, você deve terminar um descanso longo antes de poder amplificá-la novamente.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        
+        </section>
 
     <!-- ================= PÁGINA: SUBCLASSES HOMEBREW - BÁRBARO ================= -->
         <section class="subcontainer">
@@ -783,341 +761,650 @@
             <h2>Névoa Corrosiva</h2>
             <p>No 14º nível, sua <strong>Fumaça Sombria</strong> torna-se mais potente. Qualquer criatura hostil que entrar na fumaça ou começar seu turno dentro dela deve ser bem-sucedida em um teste de resistência de Constituição (CD = 8 + bônus de proficiência + modificador de Constituição) ou ficará cega até o início do seu próximo turno. Criaturas que não dependem da visão são imunes a esse efeito.</p>
         </div>
+
     <!-- ================= PÁGINA: SUBCLASSES HOMEBREW - BARDO ================= -->
     <div class="container-class">
         <h2 id="p24" class="subclasse">Bardo: Colégio das Sombras</h2>
         <p>O medo da escuridão é uma das emoções mais primitivas, e os bardos do Colégio das Sombras manipulam esses medos para aprimorar sua arte. Eles tecem as tênues fronteiras entre a luz e a escuridão para aterrorizar e inspirar seu público.</p>
 
-        <h2>Sombras Dançantes (3º nível)</h2>
-        <p>Como uma ação bônus, gaste uma Inspiração Bárdica para criar uma esfera de sombras mutáveis com 20 pés de raio, centrada em você. A esfera se move com você, contorna cantos e dura 1 minuto ou até você ficar incapacitado ou morrer.</p>
+        <h2>Sombras Dançantes</h2>
+        <p>Ao ingressar no Colégio das Sombras no 3º nível, você adquire a habilidade de tecer um bolsão de sombras protetoras.<br>
+            Como uma ação bônus, você pode gastar uma Inspiração Bárdica para criar uma esfera de sombras mutáveis com 20 pés de raio, centrada em você. A esfera se move com você, se espalha ao redor de cantos e dura 1 minuto ou até você ficar incapacitado ou morrer.</p>
         <ul>
-            <li>Aliados na esfera têm cobertura parcial.</li>
-            <li>Criaturas fora da esfera têm desvantagem em testes de Sabedoria (Percepção) para ver o que há dentro. Visão no escuro não anula este efeito.</li>
-            <li>Se a área sobrepor uma luz criada por magia de 2º nível ou inferior, a magia é dissipada.</li>
+            <li>Criaturas aliadas (incluindo você) dentro da esfera têm cobertura parcial.</li>
+            <li>Criaturas fora da esfera têm desvantagem em testes de Sabedoria (Percepção) feitos para perceber qualquer coisa dentro da esfera. Visão no escuro não anula esse efeito e criaturas que não dependem da visão são imunes a esse efeito.</li>
+            <li>Se alguma parte da área deste efeito se sobrepuser a uma área de luz criada por uma magia de 2º nível ou inferior, a magia que criou a luz será dissipada.</li>
         </ul>
 
-        <h2>Medo do Escuro (3º nível)</h2>
-        <p>Enquanto estiver em penumbra ou escuridão, você e aliados que possam vê-lo têm vantagem contra efeitos de medo. Além disso, quaisquer criaturas hostis que possam vê-lo rolam com desvantagem contra efeitos de medo.</p>
+        <h2>Medo do Escuro</h2>
+        <p>Também no 3º nível, seu conhecimento íntimo da escuridão permite que você explore ao máximo suas propriedades aterrorizantes e mantenha seus aliados seguros. Enquanto estiverem em penumbra ou escuridão, você e quaisquer aliados que possam vê-lo têm vantagem contra efeitos de medo. Além disso, quaisquer criaturas hostis que possam vê-lo rolam com desvantagem contra efeitos de medo.</p>
 
-        <h2>Passo da Sombra (6º nível)</h2>
-        <p>Imediatamente após uma criatura adicionar um dado de Inspiração Bárdica ao seu teste de habilidade, jogada de ataque ou teste de resistência, ela pode se teletransportar magicamente até 30 pés para um espaço desocupado que possa ver. Este movimento não provoca ataques de oportunidade.</p>
+        <h2>Passo da Sombra</h2>
+        <p>No 6º nível, sombras se adensam ao redor daqueles que você inspira. Imediatamente após uma criatura adicionar um dos seus dados de Inspiração Bárdica ao seu teste de habilidade, jogada de ataque ou teste de resistência, ela pode se teletransportar magicamente até 30 pés para um espaço desocupado que possa ver. Mover-se dessa maneira não provoca ataques de oportunidade.</p>
 
-        <h2>Música Noturna (14º nível)</h2>
-        <p>Ao conjurar uma magia, você pode usar sua reação para escolher um número de criaturas (até seu modificador de Carisma) a até 60 pés que tenham visto e ouvido você conjurar. Cada alvo deve passar em um teste de resistência de Carisma contra a CD da sua magia ou ficará amedrontado por 1 minuto. O alvo pode repetir o teste ao final de cada um de seus turnos.</p>
-        <p>Após usar essa função, você não poderá usá-la novamente até concluir um descanso curto ou longo.</p>
+        <h2>Música Noturna</h2>
+        <p>No 14º nível, você pode imbuir sua conjuração com toda a energia e o terror da noite. Ao conjurar uma magia, você pode usar sua reação para escolher também um número de criaturas a até 60 pés de você que viram e ouviram você conjurar a magia, até um número igual ao seu modificador de Carisma (mínimo de uma). Cada alvo deve ser bem-sucedido em um teste de resistência de Carisma contra a CD da sua magia ou ficará amedrontado por 1 minuto. Uma criatura pode repetir o teste de resistência no final de cada um de seus turnos, encerrando o efeito sobre si mesma em caso de sucesso.<br>
+            Após usar essa função, você não poderá usá-la novamente até concluir um descanso curto ou longo.</p>
     </div>
+
 <!-- ================= PÁGINA: SUBCLASSES HOMEBREW - CLÉRIGO ================= -->
     <div class="container-class">
-        <h1 id="p25">Clérigo: Domínio das Sombras</h1>
+        <h2 id="p25">Clérigo: Domínio das Sombras</h2>
         <p>O Domínio das Sombras abrange a escuridão que envolve todas as coisas e manipula o cinza transitório que separa a luz das trevas. Os clérigos deste domínio trilham um caminho sutil, mudando frequentemente de alianças e preferindo operar sem serem vistos.</p>
 
         <h2>Feitiços do Domínio das Sombras</h2>
-        <table class="class-table">
+        <table class="class-table-clerigo">
             <thead>
                 <tr><th>Nível de Clérigo</th><th>Feitiços</th></tr>
             </thead>
-            <tbody>
-                <tr><td>1º</td><td>Perdição, Vida Falsa</td></tr>
-                <tr><td>3º</td><td>Cegueira/Surdez, Escuridão</td></tr>
-                <tr><td>5º</td><td>Piscar, Medo</td></tr>
-                <tr><td>7º</td><td>Tentáculos Negros de Evard, Invisibilidade Maior</td></tr>
-                <tr><td>9º</td><td>Cone de Frio, Sonho</td></tr>
-            </tbody>
-        </table>
+<tbody>
+    <tr>
+        <td>1º</td>
+        <td>
+            <a href="https://2014.5e.tools/spells.html#bane_phb" target="_blank" rel="noopener noreferrer">Perdição</a>,
+            <a href="https://2014.5e.tools/spells.html#false%20life_phb" target="_blank" rel="noopener noreferrer">Vida Falsa</a>
+        </td>
+    </tr>
+    <tr>
+        <td>3º</td>
+        <td>
+            <a href="https://2014.5e.tools/spells.html#blindness%2fdeafness_phb" target="_blank" rel="noopener noreferrer">Cegueira/Surdez</a>,
+            <a href="https://2014.5e.tools/spells.html#darkness_phb" target="_blank" rel="noopener noreferrer">Escuridão</a>
+        </td>
+    </tr>
+    <tr>
+        <td>5º</td>
+        <td>
+            <a href="https://2014.5e.tools/spells.html#blink_phb" target="_blank" rel="noopener noreferrer">Piscar</a>,
+            <a href="https://2014.5e.tools/spells.html#fear_phb" target="_blank" rel="noopener noreferrer">Medo</a>
+        </td>
+    </tr>
+    <tr>
+        <td>7º</td>
+        <td>
+            <a href="https://2014.5e.tools/spells.html#evard%27s%20black%20tentacles_phb" target="_blank" rel="noopener noreferrer">Tentáculos Negros de Evard</a>,
+            <a href="https://2014.5e.tools/spells.html#greater%20invisibility_phb" target="_blank" rel="noopener noreferrer">Invisibilidade Maior</a>
+        </td>
+    </tr>
 
-        <h2>Capa da Noite (1º nível)</h2>
-        <p>Você ganha proficiência na perícia <strong>Furtividade</strong> e <strong>visão no escuro</strong> (60 pés; se já possuir, aumenta em 30 pés). Além disso, quando estiver em penumbra ou escuridão, você pode usar uma ação bônus para se Esconder.</p>
+    <tr>
+        <td>9º</td>
+        <td>
+            <a href="https://2014.5e.tools/spells.html#cone%20of%20cold_phb" target="_blank" rel="noopener noreferrer">Cone de Frio</a>,
+            <a href="https://2014.5e.tools/spells.html#dream_phb" target="_blank" rel="noopener noreferrer">Sonho</a>
+        </td>
+    </tr>
+</tbody>
+</table>
 
-        <h2>Alongar a Sombra (1º nível)</h2>
-        <p>Quando conjurar uma magia de clérigo com alcance de toque, sua sombra pode entregá-la a um alvo que você possa ver a até 15 pés (30 pés no 10º nível). Você pode usar esta habilidade mesmo se não estiver projetando uma sombra no momento.</p>
+        <h2>Capa da Noite</h2>
+        <p>Ao escolher este domínio no 1º nível, você ganha proficiência na perícia Furtividade e visão no escuro com alcance de 60 pés. Se você já possui visão no escuro, seu alcance aumenta em 30 pés. Além disso, quando estiver em penumbra ou escuridão, você pode usar uma ação bônus para se Esconder.</p>
 
-        <h2>Canalizar Divindade: Aperto Sombrio (2º nível)</h2>
-        <p>Como uma ação, escolha uma criatura em 30 pés. Ela deve fazer um teste de resistência de Força. Em caso de falha, fica <strong>restringida</strong> pela sombra até o final do seu próximo turno; se for bem-sucedida, fica <strong>agarrada</strong> até o final do seu próximo turno.</p>
+        <h2>Alongar a Sombra</h2>
+        <p>A partir do 1º nível, você pode manipular sua própria sombra para estender seu alcance. Quando você conjura uma magia de clérigo com alcance de toque, sua sombra pode entregar a magia como se você a tivesse conjurado. Seu alvo deve estar a até 15 pés de você, e você deve ser capaz de vê-lo. Você pode usar esta habilidade mesmo se estiver em uma área onde não projeta sombra.<br>
+            Ao atingir o 10º nível nesta classe, sua sombra pode afetar qualquer alvo que você possa ver a até 30 pés de você.</p>
 
-        <h2>Desvanecer para as Sombras (6º nível)</h2>
-        <p>Como uma ação bônus, se estiver em penumbra ou escuridão, você pode se tornar invisível por 1 minuto. O efeito termina se você atacar ou conjurar uma magia. Você pode usar esta habilidade um número de vezes igual ao seu bônus de proficiência, recuperando os usos ao terminar um descanso longo.</p>
+        <h2>Canalizar Divindade: Aperto Sombrio</h2>
+        <p>A partir do 2º nível, você pode usar seu Canalizar Divindade para usar a sombra de uma criatura contra ela. Como uma ação, escolha uma criatura que você possa ver a até 30 pés de distância. Essa criatura deve fazer um teste de resistência de Força. Se a criatura falhar no teste de resistência, ela ficará <strong>restringida</strong> pela sua sombra até o final do seu próximo turno. Se a criatura for bem-sucedida, ela ficará <strong>agarrada</strong> pela sua sombra até o final do seu próximo turno.<br>
+            Você pode usar essa habilidade mesmo que o alvo esteja em uma área onde não projeta sombra.</p>
 
-        <h2>Magia Poderosa (8º nível)</h2>
-        <p>Você adiciona seu modificador de Sabedoria ao dano causado por qualquer truque de clérigo.</p>
+        <h2>Desvanecer para as Sombras</h2>
+        <p>No 6º nível, você pode se camuflar nas sombras. Como uma ação bônus, quando estiver em penumbra ou escuridão, você pode magicamente se tornar invisível por 1 minuto. Esse efeito termina mais cedo se você atacar ou conjurar uma magia. Você pode usar essa habilidade um número de vezes igual ao seu bônus de proficiência. Você recupera todos os usos gastos ao terminar um descanso longo.</p>
 
-        <h2>Exército das Sombras (17º nível)</h2>
-        <p>Quando você usa <strong>Aperto Sombrio</strong>, você pode afetar um número de criaturas igual ao seu bônus de proficiência.</p>
+        <h2>Magia Poderosa</h2>
+        <p>A partir do 8º nível, você adiciona seu modificador de Sabedoria ao dano causado por qualquer truque de clérigo.</p>
+
+        <h2>Exército das Sombras</h2>
+        <p>No 17º nível, você pode manipular múltiplas sombras simultaneamente. Quando você usa Aperto Sombrio, você pode afetar um número de criaturas igual ao seu bônus de proficiência.</p>
     </div>
+
 <!-- ================= PÁGINA: SUBCLASSES HOMEBREW - DRUIDA ================= -->
     <div class="container-class">
         <h1 id="p26">Druida: Círculo das Sombras</h1>
         <p>Os druidas do Círculo das Sombras abraçam o poder primordial da escuridão como a essência mais pura do mundo natural. Eles compreendem que todas as coisas eventualmente retornam às trevas, e por isso, este elemento deve ser respeitado e estudado.</p>
 
-        <h2>Forma Umbral (2º nível)</h2>
-        <p>Como uma ação bônus, gaste um uso de Forma Selvagem para assumir uma forma sombria e transparente por 10 minutos. Enquanto nesta forma:</p>
+        <h2>Forma Umbral</h2>
+        <p>A partir do 2º nível, como uma ação bônus, você pode gastar um uso da sua habilidade Forma Selvagem para assumir uma forma sombria e umbral, em vez de se transformar em uma besta.<br>
+            Enquanto estiver em sua forma umbral, você mantém suas estatísticas, mas seu corpo se torna transparente como fumaça. A forma dura 10 minutos. Ela termina antes se você a dissipar (nenhuma ação é necessária), ficar incapacitado, morrer ou usar essa habilidade novamente.<br>
+            Enquanto estiver nesta forma, você obterá os seguintes beneficios:</p>
         <ul>
             <li>Em ambientes com pouca luz ou na escuridão, você pode se <em>Esconder</em> como uma ação bônus.</li>
-            <li>Pode passar por espaços com apenas 2,5 cm de largura.</li>
-            <li>Quando atingido por ataque corpo a corpo, use sua reação para causar dano de frio igual ao seu bônus de proficiência ao atacante.</li>
+            <li>Você consegue passar por um espaço com apenas 2,5 centímetros de largura sem precisar se espremer.</li>
+            <li>Quando uma criatura que você pode ver o atinge com um ataque corpo a corpo, você pode usar sua reação para causar dano de frio igual ao seu bônus de proficiência contra essa criatura.</li>
         </ul>
 
         <h2>Feitiços de Círculo</h2>
-        <table class="class-table">
+        <p>As magias dessa lista estão sempre preparadas e não conta pro limite de magias que você pode preparar por dia e todas contam como magias de Druida.</p>
+        <table class="class-table-clerigo">
             <thead>
                 <tr><th>Nível de Druida</th><th>Feitiços</th></tr>
             </thead>
             <tbody>
-                <tr><td>2º</td><td>Perdição, Vida Falsa</td></tr>
-                <tr><td>3º</td><td>Escuridão, Visão no Escuro</td></tr>
-                <tr><td>5º</td><td>Piscar, Medo</td></tr>
-                <tr><td>7º</td><td>Tentáculos Negros de Evard, Invisibilidade Maior</td></tr>
-                <tr><td>9º</td><td>Cone de Frio, Sonho</td></tr>
+                <tr>
+                    <td>2º</td>
+                    <td>
+                        <a href="https://2014.5e.tools/spells.html#bane_phb" target="_blank" rel="noopener noreferrer">Perdição</a>,
+                        <a href="https://2014.5e.tools/spells.html#false%20life_phb" target="_blank" rel="noopener noreferrer">Vida Falsa</a>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>3º</td>
+                    <td>
+                        <a href="https://2014.5e.tools/spells.html#darkness_phb" target="_blank" rel="noopener noreferrer">Escuridão</a>,
+                        <a href="https://2014.5e.tools/spells.html#darkvision_phb" target="_blank" rel="noopener noreferrer">Visão no Escuro</a>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>5º</td>
+                    <td>
+                        <a href="https://2014.5e.tools/spells.html#blink_phb" target="_blank" rel="noopener noreferrer">Piscar</a>,
+                        <a href="https://2014.5e.tools/spells.html#fear_phb" target="_blank" rel="noopener noreferrer">Medo</a>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>7º</td>
+                    <td>
+                        <a href="https://2014.5e.tools/spells.html#evard%27s%20black%20tentacles_phb" target="_blank" rel="noopener noreferrer">Tentáculos Negros de Evard</a>,
+                        <a href="https://2014.5e.tools/spells.html#greater%20invisibility_phb" target="_blank" rel="noopener noreferrer">Invisibilidade Maior</a>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>9º</td>
+                    <td>
+                        <a href="https://2014.5e.tools/spells.html#cone%20of%20cold_phb" target="_blank" rel="noopener noreferrer">Cone de Frio</a>,
+                        <a href="https://2014.5e.tools/spells.html#dream_phb" target="_blank" rel="noopener noreferrer">Sonho</a>
+                    </td>
+                </tr>
             </tbody>
         </table>
 
-        <h2>Servo das Trevas (6º nível)</h2>
-        <p>Como ação bônus, escolha uma criatura em 30 pés. A sombra dela ganha vida como uma <em>Sombra</em> (MM). Ela age na sua iniciativa, focando apenas no alvo original. Se acertar um ataque, o alvo sofre desvantagem no primeiro ataque ou teste de resistência feito antes do início do próximo turno da sombra. A sombra dura 5 minutos ou até o alvo morrer. Usos por descanso longo: modificador de Sabedoria.</p>
+        <h2>Servo das Trevas</h2>
+        <p>No 6º nível, você adquire a habilidade de despertar sombras para cumprir suas ordens. Como uma ação bônus, você pode escolher como alvo uma criatura que você possa ver a até 30 pés de distância. A sombra dessa criatura ganha vida como uma criatura separada sob seu comando, usando a ficha de estatísticas de <a href="https://2014.5e.tools/bestiary.html#shadow_mm" target="_blank" rel="noopener noreferrer">Sombra</a>.<br>
+            &emsp;A sombra aparece em um espaço desocupado a até 5 pés do alvo e pode agir imediatamente. A sombra age na sua iniciativa, deve gastar seu turno movendo-se em direção ao alvo pela rota mais direta e só pode usar sua ação para atacar o alvo (e você não precisa de nenhuma ação para comandar a sombra). Se a sombra acertar um ataque, em vez de causar dano, o alvo sofre desvantagem no primeiro ataque ou teste de resistência que fizer antes do início do próximo turno da sombra.<br>
+            &emsp;A sombra desaparece se for reduzida a 0 pontos de vida, se seu alvo for reduzido a 0 pontos de vida ou após 5 minutos.<br>
+            &emsp;Você pode usar essa habilidade um número de vezes igual ao seu modificador de Sabedoria (mínimo de uma vez), e recupera todos os usos gastos ao terminar um descanso longo.</p>
 
-        <h2>Massa Sombria (10º nível)</h2>
-        <p>Sua <strong>Forma Umbral</strong> recebe os seguintes benefícios:</p>
+        <h2>Massa Sombria</h2>
+        <p>No 10º nível, sua  <strong>Forma Umbral</strong> aumenta em poder. Enquanto estiver nessa forma, você recebe os seguintes benefícios adicionais:</p>
         <ul>
-            <li>Velocidade de voo igual ao seu deslocamento normal (pode pairar).</li>
-            <li>Resistência a dano contundente, perfurante e cortante de ataques não mágicos.</li>
+            <li>Você ganha uma velocidade de voo igual à sua velocidade normal e pode pairar no ar.</li>
+            <li>Você possui resistência a todos os tipos de dano contundente, perfurante e cortante provenientes de ataques não mágicos.</li>
         </ul>
 
-        <h2>A Escuridão Cai (14º nível)</h2>
-        <p>Como uma ação, emita uma esfera de escuridão mágica de 15 pés de raio que se move com você. Visão no escuro não penetra a esfera, e luz não mágica não a ilumina. Se sobreposta a luz mágica de 7º nível ou inferior, essa magia é dissipada. Dura 1 minuto ou até contato com luz solar. Pode ser usada uma vez por descanso curto ou longo.</p>
+        <h2>A Escuridão Cai</h2>
+        <p>No 14º nível, você pode usar uma ação para emitir uma esfera de escuridão mágica com 15 pés de raio, centrada em você. A esfera se move com você e sua escuridão se espalha ao redor de cantos. Ao criar a esfera, você pode designar qualquer número de criaturas que possam enxergar através da escuridão, mas, fora isso, uma criatura com visão no escuro não pode enxergar através dela, e luz não mágica não pode iluminá-la.<br>
+            &emsp;A esfera dura 1 minuto, até que você fique incapacitado ou até que entre em contato com a luz solar. Se alguma parte da área deste efeito se sobrepuser a uma área de luz criada por uma magia de 7º nível ou inferior, a magia que criou a luz é dissipada.<br>
+            &emsp;Após utilizar esta funcionalidade, não poderá utilizá-la novamente até concluir um período de descanso curto ou longo.</p>
     </div>
+
 <!-- ================= PÁGINA: FEITICEIRO - ORIGEM DA ALMA GÉLIDA ================= -->
     <div class="container-class">
         <h1>Subclasses de Feiticeiro</h1>
-        <h2 id="p28">Origem da Alma Gélida</h2>
+        <h2 id="p28" class="subclasse">Origem da Alma Gélida</h2>
         <p>Sua alma foi tocada pelo gelo, manifestando o frio na própria pele. Feiticeiros desta origem possuem afinidade com ambientes gélidos e a habilidade artística de esculpir estruturas complexas com gelo.</p>
 
         <h2>Quirks da Alma Gélida</h2>
+        <p>Sua magia glacial pode ter transformado seu corpo de uma forma ou de outra. Role na tabela “Quirks da Alma Gélida” ou selecione uma ou mais quirks dela.</p>
         <table class="class-table">
             <thead><tr><th>Rolagem</th><th>Quirk</th></tr></thead>
             <tbody>
-                <tr><td>1</td><td>Pele pálida com flocos de neve ocasionais.</td></tr>
-                <tr><td>2</td><td>Corpo permanentemente gelado.</td></tr>
-                <tr><td>3</td><td>Olhar que causa calafrios em outros.</td></tr>
-                <tr><td>4</td><td>Respiração com nuvens brancas constantes.</td></tr>
-                <tr><td>5</td><td>Acúmulo de neve nos ombros/cabeça.</td></tr>
-                <tr><td>6</td><td>Congelamento espontâneo de bebidas.</td></tr>
+                <tr><td>1</td><td>Sua pele é extremamente pálida, e flocos de neve parecem surgir em sua superfície de tempos em tempos.</td></tr>
+                <tr><td>2</td><td>Seu corpo é totalmente gelado.</td></tr>
+                <tr><td>3</td><td>Quando você encara alguém por muito tempo, eles sentem calafrios.</td></tr>
+                <tr><td>4</td><td>Sua respiração sempre resulta em pequenas nuvens brancas.</td></tr>
+                <tr><td>5</td><td>Neve parece se acumular em seus ombros e/ou na sua cabeça, mesmo que não esteja nevando.</td></tr>
+                <tr><td>6</td><td>	Ao segurar um copo, às vezes sua bebida congela espontaneamente.</td></tr>
             </tbody>
         </table>
 
         <h2>Magia Gélida</h2>
-        <p>Você aprende magias adicionais que contam como magias de feiticeiro:</p>
-        <table class="class-table">
+        <p>Você aprende magias adicionais que contam como magias de feiticeiro para você, mas não conta para o número de magias de feiticeiro que você conhece.</p>
+        <table class="class-table-clerigo">
             <thead><tr><th>Nível</th><th>Magia</th></tr></thead>
             <tbody>
-                <tr><td>1º</td><td>Armadura de Agathys</td></tr>
-                <tr><td>3º</td><td>Gelo Congelante de Rime</td></tr>
-                <tr><td>5º</td><td>Tempestade de Granizo</td></tr>
-                <tr><td>7º</td><td>Tempestade de Gelo</td></tr>
-                <tr><td>9º</td><td>Cone de Frio</td></tr>
+                <tr>
+                    <td>1º</td>
+                    <td>
+                        <a href="https://2014.5e.tools/spells.html#armor%20of%20agathys_phb" target="_blank" rel="noopener noreferrer">Armadura de Agathys</a>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>3º</td>
+                    <td>
+                        <a href="https://2014.5e.tools/spells.html#rime%27s%20binding%20ice_ftd" target="_blank" rel="noopener noreferrer">Gelo Congelante de Rime</a>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>5º</td>
+                    <td>
+                        <a href="https://2014.5e.tools/spells.html#sleet%20storm_phb" target="_blank" rel="noopener noreferrer">Tempestade de Granizo</a>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>7º</td>
+                    <td>
+                        <a href="https://2014.5e.tools/spells.html#ice%20storm_phb" target="_blank" rel="noopener noreferrer">Tempestade de Gelo</a>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>9º</td>
+                    <td>
+                        <a href="https://2014.5e.tools/spells.html#cone%20of%20cold_phb" target="_blank" rel="noopener noreferrer">Cone de Frio</a>
+                    </td>
+                </tr>
             </tbody>
         </table>
 
-        <h2>Arte da Forja Gélida (1º nível)</h2>
-        <p>Você é proficiente em armas simples e escudos. Como <strong>ação bônus</strong>, materializa uma arma (simples/marcial corpo-a-corpo) ou escudo de gelo. Capacidade: uma arma de duas mãos, duas de uma mão, ou uma de uma mão e um escudo.</p>
+        <h2>Arte da Forja Gélida</h2>
 
-        <h2>Superfície Glacial (1º nível)</h2>
-        <p>Como <strong>ação bônus</strong>, transforme o solo em um raio de 5 pés ao seu redor em <strong>terreno difícil</strong> (gelo) por 10 minutos. No 3º nível, gaste 1 ponto de feitiçaria para expandir a área em mais 5 pés. Água congela se atingida. Você ignora terreno difícil de neve/gelo.</p>
+<p>Ao selecionar essa subclasse no 1º nível, você aprende a criar armas e escudos a partir da sua aptidão mágica. Você se torna proficiente em <strong>armas simples e escudos</strong>.<br>
+    &emsp;Como uma <strong>ação bônus</strong>, você consegue congelar parte do ar a sua volta para criar um escudo ou uma arma simples ou marcial corpo-a-corpo feitos de gelo. Caso seja uma arma, ela conta como uma arma simples para você e é considerada mágica.<br>
+    &emsp;Sua magia é apenas capaz de manter <strong>uma arma de duas mãos</strong>, <strong>duas armas de uma mão</strong> ou <strong>uma arma de uma mão e um escudo</strong> ativos ao mesmo tempo. Elas permanecem materializadas até você as dispensar como uma ação bônus ou até você criar um item acima da sua capacidade máxima, situação na qual o equipamento menos recentemente criado desaparece.</p>
 
-        <h2>Armamento de Gelo Especializado (6º nível)</h2>
-        <p>Gaste <strong>2 pontos de feitiçaria</strong> como <strong>ação bônus</strong> (duração: 1 min):</p>
+<h2>Superfície Glacial</h2>
+
+<p>Também ao 1º nível, você consegue canalisar frio pelos seus pés para criar um caminho para si ou para atrapalhar o caminho de seus inimigos.<br>
+    &emsp;Você pode com uma <strong>ação bônus</strong> transformar o terreno do solo em um raio de 5 pés em volta de você em um terreno repleto por gelo por 10 minutos. O terreno repleto por gelo é considerado <strong>terreno difícil</strong>.<br>
+    &emsp;Adicionalmente, quando você alcançar o 3º nível nessa classe, você pode gastar <strong>1 ponto de feitiçaria</strong> para aumentar a área afetada em mais 5 pés em volta de você.</p>
+
+<ul>
+    <li>Caso a área de terreno difícil se estenda até uma superfície de água, ela congela, tornando-se sólida.</li>
+    <li>Além disso, você ignora terreno difícil gerado por neve ou gelo.</li>
+</ul>
+
+<h2>Armamento de Gelo Especializado</h2>
+
+<p>Ao chegar no 6º nível, você se torna capaz de imbuir forte magia de gelo em suas armas.<br>
+    &emsp;Como uma <strong>ação bônus</strong>, você pode gastar <strong>2 pontos de feitiçaria</strong> para imbuir suas armas com uma superfície espessa de gelo.<br>
+    &emsp;Pelo próximo minuto, ataques que você realizar com armas simples ou marciais que você é proficiente podem ser realizados usando seu modificador de acerto de magias de feiticeiro em vez de seu acerto normal, causando dano adicional igual ao seu modificador de Carisma em vez de Força ou Destreza. Esses ataques causam <strong>1d6 de dano de frio</strong> adicional. No 18º nível, esse dano aumenta para <strong>2d6</strong>.<br>
+    &emsp;Adicionalmente, ao realizar a Ação de Ataque enquanto imbuído dessa maneira, você pode fazer <strong>dois ataques</strong> em vez de um.</p>
+
+<h2>Rastro Congelante</h2>
+
+<p>No 14º nível, você alcança um domínio sobre o gelo que permite manipulá-lo com sua mera presença. Sua afinidade com o frio se torna tão intensa que seu sangue parece congelar, conferindo-lhe <strong>resistência a dano de frio</strong>.</p>
+
+<ul>
+    <li><strong>Passos Gélidos:</strong> Enquanto você se move sobre qualquer superfície de gelo ou neve, sua velocidade de movimento é <strong>dobrada</strong>. Além disso, seus movimentos ágeis e deslizantes enquanto anda nessas superfícies não provocam ataques de oportunidade.</li>
+    <li><strong>Caminho de Gelo:</strong> Como uma <strong>ação bônus</strong>, você pode solidificar o ar sob seus pés, criando uma trilha de gelo que se estende por 30 pés em qualquer direção a partir de você. Até o final do seu turno, você deixa um rastro de gelo que dura até o final do seu próximo turno. Este rastro é considerado <strong>terreno difícil</strong> para outras criaturas. Se desejar, você pode fazer com que qualquer criatura que tente andar nessa superfície realize uma <strong>Salvaguarda de Destreza</strong>, caindo <strong>caída (prone)</strong> em uma falha.
         <ul>
-            <li>Use seu modificador de acerto de magias em ataques com armas proficientes.</li>
-            <li>Dano de gelo usa seu modificador de Carisma.</li>
-            <li>Adiciona <strong>1d6 de dano de frio</strong> (2d6 no 18º nível).</li>
-            <li>Realize <strong>dois ataques</strong> ao usar a ação de Ataque.</li>
+            <li>Você pode usar essa habilidade <strong>uma vez por descanso longo</strong>. Caso queira usá-la novamente, é necessário gastar <strong>2 pontos de feitiçaria</strong> para fazê-lo.</li>
         </ul>
+    </li>
+</ul>
 
-        <h2>Rastro Congelante (14º nível)</h2>
-        <p>Você ganha <strong>resistência a dano de frio</strong> e dobra sua velocidade sobre neve/gelo (sem ataques de oportunidade). Como <strong>ação bônus</strong>, crie um rastro de gelo de 30 pés (terreno difícil para outros). Criaturas no rastro devem passar em Salvaguarda de Destreza ou caem <strong>caídas</strong> (1 uso/descanso longo ou 2 pontos de feitiçaria).</p>
+<h2>Caixão de Gelo</h2>
 
-        <h2>Caixão de Gelo (18º nível)</h2>
-        <p>Ao causar dano de frio a criatura Grande ou menor, gaste <strong>2 pontos de feitiçaria</strong> para forçar uma Salvaguarda de Constituição. Se falhar, ela fica <strong>restrita</strong> por 1 minuto (quebra com Salvaguarda de Força). Gaste <strong>4 pontos</strong> para alvos Enormes. Ao causar dano de frio a um alvo restrito, você pode causar o <strong>dano máximo</strong>, o que quebra o gelo.</p>
+<p>A partir do 18º nível, você ganha o poder de canalizar ventos polares para prender inimigos em gelo cristalino.<br>
+    &emsp;Em seu turno, quando você causa dano de frio a uma criatura <strong>Grande ou menor</strong>, você pode gastar <strong>2 pontos de feitiçaria</strong> para forçar a criatura a fazer uma <strong>Salvaguarda de Constituição</strong>. Em uma falha, ela congela, ficando <strong>restrita</strong> por 1 minuto. Uma criatura restrita dessa forma pode usar sua ação para tentar quebrar o gelo que a prende, fazendo uma Salvaguarda de Força contra seu CD de magias de feiticeiro.<br>
+    &emsp;Você pode gastar <strong>4 pontos</strong> para tentar congelar uma criatura <strong>Enorme</strong>.<br>
+    &emsp;Adicionalmente, quando você causa dano de frio a uma criatura presa desta forma, você pode causar o <strong>dano máximo</strong> em vez de rolar o dano de frio causado. Causar dano máximo quebra o gelo e libera a criatura.</p>
+<hr>
 
 <!-- ================= PÁGINA: FEITICEIRO - ORIGEM DO TECELÃO DA LUZ ================= -->
 
-        <h2 id="p30">Origem do Tecelão da Luz</h2>
-        <p>Seus poderes emanam da centelha de luz interna. Representando o equilíbrio cósmico, sua magia oscila entre o brilho radiante e a escuridão profunda a cada instante.</p>
+        <h2 id="p30" class="subclasse">Origem do Tecelão da Luz</h2>
+        <p>Seus poderes emanam da centelha de luz acesa dentro de você. Em lugares de grande escuridão, sempre há aqueles que nascem com afinidade pela luz, e toda sombra precisa de uma fonte de brilho. A magia dentro de você representa o equilíbrio cósmico e, como a luz, sua magia oscila entre o brilho e a escuridão a cada instante.</p>
 
-        <h2>Magias do Tecelão da Luz</h2>
-        <table class="class-table">
-            <thead><tr><th>Nível</th><th>Magias</th></tr></thead>
-            <tbody>
-                <tr><td>1º</td><td>Raio Guiador, Sono</td></tr>
-                <tr><td>3º</td><td>Restauração Menor, Escuridão</td></tr>
-                <tr><td>5º</td><td>Luz do Dia, Padrão Hipnótico</td></tr>
-                <tr><td>7º</td><td>Resplendor Enjoativo, Invisibilidade Maior</td></tr>
-                <tr><td>9º</td><td>Coluna de Chamas, Dissipar o Bem e o Mal</td></tr>
-            </tbody>
-        </table>
+        <h2>Magias de Tecelão da Luz</h2>
 
-        <h2>Truque de Luz (1º nível)</h2>
-        <p>Você enxerga normalmente na escuridão (mágica ou não) a até 60 pés.</p>
+<p>Você aprende magias adicionais quando você alcança certos níveis nessa classe, como mostrada na tabela de <strong>Magias do Tecelão da Luz</strong>. Cada uma dessas magias conta como magia de feiticeiro para você, mas não conta para o número de magias de feiticeiro que você conhece.</p>
 
-        <h2>Aura Cintilante (1º nível)</h2>
-        <p>Escolha um alinhamento (Luz ou Escuridão) ao final de um descanso longo. Como ação, você emite uma aura de 15 pés de raio (ajustável entre 10 e 30 pés como ação bônus). A aura emite luz brilhante ou escuridão não mágica, conforme sua escolha.</p>
+    <h2>Magias de Tecelão da Luz</h2>
 
-        <h2>Escudo de Refração (6º nível)</h2>
-        <p>Como <strong>ação bônus</strong>, gaste 3 pontos de feitiçaria para criar um escudo. Criaturas que o atingirem com ataques corpo-a-corpo a até 5 pés sofrem <strong>2d8 de dano radiante</strong> (se estiver na luz) ou <strong>2d8 de dano necrótico</strong> (se estiver na escuridão). O escudo dura 10 minutos ou até você ficar inconsciente.</p>
+    <table  class="class-table-clerigo">
+        <thead>
+            <tr>
+                <th>Nível de Feiticeiro</th>
+                <th>Magias</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1º</td>
+                <td>
+                    <a href="https://2014.5e.tools/spells.html#guiding%20bolt_phb" target="_blank" rel="noopener noreferrer">Raio Guiador</a>,
+                    <a href="https://2014.5e.tools/spells.html#sleep_phb" target="_blank" rel="noopener noreferrer">Sono</a>
+                </td>
+            </tr>
+            <tr>
+                <td>3º</td>
+                <td>
+                    <a href="https://2014.5e.tools/spells.html#lesser%20restoration_phb" target="_blank" rel="noopener noreferrer">Restauração Menor</a>,
+                    <a href="https://2014.5e.tools/spells.html#darkness_phb" target="_blank" rel="noopener noreferrer">Escuridão</a>
+                </td>
+            </tr>
+            <tr>
+                <td>5º</td>
+                <td>
+                    <a href="https://2014.5e.tools/spells.html#daylight_phb" target="_blank" rel="noopener noreferrer">Luz do Dia</a>,
+                    <a href="https://2014.5e.tools/spells.html#hypnotic%20pattern_phb" target="_blank" rel="noopener noreferrer">Padrão Hipnótico</a>
+                </td>
+            </tr>
+            <tr>
+                <td>7º</td>
+                <td>
+                    <a href="https://2014.5e.tools/spells.html#sickening%20radiance_xge" target="_blank" rel="noopener noreferrer">Resplendor Enjoativo</a>,
+                    <a href="https://2014.5e.tools/spells.html#greater%20invisibility_phb" target="_blank" rel="noopener noreferrer">Invisibilidade Maior</a>
+                </td>
+            </tr>
+            <tr>
+                <td>9º</td>
+                <td>
+                    <a href="https://2014.5e.tools/spells.html#flame%20strike_phb" target="_blank" rel="noopener noreferrer">Coluna de Chamas</a>,
+                    <a href="https://2014.5e.tools/spells.html#dispel%20evil%20and%20good_phb" target="_blank" rel="noopener noreferrer">Dissipar o Bem e o Mal</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
-        <h2>Amplificação da Aura (14º nível)</h2>
-        <p>Sua aura produz luz solar ou escuridão mágica. Se a área da sua aura sobrepuser luz ou escuridão criadas por magias de nível igual ou inferior ao seu espaço de magia mais alto, a magia original é dissipada.</p>
 
-        <h2>Feitiço Cegante (18º nível)</h2>
-        <p>Como ação, gaste 5 pontos de feitiçaria para fortalecer sua <strong>Aura Cintilante</strong> por 1 minuto (requer concentração). Criaturas hostis que iniciarem o turno a até 60 pés devem passar em uma Salvaguarda de Constituição ou ficarão <strong>cegas</strong> até o fim da aura.</p>
-    </div>
+<h2>Truque de Luz</h2>
+
+<p>A partir do 1º nível, você consegue enxergar normalmente na escuridão, tanto mágica quanto não mágica, a uma distância de 60 pés.</p>
+
+<h2>Aura cintilante</h2>
+
+<p>A partir do 1º nível, você pode escolher se sua magia será transformada em magia da luz ou da escuridão. Você pode alterar sua escolha ao final de um descanso longo.<br>
+    &emsp;Enquanto estiver sob o efeito da luz, você pode usar uma ação para emitir uma aura de luz brilhante em uma esfera de 15 pés de raio centrada em você. Enquanto a aura persistir, você pode usar uma ação bônus para expandir ou reduzir seu raio de luz brilhante em 5 pés, até um máximo de 30 pés cada ou um mínimo de 10 pés.<br>
+    &emsp;Enquanto estiver transformado em escuridão, você adquire a mesma habilidade, mas projeta uma aura de escuridão não mágica.</p>
+
+<h2>Escudo de refração</h2>
+
+<p>No 6º nível, você pode manipular a luz ao seu redor para se proteger. Como uma ação bônus, você pode gastar 3 pontos de feitiçaria para criar magicamente um escudo de luz. Enquanto o escudo estiver ativo, sempre que uma criatura a até 5 pés de você o atingir com um ataque corpo a corpo, o escudo brilhará com energia abrasadora, e o atacante sofrerá <strong>2d8</strong> de dano radiante se você estiver sob o efeito da luz ou <strong>2d8</strong> de dano necrótico se estiver sob o efeito da escuridão. O escudo desaparece se você ficar inconsciente ou após 10 minutos.</p>
+
+<h2>Amplificação da Aura</h2>
+
+<p>A partir do 14º nível, sua manipulação da luz ao seu redor torna-se magistral. Quando sua aura está voltada para a luz, ela produz luz solar. Quando sua aura está voltada para as trevas, ela produz escuridão mágica.<br>
+    &emsp;Se alguma parte da área desta aura se sobrepuser a uma área de luz ou escuridão criada por uma magia de nível igual ou inferior ao seu espaço de magia mais alto disponível, a magia que criou a luz ou a escuridão será dissipada.</p>
+
+<h2>Feitiço Cegante</h2>
+
+<p>A partir do 18º nível, sua energia mágica sobrecarrega a percepção do seu alvo. Como uma ação, você pode gastar 5 pontos de feitiçaria para fortalecer sua <strong>Aura Cintilante</strong>. Durante 1 minuto ou até você perder a concentração (como se estivesse conjurando uma magia de concentração), cada criatura hostil que iniciar seu turno a até 60 pés de você deve ser bem-sucedida em um teste de resistência de Constituição ou ficará cega até o fim da aura.</p>
+</div>
+
+    <!-------------- ARQUEIRO ARCANO -------------->
     <div class="container-class">
-        <h1 id="p31">Guerreiro: Arqueiro Arcano (Revisado)</h1>
+        <div class="arqueiro">
+
+        <h2 id="p31" class="subclasse">Guerreiro: Arqueiro Arcano (Revisado)</h2>
         <p>Os Arqueiros Arcanos são a elite do combate de longo alcance, mestres na fusão entre a precisão do arco e o uso de magia. Sua afinidade arcana permite que adicionem entalhes mágicos ao seu arsenal e aprimorem sua mira com ondas arcanas.</p>
 
-        <h2>Arqueiro e Frecheiro (3º nível)</h2>
-        <p>Você aprende a extrair a essência mágica da madeira. Adquire proficiência com <strong>Ferramentas de Entalhador</strong> e na perícia <strong>Arcanismo</strong>. Além disso, criar flechas especiais com suas ferramentas custa metade do tempo e metade do ouro habituais.</p>
-
-        <h2>Flecha Arcana (3º nível)</h2>
-        <p>Você aprende a esculpir flechas com magia. Você começa conhecendo duas opções de Flecha Arcana e aprende uma adicional nos níveis 7, 10, 15 e 18. Pode substituir uma opção conhecida ao subir de nível.</p>
-        <ul>
-            <li><strong>Usos:</strong> Após um descanso curto ou longo, prepare um número de flechas igual ao seu <strong>modificador de Inteligência</strong> (mín. 1). O efeito dura até atingir um alvo ou preparar novas flechas.</li>
-            <li><strong>CD de Resistência:</strong> 8 + bônus de proficiência + modificador de Inteligência.</li>
-            <li><strong>Magia de Arqueiro:</strong> Cada Flecha Arcana aprendida concede o truque associado a ela. Inteligência é sua habilidade de conjuração.</li>
-        </ul>
-        <h2>Opções de Flecha Arcana</h2>
+            <h2>Arqueiro e Frecheiro</h2>
+            <p>No 3º nível, você aprende a extrair a essência mágica oculta na madeira. Você adquire proficiência com <strong>Ferramentas de Entalhador</strong> e na perícia <strong>Arcanismo</strong>.<br>
+                &emsp;Além disso, ao usar suas ferramentas de entalhador para criar flechas especiais, o processo leva metade do tempo normal e custa metade do ouro habitual.</p>
         
-        <ul>
-            <li><strong>Flecha de Banimento:</strong> Aprende <em>Resistência</em>. Causa 2d6 de dano de força extra; teste de Carisma ou banido (incapacitado/velocidade 0) até o fim do seu próximo turno.</li>
-            <li><strong>Flecha Venenosa:</strong> Aprende <em>Infestação</em>. Causa 2d6 de dano de veneno extra; teste de Constituição ou envenenado por 1 min (repete o teste no final de cada turno).</li>
-            <li><strong>Flecha Perseguidora:</strong> Aprende <em>Orientação</em>. Ignora cobertura (exceto total) e não sofre desvantagem. Causa 2d6 de dano radiante extra e revela a localização do alvo por 1 min.</li>
-            <li><strong>Flecha Sedutora:</strong> Aprende <em>Amigos</em>. Causa 2d6 de dano psíquico extra; teste de Sabedoria ou enfeitiçado por 1 min (o efeito encerra se sofrer dano).</li>
-            <li><strong>Flecha Elétrica:</strong> Aprende <em>Toque Chocante</em>. Causa 2d6 de dano elétrico extra e o alvo não pode usar reações até o início do seu próximo turno.</li>
-            <li><strong>Flecha da Miragem:</strong> Aprende <em>Ilusão Menor</em>. O disparo é silencioso. Causa 2d6 de dano psíquico extra; teste de Sabedoria ou fica Encantado e hostil a um alvo a 30 pés até o fim do seu próximo turno.</li>
-            <li><strong>Flecha Debilitante:</strong> Aprende <em>Soar dos Mortos</em>. Causa 2d6 de dano necrótico extra; teste de Força ou velocidade e dano de arma reduzidos à metade por 1 min.</li>
-            <li><strong>Flecha Trovejante:</strong> Aprende <em>Trovão</em>. Dano dobrado contra objetos. Causa 2d6 de dano de trovão extra; teste de Força ou derrubado e empurrado 15 pés.</li>
-            <li><strong>Flecha Guiada:</strong> Aprende <em>Golpe Certeiro</em>. Causa 2d6 de dano radiante extra; teste de Destreza ou o alvo brilha (revela invisibilidade e garante vantagem em ataques contra ele por 1 min).</li>
-            <li><strong>Flecha Incendiária:</strong> Aprende <em>Controlar Chamas</em>. O alvo e criaturas em 10 pés sofrem 1d6 de dano de fogo e pegam fogo (1d6 de dano no início de cada turno; requer ação para apagar).</li>
-            <li><strong>Flecha de Corda de Luz:</strong> Aprende <em>Luz</em>. Cria uma corda mágica de luz até 10 min (requer concentração), suporta 500kg.</li>
-            <li><strong>Flecha Perfurante:</strong> Aprende <em>Proteção da Lâmina</em>. Dispara em linha de 30 pés (sem jogada de ataque). Teste de Destreza; falha sofre dano da arma + 1d6 perfurante, sucesso metade.</li>
-            <li><strong>Flecha de Gelo:</strong> Aprende <em>Picada Congelante</em>. Causa 2d6 de dano de frio; teste de Constituição ou deslocamento 0 por 1 min (quebra com ação).</li>
-            <li><strong>Flecha Multiplicadora:</strong> Aprende <em>Explosão de Espada</em>. Realize dois ataques contra alvos diferentes; cada um causa dano extra igual ao seu mod. de Inteligência. Não funciona com Surto de Ação.</li>
-        </ul>
+            <h2>Flecha Arcana</h2>
+            <p>No 3º nível, você aprende a esculpir flechas com magia. Você aprende duas opções de Flecha Arcana de sua escolha. Você aprende uma opção adicional ao atingir o 7º, 10º, 15º e 18º níveis. Sempre que sobe de nível nesta classe, pode substituir uma opção conhecida por outra.</p>
+        
+            <ul>
+                <li><strong>Usos.</strong> Ao terminar um descanso curto ou longo, você pode preparar um número de flechas igual ao seu <strong>modificador de Inteligência</strong> (mínimo de 1). Cada flecha retém o efeito escolhido até atingir um alvo ou até você usar esta habilidade novamente.</li>
+                <li><strong>CD de Resistência:</strong> 8 + seu bônus de proficiência + seu modificador de Inteligência.</li>
+                <li><strong>Magia de Arqueiro:</strong> Para cada opção de Flecha Arcana conhecida, você aprende o truque associado a ela. Inteligência é sua habilidade de conjuração para estas magias.</li>
+            </ul>
+        
+            <h2>Opções de Flecha Arcana</h2>
+        
+            <h3>Flecha de Banimento</h3>
+            <p>Você aprende o truque <a href="https://2014.5e.tools/spells.html#resistance_phb" target="_blank" rel="noopener noreferrer"><em>Resistência</em></a>.<br>
+                &emsp;Esta flecha bane seu alvo para outra dimensão. Um alvo atingido sofre <strong>2d6 de dano de força</strong> extra e deve passar num teste de <strong>Carisma</strong> ou desaparecerá até o fim do seu próximo turno. Enquanto banido, sua velocidade é 0 e ele fica incapacitado.</p>
+        
+            <h3>Flecha Venenosa</h3>
+            <p>Você aprende o truque <a href="https://2014.5e.tools/spells.html#infestation_xge" target="_blank" rel="noopener noreferrer"><em>Infestação</em></a>.<br>
+                &emsp;Esta flecha injeta uma toxina mortal. O alvo sofre <strong>2d6 de dano de veneno</strong> extra e deve passar num teste de <strong>Constituição</strong> ou ficará envenenado por 1 minuto. O alvo repete o teste ao final de cada turno dele.</p>
+        
+            <h3>Flecha Perseguidora</h3>
+            <p>Você aprende o truque <a href="https://2014.5e.tools/spells.html#guidance_phb" target="_blank" rel="noopener noreferrer"><em>Orientação</em></a>.<br>
+                &emsp;Esta flecha ignora cantos, cobertura parcial e cobertura de três quartos, além de não sofrer desvantagem. O alvo sofre <strong>2d6 de dano radiante</strong> extra e você sabe sua localização exata por 1 minuto.</p>
+        
+            <h3>Flecha Sedutora</h3>
+            <p>Você aprende o truque <a href="https://2014.5e.tools/spells.html#friends_phb" target="_blank" rel="noopener noreferrer"><em>Amigos</em></a>.<br>
+                &emsp;O alvo sofre <strong>2d6 de dano psíquico</strong> extra e deve passar num teste de <strong>Sabedoria</strong> ou ficará enfeitiçado por 1 minuto por um alvo à sua escolha a até 60 pés. Se o alvo sofrer dano, o efeito encerra.</p>
+        
+            <h3>Flecha Elétrica</h3>
+            <p>Você aprende o truque <a href="https://2014.5e.tools/spells.html#shocking%20grasp_phb" target="_blank" rel="noopener noreferrer"><em>Toque Chocante</em></a>.<br>
+                &emsp;Você imbui magia de evocação no projétil, tornando-o elétrico. O alvo sofre <strong>2d6 de dano de elétrico</strong> de dano extra e não pode usar reações até o início do seu próximo turno.</p>
+        
+            <h3>Flecha da Miragem</h3>
+            <p>Você aprende o truque <a href="https://2014.5e.tools/spells.html#minor%20illusion_phb" target="_blank" rel="noopener noreferrer"><em>Ilusão Menor</em></a>.<br>
+                &emsp;Disparar esta flecha não revela sua localização se você estiver escondido. O alvo sofre <strong>2d6 de dano psíquico</strong> extra e deve passar num teste de <strong>Sabedoria</strong> ou ficará <strong>Encantada</strong> e se tornará hostil a um alvo à sua escolha a até 30 pés até o fim do seu próximo turno.</p>
+        
+            <h3>Flecha Debilitante</h3>
+            <p>Você aprende o truque <a href="https://2014.5e.tools/spells.html#toll%20the%20dead_xge" target="_blank" rel="noopener noreferrer"><em>Soar dos Mortos</em></a>.<br>
+                &emsp;O alvo sofre <strong>2d6 de dano necrótico</strong> extra e deve passar num teste de <strong>Força</strong> ou sua velocidade e dano com ataques de arma serão reduzidos à metade por 1 minuto. O alvo repete o teste ao final de cada turno.</p>
+        
+            <h3>Flecha Trovejante</h3>
+            <p>Você aprende o truque <a href="https://2014.5e.tools/spells.html#thunderclap_xge" target="_blank" rel="noopener noreferrer"><em>Trovão</em></a>.<br>
+                &emsp;Causa dano dobrado contra objetos e estruturas. O alvo sofre <strong>2d6 de dano extra de Trovão</strong> e deve passar num teste de <strong>Força</strong> ou será derrubado e empurrado 15 pés.</p>
+        
+            <h3>Flecha Guiada</h3>
+            <p>Você aprende o truque <a href="https://2014.5e.tools/spells.html#true%20strike_phb" target="_blank" rel="noopener noreferrer"><em>Golpe Certeiro</em></a>. <br>
+                &emsp;Você imbui magia de adivinhação em seu projétil para guiar os ataques de seus aliados. Uma criatura atingida sofre <strong>2d6 de dano radiante</strong> adicional e deve realizar um teste de resistência de <strong>Destreza</strong>. Em caso de falha, ela brilha com luz plena em um raio de 5 pés. Uma criatura brilhando não pode se beneficiar de invisibilidade e seus aliados possuem <strong>Vantagem</strong> nas jogadas de ataque contra ela por 1 minuto. O alvo pode repetir o teste ao final de cada um de seus turnos.</p>
+        
+            <h3>Flecha Incendiária</h3>
+            <p>Você aprende o truque <a href="https://2014.5e.tools/spells.html#control%20flames_xge" target="_blank" rel="noopener noreferrer"><em>Controlar Chamas</em></a>.<br>
+                &emsp;Você imbui magia de evocação no projétil, incendiando-o. Imediatamente após atingir a criatura, o alvo e todas as criaturas a até 10 pés dele sofrem <strong>1d6 de dano de fogo</strong> e entram em chamas por 1 minuto. Criaturas em chamas sofrem <strong>1d6 de dano de fogo</strong> no início de cada um de seus turnos, a menos que gastem uma <strong>Ação</strong> para apagar o fogo.</p>
+        
+            <h3>Flecha de Corda de Luz</h3>
+            <p>Você aprende o truque <a href="https://2014.5e.tools/spells.html#light_phb" target="_blank" rel="noopener noreferrer"><em>Luz</em></a>. <br>
+                &emsp;Você usa magia de conjuração para criar uma corda mágica. Você alveja uma superfície dentro do alcance e, de onde o projétil atinge, uma corda de luz brilhante se estende até um espaço a 5 pés de você. Você pode escolher se a corda fica fixada magicamente no lugar ou se fica solta como uma corda comum. A corda suporta até 500 quilos. Você deve se concentrar nesta corda por até 10 minutos (como se estivesse concentrado em uma magia).</p>
+        
+            <h3>Flecha Perfurante</h3>
+            <p>Você aprende o truque <a href="https://2014.5e.tools/spells.html#blade%20ward_phb" target="_blank" rel="noopener noreferrer"><em>Proteção da Lâmina</em></a>. <br>
+                &emsp;Você usa magia de transmutação para tornar seu projétil etéreo. Você não faz uma jogada de ataque. Em vez disso, o projétil dispara em uma linha de 1 pé de largura por 30 pés de comprimento antes de desaparecer, ignorando cobertura. Cada criatura na linha deve realizar um teste de resistência de <strong>Destreza</strong>. Se falhar, sofre o dano normal da arma mais <strong>1d6 de dano perfurante</strong> adicional. Se passar, sofre apenas metade do dano total.</p>
+        
+            <h3>Flecha de Gelo</h3>
+            <p>Você aprende o truque <a href="https://2014.5e.tools/spells.html#frostbite_xge" target="_blank" rel="noopener noreferrer"><em>Picada Congelante</em></a>.<br>
+                &emsp;Você usa magia de evocação para imbuir o projétil com energia fria capaz de congelar um alvo no lugar. Imediatamente após a flecha atingir a criatura, o alvo sofre <strong>2d6 de dano de frio</strong> e deve realizar um teste de resistência de <strong>Constituição</strong>. Em caso de falha, a criatura é envolta em gelo espesso por 1 minuto, ou até que outra criatura ao alcance use uma <strong>Ação</strong> para quebrar o gelo, o alvo também pode gastar sua <strong>Ação</strong> para quebrar o gelo. Uma criatura envolta em gelo tem seu deslocamento reduzido a 0. Em um sucesso, ela não é congelada.</p>
 
-        <h2>Versatilidade Marcial</h2>
-        <p>Ao receber um <em>Aumento no Valor de Atributo</em>, você pode renunciar a esse benefício para:</p>
-        <ul>
-            <li>Aprender uma nova opção de <strong>Flecha Arcana</strong>.</li>
-            <li>Aumentar em <strong>2</strong> o número de flechas preparadas após um descanso.</li>
-        </ul>
-
-        <h2>Tiro Arcano (7º nível)</h2>
-        <p>Você domina novas técnicas:</p>
-        <ul>
-            <li><strong>Ataque Veloz:</strong> Como ação bônus, faça um ataque à distância.</li>
-            <li><strong>Mira Corrigida:</strong> Como reação ao errar um ataque, ataque um alvo diferente a até 18 metros do original.</li>
-            <li><strong>Disparo Utilitário:</strong> Substitua um ataque de arco para conjurar um truque de Arqueiro Arcano que não cause dano (o alcance torna-se o alcance curto do arco).</li>
-            <li><strong>Cadência Arcana:</strong> Use sua ação para conjurar um truque e sua ação bônus para realizar um ataque.</li>
-        </ul>
-
-        <h2>Surto Arcano (10º nível)</h2>
-        <p>Gaste um uso de <em>Surto de Ação</em> para conjurar <em>Barragem de Lâminas</em>, <em>Cordão de Flechas</em> ou <em>Aceleração</em>. Você pode aplicar o efeito de uma Flecha Arcana a cada alvo que falhar no teste de resistência de <em>Barragem de Lâminas</em> ou <em>Cordão de Flechas</em>.</p>
-
-        <h2>Salvamento Arcano (15º nível)</h2>
-        <p>Após um combate, gaste 1 minuto para recuperar todas as flechas e preparar novamente um número de flechas igual ao seu modificador de Inteligência. Adicione seu <strong>modificador de Inteligência</strong> ao dano de todos os acertos com flechas mágicas.</p>
-
-        <h2>Surto Arcano Maior (18º nível)</h2>
-        <p>Gaste dois usos de <em>Surto de Ação</em> para conjurar <em>Saraivada de Flechas</em>, <em>Aljava Veloz</em> ou <em>Visão da Verdade</em>. Aplique o efeito de uma Flecha Arcana a cada alvo que falhar no teste de <em>Saraivada de Flechas</em> ou for atingido por uma flecha de <em>Aljava Veloz</em>.</p>
+            <h3>Flecha Multiplicadora</h3>
+            <p>Você aprende o truque <a href="https://2014.5e.tools/spells.html#sword%20burst_tce" target="_blank" rel="noopener noreferrer"><em>Explosão de Espada</em></a>.<br>
+                &emsp;Você usa magia de transmutação para dividir um projétil em dois. Você deve declarar o uso desta opção antes de fazer o ataque. Ao fazer isso, você realiza duas jogadas de ataque para este único disparo, visando duas criaturas diferentes. Uma criatura não pode ser alvo de mais de um desses mísseis. Em um acerto, a criatura sofre dano extra igual ao seu <strong>modificador de Inteligência</strong>.<br>
+                &emsp;Essa flecha não pode ser usada uma segunda vez através um <strong>Surto de Ação</strong>.</p>
+        
+            <h2>Versatilidade Marcial</h2>
+            <p>Ao alcançar um nível que lhe concederia o recurso de <strong>Aumento no Valor de Atributo</strong>, você pode optar por renunciar a esse benefício para, em vez disso:</p>
+        
+            <ul>
+                <li>Aprender uma opção de <strong>Flecha Arcana</strong> de sua escolha.</li>
+                <li>Aumentar em <strong>2</strong> o número de Flechas Arcanas que você pode criar após finalizar um descanso.</li>
+            </ul>
+        
+            <h2>Tiro Arcano</h2>
+            <p>No 7º nível, você domina novas técnicas com arcos curtos ou longos:</p>
+        
+            <ul>
+                <li><strong>Ataque Veloz:</strong> Como ação bônus, você pode fazer um ataque à distância (sem precisar de mão livre).</li>
+                <li><strong>Mira Corrigida:</strong> Como reação, se errar um ataque, pode rolar novamente contra um alvo diferente a até 18 metros do original.</li>
+                <li><strong>Disparo Utilitário:</strong> Você pode substituir qualquer ataque de arco para conjurar um truque de Arqueiro Arcano que não cause dano. O alcance da magia torna-se o alcance curto do arco.</li>
+                <li><strong>Cadência Arcana:</strong> Você pode usar sua ação para conjurar um truque e com isso usar sua ação bônus para realizar um ataque.</li>
+            </ul>
+        
+            <h2>Surto Arcano</h2>
+            <p>No 10º nível, você pode gastar um uso do seu <strong>Surto de Ação</strong> para conjurar <a href="https://2014.5e.tools/spells.html#blade%20barrier_phb" target="_blank" rel="noopener noreferrer"><em>Barragem de Lâminas</em></a>, <a href="https://2014.5e.tools/spells.html#cordon%20of%20arrows_phb" target="_blank" rel="noopener noreferrer"><em>Cordão de Flechas</em></a> ou <a href="https://2014.5e.tools/spells.html#haste_phb" target="_blank" rel="noopener noreferrer"><em>Aceleração</em></a>. Você pode aplicar o efeito de uma Flecha Arcana a cada alvo que falhar no teste de resistência da <strong><em>Barragem de Lâminas</em></strong> ou <strong><em>Cordão de Flechas</em></strong>.</p>
+        
+            <h2>Salvamento Arcano</h2>
+            <p>No 15º nível, após um combate, você pode gastar 1 minuto para recuperar todas as flechas e preparar novamente um número delas igual ao seu modificador de Inteligência. Além disso, você soma seu <strong>modificador de Inteligência</strong> ao dano de todos os seus acertos com flechas mágicas.</p>
+        
+            <h2>Surto Arcano Maior</h2>
+            <p>
+                No 18º nível, você pode gastar <strong>dois usos</strong> do seu Surto de Ação para conjurar <a href="https://2014.5e.tools/spells.html#conjure%20volley_phb" target="_blank" rel="noopener noreferrer"><em>Saraivada de Flechas</em></a>, <a href="https://2014.5e.tools/spells.html#swift%20quiver_phb" target="_blank" rel="noopener noreferrer"><em>Aljava Veloz</em></a> ou <a href="https://2014.5e.tools/spells.html#true%20seeing_phb" target="_blank" rel="noopener noreferrer"><em>Visão da Verdade</em></a>. Você pode aplicar o efeito de uma Flecha Arcana a cada alvo que falhar no teste de resistência da <strong><em>Saraivada de Flechas</em></strong> ou for atingido por uma flecha de sua <strong><em>Aljava Veloz</em></strong>.
+            </p>
+        </div>
     </div>
+
 <!-- ================= PÁGINA: LADINO - MESTRE DAS SOMBRAS ================= -->
     <div class="container-class">
-        <h1 id="p34">Ladino: Mestre das Sombras</h1>
-        <p>Após passar pelo Rito Umbral, os Mestres das Sombras tornam-se pálidos e possuem buracos vazios no lugar dos olhos, ganhando a capacidade de manipular sombras como marionetes e enxergar através da noite impenetrável.</p>
+        <h2 id="p34" class="subclasse">Ladino: Mestre das Sombras</h2>
+        <p>Para ingressar na Ordem dos Mestres das Sombras, o ladino deve superar doze provas, treinar e passar pelo Rito Umbral, que separa sua sombra de seu corpo. Em troca, ele adquire uma aparência pálida e buracos vazios no lugar dos olhos, mas ganha o poder de enxergar no escuro e manipular as sombras para cumprirem suas ordens.</p>
 
-        <h2>Olhos Abissais (3º nível)</h2>
-        <p>Você ganha <strong>visão no escuro</strong> de 60 pés. Se já possuía, o alcance aumenta em 60 pés.</p>
+        <h2>Olhos Abissais</h2>
+            <p>Ao escolher este arquétipo no 3º nível, seus olhos se tornam de um preto profundo, concedendo-lhe visão no escuro com alcance de 60 pés. Se você já possui visão no escuro, seu alcance aumenta em 60 pés.</p>
 
-        <h2>Liberar Sombra (3º nível)</h2>
-        <p>Como uma <strong>ação bônus</strong>, destaque sua sombra. Ela tem CA 10, 1 PV, imunidade a condições e age nos seus turnos. Ela pode ocupar o mesmo espaço que outras criaturas e interage com o ambiente usando seus bônus de perícia. Conta como aliado para <em>Ataque Furtivo</em>.</p>
-        <ul>
-            <li><strong>Limitações:</strong> Desaparece com 0 PV, dentro de luz mágica de 1º nível ou superior, ou se ficar a mais de 60 pés de você. Reaparece aos seus pés no final do próximo turno após desaparecer.</li>
-            <li><strong>Utilidade:</strong> Invisível em escuridão mágica/fortemente obscurecida. Pode mimetizar outras sombras via Performance ou Enganação.</li>
-        </ul>
+            <h2>Liberar Sombra</h2>
 
-        <h2>Crepúsculo Negro (9º nível)</h2>
-        <p>Conjurar <em>Escuridão</em> (sem espaços ou componentes). Você enxerga através dela. Sua sombra pode expandir a área de escuridão. Pode ser usado uma vez por descanso curto ou longo.</p>
+            <p>A partir do 3º nível, você pode usar uma ação bônus para destacar magicamente sua sombra do seu corpo, permitindo que ela se mova independentemente. Sua sombra é uma silhueta plana e perfeitamente negra de você que rasteja pelas superfícies. Ela tem CA 10, 1 ponto de vida e imunidade a todas as condições. Ela tem o mesmo tamanho que você, embora seja perfeitamente plana, e pode ocupar o mesmo espaço que outras criaturas, e vice-versa. Se sua sombra fizer um teste de resistência ou um teste de habilidade para interagir com o ambiente, ela usa seu bônus na rolagem.<br>
+                &emsp;Em combate, sua sombra age nos seus turnos e segue seus comandos. Você pode comandar sua sombra em cada um dos seus turnos para se mover até 30 pés ao longo das paredes ou do chão (sem necessidade de ação). Sua sombra não ataca, mas pode interagir com objetos e conta como um aliado para fins de Ataque Furtivo.<br>
+                &emsp;Sua sombra desaparece se seus pontos de vida chegarem a 0, se estiver dentro da área de luz criada por uma magia de 1º nível ou superior, ou se estiver a mais de 60 pés de você. Após desaparecer, sua sombra reaparece aos seus pés no final do seu próximo turno.<br>
+                &emsp;Se sua sombra entrar em uma área fortemente obscurecida ou em uma escuridão mágica, ela se tornará efetivamente invisível. Sua sombra pode parecer a sombra de outras criaturas e agir de forma convincente usando sua perícia Carisma (Performance) ou Carisma (Enganação).</p>
 
-        <h2>Marionete de Sombras (13º nível)</h2>
-        <p>Se sua sombra estiver a 5 pés da sombra de outra criatura, use <strong>ação bônus</strong> para comandar:</p>
-        <ul>
-            <li><strong>Ataque:</strong> Realiza um ataque (usa Destreza, proficiente com armas sombrias). Causa 2d6 de dano mágico.</li>
-            <li><strong>Agarrar:</strong> Usa seu teste de Acrobacias; se vencer, o alvo fica <strong>agarrado</strong> até o final do seu próximo turno.</li>
-            <li><strong>Prender:</strong> Torna-se a segunda sombra do alvo. Use sua reação para que ela se torne o alvo de um ataque realizado pela criatura.</li>
-        </ul>
-        <h2>Dança das Sombras (17º nível)</h2>
-        <p>Como uma <strong>ação bônus</strong>, troque de lugar com sua sombra (teletransporte). Após usar esta habilidade, você pode usá-la novamente até o final do turno sem gastar ação. Se se teleportar para área de penumbra ou escuridão, tem <strong>vantagem</strong> no primeiro ataque corpo a corpo feito antes do final do turno.</p>
+            <h2>Crepúsculo Negro</h2>
+
+            <p>No 9º nível, você pode conjurar a magia <strong>escuridão</strong> sem usar espaços de magia ou componentes mágicos. Ao usar essa habilidade, você pode enxergar através da escuridão criada por essa magia. Além disso, quando sua sombra entra nessa área de escuridão, você pode optar por expandi-la até preenchê-la completamente.<br>
+                &emsp;Após usar essa habilidade, você não poderá usá-la novamente até terminar um descanso curto ou longo.</p>
+
+            <h2>Marionete de Sombras</h2>
+
+            <p>A partir do 13º nível, sua sombra pode alcançar as sombras de outras criaturas, interagindo com elas como se fossem físicas. Se sua sombra estiver a 5 pés da sombra de outra criatura, você pode usar sua ação bônus para comandá-la a usar uma das seguintes habilidades:</p>
+
+            <ul>
+                <li>Sua sombra realiza um ataque contra a sombra de outra criatura. Sua sombra usa Destreza para suas jogadas de ataque e possui proficiência com suas armas sombrias. Se acertar contra a CA da criatura, ela sofre <strong>2d6</strong> de dano. Esse dano é considerado mágico e seu tipo corresponde ao da arma que você está empunhando se ela causar dano de concussão, perfuração ou corte, ou dano de concussão caso contrário.</li>
+                <li>Sua sombra agarra a sombra de outra criatura. Sua sombra pode usar seu teste de Destreza (Acrobacias) para o teste de agarrar, e o alvo faz seu teste de agarrar normalmente. Se sua sombra for bem-sucedida, a criatura ficará <strong>agarrada</strong> até o final do seu próximo turno.</li>
+                <li>Sua sombra se prende aos calcanhares de outra criatura, tornando-se a segunda sombra dela até o final do próximo turno dela. Se você vir a criatura realizar um ataque enquanto sua sombra estiver em seus calcanhares, você pode usar sua reação para fazer com que a sombra salte na frente, tornando-se o alvo do ataque.</li>
+            </ul>
+
+                <h2>Dança das Sombras</h2>
+
+                <p>No 17º nível, seu corpo absorveu grande parte da essência sombria que prevalece nos planos de existência mais obscuros, permitindo que você se misture com sua sombra como se fosse uma criatura de sua espécie. Você pode usar sua ação bônus para trocar de lugar com sua sombra, ambos se teleportando em uma névoa tênue. Após usar essa habilidade, você pode usá-la mais uma vez antes do final do seu turno sem usar uma ação bônus. Se você se teleportar para uma área de penumbra ou escuridão, você terá vantagem no primeiro ataque corpo a corpo que fizer antes do final do turno enquanto estiver nessa área.</p>
     </div>
+
 <!-- ================= PÁGINA: MAGO - TRADIÇÃO ARCANA DAS SOMBRAS ================= -->
     <div class="container-class">
-        <h1 id="p36">Mago: Tradição Arcana das Sombras</h1>
-        <p>Os magos desta tradição compreendem o poder sedutor das trevas e infundem seus próprios seres com sombras vivas para desvendar os segredos mais profundos do cosmos.</p>
+        <h2 id="p36" class="subclasse">Mago: Tradição Arcana das Sombras</h2>
+        <p>Os poderes das sombras são uma obsessão para os magos que seguem a tradição Arcana das Sombras. Por compreenderem os poderes sedutores das sombras e buscarem aprender mais, esses praticantes infundem seus próprios seres com elas para descobrir seus segredos em primeira mão.</p>
 
-        <h2>Simbionte das Sombras (2º nível)</h2>
-        <p>Você vincula uma sombra viva como uma segunda pele, concedendo:</p>
-        <ul>
-            <li><strong>Visão no escuro:</strong> Alcance de 60 pés (se já possuir, aumenta em 60 pés).</li>
-            <li><strong>Visão na Escuridão Mágica:</strong> Alcance de 30 pés.</li>
-        </ul>
+        <h2>Simbionte das Sombras</h2>
 
-        <h2>Transfusão Escura (2º nível)</h2>
-        <p>Como <strong>ação bônus</strong>, gaste dois espaços de magia para recuperar um espaço de valor igual ou inferior à soma dos gastos (máx. 3º nível; aumenta para 4º nível no 10º e 5º nível no 14º). Você só pode recuperar espaços que já consumiu.</p>
+            <p>
+                No 2º nível, você vincula uma sombra viva ao seu corpo, vestindo-a como uma segunda pele. Enquanto estiver vinculado dessa forma, você ganha o seguinte:
+            </p>
 
-        <h2>Orbe da Noite (6º nível)</h2>
-        <p>Ao ser alvo de um ataque, use sua <strong>reação</strong> para se envolver em uma esfera de escuridão mágica de 10 pés de raio até o início do seu próximo turno. Se o atacante acertar o ataque, você não pode usar esta habilidade contra ele novamente até um descanso longo. Criaturas que não dependem da visão são imunes ao efeito.</p>
+            <ul>
+                <li>Você ganha visão no escuro com alcance de 60 pés. Se você já possui visão no escuro, seu alcance é estendido em 60 pés.</li>
+                <li>Na escuridão mágica, você consegue enxergar a uma distância de até 30 pés.</li>
+            </ul>
 
-        <h2>Das Sombras (10º nível)</h2>
-        <p>Sempre que rolar iniciativa em penumbra ou escuridão, você fica automaticamente <strong>oculto</strong> de criaturas a pelo menos 10 pés. Você deixa de estar oculto ao mover-se, atacar ou conjurar uma magia.</p>
+            <h2>Transfusão Escura</h2>
 
-        <h2>Segunda Pele (14º nível)</h2>
-        <p>Enquanto estiver em penumbra ou escuridão, você recebe <strong>+2 na CA</strong> e resistência a danos de concussão, perfuração e corte.</p>
+            <p>
+                A partir do 2º nível, você pode fornecer energia ao seu simbionte para transformá-lo. Como uma ação bônus, você pode gastar dois espaços de magia para recuperar um espaço de magia de valor igual ou inferior à soma dos valores dos espaços de magia gastos. Por exemplo, você pode gastar um espaço de magia de 1º nível e um espaço de magia de 2º nível para recuperar um espaço de magia de 3º nível. Você só pode recuperar espaços de magia que já consumiu, e não pode criar espaços de magia acima de 3º nível.<br>
+                &emsp;Ao chegar no nível 10 de mago, você consegue criar espaços de magia de 4º nível, e, ao chegar ao nível 14 de mago, consegue criar espaços de magia de até 5º nível, utilizando essa habilidade.
+            </p>
+
+            <h2>Orbe da Noite</h2>
+
+            <p>
+                No 6º nível, seu simbionte das sombras pode se expandir para ocultá-lo de inimigos. Quando uma criatura realiza uma jogada de ataque contra você, você pode usar sua reação para se envolver em uma esfera de escuridão mágica com raio de 10 pés (impondo desvantagem em ataques contra você se a criatura não puder enxergar através da escuridão mágica). Se o alvo que ativou a habilidade acertar você com o ataque, você não poderá usá-la novamente contra o atacante até terminar um descanso longo. A escuridão persiste até o início do seu próximo turno.<br>
+                &emsp;Você deve optar por usar essa habilidade antes de saber se o ataque acerta ou erra. Criaturas que não dependem da visão são imunes a esse efeito.
+            </p>
+
+            <h2>Das Sombras</h2>
+
+            <p>
+                A partir do 10º nível, seu simbionte das sombras o camufla, permitindo que você surpreenda seus inimigos. Sempre que você rolar a iniciativa em penumbra ou escuridão, você fica automaticamente oculto de todas as criaturas a pelo menos 10 pés de distância. Você deixa de estar oculto se mover, atacar ou conjurar uma magia.
+            </p>
+
+            <h2>Segunda Pele</h2>
+
+            <p>
+                A partir do 14º nível, seu simbionte das sombras compartilha sua dor. Enquanto estiver em penumbra ou escuridão, você tem <strong>+2 na CA</strong> e resistência a todos os danos de concussão, perfuração e corte.
+            </p>
     </div>
+
 <!-- ================= PÁGINA: PALADINO - JURAMENTO DA NOITE ETERNA ================= -->
     <div class="container-class">
-        <h1 id="p37">Paladino: Juramento da Noite Eterna</h1>
-        <p>Conhecidos como "corvos", estes paladinos renunciam às armaduras brilhantes em favor da furtividade e da justiça aplicada pelas próprias mãos sob o manto da escuridão. Eles buscam corrigir erros que a lei comum deixa impunes.</p>
+        <div class="paladino-noite">
+        <h2 id="p37" class="subclasse">Paladino: Juramento da Noite Eterna</h2>
+        <p>Paladinos do Juramento da Noite Eterna, conhecidos como "corvos", renunciam às armaduras reluzentes para agir sob o manto do subterfúgio e do assassinato. Vinculados a ideais de justiça que transcendem leis e alianças, eles operam nas sombras para punir crimes impunes e aplicar a justiça com as próprias mãos onde ninguém mais ousa intervir.</p>
 
         <h2>Princípios da Noite Eterna</h2>
-        <ul>
-            <li><strong>Ninguém está isento:</strong> Mesmo reis e magistrados devem prestar contas às leis.</li>
-            <li><strong>O bem da maioria:</strong> As necessidades da maioria superam a minoria; você é o protetor dos fracos contra os opressores.</li>
-            <li><strong>Cavaleiro da Noite:</strong> Se a justiça não é feita à luz do dia, ela deve ser restaurada nas trevas.</li>
-        </ul>
 
+        <p>Paladinos que fazem o Juramento da Noite Eterna compartilham um senso de absolutismo moral e tendem a acreditar nos seguintes princípios fundamentais:</p>
+        
+        <ul>
+            <li><strong>Ninguém está isento:</strong> Até mesmo reis e magistrados que elaboram as leis devem prestar contas a elas.</li>
+            <li><strong>O bem da maioria:</strong> As necessidades da maioria sempre superam as necessidades da minoria. É sua responsabilidade proteger os fracos quando os poderosos buscam oprimir.</li>
+            <li><strong>Cavaleiro da Noite:</strong> Quando a justiça não é feita à luz do dia, ela deve ser restaurada nas trevas.</li>
+        </ul>
+        
         <h2>Feitiços de Juramento</h2>
-        <table class="classTable magiasjne frame">
-            <thead><tr><th>Nível</th><th>Feitiços</th></tr></thead>
-            <tbody>
-                <tr><td>3º</td><td>Queda Suave, Passos Longos</td></tr>
-                <tr><td>7º</td><td>Convocar Montaria, Passo Nebuloso</td></tr>
-                <tr><td>15º</td><td>Voar, Velocidade</td></tr>
-                <tr><td>18º</td><td>Porta Dimensional, Movimentação Livre</td></tr>
-                <tr><td>20º</td><td>Criar Passagem, Círculo de Teletransporte</td></tr>
-            </tbody>
-        </table>
+        
+        <p>Você adquire magias de juramento nos níveis de paladino listados.</p>
+        
+            <h2>Feitiços do Juramento da Noite Eterna</h2>
+            <table class="class-table-clerigo">
+                <thead>
+                    <tr>
+                        <th>Nível de Paladino</th>
+                        <th>Feitiços</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3º</td>
+                        <td>
+                            <a href="https://2014.5e.tools/spells.html#feather%20fall_phb" target="_blank" rel="noopener noreferrer">Queda Suave</a>,
+                            <a href="https://2014.5e.tools/spells.html#longstrider_phb" target="_blank" rel="noopener noreferrer">Passos Longos</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7º</td>
+                        <td>
+                            <a href="https://2014.5e.tools/spells.html#find%20steed_phb" target="_blank" rel="noopener noreferrer">Convocar Montaria</a>,
+                            <a href="https://2014.5e.tools/spells.html#misty%20step_phb" target="_blank" rel="noopener noreferrer">Passo Nebuloso</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15º</td>
+                        <td>
+                            <a href="https://2014.5e.tools/spells.html#fly_phb" target="_blank" rel="noopener noreferrer">Voar</a>,
+                            <a href="https://2014.5e.tools/spells.html#haste_phb" target="_blank" rel="noopener noreferrer">Velocidade</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>18º</td>
+                        <td>
+                            <a href="https://2014.5e.tools/spells.html#dimension%20door_phb" target="_blank" rel="noopener noreferrer">Porta Dimensional</a>,
+                            <a href="https://2014.5e.tools/spells.html#freedom%20of%20movement_phb" target="_blank" rel="noopener noreferrer">Movimentação Livre</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20º</td>
+                        <td>
+                            <a href="https://2014.5e.tools/spells.html#passwall_phb" target="_blank" rel="noopener noreferrer">Criar Passagem</a>,
+                            <a href="https://2014.5e.tools/spells.html#teleportation%20circle_phb" target="_blank" rel="noopener noreferrer">Círculo de Teletransporte</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        
+        <h2>Canalizar Divindade</h2>
+            <p>Ao fazer este juramento no 3º nível, você ganha as seguintes duas opções de Canalizar Divindade.</p>
+        
+            <h3>Cobertura da Escuridão</h3>
+                <p>Como uma ação bônus usando sua Canalização Divina, você pode criar uma esfera de escuridão mágica com 15 pés de raio, centrada em um ponto que você possa ver a até 30 pés de distância. Essa esfera se espalha ao redor de cantos e dura um minuto. Você pode enxergar através da escuridão que cria dessa forma.</p>
+            <h3>Armadura Envolta em Sombras</h3>
+                <p>Como uma ação usando sua Canalização Divina, você pode extrair matéria sombria do Plano das Sombras e imbuí-la em uma armadura que esteja vestindo. Esta armadura é envolta em um redemoinho tenebroso e não reflete luz. Você pode adicionar seu modificador de Carisma aos testes de Destreza (Furtividade) que fizer enquanto estiver vestindo a armadura, e a armadura não impõe desvantagem em seus testes de Furtividade.<br>
+                &emsp;Este efeito termina após 8 horas, ou se você encerrar o efeito em seu turno (nenhuma ação necessária). O efeito termina mais cedo se você remover sua armadura ou ficar inconsciente.</p>
+            </div>
+        </div>
+        </section>
 
-        <h2>Canalizar Divindade (3º nível)</h2>
-        <p>Ao escolher este juramento, você ganha as seguintes opções:</p>
-        <ul>
-            <li><strong>Cobertura da Escuridão:</strong> Como ação bônus, crie uma esfera de escuridão mágica (15 pés de raio) centrada em um ponto visível a até 30 pés. Dura 1 minuto; você enxerga através dela.</li>
-            <li><strong>Armadura Envolta em Sombras:</strong> Como ação, imbuia sua armadura com matéria sombria. Você adiciona seu modificador de Carisma a testes de Destreza (Furtividade) e a armadura não impõe desvantagem nessas rolagens. O efeito dura 8 horas.</li>
-        </ul>
-    </div>
-    </section>
     <!-- ================= PÁGINA: PATRULHEIRO (RANGER) - REVISADO ================= -->
-        <section class="subcontainer">
-            <div>
-            <h1 id="p38">Patrulheiro (Ranger) - Revisado</h1>
+        <section class="subcontainer classe">
+            
 
-        <blockquote>
-            Um humano selvagem caça orcs nas sombras da floresta, abatendo seus inimigos com a precisão de duas espadas curtas. Em outra região, uma elfa resiste ao hálito congelante e ao medo de um dragão branco, disparando flechas contra as brechas de suas escamas. Mais adiante, um meio-elfo usa seu falcão treinado para distrair um urso-coruja enquanto prepara sua emboscada. Todos eles compartilham o mesmo propósito, vivendo distantes das cidades e vilas protegidas. Eles são os guardas florestais, que mantêm uma vigilância incessante e solitária contra os terrores da natureza selvagem.
-        </blockquote>
+        <img src="imagens/ranger.png" class="capa-ranger" alt="Capa do Patrulheiro">
+        <h2 id="p38" class="subclasse">Patrulheiro (Ranger) - Revisado</h2>
+
+        <p>Um humano selvagem caça orcs nas sombras da floresta, abatendo seus inimigos com a precisão de duas espadas curtas. Em outra região, uma elfa resiste ao hálito congelante e ao medo de um dragão branco, disparando flechas contra as brechas de suas escamas. Mais adiante, um meio-elfo usa seu falcão treinado para distrair um urso-coruja enquanto prepara sua emboscada. Todos eles compartilham o mesmo propósito, vivendo distantes das cidades e vilas protegidas. Eles são os guardas florestais, que mantêm uma vigilância incessante e solitária contra os terrores da natureza selvagem.</p>
 
         <p>Como Patrulheiro, você adquire as seguintes características de classe:</p>
 
@@ -1157,13 +1444,11 @@
                 <li><strong>Valores Mínimos de Atributo:</strong> Destreza 13, Sabedoria 13</li>
                 <li><strong>Proficiências Ganhas:</strong> Armaduras leves, armaduras médias, escudos, armas simples, armas marciais e escolha uma perícia da lista da classe.</li>
             </ul>
+            </div>
         </div>
-        </div>
-        <div>
-            <div class="class-table">
                 <h2>O Patrulheiro</h2>
                     <h3>Espaços de Magia por Nível de Magia</h3>
-                <table>
+                <table class="class-table">
                     <thead>
                         <tr><th>Nível</th><th>Bônus</th><th>Características</th><th>Magias</th><th>1º</th><th>2º</th><th>3º</th><th>4º</th><th>5º</th></tr>
                     </thead>
@@ -1190,187 +1475,316 @@
                         <tr><td>20º</td><td>+6</td><td>Matador de Inimigos</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
                     </tbody>
                 </table>
-            </div>
-            <h3>Inimigo Favorito (Favored Enemy)</h3>
-            <blockquote>No 1º nível, você foca em ameaças comuns na natureza.</blockquote>
-            <ul>
-                <li><strong>Escolha de Inimigo:</strong> Escolha bestas, fadas, monstruosidades ou mortos-vivos (ou duas raças de humanoides).</li>
-                <li><strong>Bônus de Dano:</strong> +2 nas jogadas de dano contra o tipo escolhido.</li>
-                <li><strong>Rastreamento:</strong> Vantagem em testes de Sobrevivência (rastrear) e Inteligência (memória sobre eles).</li>
-                <li><strong>Idiomas:</strong> Aprende um idioma falado por eles.</li>
-                <li><strong>Progressão:</strong> Novo inimigo e idioma no 10º nível.</li>
-            </ul>
 
-            <h3>Variante: Presa Favorita (Favored Foe)</h3>
-            <p><em>Característica opcional (substitui Inimigo Favorito)</em></p>
-            <p>Quando você atinge uma criatura com uma jogada de ataque, você pode invocar seu elo místico com a natureza para marcar o alvo como seu inimigo favorito por 1 minuto ou até perder sua concentração.</p>  
-            <blockquote>
-                <strong>Dano Extra:</strong> Na primeira vez em cada um de seus turnos que você atingir o inimigo favorito, aumente o dano em <strong>1d4</strong> (aumenta para 1d6 no 6º nível e 1d8 no 14º nível).<br>
-                <strong>Usos:</strong> Igual ao seu <strong>bônus de proficiência</strong>. Recupera após descanso longo.
-            </blockquote>
+                <h2>Inimigo Favorito (Favored Enemy)</h2>
 
-            <h3>Explorador Natural (Natural Explorer)</h3>
-            <p>Escolha um terreno favorito (ártico, costa, deserto, floresta, campos, montanha, pântano ou Subterrâneo). Nesse terreno:</p>
-            <ul>
-                <li>Você ignora terreno difícil.</li>
-                <li><strong>Viajante Experiente:</strong> Seu grupo ignora terreno difícil, não pode se perder (exceto por meios mágicos) e você permanece alerta. Rastreamento revela número, tamanho e tempo de passagem das criaturas.</li>
-            </ul>
-
-            <h3>Variante: Explorador Habilidoso (Deft Explorer)</h3>
-            <p><em>Característica opcional (substitui Explorador Natural)</em></p>
-            <p>Você ganha benefícios nos níveis 1, 6 e 10.</p>
-            <p><strong>Astuto (Canny):</strong> Escolha uma perícia e dobre seu bônus de proficiência nela. Aprenda dois idiomas adicionais.</p>
-
-            <h3>Estilo de Luta (2º nível)</h3>
-            <p>Escolha uma das opções abaixo:</p>
-            <ul>
-                <li><strong>Arquearia:</strong> +2 em jogadas de ataque com armas de distância.</li>
-                <li><strong>Luta às Cegas:</strong> Visão às cegas de 3 metros (enxerga invisíveis ou escondidos que não estejam em cobertura total).</li>
-                <li><strong>Defesa:</strong> +1 na CA ao usar armadura.</li>
-                <li><strong>Guerreiro Druídico:</strong> Aprenda dois truques de druida (Sabedoria é seu atributo de conjuração).</li>
-                <li><strong>Duelo:</strong> +2 em jogadas de dano com arma corpo a corpo de uma mão.</li>
-                <li><strong>Combate com Armas de Arremesso:</strong> Sacar armas de arremesso é parte do ataque. +2 nas rolagens de dano com ataques à distância de arremesso.</li>
-                <li><strong>Combate com Duas Armas:</strong> Ao usar duas armas, você pode adicionar seu modificador de habilidade ao dano do segundo ataque.</li>
-            </ul>
-            <h3>Conjuração (2º nível)</h3>
-            <p>Você aprende a usar a essência da natureza para conjurar magias.</p>
-            <ul>
-                <li><strong>Espaços de Magia:</strong> Você recupera todos os espaços de magia gastos ao terminar um descanso longo.</li>
-                <li><strong>Magias Conhecidas:</strong> Você aprende novas magias conforme o nível da classe. Ao subir de nível, pode substituir uma magia conhecida por outra de nível compatível.</li>
-                <li><strong>Habilidade de Conjuração:</strong> Sabedoria é seu atributo de conjuração.
-                    <br><em>CD das Magias</em> = 8 + Bônus de Proficiência + Modificador de Sabedoria
-                    <br><em>Modificador de Ataque de Magia</em> = Bônus de Proficiência + Modificador de Sabedoria
-                </li>
-                <li><strong>Foco de Conjuração:</strong> Você pode usar um foco druídico (ramos, varinhas, cajados, ou objetos de animais sagrados) para conjurar suas magias.</li>
-            </ul>
-            <h3>Consciência Primitiva (3º nível)</h3>
-                <p>Você estabelece um elo com feras e a terra:</p>
+                <p>No 1º nível, você foca em ameaças comuns na natureza.<br>                
+                <strong>Escolha de Inimigo:</strong> Escolha um tipo de inimigo favorito: <strong>bestas, fadas, monstruosidades ou mortos-vivos.</strong><br>
+                    &emsp;Alternativamente, você pode selecionar duas raças de <strong>humanoides (ex: gnolls e orcs)</strong></p>
+                
                 <ul>
-                    <li><strong>Comunicação Inata:</strong> Comunique ideias simples com feras. Entenda estados emocionais, se estão sob efeito de magia, necessidades e intenções. (Não funciona em criaturas que atacaram nos últimos 10 min).</li>
-                    <li><strong>Rastreio de Inimigos:</strong> Gaste 1 minuto em concentração para sentir se qualquer <strong>inimigo favorito</strong> está a até 8 km. Revela tipo, número, direção e distância.</li>
+                    <li><strong>Bônus de Dano:</strong> Você recebe um bônus de <strong>+2 nas jogadas de dano</strong> com ataques de arma contra criaturas do tipo escolhido.</li>
+                    <li><strong>Rastreamento:</strong> Você tem vantagem em testes de <strong>Sabedoria (Sobrevivência)</strong> para rastrear seus inimigos prediletos, bem como em testes de <strong>Inteligência</strong> para se lembrar de informações sobre eles.</li>
+                    <li><strong>Idiomas:</strong> Você aprende um idioma à sua escolha falado por seus inimigos favoritos.</li>
+                    <li><strong>Progressão:</strong> Você escolhe um inimigo favorito adicional e um idioma associado no 10º nível.</li>
                 </ul>
+                
+                <h2>Variante: Presa Favorita (Favored Foe)</h2>
+                <p><em>Característica opcional (substitui <strong>Inimigo Favorito</strong>)</em></p>
+                
+                <p>Quando você atinge uma criatura com uma jogada de ataque, você pode invocar seu elo místico com a natureza para marcar o alvo como seu inimigo favorito por 1 minuto ou até perder sua concentração (como se estivesse concentrado em uma magia).</p>
 
-            <h3>Variante: Consciência Primordial (Primal Awareness)</h3>
-            <p><em>Característica opcional (substitui Consciência Primitiva)</em></p>
-            <p>Você aprende magias adicionais (conforme o nível) que não contam no seu limite de magias conhecidas. Você pode conjurar cada uma delas uma vez por descanso longo sem gastar espaços de magia.</p>
-                <table class="class-table">
-                    <thead><tr><th>Nível de Patrulheiro</th><th>Magia</th></tr></thead>
-                    <tbody>
-                        <tr><td>3º</td><td><em>falar com animais</em></td></tr>
-                        <tr><td>5º</td><td><em>sentido bestial</em></td></tr>
-                        <tr><td>9º</td><td><em>falar com plantas</em></td></tr>
-                        <tr><td>13º</td><td><em>localizar criatura</em></td></tr>
-                        <tr><td>17º</td><td><em>comunhão com a natureza</em></td></tr>
-                    </tbody>
-                </table>
-             <h3>Incremento no Valor de Habilidade (4º, 8º, 12º, 16º e 19º nível)</h3>
-            <p>Você pode aumentar um atributo em 2 ou dois atributos em 1. O limite máximo para atributos com esta característica é 20.</p>
+                        <ul>
+                            <li><strong>Dano Extra:</strong> Na primeira vez em cada um de seus turnos que você atingir o inimigo favorito e causar dano a ele, você pode aumentar esse dano em <strong>1d4</strong>.</li>
+                            <li><strong>Usos:</strong> Você pode usar esta característica um número de vezes igual ao seu <strong>bônus de proficiência</strong>. Você recupera todos os usos após um descanso longo.</li>
+                            <li><strong>Evolução:</strong> O dano extra aumenta para <strong>1d6</strong> no 6º nível e <strong>1d8</strong> no 14º nível.</li>
+                        </ul>
+                
+                    <h2>Explorador Natural (Natural Explorer)</h2>
+                
+                    <p>Você é um mestre em navegar no mundo natural e reage com ação rápida e decisiva. Escolha um terreno favorito: ártico, costa, deserto, floresta, campos, montanha, pântano ou o Subterrâneo.</p>
+                
+                    <p>Nesse terreno você possui as seguintes vantagens:</p>
+                
+                    <ul>
+                        <li>Você ignora terreno difícil.</li>
+                        <li><strong>Viajante Experiente:</strong> Ao viajar por uma hora ou mais em seu terreno favorito, seu grupo ignora terreno difícil, não pode se perder (exceto por meios mágicos), e você permanece alerta mesmo realizando outras tarefas. Ao rastrear, você descobre o número exato, tamanhos e há quanto tempo as criaturas passaram.</li>
+                    </ul>
+                
+                    <h2>Variante: Explorador Habilidoso (Deft Explorer)</h2>
+                
+                    <p><em>Característica opcional (substitui <strong>Explorador Natural</strong>)</em></p>
+                
+                    <p>Você ganha o benefício <strong>Astuto</strong> no 1º nível, e benefícios adicionais no 6º e 10º nível.<br>
+                        &emsp;<strong>Astuto:</strong> Escolha uma de suas proficiências em perícia. Seu bônus de proficiência é dobrado para qualquer teste de atributo que use a perícia escolhida. Além disso, você aprende dois idiomas adicionais.</p>
+                
+                    <h2>Estilo de Luta</h2>
+                
+                    <p>No 2º nível, você adota um estilo de luta específico como sua especialidade. Escolha uma das seguintes opções. Você não pode escolher um Estilo de Luta mais de uma vez, mesmo que tenha a oportunidade de escolher novamente mais tarde.</p>
+                
+                    <h3>Arquearia</h3>
+                    <p>Você recebe um bônus de +2 nas jogadas de ataque que fizer com armas de ataque à distância.</p>
+                
+                    <h3>Luta às Cegas</h3>
+                    <p>Você possui visão às cegas com alcance de 3 metros. Dentro desse alcance, você pode ver efetivamente qualquer coisa que não esteja totalmente coberta, mesmo que esteja cego ou na escuridão. Além disso, você pode ver uma criatura invisível dentro desse alcance, a menos que a criatura consiga se esconder de você. </p>
+                
+                    <h3>Defesa</h3>
+                    <p>Enquanto estiver usando armadura, você recebe um bônus de +1 na CA.</p>
+                
+                    <h3>Guerreiro Druídico</h3>
+                    <p>Você aprende dois truques à sua escolha da lista de magias de druida. Eles contam como magias de ranger para você, e Sabedoria é sua habilidade de conjuração para eles. Sempre que você subir de nível nesta classe, poderá substituir um desses truques por outro truque da lista de magias de druida.</p>
+                
+                    <h3>Duelo</h3>
+                    <p>Quando você estiver empunhando uma arma corpo a corpo em uma das mãos e nenhuma outra arma, você recebe um bônus de +2 nas jogadas de dano com essa arma.</p>
+                
+                    <h3>Combate com Armas de Arremesso</h3>
+                    <p>Você pode sacar uma arma que tenha a propriedade de arremesso como parte do ataque que você realiza com a arma. Além disso, ao acertar um ataque à distância usando uma arma de arremesso, você ganha um bônus de +2 na rolagem de dano.</p>
 
-            <h3>Ataque Extra (5º nível)</h3>
-            <p>Você pode atacar duas vezes em vez de uma sempre que realizar a ação de Ataque.</p>
+                    <h3>Combate com Duas Armas</h3>
+                    <p>Ao usar duas armas, você pode adicionar seu modificador de habilidade ao dano do segundo ataque.</p>
+                
+                    <h2>Conjuração</h2>
+                    <p>Ao atingir o 2º nível, você aprende a usar a essência mágica da natureza para conjurar magias, assim como um druida.</p>
+                
+                    <h3>Espaços de Magia</h3>
+                
+                    <p>A tabela do Ranger mostra quantos espaços de magia você tem para conjurar suas magias de 1º nível ou superior. Para conjurar uma dessas magias, você deve gastar um espaço de magia do nível da magia ou superior. Você recupera todos os espaços gastos ao terminar um descanso longo.</p>
+                
+                    <h3>Magias Conhecidas de 1º Nível e Superiores</h3>
+                    <p>Você conhece duas magias de 1º nível à sua escolha da lista de magias de ranger. A coluna "Magias Conhecidas" da tabela mostra quando você aprende novas magias. Cada uma dessas magias deve ser de um nível para o qual você tenha espaços de magia.<br>
+                        &emsp;Além disso, ao subir de nível nesta classe, você pode escolher uma das magias de ranger que conhece e substituí-la por outra magia da lista de ranger, que também deve ser de um nível compatível com seus espaços.</p>
+                
+                    <h3>Habilidade de Conjuração</h3>
+                
+                    <p>Sabedoria é sua habilidade de conjuração para suas magias de ranger. Você usa sua Sabedoria sempre que uma magia se refere à sua habilidade de conjuração, para definir a CD de resistência e para jogadas de ataque mágico.</p>
+                
+                    <p><strong>CD para suas Magias</strong> = 8 + bônus de proficiência + seu modificador de Sabedoria<br>
+                        &emsp;<strong>Modificador de Ataque de Magia</strong> = bônus de proficiência + seu modificador de Sabedoria</p>
+                
+                    <h3>Foco de Conjuração</h3>
+                    <p> Você pode usar um foco druídico como foco de conjuração para suas magias de ranger. Um foco druídico pode ser um ramo de visco, uma varinha, um cajado de madeira especial ou um objeto que incorpore penas, pelos, ossos e dentes de animais sagrados.</p>
+                
+                    <h2>Consciência Primitiva (Primeval Awareness)</h2>
+                
+                    <p>No 3º nível, sua maestria no folclore dos patrulheiros permite estabelecer um elo poderoso com as feras e a terra.</p>
+                        <ul>
+                            <li><strong>Comunicação Inata:</strong> Através de sons e gestos, você pode comunicar ideias simples a uma besta (como uma ação) e ler seu humor e intenções básicas. Você descobre seu estado emocional, se ela está afetada por magia, suas necessidades imediatas e como persuadi-la a não atacar. Você não pode usar isso contra uma criatura que atacou nos últimos 10 minutos.</li>
+                            <li><strong>Rastreio de Inimigos:</strong> Ao gastar 1 minuto ininterrupto em concentração, você sente se qualquer um de seus <strong>inimigos favoritos</strong> está a até 8 km de você. Esta característica revela quais inimigos estão presentes, seus números, a direção geral e a distância (em quilômetros).</li>
+                        </ul>
+                    
+                        <h2>Variante: Consciência Primordial (Primal Awareness)</h2>
+                
+                    <p><em>Característica opcional (substitui <strong>Consciência Primitiva</strong>)</em><br>
+                        &emsp;Você aprende magias adicionais ao atingir certos níveis nesta classe. Estas magias não contam no número de magias de patrulheiro que você conhece e você pode conjurar cada uma delas uma vez por descanso longo sem gastar espaços de magia</p>
+          
+                        <table class="class-table-clerigo">
+                            <thead>
+                                <tr>
+                                    <th>Nível de Patrulheiro</th>
+                                    <th>Magia</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th>Nível de Patrulheiro</th>
+                                    <th>Magia</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>3º</td>
+                                    <td><a href="https://2014.5e.tools/spells.html#speak%20with%20animals_phb" target="_blank" rel="noopener noreferrer"><em>falar com animais</em></a></td>
+                                </tr>
+                                <tr>
+                                    <td>5º</td>
+                                    <td><a href="https://2014.5e.tools/spells.html#beast%20sense_phb" target="_blank" rel="noopener noreferrer"><em>sentido bestial</em></a></td>
+                                </tr>
+                                <tr>
+                                    <td>9º</td>
+                                    <td><a href="https://2014.5e.tools/spells.html#speak%20with%20plants_phb" target="_blank" rel="noopener noreferrer"><em>falar com plantas</em></a></td>
+                                </tr>
+                                <tr>
+                                    <td>13º</td>
+                                    <td><a href="https://2014.5e.tools/spells.html#locate%20creature_phb" target="_blank" rel="noopener noreferrer"><em>localizar criatura</em></a></td>
+                                </tr>
+                                <tr>
+                                    <td>17º</td>
+                                    <td><a href="https://2014.5e.tools/spells.html#commune%20with%20nature_phb" target="_blank" rel="noopener noreferrer"><em>comunhão com a natureza</em></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                
+                    <h2>Incremento no Valor de Habilidade</h2>
+                
+                    <p>Ao chegar no 4º nível, e novamente no 8º, 12º, 16º e 19º nível, você pode aumentar um valor de atributo à sua escolha em 2, ou dois valores de atributo à sua escolha em 1. Como padrão, você não pode elevar um valor de atributo acima de 20 com essa característica.</p>
+                
+                    <h2>Ataque Extra</h2>
+                
+                    <p>A partir do 5º nível, você pode atacar duas vezes, em vez de uma, sempre que usar a ação de Ataque no seu turno.</p>
+                
+                    <h2>Mimetísmo (Hide in Plain Sight)</h2>
+                
+                    <p>A partir do 6º nível, você consegue permanecer perfeitamente imóvel por longos períodos para preparar emboscadas.<br>
+                        &emsp;Ao tentar se esconder em seu turno, você pode optar por não se mover. Se evitar o movimento, criaturas que tentarem detectá-lo sofrem uma <strong>penalidade de −10</strong> em seus testes de Sabedoria (Percepção) até o início do seu próximo turno.</p>
 
-            <h3>Mimetísmo (6º nível)</h3>
-            <p>Ao tentar se esconder, se você optar por <strong>não se mover</strong>, criaturas sofrem uma penalidade de <strong>−10</strong> em testes de Sabedoria (Percepção) para detectá-lo até o início do seu próximo turno.
-            </p>
+                        <h2>Variante: Véu da Natureza (Nature's Veil)</h2>
+                
+                    <p><em>Característica opcional (substitui <strong>Mimetísmo</strong>)</em><br>
+                        &emsp;Você utiliza os poderes da natureza para se esconder brevemente. Com uma <strong>Ação Bônus</strong>, você pode se tornar magicamente <strong>invisível</strong>, junto com qualquer equipamento que esteja usando ou carregando, até o início do seu próximo turno.</p>
+                
+                        <ul>
+                            <li><strong>Usos:</strong> Você pode usar esta característica um número de vezes igual ao seu <strong>bônus de proficiência</strong>. Você recupera todos os usos após um descanso longo.</li>
+                            <li><strong>Perda do Benefício:</strong> Você perde este bônus se mover ou ficar caído (voluntariamente ou por efeito externo).</li>
+                            <li><strong>Persistência:</strong> Se você ainda estiver escondido em seu próximo turno e permanecer imóvel, o benefício continua até você ser detectado.</li>
+                        </ul>
+                
+                    <h2>Explorador Natural Maior</h2>
+                
+                    <p>No 6º nível, seu conhecimento do terreno e dos inimigos permite que receba alguns beneficios ao combater em um <strong>terreno favorito</strong> ou contra um <strong>inimigo favorito</strong>.</p>
+                
+                    <ul>
+                        <li>Você escolhe um terreno favorito adicional.</li>
+                        <li>Você ganha a habilidade de usar a ação <strong>Disparar</strong> (Dash) como uma <strong>Ação Bônus</strong> em seu turno.</li>
+                        <li>Você acrescenta seu modificador de Sabedoria as jogadas de iniciativa.</li>
+                        <li>No seu primeiro turno em combate, você tem vantagem em jogadas de ataque contra criaturas que ainda não agiram.</li>
+                    </ul>
+                
+                    <h2>Variante: Explorador Habilidoso - Itinerante (Roving)</h2>
+                    <p><em>Característica opcional (substitui <strong>Explorador Natural Maior</strong>)</em></p>
+                
+                    <p>Seu deslocamento de caminhada aumenta em 5 pés e você ganha deslocamento de escalada e natação igual ao seu deslocamento de caminhada. O dano da sua <strong>Presa Favorita</strong> (se escolhida) aumenta para <strong>1d6</strong>.</p>
 
-            <h3>Variante: Véu da Natureza (Nature's Veil)</h3>
-            <p><em>Característica opcional (substitui Mimetísmo)</em></p>
-            <ul>
-                <li><strong>Ação Bônus:</strong> Torna-se magicamente invisível (incluindo equipamento) até o início do seu próximo turno.</li>
-                <li><strong>Usos:</strong> Igual ao seu bônus de proficiência; recupera após descanso longo.</li>
-                <li><strong>Condições:</strong> Você perde o benefício se se mover ou ficar caído. Se permanecer imóvel e ainda escondido, o benefício persiste até ser detectado.</li>
-            </ul>
-
-            <h3>Explorador Natural Maior (6º nível)</h3>
-            <p>Benefícios ao combater em terreno favorito ou contra inimigo favorito:</p>
-            <ul>
-                <li>Escolhe um terreno favorito adicional.</li>
-                <li>Ação <strong>Disparar (Dash)</strong> pode ser usada como <strong>Ação Bônus</strong>.</li>
-                <li>Adiciona modificador de Sabedoria às jogadas de iniciativa.</li>
-                <li>Vantagem em ataques no primeiro turno contra criaturas que ainda não agiram.</li>
-            </ul>
-
-            <h3>Variante: Explorador Habilidoso - Itinerante (Roving)</h3>
-            <p><em>Característica opcional (substitui Explorador Natural Maior)</em></p>
-            <p>Seu deslocamento aumenta em 5 pés e você ganha deslocamento de escalada e natação igual ao seu deslocamento de caminhada. O dano da sua <em>Presa Favorita</em> aumenta para <strong>1d6</strong>.</p>
-
-            <h3>Passos da Terra (10º nível)</h3>
-            <p>Você ignora terreno difícil não mágico, não sofre dano por plantas ou espinhos não mágicos e possui vantagem em testes de resistência contra plantas mágicas que impeçam movimento.</p>
-
-            <h3>Inimigo Favorito Maior (10º nível)</h3>
-                <ul>
-                    <li><strong>Escolha:</strong> Selecione um tipo de inimigo maior (aberrações, celestiais, construtos, dragões, elementais, ínferos ou gigantes).</li>
-                    <li><strong>Benefícios:</strong> Recebe os bônus normais e um idioma adicional.</li>
-                    <li><strong>Letalidade:</strong> Seu bônus de dano contra <strong>todos</strong> os seus inimigos favoritos torna-se <strong>+4</strong>.</li>
-                    <li><strong>Resiliência:</strong> Vantagem em testes de resistência contra magias/habilidades de um inimigo favorito maior.</li>
-                </ul>
-
-            <h3>Terreno Favorito Extra (10º nível)</h3>
-            <p>Escolha um terreno favorito adicional.</p>
-
-            <h3>Variante: Explorador Habilidoso - Incansável (Tireless)</h3>
-            <p><em>Característica opcional (substitui Terreno Favorito Extra)</em></p>
-            <ul>
-                <li><strong>Ação Bônus:</strong> Ganhe 1d8 + mod. Sabedoria em pontos de vida temporários (usos igual ao bônus de proficiência por descanso longo).</li>
-                <li><strong>Recuperação:</strong> Reduz o nível de exaustão em 1 ao terminar um descanso curto.</li>
-            </ul>
-
-            <h3>Resiliência do Ranger (14º nível)</h3>
-            <p>Você ganha proficiência em testes de resistência de <strong>Constituição</strong> (ou escolha outro, caso já possua). Uma vez por descanso longo, ao gastar Dados de Vida em um descanso curto, você e seus aliados recuperam 1d4 + metade do seu nível de ranger em PV adicionais.</p>
-
-            <h3>Sentidos Selvagens (18º nível)</h3>
-            <ul>
-                <li>Não sofre desvantagem ao atacar criaturas que não pode ver.</li>
-                <li>Sente a localização de criaturas invisíveis a até 30 pés (se não estiverem escondidas e você não estiver cego/surdo).</li>
-                <li>Não sofre desvantagem em ataques contra seus Inimigos Favoritos.</li>
-            </ul>
-
-            <h3>Matador de Inimigos (20º nível)</h3>
-            <p>Escolha um Inimigo Favorito visível para "Caçar" por 1 minuto:</p>
-            <ul>
-                <li><strong>Sem Escapatória:</strong> Sempre sabe a direção e distância do alvo, a menos que protegido por adivinhação.</li>
-                <li><strong>Marca Mortal:</strong> Crítico em 19 ou 20.</li>
-                <li><strong>Golpe Final:</strong> Pode encerrar a "Caçada" no momento do acerto para garantir um crítico e dobrar o dano bônus de Inimigo Favorito. (Recarrega após descanso curto).</li>
-            </ul>
-        </div>
-
+                    <h2>Passos da Terra (Land’s Stride)</h2>
+                    <p>A partir do 10º nível, você se move através de terreno difícil não mágico sem custo adicional de movimento e não sofre dano por espinhos ou plantas não mágicas. Além disso, possui vantagem em testes de resistência contra plantas criadas ou manipuladas magicamente para impedir movimento (como a magia <em>emaranhar</em>).</p>
+                
+                    <h2>Inimigo Favorito Maior</h2>
+                
+                    <p>No 10º nível, você está pronto para caçar presas ainda mais mortais.<br></p>
+                        <ul>
+                            <li><strong>Escolha:</strong> Selecione um tipo de inimigo favorito maior: <strong>aberrações, celestiais, construtos, dragões, elementais, ínferos ou gigantes</strong>.</li>
+                            <li><strong>Benefícios:</strong> Você ganha todos os benefícios normais contra este inimigo, incluindo um idioma adicional.</li>
+                            <li><strong>Letalidade:</strong> Seu bônus nas jogadas de dano contra <strong>todos</strong> os seus inimigos favoritos aumenta para <strong>+4</strong>.</li>
+                            <li><strong>Resiliência:</strong> Você possui <strong>Vantagem</strong> em testes de resistência contra magias e habilidades usadas por um inimigo favorito maior.</li>
+                        </ul>
+                
+                    <h2>Terreno Favorito Extra</h2>
+                    <p>No 10º nível, você escolhe um terreno favorito adicional.</p>
+                
+                    <h2>Variante: Explorador Habilidoso - Incansável (Tireless)</h2>
+                
+                    <p><em>Característica opcional (substitui <strong>Terreno Favortito Extra</strong>)</em><br>
+                        &emsp;Com uma ação bônus, você pode ganhar pontos de vida temporários iguais a <strong>1d8 + seu modificador de Sabedoria</strong>. Você pode usar isso um número de vezes igual ao seu bônus de proficiência por descanso longo. Além disso, o nível de exaustão é reduzido em 1 sempre que você terminar um descanso curto.</p>
+                
+                    <h2>Resiliência do Ranger</h2>
+                
+                    <p>No 14º nível, sobreviver às asperezas das terras selvagens forjou seu corpo, mente e alma. Você ganha proficiência em testes de resistência de <strong>Constituição</strong>. Se você já possuir essa proficiência, você ganha proficiência em outro teste de resistência de sua escolha.<br>
+                        &emsp;Além disso, uma vez por descanso longo, sempre que você ou um aliado gastar Dados de Vida para recuperar pontos de vida durante um descanso curto, cada criatura que gastou um dado recupera pontos de vida adicionais iguais a <strong>1d4 + metade do seu nível de ranger</strong>.</p>
+                
+                    <h2>Sentidos Selvagens</h2>
+                
+                    <p>No 18º nível, você adquire sentidos sobrenaturais que o ajudam a lutar contra criaturas que você não pode ver. Quando você ataca uma criatura que não pode ver, sua incapacidade de vê-la não impõe desvantagem nas suas jogadas de ataque contra ela.<br>
+                        &emsp;Você também tem consciência da localização de qualquer criatura invisível a até 30 pés de você, desde que a criatura não esteja escondida e você não esteja cego ou surdo.<br>
+                        &emsp;Adicionalmente, você não pode sofrer desvantagem em jogadas de ataque contra seus Inimigos Favoritos.</p>
+                
+                    <h2>Matador de Inimigos</h2>
+                
+                    <p>No 20º nível, você se torna um caçador inigualável. Você pode escolher um <strong>Inimigo Favorito</strong> que possa ver para "Caçar", marcando-o por 1 minuto e recebendo os seguintes benefícios:</p>
+                
+                    <ul>
+                        <li><strong>Sem Escapatória.</strong> Enquanto o alvo estiver no mesmo plano de existência que você e não estiver protegido por magia de adivinhação, você sempre sabe a distância aproximada e a direção do inimigo marcado, mesmo que ele esteja escondido ou camuflado.</li>
+                        <li><strong>Marca Mortal.</strong> Qualquer jogada de ataque que você fizer contra o alvo marcado será um acerto crítico com um resultado 19 ou 20 no d20.</li>
+                        <li><strong>Golpe Final.</strong> Quando você atingir o alvo com um ataque, você pode escolher encerrar a "Caçada" imediatamente (após o acerto, mas antes de rolar o dano). Se o fizer, o ataque torna-se um acerto crítico e você dobra o dano bônus recebido pela sua característica de Inimigo Favorito para este ataque. Você não pode usar este recurso novamente até terminar um descanso curto.</li>
+                    </ul>
+                
+        <hr>
     <!-- ================= PÁGINA: PATRULHEIRO - CAÇADOR NOTURNO ================= -->
+
         <div class="container-class">
-            <h2 id="p44">Patrulheiro: Caçador Noturno</h2>
-            <p>O Caçador Noturno utiliza magia das sombras para criar familiares espectrais. Estes companheiros atuam como extensões do próprio patrulheiro, permitindo táticas de caça especializadas conforme a forma escolhida.</p>
+            <h2 id="p44" class="subclasse">Patrulheiro: Caçador Noturno</h2>
+            <p>O Caçador Noturno utiliza uma magia singular para moldar familiares sombrios que o auxiliam em combate e servem como extensões de si mesmo. Especializado em rastrear presas em florestas e planícies, o estilo de luta deste caçador é definido pelo tipo de companheiro sombrio escolhido, desempenhando papéis táticos únicos no campo de batalha.</p>
 
-            <h3>Familiar das Sombras (3º nível)</h3>
-            <p>Como uma <strong>ação bônus</strong>, invoque ou dispense um familiar espectral (invulnerável). Você pode abrir mão de ataques da ação <em>Atacar</em> para permitir que o familiar ataque usando seu modificador de ataque de magia. As habilidades do familiar ativam efeitos vinculados aos seus ataques com arma (ex: <em>Marca do Caçador</em>).</p>
-            <ul>
-                <li><strong>Gato:</strong> Deslocamento 30ft. Causa 1d4 + Sab. Dano cortante; próximo ataque contra o alvo por aliado tem <strong>vantagem</strong>.</li>
-                <li><strong>Corvo:</strong> Voo 90ft/Caminhada 10ft. Causa 1d10 + Sab. Dano perfurante.</li>
-                <li><strong>Lobo:</strong> Deslocamento 40ft. Causa 1d6 + Sab. Dano perfurante; impõe <strong>desvantagem</strong> no próximo ataque do alvo.</li>
-            </ul>
+<h2>Familiar das Sombras</h2>
 
-            <h3>Magia do Perseguidor Noturno (3º nível)</h3>
-            <p>Você aprende magias adicionais baseadas na forma escolhida. Elas contam como magias de patrulheiro e não limitam suas magias conhecidas:</p>
-            <table class="class-table">
-                <thead><tr><th>Nível</th><th>Gato</th><th>Corvo</th><th>Lobo</th></tr></thead>
-                <tbody>
-                    <tr><td>3º</td><td>Queda Suave</td><td>Onda Trovejante</td><td>Causar Medo</td></tr>
-                    <tr><td>5º</td><td>Invisibilidade</td><td>Lufada de Vento</td><td>Escuridão</td></tr>
-                    <tr><td>9º</td><td>Velocidade</td><td>Convocar Relâmpagos</td><td>Medo</td></tr>
-                    <tr><td>13º</td><td>Invisibilidade Maior</td><td>Esfera Tempestuosa</td><td>Resplendor Enjoativo</td></tr>
-                    <tr><td>17º</td><td>Similaridade</td><td>Controlar os Ventos</td><td>Praga</td></tr>
-                </tbody>
-            </table>
+<p>
+    No 3º nível, você adquire a habilidade de invocar uma criatura das sombras para servi-lo. Como uma ação bônus no seu turno, você pode conjurar ou dispensar seu familiar das sombras, que assume a forma de uma criatura espectral que não pode ser alvo de ataques nem sofrer dano. Você escolhe a forma que pode criar ao selecionar esta subclasse.<br>
+    &emsp;Ao conjurar seu familiar das sombras, ele aparece em um espaço desocupado a até 30 pés de você. Enquanto estiver conjurado, você pode abrir mão de um ou mais ataques ao usar a ação Atacar para que seu familiar das sombras realize ataques próprios. Esses ataques usam seu modificador de ataque de magia de Patrulheiro para as jogadas de ataque, têm alcance de 5 pés e ativam quaisquer magias ou habilidades que seriam ativadas por seus próprios ataques com armas (como Marca do Caçador). O familiar realiza um ataque corpo a corpo com arma para cada ataque que você abrir mão. Enquanto estiver a até 120 pés do seu familiar, você pode comandá-lo para se mover (sem necessidade de ação). As velocidades e os ataques das três formas estão listados abaixo.
+</p>
 
-            <h3>Transposição Sombria (7º nível)</h3>
-            <p>Ao conjurar uma magia de patrulheiro de 1º nível ou superior, você pode trocar de lugar com seu familiar imediatamente antes ou depois da conjuração.</p>
+<ul>
+    <li><strong>Gato:</strong> Esta forma tem uma velocidade de deslocamento de 30 pés. Se acertar, seu ataque causa <strong>1d4</strong> + seu modificador de Sabedoria de dano cortante e faz com que o próximo ataque feito contra o alvo por uma criatura que não seja você ou o gato, antes do final do seu próximo turno, seja feito com vantagem.</li>
+    <li><strong>Corvo:</strong> Esta forma tem uma velocidade de voo de 90 pés e uma velocidade de caminhada de 10 pés. Se acertar, seu ataque causa <strong>1d10</strong> + seu modificador de Sabedoria de dano perfurante.</li>
+    <li><strong>Lobo:</strong> Esta forma tem uma velocidade de deslocamento de 40 pés. Se acertar, seu ataque causa <strong>1d6</strong> + seu modificador de Sabedoria de dano perfurante e impõe desvantagem ao alvo na próxima jogada de ataque que ele fizer antes do final do seu próximo turno.</li>
+</ul>
 
-            <h3>Sentinela Sombrio (11º nível)</h3>
-            <p>Sempre que uma criatura sair do alcance do seu familiar das sombras, você pode usar sua <strong>reação</strong> para que ele realize um ataque contra essa criatura. <em>Nota: Ações de Desengajar ou efeitos que previnem ataques de oportunidade impedem esta reação.</em></p>
+<h2>Magia do Perseguidor Noturno</h2>
 
-            <h3>Baluarte da Meia-Noite (15º nível)</h3>
-            <p>Sempre que uma criatura ao alcance do seu familiar realizar um ataque contra você, use sua <strong>reação</strong> para que o familiar realize um ataque contra ela.</p>
-            <p><strong>Efeito Adicional:</strong> Se você ordenar um ataque via reação e este acertar, a velocidade do alvo é reduzida a <strong>0</strong> até o final do turno atual do alvo.</p>
-        </div>
-        </div>
+<p>
+    Além disso, no 3º nível, você aprende uma magia adicional ao atingir certos níveis nesta classe, com base na forma que você escolheu acima, conforme mostrado na tabela de Magias do Caçador Noturno. A magia conta como uma magia de patrulheiro para você, mas não conta para o seu limite de magias conhecidas.
+</p>
+
+    <h3>Feitiços de Caçador Noturno</h3>
+
+    <table class="class-table-ranger-noturno">
+        <thead>
+            <tr>
+                <th>Nível de Patrulheiro</th>
+                <th>Feitiços de gato</th>
+                <th>Feitiços do Corvo</th>
+                <th>Feitiços de Lobo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3º</td>
+                <td><a href="https://2014.5e.tools/spells.html#feather%20fall_phb" target="_blank" rel="noopener noreferrer">Queda Suave</a></td>
+                <td><a href="https://2014.5e.tools/spells.html#thunderwave_phb" target="_blank" rel="noopener noreferrer">Onda Trovejante</a></td>
+                <td><a href="https://2014.5e.tools/spells.html#cause%20fear_xge" target="_blank" rel="noopener noreferrer">Causar Medo</a></td>
+            </tr>
+            <tr>
+                <td>5º</td>
+                <td><a href="https://2014.5e.tools/spells.html#invisibility_phb" target="_blank" rel="noopener noreferrer">Invisibilidade</a></td>
+                <td><a href="https://2014.5e.tools/spells.html#gust%20of%20wind_phb" target="_blank" rel="noopener noreferrer">Lufada de Vento</a></td>
+                <td><a href="https://2014.5e.tools/spells.html#darkness_phb" target="_blank" rel="noopener noreferrer">Escuridão</a></td>
+            </tr>
+            <tr>
+                <td>9º</td>
+                <td><a href="https://2014.5e.tools/spells.html#haste_phb" target="_blank" rel="noopener noreferrer">Velocidade</a></td>
+                <td><a href="https://2014.5e.tools/spells.html#call%20lightning_phb" target="_blank" rel="noopener noreferrer">Convocar Relâmpagos</a></td>
+                <td><a href="https://2014.5e.tools/spells.html#fear_phb" target="_blank" rel="noopener noreferrer">Medo</a></td>
+            </tr>
+            <tr>
+                <td>13º</td>
+                <td><a href="https://2014.5e.tools/spells.html#greater%20invisibility_phb" target="_blank" rel="noopener noreferrer">Invisibilidade Maior</a></td>
+                <td><a href="https://2014.5e.tools/spells.html#storm%20sphere_xge" target="_blank" rel="noopener noreferrer">Esfera Tempestuosa</a></td>
+                <td><a href="https://2014.5e.tools/spells.html#sickening%20radiance_xge" target="_blank" rel="noopener noreferrer">Resplendor Enjoativo</a></td>
+            </tr>
+            <tr>
+                <td>17º</td>
+                <td><a href="https://2014.5e.tools/spells.html#seeming_phb" target="_blank" rel="noopener noreferrer">Similaridade</a></td>
+                <td><a href="https://2014.5e.tools/spells.html#control%20winds_xge" target="_blank" rel="noopener noreferrer">Controlar os Ventos</a></td>
+                <td><a href="https://2014.5e.tools/spells.html#contagion_phb" target="_blank" rel="noopener noreferrer">Praga</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+<h2>Transposição Sombria</h2>
+
+<p>
+    A partir do 7º nível, sempre que você conjurar uma magia de patrulheiro de 1º nível ou superior, você pode optar por trocar de lugar com seu familiar imediatamente antes ou depois de conjurar a magia.
+</p>
+
+    <h2>Sentinela Sombrio</h2>
+
+    <p>
+        No 11º nível, sempre que uma criatura sair do alcance do seu familiar das sombras, você pode usar sua reação para que ele realize um ataque contra essa criatura. A ação Desengajar e outros efeitos que impedem ataques de oportunidade impedem essa reação.
+    </p>
+
+    <h2>Baluarte da Meia-Noite</h2>
+
+    <p>
+        A partir do 15º nível, sempre que uma criatura ao alcance do seu familiar das sombras realizar um ataque contra você, você pode usar sua reação para fazer com que o familiar realize um ataque contra essa criatura.<br>
+        &emsp;Além disso, sempre que você ordenar que seu familiar faça um ataque usando sua reação e o ataque acertar, a velocidade do alvo será reduzida a 0 até o final do turno atual do alvo.
+    </p>
     </section>
 
     <!-- ================= PÁGINA: ANTECEDENTE - CANALIZADOR DE ALMAS ================= -->
@@ -1384,70 +1798,94 @@
                 <li><strong>Proficiências em Perícias:</strong> Arcanismo e (Persuasão ou Intimidação)</li>
                 <li><strong>Proficiências em Ferramentas:</strong> Suprimentos de alquimista, kit de envenenador</li>
                 <li><strong>Idiomas:</strong> Infernal ou Abissal</li>
-                <li><strong>Equipamento:</strong> Suprimentos de alquimista, canivete, giz com barbante, livreto de símbolos esotéricos, roupas comuns e bolsa com 10 po.</li>
+                <li><strong>Equipamento:</strong> Um conjunto de suprimentos de alquimista, um canivete, um pedaço de giz preso a um barbante, um livreto de símbolos esotéricos, um conjunto de roupas comuns e uma bolsa contendo 10 po.</li>
             </ul>
 
             <h3>Recurso: Canalizar Essência</h3>
-            <p>Como parte de um descanso curto, você pode negar a redução de um valor de atributo gastando Dados de Vida igual ao dobro do valor da redução (estes Dados de Vida não recuperam pontos de vida).</p>
+            <p>Você pode recorrer às suas reservas internas para se recuperar de lesões debilitantes. Como parte de um descanso curto, você pode compensar uma redução em um de seus valores de atributo gastando um número de Dados de Vida igual ao dobro do valor da redução que deseja negar. Quando usados desta forma, os Dados de Vida não conferem outros benefícios, como a recuperação de pontos de vida.</p>
 
             <h3>Características Sugeridas</h3>
-            <p>Você manipula a energia vital que une corpo e espírito. Freqüentemente atraídos pelas Artes das Trevas, canalizadores buscam o poder escondido nas almas.</p>
+            <p>Você dedica sua existência ao estudo das energias vitais e à manipulação da essência que mantém a coesão entre o corpo e o espírito. Seja por necessidade de sobrevivência ou busca por poder inominável, você aprendeu que a alma é o recurso mais valioso de todos.
+
+                Os canalizadores de almas são frequentemente atraídos pelas Artes das Trevas. Para muitos, o caminho mais fácil envolve o uso de criaturas invocadas, servos mortos-vivos e aliados enganados. Nem todo canalizador escolhe explorar tais métodos, mas a tentação é uma sombra constante.
+                
+                Use as tabelas abaixo para definir os traços de personalidade, ideais, ligações e defeitos do seu personagem.</p>
 
             <div class="caracteristicas-colunas">
                 <div class="coluna-bloco">
 
-                    <h4>Traço de Personalidade</h4>
                     <table class="class-table">
-                    <thead><tr><th>d8</th><th>Traço</th></tr></thead>
-                    <tbody>
-                        <tr><td>1</td><td>O poder tem um preço e estou preparado para pagá-lo.</td></tr>
-                        <tr><td>2</td><td>Companheiros são úteis apenas pelas habilidades e proteção.</td></tr>
-                        <tr><td>3</td><td>Sinto-me à vontade em criptas e cemitérios.</td></tr>
-                        <tr><td>4</td><td>Detesto quem professa fé sem garantia de recompensa.</td></tr>
-                        <tr><td>5</td><td>Não me importo com o sofrimento alheio.</td></tr>
-                        <tr><td>6</td><td>Sacrificarei meu bem-estar por companheiros de confiança.</td></tr>
-                        <tr><td>7</td><td>Detesto-me pela depravação que alcancei para ter poder.</td></tr>
-                        <tr><td>8</td><td>Desconfio de quem tem poder sobre mim ou outros.</td></tr>
-                    </tbody>
-                </table>
+                        <thead>
+                            <tr>
+                                <th>d8</th>
+                                <th>Traço de Personalidade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Tenho consciência de que o poder tem um preço e estou preparado para pagá-lo.</td></tr>
+                            <tr><td>2</td><td>Meus companheiros são úteis pelas habilidades e pela proteção que me oferecem.</td></tr>
+                            <tr><td>3</td><td>Sinto-me à vontade onde os mortos estão reunidos, como criptas e cemitérios.</td></tr>
+                            <tr><td>4</td><td>Detesto quem professa fé ou dever sem garantir que será recompensado por isso.</td></tr>
+                            <tr><td>5</td><td>Não me importo com o sofrimento alheio; as preocupações deles não me dizem respeito.</td></tr>
+                            <tr><td>6</td><td>Sacrificarei meus bens e meu bem-estar por companheiros de confiança.</td></tr>
+                            <tr><td>7</td><td>Eu me detesto pela profunda depravação que alcancei para obter meu poder.</td></tr>
+                            <tr><td>8</td><td>Desconfio de qualquer pessoa que tenha poder sobre mim ou sobre os outros.</td></tr>
+                        </tbody>
+                    </table>
+                    
 
-                <h4>Ideal</h4>
-                <table class="class-table">
-                    <thead><tr><th>d6</th><th>Ideal</th></tr></thead>
-                    <tbody>
-                        <tr><td>1</td><td><strong>Vontade:</strong> Fazer o que outros evitam.</td></tr>
-                        <tr><td>2</td><td><strong>Sacrifício:</strong> Necessário para a grandeza.</td></tr>
-                        <tr><td>3</td><td><strong>Abstinência:</strong> Pureza de propósito.</td></tr>
-                        <tr><td>4</td><td><strong>Engano:</strong> Nunca conte toda a verdade.</td></tr>
-                        <tr><td>5</td><td><strong>Loucura:</strong> Abraço a turbulência arcana.</td></tr>
-                        <tr><td>6</td><td><strong>Diabólico:</strong> Inflijo dor com entusiasmo.</td></tr>
-                    </tbody>
-                </table>
+                    
+                    <table class="class-table">
+                        <thead>
+                            <tr>
+                                <th>d6</th>
+                                <th>Ideal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td><strong>Vontade.</strong> Preciso ter a vontade de fazer o que os outros evitam. (Qualquer)</td></tr>
+                            <tr><td>2</td><td><strong>Sacrifício.</strong> O sacrifício é necessário para alcançar a grandeza. (Qualquer)</td></tr>
+                            <tr><td>3</td><td><strong>Abstinência.</strong> Eu me purifico de distrações para ter pureza de propósito. (Leal)</td></tr>
+                            <tr><td>4</td><td><strong>Engano.</strong> Nunca conto toda a verdade; ela já foi usada contra mim. (Mau)</td></tr>
+                            <tr><td>5</td><td><strong>Loucura.</strong> Abraço a turbulência mental da manipulação arcana. (Caótico)</td></tr>
+                            <tr><td>6</td><td><strong>Diabólico.</strong> Eu inflijo dor e conflito com zelo e entusiasmo. (Mau)</td></tr>
+                        </tbody>
+                    </table>
             </div>
+
             <div class="coluna-bloco">
-                <h4>Ligação</h4>
+                
                 <table class="class-table">
-                    <thead><tr><th>d6</th><th>Ligação</th></tr></thead>
+                    <thead>
+                        <tr>
+                            <th>d6</th>
+                            <th>Ligação</th>
+                        </tr>
+                    </thead>
                     <tbody>
-                        <tr><td>1</td><td>Meu foco é um objeto único que criei.</td></tr>
-                        <tr><td>2</td><td>Autossuficiência é meu maior conforto.</td></tr>
-                        <tr><td>3</td><td>Busco um texto antigo de conhecimento esotérico.</td></tr>
-                        <tr><td>4</td><td>Aproveito todas as oportunidades, custe o que custar.</td></tr>
-                        <tr><td>5</td><td>Toda vida é minha responsabilidade.</td></tr>
-                        <tr><td>6</td><td>Minha lealdade é inabalável uma vez conquistada.</td></tr>
+                        <tr><td>1</td><td>Meu foco de conjuração é um objeto que eu criei e não vivo sem ele.</td></tr>
+                        <tr><td>2</td><td>Minha autossuficiência me proporciona conforto e confiança.</td></tr>
+                        <tr><td>3</td><td>Busco um texto antigo de conhecimento esotérico e arcano.</td></tr>
+                        <tr><td>4</td><td>Aproveito todas as oportunidades, independente das consequências.</td></tr>
+                        <tr><td>5</td><td>Desejo enxergar além da carne, até a própria alma. Toda vida é minha responsabilidade.</td></tr>
+                        <tr><td>6</td><td>Minha lealdade é difícil de conquistar, mas uma vez ganha, é inabalável.</td></tr>
                     </tbody>
                 </table>
-
-                <h4>Defeito</h4>
+                
                 <table class="class-table">
-                    <thead><tr><th>d6</th><th>Defeito</th></tr></thead>
+                    <thead>
+                        <tr>
+                            <th>d6</th>
+                            <th>Defeito</th>
+                        </tr>
+                    </thead>
                     <tbody>
-                        <tr><td>1</td><td>Vejo todos ao redor como recursos.</td></tr>
-                        <tr><td>2</td><td>Meu corpo é apenas uma ferramenta de energia.</td></tr>
-                        <tr><td>3</td><td>Prefiro companhia barulhenta para elevar meu espírito.</td></tr>
+                        <tr><td>1</td><td>Considero todos ao meu redor como recursos a serem utilizados.</td></tr>
+                        <tr><td>2</td><td>Minha forma física é apenas uma ferramenta e fonte de energia.</td></tr>
+                        <tr><td>3</td><td>Prefiro a companhia de pessoas barulhentas para elevar meu espírito melancólico.</td></tr>
                         <tr><td>4</td><td>O caminho mais fácil é sempre o melhor.</td></tr>
-                        <tr><td>5</td><td>Guio-me por impulsos repentinos.</td></tr>
-                        <tr><td>6</td><td>Desconfio de quem depende de divindades.</td></tr>
+                        <tr><td>5</td><td>Eu me deixo guiar por impulsos; minha primeira inclinação é a que sigo.</td></tr>
+                        <tr><td>6</td><td>Desconfio de quem depende de divindades volúveis para obter poder.</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -1465,7 +1903,7 @@
             <img class="cortesao-side" src="https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MaM/Abyssal%20Courtier.webp" alt="Cortesão Abissal">
     
             <ul class="race-stats">
-                <li><strong>Atributos:</strong> (a) Carisma +2, Constituição +1 OU (b) Três atributos diferentes +1.</li>
+                <li><strong>Atributos:</strong>Escolha um dos seguintes: (a) Carisma +2; Constituição +1 (b) Escolha três atributos diferentes de +1.</li>
                 <li><strong>Tipo de Criatura:</strong> Humanoide.</li>
                 <li><strong>Tamanho:</strong> Médio.</li>
                 <li><strong>Velocidade:</strong> 20 pés, natação 40 pés.</li>
@@ -1474,62 +1912,94 @@
             <p>Como um Cortesão Abissal, você possui as seguintes características raciais:</p>
     
             <ul>
-                <li><strong>Idade:</strong> Amadurecem como humanos, mas vivem até 500 anos.</li>
-                <li><strong>Visão no Escuro:</strong> Acostumado às profundezas, enxerga 60 pés na escuridão como se fosse penumbra.</li>
-                <li><strong>Anfíbio:</strong> Pode respirar ar e água.</li>
-                <li><strong>Resistência Abissal:</strong> Resistência a dano de <strong>frio</strong>.</li>
+                <li><strong>Idade:</strong>Os cortesãos abissais amadurecem em um ritmo semelhante ao dos humanos, mas podem viver até 500 anos, tornando-se mais misteriosos e graciosos à medida que envelhecem.</li>
+                <li><strong>Visão no Escuro:</strong> Acostumado às profundezas abissais, você possui visão superior em condições de escuridão e penumbra. Você enxerga na penumbra a até 60 pés como se fosse luz plena, e na escuridão como se fosse penumbra. Você não consegue discernir cores na escuridão, apenas tons de cinza.</li>
+                <li><strong>Anfíbio:</strong> Você pode respirar tanto o ar quanto a água.</li>
+                <li><strong>Resistência Abissal:</strong> Você possui resistência a dano de <strong>frio</strong>.</li>
             </ul>
-    
-            <br>
-    
+        <br>
             <ul>
-                <li><strong>Agarrão de Tentáculo:</strong> Arma natural (ataque desarmado). Causa 1d4 + modificador de Força (dano de concussão) e permite realizar tentativas de agarrar.</li>
-                <li><strong>Elegância Mística:</strong> Proficiência nas perícias <em>Enganação</em> e <em>Persuasão</em>.</li>
-                <li><strong>Idiomas:</strong> Fala, lê e escreve Comum e Aquan.</li>
+                <li><strong>Agarrão de Tentáculo:</strong> Você possui um tentáculo que serve como uma arma natural, a qual pode usar para realizar ataques desarmados. Se acertar, você causa dano de concussão igual a 1d4 + seu modificador de Força, em vez do dano normal de um ataque desarmado. Além disso, você pode usar este tentáculo para tentar agarrar criaturas.</li>
+                <li><strong>Elegância Mística:</strong>Você possui proficiência nas perícias <em>Enganação</em> e <em>Persuasão</em>.</li>
+                <li><strong>Idiomas:</strong>Você pode falar, ler e escrever Comum e Aquan.</li>
             </ul>
         </div>
     </section>
     
     <!-- ================= PÁGINA: TALENTOS HOMEBREW E MODIFICADOS ================= -->
         <section class="subcontainer">
+            <div>
             <h1 id="p48">Talentos Homebrew e Modificados</h1>
 
-        <div>
-            <h3>Combatente de Grupo</h3>
-            <ul>
-                <li>Reduza em 2 (mínimo 1) o dano de concussão, perfuração e corte de ataques não-mágicos.</li>
-                <li>Imune ao bônus de +2 de <strong>Flanqueamento</strong>.</li>
-                <li>Após provocar um ataque de oportunidade, seu movimento não provoca mais ataques de oportunidade pelo resto do turno.</li>
-            </ul>
+            <h2>Combatente de Grupo</h2>
 
-            <h3>Explorador dos Charcos</h3>
+            <p>
+                Você aprimorou suas habilidades de combate e se sente tão à vontade lutando contra um grupo de inimigos quanto enfrentando um combatente individual. Você obtém os seguintes benefícios:
+            </p>
+            
             <ul>
-                <li>Escolha dois tipos de criatura: adicione seu bônus de proficiência à <strong>iniciativa</strong> contra eles.</li>
-                <li>+5 em testes de <em>Furtividade</em> e <em>Sobrevivência</em> contra esses tipos.</li>
-                <li>+2 nas jogadas de <strong>ataque</strong> contra esses tipos.</li>
+                <li>O dano de concussão, perfuração e cortante que você sofre de ataques não-mágicos é reduzido em 2 (mínimo de 1).</li>
+                <li>Criaturas não obtêm o bônus de +2 no ataque contra você ao utilizarem as regras opcionais de <strong>Flanqueamento</strong>.</li>
+                <li>Após provocar um ataque de oportunidade em seu turno, seu movimento não provocará mais ataques de oportunidade pelo restante daquele turno.</li>
             </ul>
-
-            <h3>Pés Leves</h3>
+            
+            <h2>Explorador dos Charcos</h2>
+            
+            <p>
+                Seu profundo conhecimento das criaturas perigosas que habitam o mundo o auxilia tanto no combate quanto no rastreamento delas. Você obtém os seguintes benefícios:
+            </p>
+            
             <ul>
-                <li>+1 na CA enquanto não usar armadura pesada.</li>
-                <li>Ao atacar, troque um dos ataques por um movimento de até metade do seu deslocamento.</li>
-                <li>Ignora terreno difícil não-mágico.</li>
-                <li>Move-se livremente pelo espaço de criaturas hostis.</li>
+                <li>
+                    Selecione dois tipos de criatura à sua escolha. Sempre que você rolar iniciativa no início de um combate que contenha uma ou mais criaturas hostis dos tipos escolhidos, você adiciona seu bônus de proficiência à rolagem. Se uma criatura tiver alterado magicamente sua forma para parecer outro tipo de criatura, você não recebe este benefício.
+                    <ul>
+                        <li>Caso escolha <strong>Humanoide</strong> deve escolher uma <strong>Raça</strong> especifica (ex: elfo, humano, goblin, etc), pode escolher duas vezes com raças diferentes.</li>
+                    </ul>
+                </li>
+                <li>Você recebe um bônus de +5 em testes de <strong>Destreza (Furtividade)</strong> e <strong>Sabedoria (Sobrevivência)</strong> que envolvam um ou mais dos tipos de criatura escolhidos.</li>
+                <li>Você recebe um bônus de +2 nas jogadas de ataque feitas contra alvos dos tipos de criatura escolhidos.</li>
             </ul>
-
-            <h3>Vocalista Arcanista</h3>
-            <p>Ao conjurar magia com teste de resistência ou ataque, realize um teste de <em>Carisma (Performance)</em> (CD 10 + nível da magia). Se vencer, dobre seu bônus de proficiência no ataque ou na CD da magia.</p>
+            
+            <h2>Pés Leves</h2>
+            
+            <p>
+                Você é excepcionalmente rápido e ágil. Você obtém os seguintes benefícios:
+            </p>
+            
             <ul>
-                <li><strong>Limite:</strong> 3 usos por dia, recarrega ao amanhecer.</li>
+                <li>Enquanto você não estiver usando armadura pesada, você ganha um bônus de <strong>+1</strong> na sua CA.</li>
+                <li>Sempre que você realizar a ação de <strong>Atacar</strong>, você pode abrir mão de um de seus ataques para se mover até metade da sua velocidade.</li>
+                <li>Terrenos difíceis não-mágicos não exigem movimento adicional de sua parte.</li>
+                <li>Você pode se mover pelo espaço de uma criatura hostil, independentemente do tamanho dela.</li>
             </ul>
-
-            <h3>Sacrifício Vital</h3>
-            <p>Como ação bônus, sofra 1d6 de dano necrótico (irredutível) para ganhar uma <em>Dádiva de Sangue</em> (máx. bônus de proficiência por dia):</p>
+            
+            <div class="column"></div>
+            
+            <h2>Vocalista Arcanista</h2>
+            
+            <p>
+                Seu método único de entrelaçar música à magia permite que você aprimore seus feitiços através de sua voz mágica. Quando você conjura uma magia que força um alvo a fazer um teste de resistência ou que exige que você faça uma jogada de ataque mágico, você pode optar por aprimorar a magia através da música. Você pode esperar até rolar o <strong>d20</strong> antes de decidir usar esse recurso, mas deve decidir antes que o Mestre diga se a rolagem foi bem-sucedida ou falhou.<br>
+                &emsp;Ao fazer isso, realize um teste de <strong>Carisma (Performance)</strong>. A CD para este teste é igual a 10 + o nível da magia. Em caso de sucesso, seu bônus de proficiência é dobrado para a jogada de ataque com a magia ou para a definição da sua CD de resistência durante a conjuração desta magia.<br>
+                &emsp;Após obter sucesso neste teste três vezes, você não poderá usar este benefício novamente até o amanhecer seguinte.
+            </p>
+            
+            <h2>Sacrificio Vital</h2>
+            
+            <p>
+                Você aprendeu segredos da hemocriação que lhe concedem poderes esotéricos ao preço da sua própria força vital. Como uma ação bônus, você pode escolher sofrer <strong>1d6</strong> de dano necrótico para ganhar uma dádiva de sangue. Sua dádiva de sangue dura 1 hora ou até ser consumida.<br>
+                &emsp;Você pode gastar esta dádiva de sangue para obter um dos seguintes benefícios:
+            </p>
+            
             <ul>
-                <li><strong>Ataque:</strong> Role 1d6 e adicione ao ataque.</li>
-                <li><strong>Dano:</strong> Adicione 2d6 de dano necrótico ao acertar.</li>
-                <li><strong>Debilitação:</strong> Reduza o teste de Força, Destreza ou Constituição do alvo em 1d4.</li>
+                <li>Quando você faz uma jogada de ataque, você rola <strong>1d6</strong> e adiciona ao total.</li>
+                <li>Quando você acerta com um ataque ou magia, você causa <strong>2d6</strong> de dano necrótico adicional.</li>
+                <li>Quando você faz uma criatura fazer um teste de resistência de Força, Destreza ou Constituição, role um <strong>d4</strong> e reduza a resistência dela pelo valor obtido.</li>
+                <li>O dano que você recebe para ganhar uma dádiva de sangue não pode ser reduzido de forma alguma.</li>
             </ul>
+            
+            <p>
+                Você pode receber uma dádiva de sangue uma quantidade de vezes igual ao seu bônus de proficiência por descanso longo.
+            </p>
         </div>
     </section>
 
@@ -1603,6 +2073,7 @@
                 </p>
             </div>
     </section>
+    </div>
 </main>
 <script src="js/menu.js"></script>
 </body>
