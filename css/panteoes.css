@@ -1,0 +1,216 @@
+/* =========================================================
+   Página Panteões - Visual RPG / Tomo Divino
+   Arquivo pronto para css/panteoes.css
+   Menu/header preservado pelo global.css, igual ao Index
+   ========================================================= */
+
+.pagina-panteoes *,
+.pagina-panteoes *::before,
+.pagina-panteoes *::after {
+    box-sizing: border-box;
+}
+
+.pagina-panteoes {
+    width: 100%;
+}
+
+.pagina-panteoes .container.panteoes-container {
+    max-width: 1240px !important;
+    width: 95% !important;
+    margin: 0 auto 44px auto !important;
+    padding: 28px 16px 40px 16px !important;
+    background:
+        radial-gradient(circle at top, rgba(255, 247, 219, 0.97), rgba(225, 211, 181, 0.95) 58%, rgba(183, 166, 130, 0.92));
+    border: 4px double #8b6b3f;
+    border-radius: 18px;
+    box-shadow:
+        0 0 34px rgba(0, 0, 0, 0.45),
+        inset 0 0 36px rgba(88, 23, 12, 0.10);
+    color: #24150b;
+    overflow: hidden;
+}
+
+.pagina-panteoes .panteao-section {
+    position: relative;
+    width: 96% !important;
+    max-width: none !important;
+    margin: 0 auto 30px auto !important;
+    padding: 26px 24px !important;
+    background:
+        linear-gradient(180deg, rgba(255, 252, 240, 0.95), rgba(236, 225, 200, 0.91));
+    border: 1px solid #c9b38f;
+    border-left: 8px solid #7a1d1d;
+    border-radius: 16px;
+    box-shadow:
+        0 10px 24px rgba(0, 0, 0, 0.20),
+        inset 0 0 14px rgba(255, 255, 255, 0.26);
+}
+
+.pagina-panteoes .panteao-section::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle, rgba(212, 175, 55, 0.24), rgba(122, 29, 29, 0.06) 62%, transparent 70%);
+    pointer-events: none;
+}
+
+.pagina-panteoes .panteoes-hero {
+    border-left-color: #d4af37;
+    background:
+        radial-gradient(circle at top, rgba(255, 242, 188, 0.98), rgba(239, 223, 188, 0.94) 52%, rgba(210, 193, 155, 0.90));
+}
+
+.pagina-panteoes h1,
+.pagina-panteoes h2,
+.pagina-panteoes h3 {
+    width: 100% !important;
+    max-width: none !important;
+    text-align: center !important;
+    text-shadow: none !important;
+}
+
+.pagina-panteoes h1 {
+    margin: 0 0 24px 0 !important;
+    padding: 14px 16px 18px 16px !important;
+    color: #58170c !important;
+    font-size: clamp(2.2rem, 5vw, 4rem) !important;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-bottom: 4px double #8b6b3f;
+}
+
+.pagina-panteoes h2 {
+    margin: 0 0 22px 0 !important;
+    padding: 12px 16px !important;
+    color: #f6e8bd !important;
+    background: linear-gradient(90deg, #58170c, #8a1a1b, #58170c);
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.18),
+        inset 0 0 16px rgba(255, 232, 163, 0.12);
+    font-size: clamp(1.55rem, 3vw, 2.35rem) !important;
+}
+
+.pagina-panteoes .panteao-subtitulo {
+    margin: 22px 0 14px 0 !important;
+    padding: 10px 14px !important;
+    color: #58170c !important;
+    background: linear-gradient(90deg, rgba(212, 175, 55, 0.28), rgba(255, 255, 255, 0.22), rgba(212, 175, 55, 0.28));
+    border-top: 2px solid #c9b38f;
+    border-bottom: 2px solid #c9b38f;
+    border-radius: 10px;
+    font-size: clamp(1.25rem, 2.4vw, 1.75rem) !important;
+}
+
+.pagina-panteoes .panteoes-table-wrap {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 auto 20px auto !important;
+    padding: 0 !important;
+    overflow-x: auto;
+    border: 1px solid #b9965e;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    background: rgba(255, 248, 226, 0.48);
+}
+
+.pagina-panteoes .panteoes-table-small {
+    max-width: 520px !important;
+}
+
+.pagina-panteoes .panteoes-table {
+    width: 100% !important;
+    min-width: 760px;
+    border-collapse: collapse;
+    margin: 0 !important;
+    color: #24150b;
+    background: rgba(255, 252, 240, 0.94);
+}
+
+.pagina-panteoes .align-table {
+    min-width: 360px;
+}
+
+.pagina-panteoes .panteoes-table th,
+.pagina-panteoes .panteoes-table td {
+    padding: 12px 14px !important;
+    border: 1px solid rgba(139, 107, 63, 0.45);
+    vertical-align: top;
+    line-height: 1.45;
+}
+
+.pagina-panteoes .panteoes-table th {
+    color: #f6e8bd !important;
+    background: linear-gradient(180deg, #58170c, #7a1d1d);
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+
+.pagina-panteoes .panteoes-table tbody tr:nth-child(even) {
+    background: rgba(212, 175, 55, 0.10);
+}
+
+.pagina-panteoes .panteoes-table tbody tr:hover {
+    background: rgba(122, 29, 29, 0.08);
+}
+
+.pagina-panteoes .panteoes-table td:nth-child(1) {
+    font-weight: 800;
+    color: #58170c;
+    min-width: 230px;
+}
+
+.pagina-panteoes .panteoes-table td:nth-child(2) {
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 700;
+    color: #7a1d1d;
+}
+
+.pagina-panteoes .panteoes-table td:nth-child(3) {
+    min-width: 190px;
+}
+
+.pagina-panteoes .panteoes-table td:nth-child(4) {
+    min-width: 280px;
+}
+
+.pagina-panteoes #alinhamentos {
+    max-width: 680px !important;
+    border-left-color: #d4af37;
+}
+
+.pagina-panteoes #alinhamentos h2 {
+    background: linear-gradient(90deg, #6a4a18, #a77a24, #6a4a18);
+}
+
+.pagina-panteoes #alinhamentos .panteoes-table td:nth-child(1),
+.pagina-panteoes #alinhamentos .panteoes-table td:nth-child(2) {
+    min-width: auto;
+    text-align: center;
+}
+
+.pagina-panteoes #panteoes-shadowfell-boet {
+    background:
+        linear-gradient(180deg, rgba(238, 232, 222, 0.95), rgba(204, 199, 208, 0.92));
+    border-left-color: #3f2a5f;
+}
+
+.pagina-panteoes #panteoes-shadowfell-boet h2 {
+    background: linear-gradient(90deg, #25192f, #4e2f66, #25192f);
+    border-color: #bfa5d8;
+}
+
+.pagina-panteoes #panteoes-shadowfell-boet .panteao-subtitulo {
+    color: #2b1738 !important;
+    border-color: rgba(78, 47, 102, 0.45);
+    background: linear-gradient(90deg, rgba(78, 47, 102, 0.18), rgba(255, 255, 255, 0.18), rgba(78, 47, 102, 0.18));
+}

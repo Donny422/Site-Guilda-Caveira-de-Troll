@@ -1,332 +1,453 @@
-/* ==========================================================================
-   🔮 SISTEMA DE COLUNAS DE MAGIAS (Estilo D&D 5e / PHB)
-   ========================================================================== */
+/* =========================================================
+   Página Magias - Visual RPG / Grimório
+   Arquivo pronto para substituir css/magias.css
+   ========================================================= */
 
-/* Grid automático que cria 2 colunas se houver espaço na tela */
-.container .spell-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
-    gap: 30px;
-    width: 96%;
-    margin: 20px auto;
-    background: transparent;
-    padding: 0;
+.pagina-magias *,
+.pagina-magias *::before,
+.pagina-magias *::after {
+    box-sizing: border-box;
 }
 
-/* Bloco base de cada Magia */
-.container .spell-box {
-    font-family: Georgia, serif;
-    text-align: left;
-    width: 100%;
-    margin: 0;
+/* Estrutura principal da página */
+.pagina-magias .container {
+    max-width: 1220px !important;
+    width: 95% !important;
+    margin: 0 auto !important;
+    padding: 24px 14px !important;
+    background:
+        linear-gradient(rgba(245, 238, 216, 0.95), rgba(214, 203, 181, 0.94));
+    border: 4px double #8b6b3f;
+    border-radius: 18px;
+    box-shadow:
+        0 0 34px rgba(0, 0, 0, 0.45),
+        inset 0 0 30px rgba(88, 23, 12, 0.08);
 }
 
-/* Título Estilo Livro */
-.container .spell-box h3 {
-    font-family: 'Georgia', serif;
-    color: #581714; /* Vermelho Vinho clássico de D&D */
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0 0 2px 0;
-    text-shadow: none;
-    text-align: left;
-    width: 100%;
-}
-
-/* Escola de Magia e Nível */
-.container .spell-box .spell-type {
-    font-style: italic;
-    font-size: 0.95rem;
-    color: #303030;
-    margin: 0 0 8px 0;
-    width: 100%;
-    border-bottom: 1px solid #7a1d1d;
-    padding-bottom: 3px;
-}
-
-/* Estatísticas compactadas */
-.container .spell-box .spell-stats p {
-    font-size: 0.9rem;
-    margin: 0 0 2px 0;
-    line-height: 1.3;
-    width: 100%;
-    padding-left: 0;
-}
-
-/* Descrição e Corpo do Texto */
-.container .spell-box .spell-description {
-    margin-top: 8px;
-    width: 100%;
-}
-
-.container .spell-box .spell-description p {
-    font-size: 0.95rem;
-    line-height: 1.4;
-    margin: 0 0 8px 0;
-    text-align: justify;
-    width: 100%;
-    padding-left: 0;
-}
-
-/* Recuo na primeira linha de parágrafos sequenciais */
-.container .spell-box .spell-description p + p {
-    text-indent: 1em; 
-}
-
-/* Remove recuo caso o parágrafo comece com negrito forte */
-.container .spell-box .spell-description p strong {
-    text-indent: 0;
-}
-
-/* Lista de sub-itens (ex: Brinde de Fada) com marcadores de losango */
-.container .spell-box .spell-list {
-    list-style: none;
-    padding-left: 0;
-    margin: 8px 0;
-}
-
-.container .spell-box .spell-list li {
+.pagina-magias .container > section.magias {
+    width: 96% !important;
+    max-width: none !important;
+    margin: 28px auto !important;
+    padding: 30px !important;
+    background:
+        linear-gradient(135deg, rgba(255, 249, 230, 0.96), rgba(219, 207, 181, 0.93));
+    border: 1px solid #c9b38f;
+    border-left: 9px solid #7a1d1d;
+    border-radius: 18px;
+    box-shadow:
+        0 10px 26px rgba(0, 0, 0, 0.24),
+        inset 0 0 20px rgba(255, 255, 255, 0.25);
+    color: #1f130b;
     position: relative;
-    padding-left: 18px;
-    font-size: 0.9rem;
-    line-height: 1.4;
-    margin-bottom: 4px;
+    overflow: hidden;
 }
 
-.container .spell-box .spell-list li::before {
-    content: "♦";
-    position: absolute;
-    left: 2px;
-    top: 0;
-    color: #8a1a1b;
-    font-size: 0.85em;
-}
-
-/* Rodapé indicando as classes que podem conjurar */
-.container .spell-box .spell-classes {
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
-    padding-top: 4px;
-    font-size: 0.9rem;
-    margin-top: 12px !important;
-}
-
-/* Estilo Base da Caixa de Notas do mestre */
-.dm-note-box {
-    margin: 1.5rem 0;
-    padding: 1rem 1.25rem;
-    background-color: #dbdbdb;
-    border-left: 4px solid #7a5843;
-    font-family: 'Georgia', serif;
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
-
-/* Variante Exclusiva: Preço Carmesim */
-.dm-note-box.price-crimson {
-    background-color: #dbdbdb; /* Fundo suave levemente avermelhado */
-    border-left: 4px solid #8b0000; /* Borda grossa em tom Carmesim Profundo/Sangue */
-    border-top-right-radius: 4px;
-    padding-left: 5px;
-    border-bottom-right-radius: 4px;
-    box-shadow: 0 2px 4px rgba(139, 0, 0, 0.05); /* Sombra carmesim quase imperceptível */
-}
-
-/* Customização do Título Interno */
-.dm-note-box.price-crimson h4 {
-    color: #8b0000; /* Título puramente carmesim */
-    font-family: 'Cinzel', 'Palatino', serif; /* Mantém a estética fantástica */
-    font-size: 1.1rem;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-}
-
-/* Detalhe estético opcional: Um pequeno marcador de gota antes do título */
-.dm-note-box.price-crimson h4::before {
-    content: "🩸"; 
-    font-size: 0.9rem;
-    margin-right: 8px;
-    filter: sepia(20%) saturate(200%); /* Ajusta o tom do emoji se necessário */
-}
-
-/* Ajuste para os parágrafos dentro do Preço Carmesim */
-.dm-note-box.price-crimson p {
-    margin: 0;
-    color: #000000; /* Texto escuro com uma leve nuance quente */
-    font-style: italic; /* Opcional: destaca o texto como regra especial */
-}
-
-/* Container Principal do Index */
-.spell-index-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Força exatamente 3 colunas iguais */
-    gap: 2rem; /* Espaço entre as colunas */
-    margin: 2rem 0;
-    align-items: start;
-}
-
-/* Comportamento de cada coluna */
-.spell-col {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem; /* Espaçamento vertical entre os grupos de nível */
-}
-
-/* Bloco isolado de cada Nível */
-.level-group {
-    background: transparent;
-}
-
-/* Estilização dos Títulos de Nível (h5) */
-.level-group h5 {
-    font-family: 'Cinzel', 'Palatino', serif;
-    color: #8b0000; /* Tom carmesim para combinar com o livro */
-    border-bottom: 1px solid #d3c7b9; /* Linha divisória sutil abaixo do nível */
-    margin: 0 0 0.5rem 0;
-    padding-bottom: 0.25rem;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-/* Listas de Magias */
-.level-group ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.level-group li {
-    margin-bottom: 0.4rem;
-    font-size: 0.95rem;
-    line-height: 1.3;
-}
-
-/* Links das Magias */
-.level-group a {
-    text-decoration: none;
-    color: #2b1a1a;
-    transition: color 0.2s ease;
-}
-
-.level-group a:hover {
-    color: #8b0000; /* Link acende em carmesim ao passar o mouse */
-    text-decoration: underline;
-}
-
-/* Responsividade: Transforma em 1 coluna em telas pequenas (celulares) */
-@media (max-width: 768px) {
-    .spell-index-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-}
-
-/* Vincula ambos os índices para funcionarem em 3 colunas iguais */
-.spell-index-grid, 
-.magias-list-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin: 2rem 0;
-    align-items: start;
-}
-
-/* Contêiner das tabelas em duas colunas */
-.magias-table-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Força exatamente 2 colunas de tamanhos iguais */
-    gap: 1.5rem; /* Espaço entre a tabela da esquerda e da direita */
-    margin: 1.5rem 0;
-    align-items: start;
-}
-
-/* Estilização Geral das Tabelas */
-.magias-table {
+/* Banner visual da página */
+.pagina-magias .capa-magias {
     width: 100%;
-    border-collapse: collapse;
-    font-family: 'Georgia', serif;
-    font-size: 0.95rem;
+    height: 460px;
+    object-fit: cover;
+    object-position: center 80%;
+    border: 6px double #7a1d1d;
+    border-radius: 20px;
+    box-shadow:
+        0 18px 36px rgba(0, 0, 0, 0.42),
+        0 0 24px rgba(122, 29, 29, 0.35);
+    margin: 0 auto 32px auto;
+    display: block;
 }
 
-/* Cabeçalho da Tabela */
-.magias-table th {
-    font-family: 'Cinzel', 'Palatino', serif;
-    background-color: #8b0000; /* Tom carmesim clássico */
-    color: #b4b4b4;
-    text-align: left;
-    padding: 0.5rem 0.75rem;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+.pagina-magias .capa-sanguimancia {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    object-position: center 35%;
+    border: 6px double #7a1d1d;
+    border-radius: 20px;
+    box-shadow:
+        0 18px 36px rgba(0, 0, 0, 0.42),
+        0 0 24px rgba(122, 29, 29, 0.35);
+    margin: 0 auto 32px auto;
+    display: block;
 }
 
-/* Células da Tabela */
-.magias-table td {
-    padding: 0rem 0.75rem;
-    border-bottom: 1px solid #d3c7b9;
-    color: #2b1a1a;
+/* Títulos */
+.pagina-magias .magias h1,
+.pagina-magias .magias h2,
+.pagina-magias .magias h3,
+.pagina-magias .magias h4,
+.pagina-magias .magias h5 {
+    max-width: 100% !important;
+    color: #58170c !important;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.35) !important;
 }
 
-/* Efeito Zebrado (Linhas Alternadas) */
-.magias-table tbody tr:nth-child(odd) {
-    background-color: #cacaca; /* Fundo levemente pergaminho nas linhas ímpares */
+.pagina-magias .magias > h1,
+.pagina-magias .sanguimancia {
+    width: 96% !important;
+    text-align: center !important;
+    font-size: clamp(2.25rem, 5vw, 4rem) !important;
+    font-weight: 900 !important;
+    margin: 12px auto 18px auto !important;
+    padding-bottom: 14px !important;
+    border-bottom: 4px double #8b6b3f !important;
+    color: #58170c !important;
+    letter-spacing: 1px;
 }
 
-.magias-table tbody tr:nth-child(even) {
-    background-color: transparent;
+.pagina-magias .magias > p,
+.pagina-magias .descricao {
+    width: 92% !important;
+    max-width: 920px !important;
+    margin: 0 auto 26px auto !important;
+    text-align: center !important;
+    color: #2b1d0e !important;
+    font-size: 1.08rem !important;
+    line-height: 1.65 !important;
 }
 
-/* Responsividade para celular: empilha uma embaixo da outra */
-@media (max-width: 768px) {
-    .magias-table-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+.pagina-magias .magias h2 {
+    width: 96% !important;
+    text-align: center !important;
+    margin: 34px auto 20px auto !important;
+    padding: 10px 14px !important;
+    border-top: 1px solid #c9b38f !important;
+    border-bottom: 3px double #8b6b3f !important;
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 10px;
 }
 
-summary.magias-subclasses {
-    display: inline; /* Mantém o título na mesma linha da seta expansível */
-    margin: 0;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    transition: background 0.2s;
+/* Grids */
+.pagina-magias .spell-grid,
+.pagina-magias .spell-index-grid,
+.pagina-magias .magias-list-grid,
+.pagina-magias .magias-table-grid {
+    width: 96% !important;
+    max-width: none !important;
+    margin: 26px auto !important;
+    padding: 0 !important;
+    display: grid !important;
+    align-items: start !important;
 }
 
-summary {
-    cursor: pointer;
+.pagina-magias .spell-grid {
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)) !important;
+    gap: 26px !important;
 }
 
-summary.magias-subclasses:hover {
-    background-color: rgba(66, 2, 2, 0.05);
+.pagina-magias .spell-index-grid,
+.pagina-magias .magias-list-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 22px !important;
 }
 
-/* CONTEINER PRINCIPAL */
-.magias {
-    background-color: rgba(179, 179, 179, 0.808);
-    border-left: 5px solid #8a1a1b;
-    padding: 15px 20px;
-    margin: 20px 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.pagina-magias .magias-table-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
 }
 
-.magias h2 {
-    text-align: center;
+/* Cards de magia */
+.pagina-magias .spell-box {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 18px 18px 16px 18px !important;
+    background:
+        linear-gradient(180deg, rgba(255, 252, 240, 0.92), rgba(236, 226, 204, 0.88));
+    border: 1px solid #c9b38f;
+    border-left: 6px solid #7a1d1d;
+    border-radius: 14px;
+    box-shadow:
+        0 7px 18px rgba(0, 0, 0, 0.16),
+        inset 0 0 14px rgba(255, 255, 255, 0.22);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.pagina-magias .spell-box:hover {
+    transform: translateY(-3px);
+    border-color: #8b6b3f;
+    box-shadow:
+        0 12px 26px rgba(0, 0, 0, 0.24),
+        0 0 16px rgba(122, 29, 29, 0.16);
+}
+
+.pagina-magias .spell-box h3 {
+    width: 100% !important;
+    text-align: left !important;
+    color: #58170c !important;
+    font-size: clamp(1.25rem, 2vw, 1.65rem) !important;
+    margin: 0 0 4px 0 !important;
+    padding-bottom: 4px !important;
+    border-bottom: 1px solid #c9b38f;
+}
+
+.pagina-magias .spell-type {
+    width: 100% !important;
+    margin: 0 0 12px 0 !important;
+    padding: 0 0 8px 0 !important;
+    font-style: italic;
+    color: #4a3a2b !important;
+    border-bottom: 1px solid rgba(122, 29, 29, 0.42);
+}
+
+.pagina-magias .spell-stats {
+    width: 100% !important;
+    margin: 12px 0 !important;
+    padding: 10px 12px !important;
+    background: rgba(255, 255, 255, 0.36);
+    border: 1px solid rgba(201, 179, 143, 0.75);
+    border-radius: 10px;
+}
+
+.pagina-magias .spell-stats p,
+.pagina-magias .spell-description p,
+.pagina-magias .spell-box p {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 0 8px 0 !important;
+    padding: 0 !important;
+    color: #1f130b !important;
+    text-align: left !important;
+    line-height: 1.58 !important;
+}
+
+.pagina-magias .spell-description {
+    width: 100% !important;
+    margin-top: 12px !important;
+    padding: 0 !important;
+}
+
+.pagina-magias .spell-description p:not(.spell-classes) {
+    text-align: justify !important;
+}
+
+.pagina-magias .spell-classes {
+    margin-top: 14px !important;
+    padding-top: 8px !important;
+    border-top: 1px dashed #8b6b3f !important;
+    color: #2b1d0e !important;
+}
+
+/* Listas dentro das magias */
+.pagina-magias .spell-list,
+.pagina-magias .level-group ul {
+    width: 100% !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 8px 0 !important;
+}
+
+.pagina-magias .spell-list li,
+.pagina-magias .level-group li {
+    position: relative;
+    padding-left: 24px !important;
+    margin-bottom: 7px !important;
+    line-height: 1.45 !important;
+}
+
+.pagina-magias .spell-list li::before,
+.pagina-magias .level-group li::before {
+    content: "✦";
+    position: absolute;
+    left: 4px;
+    top: 0;
     color: #7a1d1d;
 }
 
-.descricao {
-    font-size:larger;
-    color: #000000;
+/* Índices e listas por nível */
+.pagina-magias .spell-col,
+.pagina-magias .level-group {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-.sanguimancia {
-    font-size: 45PX;
-    color: rgb(139, 0, 0);
+.pagina-magias .level-group {
+    background: rgba(255, 250, 235, 0.70);
+    border: 1px solid rgba(201, 179, 143, 0.78);
+    border-radius: 12px;
+    padding: 14px !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+}
+
+.pagina-magias .level-group h5 {
+    width: 100% !important;
+    color: #58170c !important;
+    text-align: left !important;
+    margin: 0 0 10px 0 !important;
+    padding-bottom: 6px !important;
+    border-bottom: 1px solid #c9b38f !important;
+    font-size: 1.05rem !important;
+    text-transform: uppercase;
+}
+
+/* Links */
+.pagina-magias a {
+    color: #243a8f;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.pagina-magias a:hover {
+    color: #7a1d1d;
+    text-decoration: underline;
+}
+
+/* Details / Summary */
+.pagina-magias details {
+    width: 96% !important;
+    margin: 26px auto !important;
+    padding: 0 !important;
+    background: rgba(255, 250, 235, 0.55);
+    border: 1px solid #c9b38f;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 16px rgba(0,0,0,0.14);
+}
+
+.pagina-magias summary.magias-subclasses,
+.pagina-magias summary {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 14px 18px !important;
+    background: linear-gradient(90deg, #58170c, #7a1d1d);
+    color: #f1ebd9 !important;
+    text-align: center !important;
+    list-style: none;
+}
+
+.pagina-magias summary::-webkit-details-marker {
+    display: none;
+}
+
+.pagina-magias summary::before {
+    content: "✦";
+    color: #d4af37;
+}
+
+.pagina-magias details[open] summary::before {
+    content: "✧";
+}
+
+.pagina-magias summary h2,
+.pagina-magias summary h3,
+.pagina-magias summary h4 {
+    width: auto !important;
+    color: #f1ebd9 !important;
+    border: 0 !important;
+    background: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    text-shadow: none !important;
+}
+
+/* Tabelas */
+.pagina-magias .magias-table,
+.pagina-magias table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 0 auto 18px auto !important;
+    background: rgba(255, 250, 235, 0.92);
+    border: 1px solid #c9b38f;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.14);
+}
+
+.pagina-magias .magias-table-grid .magias-table,
+.pagina-magias .magias-table-grid table {
+    margin-bottom: 0 !important;
+}
+
+.pagina-magias th {
+    background: #58170c !important;
+    color: #f1ebd9 !important;
+    padding: 10px 12px !important;
+    text-align: center !important;
+    border-bottom: 2px solid #8b6b3f !important;
+}
+
+.pagina-magias td {
+    padding: 8px 12px !important;
+    color: #1f130b !important;
+    border-bottom: 1px solid #d8c8aa !important;
+}
+
+.pagina-magias tbody tr:nth-child(odd) {
+    background-color: rgba(206, 206, 206, 0.42) !important;
+}
+
+.pagina-magias tbody tr:hover {
+    background-color: rgba(212, 175, 55, 0.20) !important;
+}
+
+/* Caixa especial: Preço Carmesim */
+.pagina-magias .dm-note-box {
+    width: 100% !important;
+    margin: 14px 0 !important;
+    padding: 14px 16px !important;
+    background: rgba(244, 232, 218, 0.88);
+    border: 1px solid #c9b38f;
+    border-left: 6px solid #7a1d1d;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.pagina-magias .dm-note-box.price-crimson {
+    background:
+        linear-gradient(90deg, rgba(255, 239, 230, 0.92), rgba(255, 250, 235, 0.86));
+    border-left-color: #8b0000;
+}
+
+.pagina-magias .dm-note-box h4 {
+    width: 100% !important;
+    color: #8b0000 !important;
+    margin: 0 0 8px 0 !important;
+    padding: 0 0 5px 0 !important;
+    text-align: left !important;
+    border-bottom: 1px solid rgba(139, 0, 0, 0.25);
+    text-transform: uppercase;
+}
+
+.pagina-magias .dm-note-box.price-crimson h4::before {
+    content: "🩸";
+    margin-right: 8px;
+}
+
+.pagina-magias .dm-note-box p {
+    margin: 0 !important;
+    font-style: italic;
+}
+
+/* Separadores */
+.pagina-magias hr,
+.pagina-magias .section-divider {
+    border: 0;
+    height: 3px;
+    width: 96%;
+    margin: 32px auto;
+    background: linear-gradient(90deg, transparent, #7a1d1d, #c9b38f, #7a1d1d, transparent);
+}
+
+.pagina-magias summary.magias-subclasses,
+.pagina-magias details summary {
+    background: linear-gradient(90deg, #ead7a8, #f6e8bd) !important;
+    border: 1px solid #8a1a1b !important;
+}
+
+.pagina-magias summary.magias-subclasses h2,
+.pagina-magias summary.magias-subclasses h3,
+.pagina-magias summary.magias-subclasses h4,
+.pagina-magias details summary h2,
+.pagina-magias details summary h3,
+.pagina-magias details summary h4 {
+    color: #58170c !important;
+    text-shadow: none !important;
+    border: none !important;
 }

@@ -1,224 +1,209 @@
-.pagina-historia .historia-container {
-    position: relative;
+/* =========================================================
+   Página História - Visual RPG / Crônica da Guilda
+   Arquivo pronto para substituir css/historia.css
+   Menu/header preservado pelo global.css, igual ao Index
+   ========================================================= */
+
+.pagina-historia *,
+.pagina-historia *::before,
+.pagina-historia *::after {
+    box-sizing: border-box;
 }
 
-.pagina-historia .historia {
-    font-size: 2.5rem;
-    margin: 0 0 35px 0;
-    text-align: center;
+.pagina-historia.historia-main {
+    width: 100%;
 }
 
-.pagina-historia .fundadores {
-    color: #720000;
-    font-weight: bold;
+.pagina-historia .container.historia-container {
+    max-width: 1180px !important;
+    width: 95% !important;
+    margin: 0 auto 40px auto !important;
+    padding: 28px 16px 36px 16px !important;
+    background:
+        radial-gradient(circle at top, rgba(255, 247, 219, 0.96), rgba(219, 207, 181, 0.94) 58%, rgba(188, 174, 143, 0.92));
+    border: 4px double #8b6b3f;
+    border-radius: 18px;
+    box-shadow:
+        0 0 34px rgba(0, 0, 0, 0.45),
+        inset 0 0 32px rgba(88, 23, 12, 0.10);
+    color: #24150b;
+    overflow: hidden;
+}
+
+.pagina-historia .historia-title {
+    width: 96% !important;
+    max-width: none !important;
+    margin: 10px auto 34px auto !important;
+    padding: 12px 10px 18px 10px !important;
+    text-align: center !important;
+    color: #58170c !important;
+    font-size: clamp(2.2rem, 5vw, 4rem) !important;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-bottom: 4px double #8b6b3f;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.36) !important;
 }
 
 .pagina-historia .historia-timeline {
     position: relative;
-    width: 100%;
-    padding: 25px 0 35px 0;
+    width: 96% !important;
+    max-width: none !important;
+    margin: 0 auto !important;
+    padding: 18px 18px 18px 92px !important;
 }
 
 .pagina-historia .historia-timeline::before {
     content: "";
     position: absolute;
-    top: 30px;
-    bottom: 30px;
-    left: 50%;
-    width: 4px;
-    transform: translateX(-50%);
+    left: 42px;
+    top: 24px;
+    bottom: 24px;
+    width: 5px;
     background: linear-gradient(
         to bottom,
-        #8a1a1b,
-        #b28a39,
-        #8a1a1b
+        #58170c,
+        #d4af37,
+        #7a1d1d,
+        #d4af37,
+        #58170c
     );
     border-radius: 20px;
-    box-shadow: 0 0 12px rgba(138, 26, 27, 0.45);
+    box-shadow:
+        0 0 12px rgba(122, 29, 29, 0.50),
+        0 0 22px rgba(212, 175, 55, 0.28);
 }
 
-.pagina-historia .historia-evento {
+.pagina-historia .historia-timeline-item {
     position: relative;
-    width: 50%;
-    margin: 0 0 28px 0;
-    box-sizing: border-box;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 0 28px 0 !important;
+    padding: 0 !important;
 }
 
-.pagina-historia .historia-evento--esquerda {
-    left: 0;
-    padding-right: 45px;
-}
-
-.pagina-historia .historia-evento--direita {
-    left: 50%;
-    padding-left: 45px;
-}
-
-.pagina-historia .historia-evento::before {
+.pagina-historia .historia-timeline-item::before {
     content: "";
     position: absolute;
-    top: 24px;
-    width: 20px;
-    height: 20px;
-    background: #b28a39;
-    border: 4px solid #8a1a1b;
+    left: -62px;
+    top: 15px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
-    z-index: 2;
-    box-shadow: 0 0 0 5px rgba(241, 235, 217, 0.7), 0 0 10px rgba(0, 0, 0, 0.35);
+    background: #7a1d1d;
+    border: 4px solid #d4af37;
+    box-shadow:
+        0 0 0 4px rgba(88, 23, 12, 0.18),
+        0 0 16px rgba(212, 175, 55, 0.46);
 }
 
-.pagina-historia .historia-evento--esquerda::before {
-    right: -14px;
+.pagina-historia .historia-timeline-heading,
+.pagina-historia .historia-timeline-subheading {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 0 10px 0 !important;
+    text-align: left !important;
+    text-shadow: none !important;
 }
 
-.pagina-historia .historia-evento--direita::before {
-    left: -14px;
+.pagina-historia .historia-timeline-heading {
+    padding: 12px 18px !important;
+    color: #f6e8bd !important;
+    background: linear-gradient(90deg, #58170c, #8a1a1b);
+    border: 1px solid #d4af37;
+    border-radius: 12px 12px 6px 6px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.20);
+    font-size: clamp(1.45rem, 2.8vw, 2rem) !important;
 }
 
-.pagina-historia .historia-evento--subevento::before {
-    width: 14px;
-    height: 14px;
-    top: 26px;
-    background: #8a1a1b;
-    border-color: #b28a39;
+.pagina-historia .historia-timeline-subheading {
+    padding: 10px 16px 8px 16px !important;
+    color: #58170c !important;
+    background: rgba(255, 255, 255, 0.30);
+    border-left: 6px solid #8a1a1b;
+    border-bottom: 2px solid #c9b38f;
+    border-radius: 10px;
+    font-size: clamp(1.25rem, 2.3vw, 1.65rem) !important;
 }
 
-.pagina-historia .historia-evento--esquerda.historia-evento--subevento::before {
-    right: -11px;
+.pagina-historia .historia-timeline-card {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 20px 22px !important;
+    background:
+        linear-gradient(180deg, rgba(255, 252, 240, 0.94), rgba(235, 225, 202, 0.90));
+    border: 1px solid #c9b38f;
+    border-left: 7px solid #7a1d1d;
+    border-radius: 14px;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.18),
+        inset 0 0 14px rgba(255, 255, 255, 0.22);
+    color: #24150b;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
-.pagina-historia .historia-evento--direita.historia-evento--subevento::before {
-    left: -11px;
+.pagina-historia .historia-timeline-card:hover {
+    transform: translateY(-2px);
+    border-color: #8b6b3f;
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.24),
+        0 0 16px rgba(122, 29, 29, 0.14);
 }
 
-.pagina-historia .historia-card {
-    position: relative;
-    background: rgba(245, 240, 220, 0.78);
-    border-left: 5px solid rgba(138, 26, 27, 0.55);
-    border-radius: 12px;
-    padding: 16px 18px;
-    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.22);
+.pagina-historia .historia-timeline-card p {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 0 14px 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    color: #24150b !important;
+    line-height: 1.68;
+    font-size: 1.04rem;
 }
 
-.pagina-historia .historia-card--ano {
-    background: rgba(203, 199, 190, 0.95);
-    border-left-color: #8a1a1b;
+.pagina-historia .historia-timeline-card p:last-child {
+    margin-bottom: 0 !important;
 }
 
-.pagina-historia .historia-card::after {
-    content: "";
-    position: absolute;
-    top: 24px;
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
+.pagina-historia .historia-timeline-card strong {
+    color: #58170c;
 }
 
-.pagina-historia .historia-evento--esquerda .historia-card::after {
-    right: -10px;
-    border-left: 10px solid rgba(245, 240, 220, 0.78);
+.pagina-historia .historia-fundadores {
+    color: #720000;
+    font-weight: 800;
 }
 
-.pagina-historia .historia-evento--direita .historia-card::after {
-    left: -10px;
-    border-right: 10px solid rgba(245, 240, 220, 0.78);
-}
-
-.pagina-historia .historia-evento--esquerda .historia-card--ano::after {
-    border-left-color: rgba(203, 199, 190, 0.95);
-}
-
-.pagina-historia .historia-evento--direita .historia-card--ano::after {
-    border-right-color: rgba(203, 199, 190, 0.95);
-}
-
-.pagina-historia .historia-ano {
-    color: #000000;
-    margin: 0 0 12px 0;
-    text-align: left;
-    width: auto;
-}
-
-.pagina-historia .historia-subtitulo {
-    color: #420202;
-    margin: 0 0 10px 0;
-    text-align: left;
-    width: auto;
-}
-
-.pagina-historia .historia-texto {
-    margin: 0 0 10px 0;
-    padding: 0;
-    text-align: left;
-    width: auto;
-}
-
-.pagina-historia .historia-texto:last-child {
-    margin-bottom: 0;
-}
-
-.pagina-historia .historia-lista {
-    margin: 8px 0 0 0;
-    padding: 0;
+.pagina-historia .historia-timeline-list {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 8px 0 0 0 !important;
+    padding: 0 !important;
     list-style: none;
 }
 
-.pagina-historia .historia-lista li {
+.pagina-historia .historia-timeline-list li {
     position: relative;
-    padding-left: 22px;
-    margin-bottom: 8px;
+    margin: 0 0 10px 0 !important;
+    padding: 0 0 0 28px !important;
+    line-height: 1.62;
+    color: #24150b;
 }
 
-.pagina-historia .historia-lista li::before {
+.pagina-historia .historia-timeline-list li::before {
     content: "♦";
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0.05em;
     color: #8a1a1b;
-    font-size: 0.9em;
+    font-size: 0.95rem;
 }
 
-@media (max-width: 768px) {
-    .pagina-historia .historia {
-        font-size: 1.8rem;
-    }
+.pagina-historia a {
+    color: #5b1a8a;
+    font-weight: 700;
+}
 
-    .pagina-historia .historia-timeline {
-        padding-left: 38px;
-    }
-
-    .pagina-historia .historia-timeline::before {
-        left: 17px;
-    }
-
-    .pagina-historia .historia-evento,
-    .pagina-historia .historia-evento--esquerda,
-    .pagina-historia .historia-evento--direita {
-        left: 0;
-        width: 100%;
-        padding-left: 25px;
-        padding-right: 0;
-    }
-
-    .pagina-historia .historia-evento::before,
-    .pagina-historia .historia-evento--esquerda::before,
-    .pagina-historia .historia-evento--direita::before,
-    .pagina-historia .historia-evento--esquerda.historia-evento--subevento::before,
-    .pagina-historia .historia-evento--direita.historia-evento--subevento::before {
-        left: -32px;
-        right: auto;
-    }
-
-    .pagina-historia .historia-card::after,
-    .pagina-historia .historia-card--ano::after {
-        left: -10px;
-        right: auto;
-        border-left: none;
-        border-right: 10px solid rgba(245, 240, 220, 0.78);
-    }
-
-    .pagina-historia .historia-card--ano::after {
-        border-right-color: rgba(203, 199, 190, 0.95);
-    }
+.pagina-historia a:hover {
+    color: #8a1a1b;
 }

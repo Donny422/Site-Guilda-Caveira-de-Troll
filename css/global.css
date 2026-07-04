@@ -2,7 +2,7 @@
    📦 Importações (Ordem Corrigida: Reset primeiro!)
    ========================================================================== */
    @import url('reset.css');
-   @import url('home.css');
+   @import url('index.css');
    @import url('historia.css');
    @import url('regras.css');
    @import url('ficha.css');
@@ -139,8 +139,7 @@ header {
 }
 
 /* Garante que as seções e divs dentro do container ocupem quase todo o espaço, mas com um respiro */
-.container section,
-.container div {
+.container > section {
     width: 96%;
     max-width: none;
     padding: 0;
@@ -156,11 +155,13 @@ header {
 }
 
 /* Garante que os títulos também acompanhem o mesmo alinhamento sutil */
-.container h1, h2, h3{
+.container h1,
+.container h2,
+.container h3 {
     width: 96%;
     max-width: none;
     text-align: center;
-    margin: 20px auto 15px auto; /* Centraliza horizontalmente */
+    margin: 20px auto 15px auto;
 }
 
 a {

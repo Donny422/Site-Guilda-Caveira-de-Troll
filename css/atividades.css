@@ -1,88 +1,261 @@
-.subcontainer {
-    background-color: rgba(179, 179, 179, 0.808);
-    border-left: 10px solid #8a1a1b;
-    padding: 15px 20px;
-    margin: 20px 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+/* =========================================================
+   Página Atividades - Visual RPG / Tempo Livre
+   Arquivo pronto para substituir css/atividades.css
+   Menu/header preservado pelo global.css, igual ao Index
+   ========================================================= */
+
+.pagina-atividades *,
+.pagina-atividades *::before,
+.pagina-atividades *::after {
+    box-sizing: border-box;
 }
 
-.subcontainer ul {
-    list-style: none;
-    padding-left: 0;
-    padding-bottom: 1px;
+.pagina-atividades {
+    width: 100%;
 }
 
-.subcontainer li {
+.pagina-atividades .atividades-container {
+    max-width: 1180px !important;
+    width: 95% !important;
+    margin: 0 auto 42px auto !important;
+    padding: 28px 16px 38px 16px !important;
+    background:
+        radial-gradient(circle at top, rgba(255, 248, 226, 0.97), rgba(226, 213, 184, 0.95) 58%, rgba(188, 171, 133, 0.92));
+    border: 4px double #8b6b3f;
+    border-radius: 18px;
+    box-shadow:
+        0 0 34px rgba(0, 0, 0, 0.45),
+        inset 0 0 32px rgba(122, 29, 29, 0.10);
+    color: #24150b;
+    overflow: hidden;
+}
+
+.pagina-atividades .atividades-content {
+    width: 96% !important;
+    max-width: none !important;
+    margin: 26px auto !important;
+    padding: 30px 28px !important;
+    background:
+        linear-gradient(135deg, rgba(255, 250, 231, 0.97), rgba(222, 211, 185, 0.94));
+    border: 1px solid #c9b38f;
+    border-left: 9px solid #9b6a22;
+    border-radius: 18px;
+    box-shadow:
+        0 10px 26px rgba(0, 0, 0, 0.24),
+        inset 0 0 20px rgba(255, 255, 255, 0.25);
     position: relative;
-    padding-left: 40px;
+    overflow: hidden;
 }
 
-.subcontainer li::before {
-    content: "♦"; 
+.pagina-atividades .atividades-content::before {
+    content: "";
     position: absolute;
-    left: 25px;
-    top: 2px;
-    color: #8a1a1b;
-    font-size: 0.9em;
+    inset: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(90deg, rgba(122, 29, 29, 0.07), transparent 16%, transparent 84%, rgba(122, 29, 29, 0.05)),
+        radial-gradient(circle at top right, rgba(212, 175, 55, 0.22), transparent 34%);
+    opacity: 0.82;
 }
 
-.note-box {
-    width: 90% !important;
-    background-color: rgb(221, 215, 165); /* Fundo avermelhado extremamente sutil */
-    border-left: 3px dashed #58170c;           /* Borda tracejada carmesim na esquerda */
-    padding: 10px 15px;
-    margin-left: 40px !important;
-    border-radius: 0 4px 4px 0;
+.pagina-atividades .atividades-content > * {
+    position: relative;
+    z-index: 1;
 }
 
-/* Estilização do texto interno */
-.note-box p {
-    font-family: 'Georgia', serif;
-    font-size: 0.9rem;
-    line-height: 1.4;
-    color: #000000;                            /* Tom marrom escuro envelhecido */
-    margin: 0;
+.pagina-atividades h1,
+.pagina-atividades h2,
+.pagina-atividades h3,
+.pagina-atividades h4,
+.pagina-atividades h5 {
+    max-width: 100% !important;
+    color: #58170c !important;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.36) !important;
 }
 
-/* Destaca o "Ex:" em vermelho clássico */
-.note-box p strong:first-child {
+.pagina-atividades h1 {
+    width: 96% !important;
+    text-align: center !important;
+    font-size: clamp(2.25rem, 5vw, 4rem) !important;
+    font-weight: 900 !important;
+    margin: 12px auto 22px auto !important;
+    padding-bottom: 14px !important;
+    border-bottom: 4px double #8b6b3f;
+    letter-spacing: 1px;
+}
+
+.pagina-atividades h2 {
+    width: 96% !important;
+    margin: 34px auto 18px auto !important;
+    padding-bottom: 8px !important;
+    border-bottom: 2px solid rgba(139, 107, 63, 0.56);
+    font-size: clamp(1.65rem, 3.4vw, 2.4rem) !important;
+}
+
+.pagina-atividades h3 {
+    width: 96% !important;
+    margin: 26px auto 14px auto !important;
+    font-size: clamp(1.25rem, 2.4vw, 1.75rem) !important;
+    color: #6e230f !important;
+}
+
+.pagina-atividades h4,
+.pagina-atividades h5 {
+    width: 96% !important;
+    margin: 20px auto 10px auto !important;
+    color: #2f4f3f !important;
+}
+
+.pagina-atividades p {
+    width: 96% !important;
+    max-width: none !important;
+    margin: 0 auto 16px auto !important;
+    color: #21150d;
+    line-height: 1.72;
+    text-align: left !important;
+}
+
+.pagina-atividades a {
+    color: #0b3f7a;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(11, 63, 122, 0.55);
+}
+
+.pagina-atividades a:hover {
+    color: #7a1d1d;
+    border-bottom-color: #7a1d1d;
+}
+
+.pagina-atividades strong {
     color: #58170c;
-    font-family: 'Cinzel', serif;
-    font-size: 0.95rem;
-    letter-spacing: 0.5px;
 }
 
-.magias-table {
-    width: 90%;
-    max-width: 600px;
-    border: 2px solid #272727;
-    border-collapse: collapse;
-    margin: 1.5rem auto;
-    font-size: 0.95rem;
-    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+.pagina-atividades em {
+    color: #3b2b18;
 }
 
-.magias-table th {
-    background-color: #4b140a !important;
+.pagina-atividades ul,
+.pagina-atividades ol {
+    width: 96% !important;
+    max-width: none !important;
+    margin: 10px auto 20px auto !important;
+    padding-left: 0 !important;
+    list-style: none;
+}
+
+.pagina-atividades li {
+    position: relative;
+    margin: 8px 0;
+    padding-left: 27px;
+    line-height: 1.62;
+    color: #21150d;
+}
+
+.pagina-atividades li::before {
+    content: "♦";
+    position: absolute;
+    left: 6px;
+    top: 0;
+    color: #9b6a22;
+    font-size: 0.85em;
+}
+
+.pagina-atividades hr {
+    width: 88%;
+    margin: 34px auto !important;
+    border: 0;
+    height: 2px;
+    background:
+        linear-gradient(90deg, transparent, rgba(122, 29, 29, 0.65), rgba(212, 175, 55, 0.62), rgba(122, 29, 29, 0.65), transparent);
+}
+
+.pagina-atividades .note-box {
+    width: 92% !important;
+    margin: 22px auto !important;
+    padding: 18px 20px !important;
+    background:
+        linear-gradient(135deg, rgba(246, 236, 204, 0.98), rgba(218, 202, 158, 0.95));
+    border: 1px solid rgba(139, 107, 63, 0.58);
+    border-left: 7px solid #7a1d1d;
+    border-radius: 14px;
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.18),
+        inset 0 0 16px rgba(255, 255, 255, 0.25);
+}
+
+.pagina-atividades .note-box h4 {
+    width: 100% !important;
+    margin: 0 0 10px 0 !important;
+    color: #58170c !important;
+    border-bottom: 1px solid rgba(122, 29, 29, 0.25);
+    padding-bottom: 6px;
+}
+
+.pagina-atividades .note-box p,
+.pagina-atividades .note-box ul {
+    width: 100% !important;
+}
+
+.pagina-atividades .note-box ul {
+    margin-bottom: 0 !important;
+}
+
+.pagina-atividades .magias-table {
+    width: 92% !important;
+    max-width: 760px !important;
+    margin: 20px auto 30px auto !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    overflow: hidden;
+    border: 2px solid #8b6b3f !important;
+    border-radius: 14px;
+    background: rgba(255, 248, 226, 0.94);
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.20),
+        inset 0 0 10px rgba(255, 255, 255, 0.18);
+}
+
+.pagina-atividades .magias-table thead th {
+    background: linear-gradient(90deg, #58170c, #7a1d1d) !important;
+    color: #ffe8a3 !important;
+    text-align: center !important;
+    padding: 11px 12px !important;
+    border-bottom: 2px solid #d4af37;
+    font-weight: 800;
+}
+
+.pagina-atividades .magias-table td {
+    padding: 10px 12px !important;
+    border-bottom: 1px solid rgba(139, 107, 63, 0.32) !important;
+    text-align: center !important;
+    color: #21150d !important;
+}
+
+.pagina-atividades .magias-table tbody tr:nth-child(odd) {
+    background: rgba(229, 215, 177, 0.55) !important;
+}
+
+.pagina-atividades .magias-table tbody tr:nth-child(even) {
+    background: rgba(255, 250, 231, 0.72) !important;
+}
+
+.pagina-atividades .magias-table tbody tr:hover {
+    background: rgba(212, 175, 55, 0.25) !important;
+}
+
+.pagina-atividades .profissoes-link {
+    display: inline-block;
+    padding: 12px 22px;
+    background: linear-gradient(135deg, #58170c, #8a1a1b);
+    color: #ffe8a3 !important;
+    border: 1px solid #d4af37;
+    border-radius: 999px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.24);
+    text-decoration: none;
+}
+
+.pagina-atividades .profissoes-link:hover {
     color: #ffffff !important;
-    font-weight: bold;
-    text-align: center;
-    padding: 6px 10px;
-}
-
-.magias-table td {
-    padding: 0 10px;
-    border-bottom: 1px solid #dcd1be;
-    text-align: center;
-    color: #000000 !important;
-}
-
-/* Efeito Zebrado (Linhas Alternadas) */
-.magias-table tbody tr:nth-child(odd) {
-    background-color: #d4d4d4; /* Fundo levemente pergaminho nas linhas ímpares */
-}
-
-.magias-table tbody tr:nth-child(even) {
-    background-color: transparent;
+    transform: translateY(-1px);
 }
