@@ -1,6 +1,6 @@
 const headerHTML = `
 <header>
-    <div style="display:flex;align-items:center;gap:15px;">
+    <div style="display:flex;align-items:center;gap:5px;">
         <button 
             id="menuBtn" 
             style="background:none;border:none;color:#f3e7c3;font-size:32px;cursor:pointer;"
@@ -18,7 +18,7 @@ const headerHTML = `
 
     <div 
         id="sideMenu" 
-        style="position:fixed;top:0;left:-320px;width:300px;height:100%;background:#161616;transition:.3s;padding-top:40px;z-index:1000;border-right:3px solid #7a1d1d;">
+        style="position:fixed;top:0;left:-320px;width:300px;height:100%;background:#161616;transition:.3s;padding-top:10px;z-index:1000;border-right:3px solid #7a1d1d;">
 
         <a class="menu-item" href="index.html">🏠 Home</a>
         <a class="menu-item" href="regras.html">📜 Regras</a>
