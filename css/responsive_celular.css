@@ -769,3 +769,43 @@ table {
         font-size: 0.9rem !important;
     }
 }
+
+
+@media (max-width: 900px) {
+    .pagina-homebrew .catalogo-flechas-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .pagina-homebrew .catalogo-flechas-intro,
+    .pagina-homebrew .catalogo-flechas-grid,
+    .pagina-homebrew .grupo-flechas-titulo,
+    .pagina-homebrew .lista-descricoes-flechas,
+    .pagina-homebrew .aviso-virotes-especiais {
+        width: 100%;
+    }
+
+    .pagina-homebrew .lista-descricoes-flechas {
+        padding: 16px 18px 16px 34px;
+    }
+}
+
+@media (max-width: 700px) {
+    .pagina-homebrew .tabela-armas-homebrew,
+    .pagina-homebrew .tabela-armas-fogo-homebrew {
+        width: 100%;
+    }
+
+    .pagina-homebrew .tabela-armas-homebrew thead,
+    .pagina-homebrew .tabela-armas-homebrew tbody,
+    .pagina-homebrew .tabela-armas-fogo-homebrew thead,
+    .pagina-homebrew .tabela-armas-fogo-homebrew tbody {
+        min-width: 760px;
+    }
+
+    .pagina-homebrew .propriedades-especiais {
+        width: 100%;
+        padding: 16px;
+    }
+}
