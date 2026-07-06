@@ -1,24 +1,39 @@
-const headerHTML = `
-<header>
-    <div style="display:flex;align-items:center;gap:5px;">
-        <button 
-            id="menuBtn" 
-            style="background:none;border:none;color:#f3e7c3;font-size:32px;cursor:pointer;"
-            aria-label="Abrir menu"
-            aria-controls="sideMenu"
-            aria-expanded="false">
-            ☰
-        </button>
+(() => {
+    const headerHTML = `
+<header class="site-header">
+    <button 
+        type="button"
+        id="menuBtn" 
+        class="menu-button"
+        aria-label="Abrir menu"
+        aria-controls="sideMenu"
+        aria-expanded="false">
+        ☰
+    </button>
 
-        <div class="logo">
-            <img src="https://i.imgur.com/OJJnoaL.png" alt="Logo da Guilda" class="logo-guilda">
-            <h1 class="titulo-principal">Guilda Caveira de Troll</h1>
-        </div>
+    <div class="header-title-area">
+        <h1 class="titulo-principal">Guilda Caveira de Troll</h1>
     </div>
 
-    <div 
-        id="sideMenu" 
-        style="position:fixed;top:0;left:-320px;width:300px;height:100%;background:#161616;transition:.3s;padding-top:10px;z-index:1000;border-right:3px solid #7a1d1d;">
+    <img 
+        src="https://i.imgur.com/OJJnoaL.png" 
+        alt="Logo da Guilda" 
+        class="logo-guilda-header">
+
+    <div id="menuOverlay" class="menu-overlay" aria-hidden="true"></div>
+
+    <nav id="sideMenu" class="side-menu" aria-hidden="true" aria-label="Menu principal">
+        <div class="side-menu-top">
+            <span>Menu da Guilda</span>
+
+            <button 
+                type="button"
+                id="closeMenuBtn" 
+                class="close-menu-button"
+                aria-label="Fechar menu">
+                ×
+            </button>
+        </div>
 
         <a class="menu-item" href="index.html">🏠 Home</a>
         <a class="menu-item" href="regras.html">📜 Regras</a>
@@ -32,30 +47,101 @@ const headerHTML = `
         <a class="menu-item" href="atividades.html">🎲 Atividades</a>
         <a class="menu-item" href="profissoes.html">🛠️ Profissões</a>
         <a class="menu-item" href="atualizacoes.html">🔄 Atualizações</a>
-    </div>
+    </nav>
 </header>
 `;
 
-const headerContainer = document.getElementById("site-header");
-headerContainer.outerHTML = headerHTML;
+    function iniciarHeader() {
+        const headerContainer = document.getElementById("site-header");
 
-const menuBtn = document.getElementById("menuBtn");
-const sideMenu = document.getElementById("sideMenu");
+        if (headerContainer) {
+            headerContainer.outerHTML = headerHTML;
+        } else if (!document.querySelector(".site-header")) {
+            document.body.insertAdjacentHTML("afterbegin", headerHTML);
+        }
 
-menuBtn.addEventListener("click", () => {
-    const aberto = sideMenu.style.left === "0px";
+        const menuBtn = document.getElementById("menuBtn");
+        const closeMenuBtn = document.getElementById("closeMenuBtn");
+        const sideMenu = document.getElementById("sideMenu");
+        const menuOverlay = document.getElementById("menuOverlay");
 
-    sideMenu.style.left = aberto ? "-320px" : "0px";
-    menuBtn.setAttribute("aria-expanded", aberto ? "false" : "true");
-});
+        if (!menuBtn || !sideMenu) {
+            return;
+        }
 
-document.addEventListener("click", (event) => {
-    const clicouFora =
-        !sideMenu.contains(event.target) &&
-        !menuBtn.contains(event.target);
+        const linksMenu = sideMenu.querySelectorAll(".menu-item");
 
-    if (clicouFora) {
-        sideMenu.style.left = "-320px";
-        menuBtn.setAttribute("aria-expanded", "false");
+        function abrirMenu() {
+            sideMenu.classList.add("aberto");
+            menuOverlay?.classList.add("ativo");
+
+            sideMenu.setAttribute("aria-hidden", "false");
+            menuOverlay?.setAttribute("aria-hidden", "false");
+            menuBtn.setAttribute("aria-expanded", "true");
+
+            document.body.classList.add("menu-aberto");
+        }
+
+        function fecharMenu() {
+            sideMenu.classList.remove("aberto");
+            menuOverlay?.classList.remove("ativo");
+
+            sideMenu.setAttribute("aria-hidden", "true");
+            menuOverlay?.setAttribute("aria-hidden", "true");
+            menuBtn.setAttribute("aria-expanded", "false");
+
+            document.body.classList.remove("menu-aberto");
+        }
+
+        function alternarMenu(event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            if (sideMenu.classList.contains("aberto")) {
+                fecharMenu();
+            } else {
+                abrirMenu();
+            }
+        }
+
+        menuBtn.addEventListener("click", alternarMenu);
+
+        closeMenuBtn?.addEventListener("click", (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            fecharMenu();
+        });
+
+        menuOverlay?.addEventListener("click", () => {
+            fecharMenu();
+        });
+
+        linksMenu.forEach((link) => {
+            link.addEventListener("click", () => {
+                fecharMenu();
+            });
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+                fecharMenu();
+            }
+        });
+
+        const paginaAtual = window.location.pathname.split("/").pop() || "index.html";
+
+        linksMenu.forEach((link) => {
+            if (link.getAttribute("href") === paginaAtual) {
+                link.classList.add("active");
+            }
+        });
+
+        fecharMenu();
     }
-});
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", iniciarHeader);
+    } else {
+        iniciarHeader();
+    }
+})();
