@@ -117,7 +117,7 @@ header {
     display: block;
     text-decoration: none;
     color: var(--ivory);
-    padding: 15px 25px;
+    padding: 12px 25px;
     font-weight: bold;
     transition: 0.3s;
 }
