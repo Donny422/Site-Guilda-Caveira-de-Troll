@@ -564,3 +564,599 @@
 .pagina-magias .regra-magia-card strong {
     color: #58170c !important;
 }
+
+/* =========================================================
+   MAGIAS HOMEBREW - Bloco Padronizado
+   ========================================================= */
+
+.pagina-magias .magias-homebrew-section {
+    border-left-color: #2c5f7a !important;
+    background:
+        radial-gradient(circle at top right, rgba(44, 95, 122, 0.13), transparent 34%),
+        linear-gradient(135deg, rgba(255, 249, 230, 0.96), rgba(219, 207, 181, 0.93)) !important;
+}
+
+.pagina-magias .homebrew-spells-title {
+    position: relative;
+}
+
+.pagina-magias .homebrew-spells-title::after {
+    content: none;
+    display: block;
+    margin-top: 8px;
+    color: #7a1d1d;
+    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: clamp(0.78rem, 1.6vw, 1rem);
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.pagina-magias .homebrew-spells-intro {
+    margin-bottom: 18px !important;
+}
+
+.pagina-magias .homebrew-spells-callout {
+    width: 92% !important;
+    max-width: 920px !important;
+    margin: 0 auto 28px auto !important;
+    padding: 14px 18px !important;
+    background: linear-gradient(135deg, rgba(230, 246, 255, 0.78), rgba(255, 250, 235, 0.86));
+    border: 1px solid rgba(44, 95, 122, 0.45);
+    border-left: 6px solid #2c5f7a;
+    border-radius: 12px;
+    color: #1f130b;
+    line-height: 1.6;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
+}
+
+.pagina-magias .homebrew-spells-callout strong {
+    color: #58170c;
+}
+
+.pagina-magias .homebrew-index-title,
+.pagina-magias .homebrew-spell-list-title {
+    width: 96% !important;
+    text-align: center !important;
+    color: #f6e8bd !important;
+    background: linear-gradient(90deg, #2c5f7a, #58170c, #2c5f7a) !important;
+    border: 1px solid #d4af37 !important;
+    border-radius: 12px !important;
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.18),
+        inset 0 0 16px rgba(255, 232, 163, 0.12) !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.65) !important;
+}
+
+.pagina-magias .homebrew-index-grid {
+    padding: 18px !important;
+    background: rgba(255, 250, 235, 0.38);
+    border: 1px solid rgba(201, 179, 143, 0.66);
+    border-radius: 16px;
+    box-shadow: inset 0 0 18px rgba(88, 23, 12, 0.06);
+}
+
+.pagina-magias .magias-homebrew-section .level-group {
+    border-left: 5px solid #2c5f7a;
+}
+
+.pagina-magias .magias-homebrew-section .level-group h5 {
+    color: #2c5f7a !important;
+}
+
+.pagina-magias .magias-homebrew-section .spell-box {
+    border-left-color: #2c5f7a;
+}
+
+.pagina-magias .magias-homebrew-section .spell-box h3 {
+    color: #2c5f7a !important;
+}
+
+.pagina-magias .magias-homebrew-section .spell-type {
+    color: #4a3a2b !important;
+}
+
+.pagina-magias .magias-homebrew-section .spell-classes {
+    background: rgba(44, 95, 122, 0.08);
+    border-top: 1px dashed #2c5f7a !important;
+    padding: 9px 10px !important;
+    border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+    .pagina-magias .homebrew-index-grid,
+    .pagina-magias .homebrew-spell-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .pagina-magias .homebrew-spells-callout {
+        width: 96% !important;
+    }
+}
+
+
+
+/* =========================================================
+   AJUSTE - Magias modificadas fora do container interno
+   ========================================================= */
+
+.pagina-magias .magias-modificadas-section {
+    border-left-color: #7a1d1d !important;
+}
+
+.pagina-magias .magias-modificadas-regras {
+    width: 96% !important;
+    margin: 30px auto 22px auto !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-left: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.pagina-magias .magias-modificadas-regras > h2,
+.pagina-magias .magias-modificadas-lista-titulo {
+    width: 100% !important;
+    text-align: center !important;
+    color: #f6e8bd !important;
+    margin: 0 auto 22px auto !important;
+    padding: 12px 16px !important;
+    background: linear-gradient(90deg, #58170c, #8a1a1b, #58170c) !important;
+    border: 1px solid #d4af37 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18) !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.70) !important;
+}
+
+.pagina-magias .magias-regras-grid,
+.pagina-magias .magias-modificadas-grid {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.pagina-magias .magias-modificadas-grid {
+    width: 96% !important;
+    margin-top: 22px !important;
+    margin-bottom: 26px !important;
+}
+
+.pagina-magias .magias-modificadas-grid .spell-box {
+    height: auto;
+    align-self: stretch;
+}
+
+.pagina-magias .regra-magia-card,
+.pagina-magias .spell-box {
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+.pagina-magias .regra-magia-card p,
+.pagina-magias .regra-magia-card li,
+.pagina-magias .spell-description p {
+    text-align: left !important;
+    text-wrap: pretty;
+}
+
+.pagina-magias .regra-magia-card h3,
+.pagina-magias .spell-box h3 {
+    word-break: normal;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+    .pagina-magias .magias-regras-grid,
+    .pagina-magias .magias-modificadas-grid {
+        grid-template-columns: 1fr !important;
+        width: 96% !important;
+    }
+
+    .pagina-magias .regra-magia-card-amplo {
+        grid-column: auto !important;
+    }
+}
+
+@media (max-width: 520px) {
+    .pagina-magias .container > section.magias {
+        width: 98% !important;
+        padding: 18px 12px !important;
+    }
+
+    .pagina-magias .magias-modificadas-regras,
+    .pagina-magias .magias-modificadas-grid,
+    .pagina-magias .spell-grid,
+    .pagina-magias .spell-index-grid,
+    .pagina-magias .magias-list-grid,
+    .pagina-magias .magias-table-grid {
+        width: 100% !important;
+    }
+
+    .pagina-magias .regra-magia-card,
+    .pagina-magias .spell-box {
+        padding: 16px 14px !important;
+    }
+}
+
+/* =========================================================
+   AJUSTE FINAL - Título "Descrição das Magias Homebrew"
+   ========================================================= */
+
+.pagina-magias .magias h2.homebrew-spell-list-title,
+.pagina-magias .magias h2.titulo-descricao-magias-homebrew,
+.pagina-magias .magias-homebrew-section h2.homebrew-spell-list-title,
+.pagina-magias .magias-homebrew-section h2.titulo-descricao-magias-homebrew {
+    width: 96% !important;
+    margin: 38px auto 26px auto !important;
+    padding: 16px 22px !important;
+
+    display: block !important;
+    text-align: center !important;
+
+    background: linear-gradient(90deg, #58170c, #7a1d1d, #58170c) !important;
+    color: #f6e8bd !important;
+
+    border: 2px solid #d4af37 !important;
+    border-radius: 12px !important;
+
+    font-family: "Cinzel", Georgia, serif !important;
+    font-size: clamp(1.45rem, 3vw, 2.25rem) !important;
+    font-weight: 900 !important;
+    letter-spacing: 1.5px !important;
+    line-height: 1.2 !important;
+    text-transform: uppercase !important;
+
+    text-shadow:
+        2px 2px 3px rgba(0, 0, 0, 0.85),
+        0 0 8px rgba(212, 175, 55, 0.35) !important;
+
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.25),
+        inset 0 0 14px rgba(255, 232, 163, 0.12) !important;
+}
+
+.pagina-magias .homebrew-spell-grid {
+    width: 96% !important;
+    margin: 26px auto !important;
+    align-items: stretch !important;
+}
+
+.pagina-magias .homebrew-spell-grid article.spell-box {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 700px) {
+    .pagina-magias .magias h2.homebrew-spell-list-title,
+    .pagina-magias .magias h2.titulo-descricao-magias-homebrew,
+    .pagina-magias .magias-homebrew-section h2.homebrew-spell-list-title,
+    .pagina-magias .magias-homebrew-section h2.titulo-descricao-magias-homebrew {
+        width: 100% !important;
+        padding: 14px 12px !important;
+        font-size: clamp(1.15rem, 6vw, 1.65rem) !important;
+        letter-spacing: 0.8px !important;
+    }
+}
+
+
+/* =========================================================
+   PADRONIZAÇÃO FINAL - Magias Modificadas como spell-box
+   ========================================================= */
+
+.pagina-magias .magias-modificadas-section .magias-modificadas-lista-titulo {
+    width: 96% !important;
+    margin: 34px auto 24px auto !important;
+    padding: 14px 20px !important;
+    display: block !important;
+    text-align: center !important;
+    color: #f6e8bd !important;
+    background: linear-gradient(90deg, #58170c, #7a1d1d, #58170c) !important;
+    border: 2px solid #d4af37 !important;
+    border-radius: 12px !important;
+    font-family: "Cinzel", Georgia, serif !important;
+    font-size: clamp(1.45rem, 3vw, 2.25rem) !important;
+    font-weight: 900 !important;
+    letter-spacing: 1.2px !important;
+    line-height: 1.2 !important;
+    text-transform: uppercase !important;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.85) !important;
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.25),
+        inset 0 0 14px rgba(255, 232, 163, 0.12) !important;
+}
+
+.pagina-magias .magias-modificadas-section .magias-modificadas-grid {
+    width: 96% !important;
+    max-width: none !important;
+    margin: 24px auto 34px auto !important;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)) !important;
+    gap: 26px !important;
+    align-items: stretch !important;
+}
+
+.pagina-magias .magias-modificadas-section article.spell-box {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 100% !important;
+    border-left-color: #7a1d1d !important;
+}
+
+.pagina-magias .magias-modificadas-section article.spell-box .spell-description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pagina-magias .magias-modificadas-section article.spell-box .spell-description p,
+.pagina-magias .magias-modificadas-section article.spell-box .spell-description li {
+    text-align: left !important;
+    overflow-wrap: anywhere;
+}
+
+.pagina-magias .magias-modificadas-section article.spell-box .spell-list {
+    margin: 8px 0 10px 0 !important;
+    padding-left: 0 !important;
+}
+
+.pagina-magias .magias-modificadas-section article.spell-box .spell-classes {
+    margin-top: auto !important;
+    background: rgba(122, 29, 29, 0.08);
+    border-top: 1px dashed #7a1d1d !important;
+    padding: 9px 10px !important;
+    border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+    .pagina-magias .magias-modificadas-section .magias-modificadas-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media (max-width: 520px) {
+    .pagina-magias .magias-modificadas-section .magias-modificadas-lista-titulo,
+    .pagina-magias .magias-modificadas-section .magias-modificadas-grid {
+        width: 100% !important;
+    }
+}
+
+/* =========================================================
+   AJUSTE FINAL - Legibilidade do Índice e listas de Magias Homebrew
+   ========================================================= */
+
+/* Remove definitivamente o subtítulo "Grimório da Guilda", caso exista em versões anteriores */
+.pagina-magias .homebrew-spells-title::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* Faixa "Índice por nível" */
+.pagina-magias .magias h2.homebrew-index-title,
+.pagina-magias .magias-homebrew-section h2.homebrew-index-title {
+    width: 96% !important;
+    margin: 26px auto 20px auto !important;
+    padding: 10px 16px !important;
+    min-height: auto !important;
+    display: block !important;
+
+    background: linear-gradient(90deg, #58170c, #7a1d1d, #58170c) !important;
+    color: #f6e8bd !important;
+
+    border: 2px solid #d4af37 !important;
+    border-radius: 12px !important;
+
+    text-align: center !important;
+    font-family: "Cinzel", Georgia, serif !important;
+    font-size: clamp(1.35rem, 2.7vw, 2rem) !important;
+    font-weight: 900 !important;
+    letter-spacing: 1.2px !important;
+    line-height: 1.15 !important;
+    text-transform: uppercase !important;
+
+    text-shadow:
+        2px 2px 3px rgba(0, 0, 0, 0.88),
+        0 0 8px rgba(212, 175, 55, 0.35) !important;
+
+    box-shadow:
+        0 6px 14px rgba(0, 0, 0, 0.24),
+        inset 0 0 12px rgba(255, 232, 163, 0.13) !important;
+}
+
+/* Faixas de abrir/fechar lista por classe/subclasse */
+.pagina-magias .magias-homebrew-section details summary.magias-subclasses,
+.pagina-magias .magias-homebrew-section summary.magias-subclasses {
+    width: 96% !important;
+    margin: 24px auto 14px auto !important;
+    padding: 10px 16px !important;
+    min-height: auto !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+
+    background: linear-gradient(90deg, #58170c, #7a1d1d, #58170c) !important;
+    color: #f6e8bd !important;
+
+    border: 2px solid #d4af37 !important;
+    border-radius: 12px !important;
+
+    text-align: center !important;
+    cursor: pointer !important;
+
+    box-shadow:
+        0 6px 14px rgba(0, 0, 0, 0.24),
+        inset 0 0 12px rgba(255, 232, 163, 0.13) !important;
+}
+
+.pagina-magias .magias-homebrew-section details summary.magias-subclasses::before,
+.pagina-magias .magias-homebrew-section summary.magias-subclasses::before {
+    color: #d4af37 !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.85) !important;
+}
+
+.pagina-magias .magias-homebrew-section details summary.magias-subclasses h2,
+.pagina-magias .magias-homebrew-section summary.magias-subclasses h2,
+.pagina-magias .magias-homebrew-section details summary.magias-subclasses h3,
+.pagina-magias .magias-homebrew-section summary.magias-subclasses h3 {
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+
+    color: #f6e8bd !important;
+    text-align: center !important;
+    font-family: "Cinzel", Georgia, serif !important;
+    font-size: clamp(1.15rem, 2.4vw, 1.75rem) !important;
+    font-weight: 900 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.15 !important;
+    text-transform: uppercase !important;
+
+    text-shadow:
+        2px 2px 3px rgba(0, 0, 0, 0.88),
+        0 0 8px rgba(212, 175, 55, 0.30) !important;
+}
+
+.pagina-magias .magias-homebrew-section details summary.magias-subclasses:hover,
+.pagina-magias .magias-homebrew-section summary.magias-subclasses:hover,
+.pagina-magias .magias h2.homebrew-index-title:hover,
+.pagina-magias .magias-homebrew-section h2.homebrew-index-title:hover {
+    filter: brightness(1.08);
+}
+
+@media (max-width: 700px) {
+    .pagina-magias .magias h2.homebrew-index-title,
+    .pagina-magias .magias-homebrew-section h2.homebrew-index-title,
+    .pagina-magias .magias-homebrew-section details summary.magias-subclasses,
+    .pagina-magias .magias-homebrew-section summary.magias-subclasses {
+        width: 100% !important;
+        padding: 9px 12px !important;
+        margin: 18px auto 12px auto !important;
+    }
+
+    .pagina-magias .magias-homebrew-section details summary.magias-subclasses h2,
+    .pagina-magias .magias-homebrew-section summary.magias-subclasses h2,
+    .pagina-magias .magias-homebrew-section details summary.magias-subclasses h3,
+    .pagina-magias .magias-homebrew-section summary.magias-subclasses h3,
+    .pagina-magias .magias h2.homebrew-index-title,
+    .pagina-magias .magias-homebrew-section h2.homebrew-index-title {
+        font-size: clamp(1.05rem, 5.5vw, 1.45rem) !important;
+        letter-spacing: 0.6px !important;
+    }
+}
+
+/* =========================================================
+   AJUSTE FINAL - Faixas de Lista por Classe/Subclasse
+   Mesmo estilo do Índice por Nível
+   ========================================================= */
+
+.pagina-magias details:has(> summary.magias-subclasses) {
+    width: 96% !important;
+    margin: 22px auto 18px auto !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+}
+
+.pagina-magias details > summary.magias-subclasses,
+.pagina-magias summary.magias-subclasses,
+.pagina-magias .magias-homebrew-section details > summary.magias-subclasses,
+.pagina-magias .magias-homebrew-section summary.magias-subclasses {
+    width: 100% !important;
+    min-height: auto !important;
+    margin: 0 auto 14px auto !important;
+    padding: 10px 16px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+
+    background: linear-gradient(90deg, #58170c, #7a1d1d, #58170c) !important;
+    color: #f6e8bd !important;
+
+    border: 2px solid #d4af37 !important;
+    border-radius: 12px !important;
+
+    text-align: center !important;
+    cursor: pointer !important;
+    list-style: none !important;
+
+    box-shadow:
+        0 6px 14px rgba(0, 0, 0, 0.24),
+        inset 0 0 12px rgba(255, 232, 163, 0.13) !important;
+}
+
+.pagina-magias details > summary.magias-subclasses::-webkit-details-marker,
+.pagina-magias summary.magias-subclasses::-webkit-details-marker {
+    display: none !important;
+}
+
+.pagina-magias details > summary.magias-subclasses::before,
+.pagina-magias summary.magias-subclasses::before {
+    content: "✦" !important;
+    color: #d4af37 !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.85) !important;
+}
+
+.pagina-magias details[open] > summary.magias-subclasses::before {
+    content: "✧" !important;
+}
+
+.pagina-magias details > summary.magias-subclasses h2,
+.pagina-magias summary.magias-subclasses h2,
+.pagina-magias details > summary.magias-subclasses h3,
+.pagina-magias summary.magias-subclasses h3 {
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+
+    color: #f6e8bd !important;
+    text-align: center !important;
+    font-family: "Cinzel", Georgia, serif !important;
+    font-size: clamp(1.15rem, 2.4vw, 1.75rem) !important;
+    font-weight: 900 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.15 !important;
+    text-transform: uppercase !important;
+
+    text-shadow:
+        2px 2px 3px rgba(0, 0, 0, 0.88),
+        0 0 8px rgba(212, 175, 55, 0.30) !important;
+}
+
+.pagina-magias details > summary.magias-subclasses:hover,
+.pagina-magias summary.magias-subclasses:hover {
+    filter: brightness(1.08);
+}
+
+@media (max-width: 700px) {
+    .pagina-magias details:has(> summary.magias-subclasses) {
+        width: 100% !important;
+        margin: 18px auto 14px auto !important;
+    }
+
+    .pagina-magias details > summary.magias-subclasses,
+    .pagina-magias summary.magias-subclasses {
+        padding: 9px 12px !important;
+    }
+
+    .pagina-magias details > summary.magias-subclasses h2,
+    .pagina-magias summary.magias-subclasses h2,
+    .pagina-magias details > summary.magias-subclasses h3,
+    .pagina-magias summary.magias-subclasses h3 {
+        font-size: clamp(1.05rem, 5.5vw, 1.45rem) !important;
+        letter-spacing: 0.6px !important;
+    }
+}
