@@ -162,9 +162,16 @@ table {
     .side-menu {
         width: min(300px, 86vw) !important;
         max-width: 86vw !important;
-        padding-top: 28px !important;
+        left: 0 !important;
+        padding-top: 0 !important;
+        transform: translateX(-105%) !important;
         overflow-y: auto !important;
         overscroll-behavior: contain !important;
+    }
+
+    #sideMenu.aberto,
+    .side-menu.aberto {
+        transform: translateX(0) !important;
     }
 
     .menu-item {
@@ -807,5 +814,186 @@ table {
     .pagina-homebrew .propriedades-especiais {
         width: 100%;
         padding: 16px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .pagina-magias .magias-regras-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-magias .regra-magia-card-amplo {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 700px) {
+    .pagina-magias .magias-modificadas-regras {
+        width: 100% !important;
+        padding: 16px !important;
+        border-left-width: 5px;
+    }
+
+    .pagina-magias .regra-magia-card {
+        padding: 16px !important;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .pagina-ficha .tabelas-evolucao-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .pagina-ficha .tabela-pagamento-card {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 700px) {
+    .pagina-ficha .evolucao-guilda {
+        width: 100% !important;
+        padding: 18px 14px !important;
+        border-left-width: 6px;
+    }
+
+    .pagina-ficha .evolucao-guilda p,
+    .pagina-ficha .tabelas-evolucao-grid {
+        width: 100% !important;
+    }
+
+    .pagina-ficha .tabelas-evolucao-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .pagina-ficha .tabela-pagamento-card {
+        grid-column: auto;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .site-header {
+        grid-template-columns: 70px 1fr 125px;
+        min-height: 140px;
+        padding: 16px 24px;
+    }
+
+    .titulo-principal {
+        font-size: clamp(2rem, 6vw, 3.4rem) !important;
+        letter-spacing: 3px;
+    }
+
+    .logo-guilda-header {
+        width: 115px;
+        height: 115px;
+    }
+}
+
+@media (max-width: 700px) {
+    .site-header {
+        min-height: 120px;
+        padding: 14px 16px;
+        grid-template-columns: 54px 1fr 90px;
+        gap: 10px;
+    }
+
+    .menu-button {
+        width: 44px;
+        height: 44px;
+        font-size: 26px;
+    }
+
+    .titulo-principal {
+        font-size: clamp(1.35rem, 7vw, 2.25rem) !important;
+        letter-spacing: 2px;
+    }
+
+    .logo-guilda-header {
+        width: 82px;
+        height: 82px;
+    }
+
+    .side-menu {
+        width: min(285px, 88vw) !important;
+        left: 0 !important;
+        transform: translateX(-105%) !important;
+    }
+
+    .side-menu.aberto {
+        transform: translateX(0) !important;
+    }
+
+    .menu-item {
+        padding: 8px 16px !important;
+        font-size: 15.5px;
+    }
+}
+
+@media (max-width: 430px) {
+    .site-header {
+        grid-template-columns: 48px 1fr 70px;
+        padding: 12px 10px;
+    }
+
+    .titulo-principal {
+        font-size: clamp(1.15rem, 7vw, 1.75rem) !important;
+        letter-spacing: 1px;
+    }
+
+    .logo-guilda-header {
+        width: 66px;
+        height: 66px;
+    }
+
+    .menu-button {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+}
+
+/* =========================================================
+   Correção final do header/menu padronizado
+   Garante que o menu use transform, nunca left negativo.
+   ========================================================= */
+
+#sideMenu,
+.side-menu {
+    left: 0 !important;
+    padding-top: 0 !important;
+    transform: translateX(-105%) !important;
+}
+
+#sideMenu.aberto,
+.side-menu.aberto {
+    transform: translateX(0) !important;
+}
+
+.side-menu-top {
+    min-height: 52px !important;
+}
+
+.close-menu-button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    pointer-events: auto !important;
+}
+
+@media (max-width: 700px) {
+    #sideMenu,
+    .side-menu {
+        width: min(285px, 88vw) !important;
+        max-width: 88vw !important;
+        left: 0 !important;
+        transform: translateX(-105%) !important;
+    }
+
+    #sideMenu.aberto,
+    .side-menu.aberto {
+        transform: translateX(0) !important;
     }
 }

@@ -31,6 +31,7 @@
 }
 
 .pagina-regras .regras-hero,
+.pagina-regras .outras-regras-importantes,
 .pagina-regras .regras-content {
     width: 96% !important;
     max-width: none !important;
@@ -279,4 +280,109 @@
 
 .pagina-regras .content-card h3 {
     margin-top: 0 !important;
+}
+
+/* =========================================================
+   Outras Regras Importantes - mesmo padrão visual da página
+   ========================================================= */
+
+.pagina-regras .outras-regras-importantes {
+    width: 96% !important;
+    max-width: none !important;
+    margin: 0 auto 28px auto !important;
+    padding: 22px 24px !important;
+    background:
+        linear-gradient(135deg, rgba(255, 248, 224, 0.96), rgba(234, 219, 184, 0.93));
+    border: 1px solid rgba(139, 107, 63, 0.70);
+    border-top: 6px solid #7a1d1d;
+    border-radius: 14px;
+    box-shadow:
+        0 10px 22px rgba(0, 0, 0, 0.14),
+        inset 0 0 18px rgba(88, 23, 12, 0.06);
+    color: #24150b;
+}
+
+.pagina-regras .outras-regras-importantes h2 {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 0 18px 0 !important;
+    padding: 12px 18px !important;
+    color: #f6e8bd !important;
+    text-align: left !important;
+    background: linear-gradient(90deg, #58170c, #8a1a1b);
+    border: 1px solid #d4af37 !important;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.20);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.75) !important;
+}
+
+.pagina-regras .outras-regras-importantes p,
+.pagina-regras .outras-regras-importantes li {
+    color: #24150b;
+    line-height: 1.62;
+    font-size: 1.03rem;
+}
+
+.pagina-regras .outras-regras-importantes p {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 10px 0 14px 0 !important;
+    text-align: left !important;
+}
+
+.pagina-regras .outras-regras-importantes ul {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 12px 0 18px 0 !important;
+    padding-left: 26px !important;
+}
+
+.pagina-regras .outras-regras-importantes li {
+    margin-bottom: 8px;
+}
+
+.pagina-regras .outras-regras-importantes strong {
+    color: #58170c;
+}
+
+.pagina-regras .nota-regra {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 16px 0 20px 0 !important;
+    padding: 16px 18px !important;
+    background:
+        linear-gradient(135deg, rgba(255, 244, 201, 0.95), rgba(231, 211, 161, 0.90));
+    border: 1px solid rgba(122, 29, 29, 0.45);
+    border-left: 7px solid #d4af37;
+    border-radius: 12px;
+    color: #2b1d0e;
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.14),
+        inset 0 0 18px rgba(88, 23, 12, 0.08);
+}
+
+.pagina-regras .nota-regra p {
+    margin: 0 !important;
+}
+
+@media (max-width: 760px) {
+    .pagina-regras .regras-hero,
+    .pagina-regras .outras-regras-importantes,
+    .pagina-regras .regras-content {
+        width: 100% !important;
+    }
+
+    .pagina-regras .outras-regras-importantes {
+        padding: 18px 14px !important;
+        border-radius: 12px;
+    }
+
+    .pagina-regras .outras-regras-importantes h2 {
+        text-align: center !important;
+        padding: 11px 12px !important;
+    }
+
+    .pagina-regras .outras-regras-importantes ul {
+        padding-left: 1.2rem !important;
+    }
 }
