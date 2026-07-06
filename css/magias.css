@@ -451,3 +451,116 @@
     text-shadow: none !important;
     border: none !important;
 }
+
+/* =========================================================
+   REGRAS DE MAGIAS MODIFICADAS
+   Bloco adicionado à seção Magias Modificadas
+   ========================================================= */
+
+.pagina-magias .magias-modificadas-regras {
+    width: 96% !important;
+    margin: 30px auto 34px auto !important;
+    padding: 24px !important;
+    background:
+        linear-gradient(135deg, rgba(255, 250, 235, 0.92), rgba(231, 218, 190, 0.88));
+    border: 1px solid #c9b38f;
+    border-left: 8px solid #7a1d1d;
+    border-radius: 18px;
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.18),
+        inset 0 0 18px rgba(255, 255, 255, 0.22);
+    box-sizing: border-box;
+}
+
+.pagina-magias .magias-modificadas-regras > h2 {
+    width: 96% !important;
+    text-align: center !important;
+    color: #58170c !important;
+    margin: 0 auto 24px auto !important;
+    padding: 10px 14px 14px 14px !important;
+    border-top: 0 !important;
+    border-bottom: 4px double #8b6b3f !important;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(139, 107, 63, 0.18),
+        transparent
+    ) !important;
+    border-radius: 10px;
+}
+
+.pagina-magias .magias-regras-grid {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
+}
+
+.pagina-magias .regra-magia-card {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 18px 20px !important;
+    background:
+        linear-gradient(180deg, rgba(255, 252, 240, 0.94), rgba(236, 226, 204, 0.90));
+    border: 1px solid #c9b38f;
+    border-left: 6px solid #7a1d1d;
+    border-radius: 14px;
+    box-shadow:
+        0 6px 16px rgba(0, 0, 0, 0.15),
+        inset 0 0 12px rgba(255, 255, 255, 0.22);
+    box-sizing: border-box;
+}
+
+.pagina-magias .regra-magia-card-destaque {
+    border-left-color: #8b6b3f;
+}
+
+.pagina-magias .regra-magia-card-amplo {
+    grid-column: span 2;
+}
+
+.pagina-magias .regra-magia-card h3 {
+    width: 100% !important;
+    color: #58170c !important;
+    text-align: left !important;
+    margin: 0 0 12px 0 !important;
+    padding: 0 0 8px 0 !important;
+    border-bottom: 1px solid #c9b38f !important;
+    font-size: clamp(1.22rem, 2vw, 1.55rem) !important;
+    text-shadow: none !important;
+}
+
+.pagina-magias .regra-magia-card p,
+.pagina-magias .regra-magia-card li {
+    color: #1f130b !important;
+    font-size: 1rem;
+    line-height: 1.68 !important;
+    text-align: left !important;
+}
+
+.pagina-magias .regra-magia-card p {
+    margin: 0 !important;
+}
+
+.pagina-magias .regra-magia-card ul {
+    margin: 0 !important;
+    padding-left: 22px !important;
+}
+
+.pagina-magias .regra-magia-card li {
+    margin-bottom: 9px !important;
+}
+
+.pagina-magias .regra-magia-card li:last-child {
+    margin-bottom: 0 !important;
+}
+
+.pagina-magias .regra-magia-card ul ul {
+    margin-top: 8px !important;
+    padding-left: 20px !important;
+}
+
+.pagina-magias .regra-magia-card strong {
+    color: #58170c !important;
+}
