@@ -144,10 +144,11 @@
 
 .pagina-atualizacoes .patch-date {
     position: absolute;
-    left: -122px;
+    left: -138px;
     top: 23px;
-    width: 95px;
-    padding: 7px 8px;
+    width: auto;
+    min-width: 112px;
+    padding: 8px 12px;
     text-align: center;
     font-weight: 900;
     color: #f7e9bd !important;
@@ -156,6 +157,7 @@
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.26);
     line-height: 1.2;
+    white-space: nowrap;
 }
 
 .pagina-atualizacoes .patch-content {
@@ -350,51 +352,90 @@
     }
 }
 
-
 /* =========================================================
-   Correção: evita sobreposição das datas na linha do tempo
-   Afasta a etiqueta de data da linha/marcador no desktop
+   Linha do Tempo Integrada - Atualizações de Regras e Ajustes
    ========================================================= */
-@media (min-width: 901px) {
-    .pagina-atualizacoes .timeline {
-        padding-left: 152px !important;
+
+.pagina-atualizacoes .timeline-extra-patch {
+    border-left-color: #8b6b3f !important;
+}
+
+.pagina-atualizacoes .patch-date .patch-day,
+.pagina-atualizacoes .patch-date .patch-time {
+    display: block;
+}
+
+.pagina-atualizacoes .patch-date .patch-time {
+    margin-top: 3px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #ffe8a3;
+    opacity: 0.92;
+}
+
+.pagina-atualizacoes .timeline-table-wrap {
+    width: 100%;
+    max-width: 520px;
+    margin: 12px 0 18px 0;
+    overflow-x: auto;
+}
+
+.pagina-atualizacoes .timeline-table {
+    min-width: 320px;
+}
+
+.pagina-atualizacoes .patch-grid-three {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 16px;
+}
+
+.pagina-atualizacoes .patch-grid-three > div,
+.pagina-atualizacoes .sub-features,
+.pagina-atualizacoes .rule-snippet {
+    background:
+        linear-gradient(135deg, rgba(247, 239, 212, 0.96), rgba(225, 211, 181, 0.92));
+    border: 1px solid rgba(139, 107, 63, 0.42);
+    border-radius: 14px;
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.14),
+        inset 0 0 14px rgba(255, 255, 255, 0.20);
+    padding: 16px 18px;
+}
+
+.pagina-atualizacoes .rule-snippet {
+    border-left: 6px solid #7a1d1d;
+    margin-top: 14px;
+}
+
+.pagina-atualizacoes .inline-list,
+.pagina-atualizacoes .weapon-specs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px 14px;
+}
+
+.pagina-atualizacoes .patch-content > h2 + p,
+.pagina-atualizacoes .patch-content > p:first-of-type {
+    font-size: 1.03rem;
+}
+
+@media (max-width: 980px) {
+    .pagina-atualizacoes .patch-grid-three {
+        grid-template-columns: 1fr;
     }
 
-    .pagina-atualizacoes .timeline::before {
-        left: 118px !important;
-    }
-
-    .pagina-atualizacoes .patch-entry::before {
-        left: -43px !important;
-        z-index: 2;
-    }
-
-    .pagina-atualizacoes .patch-date {
-        left: -166px !important;
-        width: 118px !important;
-        min-width: 118px !important;
-        white-space: nowrap;
-        z-index: 4;
+    .pagina-atualizacoes .inline-list,
+    .pagina-atualizacoes .weapon-specs {
+        grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 1100px) and (min-width: 901px) {
-    .pagina-atualizacoes .timeline {
-        padding-left: 136px !important;
-    }
-
-    .pagina-atualizacoes .timeline::before {
-        left: 106px !important;
-    }
-
-    .pagina-atualizacoes .patch-entry::before {
-        left: -39px !important;
-    }
-
-    .pagina-atualizacoes .patch-date {
-        left: -150px !important;
-        width: 110px !important;
-        min-width: 110px !important;
-        font-size: 0.9rem;
+@media (max-width: 640px) {
+    .pagina-atualizacoes .patch-date .patch-time {
+        display: inline-block;
+        margin-left: 6px;
+        margin-top: 0;
     }
 }
