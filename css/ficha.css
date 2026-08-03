@@ -1,7 +1,5 @@
 /* =========================================================
    Página Criação de Ficha - Visual RPG / Manual do Aventureiro
-   Arquivo pronto para substituir css/ficha.css
-   Menu/header preservado pelo global.css, igual ao Index
    ========================================================= */
 
 .pagina-ficha *,
@@ -617,4 +615,16 @@
 .pagina-ficha .rank-mythril {
     background: linear-gradient(90deg, #244c9f, #8fc7ff);
     color: #0d1a36;
+}
+
+.spell-list{
+    columns: 2;
+    column-gap: 2rem;
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.spell-list li{
+    break-inside: avoid;
+    margin-bottom: .3rem;
 }

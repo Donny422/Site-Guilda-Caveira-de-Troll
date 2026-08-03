@@ -997,3 +997,45 @@ table {
         transform: translateX(0) !important;
     }
 }
+
+@media (max-width: 900px) {
+    .pagina-classes-homebrew .caracteristicas-colunas,
+    .pagina-classes-homebrew .curses-container {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-classes-homebrew .subcontainer.classe {
+        padding: 22px 16px !important;
+    }
+
+    .pagina-classes-homebrew .class-table,
+    .pagina-classes-homebrew table.class-table,
+    .pagina-classes-homebrew .class-table-mutagenicos,
+    .pagina-classes-homebrew .class-table-magias {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 520px) {
+    .pagina-classes-homebrew .classes-homebrew-index {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-classes-homebrew .classe h1 {
+        font-size: clamp(1.8rem, 9vw, 2.5rem) !important;
+    }
+
+    .pagina-classes-homebrew .classe h2 {
+        font-size: clamp(1.25rem, 6vw, 1.65rem) !important;
+    }
+
+    .pagina-classes-homebrew .classe li {
+        padding-left: 28px;
+    }
+
+    .pagina-classes-homebrew .classe li::before {
+        left: 10px;
+    }
+}
