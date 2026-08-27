@@ -1292,3 +1292,26 @@ table {
         gap: 14px;
     }
 }
+
+/* =========================================================
+   PROFISSÕES — POÇÕES E VENENOS NO CELULAR
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .pagina-profissoes .pocoes .item-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: none !important;
+        width: 100% !important;
+        gap: 16px !important;
+    }
+
+    .pagina-profissoes .pocoes .item-grid .item-card {
+        grid-column: 1 / -1 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+    }
+}
