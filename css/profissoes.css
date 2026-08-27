@@ -1,0 +1,457 @@
+/* ==================
+   Página Profissões
+   ================== */
+
+.pagina-profissoes *,
+.pagina-profissoes *::before,
+.pagina-profissoes *::after {
+    box-sizing: border-box;
+}
+
+.pagina-profissoes {
+    width: 100%;
+}
+
+.pagina-profissoes .subcontainer {
+    width: 90% !important;
+    max-width: none !important;
+    margin: 28px auto !important;
+    padding: 30px 28px !important;
+    background:
+        linear-gradient(135deg, rgba(255, 250, 231, 0.97), rgba(221, 210, 184, 0.94));
+    border: 1px solid #c7ad80;
+    border-left: 9px solid #7b4a1d;
+    border-radius: 18px;
+    box-shadow:
+        0 10px 26px rgba(0, 0, 0, 0.24),
+        inset 0 0 20px rgba(255, 255, 255, 0.22);
+    position: relative;
+    overflow: hidden;
+}
+
+.pagina-profissoes .profissao {
+    width: 96% !important;
+    max-width: none !important;
+    margin: 28px auto !important;
+    padding: 30px 28px !important;
+    background:
+        linear-gradient(135deg, rgba(255, 250, 231, 0.97), rgba(221, 210, 184, 0.94));
+    border: 1px solid #c7ad80;
+    border-left: 9px solid #7b4a1d;
+    border-radius: 18px;
+    box-shadow:
+        0 10px 26px rgba(0, 0, 0, 0.24),
+        inset 0 0 20px rgba(255, 255, 255, 0.22);
+    position: relative;
+    overflow: hidden;
+}
+
+.pagina-profissoes .profissao {
+    border-left-color: #4f5d35;
+}
+
+.pagina-profissoes .subcontainer::before,
+.pagina-profissoes .profissao::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(90deg, rgba(88, 23, 12, 0.07), transparent 16%, transparent 84%, rgba(88, 23, 12, 0.05)),
+        radial-gradient(circle at top right, rgba(198, 143, 61, 0.20), transparent 34%);
+    opacity: 0.84;
+}
+
+.pagina-profissoes .subcontainer > *,
+.pagina-profissoes .profissao > * {
+    position: relative;
+    z-index: 1;
+}
+
+.pagina-profissoes h1,
+.pagina-profissoes h2,
+.pagina-profissoes h3,
+.pagina-profissoes h4,
+.pagina-profissoes h5 {
+    max-width: 100% !important;
+    color: #58170c !important;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.36) !important;
+}
+
+.pagina-profissoes h1 {
+    width: 96% !important;
+    text-align: center !important;
+    font-size: clamp(2.25rem, 5vw, 4rem) !important;
+    font-weight: 900 !important;
+    margin: 12px auto 22px auto !important;
+    padding-bottom: 14px !important;
+    border-bottom: 4px double #7b5830;
+    letter-spacing: 1px;
+}
+
+.pagina-profissoes .profissao > h1 {
+    padding: 14px 18px !important;
+    border: 2px solid #8b6b3f;
+    border-radius: 16px;
+    background: linear-gradient(90deg, rgba(88, 23, 12, 0.10), rgba(198, 143, 61, 0.20), rgba(79, 93, 53, 0.10));
+}
+
+.pagina-profissoes h2 {
+    width: 96% !important;
+    margin: 34px auto 18px auto !important;
+    padding-bottom: 8px !important;
+    border-bottom: 2px solid rgba(123, 88, 48, 0.58);
+    font-size: clamp(1.65rem, 3.4vw, 2.4rem) !important;
+}
+
+.pagina-profissoes h3 {
+    width: 96% !important;
+    margin: 26px auto 14px auto !important;
+    font-size: clamp(1.25rem, 2.4vw, 1.75rem) !important;
+    color: #6e230f !important;
+}
+
+.pagina-profissoes h4,
+.pagina-profissoes h5 {
+    width: 96% !important;
+    margin: 20px auto 10px auto !important;
+    color: #334b2e !important;
+}
+
+.pagina-profissoes p,
+.pagina-profissoes .description {
+    width: 96% !important;
+    max-width: none !important;
+    margin: 0 auto 16px auto !important;
+    color: #21150d !important;
+    line-height: 1.72;
+    text-align: left !important;
+}
+
+.pagina-profissoes a {
+    color: #0b3f7a;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(11, 63, 122, 0.55);
+}
+
+.pagina-profissoes a:hover {
+    color: #7a1d1d;
+    border-bottom-color: #7a1d1d;
+}
+
+.pagina-profissoes strong {
+    color: #58170c;
+}
+
+.pagina-profissoes em,
+.pagina-profissoes small,
+.pagina-profissoes code {
+    color: #3b2b18;
+}
+
+.pagina-profissoes code {
+    padding: 2px 6px;
+    background: rgba(88, 23, 12, 0.08);
+    border: 1px solid rgba(123, 88, 48, 0.28);
+    border-radius: 6px;
+}
+
+.pagina-profissoes ul,
+.pagina-profissoes ol {
+    width: 96% !important;
+    max-width: none !important;
+    margin: 10px auto 20px auto !important;
+    padding-left: 0 !important;
+    list-style: none;
+}
+
+.pagina-profissoes li {
+    position: relative;
+    margin: 8px 0;
+    padding-left: 28px;
+    line-height: 1.62;
+    color: #21150d;
+}
+
+.pagina-profissoes li::before {
+    content: "⚒";
+    position: absolute;
+    left: 2px;
+    top: 0;
+    color: #7b4a1d;
+    font-size: 0.86em;
+}
+
+.pagina-profissoes hr {
+    width: 92%;
+    margin: 38px auto !important;
+    border: 0;
+    height: 8px;
+    background:
+        linear-gradient(90deg, transparent, rgba(88, 23, 12, 0.65), rgba(198, 143, 61, 0.70), rgba(79, 93, 53, 0.55), transparent);
+}
+
+.pagina-profissoes .info-box,
+.pagina-profissoes .note-box,
+.pagina-profissoes .warning-box,
+.pagina-profissoes .info-box-services,
+.pagina-profissoes .especializacao-box,
+.pagina-profissoes .house-rules,
+.pagina-profissoes .single-rule-card,
+.pagina-profissoes .exemple-box,
+.pagina-profissoes .extra-info {
+    width: 92% !important;
+    margin: 22px auto !important;
+    padding: 18px 20px !important;
+    background:
+        linear-gradient(135deg, rgba(246, 236, 204, 0.98), rgba(218, 202, 158, 0.95));
+    border: 1px solid rgba(123, 88, 48, 0.58);
+    border-left: 7px solid #7a1d1d;
+    border-radius: 14px;
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.18),
+        inset 0 0 16px rgba(255, 255, 255, 0.25);
+}
+
+.pagina-profissoes .warning-box {
+    border-left-color: #9b3b22;
+    background: linear-gradient(135deg, rgba(250, 225, 197, 0.98), rgba(226, 194, 154, 0.95));
+}
+
+.pagina-profissoes .especializacao-box,
+.pagina-profissoes .house-rules,
+.pagina-profissoes .single-rule-card {
+    border-left-color: #4f5d35;
+}
+
+.pagina-profissoes .info-box h3,
+.pagina-profissoes .info-box h4,
+.pagina-profissoes .note-box h3,
+.pagina-profissoes .note-box h4,
+.pagina-profissoes .warning-box h3,
+.pagina-profissoes .warning-box h4,
+.pagina-profissoes .especializacao-box h3,
+.pagina-profissoes .especializacao-box h4,
+.pagina-profissoes .extra-info h3,
+.pagina-profissoes .extra-info h4 {
+    width: 100% !important;
+    margin: 0 0 10px 0 !important;
+    color: #58170c !important;
+    border-bottom: 1px solid rgba(122, 29, 29, 0.25);
+    padding-bottom: 6px;
+}
+
+.pagina-profissoes .info-box p,
+.pagina-profissoes .note-box p,
+.pagina-profissoes .warning-box p,
+.pagina-profissoes .info-box-services p,
+.pagina-profissoes .especializacao-box p,
+.pagina-profissoes .house-rules p,
+.pagina-profissoes .single-rule-card p,
+.pagina-profissoes .exemple-box p,
+.pagina-profissoes .extra-info p,
+.pagina-profissoes .info-box ul,
+.pagina-profissoes .note-box ul,
+.pagina-profissoes .warning-box ul,
+.pagina-profissoes .especializacao-box ul,
+.pagina-profissoes .house-rules ul,
+.pagina-profissoes .single-rule-card ul,
+.pagina-profissoes .extra-info ul {
+    width: 100% !important;
+}
+
+.pagina-profissoes .item-grid,
+.pagina-profissoes .guildas-grid {
+    width: 94% !important;
+    margin: 22px auto !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+}
+
+.pagina-profissoes .item-card,
+.pagina-profissoes .guildas-grid > div {
+    padding: 18px 18px !important;
+    background: linear-gradient(135deg, rgba(255, 248, 226, 0.95), rgba(224, 210, 179, 0.93));
+    border: 1px solid rgba(123, 88, 48, 0.46);
+    border-radius: 14px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+}
+
+.pagina-profissoes .item-card.pocao {
+    border-left: 7px solid #2f6f55;
+}
+
+.pagina-profissoes .item-card.veneno {
+    border-left: 7px solid #583073;
+}
+
+.pagina-profissoes .item-card h3,
+.pagina-profissoes .item-card h4,
+.pagina-profissoes .guildas-grid h3,
+.pagina-profissoes .guildas-grid h4 {
+    width: 100% !important;
+    margin-top: 0 !important;
+}
+
+.pagina-profissoes .profission-table,
+.pagina-profissoes .pagamento-table,
+.pagina-profissoes .guildas-table,
+.pagina-profissoes .navios-table {
+    width: 94% !important;
+    max-width: 100% !important;
+    margin: 20px auto 30px auto !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    overflow: hidden;
+    border: 2px solid #7b5830 !important;
+    border-radius: 14px;
+    background: rgba(255, 248, 226, 0.94);
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.20),
+        inset 0 0 10px rgba(255, 255, 255, 0.18);
+}
+
+.pagina-profissoes .profission-table th,
+.pagina-profissoes .pagamento-table th,
+.pagina-profissoes .guildas-table th,
+.pagina-profissoes .navios-table th {
+    background: linear-gradient(90deg, #4b2b17, #7b4a1d) !important;
+    color: #ffe8a3 !important;
+    text-align: center !important;
+    padding: 11px 12px !important;
+    border-bottom: 2px solid #c68f3d;
+    font-weight: 800;
+}
+
+.pagina-profissoes .profission-table td,
+.pagina-profissoes .pagamento-table td,
+.pagina-profissoes .guildas-table td,
+.pagina-profissoes .navios-table td {
+    padding: 10px 12px !important;
+    border-bottom: 1px solid rgba(123, 88, 48, 0.32) !important;
+    text-align: center !important;
+    color: #21150d !important;
+    vertical-align: middle;
+}
+
+.pagina-profissoes .guildas-table td:nth-child(2) {
+    text-align: left !important;
+}
+
+.pagina-profissoes .profission-table tbody tr:nth-child(odd),
+.pagina-profissoes .pagamento-table tbody tr:nth-child(odd),
+.pagina-profissoes .guildas-table tbody tr:nth-child(odd),
+.pagina-profissoes .navios-table tbody tr:nth-child(odd) {
+    background: rgba(229, 215, 177, 0.55) !important;
+}
+
+.pagina-profissoes .profission-table tbody tr:nth-child(even),
+.pagina-profissoes .pagamento-table tbody tr:nth-child(even),
+.pagina-profissoes .guildas-table tbody tr:nth-child(even),
+.pagina-profissoes .navios-table tbody tr:nth-child(even) {
+    background: rgba(255, 250, 231, 0.72) !important;
+}
+
+.pagina-profissoes .profission-table tbody tr:hover,
+.pagina-profissoes .pagamento-table tbody tr:hover,
+.pagina-profissoes .guildas-table tbody tr:hover,
+.pagina-profissoes .navios-table tbody tr:hover {
+    background: rgba(198, 143, 61, 0.25) !important;
+}
+
+.pagina-profissoes .table-section tr:first-child th {
+    background: linear-gradient(90deg, #58170c, #7a1d1d) !important;
+    color: #ffe8a3 !important;
+    border-top: 2px solid rgba(255, 232, 163, 0.35);
+    letter-spacing: 0.4px;
+}
+
+.pagina-profissoes .pocoes {
+    color: #2f6f55 !important;
+}
+
+.pagina-profissoes .navios {
+    color: #123d5d !important;
+}
+
+.pagina-profissoes .section-subtitle {
+    text-align: center !important;
+    border-bottom: 4px double #7b5830 !important;
+}
+
+/* =========================================================
+   Ajuste: Poções e Venenos Homebrew em 3 colunas
+   Regras da Casa no mesmo bloco da seção
+   ========================================================= */
+
+.pagina-profissoes .pocoes .item-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    align-items: stretch;
+}
+
+.pagina-profissoes .pocoes .house-rules.consumiveis-rules {
+    width: 94% !important;
+    margin: 30px auto 0 auto !important;
+    padding: 22px 24px !important;
+    border-left-color: #4f5d35 !important;
+    background:
+        linear-gradient(135deg, rgba(247, 238, 207, 0.98), rgba(222, 204, 161, 0.95));
+}
+
+.pagina-profissoes .pocoes .house-rules.consumiveis-rules h2 {
+    width: 100% !important;
+    margin-top: 0 !important;
+}
+
+.pagina-profissoes .pocoes .house-rules.consumiveis-rules h3,
+.pagina-profissoes .pocoes .house-rules.consumiveis-rules p,
+.pagina-profissoes .pocoes .house-rules.consumiveis-rules ul {
+    width: 100% !important;
+}
+
+/* =========================================================
+   Ajuste: reduzir margens laterais da seção Poções e Venenos
+   ========================================================= */
+
+.pagina-profissoes .profissao > .pocoes {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 30px auto 0 auto !important;
+    padding: 0 !important;
+}
+
+.pagina-profissoes .pocoes h1,
+.pagina-profissoes .pocoes h2,
+.pagina-profissoes .pocoes h3,
+.pagina-profissoes .pocoes h4,
+.pagina-profissoes .pocoes h5,
+.pagina-profissoes .pocoes p,
+.pagina-profissoes .pocoes ul,
+.pagina-profissoes .pocoes ol {
+    width: 100% !important;
+}
+
+.pagina-profissoes .pocoes .item-grid {
+    width: 100% !important;
+    margin: 18px 0 24px 0 !important;
+    gap: 14px !important;
+}
+
+.pagina-profissoes .pocoes .item-card {
+    padding: 16px 14px !important;
+}
+
+.pagina-profissoes .pocoes .item-card p,
+.pagina-profissoes .pocoes .item-card ul,
+.pagina-profissoes .pocoes .item-card ol {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.pagina-profissoes .pocoes .house-rules.consumiveis-rules {
+    width: 100% !important;
+    margin: 28px 0 0 0 !important;
+}
