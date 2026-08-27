@@ -1,8 +1,6 @@
-/* =========================================================
-   Página Profissões - Visual RPG / Ofícios da Guilda
-   Arquivo pronto para usar como css/profissoes.css
-   Menu/header preservado pelo global.css, igual ao Index
-   ========================================================= */
+/* ==================
+   Página Profissões
+   ================== */
 
 .pagina-profissoes *,
 .pagina-profissoes *::before,
@@ -30,7 +28,23 @@
     overflow: hidden;
 }
 
-.pagina-profissoes .subcontainer,
+.pagina-profissoes .subcontainer {
+    width: 90% !important;
+    max-width: none !important;
+    margin: 28px auto !important;
+    padding: 30px 28px !important;
+    background:
+        linear-gradient(135deg, rgba(255, 250, 231, 0.97), rgba(221, 210, 184, 0.94));
+    border: 1px solid #c7ad80;
+    border-left: 9px solid #7b4a1d;
+    border-radius: 18px;
+    box-shadow:
+        0 10px 26px rgba(0, 0, 0, 0.24),
+        inset 0 0 20px rgba(255, 255, 255, 0.22);
+    position: relative;
+    overflow: hidden;
+}
+
 .pagina-profissoes .profissao {
     width: 96% !important;
     max-width: none !important;
@@ -186,10 +200,10 @@
 }
 
 .pagina-profissoes hr {
-    width: 88%;
-    margin: 34px auto !important;
+    width: 92%;
+    margin: 38px auto !important;
     border: 0;
-    height: 2px;
+    height: 8px;
     background:
         linear-gradient(90deg, transparent, rgba(88, 23, 12, 0.65), rgba(198, 143, 61, 0.70), rgba(79, 93, 53, 0.55), transparent);
 }
