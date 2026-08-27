@@ -1039,255 +1039,256 @@ table {
 }
 
 /* =========================================================
-   📱 PROFISSÕES — Responsivo específico
-   Regras adicionadas ao responsive_celular.css
-   Não altera o HTML.
+   PROFISSÕES — Ajustes exclusivos para responsive_celular.css
+   Adicione este bloco AO FINAL do arquivo responsive_celular.css
    ========================================================= */
 
-/* Tablets / notebooks estreitos */
-@media (max-width: 900px) {
-    .pagina-profissoes {
+
+/* =========================================================
+   Tablets / notebooks estreitos
+   ========================================================= */
+
+   @media (max-width: 980px) {
+
+    /* Container principal da página */
+    .pagina-profissoes.profissoes-main {
         width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .pagina-profissoes .subcontainer {
-        width: min(96%, 1100px);
+        width: 96%;
+        max-width: 1100px;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 18px;
-        padding-right: 18px;
     }
 
-    .pagina-profissoes .profissao {
+    /* Tabelas de profissões */
+    .pagina-profissoes .profission-table {
         width: 100%;
         max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
 
+    /* Evita que títulos longos fiquem espremidos */
     .pagina-profissoes h1 {
-        font-size: clamp(2rem, 6vw, 3rem);
-        line-height: 1.05;
+        line-height: 1.1;
     }
 
     .pagina-profissoes h2 {
-        font-size: clamp(1.45rem, 4.5vw, 2.15rem);
-        line-height: 1.12;
+        line-height: 1.15;
     }
 
     .pagina-profissoes h3 {
-        font-size: clamp(1.15rem, 3.5vw, 1.55rem);
-        line-height: 1.18;
-    }
-
-    .pagina-profissoes .info-box,
-    .pagina-profissoes .info-box-services,
-    .pagina-profissoes .note-box,
-    .pagina-profissoes .warning-box,
-    .pagina-profissoes .exemple-box,
-    .pagina-profissoes .especializacao-box {
-        width: 100%;
-        max-width: 100%;
-        padding: 16px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .pagina-profissoes .profission-table,
-    .pagina-profissoes .navios-table,
-    .pagina-profissoes .guildas-table,
-    .pagina-profissoes .pagamento-table {
-        width: 100%;
-        max-width: 100%;
+        line-height: 1.2;
     }
 }
 
-/* Celulares */
+
+/* =========================================================
+   Celulares
+   ========================================================= */
+
 @media (max-width: 760px) {
-    .pagina-profissoes .subcontainer {
-        width: 96%;
-        padding-left: 12px;
-        padding-right: 12px;
-        margin-bottom: 18px;
-    }
 
-    .pagina-profissoes .profissao {
-        padding-left: 2px;
-        padding-right: 2px;
-    }
+    /* ---------------------------------------------------------
+       Estrutura geral
+    --------------------------------------------------------- */
 
-    .pagina-profissoes h1 {
-        margin-top: 18px;
-        margin-bottom: 12px;
-        font-size: clamp(1.8rem, 8vw, 2.5rem);
-        line-height: 1.05;
-    }
-
-    .pagina-profissoes h2 {
-        margin-top: 24px;
-        margin-bottom: 10px;
-        font-size: clamp(1.35rem, 6vw, 1.9rem);
-    }
-
-    .pagina-profissoes h3 {
-        margin-top: 20px;
-        margin-bottom: 8px;
-        font-size: clamp(1.08rem, 5vw, 1.4rem);
-    }
-
-    .pagina-profissoes h4 {
-        font-size: 1rem;
-        line-height: 1.25;
-    }
-
-    .pagina-profissoes p,
-    .pagina-profissoes li {
-        font-size: 0.95rem;
-        line-height: 1.55;
-    }
-
-    .pagina-profissoes ul {
-        margin-top: 8px;
-        margin-bottom: 16px;
-    }
-
-    /* Blocos informativos ficam mais compactos e legíveis */
-    .pagina-profissoes .info-box,
-    .pagina-profissoes .info-box-services,
-    .pagina-profissoes .note-box,
-    .pagina-profissoes .warning-box,
-    .pagina-profissoes .exemple-box,
-    .pagina-profissoes .especializacao-box {
-        padding: 14px;
-        border-radius: 10px;
-        margin-top: 12px;
-        margin-bottom: 16px;
-    }
-
-    /* Cada profissão ganha separação visual */
-    .pagina-profissoes .profissao + .profissao,
-    .pagina-profissoes .subcontainer + .subcontainer {
-        margin-top: 28px;
-    }
-
-    /* Tabelas: rolagem horizontal controlada, sem deixar a página inteira arrastar */
-    .pagina-profissoes .profission-table,
-    .pagina-profissoes .navios-table,
-    .pagina-profissoes .guildas-table,
-    .pagina-profissoes .pagamento-table {
-        display: table;
-        width: max-content;
-        min-width: 100%;
-        max-width: none;
-        white-space: normal;
-        table-layout: auto;
-    }
-
-    .pagina-profissoes .profission-table th,
-    .pagina-profissoes .profission-table td,
-    .pagina-profissoes .navios-table th,
-    .pagina-profissoes .navios-table td,
-    .pagina-profissoes .guildas-table th,
-    .pagina-profissoes .guildas-table td,
-    .pagina-profissoes .pagamento-table th,
-    .pagina-profissoes .pagamento-table td {
-        padding: 8px 10px;
-        font-size: 0.86rem;
-        line-height: 1.3;
-    }
-
-    /* O elemento que contém a tabela pode rolar sem criar overflow global. */
-    .pagina-profissoes .profission-table,
-    .pagina-profissoes .navios-table,
-    .pagina-profissoes .guildas-table,
-    .pagina-profissoes .pagamento-table {
-        margin-bottom: 8px;
-    }
-
-    /* Divs imediatamente anteriores às tabelas ganham rolagem quando necessário. */
-    .pagina-profissoes .profission-table + *,
-    .pagina-profissoes .navios-table + *,
-    .pagina-profissoes .guildas-table + *,
-    .pagina-profissoes .pagamento-table + * {
-        max-width: 100%;
-    }
-
-    /* Grade de renda: uma coluna no celular para evitar tabelas espremidas */
-    .pagina-profissoes .guildas-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 14px;
-    }
-
-    .pagina-profissoes .guildas-grid > div {
-        width: 100%;
-        min-width: 0;
-    }
-
-    /* Regras de navios e blocos longos */
-    .pagina-profissoes .navios {
+    .pagina-profissoes.profissoes-main {
         width: 100%;
         max-width: 100%;
         overflow: hidden;
     }
 
-    /* Links e códigos não devem alargar a tela */
-    .pagina-profissoes a,
-    .pagina-profissoes code {
-        overflow-wrap: anywhere;
-        word-break: break-word;
-    }
-}
-
-/* Celulares pequenos */
-@media (max-width: 520px) {
     .pagina-profissoes .subcontainer {
-        width: 98%;
-        padding-left: 10px;
-        padding-right: 10px;
+        width: 96%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .pagina-profissoes .profissao {
-        padding-left: 0;
-        padding-right: 0;
+    .pagina-profissoes > section {
+        width: 100%;
+        max-width: 100%;
     }
+
+
+    /* ---------------------------------------------------------
+       Títulos
+    --------------------------------------------------------- */
 
     .pagina-profissoes h1 {
-        font-size: clamp(1.65rem, 8vw, 2.2rem);
+        font-size: clamp(1.75rem, 8vw, 2.6rem);
+        line-height: 1.08;
+        text-align: center;
     }
 
     .pagina-profissoes h2 {
-        font-size: clamp(1.25rem, 6.5vw, 1.7rem);
+        font-size: clamp(1.35rem, 6.5vw, 2rem);
+        line-height: 1.15;
     }
 
     .pagina-profissoes h3 {
-        font-size: clamp(1.02rem, 5vw, 1.28rem);
+        font-size: clamp(1.1rem, 5.2vw, 1.5rem);
+        line-height: 1.2;
     }
+
+    .pagina-profissoes h4 {
+        font-size: clamp(1rem, 4.5vw, 1.25rem);
+        line-height: 1.25;
+    }
+
+
+    /* ---------------------------------------------------------
+       Texto
+    --------------------------------------------------------- */
 
     .pagina-profissoes p,
     .pagina-profissoes li {
-        font-size: 0.91rem;
         line-height: 1.5;
     }
 
+    .pagina-profissoes .description {
+        text-align: left;
+    }
+
+
+    /* ---------------------------------------------------------
+       Blocos de informação
+    --------------------------------------------------------- */
+
     .pagina-profissoes .info-box,
-    .pagina-profissoes .info-box-services,
     .pagina-profissoes .note-box,
     .pagina-profissoes .warning-box,
     .pagina-profissoes .exemple-box,
     .pagina-profissoes .especializacao-box {
-        padding: 12px;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 14px;
+        padding-right: 14px;
+        overflow-wrap: anywhere;
+    }
+
+
+    /* ---------------------------------------------------------
+       Tabelas
+       Mantém o conteúdo inteiro e permite rolagem horizontal.
+    --------------------------------------------------------- */
+
+    .pagina-profissoes .profission-table {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+
+    .pagina-profissoes .profission-table table {
+        width: max-content;
+        min-width: 100%;
     }
 
     .pagina-profissoes .profission-table th,
-    .pagina-profissoes .profission-table td,
-    .pagina-profissoes .navios-table th,
-    .pagina-profissoes .navios-table td,
-    .pagina-profissoes .guildas-table th,
-    .pagina-profissoes .guildas-table td,
-    .pagina-profissoes .pagamento-table th,
-    .pagina-profissoes .pagamento-table td {
-        padding: 7px 8px;
-        font-size: 0.8rem;
+    .pagina-profissoes .profission-table td {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+        vertical-align: top;
+    }
+
+
+    /* ---------------------------------------------------------
+       Seções de profissão
+       Cada profissão ocupa toda a largura.
+    --------------------------------------------------------- */
+
+    .pagina-profissoes .profissao {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* ---------------------------------------------------------
+       Poções / cards
+       Um card abaixo do outro no celular.
+    --------------------------------------------------------- */
+
+    .pagina-profissoes .pocoes .item-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .pagina-profissoes .pocoes .item-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* ---------------------------------------------------------
+       Regras da casa / consumíveis
+    --------------------------------------------------------- */
+
+    .pagina-profissoes .house-rules,
+    .pagina-profissoes .consumiveis-rules,
+    .pagina-profissoes .single-rule-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* ---------------------------------------------------------
+       Listas
+    --------------------------------------------------------- */
+
+    .pagina-profissoes ul,
+    .pagina-profissoes ol {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+}
+
+
+/* =========================================================
+   Celulares pequenos
+   ========================================================= */
+
+@media (max-width: 520px) {
+
+    .pagina-profissoes .subcontainer {
+        width: 98%;
+    }
+
+    .pagina-profissoes h1 {
+        font-size: clamp(1.65rem, 9vw, 2.25rem);
+    }
+
+    .pagina-profissoes h2 {
+        font-size: clamp(1.25rem, 7vw, 1.7rem);
+    }
+
+    .pagina-profissoes h3 {
+        font-size: clamp(1.05rem, 6vw, 1.35rem);
+    }
+
+    .pagina-profissoes p,
+    .pagina-profissoes li {
+        font-size: 0.95rem;
+    }
+
+    .pagina-profissoes .profission-table th,
+    .pagina-profissoes .profission-table td {
+        padding: 7px 9px;
+        font-size: 0.86rem;
+    }
+
+    .pagina-profissoes .pocoes .item-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
     }
 }
