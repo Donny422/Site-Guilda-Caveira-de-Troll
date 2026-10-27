@@ -483,7 +483,7 @@
 .pagina-index .area-card {
     position: relative;
     min-height: 260px;
-    padding: 22px 18px !important;
+    padding: 22px 18px 64px !important;
     overflow: hidden;
     background:
         linear-gradient(180deg, rgba(255, 252, 240, 0.96), rgba(225, 211, 181, 0.94));
