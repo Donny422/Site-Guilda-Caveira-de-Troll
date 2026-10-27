@@ -51,6 +51,36 @@
 </header>
 `;
 
+// Botão TOPO
+    const MOSTRAR_TOPO_APOS_PX = 300;
+
+    function criarBotaoTopo() {
+        if (document.getElementById("btnTopo")) {
+            return;
+        }
+
+        const btnTopo = document.createElement("button");
+        btnTopo.type = "button";
+        btnTopo.id = "btnTopo";
+        btnTopo.className = "btn-topo";
+        btnTopo.setAttribute("aria-label", "Voltar ao topo da página");
+        btnTopo.innerHTML = '<span class="btn-topo-seta" aria-hidden="true">↑</span><span class="btn-topo-texto">Topo</span>';
+        document.body.appendChild(btnTopo);
+
+        btnTopo.addEventListener("click", () => {
+            const reduzirMovimento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            window.scrollTo({ top: 0, behavior: reduzirMovimento ? "auto" : "smooth" });
+        });
+
+        function atualizarVisibilidade() {
+            const visivel = window.scrollY > MOSTRAR_TOPO_APOS_PX || MOSTRAR_TOPO_APOS_PX === 0;
+            btnTopo.classList.toggle("visivel", visivel);
+        }
+
+        window.addEventListener("scroll", atualizarVisibilidade, { passive: true });
+        atualizarVisibilidade();
+    }
+    
     function iniciarHeader() {
         const headerContainer = document.getElementById("site-header");
 
