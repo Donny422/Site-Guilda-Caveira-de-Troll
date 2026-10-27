@@ -51,7 +51,7 @@
 </header>
 `;
 
-// Botão TOPO
+    // Botão TOPO
     const MOSTRAR_TOPO_APOS_PX = 300;
 
     function criarBotaoTopo() {
@@ -80,8 +80,10 @@
         window.addEventListener("scroll", atualizarVisibilidade, { passive: true });
         atualizarVisibilidade();
     }
-    
-    function iniciarHeader() {
+
+        function iniciarHeader() {
+        criarBotaoTopo();
+
         const headerContainer = document.getElementById("site-header");
 
         if (headerContainer) {
