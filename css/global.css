@@ -395,7 +395,60 @@ td {
 }
 
 /* ============================================================================
-   📱 Responsivo do Header e Menu
+   ⬆️ Botão "Topo" (fixo no canto inferior esquerdo)
+   ============================================================================ */
+
+.btn-topo {
+    position: fixed;
+    left: 18px;
+    bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+    z-index: 1000; /* acima do conteúdo, abaixo do menu lateral (2500/3000) */
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    font-family: "Cinzel", "Inter", serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--ivory);
+    background: linear-gradient(180deg, #252525 0%, #101010 100%);
+    border: 2px solid rgba(212, 175, 55, 0.75);
+    border-radius: 999px;
+    box-shadow:
+        0 4px 14px rgba(0, 0, 0, 0.45),
+        inset 0 0 10px rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s, background 0.2s ease, color 0.2s ease;
+}
+
+.btn-topo.visivel {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.btn-topo:hover,
+.btn-topo:focus-visible {
+    background: var(--wine-red);
+    color: #ffe8a3;
+}
+
+.btn-topo:focus-visible {
+    outline: 2px solid var(--accent-gold);
+    outline-offset: 3px;
+}
+
+.btn-topo-seta {
+    font-size: 1.15rem;
+    line-height: 1;
+}
+
+/* ============================================================================
+   📱 Responsivo do Header, Menu e botão TOPO
    ============================================================================ */
 
 @media (max-width: 900px) {
@@ -480,5 +533,14 @@ td {
         min-width: 40px !important;
         min-height: 40px !important;
         font-size: 24px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn-topo {
+        left: 12px;
+        bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+        padding: 8px 13px;
+        font-size: 0.85rem;
     }
 }
