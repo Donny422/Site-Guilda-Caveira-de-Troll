@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bazar Blackstaff - Guilda Caveira de Troll</title>
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/bazar.css">
 </head>
 <body>
     <div id="site-header"></div>
@@ -16,11 +15,20 @@
     <h3 class="anuncio">Adquira agora os melhores equipamentos mágicos da Costa da Espada</h3>
     <!-- 🛒 Seção: Bazar Blackstaff -->
 <section class="secao-bazar">
-    <p class="introducao-bazar">As armas com múltiplas variantes estão limitadas àquelas cuja versão base está disponível no servidor.</p>
+
+
+    <div class="bazar-pesquisa" role="search">
+        <label for="bazar-search">🔎 Pesquisar no Bazar</label>
+        <div class="bazar-pesquisa__campo">
+            <input type="search" id="bazar-search" placeholder="Digite o nome do item, fonte ou categoria..." autocomplete="off">
+            <button type="button" id="bazar-search-clear" aria-label="Limpar pesquisa" title="Limpar pesquisa">✕</button>
+        </div>
+        <p id="bazar-search-status" class="bazar-pesquisa__status" aria-live="polite"></p>
+    </div>
 
     <!-- CONTAINER DA MOLDURA ESTILO HOMEBREWERY -->
     <div class="moldura-bazar">
-        
+            <p class="introducao-bazar">As armas com múltiplas variantes estão limitadas àquelas cuja versão base está disponível no servidor.</p>
         <!-- CATEGORIA: ARMAS COMUNS -->
         <details>
             <summary>⚔️ Armas Comuns</summary>
@@ -448,6 +456,7 @@
                         <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20fire%20giant%20strength_dmg" target="_blank" rel="noopener noreferrer">Poção da Força do Gigante de Fogo</a></td><td>DMG</td></tr>
                         <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20speed_dmg" target="_blank" rel="noopener noreferrer">Poção da Velocidade</a></td><td>DMG</td></tr>
                         <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20mind%20control_tftyp" target="_blank" rel="noopener noreferrer">Poção de Controle Mental (Fera, Humanoide e Monstro)</a></td><td>TftYP</td></tr>
+                        <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20invisibility_dmg" target="_blank" rel="noopener noreferrer">Poção de Invisibilidade</a></td><td>DMG</td></tr>
                         <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20invulnerability_dmg" target="_blank" rel="noopener noreferrer">Poção de Invulnerabilidade</a></td><td>DMG</td></tr>
                         <tr><td><a href="https://2014.5e.tools/items.html#potion%20of%20flying_dmg" target="_blank" rel="noopener noreferrer">Poção de Voo</a></td><td>DMG</td></tr>
                     </tbody>
@@ -1027,5 +1036,6 @@
 </div>
 </main>
 <script src="js/menu.js"></script>
+<script src="js/bazar.js"></script>
 </body>
 </html>
