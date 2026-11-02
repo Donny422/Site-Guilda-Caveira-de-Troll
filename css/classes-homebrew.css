@@ -316,7 +316,7 @@
        font-size: 0.9em;
    }
    
-   .pagina-classes-homebrew .capa-blood-hunter {
+   .pagina-classes-homebrew .capa-classe {
        display: block;
        width: 96% !important;
        height: clamp(280px, 42vw, 520px);
@@ -330,13 +330,13 @@
            0 0 22px rgba(122, 29, 29, 0.28);
        filter: contrast(1.05) saturate(1.08);
    }
-   
-   .pagina-classes-homebrew .capa-pugilista {
+
+      .pagina-classes-homebrew .capa-classe-witcher {
        display: block;
        width: 96% !important;
        height: clamp(280px, 42vw, 520px);
        object-fit: cover;
-       object-position: center 42%;
+       object-position: center 17%;
        margin: 8px auto 30px auto !important;
        border: 6px double #7a1d1d;
        border-radius: 20px;
@@ -345,22 +345,7 @@
            0 0 22px rgba(122, 29, 29, 0.28);
        filter: contrast(1.05) saturate(1.08);
    }
-   
-   .pagina-classes-homebrew .capa-pistoleiro {
-       display: block;
-       width: 96% !important;
-       height: clamp(280px, 42vw, 520px);
-       object-fit: cover;
-       object-position: center 40%;
-       margin: 8px auto 30px auto !important;
-       border: 6px double #7a1d1d;
-       border-radius: 20px;
-       box-shadow:
-           0 16px 34px rgba(0, 0, 0, 0.38),
-           0 0 22px rgba(122, 29, 29, 0.28);
-       filter: contrast(1.05) saturate(1.08);
-   }
-   
+
    .pagina-classes-homebrew .caracteristicas-colunas {
        display: grid;
        grid-template-columns: repeat(2, minmax(0, 1fr));
