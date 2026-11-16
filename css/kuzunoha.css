@@ -1,0 +1,539 @@
+
+/* =========================================================
+   RESET E ESTRUTURA
+   ========================================================= */
+
+.pagina-kuzunoha *,
+.pagina-kuzunoha *::before,
+.pagina-kuzunoha *::after {
+    box-sizing: border-box;
+}
+
+.pagina-kuzunoha {
+    color: #1f130b;
+}
+
+.pagina-kuzunoha .container {
+    max-width: 1220px !important;
+    width: 95% !important;
+    margin: 0 auto !important;
+    padding: 24px 14px !important;
+
+    background:
+        linear-gradient(
+            rgba(245, 238, 216, 0.95),
+            rgba(214, 203, 181, 0.94)
+        );
+
+    border: 4px double #8b6b3f;
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 34px rgba(0, 0, 0, 0.45),
+        inset 0 0 30px rgba(88, 23, 12, 0.08);
+}
+
+/* =========================================================
+   SEÇÕES PRINCIPAIS
+   ========================================================= */
+
+.pagina-kuzunoha .container > section {
+    width: 96% !important;
+    max-width: none !important;
+    margin: 28px auto !important;
+    padding: 30px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 249, 230, 0.96),
+            rgba(219, 207, 181, 0.93)
+        );
+
+    border: 1px solid #c9b38f;
+    border-left: 9px solid #7a1d1d;
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 26px rgba(0, 0, 0, 0.24),
+        inset 0 0 20px rgba(255, 255, 255, 0.25);
+
+    color: #1f130b;
+    position: relative;
+    overflow: hidden;
+}
+
+/* =========================================================
+   CABEÇALHO PRINCIPAL
+   ========================================================= */
+
+.pagina-kuzunoha h1 {
+    margin: 0 0 10px 0 !important;
+    padding: 16px 16px 18px 16px !important;
+    color: #58170c !important;
+    font-size: clamp(2.15rem, 5vw, 4rem) !important;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-bottom: 4px double #8b6b3f;
+}
+
+/* Anúncio de destaque */
+.pagina-kuzunoha .anuncio {
+    margin: 8px auto 28px auto !important;
+    padding: 10px 16px !important;
+    color: #6b3f12 !important;
+    background: linear-gradient(
+        90deg,
+        rgba(212, 175, 55, 0.20),
+        rgba(255, 255, 255, 0.25),
+        rgba(212, 175, 55, 0.20)
+    );
+    border-top: 1px solid rgba(139, 107, 63, 0.45);
+    border-bottom: 1px solid rgba(139, 107, 63, 0.45);
+    border-radius: 10px;
+    font-size: clamp(1.05rem, 2.4vw, 1.45rem) !important;
+    text-align: center !important;
+    width: 100% !important;
+}
+
+.pagina-kuzunoha .apresentacao {
+    color: #1f130b;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+    margin: 8px auto 28px auto !important;
+    padding: 10px 16px !important;
+}
+
+/* =========================================================
+   TÍTULOS
+   ========================================================= */
+
+.pagina-kuzunoha h2 {
+    width: 96% !important;
+    margin: 34px auto 22px auto !important;
+    padding: 12px 16px !important;
+
+    color: #58170c !important;
+
+    font-family: "Cinzel", Georgia, serif !important;
+    font-size: clamp(1.4rem, 2.7vw, 2rem) !important;
+    font-weight: 900 !important;
+    text-align: center !important;
+
+    border-top: 1px solid #c9b38f !important;
+    border-bottom: 3px double #8b6b3f !important;
+
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 10px;
+
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.pagina-kuzunoha h3 {
+    width: 100% !important;
+    margin: 0 0 12px 0 !important;
+    padding-bottom: 8px !important;
+
+    color: #58170c !important;
+
+    font-family: "Cinzel", Georgia, serif !important;
+    font-size: clamp(1.15rem, 2vw, 1.45rem) !important;
+    font-weight: 800 !important;
+    text-align: left !important;
+
+    border-bottom: 1px solid #c9b38f !important;
+}
+
+.pagina-kuzunoha h3.equipamentos {
+    text-align: center !important;
+}
+
+/* =========================================================
+   TEXTOS
+   ========================================================= */
+
+.pagina-kuzunoha p {
+    color: #1f130b !important;
+    font-size: 1rem;
+    line-height: 1.7 !important;
+    text-align: left !important;
+    margin: 0 0 16px 0 !important;
+}
+
+.pagina-kuzunoha strong {
+    color: #58170c !important;
+    font-weight: 800;
+}
+
+.pagina-kuzunoha em {
+    color: #4a3a2b;
+}
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+.pagina-kuzunoha a {
+    color: #243a8f;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.pagina-kuzunoha a:hover {
+    color: #7a1d1d;
+    text-decoration: underline;
+}
+
+/* =========================================================
+   LISTAS GERAIS
+   ========================================================= */
+
+.pagina-kuzunoha ul,
+.pagina-kuzunoha ol {
+    margin: 12px 0 18px 0 !important;
+    padding-left: 28px !important;
+    color: #1f130b !important;
+}
+
+.pagina-kuzunoha li {
+    margin-bottom: 10px !important;
+    padding-left: 4px;
+    line-height: 1.65 !important;
+    color: #1f130b !important;
+}
+
+.pagina-kuzunoha li::marker {
+    color: #7a1d1d;
+}
+
+.pagina-kuzunoha li:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* =========================================================
+   AVISOS / NOTICE
+   ========================================================= */
+
+.pagina-kuzunoha .notice {
+    width: 100% !important;
+    margin: 20px 0 !important;
+    padding: 18px 20px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 250, 235, 0.94),
+            rgba(236, 226, 204, 0.90)
+        );
+
+    border: 1px solid #c9b38f;
+    border-left: 7px solid #7a1d1d;
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 14px rgba(0, 0, 0, 0.13),
+        inset 0 0 12px rgba(255, 255, 255, 0.25);
+}
+
+.pagina-kuzunoha .notice h3 {
+    margin-top: 0 !important;
+    color: #58170c !important;
+}
+
+.pagina-kuzunoha .notice p:last-child {
+    margin-bottom: 0 !important;
+}
+
+.pagina-kuzunoha .notice ul {
+    margin-bottom: 0 !important;
+}
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.pagina-kuzunoha .content-card {
+    width: 100% !important;
+    min-width: 0;
+    margin: 0 !important;
+    padding: 20px !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255, 252, 240, 0.96),
+            rgba(236, 226, 204, 0.91)
+        );
+
+    border: 1px solid #c9b38f;
+    border-left: 6px solid #7a1d1d;
+    border-radius: 14px;
+
+    box-shadow:
+        0 7px 18px rgba(0, 0, 0, 0.15),
+        inset 0 0 12px rgba(255, 255, 255, 0.22);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+
+    overflow-wrap: anywhere;
+}
+
+.pagina-kuzunoha .content-card:hover {
+    transform: translateY(-3px);
+    border-color: #8b6b3f;
+
+    box-shadow:
+        0 12px 24px rgba(0, 0, 0, 0.20),
+        0 0 14px rgba(122, 29, 29, 0.12);
+}
+
+.pagina-kuzunoha .content-card h3 {
+    margin: 0 0 14px 0 !important;
+    padding-bottom: 10px !important;
+
+    color: #58170c !important;
+    font-family: "Cinzel", Georgia, serif !important;
+    font-size: clamp(1.15rem, 2vw, 1.45rem) !important;
+    text-align: left !important;
+
+    border-bottom: 1px solid #c9b38f !important;
+}
+
+.pagina-kuzunoha .content-card p {
+    margin: 0 0 12px 0 !important;
+    color: #1f130b !important;
+    line-height: 1.68 !important;
+}
+
+.pagina-kuzunoha .content-card p:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* =========================================================
+   REGRAS DE ENCOMENDAS
+   ========================================================= */
+
+.pagina-kuzunoha .encomendas-content {
+    border-left-color: #8b6b3f !important;
+}
+
+/* Modelo de solicitação */
+
+.pagina-kuzunoha .encomendas-content .notice-modelo {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 246, 220, 0.98),
+        rgba(230, 215, 181, 0.92)
+    );
+    border-left-color: #8b6b3f;
+}
+
+.pagina-kuzunoha .encomendas-content .notice-modelo p {
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* =========================================================
+   CATÁLOGO DE ITENS
+   ========================================================= */
+
+.pagina-kuzunoha .itens-disponiveis-content {
+    border-left-color: #8b6b3f !important;
+}
+
+.pagina-kuzunoha .itens-disponiveis-content .content-card {
+    padding: 24px !important;
+}
+
+.pagina-kuzunoha .itens-disponiveis-content .content-card h3 {
+    text-align: center !important;
+    font-size: clamp(1.3rem, 2.5vw, 1.8rem) !important;
+    margin-bottom: 22px !important;
+}
+
+/* Quatro colunas verticais */
+
+.pagina-kuzunoha .catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    align-items: start;
+    width: 100%;
+}
+
+.pagina-kuzunoha .catalogo-coluna {
+    min-width: 0;
+    padding: 8px;
+
+    background: rgba(139, 107, 63, 0.07);
+    border: 1px solid rgba(139, 107, 63, 0.22);
+    border-radius: 10px;
+}
+
+.pagina-kuzunoha .catalogo-coluna ul {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.pagina-kuzunoha .catalogo-coluna li {
+    margin: 0 !important;
+    padding: 8px 7px !important;
+
+    color: #1f130b !important;
+    font-size: 0.88rem;
+    line-height: 1.4 !important;
+
+    border-bottom: 1px solid rgba(120, 90, 50, 0.20);
+
+    overflow-wrap: anywhere;
+    word-break: normal;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.pagina-kuzunoha .catalogo-coluna li:hover {
+    background: rgba(139, 107, 63, 0.13);
+    color: #58170c !important;
+}
+
+.pagina-kuzunoha .catalogo-coluna li:last-child {
+    border-bottom: none;
+}
+
+/* =========================================================
+   AJUSTES DE LEITURA
+   ========================================================= */
+
+.pagina-kuzunoha .content-card,
+.pagina-kuzunoha .notice {
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+.pagina-kuzunoha .content-card p,
+.pagina-kuzunoha .notice p {
+    text-wrap: pretty;
+}
+
+/* =========================================================
+   SEPARADORES
+   ========================================================= */
+
+.pagina-kuzunoha hr {
+    width: 96%;
+    height: 3px;
+    margin: 32px auto;
+    border: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #7a1d1d,
+            #c9b38f,
+            #7a1d1d,
+            transparent
+        );
+}
+
+/* =========================================================
+   RESPONSIVIDADE - TABLETS
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .pagina-kuzunoha .container > section {
+        width: 98% !important;
+        padding: 24px 20px !important;
+    }
+
+    .pagina-kuzunoha .regras-hero h1 {
+        font-size: clamp(1.8rem, 5vw, 2.7rem) !important;
+    }
+
+    .pagina-kuzunoha .catalogo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+}
+
+/* =========================================================
+   RESPONSIVIDADE - CELULARES
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .pagina-kuzunoha .container {
+        width: 98% !important;
+        padding: 12px 6px !important;
+        border-width: 3px;
+    }
+
+    .pagina-kuzunoha .container > section {
+        width: 98% !important;
+        margin: 16px auto !important;
+        padding: 18px 13px !important;
+        border-left-width: 6px;
+    }
+
+    .pagina-kuzunoha .regras-hero {
+        padding: 20px 12px !important;
+    }
+
+    .pagina-kuzunoha .regras-hero h1 {
+        font-size: clamp(1.4rem, 6vw, 2rem) !important;
+        letter-spacing: 0.5px !important;
+    }
+
+    .pagina-kuzunoha .regras-hero p {
+        width: 100% !important;
+        font-size: 0.95rem !important;
+        text-align: left !important;
+    }
+
+    .pagina-kuzunoha h2 {
+        width: 100% !important;
+        font-size: clamp(1.2rem, 5vw, 1.55rem) !important;
+        padding: 10px !important;
+    }
+
+    .pagina-kuzunoha .content-card {
+        padding: 16px 14px !important;
+    }
+
+    .pagina-kuzunoha .content-card h3 {
+        font-size: 1.15rem !important;
+    }
+
+    .pagina-kuzunoha .notice {
+        padding: 14px !important;
+    }
+
+    .pagina-kuzunoha ul,
+    .pagina-kuzunoha ol {
+        padding-left: 22px !important;
+    }
+
+    .pagina-kuzunoha .catalogo-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .pagina-kuzunoha .catalogo-coluna {
+        padding: 10px;
+    }
+
+    .pagina-kuzunoha .catalogo-coluna li {
+        font-size: 0.92rem;
+        padding: 9px 8px !important;
+    }
+
+}
