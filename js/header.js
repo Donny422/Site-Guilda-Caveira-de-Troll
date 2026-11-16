@@ -42,6 +42,7 @@
         <a class="menu-item" href="homebrew.html">⚒️ Homebrew</a>
         <a class="menu-item" href="classes-homebrew.html">🧬 Classes Homebrew</a>
         <a class="menu-item" href="bazar.html">🏪 Bazar Blackstaff</a>
+        <a class="menu-item" href="kuzunoha.html">🦊 Kuzunoha</a>
         <a class="menu-item" href="magias.html">✨ Magias Homebrew</a>
         <a class="menu-item" href="panteoes.html">🏛️ Panteões</a>
         <a class="menu-item" href="atividades.html">🎲 Atividades</a>
